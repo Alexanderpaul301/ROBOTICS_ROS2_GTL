@@ -341,6 +341,19 @@ floornav_TaskWander/fast:
 .PHONY : floornav_TaskWander/fast
 
 #=============================================================================
+# Target rules for targets named floornav_TaskWander_modif
+
+# Build rule for target.
+floornav_TaskWander_modif: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 floornav_TaskWander_modif
+.PHONY : floornav_TaskWander_modif
+
+# fast build rule for target.
+floornav_TaskWander_modif/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskWander_modif.dir/build.make CMakeFiles/floornav_TaskWander_modif.dir/build
+.PHONY : floornav_TaskWander_modif/fast
+
+#=============================================================================
 # Target rules for targets named floornav_TaskAutoDock
 
 # Build rule for target.
@@ -665,6 +678,30 @@ tasks/TaskWander.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskWander.dir/build.make CMakeFiles/floornav_TaskWander.dir/tasks/TaskWander.cpp.s
 .PHONY : tasks/TaskWander.cpp.s
 
+tasks/TaskWander_modif.o: tasks/TaskWander_modif.cpp.o
+.PHONY : tasks/TaskWander_modif.o
+
+# target to build an object file
+tasks/TaskWander_modif.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskWander_modif.dir/build.make CMakeFiles/floornav_TaskWander_modif.dir/tasks/TaskWander_modif.cpp.o
+.PHONY : tasks/TaskWander_modif.cpp.o
+
+tasks/TaskWander_modif.i: tasks/TaskWander_modif.cpp.i
+.PHONY : tasks/TaskWander_modif.i
+
+# target to preprocess a source file
+tasks/TaskWander_modif.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskWander_modif.dir/build.make CMakeFiles/floornav_TaskWander_modif.dir/tasks/TaskWander_modif.cpp.i
+.PHONY : tasks/TaskWander_modif.cpp.i
+
+tasks/TaskWander_modif.s: tasks/TaskWander_modif.cpp.s
+.PHONY : tasks/TaskWander_modif.s
+
+# target to generate assembly for a file
+tasks/TaskWander_modif.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskWander_modif.dir/build.make CMakeFiles/floornav_TaskWander_modif.dir/tasks/TaskWander_modif.cpp.s
+.PHONY : tasks/TaskWander_modif.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -691,6 +728,7 @@ help:
 	@echo "... floornav_TaskTrigger"
 	@echo "... floornav_TaskWaitForROI"
 	@echo "... floornav_TaskWander"
+	@echo "... floornav_TaskWander_modif"
 	@echo "... floornav_task_server"
 	@echo "... src/SimTasksEnv.o"
 	@echo "... src/SimTasksEnv.i"
@@ -731,6 +769,9 @@ help:
 	@echo "... tasks/TaskWander.o"
 	@echo "... tasks/TaskWander.i"
 	@echo "... tasks/TaskWander.s"
+	@echo "... tasks/TaskWander_modif.o"
+	@echo "... tasks/TaskWander_modif.i"
+	@echo "... tasks/TaskWander_modif.s"
 .PHONY : help
 
 
