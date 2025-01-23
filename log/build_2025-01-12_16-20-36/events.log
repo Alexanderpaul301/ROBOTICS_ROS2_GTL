@@ -1,0 +1,150 @@
+[0.000000] (-) TimerEvent: {}
+[0.000130] (joy_pack) JobQueued: {'identifier': 'joy_pack', 'dependencies': OrderedDict()}
+[0.000151] (joy_pack) JobStarted: {'identifier': 'joy_pack'}
+[0.010123] (joy_pack) JobProgress: {'identifier': 'joy_pack', 'progress': 'cmake'}
+[0.013043] (joy_pack) JobProgress: {'identifier': 'joy_pack', 'progress': 'build'}
+[0.013743] (joy_pack) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/GTL/apaul/ros2_hw1/build/joy_pack', '--', '-j16', '-l16'], 'cwd': '/home/GTL/apaul/ros2_hw1/build/joy_pack', 'env': OrderedDict([('USER', 'apaul'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/GTL/apaul'), ('CYCLONEDDS_URI', '/cs-share/pradalier/gtlpc_cyclonedds.xml'), ('OLDPWD', '/home/GTL/apaul/ros2_hw1/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '475083'), ('SYSTEMD_EXEC_PID', '475526'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/37726/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '476146'), ('COLCON_PREFIX_PATH', '/home/GTL/apaul/ros2_hw1/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'apaul'), ('JOURNAL_STREAM', '8:1046791'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'apaul'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/gtlpc106.georgiatech-metz.fr:@/tmp/.ICE-unix/475331,unix/gtlpc106.georgiatech-metz.fr:/tmp/.ICE-unix/475331'), ('INVOCATION_ID', '3fdb088795ea40f0a91da07674d3b41e'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/37726'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/37726/gdm/Xauthority'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/37726/keyring/ssh'), ('ROS_DOMAIN_ID', '56'), ('AMENT_PREFIX_PATH', '/home/GTL/apaul/ros2_hw1/install/joy_pack:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:7fe1fe2d-3206-4189-bbf7-91ea4dee5b83'), ('KRB5CCNAME', 'FILE:/tmp/krb5cc_37726'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/37726/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/GTL/apaul/ros2_hw1/build/joy_pack'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/GTL/apaul/ros2_hw1/install/joy_pack:/opt/ros/humble')]), 'shell': False}
+[0.099424] (-) TimerEvent: {}
+[0.105489] (joy_pack) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target listener\x1b[0m\n'}
+[0.154313] (joy_pack) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/listener.dir/src/joy_function.cpp.o\x1b[0m\n'}
+[0.199529] (-) TimerEvent: {}
+[0.299770] (-) TimerEvent: {}
+[0.400040] (-) TimerEvent: {}
+[0.500320] (-) TimerEvent: {}
+[0.600573] (-) TimerEvent: {}
+[0.700840] (-) TimerEvent: {}
+[0.801100] (-) TimerEvent: {}
+[0.901302] (-) TimerEvent: {}
+[1.001530] (-) TimerEvent: {}
+[1.101765] (-) TimerEvent: {}
+[1.202006] (-) TimerEvent: {}
+[1.302244] (-) TimerEvent: {}
+[1.402488] (-) TimerEvent: {}
+[1.502742] (-) TimerEvent: {}
+[1.587695] (joy_pack) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/joy_pack/src/joy_function.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid JoySubscriber::topic_callback(const Joy&) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.587821] (joy_pack) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/joy_pack/src/joy_function.cpp:26:25:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<float>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.587866] (joy_pack) StderrLine: {'line': b'   26 |       for (int i = 0; \x1b[01;35m\x1b[Ki < msg.axes.size()\x1b[m\x1b[K; i++)\n'}
+[1.587902] (joy_pack) StderrLine: {'line': b'      |                       \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.588108] (joy_pack) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[1.588167] (joy_pack) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[1.588202] (joy_pack) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[1.588234] (joy_pack) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[1.588265] (joy_pack) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[1.588295] (joy_pack) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.588329] (joy_pack) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.588361] (joy_pack) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[1.588393] (joy_pack) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[1.588426] (joy_pack) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[1.588458] (joy_pack) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[1.588490] (joy_pack) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/joy_pack/src/joy_function.cpp:6\x1b[m\x1b[K:\n'}
+[1.588522] (joy_pack) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/joy_pack/src/joy_function.cpp:28:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%f\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.588559] (joy_pack) StderrLine: {'line': b'   28 |         RCLCPP_INFO(this->get_logger(), \x1b[01;35m\x1b[K"%f \\n"\x1b[m\x1b[K, \x1b[32m\x1b[Ki\x1b[m\x1b[K, msg.axes[i]);\n'}
+[1.588591] (joy_pack) StderrLine: {'line': b'      |                                         \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K  \x1b[32m\x1b[K~\x1b[m\x1b[K\n'}
+[1.588623] (joy_pack) StderrLine: {'line': b'      |                                                  \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[1.588655] (joy_pack) StderrLine: {'line': b'      |                                                  \x1b[32m\x1b[Kint\x1b[m\x1b[K\n'}
+[1.588740] (joy_pack) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/joy_pack/src/joy_function.cpp:28:43:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[1.588771] (joy_pack) StderrLine: {'line': b'   28 |         RCLCPP_INFO(this->get_logger(), "\x1b[01;36m\x1b[K%f\x1b[m\x1b[K \\n", i, msg.axes[i]);\n'}
+[1.588801] (joy_pack) StderrLine: {'line': b'      |                                          \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[1.588830] (joy_pack) StderrLine: {'line': b'      |                                           \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[1.588860] (joy_pack) StderrLine: {'line': b'      |                                           \x1b[01;36m\x1b[Kdouble\x1b[m\x1b[K\n'}
+[1.588889] (joy_pack) StderrLine: {'line': b'      |                                          \x1b[32m\x1b[K%d\x1b[m\x1b[K\n'}
+[1.588919] (joy_pack) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[1.588948] (joy_pack) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[1.588978] (joy_pack) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[1.589007] (joy_pack) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[1.589039] (joy_pack) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[1.589069] (joy_pack) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.589097] (joy_pack) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.589126] (joy_pack) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[1.589156] (joy_pack) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[1.589188] (joy_pack) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[1.589225] (joy_pack) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[1.589259] (joy_pack) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/joy_pack/src/joy_function.cpp:6\x1b[m\x1b[K:\n'}
+[1.589291] (joy_pack) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/joy_pack/src/joy_function.cpp:28:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ktoo many arguments for format [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-extra-args\x07-Wformat-extra-args\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.589322] (joy_pack) StderrLine: {'line': b'   28 |         RCLCPP_INFO(this->get_logger(), \x1b[01;35m\x1b[K"%f \\n"\x1b[m\x1b[K, i, msg.axes[i]);\n'}
+[1.589352] (joy_pack) StderrLine: {'line': b'      |                                         \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.589382] (joy_pack) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/joy_pack/src/joy_function.cpp:32:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.589417] (joy_pack) StderrLine: {'line': b'   32 |       for (int j = 0; \x1b[01;35m\x1b[Kj<msg.buttons.size()\x1b[m\x1b[K; j++)\n'}
+[1.589447] (joy_pack) StderrLine: {'line': b'      |                       \x1b[01;35m\x1b[K~^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.589477] (joy_pack) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[1.589507] (joy_pack) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[1.589536] (joy_pack) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[1.589565] (joy_pack) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[1.589594] (joy_pack) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[1.589623] (joy_pack) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.589653] (joy_pack) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.589681] (joy_pack) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[1.589711] (joy_pack) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[1.589740] (joy_pack) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[1.589769] (joy_pack) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[1.589798] (joy_pack) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/joy_pack/src/joy_function.cpp:6\x1b[m\x1b[K:\n'}
+[1.589828] (joy_pack) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/joy_pack/src/joy_function.cpp:34:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ktoo many arguments for format [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-extra-args\x07-Wformat-extra-args\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.589859] (joy_pack) StderrLine: {'line': b'   34 |         RCLCPP_INFO(this->get_logger(), \x1b[01;35m\x1b[K"%i \\n"\x1b[m\x1b[K, j, msg.buttons[j]);\n'}
+[1.589889] (joy_pack) StderrLine: {'line': b'      |                                         \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.602852] (-) TimerEvent: {}
+[1.703073] (-) TimerEvent: {}
+[1.803290] (-) TimerEvent: {}
+[1.903511] (-) TimerEvent: {}
+[2.003729] (-) TimerEvent: {}
+[2.103989] (-) TimerEvent: {}
+[2.204234] (-) TimerEvent: {}
+[2.304456] (-) TimerEvent: {}
+[2.404674] (-) TimerEvent: {}
+[2.504921] (-) TimerEvent: {}
+[2.605167] (-) TimerEvent: {}
+[2.705420] (-) TimerEvent: {}
+[2.805690] (-) TimerEvent: {}
+[2.905949] (-) TimerEvent: {}
+[3.006188] (-) TimerEvent: {}
+[3.106405] (-) TimerEvent: {}
+[3.206645] (-) TimerEvent: {}
+[3.306870] (-) TimerEvent: {}
+[3.407082] (-) TimerEvent: {}
+[3.507315] (-) TimerEvent: {}
+[3.607526] (-) TimerEvent: {}
+[3.707765] (-) TimerEvent: {}
+[3.807982] (-) TimerEvent: {}
+[3.908211] (-) TimerEvent: {}
+[4.008464] (-) TimerEvent: {}
+[4.108713] (-) TimerEvent: {}
+[4.208976] (-) TimerEvent: {}
+[4.309224] (-) TimerEvent: {}
+[4.409450] (-) TimerEvent: {}
+[4.509683] (-) TimerEvent: {}
+[4.609924] (-) TimerEvent: {}
+[4.710182] (-) TimerEvent: {}
+[4.810403] (-) TimerEvent: {}
+[4.910621] (-) TimerEvent: {}
+[5.010866] (-) TimerEvent: {}
+[5.111130] (-) TimerEvent: {}
+[5.211411] (-) TimerEvent: {}
+[5.215496] (joy_pack) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable listener\x1b[0m\n'}
+[5.311498] (-) TimerEvent: {}
+[5.411741] (-) TimerEvent: {}
+[5.476350] (joy_pack) StdoutLine: {'line': b'[100%] Built target listener\n'}
+[5.484653] (joy_pack) CommandEnded: {'returncode': 0}
+[5.502255] (joy_pack) JobProgress: {'identifier': 'joy_pack', 'progress': 'install'}
+[5.507621] (joy_pack) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/GTL/apaul/ros2_hw1/build/joy_pack'], 'cwd': '/home/GTL/apaul/ros2_hw1/build/joy_pack', 'env': OrderedDict([('USER', 'apaul'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/GTL/apaul'), ('CYCLONEDDS_URI', '/cs-share/pradalier/gtlpc_cyclonedds.xml'), ('OLDPWD', '/home/GTL/apaul/ros2_hw1/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '475083'), ('SYSTEMD_EXEC_PID', '475526'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/37726/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '476146'), ('COLCON_PREFIX_PATH', '/home/GTL/apaul/ros2_hw1/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'apaul'), ('JOURNAL_STREAM', '8:1046791'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'apaul'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/gtlpc106.georgiatech-metz.fr:@/tmp/.ICE-unix/475331,unix/gtlpc106.georgiatech-metz.fr:/tmp/.ICE-unix/475331'), ('INVOCATION_ID', '3fdb088795ea40f0a91da07674d3b41e'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/37726'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/37726/gdm/Xauthority'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/37726/keyring/ssh'), ('ROS_DOMAIN_ID', '56'), ('AMENT_PREFIX_PATH', '/home/GTL/apaul/ros2_hw1/install/joy_pack:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:7fe1fe2d-3206-4189-bbf7-91ea4dee5b83'), ('KRB5CCNAME', 'FILE:/tmp/krb5cc_37726'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/37726/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/GTL/apaul/ros2_hw1/build/joy_pack'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/GTL/apaul/ros2_hw1/install/joy_pack:/opt/ros/humble')]), 'shell': False}
+[5.511818] (-) TimerEvent: {}
+[5.511984] (joy_pack) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.513092] (joy_pack) StdoutLine: {'line': b'-- Installing: /home/GTL/apaul/ros2_hw1/install/joy_pack/lib/joy_pack/listener\n'}
+[5.547785] (joy_pack) StdoutLine: {'line': b'-- Set runtime path of "/home/GTL/apaul/ros2_hw1/install/joy_pack/lib/joy_pack/listener" to ""\n'}
+[5.548069] (joy_pack) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/ament_index/resource_index/package_run_dependencies/joy_pack\n'}
+[5.549238] (joy_pack) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/ament_index/resource_index/parent_prefix_path/joy_pack\n'}
+[5.550236] (joy_pack) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/environment/ament_prefix_path.sh\n'}
+[5.551190] (joy_pack) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/environment/ament_prefix_path.dsv\n'}
+[5.551591] (joy_pack) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/environment/path.sh\n'}
+[5.552529] (joy_pack) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/environment/path.dsv\n'}
+[5.552925] (joy_pack) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/local_setup.bash\n'}
+[5.553683] (joy_pack) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/local_setup.sh\n'}
+[5.554055] (joy_pack) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/local_setup.zsh\n'}
+[5.555078] (joy_pack) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/local_setup.dsv\n'}
+[5.555715] (joy_pack) StdoutLine: {'line': b'-- Installing: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/package.dsv\n'}
+[5.561355] (joy_pack) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/ament_index/resource_index/packages/joy_pack\n'}
+[5.562231] (joy_pack) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/cmake/joy_packConfig.cmake\n'}
+[5.562595] (joy_pack) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/cmake/joy_packConfig-version.cmake\n'}
+[5.563043] (joy_pack) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/package.xml\n'}
+[5.565552] (joy_pack) CommandEnded: {'returncode': 0}
+[5.611971] (-) TimerEvent: {}
+[5.627151] (joy_pack) JobEnded: {'identifier': 'joy_pack', 'rc': 0}
+[5.628994] (-) EventReactorShutdown: {}

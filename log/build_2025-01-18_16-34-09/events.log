@@ -1,0 +1,388 @@
+[0.000000] (-) TimerEvent: {}
+[0.000256] (collision_avoidance_base) JobQueued: {'identifier': 'collision_avoidance_base', 'dependencies': OrderedDict()}
+[0.000283] (face_detect_base) JobQueued: {'identifier': 'face_detect_base', 'dependencies': OrderedDict()}
+[0.000295] (joy_pack) JobQueued: {'identifier': 'joy_pack', 'dependencies': OrderedDict()}
+[0.000305] (keyboard_teleop) JobQueued: {'identifier': 'keyboard_teleop', 'dependencies': OrderedDict()}
+[0.000313] (vrep4_helpers) JobQueued: {'identifier': 'vrep4_helpers', 'dependencies': OrderedDict()}
+[0.000322] (vrep_ros_teleop) JobQueued: {'identifier': 'vrep_ros_teleop', 'dependencies': OrderedDict()}
+[0.000331] (collision_avoidance_base) JobStarted: {'identifier': 'collision_avoidance_base'}
+[0.005147] (face_detect_base) JobStarted: {'identifier': 'face_detect_base'}
+[0.014761] (joy_pack) JobStarted: {'identifier': 'joy_pack'}
+[0.018285] (keyboard_teleop) JobStarted: {'identifier': 'keyboard_teleop'}
+[0.026404] (vrep4_helpers) JobStarted: {'identifier': 'vrep4_helpers'}
+[0.030651] (vrep_ros_teleop) JobStarted: {'identifier': 'vrep_ros_teleop'}
+[0.041457] (collision_avoidance_base) JobProgress: {'identifier': 'collision_avoidance_base', 'progress': 'cmake'}
+[0.043490] (collision_avoidance_base) JobProgress: {'identifier': 'collision_avoidance_base', 'progress': 'build'}
+[0.044384] (collision_avoidance_base) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/GTL/apaul/ros2_hw1/build/collision_avoidance_base', '--', '-j16', '-l16'], 'cwd': '/home/GTL/apaul/ros2_hw1/build/collision_avoidance_base', 'env': OrderedDict([('USER', 'apaul'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/GTL/apaul'), ('CYCLONEDDS_URI', '/cs-share/pradalier/gtlpc_cyclonedds.xml'), ('OLDPWD', '/home/GTL/apaul/ros2_hw1/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2469'), ('SYSTEMD_EXEC_PID', '2882'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/37726/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4378'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'apaul'), ('JOURNAL_STREAM', '8:31672'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'apaul'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/gtlpc106.georgiatech-metz.fr:@/tmp/.ICE-unix/2632,unix/gtlpc106.georgiatech-metz.fr:/tmp/.ICE-unix/2632'), ('INVOCATION_ID', '3dc4de6aafe04c5682e503f4a0989816'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/37726'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/37726/gdm/Xauthority'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/37726/keyring/ssh'), ('ROS_DOMAIN_ID', '56'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:51e16036-5b61-4a91-8086-4d008d9b4654'), ('KRB5CCNAME', 'FILE:/tmp/krb5cc_37726'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/37726/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/GTL/apaul/ros2_hw1/build/collision_avoidance_base'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.098792] (-) TimerEvent: {}
+[0.199000] (-) TimerEvent: {}
+[0.240197] (joy_pack) JobProgress: {'identifier': 'joy_pack', 'progress': 'cmake'}
+[0.242789] (joy_pack) JobProgress: {'identifier': 'joy_pack', 'progress': 'build'}
+[0.243225] (joy_pack) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/GTL/apaul/ros2_hw1/build/joy_pack', '--', '-j16', '-l16'], 'cwd': '/home/GTL/apaul/ros2_hw1/build/joy_pack', 'env': OrderedDict([('USER', 'apaul'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/GTL/apaul'), ('CYCLONEDDS_URI', '/cs-share/pradalier/gtlpc_cyclonedds.xml'), ('OLDPWD', '/home/GTL/apaul/ros2_hw1/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2469'), ('SYSTEMD_EXEC_PID', '2882'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/37726/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4378'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'apaul'), ('JOURNAL_STREAM', '8:31672'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'apaul'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/gtlpc106.georgiatech-metz.fr:@/tmp/.ICE-unix/2632,unix/gtlpc106.georgiatech-metz.fr:/tmp/.ICE-unix/2632'), ('INVOCATION_ID', '3dc4de6aafe04c5682e503f4a0989816'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/37726'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/37726/gdm/Xauthority'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/37726/keyring/ssh'), ('ROS_DOMAIN_ID', '56'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:51e16036-5b61-4a91-8086-4d008d9b4654'), ('KRB5CCNAME', 'FILE:/tmp/krb5cc_37726'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/37726/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/GTL/apaul/ros2_hw1/build/joy_pack'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.299086] (-) TimerEvent: {}
+[0.399332] (-) TimerEvent: {}
+[0.441765] (vrep4_helpers) JobProgress: {'identifier': 'vrep4_helpers', 'progress': 'cmake'}
+[0.443863] (vrep4_helpers) JobProgress: {'identifier': 'vrep4_helpers', 'progress': 'build'}
+[0.444313] (vrep4_helpers) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/GTL/apaul/ros2_hw1/build/vrep4_helpers', '--', '-j16', '-l16'], 'cwd': '/home/GTL/apaul/ros2_hw1/build/vrep4_helpers', 'env': OrderedDict([('USER', 'apaul'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/GTL/apaul'), ('CYCLONEDDS_URI', '/cs-share/pradalier/gtlpc_cyclonedds.xml'), ('OLDPWD', '/home/GTL/apaul/ros2_hw1/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2469'), ('SYSTEMD_EXEC_PID', '2882'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/37726/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4378'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'apaul'), ('JOURNAL_STREAM', '8:31672'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'apaul'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/gtlpc106.georgiatech-metz.fr:@/tmp/.ICE-unix/2632,unix/gtlpc106.georgiatech-metz.fr:/tmp/.ICE-unix/2632'), ('INVOCATION_ID', '3dc4de6aafe04c5682e503f4a0989816'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/37726'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/37726/gdm/Xauthority'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/37726/keyring/ssh'), ('ROS_DOMAIN_ID', '56'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:51e16036-5b61-4a91-8086-4d008d9b4654'), ('KRB5CCNAME', 'FILE:/tmp/krb5cc_37726'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/37726/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/GTL/apaul/ros2_hw1/build/vrep4_helpers'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.451042] (collision_avoidance_base) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target collision_avoidance_base\x1b[0m\n'}
+[0.451109] (collision_avoidance_base) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/collision_avoidance_base.dir/src/collision_avoidance.cpp.o\x1b[0m\n'}
+[0.451154] (joy_pack) StdoutLine: {'line': b'[100%] Built target joy_node\n'}
+[0.491983] (vrep4_helpers) StdoutLine: {'line': b'[100%] Built target clock_repeat\n'}
+[0.492412] (vrep4_helpers) StdoutLine: {'line': b'[100%] Built target image_flip\n'}
+[0.499412] (-) TimerEvent: {}
+[0.599629] (-) TimerEvent: {}
+[0.647419] (joy_pack) CommandEnded: {'returncode': 0}
+[0.657248] (vrep4_helpers) CommandEnded: {'returncode': 0}
+[0.663535] (joy_pack) JobProgress: {'identifier': 'joy_pack', 'progress': 'install'}
+[0.670677] (joy_pack) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/GTL/apaul/ros2_hw1/build/joy_pack'], 'cwd': '/home/GTL/apaul/ros2_hw1/build/joy_pack', 'env': OrderedDict([('USER', 'apaul'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/GTL/apaul'), ('CYCLONEDDS_URI', '/cs-share/pradalier/gtlpc_cyclonedds.xml'), ('OLDPWD', '/home/GTL/apaul/ros2_hw1/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2469'), ('SYSTEMD_EXEC_PID', '2882'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/37726/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4378'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'apaul'), ('JOURNAL_STREAM', '8:31672'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'apaul'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/gtlpc106.georgiatech-metz.fr:@/tmp/.ICE-unix/2632,unix/gtlpc106.georgiatech-metz.fr:/tmp/.ICE-unix/2632'), ('INVOCATION_ID', '3dc4de6aafe04c5682e503f4a0989816'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/37726'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/37726/gdm/Xauthority'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/37726/keyring/ssh'), ('ROS_DOMAIN_ID', '56'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:51e16036-5b61-4a91-8086-4d008d9b4654'), ('KRB5CCNAME', 'FILE:/tmp/krb5cc_37726'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/37726/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/GTL/apaul/ros2_hw1/build/joy_pack'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.674238] (vrep4_helpers) JobProgress: {'identifier': 'vrep4_helpers', 'progress': 'install'}
+[0.674679] (vrep4_helpers) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/GTL/apaul/ros2_hw1/build/vrep4_helpers'], 'cwd': '/home/GTL/apaul/ros2_hw1/build/vrep4_helpers', 'env': OrderedDict([('USER', 'apaul'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/GTL/apaul'), ('CYCLONEDDS_URI', '/cs-share/pradalier/gtlpc_cyclonedds.xml'), ('OLDPWD', '/home/GTL/apaul/ros2_hw1/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2469'), ('SYSTEMD_EXEC_PID', '2882'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/37726/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4378'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'apaul'), ('JOURNAL_STREAM', '8:31672'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'apaul'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/gtlpc106.georgiatech-metz.fr:@/tmp/.ICE-unix/2632,unix/gtlpc106.georgiatech-metz.fr:/tmp/.ICE-unix/2632'), ('INVOCATION_ID', '3dc4de6aafe04c5682e503f4a0989816'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/37726'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/37726/gdm/Xauthority'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/37726/keyring/ssh'), ('ROS_DOMAIN_ID', '56'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:51e16036-5b61-4a91-8086-4d008d9b4654'), ('KRB5CCNAME', 'FILE:/tmp/krb5cc_37726'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/37726/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/GTL/apaul/ros2_hw1/build/vrep4_helpers'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.677070] (joy_pack) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.677558] (joy_pack) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/joy_pack/lib/joy_pack/joy_node\n'}
+[0.678401] (joy_pack) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/ament_index/resource_index/package_run_dependencies/joy_pack\n'}
+[0.678606] (joy_pack) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/ament_index/resource_index/parent_prefix_path/joy_pack\n'}
+[0.678871] (joy_pack) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/environment/ament_prefix_path.sh\n'}
+[0.679513] (joy_pack) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/environment/ament_prefix_path.dsv\n'}
+[0.679745] (joy_pack) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/environment/path.sh\n'}
+[0.680048] (joy_pack) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/environment/path.dsv\n'}
+[0.680378] (joy_pack) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/local_setup.bash\n'}
+[0.681012] (joy_pack) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/local_setup.sh\n'}
+[0.681285] (joy_pack) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/local_setup.zsh\n'}
+[0.681537] (joy_pack) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/local_setup.dsv\n'}
+[0.682088] (joy_pack) StdoutLine: {'line': b'-- Installing: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/package.dsv\n'}
+[0.682302] (vrep4_helpers) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.682598] (vrep4_helpers) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/vrep4_helpers/lib/vrep4_helpers/image_flip\n'}
+[0.684121] (vrep4_helpers) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/vrep4_helpers/lib/vrep4_helpers/clock_repeat\n'}
+[0.685279] (vrep4_helpers) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers\n'}
+[0.685973] (vrep4_helpers) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/kinect_pc.launch.py\n'}
+[0.686080] (joy_pack) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/ament_index/resource_index/packages/joy_pack\n'}
+[0.686247] (vrep4_helpers) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/kinect_pc_min.launch.py\n'}
+[0.686310] (joy_pack) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/cmake/joy_packConfig.cmake\n'}
+[0.686573] (vrep4_helpers) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/__pycache__\n'}
+[0.686669] (joy_pack) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/cmake/joy_packConfig-version.cmake\n'}
+[0.686843] (joy_pack) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/package.xml\n'}
+[0.687327] (vrep4_helpers) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/__pycache__/kinect_pc_min.launch.cpython-310.pyc\n'}
+[0.687645] (vrep4_helpers) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/vrep4_helpers/share/ament_index/resource_index/package_run_dependencies/vrep4_helpers\n'}
+[0.688203] (vrep4_helpers) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/vrep4_helpers/share/ament_index/resource_index/parent_prefix_path/vrep4_helpers\n'}
+[0.688482] (vrep4_helpers) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/environment/ament_prefix_path.sh\n'}
+[0.688807] (vrep4_helpers) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/environment/ament_prefix_path.dsv\n'}
+[0.689072] (vrep4_helpers) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/environment/path.sh\n'}
+[0.689591] (joy_pack) CommandEnded: {'returncode': 0}
+[0.690299] (vrep4_helpers) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/environment/path.dsv\n'}
+[0.690391] (vrep4_helpers) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/local_setup.bash\n'}
+[0.690527] (vrep4_helpers) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/local_setup.sh\n'}
+[0.690757] (vrep4_helpers) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/local_setup.zsh\n'}
+[0.690993] (vrep4_helpers) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/local_setup.dsv\n'}
+[0.691378] (vrep4_helpers) StdoutLine: {'line': b'-- Installing: /home/GTL/apaul/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/package.dsv\n'}
+[0.696433] (vrep4_helpers) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/vrep4_helpers/share/ament_index/resource_index/packages/vrep4_helpers\n'}
+[0.696646] (vrep4_helpers) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/cmake/vrep4_helpersConfig.cmake\n'}
+[0.697123] (vrep4_helpers) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/cmake/vrep4_helpersConfig-version.cmake\n'}
+[0.697369] (vrep4_helpers) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/package.xml\n'}
+[0.699712] (-) TimerEvent: {}
+[0.719855] (vrep4_helpers) CommandEnded: {'returncode': 0}
+[0.764119] (joy_pack) JobEnded: {'identifier': 'joy_pack', 'rc': 0}
+[0.785215] (vrep4_helpers) JobEnded: {'identifier': 'vrep4_helpers', 'rc': 0}
+[0.799817] (-) TimerEvent: {}
+[0.900098] (-) TimerEvent: {}
+[0.951713] (face_detect_base) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/face_detect_base', 'build', '--build-base', '/home/GTL/apaul/ros2_hw1/build/face_detect_base/build', 'install', '--record', '/home/GTL/apaul/ros2_hw1/build/face_detect_base/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/GTL/apaul/ros2_hw1/src/face_detect_base', 'env': {'USER': 'apaul', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/GTL/apaul', 'CYCLONEDDS_URI': '/cs-share/pradalier/gtlpc_cyclonedds.xml', 'OLDPWD': '/home/GTL/apaul/ros2_hw1/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2469', 'SYSTEMD_EXEC_PID': '2882', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/37726/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '4378', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'apaul', 'JOURNAL_STREAM': '8:31672', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'apaul', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/gtlpc106.georgiatech-metz.fr:@/tmp/.ICE-unix/2632,unix/gtlpc106.georgiatech-metz.fr:/tmp/.ICE-unix/2632', 'INVOCATION_ID': '3dc4de6aafe04c5682e503f4a0989816', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/37726', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/37726/gdm/Xauthority', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/37726/keyring/ssh', 'ROS_DOMAIN_ID': '56', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:51e16036-5b61-4a91-8086-4d008d9b4654', 'KRB5CCNAME': 'FILE:/tmp/krb5cc_37726', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'GPG_AGENT_INFO': '/run/user/37726/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/GTL/apaul/ros2_hw1/build/face_detect_base', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/GTL/apaul/ros2_hw1/build/face_detect_base/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/GTL/apaul/ros2_hw1/install/face_detect_base/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[1.000188] (-) TimerEvent: {}
+[1.100410] (-) TimerEvent: {}
+[1.140098] (face_detect_base) StdoutLine: {'line': b'running egg_info\n'}
+[1.140838] (face_detect_base) StdoutLine: {'line': b'writing ../../build/face_detect_base/face_detect_base.egg-info/PKG-INFO\n'}
+[1.141725] (face_detect_base) StdoutLine: {'line': b'writing dependency_links to ../../build/face_detect_base/face_detect_base.egg-info/dependency_links.txt\n'}
+[1.142864] (face_detect_base) StdoutLine: {'line': b'writing entry points to ../../build/face_detect_base/face_detect_base.egg-info/entry_points.txt\n'}
+[1.143767] (face_detect_base) StdoutLine: {'line': b'writing requirements to ../../build/face_detect_base/face_detect_base.egg-info/requires.txt\n'}
+[1.144398] (face_detect_base) StdoutLine: {'line': b'writing top-level names to ../../build/face_detect_base/face_detect_base.egg-info/top_level.txt\n'}
+[1.147461] (face_detect_base) StdoutLine: {'line': b"reading manifest file '../../build/face_detect_base/face_detect_base.egg-info/SOURCES.txt'\n"}
+[1.149301] (face_detect_base) StdoutLine: {'line': b"writing manifest file '../../build/face_detect_base/face_detect_base.egg-info/SOURCES.txt'\n"}
+[1.150777] (face_detect_base) StdoutLine: {'line': b'running build\n'}
+[1.150834] (face_detect_base) StdoutLine: {'line': b'running build_py\n'}
+[1.151754] (face_detect_base) StdoutLine: {'line': b'running install\n'}
+[1.151956] (face_detect_base) StdoutLine: {'line': b'running install_lib\n'}
+[1.153685] (face_detect_base) StdoutLine: {'line': b'running install_data\n'}
+[1.153769] (face_detect_base) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.154924] (face_detect_base) StdoutLine: {'line': b"removing '/home/GTL/apaul/ros2_hw1/install/face_detect_base/lib/python3.10/site-packages/face_detect_base-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[1.200531] (-) TimerEvent: {}
+[1.300752] (-) TimerEvent: {}
+[1.326617] (face_detect_base) StdoutLine: {'line': b'Copying ../../build/face_detect_base/face_detect_base.egg-info to /home/GTL/apaul/ros2_hw1/install/face_detect_base/lib/python3.10/site-packages/face_detect_base-0.0.0-py3.10.egg-info\n'}
+[1.347336] (face_detect_base) StdoutLine: {'line': b'running install_scripts\n'}
+[1.362648] (face_detect_base) StdoutLine: {'line': b'Installing face_detect_node script to /home/GTL/apaul/ros2_hw1/install/face_detect_base/lib/face_detect_base\n'}
+[1.364470] (face_detect_base) StdoutLine: {'line': b"writing list of installed files to '/home/GTL/apaul/ros2_hw1/build/face_detect_base/install.log'\n"}
+[1.386143] (face_detect_base) CommandEnded: {'returncode': 0}
+[1.400989] (-) TimerEvent: {}
+[1.408804] (face_detect_base) JobEnded: {'identifier': 'face_detect_base', 'rc': 0}
+[1.501074] (-) TimerEvent: {}
+[1.524102] (vrep_ros_teleop) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/vrep_ros_teleop', 'build', '--build-base', '/home/GTL/apaul/ros2_hw1/build/vrep_ros_teleop/build', 'install', '--record', '/home/GTL/apaul/ros2_hw1/build/vrep_ros_teleop/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/GTL/apaul/ros2_hw1/src/vrep_ros_teleop', 'env': {'USER': 'apaul', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/GTL/apaul', 'CYCLONEDDS_URI': '/cs-share/pradalier/gtlpc_cyclonedds.xml', 'OLDPWD': '/home/GTL/apaul/ros2_hw1/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2469', 'SYSTEMD_EXEC_PID': '2882', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/37726/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '4378', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'apaul', 'JOURNAL_STREAM': '8:31672', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'apaul', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/gtlpc106.georgiatech-metz.fr:@/tmp/.ICE-unix/2632,unix/gtlpc106.georgiatech-metz.fr:/tmp/.ICE-unix/2632', 'INVOCATION_ID': '3dc4de6aafe04c5682e503f4a0989816', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/37726', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/37726/gdm/Xauthority', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/37726/keyring/ssh', 'ROS_DOMAIN_ID': '56', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:51e16036-5b61-4a91-8086-4d008d9b4654', 'KRB5CCNAME': 'FILE:/tmp/krb5cc_37726', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'GPG_AGENT_INFO': '/run/user/37726/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/GTL/apaul/ros2_hw1/build/vrep_ros_teleop', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/GTL/apaul/ros2_hw1/build/vrep_ros_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/GTL/apaul/ros2_hw1/install/vrep_ros_teleop/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[1.598891] (keyboard_teleop) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/keyboard_teleop', 'build', '--build-base', '/home/GTL/apaul/ros2_hw1/build/keyboard_teleop/build', 'install', '--record', '/home/GTL/apaul/ros2_hw1/build/keyboard_teleop/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/GTL/apaul/ros2_hw1/src/keyboard_teleop', 'env': {'USER': 'apaul', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/GTL/apaul', 'CYCLONEDDS_URI': '/cs-share/pradalier/gtlpc_cyclonedds.xml', 'OLDPWD': '/home/GTL/apaul/ros2_hw1/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2469', 'SYSTEMD_EXEC_PID': '2882', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/37726/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '4378', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'apaul', 'JOURNAL_STREAM': '8:31672', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'apaul', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/gtlpc106.georgiatech-metz.fr:@/tmp/.ICE-unix/2632,unix/gtlpc106.georgiatech-metz.fr:/tmp/.ICE-unix/2632', 'INVOCATION_ID': '3dc4de6aafe04c5682e503f4a0989816', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/37726', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/37726/gdm/Xauthority', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/37726/keyring/ssh', 'ROS_DOMAIN_ID': '56', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:51e16036-5b61-4a91-8086-4d008d9b4654', 'KRB5CCNAME': 'FILE:/tmp/krb5cc_37726', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'GPG_AGENT_INFO': '/run/user/37726/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/GTL/apaul/ros2_hw1/build/keyboard_teleop', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/GTL/apaul/ros2_hw1/build/keyboard_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/GTL/apaul/ros2_hw1/install/keyboard_teleop/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[1.607350] (-) TimerEvent: {}
+[1.707536] (-) TimerEvent: {}
+[1.718680] (vrep_ros_teleop) StdoutLine: {'line': b'running egg_info\n'}
+[1.720099] (vrep_ros_teleop) StdoutLine: {'line': b'writing ../../build/vrep_ros_teleop/vrep_ros_teleop.egg-info/PKG-INFO\n'}
+[1.721378] (vrep_ros_teleop) StdoutLine: {'line': b'writing dependency_links to ../../build/vrep_ros_teleop/vrep_ros_teleop.egg-info/dependency_links.txt\n'}
+[1.722253] (vrep_ros_teleop) StdoutLine: {'line': b'writing entry points to ../../build/vrep_ros_teleop/vrep_ros_teleop.egg-info/entry_points.txt\n'}
+[1.723295] (vrep_ros_teleop) StdoutLine: {'line': b'writing requirements to ../../build/vrep_ros_teleop/vrep_ros_teleop.egg-info/requires.txt\n'}
+[1.724339] (vrep_ros_teleop) StdoutLine: {'line': b'writing top-level names to ../../build/vrep_ros_teleop/vrep_ros_teleop.egg-info/top_level.txt\n'}
+[1.728936] (vrep_ros_teleop) StdoutLine: {'line': b"reading manifest file '../../build/vrep_ros_teleop/vrep_ros_teleop.egg-info/SOURCES.txt'\n"}
+[1.731272] (vrep_ros_teleop) StdoutLine: {'line': b"writing manifest file '../../build/vrep_ros_teleop/vrep_ros_teleop.egg-info/SOURCES.txt'\n"}
+[1.732335] (vrep_ros_teleop) StdoutLine: {'line': b'running build\n'}
+[1.732384] (vrep_ros_teleop) StdoutLine: {'line': b'running build_py\n'}
+[1.733365] (vrep_ros_teleop) StdoutLine: {'line': b'running install\n'}
+[1.733705] (vrep_ros_teleop) StdoutLine: {'line': b'running install_lib\n'}
+[1.735452] (vrep_ros_teleop) StdoutLine: {'line': b'running install_data\n'}
+[1.735622] (vrep_ros_teleop) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.737337] (vrep_ros_teleop) StdoutLine: {'line': b"removing '/home/GTL/apaul/ros2_hw1/install/vrep_ros_teleop/lib/python3.10/site-packages/vrep_ros_teleop-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[1.741272] (vrep_ros_teleop) StdoutLine: {'line': b'Copying ../../build/vrep_ros_teleop/vrep_ros_teleop.egg-info to /home/GTL/apaul/ros2_hw1/install/vrep_ros_teleop/lib/python3.10/site-packages/vrep_ros_teleop-0.0.0-py3.10.egg-info\n'}
+[1.764338] (vrep_ros_teleop) StdoutLine: {'line': b'running install_scripts\n'}
+[1.779621] (vrep_ros_teleop) StdoutLine: {'line': b'Installing teleop_mux_node script to /home/GTL/apaul/ros2_hw1/install/vrep_ros_teleop/lib/vrep_ros_teleop\n'}
+[1.781377] (vrep_ros_teleop) StdoutLine: {'line': b'Installing teleop_node script to /home/GTL/apaul/ros2_hw1/install/vrep_ros_teleop/lib/vrep_ros_teleop\n'}
+[1.783595] (vrep_ros_teleop) StdoutLine: {'line': b"writing list of installed files to '/home/GTL/apaul/ros2_hw1/build/vrep_ros_teleop/install.log'\n"}
+[1.788675] (keyboard_teleop) StdoutLine: {'line': b'running egg_info\n'}
+[1.789540] (keyboard_teleop) StdoutLine: {'line': b'writing ../../build/keyboard_teleop/keyboard_teleop.egg-info/PKG-INFO\n'}
+[1.790714] (keyboard_teleop) StdoutLine: {'line': b'writing dependency_links to ../../build/keyboard_teleop/keyboard_teleop.egg-info/dependency_links.txt\n'}
+[1.791428] (keyboard_teleop) StdoutLine: {'line': b'writing entry points to ../../build/keyboard_teleop/keyboard_teleop.egg-info/entry_points.txt\n'}
+[1.792427] (keyboard_teleop) StdoutLine: {'line': b'writing requirements to ../../build/keyboard_teleop/keyboard_teleop.egg-info/requires.txt\n'}
+[1.793609] (keyboard_teleop) StdoutLine: {'line': b'writing top-level names to ../../build/keyboard_teleop/keyboard_teleop.egg-info/top_level.txt\n'}
+[1.797212] (keyboard_teleop) StdoutLine: {'line': b"reading manifest file '../../build/keyboard_teleop/keyboard_teleop.egg-info/SOURCES.txt'\n"}
+[1.798784] (keyboard_teleop) StdoutLine: {'line': b"writing manifest file '../../build/keyboard_teleop/keyboard_teleop.egg-info/SOURCES.txt'\n"}
+[1.799924] (keyboard_teleop) StdoutLine: {'line': b'running build\n'}
+[1.800014] (keyboard_teleop) StdoutLine: {'line': b'running build_py\n'}
+[1.801132] (keyboard_teleop) StdoutLine: {'line': b'running install\n'}
+[1.801371] (keyboard_teleop) StdoutLine: {'line': b'running install_lib\n'}
+[1.803197] (keyboard_teleop) StdoutLine: {'line': b'running install_data\n'}
+[1.803300] (keyboard_teleop) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.804572] (keyboard_teleop) StdoutLine: {'line': b"removing '/home/GTL/apaul/ros2_hw1/install/keyboard_teleop/lib/python3.10/site-packages/keyboard_teleop-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[1.807624] (-) TimerEvent: {}
+[1.808472] (keyboard_teleop) StdoutLine: {'line': b'Copying ../../build/keyboard_teleop/keyboard_teleop.egg-info to /home/GTL/apaul/ros2_hw1/install/keyboard_teleop/lib/python3.10/site-packages/keyboard_teleop-0.0.0-py3.10.egg-info\n'}
+[1.812442] (vrep_ros_teleop) CommandEnded: {'returncode': 0}
+[1.828862] (keyboard_teleop) StdoutLine: {'line': b'running install_scripts\n'}
+[1.834351] (vrep_ros_teleop) JobEnded: {'identifier': 'vrep_ros_teleop', 'rc': 0}
+[1.843326] (keyboard_teleop) StdoutLine: {'line': b'Installing keyboard_joystick_node script to /home/GTL/apaul/ros2_hw1/install/keyboard_teleop/lib/keyboard_teleop\n'}
+[1.845412] (keyboard_teleop) StdoutLine: {'line': b'Installing keyboard_teleop_node script to /home/GTL/apaul/ros2_hw1/install/keyboard_teleop/lib/keyboard_teleop\n'}
+[1.847540] (keyboard_teleop) StdoutLine: {'line': b"writing list of installed files to '/home/GTL/apaul/ros2_hw1/build/keyboard_teleop/install.log'\n"}
+[1.867447] (keyboard_teleop) CommandEnded: {'returncode': 0}
+[1.890399] (keyboard_teleop) JobEnded: {'identifier': 'keyboard_teleop', 'rc': 0}
+[1.907764] (-) TimerEvent: {}
+[2.007952] (-) TimerEvent: {}
+[2.108176] (-) TimerEvent: {}
+[2.208389] (-) TimerEvent: {}
+[2.308627] (-) TimerEvent: {}
+[2.408852] (-) TimerEvent: {}
+[2.509078] (-) TimerEvent: {}
+[2.609326] (-) TimerEvent: {}
+[2.709589] (-) TimerEvent: {}
+[2.809813] (-) TimerEvent: {}
+[2.910074] (-) TimerEvent: {}
+[3.010324] (-) TimerEvent: {}
+[3.110663] (-) TimerEvent: {}
+[3.210914] (-) TimerEvent: {}
+[3.311133] (-) TimerEvent: {}
+[3.411379] (-) TimerEvent: {}
+[3.511614] (-) TimerEvent: {}
+[3.611846] (-) TimerEvent: {}
+[3.712099] (-) TimerEvent: {}
+[3.812321] (-) TimerEvent: {}
+[3.912535] (-) TimerEvent: {}
+[4.012763] (-) TimerEvent: {}
+[4.112977] (-) TimerEvent: {}
+[4.213234] (-) TimerEvent: {}
+[4.313467] (-) TimerEvent: {}
+[4.413704] (-) TimerEvent: {}
+[4.513944] (-) TimerEvent: {}
+[4.614178] (-) TimerEvent: {}
+[4.714404] (-) TimerEvent: {}
+[4.814628] (-) TimerEvent: {}
+[4.914871] (-) TimerEvent: {}
+[5.015112] (-) TimerEvent: {}
+[5.115347] (-) TimerEvent: {}
+[5.215585] (-) TimerEvent: {}
+[5.315814] (-) TimerEvent: {}
+[5.416049] (-) TimerEvent: {}
+[5.516261] (-) TimerEvent: {}
+[5.616499] (-) TimerEvent: {}
+[5.716738] (-) TimerEvent: {}
+[5.816971] (-) TimerEvent: {}
+[5.917188] (-) TimerEvent: {}
+[6.017436] (-) TimerEvent: {}
+[6.117678] (-) TimerEvent: {}
+[6.217910] (-) TimerEvent: {}
+[6.318134] (-) TimerEvent: {}
+[6.418373] (-) TimerEvent: {}
+[6.518614] (-) TimerEvent: {}
+[6.618892] (-) TimerEvent: {}
+[6.719118] (-) TimerEvent: {}
+[6.819354] (-) TimerEvent: {}
+[6.919593] (-) TimerEvent: {}
+[7.019829] (-) TimerEvent: {}
+[7.120053] (-) TimerEvent: {}
+[7.220270] (-) TimerEvent: {}
+[7.320503] (-) TimerEvent: {}
+[7.420741] (-) TimerEvent: {}
+[7.520958] (-) TimerEvent: {}
+[7.621174] (-) TimerEvent: {}
+[7.721406] (-) TimerEvent: {}
+[7.821633] (-) TimerEvent: {}
+[7.921864] (-) TimerEvent: {}
+[8.022074] (-) TimerEvent: {}
+[8.122286] (-) TimerEvent: {}
+[8.222509] (-) TimerEvent: {}
+[8.322721] (-) TimerEvent: {}
+[8.422951] (-) TimerEvent: {}
+[8.523195] (-) TimerEvent: {}
+[8.623432] (-) TimerEvent: {}
+[8.723659] (-) TimerEvent: {}
+[8.823895] (-) TimerEvent: {}
+[8.924125] (-) TimerEvent: {}
+[9.024338] (-) TimerEvent: {}
+[9.124555] (-) TimerEvent: {}
+[9.224787] (-) TimerEvent: {}
+[9.325004] (-) TimerEvent: {}
+[9.425224] (-) TimerEvent: {}
+[9.525456] (-) TimerEvent: {}
+[9.625692] (-) TimerEvent: {}
+[9.725932] (-) TimerEvent: {}
+[9.826193] (-) TimerEvent: {}
+[9.926436] (-) TimerEvent: {}
+[10.026665] (-) TimerEvent: {}
+[10.126922] (-) TimerEvent: {}
+[10.227169] (-) TimerEvent: {}
+[10.327393] (-) TimerEvent: {}
+[10.427632] (-) TimerEvent: {}
+[10.527916] (-) TimerEvent: {}
+[10.628149] (-) TimerEvent: {}
+[10.728376] (-) TimerEvent: {}
+[10.828621] (-) TimerEvent: {}
+[10.928860] (-) TimerEvent: {}
+[11.029125] (-) TimerEvent: {}
+[11.129400] (-) TimerEvent: {}
+[11.229677] (-) TimerEvent: {}
+[11.329916] (-) TimerEvent: {}
+[11.430157] (-) TimerEvent: {}
+[11.530378] (-) TimerEvent: {}
+[11.630600] (-) TimerEvent: {}
+[11.730831] (-) TimerEvent: {}
+[11.831052] (-) TimerEvent: {}
+[11.931270] (-) TimerEvent: {}
+[12.031499] (-) TimerEvent: {}
+[12.131734] (-) TimerEvent: {}
+[12.231951] (-) TimerEvent: {}
+[12.332162] (-) TimerEvent: {}
+[12.432373] (-) TimerEvent: {}
+[12.532593] (-) TimerEvent: {}
+[12.632821] (-) TimerEvent: {}
+[12.733042] (-) TimerEvent: {}
+[12.833274] (-) TimerEvent: {}
+[12.933519] (-) TimerEvent: {}
+[13.033768] (-) TimerEvent: {}
+[13.134036] (-) TimerEvent: {}
+[13.234259] (-) TimerEvent: {}
+[13.334474] (-) TimerEvent: {}
+[13.434693] (-) TimerEvent: {}
+[13.534907] (-) TimerEvent: {}
+[13.635131] (-) TimerEvent: {}
+[13.735358] (-) TimerEvent: {}
+[13.835581] (-) TimerEvent: {}
+[13.935810] (-) TimerEvent: {}
+[14.036041] (-) TimerEvent: {}
+[14.136286] (-) TimerEvent: {}
+[14.236548] (-) TimerEvent: {}
+[14.336795] (-) TimerEvent: {}
+[14.437034] (-) TimerEvent: {}
+[14.564625] (-) TimerEvent: {}
+[14.664844] (-) TimerEvent: {}
+[14.765092] (-) TimerEvent: {}
+[14.865355] (-) TimerEvent: {}
+[14.965594] (-) TimerEvent: {}
+[15.065862] (-) TimerEvent: {}
+[15.166087] (-) TimerEvent: {}
+[15.266341] (-) TimerEvent: {}
+[15.366587] (-) TimerEvent: {}
+[15.466846] (-) TimerEvent: {}
+[15.567065] (-) TimerEvent: {}
+[15.667301] (-) TimerEvent: {}
+[15.767532] (-) TimerEvent: {}
+[15.867767] (-) TimerEvent: {}
+[15.967987] (-) TimerEvent: {}
+[16.068199] (-) TimerEvent: {}
+[16.168432] (-) TimerEvent: {}
+[16.268644] (-) TimerEvent: {}
+[16.368858] (-) TimerEvent: {}
+[16.469101] (-) TimerEvent: {}
+[16.569328] (-) TimerEvent: {}
+[16.669557] (-) TimerEvent: {}
+[16.769780] (-) TimerEvent: {}
+[16.870061] (-) TimerEvent: {}
+[16.970295] (-) TimerEvent: {}
+[17.070561] (-) TimerEvent: {}
+[17.170795] (-) TimerEvent: {}
+[17.271082] (-) TimerEvent: {}
+[17.371320] (-) TimerEvent: {}
+[17.471556] (-) TimerEvent: {}
+[17.571817] (-) TimerEvent: {}
+[17.672091] (-) TimerEvent: {}
+[17.772351] (-) TimerEvent: {}
+[17.872588] (-) TimerEvent: {}
+[17.972869] (-) TimerEvent: {}
+[18.073130] (-) TimerEvent: {}
+[18.173363] (-) TimerEvent: {}
+[18.273600] (-) TimerEvent: {}
+[18.373847] (-) TimerEvent: {}
+[18.474079] (-) TimerEvent: {}
+[18.574315] (-) TimerEvent: {}
+[18.674546] (-) TimerEvent: {}
+[18.774771] (-) TimerEvent: {}
+[18.874998] (-) TimerEvent: {}
+[18.975224] (-) TimerEvent: {}
+[19.075458] (-) TimerEvent: {}
+[19.175695] (-) TimerEvent: {}
+[19.275961] (-) TimerEvent: {}
+[19.376257] (-) TimerEvent: {}
+[19.476523] (-) TimerEvent: {}
+[19.576813] (-) TimerEvent: {}
+[19.677077] (-) TimerEvent: {}
+[19.777304] (-) TimerEvent: {}
+[19.833368] (collision_avoidance_base) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable collision_avoidance_base\x1b[0m\n'}
+[19.877398] (-) TimerEvent: {}
+[19.977637] (-) TimerEvent: {}
+[20.077883] (-) TimerEvent: {}
+[20.178094] (-) TimerEvent: {}
+[20.278304] (-) TimerEvent: {}
+[20.378522] (-) TimerEvent: {}
+[20.478740] (-) TimerEvent: {}
+[20.578964] (-) TimerEvent: {}
+[20.679174] (-) TimerEvent: {}
+[20.779402] (-) TimerEvent: {}
+[20.879659] (-) TimerEvent: {}
+[20.979914] (-) TimerEvent: {}
+[20.984117] (collision_avoidance_base) StdoutLine: {'line': b'[100%] Built target collision_avoidance_base\n'}
+[20.992841] (collision_avoidance_base) CommandEnded: {'returncode': 0}
+[21.008738] (collision_avoidance_base) JobProgress: {'identifier': 'collision_avoidance_base', 'progress': 'install'}
+[21.009263] (collision_avoidance_base) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/GTL/apaul/ros2_hw1/build/collision_avoidance_base'], 'cwd': '/home/GTL/apaul/ros2_hw1/build/collision_avoidance_base', 'env': OrderedDict([('USER', 'apaul'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/GTL/apaul'), ('CYCLONEDDS_URI', '/cs-share/pradalier/gtlpc_cyclonedds.xml'), ('OLDPWD', '/home/GTL/apaul/ros2_hw1/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2469'), ('SYSTEMD_EXEC_PID', '2882'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/37726/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4378'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'apaul'), ('JOURNAL_STREAM', '8:31672'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'apaul'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/gtlpc106.georgiatech-metz.fr:@/tmp/.ICE-unix/2632,unix/gtlpc106.georgiatech-metz.fr:/tmp/.ICE-unix/2632'), ('INVOCATION_ID', '3dc4de6aafe04c5682e503f4a0989816'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/37726'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/37726/gdm/Xauthority'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/37726/keyring/ssh'), ('ROS_DOMAIN_ID', '56'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:51e16036-5b61-4a91-8086-4d008d9b4654'), ('KRB5CCNAME', 'FILE:/tmp/krb5cc_37726'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/37726/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/GTL/apaul/ros2_hw1/build/collision_avoidance_base'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[21.014143] (collision_avoidance_base) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[21.014774] (collision_avoidance_base) StdoutLine: {'line': b'-- Installing: /home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/lib/collision_avoidance_base/collision_avoidance_base\n'}
+[21.080000] (-) TimerEvent: {}
+[21.180219] (-) TimerEvent: {}
+[21.256563] (collision_avoidance_base) StdoutLine: {'line': b'-- Set runtime path of "/home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/lib/collision_avoidance_base/collision_avoidance_base" to ""\n'}
+[21.257150] (collision_avoidance_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base\n'}
+[21.257845] (collision_avoidance_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/ca_auto.launch.py\n'}
+[21.258787] (collision_avoidance_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/ca.launch.py\n'}
+[21.259035] (collision_avoidance_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/__pycache__\n'}
+[21.260685] (collision_avoidance_base) StdoutLine: {'line': b'-- Installing: /home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/__pycache__/ca.launch.cpython-310.pyc\n'}
+[21.266655] (collision_avoidance_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/ament_index/resource_index/package_run_dependencies/collision_avoidance_base\n'}
+[21.266978] (collision_avoidance_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/ament_index/resource_index/parent_prefix_path/collision_avoidance_base\n'}
+[21.267280] (collision_avoidance_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/environment/ament_prefix_path.sh\n'}
+[21.267479] (collision_avoidance_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/environment/ament_prefix_path.dsv\n'}
+[21.268036] (collision_avoidance_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/environment/path.sh\n'}
+[21.268251] (collision_avoidance_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/environment/path.dsv\n'}
+[21.268543] (collision_avoidance_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/local_setup.bash\n'}
+[21.268758] (collision_avoidance_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/local_setup.sh\n'}
+[21.269387] (collision_avoidance_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/local_setup.zsh\n'}
+[21.269637] (collision_avoidance_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/local_setup.dsv\n'}
+[21.269938] (collision_avoidance_base) StdoutLine: {'line': b'-- Installing: /home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/package.dsv\n'}
+[21.275197] (collision_avoidance_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/ament_index/resource_index/packages/collision_avoidance_base\n'}
+[21.275418] (collision_avoidance_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/cmake/collision_avoidance_baseConfig.cmake\n'}
+[21.275634] (collision_avoidance_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/cmake/collision_avoidance_baseConfig-version.cmake\n'}
+[21.275964] (collision_avoidance_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/package.xml\n'}
+[21.278039] (collision_avoidance_base) CommandEnded: {'returncode': 0}
+[21.280275] (-) TimerEvent: {}
+[21.336028] (collision_avoidance_base) JobEnded: {'identifier': 'collision_avoidance_base', 'rc': 0}
+[21.337664] (-) EventReactorShutdown: {}

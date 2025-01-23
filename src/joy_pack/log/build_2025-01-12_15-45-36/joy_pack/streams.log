@@ -1,0 +1,10 @@
+[0.020s] Invoking command in '/home/GTL/apaul/ros2_hw1/src/joy_pack/build/joy_pack': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/src/joy_pack/build/joy_pack -- -j16 -l16
+[0.061s] [ 50%] [32mBuilding CXX object CMakeFiles/listener.dir/src/joy_function.cpp.o[0m
+[0.168s] [01m[K/home/GTL/apaul/ros2_hw1/src/joy_pack/src/joy_function.cpp:7:10:[m[K [01;31m[Kfatal error: [m[Ksensor_msgs/msg/joy.hpp: No such file or directory
+[0.168s]     7 | #include [01;31m[K"sensor_msgs/msg/joy.hpp"[m[K
+[0.168s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.168s] compilation terminated.
+[0.170s] gmake[2]: *** [CMakeFiles/listener.dir/build.make:76: CMakeFiles/listener.dir/src/joy_function.cpp.o] Error 1
+[0.170s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/listener.dir/all] Error 2
+[0.170s] gmake: *** [Makefile:146: all] Error 2
+[0.171s] Invoked command in '/home/GTL/apaul/ros2_hw1/src/joy_pack/build/joy_pack' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/src/joy_pack/build/joy_pack -- -j16 -l16

@@ -1,0 +1,122 @@
+[0.000000] (-) TimerEvent: {}
+[0.000093] (joy_pack) JobQueued: {'identifier': 'joy_pack', 'dependencies': OrderedDict()}
+[0.000111] (joy_pack) JobStarted: {'identifier': 'joy_pack'}
+[0.009556] (joy_pack) JobProgress: {'identifier': 'joy_pack', 'progress': 'cmake'}
+[0.012437] (joy_pack) JobProgress: {'identifier': 'joy_pack', 'progress': 'build'}
+[0.013213] (joy_pack) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/GTL/apaul/ros2_hw1/build/joy_pack', '--', '-j16', '-l16'], 'cwd': '/home/GTL/apaul/ros2_hw1/build/joy_pack', 'env': OrderedDict([('USER', 'apaul'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/GTL/apaul'), ('CYCLONEDDS_URI', '/cs-share/pradalier/gtlpc_cyclonedds.xml'), ('OLDPWD', '/home/GTL/apaul/ros2_hw1/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '475083'), ('SYSTEMD_EXEC_PID', '475526'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/37726/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '476146'), ('COLCON_PREFIX_PATH', '/home/GTL/apaul/ros2_hw1/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'apaul'), ('JOURNAL_STREAM', '8:1046791'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'apaul'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/gtlpc106.georgiatech-metz.fr:@/tmp/.ICE-unix/475331,unix/gtlpc106.georgiatech-metz.fr:/tmp/.ICE-unix/475331'), ('INVOCATION_ID', '3fdb088795ea40f0a91da07674d3b41e'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/37726'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/37726/gdm/Xauthority'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/37726/keyring/ssh'), ('ROS_DOMAIN_ID', '56'), ('AMENT_PREFIX_PATH', '/home/GTL/apaul/ros2_hw1/install/joy_pack:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:7fe1fe2d-3206-4189-bbf7-91ea4dee5b83'), ('KRB5CCNAME', 'FILE:/tmp/krb5cc_37726'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/37726/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/GTL/apaul/ros2_hw1/build/joy_pack'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/GTL/apaul/ros2_hw1/install/joy_pack:/opt/ros/humble')]), 'shell': False}
+[0.039018] (joy_pack) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.098436] (-) TimerEvent: {}
+[0.119756] (joy_pack) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.137547] (joy_pack) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.138867] (joy_pack) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.142163] (joy_pack) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.147597] (joy_pack) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.154617] (joy_pack) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.172360] (joy_pack) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.173112] (joy_pack) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[0.182943] (joy_pack) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[0.198529] (-) TimerEvent: {}
+[0.210115] (joy_pack) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.227583] (joy_pack) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.298660] (-) TimerEvent: {}
+[0.398895] (-) TimerEvent: {}
+[0.499119] (-) TimerEvent: {}
+[0.512436] (joy_pack) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.512632] (joy_pack) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[0.512688] (joy_pack) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.533300] (joy_pack) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.572446] (joy_pack) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.592065] (joy_pack) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[0.599213] (-) TimerEvent: {}
+[0.699421] (-) TimerEvent: {}
+[0.750392] (joy_pack) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.750493] (joy_pack) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.770834] (joy_pack) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.777683] (joy_pack) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.799478] (-) TimerEvent: {}
+[0.842423] (joy_pack) StdoutLine: {'line': b'-- Generating done\n'}
+[0.881349] (joy_pack) StdoutLine: {'line': b'-- Build files have been written to: /home/GTL/apaul/ros2_hw1/build/joy_pack\n'}
+[0.899607] (-) TimerEvent: {}
+[0.903837] (joy_pack) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target joy_node\x1b[0m\n'}
+[0.942829] (joy_pack) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/joy_node.dir/src/joy_function.cpp.o\x1b[0m\n'}
+[0.999735] (-) TimerEvent: {}
+[1.099999] (-) TimerEvent: {}
+[1.200254] (-) TimerEvent: {}
+[1.300507] (-) TimerEvent: {}
+[1.400761] (-) TimerEvent: {}
+[1.501016] (-) TimerEvent: {}
+[1.601280] (-) TimerEvent: {}
+[1.701544] (-) TimerEvent: {}
+[1.801803] (-) TimerEvent: {}
+[1.902062] (-) TimerEvent: {}
+[2.002327] (-) TimerEvent: {}
+[2.102579] (-) TimerEvent: {}
+[2.202841] (-) TimerEvent: {}
+[2.303131] (-) TimerEvent: {}
+[2.403383] (-) TimerEvent: {}
+[2.503715] (-) TimerEvent: {}
+[2.603970] (-) TimerEvent: {}
+[2.704227] (-) TimerEvent: {}
+[2.804489] (-) TimerEvent: {}
+[2.904750] (-) TimerEvent: {}
+[3.005009] (-) TimerEvent: {}
+[3.105264] (-) TimerEvent: {}
+[3.205519] (-) TimerEvent: {}
+[3.305783] (-) TimerEvent: {}
+[3.406041] (-) TimerEvent: {}
+[3.506298] (-) TimerEvent: {}
+[3.606552] (-) TimerEvent: {}
+[3.706811] (-) TimerEvent: {}
+[3.807103] (-) TimerEvent: {}
+[3.907364] (-) TimerEvent: {}
+[4.007611] (-) TimerEvent: {}
+[4.107859] (-) TimerEvent: {}
+[4.208106] (-) TimerEvent: {}
+[4.308355] (-) TimerEvent: {}
+[4.408596] (-) TimerEvent: {}
+[4.508842] (-) TimerEvent: {}
+[4.609097] (-) TimerEvent: {}
+[4.709345] (-) TimerEvent: {}
+[4.809605] (-) TimerEvent: {}
+[4.909851] (-) TimerEvent: {}
+[5.010093] (-) TimerEvent: {}
+[5.110343] (-) TimerEvent: {}
+[5.210597] (-) TimerEvent: {}
+[5.310845] (-) TimerEvent: {}
+[5.411125] (-) TimerEvent: {}
+[5.511390] (-) TimerEvent: {}
+[5.611653] (-) TimerEvent: {}
+[5.711919] (-) TimerEvent: {}
+[5.812187] (-) TimerEvent: {}
+[5.912460] (-) TimerEvent: {}
+[5.968554] (joy_pack) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable joy_node\x1b[0m\n'}
+[6.012594] (-) TimerEvent: {}
+[6.112859] (-) TimerEvent: {}
+[6.213076] (-) TimerEvent: {}
+[6.231706] (joy_pack) StdoutLine: {'line': b'[100%] Built target joy_node\n'}
+[6.265714] (joy_pack) CommandEnded: {'returncode': 0}
+[6.281312] (joy_pack) JobProgress: {'identifier': 'joy_pack', 'progress': 'install'}
+[6.285888] (joy_pack) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/GTL/apaul/ros2_hw1/build/joy_pack'], 'cwd': '/home/GTL/apaul/ros2_hw1/build/joy_pack', 'env': OrderedDict([('USER', 'apaul'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/GTL/apaul'), ('CYCLONEDDS_URI', '/cs-share/pradalier/gtlpc_cyclonedds.xml'), ('OLDPWD', '/home/GTL/apaul/ros2_hw1/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '475083'), ('SYSTEMD_EXEC_PID', '475526'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/37726/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '476146'), ('COLCON_PREFIX_PATH', '/home/GTL/apaul/ros2_hw1/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'apaul'), ('JOURNAL_STREAM', '8:1046791'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'apaul'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/gtlpc106.georgiatech-metz.fr:@/tmp/.ICE-unix/475331,unix/gtlpc106.georgiatech-metz.fr:/tmp/.ICE-unix/475331'), ('INVOCATION_ID', '3fdb088795ea40f0a91da07674d3b41e'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/37726'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/37726/gdm/Xauthority'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/37726/keyring/ssh'), ('ROS_DOMAIN_ID', '56'), ('AMENT_PREFIX_PATH', '/home/GTL/apaul/ros2_hw1/install/joy_pack:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:7fe1fe2d-3206-4189-bbf7-91ea4dee5b83'), ('KRB5CCNAME', 'FILE:/tmp/krb5cc_37726'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/37726/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/GTL/apaul/ros2_hw1/build/joy_pack'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/GTL/apaul/ros2_hw1/install/joy_pack:/opt/ros/humble')]), 'shell': False}
+[6.290975] (joy_pack) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.292260] (joy_pack) StdoutLine: {'line': b'-- Installing: /home/GTL/apaul/ros2_hw1/install/joy_pack/lib/joy_pack/joy_node\n'}
+[6.313151] (-) TimerEvent: {}
+[6.329215] (joy_pack) StdoutLine: {'line': b'-- Set runtime path of "/home/GTL/apaul/ros2_hw1/install/joy_pack/lib/joy_pack/joy_node" to ""\n'}
+[6.329796] (joy_pack) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/ament_index/resource_index/package_run_dependencies/joy_pack\n'}
+[6.330818] (joy_pack) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/ament_index/resource_index/parent_prefix_path/joy_pack\n'}
+[6.331834] (joy_pack) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/environment/ament_prefix_path.sh\n'}
+[6.332274] (joy_pack) StdoutLine: {'line': b'-- Installing: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/environment/ament_prefix_path.dsv\n'}
+[6.336847] (joy_pack) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/environment/path.sh\n'}
+[6.337466] (joy_pack) StdoutLine: {'line': b'-- Installing: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/environment/path.dsv\n'}
+[6.342437] (joy_pack) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/local_setup.bash\n'}
+[6.342811] (joy_pack) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/local_setup.sh\n'}
+[6.343466] (joy_pack) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/local_setup.zsh\n'}
+[6.344089] (joy_pack) StdoutLine: {'line': b'-- Installing: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/local_setup.dsv\n'}
+[6.348458] (joy_pack) StdoutLine: {'line': b'-- Installing: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/package.dsv\n'}
+[6.353292] (joy_pack) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/ament_index/resource_index/packages/joy_pack\n'}
+[6.353918] (joy_pack) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/cmake/joy_packConfig.cmake\n'}
+[6.354380] (joy_pack) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/cmake/joy_packConfig-version.cmake\n'}
+[6.354836] (joy_pack) StdoutLine: {'line': b'-- Installing: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/package.xml\n'}
+[6.361237] (joy_pack) CommandEnded: {'returncode': 0}
+[6.413215] (-) TimerEvent: {}
+[6.420258] (joy_pack) JobEnded: {'identifier': 'joy_pack', 'rc': 0}
+[6.421653] (-) EventReactorShutdown: {}

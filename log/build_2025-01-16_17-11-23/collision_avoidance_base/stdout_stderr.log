@@ -1,0 +1,12 @@
+[35m[1mConsolidate compiler generated dependencies of target collision_avoidance_base[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/collision_avoidance_base.dir/src/collision_avoidance.cpp.o[0m
+[01m[K/home/GTL/apaul/ros2_hw1/src/collision_avoidance_base/src/collision_avoidance.cpp:[m[K In member function ‘[01m[Kgeometry_msgs::msg::Twist CollisionAvoidance::findClosestAcceptableVelocity(const Twist&)[m[K’:
+[01m[K/home/GTL/apaul/ros2_hw1/src/collision_avoidance_base/src/collision_avoidance.cpp:101:26:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kunsigned int n[m[K’
+  101 |             unsigned int [01;31m[Kn[m[K = lastpc.size();
+      |                          [01;31m[K^[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/collision_avoidance_base/src/collision_avoidance.cpp:71:26:[m[K [01;36m[Knote: [m[K‘[01m[Kunsigned int n[m[K’ previously declared here
+   71 |             unsigned int [01;36m[Kn[m[K = lastpc.size();
+      |                          [01;36m[K^[m[K
+gmake[2]: *** [CMakeFiles/collision_avoidance_base.dir/build.make:76: CMakeFiles/collision_avoidance_base.dir/src/collision_avoidance.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/collision_avoidance_base.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,46 @@
+[01m[K/home/GTL/apaul/ros2_hw1/src/collision_avoidance_base/src/collision_avoidance.cpp:[m[K In member function ‘[01m[Kgeometry_msgs::msg::Twist CollisionAvoidance::findClosestAcceptableVelocity(const Twist&)[m[K’:
+[01m[K/home/GTL/apaul/ros2_hw1/src/collision_avoidance_base/src/collision_avoidance.cpp:71:42:[m[K [01;31m[Kerror: [m[K‘[01m[Klinear[m[K’ was not declared in this scope; did you mean ‘[01m[Klinkat[m[K’?
+   71 |             double velocity_Robot = sqrt([01;31m[Klinear[m[K.x *linear.x  + linear.y*linear.y);
+      |                                          [01;31m[K^~~~~~[m[K
+      |                                          [32m[Klinkat[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/collision_avoidance_base/src/collision_avoidance.cpp:72:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kx[m[K’ was not declared in this scope; did you mean ‘[01m[Kpcl::fields::x[m[K’?
+   72 |             double distance_Object = sqrt([01;31m[Kx[m[K*x  + y*y);
+      |                                           [01;31m[K^[m[K
+      |                                           [32m[Kpcl::fields::x[m[K
+In file included from [01m[K/usr/include/boost/preprocessor/tuple/elem.hpp:23[m[K,
+                 from [01m[K/usr/include/boost/preprocessor/arithmetic/add.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/mpl/aux_/preprocessor/def_params_tail.hpp:66[m[K,
+                 from [01m[K/usr/include/boost/mpl/aux_/na_spec.hpp:28[m[K,
+                 from [01m[K/usr/include/boost/mpl/not.hpp:20[m[K,
+                 from [01m[K/usr/include/boost/mpl/assert.hpp:17[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/point_struct_traits.h:40[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/type_traits.h:40[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/memory.h:46[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:41[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/point_types.h:354[m[K,
+                 from [01m[K/home/GTL/apaul/ros2_hw1/src/collision_avoidance_base/src/collision_avoidance.cpp:6[m[K:
+[01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:1941:1:[m[K [01;36m[Knote: [m[K‘[01m[Kpcl::fields::x[m[K’ declared here
+ 1941 | [01;36m[KPOINT_CLOUD_REGISTER_POINT_STRUCT[m[K (pcl::_PointXYZ,
+      | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/collision_avoidance_base/src/collision_avoidance.cpp:72:50:[m[K [01;31m[Kerror: [m[K‘[01m[Ky[m[K’ was not declared in this scope; did you mean ‘[01m[Kpcl::fields::y[m[K’?
+   72 |             double distance_Object = sqrt(x*x  + [01;31m[Ky[m[K*y);
+      |                                                  [01;31m[K^[m[K
+      |                                                  [32m[Kpcl::fields::y[m[K
+In file included from [01m[K/usr/include/boost/preprocessor/tuple/elem.hpp:23[m[K,
+                 from [01m[K/usr/include/boost/preprocessor/arithmetic/add.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/mpl/aux_/preprocessor/def_params_tail.hpp:66[m[K,
+                 from [01m[K/usr/include/boost/mpl/aux_/na_spec.hpp:28[m[K,
+                 from [01m[K/usr/include/boost/mpl/not.hpp:20[m[K,
+                 from [01m[K/usr/include/boost/mpl/assert.hpp:17[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/point_struct_traits.h:40[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/type_traits.h:40[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/memory.h:46[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:41[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/point_types.h:354[m[K,
+                 from [01m[K/home/GTL/apaul/ros2_hw1/src/collision_avoidance_base/src/collision_avoidance.cpp:6[m[K:
+[01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:1941:1:[m[K [01;36m[Knote: [m[K‘[01m[Kpcl::fields::y[m[K’ declared here
+ 1941 | [01;36m[KPOINT_CLOUD_REGISTER_POINT_STRUCT[m[K (pcl::_PointXYZ,
+      | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/collision_avoidance_base.dir/build.make:76: CMakeFiles/collision_avoidance_base.dir/src/collision_avoidance.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/collision_avoidance_base.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
