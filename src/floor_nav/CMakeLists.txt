@@ -105,6 +105,9 @@ TARGET_LINK_LIBRARIES(floornav_TaskWaitForROI ${ALL_LIBS})
 ADD_LIBRARY( floornav_TaskWander SHARED tasks/TaskWander.cpp)
 TARGET_LINK_LIBRARIES(floornav_TaskWander ${ALL_LIBS})
 
+ADD_LIBRARY( floornav_TaskWander_modif SHARED tasks/TaskWander_modif.cpp)
+TARGET_LINK_LIBRARIES(floornav_TaskWander_modif ${ALL_LIBS})
+
 ADD_LIBRARY( floornav_TaskAutoDock SHARED tasks/TaskAutoDock.cpp)
 TARGET_LINK_LIBRARIES(floornav_TaskAutoDock ${ALL_LIBS}
     ${kobuki_ros_interfaces_LIBRARIES})
