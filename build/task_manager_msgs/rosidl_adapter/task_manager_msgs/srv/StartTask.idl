@@ -1,0 +1,18 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from task_manager_msgs/srv/StartTask.srv
+// generated code does not contain a copyright notice
+
+#include "rcl_interfaces/msg/Parameter.idl"
+
+module task_manager_msgs {
+  module srv {
+    struct StartTask_Request {
+      string name;
+
+      sequence<rcl_interfaces::msg::Parameter> config;
+    };
+    struct StartTask_Response {
+      int32 id;
+    };
+  };
+};

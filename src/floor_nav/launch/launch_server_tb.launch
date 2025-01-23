@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<launch>
+    <arg name="merge_install" default="false"/>
+    <!-- normal install -->
+        <let name="lib_base" value="floor_nav/"/> 
+    <!-- merge install -->
+        <!-- <let name="lib_base" value=""/> -->
+    <!-- <include file="$(find-pkg-share floor_nav)/button_server.launch"/> -->
+    <!-- <include file="$(find-pkg-share vrep_ros_teleop)/teleop_mux.launch"/> -->
+    <node name="floor_tasks" pkg="floor_nav" exec="floornav_task_server" namespace="">
+	    <param name="lib_path" value="$(env HOME)/ros2_ws/install/$(var lib_base)lib/floor_nav"/>
+	    <param name="base_frame" value="base_link"/>
+	    <param name="reference_frame" value="map"/> <!-- odom or map -->
+	    <remap from="~/scan" to="/scan"/>
+	    <!-- remap from="~/cloud3d" to="/points"/-->
+    </node>
+</launch>

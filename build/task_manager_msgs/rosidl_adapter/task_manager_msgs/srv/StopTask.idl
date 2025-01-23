@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from task_manager_msgs/srv/StopTask.srv
+// generated code does not contain a copyright notice
+
+
+module task_manager_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "id = -1 kill the main task")
+    struct StopTask_Request {
+      int32 id;
+    };
+    @verbatim (language="comment", text=
+      "return the id of task idle")
+    struct StopTask_Response {
+      int32 id;
+    };
+  };
+};

@@ -1,0 +1,13 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from task_manager_msgs/msg/TaskConfig.msg
+// generated code does not contain a copyright notice
+
+#include "rcl_interfaces/msg/Parameter.idl"
+
+module task_manager_msgs {
+  module msg {
+    struct TaskConfig {
+      sequence<rcl_interfaces::msg::Parameter> plist;
+    };
+  };
+};

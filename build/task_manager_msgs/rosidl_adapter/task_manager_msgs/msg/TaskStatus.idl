@@ -1,0 +1,39 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from task_manager_msgs/msg/TaskStatus.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+#include "rcl_interfaces/msg/Parameter.idl"
+
+module task_manager_msgs {
+  module msg {
+    module TaskStatus_Constants {
+      const uint8 TASK_NEWBORN = 0;
+      const uint8 TASK_CONFIGURED = 1;
+      const uint8 TASK_INITIALISED = 2;
+      const uint8 TASK_RUNNING = 3;
+      const uint8 TASK_COMPLETED = 4;
+      @verbatim (language="comment", text=
+        "To be used as a bit mask")
+      const uint8 TASK_TERMINATED = 128;
+      const uint8 TASK_INTERRUPTED = 6;
+      const uint8 TASK_FAILED = 7;
+      const uint8 TASK_TIMEOUT = 8;
+      const uint8 TASK_CONFIGURATION_FAILED = 9;
+      const uint8 TASK_INITIALISATION_FAILED = 10;
+    };
+    struct TaskStatus {
+      uint32 id;
+
+      string name;
+
+      uint8 status;
+
+      string status_string;
+
+      builtin_interfaces::msg::Time status_time;
+
+      sequence<rcl_interfaces::msg::Parameter> plist;
+    };
+  };
+};
