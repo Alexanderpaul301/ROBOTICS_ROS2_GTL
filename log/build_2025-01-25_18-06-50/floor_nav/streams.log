@@ -1,0 +1,103 @@
+[0.126s] Invoking command in '/home/GTL/apaul/ros2_hw1/build/floor_nav': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_nav2:/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_nav2:/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib/lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/local/lib/python3.10/dist-packages:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/floor_nav -- -j16 -l16
+[0.289s] [  6%] [32mBuilding CXX object CMakeFiles/floornav_TaskTrigger.dir/tasks/TaskTrigger.cpp.o[0m
+[0.289s] [  6%] [32mBuilding CXX object CMakeFiles/floornav_TaskGoTo.dir/tasks/TaskGoTo.cpp.o[0m
+[0.293s] [ 13%] [32mBuilding CXX object CMakeFiles/floornav_TaskSetHeading.dir/tasks/TaskSetHeading.cpp.o[0m
+[0.294s] [ 17%] [32mBuilding CXX object CMakeFiles/floornav_TaskSetMux.dir/tasks/TaskSetMux.cpp.o[0m
+[0.296s] [ 20%] [32mBuilding CXX object CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o[0m
+[0.296s] [ 20%] [32mBuilding CXX object CMakeFiles/floornav_TaskAutoDock.dir/tasks/TaskAutoDock.cpp.o[0m
+[0.299s] [ 27%] [32mBuilding CXX object CMakeFiles/floornav_TaskPlanTo.dir/tasks/TaskPlanTo.cpp.o[0m
+[0.300s] [ 27%] [32mBuilding CXX object CMakeFiles/floornav_TaskSetBool.dir/tasks/TaskSetBool.cpp.o[0m
+[0.308s] [ 31%] [32mBuilding CXX object CMakeFiles/floornav_task_server.dir/src/task_server.cpp.o[0m
+[0.312s] [ 37%] [32mBuilding CXX object CMakeFiles/floornav_task_server.dir/src/SimTasksEnv.cpp.o[0m
+[0.313s] [ 37%] [32mBuilding CXX object CMakeFiles/floornav_TaskWaitForROI.dir/tasks/TaskWaitForROI.cpp.o[0m
+[0.315s] [ 44%] [32mBuilding CXX object CMakeFiles/floornav_TaskWander_modif.dir/tasks/TaskWander_modif.cpp.o[0m
+[0.315s] [ 44%] [32mBuilding CXX object CMakeFiles/floornav_TaskConstant.dir/tasks/TaskConstant.cpp.o[0m
+[0.319s] [ 48%] [32mBuilding CXX object CMakeFiles/floornav_TaskWander.dir/tasks/TaskWander.cpp.o[0m
+[0.348s] [ 51%] [32mBuilding CXX object CMakeFiles/floornav_TaskWaitForFace.dir/tasks/TaskWaitForFace.cpp.o[0m
+[29.821s] [ 68%] [32m[1mLinking CXX shared library libfloornav_TaskWander.so[0m
+[29.824s] [ 68%] [32m[1mLinking CXX shared library libfloornav_TaskWander_modif.so[0m
+[29.825s] [ 68%] [32m[1mLinking CXX shared library libfloornav_TaskWaitForROI.so[0m
+[29.825s] [ 68%] [32m[1mLinking CXX shared library libfloornav_TaskSetHeading.so[0m
+[29.825s] [ 68%] [32m[1mLinking CXX shared library libfloornav_TaskConstant.so[0m
+[30.301s] [ 72%] [32m[1mLinking CXX shared library libfloornav_TaskGoTo.so[0m
+[31.640s] [ 75%] [32m[1mLinking CXX shared library libfloornav_TaskTrigger.so[0m
+[31.865s] [ 79%] [32m[1mLinking CXX shared library libfloornav_TaskSetBool.so[0m
+[32.261s] [ 82%] [32m[1mLinking CXX shared library libfloornav_TaskSetMux.so[0m
+[35.735s] [ 86%] [32m[1mLinking CXX shared library libfloornav_TaskAutoDock.so[0m
+[38.259s] [ 89%] [32m[1mLinking CXX shared library libfloornav_TaskWaitForFace.so[0m
+[38.609s] [ 93%] [32m[1mLinking CXX shared library libfloornav_TaskNav2.so[0m
+[71.835s] [ 96%] [32m[1mLinking CXX shared library libfloornav_TaskPlanTo.so[0m
+[89.002s] [100%] [32m[1mLinking CXX executable floornav_task_server[0m
+[122.199s] [100%] Built target floornav_TaskConstant
+[122.315s] [100%] Built target floornav_TaskWaitForROI
+[122.421s] [100%] Built target floornav_TaskSetHeading
+[123.059s] [100%] Built target floornav_TaskGoTo
+[123.060s] [100%] Built target floornav_TaskWander
+[123.171s] [100%] Built target floornav_TaskWander_modif
+[125.654s] [100%] Built target floornav_TaskTrigger
+[125.726s] [100%] Built target floornav_TaskWaitForFace
+[125.785s] [100%] Built target floornav_TaskSetBool
+[125.979s] [100%] Built target floornav_TaskSetMux
+[128.795s] [100%] Built target floornav_TaskNav2
+[130.959s] [100%] Built target floornav_TaskAutoDock
+[131.758s] [100%] Built target floornav_TaskPlanTo
+[134.926s] [100%] Built target floornav_task_server
+[135.013s] Invoked command in '/home/GTL/apaul/ros2_hw1/build/floor_nav' returned '0': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_nav2:/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_nav2:/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib/lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/local/lib/python3.10/dist-packages:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/floor_nav -- -j16 -l16
+[135.168s] Invoking command in '/home/GTL/apaul/ros2_hw1/build/floor_nav': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_nav2:/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_nav2:/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib/lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/local/lib/python3.10/dist-packages:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/GTL/apaul/ros2_hw1/build/floor_nav
+[135.174s] -- Install configuration: ""
+[135.175s] -- Installing: /home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/floornav_task_server
+[135.393s] -- Set runtime path of "/home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/floornav_task_server" to ""
+[135.395s] -- Installing: /home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskAutoDock.so
+[135.445s] -- Set runtime path of "/home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskAutoDock.so" to ""
+[135.446s] -- Installing: /home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskWaitForROI.so
+[135.483s] -- Set runtime path of "/home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskWaitForROI.so" to ""
+[135.487s] -- Installing: /home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskWaitForFace.so
+[135.582s] -- Set runtime path of "/home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskWaitForFace.so" to ""
+[135.583s] -- Installing: /home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskWander.so
+[135.623s] -- Set runtime path of "/home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskWander.so" to ""
+[135.624s] -- Installing: /home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskSetHeading.so
+[135.661s] -- Set runtime path of "/home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskSetHeading.so" to ""
+[135.662s] -- Installing: /home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskPlanTo.so
+[135.796s] -- Set runtime path of "/home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskPlanTo.so" to ""
+[135.798s] -- Installing: /home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskGoTo.so
+[135.835s] -- Set runtime path of "/home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskGoTo.so" to ""
+[135.836s] -- Installing: /home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskConstant.so
+[135.873s] -- Set runtime path of "/home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskConstant.so" to ""
+[135.875s] -- Installing: /home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskTrigger.so
+[135.924s] -- Set runtime path of "/home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskTrigger.so" to ""
+[135.925s] -- Installing: /home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskSetBool.so
+[135.975s] -- Set runtime path of "/home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskSetBool.so" to ""
+[135.975s] -- Installing: /home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskSetMux.so
+[136.026s] -- Set runtime path of "/home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskSetMux.so" to ""
+[136.027s] -- Installing: /home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskNav2.so
+[136.079s] -- Set runtime path of "/home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskNav2.so" to ""
+[136.079s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav
+[136.080s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/launch_server_tb.launch.py
+[136.081s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/launch_server_tb.launch
+[136.081s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/__pycache__
+[136.082s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/__pycache__/launch_server_tb.launch.cpython-310.pyc
+[136.083s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/launch_server.launch
+[136.084s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/graph_forever.py
+[136.084s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/test_goto.py
+[136.085s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/test_graph_2d.py
+[136.086s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/test_graph.py
+[136.086s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/test_graph-test.py
+[136.087s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/test_planto.py
+[136.088s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/test_set_heading.py
+[136.088s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/test_wander.py
+[136.089s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/share/ament_index/resource_index/package_run_dependencies/floor_nav
+[136.090s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/share/ament_index/resource_index/parent_prefix_path/floor_nav
+[136.092s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/environment/ament_prefix_path.sh
+[136.092s] -- Installing: /home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/environment/ament_prefix_path.dsv
+[136.098s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/environment/path.sh
+[136.098s] -- Installing: /home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/environment/path.dsv
+[136.103s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/local_setup.bash
+[136.103s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/local_setup.sh
+[136.103s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/local_setup.zsh
+[136.104s] -- Installing: /home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/local_setup.dsv
+[136.108s] -- Installing: /home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/package.dsv
+[136.113s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/share/ament_index/resource_index/packages/floor_nav
+[136.113s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/cmake/floor_navConfig.cmake
+[136.114s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/cmake/floor_navConfig-version.cmake
+[136.115s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/package.xml
+[136.128s] Invoked command in '/home/GTL/apaul/ros2_hw1/build/floor_nav' returned '0': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_nav2:/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_nav2:/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib/lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/local/lib/python3.10/dist-packages:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/GTL/apaul/ros2_hw1/build/floor_nav

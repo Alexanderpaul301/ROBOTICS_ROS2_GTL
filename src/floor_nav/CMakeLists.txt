@@ -17,8 +17,8 @@ find_package(geometry_msgs REQUIRED)
 find_package(topic_tools_interfaces REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(cs7630_msgs REQUIRED)
+find_package(face_msg REQUIRED)
 find_package(kobuki_ros_interfaces REQUIRED)
-
 find_package(PCL REQUIRED QUIET COMPONENTS common io)
 find_package(pcl_conversions REQUIRED)
 find_package(tf2 REQUIRED)
@@ -43,6 +43,8 @@ include_directories(
   ${task_manager_lib_INCLUDE_DIRS}
   ${task_manager_nav2_INCLUDE_DIRS}
   ${kobuki_ros_interfaces_INCLUDE_DIRS}
+  ${cs7630_msgs_INCLUDE_DIRS}
+  ${face_msg_INCLUDE_DIRS}
 )
 
 SET(ALL_LIBS 
@@ -60,7 +62,10 @@ SET(ALL_LIBS
     ${std_msgs_LIBRARIES} 
     ${std_srvs_LIBRARIES} 
     ${Boost_THREAD_LIBRARIES} 
-    ${CMAKE_DL_LIBS})
+    ${CMAKE_DL_LIBS}
+    ${cs7630_msgs_LIBRARIES}
+    ${face_msg_LIBRARIES}
+  )
 
 file(SHA256 ${PROJECT_SOURCE_DIR}/include/floor_nav/SimTasksEnv.h ENV_CHECK_SUM)
 add_compile_definitions(ENV_CHECK_SUM=${ENV_CHECK_SUM})
@@ -68,7 +73,7 @@ add_compile_definitions(ENV_CHECK_SUM=${ENV_CHECK_SUM})
 ADD_EXECUTABLE( floornav_task_server src/task_server.cpp src/SimTasksEnv.cpp) 
 ament_target_dependencies(floornav_task_server task_manager_lib
     task_manager_msgs geometry_msgs rclcpp rclcpp_action std_msgs task_manager_nav2
-    tf2 tf2_geometry_msgs)
+    tf2 tf2_geometry_msgs face_msg cs7630_msgs)
 # Necessary target for the tasks to see the symbols of the main
 TARGET_LINK_OPTIONS(floornav_task_server PRIVATE "-rdynamic")
 TARGET_LINK_LIBRARIES(floornav_task_server ${ALL_LIBS})
@@ -102,11 +107,11 @@ TARGET_LINK_LIBRARIES(floornav_TaskPlanTo ${ALL_LIBS})
 ADD_LIBRARY( floornav_TaskWaitForROI SHARED tasks/TaskWaitForROI.cpp)
 TARGET_LINK_LIBRARIES(floornav_TaskWaitForROI ${ALL_LIBS})
 
+ADD_LIBRARY( floornav_TaskWaitForFace SHARED tasks/TaskWaitForFace.cpp)
+TARGET_LINK_LIBRARIES(floornav_TaskWaitForFace ${ALL_LIBS})
+
 ADD_LIBRARY( floornav_TaskWander SHARED tasks/TaskWander.cpp)
 TARGET_LINK_LIBRARIES(floornav_TaskWander ${ALL_LIBS})
-
-ADD_LIBRARY( floornav_TaskWander_modif SHARED tasks/TaskWander_modif.cpp)
-TARGET_LINK_LIBRARIES(floornav_TaskWander_modif ${ALL_LIBS})
 
 ADD_LIBRARY( floornav_TaskAutoDock SHARED tasks/TaskAutoDock.cpp)
 TARGET_LINK_LIBRARIES(floornav_TaskAutoDock ${ALL_LIBS}
@@ -132,6 +137,7 @@ install(TARGETS
 install(TARGETS
     floornav_TaskAutoDock
     floornav_TaskWaitForROI
+    floornav_TaskWaitForFace
     floornav_TaskWander
     floornav_TaskSetHeading
     floornav_TaskPlanTo

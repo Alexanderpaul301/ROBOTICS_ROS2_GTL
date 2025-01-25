@@ -73,8 +73,8 @@ all: CMakeFiles/floornav_TaskGoTo.dir/all
 all: CMakeFiles/floornav_TaskSetHeading.dir/all
 all: CMakeFiles/floornav_TaskPlanTo.dir/all
 all: CMakeFiles/floornav_TaskWaitForROI.dir/all
+all: CMakeFiles/floornav_TaskWaitForFace.dir/all
 all: CMakeFiles/floornav_TaskWander.dir/all
-all: CMakeFiles/floornav_TaskWander_modif.dir/all
 all: CMakeFiles/floornav_TaskAutoDock.dir/all
 .PHONY : all
 
@@ -95,8 +95,8 @@ clean: CMakeFiles/floornav_TaskGoTo.dir/clean
 clean: CMakeFiles/floornav_TaskSetHeading.dir/clean
 clean: CMakeFiles/floornav_TaskPlanTo.dir/clean
 clean: CMakeFiles/floornav_TaskWaitForROI.dir/clean
+clean: CMakeFiles/floornav_TaskWaitForFace.dir/clean
 clean: CMakeFiles/floornav_TaskWander.dir/clean
-clean: CMakeFiles/floornav_TaskWander_modif.dir/clean
 clean: CMakeFiles/floornav_TaskAutoDock.dir/clean
 .PHONY : clean
 
@@ -393,7 +393,7 @@ CMakeFiles/floornav_TaskPlanTo.dir/clean:
 CMakeFiles/floornav_TaskWaitForROI.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskWaitForROI.dir/build.make CMakeFiles/floornav_TaskWaitForROI.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskWaitForROI.dir/build.make CMakeFiles/floornav_TaskWaitForROI.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles --progress-num=19,20 "Built target floornav_TaskWaitForROI"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles --progress-num=21,22 "Built target floornav_TaskWaitForROI"
 .PHONY : CMakeFiles/floornav_TaskWaitForROI.dir/all
 
 # Build rule for subdir invocation for target.
@@ -413,13 +413,39 @@ CMakeFiles/floornav_TaskWaitForROI.dir/clean:
 .PHONY : CMakeFiles/floornav_TaskWaitForROI.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/floornav_TaskWaitForFace.dir
+
+# All Build rule for target.
+CMakeFiles/floornav_TaskWaitForFace.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskWaitForFace.dir/build.make CMakeFiles/floornav_TaskWaitForFace.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskWaitForFace.dir/build.make CMakeFiles/floornav_TaskWaitForFace.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles --progress-num=19,20 "Built target floornav_TaskWaitForFace"
+.PHONY : CMakeFiles/floornav_TaskWaitForFace.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/floornav_TaskWaitForFace.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/floornav_TaskWaitForFace.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles 0
+.PHONY : CMakeFiles/floornav_TaskWaitForFace.dir/rule
+
+# Convenience name for target.
+floornav_TaskWaitForFace: CMakeFiles/floornav_TaskWaitForFace.dir/rule
+.PHONY : floornav_TaskWaitForFace
+
+# clean rule for target.
+CMakeFiles/floornav_TaskWaitForFace.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskWaitForFace.dir/build.make CMakeFiles/floornav_TaskWaitForFace.dir/clean
+.PHONY : CMakeFiles/floornav_TaskWaitForFace.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/floornav_TaskWander.dir
 
 # All Build rule for target.
 CMakeFiles/floornav_TaskWander.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskWander.dir/build.make CMakeFiles/floornav_TaskWander.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskWander.dir/build.make CMakeFiles/floornav_TaskWander.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles --progress-num=21,22 "Built target floornav_TaskWander"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles --progress-num=23,24 "Built target floornav_TaskWander"
 .PHONY : CMakeFiles/floornav_TaskWander.dir/all
 
 # Build rule for subdir invocation for target.
@@ -437,32 +463,6 @@ floornav_TaskWander: CMakeFiles/floornav_TaskWander.dir/rule
 CMakeFiles/floornav_TaskWander.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskWander.dir/build.make CMakeFiles/floornav_TaskWander.dir/clean
 .PHONY : CMakeFiles/floornav_TaskWander.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/floornav_TaskWander_modif.dir
-
-# All Build rule for target.
-CMakeFiles/floornav_TaskWander_modif.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskWander_modif.dir/build.make CMakeFiles/floornav_TaskWander_modif.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskWander_modif.dir/build.make CMakeFiles/floornav_TaskWander_modif.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles --progress-num=23,24 "Built target floornav_TaskWander_modif"
-.PHONY : CMakeFiles/floornav_TaskWander_modif.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/floornav_TaskWander_modif.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/floornav_TaskWander_modif.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles 0
-.PHONY : CMakeFiles/floornav_TaskWander_modif.dir/rule
-
-# Convenience name for target.
-floornav_TaskWander_modif: CMakeFiles/floornav_TaskWander_modif.dir/rule
-.PHONY : floornav_TaskWander_modif
-
-# clean rule for target.
-CMakeFiles/floornav_TaskWander_modif.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskWander_modif.dir/build.make CMakeFiles/floornav_TaskWander_modif.dir/clean
-.PHONY : CMakeFiles/floornav_TaskWander_modif.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/floornav_TaskAutoDock.dir

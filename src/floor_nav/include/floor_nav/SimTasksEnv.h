@@ -10,6 +10,7 @@
 #include "geometry_msgs/msg/pose_stamped.hpp"
 #include "sensor_msgs/msg/laser_scan.hpp"
 #include "sensor_msgs/msg/point_cloud2.hpp"
+#include "face_msg/msg/roilist.hpp"
 // PRobably moved to the templated class
 // #include "topic_tools/srv/MuxSelect.h"
 #include <pcl/point_types.h>
@@ -26,6 +27,7 @@ namespace floor_nav {
             rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr pointCloud2DSub;
             rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr laserscanSub;
             rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr velPub;
+            rclcpp::Subscription<face_msg::msg::Roilist>::SharedPtr faceSub;
             // rclcpp::Client<topic_tools::srv::MuxSelect>::SharedPtr muxClt;
             std::shared_ptr<tf2_ros::TransformListener> tf_listener{nullptr};
             std::unique_ptr<tf2_ros::Buffer> tf_buffer;
@@ -33,6 +35,7 @@ namespace floor_nav {
             void pointCloudCallback(sensor_msgs::msg::PointCloud2::SharedPtr msg) ;
             void pointCloud2DCallback(sensor_msgs::msg::PointCloud2::SharedPtr msg) ;
             void laserScanCallback(sensor_msgs::msg::LaserScan::SharedPtr msg) ;
+            void faceCallback(face_msg::msg::Roilist::SharedPtr msg) ;
 
             bool manualControl;
             std::string joystick_topic;

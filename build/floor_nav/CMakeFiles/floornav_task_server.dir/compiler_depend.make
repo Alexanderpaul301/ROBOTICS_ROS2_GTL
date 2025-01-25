@@ -730,6 +730,12 @@ CMakeFiles/floornav_task_server.dir/src/SimTasksEnv.cpp.o: /home/GTL/apaul/ros2_
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__builder.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__traits.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__traits.hpp \
+  /home/GTL/apaul/ros2_hw1/install/cs7630_msgs/include/cs7630_msgs/cs7630_msgs/msg/roi_array.hpp \
+  /home/GTL/apaul/ros2_hw1/install/cs7630_msgs/include/cs7630_msgs/cs7630_msgs/msg/detail/roi_array__struct.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/region_of_interest__struct.hpp \
+  /home/GTL/apaul/ros2_hw1/install/cs7630_msgs/include/cs7630_msgs/cs7630_msgs/msg/detail/roi_array__builder.hpp \
+  /home/GTL/apaul/ros2_hw1/install/cs7630_msgs/include/cs7630_msgs/cs7630_msgs/msg/detail/roi_array__traits.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/region_of_interest__traits.hpp \
   /usr/include/pcl-1.12/pcl/point_types.h \
   /usr/include/c++/11/bitset \
   /usr/include/pcl-1.12/pcl/impl/point_types.hpp \
@@ -3409,6 +3415,12 @@ CMakeFiles/floornav_task_server.dir/src/task_server.cpp.o: /home/GTL/apaul/ros2_
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__builder.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__traits.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__traits.hpp \
+  /home/GTL/apaul/ros2_hw1/install/cs7630_msgs/include/cs7630_msgs/cs7630_msgs/msg/roi_array.hpp \
+  /home/GTL/apaul/ros2_hw1/install/cs7630_msgs/include/cs7630_msgs/cs7630_msgs/msg/detail/roi_array__struct.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/region_of_interest__struct.hpp \
+  /home/GTL/apaul/ros2_hw1/install/cs7630_msgs/include/cs7630_msgs/cs7630_msgs/msg/detail/roi_array__builder.hpp \
+  /home/GTL/apaul/ros2_hw1/install/cs7630_msgs/include/cs7630_msgs/cs7630_msgs/msg/detail/roi_array__traits.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/region_of_interest__traits.hpp \
   /usr/include/pcl-1.12/pcl/point_types.h \
   /usr/include/pcl-1.12/pcl/impl/point_types.hpp \
   /usr/include/pcl-1.12/pcl/memory.h \
@@ -4556,8 +4568,6 @@ CMakeFiles/floornav_task_server.dir/src/task_server.cpp.o: /home/GTL/apaul/ros2_
 
 /opt/ros/humble/include/tf2/tf2/time.h:
 
-/opt/ros/humble/include/tf2/tf2/buffer_core_interface.h:
-
 /usr/include/boost/atomic/detail/integral_conversions.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__traits.hpp:
@@ -5348,11 +5358,31 @@ CMakeFiles/floornav_task_server.dir/src/task_server.cpp.o: /home/GTL/apaul/ros2_
 
 /usr/include/boost/mpl/lambda.hpp:
 
+/usr/include/boost/mpl/aux_/arg_typedef.hpp:
+
+/usr/include/boost/mpl/aux_/arity_spec.hpp:
+
+/usr/include/x86_64-linux-gnu/sys/syscall.h:
+
+/usr/include/x86_64-linux-gnu/sys/mman.h:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/placeholders.hpp:
+
+/usr/include/boost/mpl/aux_/na_assert.hpp:
+
+/usr/include/boost/range/rend.hpp:
+
+/usr/include/eigen3/Eigen/src/Geometry/AlignedBox.h:
+
+/usr/include/boost/mpl/arg.hpp:
+
 /usr/include/boost/preprocessor/facilities/identity.hpp:
 
 /usr/include/boost/range/size.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/NestByValue.h:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/region_of_interest__traits.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
@@ -5502,8 +5532,6 @@ CMakeFiles/floornav_task_server.dir/src/task_server.cpp.o: /home/GTL/apaul/ros2_
 
 /usr/include/c++/11/cxxabi.h:
 
-/usr/include/boost/mpl/aux_/arity_spec.hpp:
-
 /usr/include/c++/11/bits/basic_ios.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:
@@ -5551,6 +5579,8 @@ CMakeFiles/floornav_task_server.dir/src/task_server.cpp.o: /home/GTL/apaul/ros2_
 /usr/include/boost/exception/to_string_stub.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp:
+
+/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/include/cs7630_msgs/cs7630_msgs/msg/detail/roi_array__builder.hpp:
 
 /usr/include/boost/mpl/void.hpp:
 
@@ -5772,6 +5802,8 @@ CMakeFiles/floornav_task_server.dir/src/task_server.cpp.o: /home/GTL/apaul/ros2_
 
 /usr/include/c++/11/variant:
 
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/region_of_interest__struct.hpp:
+
 /opt/ros/humble/include/rcutils/rcutils/types/char_array.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/detail/resolve_enable_topic_statistics.hpp:
@@ -5859,6 +5891,10 @@ CMakeFiles/floornav_task_server.dir/src/task_server.cpp.o: /home/GTL/apaul/ros2_
 /usr/include/boost/mpl/aux_/lambda_spec.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+
+/usr/include/boost/mpl/arg_fwd.hpp:
+
+/opt/ros/humble/include/rcutils/rcutils/testing/fault_injection.h:
 
 /usr/include/boost/predef/compiler/intel.h:
 
@@ -5975,12 +6011,6 @@ CMakeFiles/floornav_task_server.dir/src/task_server.cpp.o: /home/GTL/apaul/ros2_
 /usr/include/c++/11/bits/uniform_int_dist.h:
 
 /usr/include/c++/11/bits/node_handle.h:
-
-/usr/include/boost/range/rend.hpp:
-
-/usr/include/eigen3/Eigen/src/Geometry/AlignedBox.h:
-
-/usr/include/boost/mpl/arg.hpp:
 
 /usr/include/c++/11/bits/std_mutex.h:
 
@@ -6483,6 +6513,8 @@ CMakeFiles/floornav_task_server.dir/src/task_server.cpp.o: /home/GTL/apaul/ros2_
 /usr/include/sched.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
+
+/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/include/cs7630_msgs/cs7630_msgs/msg/detail/roi_array__traits.hpp:
 
 /usr/include/x86_64-linux-gnu/sys/ucontext.h:
 
@@ -7190,10 +7222,6 @@ CMakeFiles/floornav_task_server.dir/src/task_server.cpp.o: /home/GTL/apaul/ros2_
 
 /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector.h:
 
-/opt/ros/humble/include/rcutils/rcutils/testing/fault_injection.h:
-
-/usr/include/boost/mpl/arg_fwd.hpp:
-
 /usr/include/pcl-1.12/pcl/common/impl/io.hpp:
 
 /usr/include/boost/mpl/aux_/has_begin.hpp:
@@ -7602,6 +7630,12 @@ CMakeFiles/floornav_task_server.dir/src/task_server.cpp.o: /home/GTL/apaul/ros2_
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__traits.hpp:
 
+/opt/ros/humble/include/tf2/tf2/buffer_core_interface.h:
+
+/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/include/cs7630_msgs/cs7630_msgs/msg/roi_array.hpp:
+
+/usr/include/boost/mpl/if.hpp:
+
 /usr/include/pcl-1.12/pcl/point_types.h:
 
 /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__struct.hpp:
@@ -7725,8 +7759,6 @@ CMakeFiles/floornav_task_server.dir/src/task_server.cpp.o: /home/GTL/apaul/ros2_
 /usr/include/boost/preprocessor/seq/size.hpp:
 
 /usr/include/boost/preprocessor/comma_if.hpp:
-
-/usr/include/boost/mpl/aux_/arg_typedef.hpp:
 
 /usr/include/boost/preprocessor/punctuation/comma_if.hpp:
 
@@ -7908,8 +7940,6 @@ CMakeFiles/floornav_task_server.dir/src/task_server.cpp.o: /home/GTL/apaul/ros2_
 
 /usr/include/boost/mpl/plus.hpp:
 
-/usr/include/boost/mpl/if.hpp:
-
 /usr/include/boost/mpl/aux_/numeric_op.hpp:
 
 /usr/include/boost/mpl/aux_/clear_impl.hpp:
@@ -8023,6 +8053,8 @@ CMakeFiles/floornav_task_server.dir/src/task_server.cpp.o: /home/GTL/apaul/ros2_
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon__struct.hpp:
 
 /usr/include/c++/11/climits:
+
+/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/include/cs7630_msgs/cs7630_msgs/msg/detail/roi_array__struct.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:
 
@@ -8327,11 +8359,3 @@ CMakeFiles/floornav_task_server.dir/src/task_server.cpp.o: /home/GTL/apaul/ros2_
 /opt/ros/humble/include/rmw/rmw/incompatible_qos_events_statuses.h:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/apply_fwd.hpp:
-
-/usr/include/x86_64-linux-gnu/sys/syscall.h:
-
-/usr/include/x86_64-linux-gnu/sys/mman.h:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/placeholders.hpp:
-
-/usr/include/boost/mpl/aux_/na_assert.hpp:

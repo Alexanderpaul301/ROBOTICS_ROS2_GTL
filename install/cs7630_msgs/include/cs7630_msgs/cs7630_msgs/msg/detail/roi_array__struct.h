@@ -24,6 +24,9 @@ extern "C"
 #include "sensor_msgs/msg/detail/region_of_interest__struct.h"
 
 /// Struct defined in msg/ROIArray in the package cs7630_msgs.
+/**
+  * ROIArray.msg
+ */
 typedef struct cs7630_msgs__msg__ROIArray
 {
   std_msgs__msg__Header header;
