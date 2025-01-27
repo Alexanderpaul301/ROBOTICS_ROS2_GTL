@@ -1,0 +1,71 @@
+[0.080s] Invoking command in '/home/GTL/apaul/ros2_hw1/build/floor_nav': CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_nav2:/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/home/GTL/apaul/ros2_hw1/install/face_msg:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/home/GTL/apaul/ros2_hw1/install/vrep4_helpers:/home/GTL/apaul/ros2_hw1/install/task_manager_sync:/home/GTL/apaul/ros2_hw1/install/floor_nav:/home/GTL/apaul/ros2_hw1/install/joy_pack:/home/GTL/apaul/ros2_hw1/install/collision_avoidance_base:/home/GTL/apaul/ros2_hw1/install/vrep_ros_teleop:/home/GTL/apaul/ros2_hw1/install/task_manager_client_py:/home/GTL/apaul/ros2_hw1/install/keyboard_teleop:/home/GTL/apaul/ros2_hw1/install/face_detect_base:/home/GTL/apaul/ros2_hw1/install/button_server:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib/lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib:/home/GTL/apaul/ros2_hw1/install/face_msg/lib:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:/home/GTL/apaul/ros2_hw1/install/task_manager_sync/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/floor_nav -- -j16 -l16
+[0.126s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.291s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.350s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.350s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.375s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.387s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.402s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.434s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.440s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.475s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.511s] -- Found rclcpp_action: 16.0.10 (/opt/ros/humble/share/rclcpp_action/cmake)
+[0.534s] -- Found rclpy: 3.3.14 (/opt/ros/humble/share/rclpy/cmake)
+[0.536s] -- Found task_manager_msgs: 0.0.0 (/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/share/task_manager_msgs/cmake)
+[0.580s] -- Found task_manager_lib: 0.0.0 (/home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/task_manager_lib/cmake)
+[0.597s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.619s] -- Found topic_tools_interfaces: 1.1.1 (/opt/ros/humble/share/topic_tools_interfaces/cmake)
+[0.630s] -- Found cs7630_msgs: 0.0.0 (/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/share/cs7630_msgs/cmake)
+[0.671s] -- Found face_msg: 0.0.0 (/home/GTL/apaul/ros2_hw1/install/face_msg/share/face_msg/cmake)
+[0.711s] -- Found kobuki_ros_interfaces: 1.0.0 (/opt/ros/humble/share/kobuki_ros_interfaces/cmake)
+[0.734s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.749s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.753s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.139s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.140s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[1.158s] -- Found tf2: 0.25.8 (/opt/ros/humble/share/tf2/cmake)
+[1.161s] -- Found tf2_ros: 0.25.8 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.194s] -- Found tf2_geometry_msgs: 0.25.8 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[1.197s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.198s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.202s] -- Found task_manager_nav2: 0.0.0 (/home/GTL/apaul/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/cmake)
+[7.025s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[7.131s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[7.142s] -- Configured cppcheck include dirs: /home/GTL/apaul/ros2_hw1/src/floor_nav/include
+[7.142s] -- Configured cppcheck exclude dirs and/or files: 
+[7.145s] -- Added test 'flake8' to check Python code syntax and style conventions
+[7.151s] -- Added test 'lint_cmake' to check CMake code style
+[7.155s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[7.174s] -- Added test 'uncrustify' to check C / C++ code style
+[7.174s] -- Configured uncrustify additional arguments: 
+[7.177s] -- Added test 'xmllint' to check XML markup files
+[7.187s] -- Configuring done
+[10.676s] -- Generating done
+[10.805s] -- Build files have been written to: /home/GTL/apaul/ros2_hw1/build/floor_nav
+[10.882s] [35m[1mConsolidate compiler generated dependencies of target floornav_TaskPlanTo[0m
+[10.885s] [35m[1mConsolidate compiler generated dependencies of target floornav_TaskWander[0m
+[10.886s] [35m[1mConsolidate compiler generated dependencies of target floornav_TaskWaitForROI[0m
+[10.886s] [35m[1mConsolidate compiler generated dependencies of target floornav_TaskGoTo[0m
+[10.886s] [35m[1mConsolidate compiler generated dependencies of target floornav_TaskSetMux[0m
+[10.886s] [35m[1mConsolidate compiler generated dependencies of target floornav_TaskSetHeading[0m
+[10.886s] [35m[1mConsolidate compiler generated dependencies of target floornav_TaskTrigger[0m
+[10.886s] [35m[1mConsolidate compiler generated dependencies of target floornav_TaskWaitForFace[0m
+[10.887s] [35m[1mConsolidate compiler generated dependencies of target floornav_TaskConstant[0m
+[10.887s] [35m[1mConsolidate compiler generated dependencies of target floornav_TaskNav2[0m
+[10.889s] [35m[1mConsolidate compiler generated dependencies of target floornav_task_server[0m
+[10.904s] [35m[1mConsolidate compiler generated dependencies of target floornav_TaskSetBool[0m
+[10.919s] [35m[1mConsolidate compiler generated dependencies of target floornav_TaskAutoDock[0m
+[10.977s] [  7%] [32mBuilding CXX object CMakeFiles/floornav_TaskWander.dir/tasks/TaskWander.cpp.o[0m
+[10.977s] [ 14%] [32mBuilding CXX object CMakeFiles/floornav_TaskPlanTo.dir/tasks/TaskPlanTo.cpp.o[0m
+[10.980s] [ 14%] [32mBuilding CXX object CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o[0m
+[10.981s] [ 25%] [32mBuilding CXX object CMakeFiles/floornav_TaskSetHeading.dir/tasks/TaskSetHeading.cpp.o[0m
+[10.981s] [ 25%] [32mBuilding CXX object CMakeFiles/floornav_TaskWaitForROI.dir/tasks/TaskWaitForROI.cpp.o[0m
+[10.981s] [ 25%] [32mBuilding CXX object CMakeFiles/floornav_TaskGoTo.dir/tasks/TaskGoTo.cpp.o[0m
+[10.981s] [ 29%] [32mBuilding CXX object CMakeFiles/floornav_TaskConstant.dir/tasks/TaskConstant.cpp.o[0m
+[10.981s] [ 29%] [32mBuilding CXX object CMakeFiles/floornav_TaskTrigger.dir/tasks/TaskTrigger.cpp.o[0m
+[10.994s] [ 33%] [32mBuilding CXX object CMakeFiles/floornav_task_server.dir/src/task_server.cpp.o[0m
+[10.995s] [ 37%] [32mBuilding CXX object CMakeFiles/floornav_task_server.dir/src/SimTasksEnv.cpp.o[0m
+[10.998s] [ 40%] [32mBuilding CXX object CMakeFiles/floornav_TaskAutoDock.dir/tasks/TaskAutoDock.cpp.o[0m
+[11.084s] [ 44%] [32mBuilding CXX object CMakeFiles/floornav_TaskSetBool.dir/tasks/TaskSetBool.cpp.o[0m
+[11.092s] [ 48%] [32mBuilding CXX object CMakeFiles/floornav_TaskSetMux.dir/tasks/TaskSetMux.cpp.o[0m
+[11.135s] [ 51%] [32mBuilding CXX object CMakeFiles/floornav_TaskWaitForFace.dir/tasks/TaskWaitForFace.cpp.o[0m

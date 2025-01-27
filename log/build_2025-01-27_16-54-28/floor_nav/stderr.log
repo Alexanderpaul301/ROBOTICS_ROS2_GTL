@@ -1,0 +1,36 @@
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskStareAtFace.cpp:[m[K In member function ‘[01m[Kvirtual task_manager_lib::TaskIndicator floor_nav::TaskStareAtFace::iterate()[m[K’:
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskStareAtFace.cpp:13:84:[m[K [01;31m[Kerror: [m[K‘[01m[Kroiarrray[m[K’ was not declared in this scope; did you mean ‘[01m[Kroiarray[m[K’?
+   13 |         const float center_position = float(roiarray->regions[0].x_offset) - float([01;31m[Kroiarrray[m[K->regions[0].width)/2;
+      |                                                                                    [01;31m[K^~~~~~~~~[m[K
+      |                                                                                    [32m[Kroiarray[m[K
+gmake[2]: *** [CMakeFiles/floornav_TaskStareAtFace.dir/build.make:76: CMakeFiles/floornav_TaskStareAtFace.dir/tasks/TaskStareAtFace.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:449: CMakeFiles/floornav_TaskStareAtFace.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/floornav_TaskTrigger.dir/build.make:76: CMakeFiles/floornav_TaskTrigger.dir/tasks/TaskTrigger.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/floornav_TaskSetBool.dir/build.make:76: CMakeFiles/floornav_TaskSetBool.dir/tasks/TaskSetBool.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/floornav_TaskNav2.dir/build.make:76: CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/floornav_TaskPlanTo.dir/build.make:76: CMakeFiles/floornav_TaskPlanTo.dir/tasks/TaskPlanTo.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/floornav_TaskSetMux.dir/build.make:76: CMakeFiles/floornav_TaskSetMux.dir/tasks/TaskSetMux.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/floornav_TaskConstant.dir/build.make:76: CMakeFiles/floornav_TaskConstant.dir/tasks/TaskConstant.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/floornav_TaskWander.dir/build.make:76: CMakeFiles/floornav_TaskWander.dir/tasks/TaskWander.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/floornav_TaskGoTo.dir/build.make:76: CMakeFiles/floornav_TaskGoTo.dir/tasks/TaskGoTo.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/floornav_TaskWaitForFace.dir/build.make:76: CMakeFiles/floornav_TaskWaitForFace.dir/tasks/TaskWaitForFace.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/floornav_TaskWaitForROI.dir/build.make:76: CMakeFiles/floornav_TaskWaitForROI.dir/tasks/TaskWaitForROI.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/floornav_TaskSetHeading.dir/build.make:76: CMakeFiles/floornav_TaskSetHeading.dir/tasks/TaskSetHeading.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:241: CMakeFiles/floornav_TaskTrigger.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:267: CMakeFiles/floornav_TaskSetBool.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:371: CMakeFiles/floornav_TaskPlanTo.dir/all] Interrupt
+gmake[2]: *** [CMakeFiles/floornav_TaskAutoDock.dir/build.make:76: CMakeFiles/floornav_TaskAutoDock.dir/tasks/TaskAutoDock.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/floornav_task_server.dir/build.make:76: CMakeFiles/floornav_task_server.dir/src/task_server.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:189: CMakeFiles/floornav_TaskNav2.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:345: CMakeFiles/floornav_TaskSetHeading.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:215: CMakeFiles/floornav_TaskSetMux.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:319: CMakeFiles/floornav_TaskGoTo.dir/all] Interrupt
+gmake[2]: *** [CMakeFiles/floornav_task_server.dir/build.make:90: CMakeFiles/floornav_task_server.dir/src/SimTasksEnv.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:423: CMakeFiles/floornav_TaskWaitForFace.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:475: CMakeFiles/floornav_TaskWander.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:293: CMakeFiles/floornav_TaskConstant.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:501: CMakeFiles/floornav_TaskAutoDock.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:397: CMakeFiles/floornav_TaskWaitForROI.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:163: CMakeFiles/floornav_task_server.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

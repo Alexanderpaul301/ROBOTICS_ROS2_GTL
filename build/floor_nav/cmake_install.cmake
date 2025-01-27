@@ -109,29 +109,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/floor_nav/libfloornav_TaskWaitForFace.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/floor_nav/libfloornav_TaskWaitForFace.so")
-    file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/floor_nav/libfloornav_TaskWaitForFace.so"
-         RPATH "")
-  endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/floor_nav" TYPE SHARED_LIBRARY FILES "/home/GTL/apaul/ros2_hw1/build/floor_nav/libfloornav_TaskWaitForFace.so")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/floor_nav/libfloornav_TaskWaitForFace.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/floor_nav/libfloornav_TaskWaitForFace.so")
-    file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/floor_nav/libfloornav_TaskWaitForFace.so"
-         OLD_RPATH "/opt/ros/humble/lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib:/home/GTL/apaul/ros2_hw1/install/task_manager_lib/lib:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:/home/GTL/apaul/ros2_hw1/install/face_msg/lib:"
-         NEW_RPATH "")
-    if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/floor_nav/libfloornav_TaskWaitForFace.so")
-    endif()
-  endif()
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/floor_nav/libfloornav_TaskWander.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/floor_nav/libfloornav_TaskWander.so")
     file(RPATH_CHECK
@@ -331,6 +308,75 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/floor_nav/libfloornav_TaskNav2.so")
+    endif()
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/floor_nav/libfloornav_TaskWaitForFace.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/floor_nav/libfloornav_TaskWaitForFace.so")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/floor_nav/libfloornav_TaskWaitForFace.so"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/floor_nav" TYPE SHARED_LIBRARY FILES "/home/GTL/apaul/ros2_hw1/build/floor_nav/libfloornav_TaskWaitForFace.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/floor_nav/libfloornav_TaskWaitForFace.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/floor_nav/libfloornav_TaskWaitForFace.so")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/floor_nav/libfloornav_TaskWaitForFace.so"
+         OLD_RPATH "/opt/ros/humble/lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib:/home/GTL/apaul/ros2_hw1/install/task_manager_lib/lib:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:/home/GTL/apaul/ros2_hw1/install/face_msg/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/floor_nav/libfloornav_TaskWaitForFace.so")
+    endif()
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/floor_nav/libfloornav_TaskStareAtFace.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/floor_nav/libfloornav_TaskStareAtFace.so")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/floor_nav/libfloornav_TaskStareAtFace.so"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/floor_nav" TYPE SHARED_LIBRARY FILES "/home/GTL/apaul/ros2_hw1/build/floor_nav/libfloornav_TaskStareAtFace.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/floor_nav/libfloornav_TaskStareAtFace.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/floor_nav/libfloornav_TaskStareAtFace.so")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/floor_nav/libfloornav_TaskStareAtFace.so"
+         OLD_RPATH "/opt/ros/humble/lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib:/home/GTL/apaul/ros2_hw1/install/task_manager_lib/lib:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:/home/GTL/apaul/ros2_hw1/install/face_msg/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/floor_nav/libfloornav_TaskStareAtFace.so")
+    endif()
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/floor_nav/libfloornav_TaskGoToPose.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/floor_nav/libfloornav_TaskGoToPose.so")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/floor_nav/libfloornav_TaskGoToPose.so"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/floor_nav" TYPE SHARED_LIBRARY FILES "/home/GTL/apaul/ros2_hw1/build/floor_nav/libfloornav_TaskGoToPose.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/floor_nav/libfloornav_TaskGoToPose.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/floor_nav/libfloornav_TaskGoToPose.so")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/floor_nav/libfloornav_TaskGoToPose.so"
+         OLD_RPATH "/opt/ros/humble/lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib:/home/GTL/apaul/ros2_hw1/install/task_manager_lib/lib:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:/home/GTL/apaul/ros2_hw1/install/face_msg/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/floor_nav/libfloornav_TaskGoToPose.so")
     endif()
   endif()
 endif()

@@ -1,0 +1,53 @@
+[0.113s] Invoking command in '/home/GTL/apaul/ros2_hw1/build/floor_nav': CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_nav2:/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/home/GTL/apaul/ros2_hw1/install/face_msg:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/home/GTL/apaul/ros2_hw1/install/vrep4_helpers:/home/GTL/apaul/ros2_hw1/install/task_manager_sync:/home/GTL/apaul/ros2_hw1/install/floor_nav:/home/GTL/apaul/ros2_hw1/install/joy_pack:/home/GTL/apaul/ros2_hw1/install/collision_avoidance_base:/home/GTL/apaul/ros2_hw1/install/vrep_ros_teleop:/home/GTL/apaul/ros2_hw1/install/task_manager_client_py:/home/GTL/apaul/ros2_hw1/install/keyboard_teleop:/home/GTL/apaul/ros2_hw1/install/face_detect_base:/home/GTL/apaul/ros2_hw1/install/button_server:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib/lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib:/home/GTL/apaul/ros2_hw1/install/face_msg/lib:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:/home/GTL/apaul/ros2_hw1/install/task_manager_sync/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/floor_nav -- -j16 -l16
+[0.267s] [  3%] [32mBuilding CXX object CMakeFiles/floornav_task_server.dir/src/task_server.cpp.o[0m
+[8.743s] [  6%] [32mBuilding CXX object CMakeFiles/floornav_task_server.dir/src/SimTasksEnv.cpp.o[0m
+[30.926s] [ 10%] [32m[1mLinking CXX executable floornav_task_server[0m
+[44.747s] [ 10%] Built target floornav_task_server
+[44.839s] [35m[1mConsolidate compiler generated dependencies of target floornav_TaskStareAtFace[0m
+[44.873s] [ 17%] [32mBuilding CXX object CMakeFiles/floornav_TaskGoTo.dir/tasks/TaskGoTo.cpp.o[0m
+[44.874s] [ 20%] [32mBuilding CXX object CMakeFiles/floornav_TaskWaitForROI.dir/tasks/TaskWaitForROI.cpp.o[0m
+[44.874s] [ 20%] [32mBuilding CXX object CMakeFiles/floornav_TaskWander.dir/tasks/TaskWander.cpp.o[0m
+[44.884s] [ 27%] [32mBuilding CXX object CMakeFiles/floornav_TaskWaitForFace.dir/tasks/TaskWaitForFace.cpp.o[0m
+[44.884s] [ 31%] [32mBuilding CXX object CMakeFiles/floornav_TaskSetHeading.dir/tasks/TaskSetHeading.cpp.o[0m
+[44.884s] [ 31%] [32mBuilding CXX object CMakeFiles/floornav_TaskPlanTo.dir/tasks/TaskPlanTo.cpp.o[0m
+[44.891s] [ 34%] [32mBuilding CXX object CMakeFiles/floornav_TaskSetBool.dir/tasks/TaskSetBool.cpp.o[0m
+[44.904s] [ 44%] [32mBuilding CXX object CMakeFiles/floornav_TaskAutoDock.dir/tasks/TaskAutoDock.cpp.o[0m
+[44.904s] [ 44%] [32mBuilding CXX object CMakeFiles/floornav_TaskConstant.dir/tasks/TaskConstant.cpp.o[0m
+[44.905s] [ 44%] [32mBuilding CXX object CMakeFiles/floornav_TaskSetMux.dir/tasks/TaskSetMux.cpp.o[0m
+[44.914s] [ 48%] [32mBuilding CXX object CMakeFiles/floornav_TaskTrigger.dir/tasks/TaskTrigger.cpp.o[0m
+[44.935s] [ 51%] [32mBuilding CXX object CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o[0m
+[44.941s] [ 55%] [32mBuilding CXX object CMakeFiles/floornav_TaskStareAtFace.dir/tasks/TaskStareAtFace.cpp.o[0m
+[55.243s] [01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskStareAtFace.cpp:[m[K In member function ‘[01m[Kvirtual task_manager_lib::TaskIndicator floor_nav::TaskStareAtFace::iterate()[m[K’:
+[55.243s] [01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskStareAtFace.cpp:13:84:[m[K [01;31m[Kerror: [m[K‘[01m[Kroiarrray[m[K’ was not declared in this scope; did you mean ‘[01m[Kroiarray[m[K’?
+[55.243s]    13 |         const float center_position = float(roiarray->regions[0].x_offset) - float([01;31m[Kroiarrray[m[K->regions[0].width)/2;
+[55.243s]       |                                                                                    [01;31m[K^~~~~~~~~[m[K
+[55.243s]       |                                                                                    [32m[Kroiarray[m[K
+[56.952s] gmake[2]: *** [CMakeFiles/floornav_TaskStareAtFace.dir/build.make:76: CMakeFiles/floornav_TaskStareAtFace.dir/tasks/TaskStareAtFace.cpp.o] Error 1
+[56.971s] gmake[1]: *** [CMakeFiles/Makefile2:449: CMakeFiles/floornav_TaskStareAtFace.dir/all] Error 2
+[56.976s] gmake[1]: *** Waiting for unfinished jobs....
+[62.296s] [ 58%] [32m[1mLinking CXX shared library libfloornav_TaskWaitForFace.so[0m
+[62.573s] [ 62%] [32m[1mLinking CXX shared library libfloornav_TaskConstant.so[0m
+[62.921s] [ 65%] [32m[1mLinking CXX shared library libfloornav_TaskGoTo.so[0m
+[63.110s] [ 68%] [32m[1mLinking CXX shared library libfloornav_TaskSetBool.so[0m
+[63.535s] [ 72%] [32m[1mLinking CXX shared library libfloornav_TaskWaitForROI.so[0m
+[63.600s] [ 75%] [32m[1mLinking CXX shared library libfloornav_TaskWander.so[0m
+[63.981s] [ 79%] [32m[1mLinking CXX shared library libfloornav_TaskSetMux.so[0m
+[64.130s] [ 82%] [32m[1mLinking CXX shared library libfloornav_TaskSetHeading.so[0m
+[64.203s] [ 86%] [32m[1mLinking CXX shared library libfloornav_TaskTrigger.so[0m
+[68.554s] [ 89%] [32m[1mLinking CXX shared library libfloornav_TaskAutoDock.so[0m
+[70.678s] [ 93%] [32m[1mLinking CXX shared library libfloornav_TaskNav2.so[0m
+[100.171s] [ 96%] [32m[1mLinking CXX shared library libfloornav_TaskPlanTo.so[0m
+[153.878s] [ 96%] Built target floornav_TaskConstant
+[153.963s] [ 96%] Built target floornav_TaskWaitForFace
+[155.638s] [ 96%] Built target floornav_TaskWander
+[156.077s] [ 96%] Built target floornav_TaskGoTo
+[156.718s] [ 96%] Built target floornav_TaskWaitForROI
+[157.001s] [ 96%] Built target floornav_TaskSetHeading
+[160.222s] [ 96%] Built target floornav_TaskSetBool
+[160.280s] [ 96%] Built target floornav_TaskTrigger
+[160.941s] [ 96%] Built target floornav_TaskSetMux
+[162.744s] [ 96%] Built target floornav_TaskNav2
+[163.558s] [ 96%] Built target floornav_TaskAutoDock
+[164.432s] [ 96%] Built target floornav_TaskPlanTo
+[164.435s] gmake: *** [Makefile:146: all] Error 2
+[164.475s] Invoked command in '/home/GTL/apaul/ros2_hw1/build/floor_nav' returned '2': CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_nav2:/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/home/GTL/apaul/ros2_hw1/install/face_msg:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/home/GTL/apaul/ros2_hw1/install/vrep4_helpers:/home/GTL/apaul/ros2_hw1/install/task_manager_sync:/home/GTL/apaul/ros2_hw1/install/floor_nav:/home/GTL/apaul/ros2_hw1/install/joy_pack:/home/GTL/apaul/ros2_hw1/install/collision_avoidance_base:/home/GTL/apaul/ros2_hw1/install/vrep_ros_teleop:/home/GTL/apaul/ros2_hw1/install/task_manager_client_py:/home/GTL/apaul/ros2_hw1/install/keyboard_teleop:/home/GTL/apaul/ros2_hw1/install/face_detect_base:/home/GTL/apaul/ros2_hw1/install/button_server:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib/lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib:/home/GTL/apaul/ros2_hw1/install/face_msg/lib:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:/home/GTL/apaul/ros2_hw1/install/task_manager_sync/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/floor_nav -- -j16 -l16

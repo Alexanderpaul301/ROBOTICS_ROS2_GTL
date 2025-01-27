@@ -1,0 +1,152 @@
+-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Found rclcpp_action: 16.0.10 (/opt/ros/humble/share/rclcpp_action/cmake)
+-- Found rclpy: 3.3.14 (/opt/ros/humble/share/rclpy/cmake)
+-- Found task_manager_msgs: 0.0.0 (/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/share/task_manager_msgs/cmake)
+-- Found task_manager_lib: 0.0.0 (/home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/task_manager_lib/cmake)
+-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found topic_tools_interfaces: 1.1.1 (/opt/ros/humble/share/topic_tools_interfaces/cmake)
+-- Found cs7630_msgs: 0.0.0 (/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/share/cs7630_msgs/cmake)
+-- Found face_msg: 0.0.0 (/home/GTL/apaul/ros2_hw1/install/face_msg/share/face_msg/cmake)
+-- Found kobuki_ros_interfaces: 1.0.0 (/opt/ros/humble/share/kobuki_ros_interfaces/cmake)
+-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+-- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+-- Found tf2: 0.25.8 (/opt/ros/humble/share/tf2/cmake)
+-- Found tf2_ros: 0.25.8 (/opt/ros/humble/share/tf2_ros/cmake)
+-- Found tf2_geometry_msgs: 0.25.8 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Found task_manager_nav2: 0.0.0 (/home/GTL/apaul/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/cmake)
+-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/GTL/apaul/ros2_hw1/src/floor_nav/include
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/GTL/apaul/ros2_hw1/build/floor_nav
+[35m[1mConsolidate compiler generated dependencies of target floornav_TaskPlanTo[0m
+[35m[1mConsolidate compiler generated dependencies of target floornav_TaskSetHeading[0m
+[35m[1mConsolidate compiler generated dependencies of target floornav_TaskSetMux[0m
+[35m[1mConsolidate compiler generated dependencies of target floornav_TaskWaitForROI[0m
+[35m[1mConsolidate compiler generated dependencies of target floornav_TaskWaitForFace[0m
+[35m[1mConsolidate compiler generated dependencies of target floornav_TaskTrigger[0m
+[35m[1mConsolidate compiler generated dependencies of target floornav_TaskConstant[0m
+[35m[1mConsolidate compiler generated dependencies of target floornav_TaskGoTo[0m
+[35m[1mConsolidate compiler generated dependencies of target floornav_TaskWander[0m
+[35m[1mConsolidate compiler generated dependencies of target floornav_TaskNav2[0m
+[35m[1mConsolidate compiler generated dependencies of target floornav_TaskSetBool[0m
+[35m[1mConsolidate compiler generated dependencies of target floornav_task_server[0m
+[35m[1mConsolidate compiler generated dependencies of target floornav_TaskAutoDock[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/floornav_TaskConstant.dir/tasks/TaskConstant.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/floornav_TaskTrigger.dir/tasks/TaskTrigger.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/floornav_TaskWander.dir/tasks/TaskWander.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/floornav_TaskWaitForROI.dir/tasks/TaskWaitForROI.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/floornav_TaskGoTo.dir/tasks/TaskGoTo.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/floornav_TaskSetBool.dir/tasks/TaskSetBool.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/floornav_TaskWaitForFace.dir/tasks/TaskWaitForFace.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/floornav_TaskAutoDock.dir/tasks/TaskAutoDock.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/floornav_TaskSetHeading.dir/tasks/TaskSetHeading.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/floornav_TaskSetMux.dir/tasks/TaskSetMux.cpp.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/floornav_TaskPlanTo.dir/tasks/TaskPlanTo.cpp.o[0m
+[ 48%] [32mBuilding CXX object CMakeFiles/floornav_task_server.dir/src/SimTasksEnv.cpp.o[0m
+[ 51%] [32mBuilding CXX object CMakeFiles/floornav_task_server.dir/src/task_server.cpp.o[0m
+[ 55%] [32m[1mLinking CXX shared library libfloornav_TaskWaitForFace.so[0m
+[ 59%] [32m[1mLinking CXX shared library libfloornav_TaskWaitForROI.so[0m
+[ 62%] [32m[1mLinking CXX shared library libfloornav_TaskGoTo.so[0m
+[ 66%] [32m[1mLinking CXX shared library libfloornav_TaskSetBool.so[0m
+[ 70%] [32m[1mLinking CXX shared library libfloornav_TaskTrigger.so[0m
+[ 74%] [32m[1mLinking CXX shared library libfloornav_TaskConstant.so[0m
+[ 77%] [32m[1mLinking CXX shared library libfloornav_TaskWander.so[0m
+[ 81%] [32m[1mLinking CXX shared library libfloornav_TaskSetHeading.so[0m
+[ 85%] [32m[1mLinking CXX shared library libfloornav_TaskSetMux.so[0m
+[ 88%] [32m[1mLinking CXX shared library libfloornav_TaskAutoDock.so[0m
+[ 92%] [32m[1mLinking CXX shared library libfloornav_TaskNav2.so[0m
+[ 96%] [32m[1mLinking CXX shared library libfloornav_TaskPlanTo.so[0m
+[100%] [32m[1mLinking CXX executable floornav_task_server[0m
+[100%] Built target floornav_TaskWaitForFace
+[100%] Built target floornav_TaskConstant
+[100%] Built target floornav_TaskWander
+[100%] Built target floornav_TaskGoTo
+[100%] Built target floornav_TaskWaitForROI
+[100%] Built target floornav_TaskSetHeading
+[100%] Built target floornav_TaskSetBool
+[100%] Built target floornav_TaskTrigger
+[100%] Built target floornav_TaskSetMux
+[100%] Built target floornav_TaskNav2
+[100%] Built target floornav_TaskAutoDock
+[100%] Built target floornav_TaskPlanTo
+[100%] Built target floornav_task_server
+-- Install configuration: ""
+-- Installing: /home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/floornav_task_server
+-- Set runtime path of "/home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/floornav_task_server" to ""
+-- Installing: /home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskAutoDock.so
+-- Set runtime path of "/home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskAutoDock.so" to ""
+-- Installing: /home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskWaitForROI.so
+-- Set runtime path of "/home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskWaitForROI.so" to ""
+-- Installing: /home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskWander.so
+-- Set runtime path of "/home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskWander.so" to ""
+-- Installing: /home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskSetHeading.so
+-- Set runtime path of "/home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskSetHeading.so" to ""
+-- Installing: /home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskPlanTo.so
+-- Set runtime path of "/home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskPlanTo.so" to ""
+-- Installing: /home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskGoTo.so
+-- Set runtime path of "/home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskGoTo.so" to ""
+-- Installing: /home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskConstant.so
+-- Set runtime path of "/home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskConstant.so" to ""
+-- Installing: /home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskTrigger.so
+-- Set runtime path of "/home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskTrigger.so" to ""
+-- Installing: /home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskSetBool.so
+-- Set runtime path of "/home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskSetBool.so" to ""
+-- Installing: /home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskSetMux.so
+-- Set runtime path of "/home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskSetMux.so" to ""
+-- Installing: /home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskNav2.so
+-- Set runtime path of "/home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskNav2.so" to ""
+-- Installing: /home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskWaitForFace.so
+-- Set runtime path of "/home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/libfloornav_TaskWaitForFace.so" to ""
+-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav
+-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/launch_server_tb.launch.py
+-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/launch_server_tb.launch
+-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/__pycache__
+-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/__pycache__/launch_server_tb.launch.cpython-310.pyc
+-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/launch_server.launch
+-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/graph_forever.py
+-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/test_goto.py
+-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/test_graph_2d.py
+-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/test_graph.py
+-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/test_graph-test.py
+-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/test_planto.py
+-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/test_set_heading.py
+-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/lib/floor_nav/test_wander.py
+-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/share/ament_index/resource_index/package_run_dependencies/floor_nav
+-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/share/ament_index/resource_index/parent_prefix_path/floor_nav
+-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/environment/ament_prefix_path.sh
+-- Installing: /home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/environment/path.sh
+-- Installing: /home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/environment/path.dsv
+-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/local_setup.bash
+-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/local_setup.sh
+-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/local_setup.zsh
+-- Installing: /home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/local_setup.dsv
+-- Installing: /home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/package.dsv
+-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/share/ament_index/resource_index/packages/floor_nav
+-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/cmake/floor_navConfig.cmake
+-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/cmake/floor_navConfig-version.cmake
+-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/package.xml

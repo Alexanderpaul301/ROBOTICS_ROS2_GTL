@@ -1258,11 +1258,13 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/floornav_TaskTrigger.dir/DependInfo.cmake"
   "CMakeFiles/floornav_TaskSetBool.dir/DependInfo.cmake"
   "CMakeFiles/floornav_TaskConstant.dir/DependInfo.cmake"
+  "CMakeFiles/floornav_TaskGoToPose.dir/DependInfo.cmake"
   "CMakeFiles/floornav_TaskGoTo.dir/DependInfo.cmake"
   "CMakeFiles/floornav_TaskSetHeading.dir/DependInfo.cmake"
   "CMakeFiles/floornav_TaskPlanTo.dir/DependInfo.cmake"
   "CMakeFiles/floornav_TaskWaitForROI.dir/DependInfo.cmake"
   "CMakeFiles/floornav_TaskWaitForFace.dir/DependInfo.cmake"
+  "CMakeFiles/floornav_TaskStareAtFace.dir/DependInfo.cmake"
   "CMakeFiles/floornav_TaskWander.dir/DependInfo.cmake"
   "CMakeFiles/floornav_TaskAutoDock.dir/DependInfo.cmake"
   )

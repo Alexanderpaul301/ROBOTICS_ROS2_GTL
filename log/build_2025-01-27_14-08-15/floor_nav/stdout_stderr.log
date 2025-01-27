@@ -1,0 +1,67 @@
+[35m[1mConsolidate compiler generated dependencies of target floornav_TaskWaitForFace[0m
+[ 33%] Built target floornav_TaskSetMux
+[ 33%] Built target floornav_TaskWander
+[ 48%] Built target floornav_TaskGoTo
+[ 48%] Built target floornav_TaskWaitForROI
+[ 48%] Built target floornav_TaskSetHeading
+[ 55%] Built target floornav_TaskConstant
+[ 62%] Built target floornav_TaskPlanTo
+[ 66%] Built target floornav_task_server
+[ 70%] Built target floornav_TaskNav2
+[ 92%] Built target floornav_TaskTrigger
+[ 92%] Built target floornav_TaskSetBool
+[ 92%] Built target floornav_TaskAutoDock
+[ 96%] [32mBuilding CXX object CMakeFiles/floornav_TaskWaitForFace.dir/tasks/TaskWaitForFace.cpp.o[0m
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskWaitForFace.cpp:[m[K In member function ‘[01m[Kvirtual task_manager_lib::TaskIndicator floor_nav::TaskWaitForFace::iterate()[m[K’:
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskWaitForFace.cpp:10:64:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[Kface_msg::msg::Roilist_<std::allocator<void> >::SharedPtr&[m[K’ {aka ‘[01m[Kstd::shared_ptr<face_msg::msg::Roilist_<std::allocator<void> > >&[m[K’} to an rvalue of type ‘[01m[Kface_msg::msg::Roilist_<std::allocator<void> >::SharedPtr[m[K’ {aka ‘[01m[Kstd::shared_ptr<face_msg::msg::Roilist_<std::allocator<void> > >[m[K’}
+   10 |     face_msg::msg::Roilist::SharedPtr & roiarray = [01;31m[Kenv->getFace()[m[K;
+      |                                                    [01;31m[K~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/GTL/apaul/ros2_hw1/install/task_manager_lib/include/task_manager_lib/TaskInstance.h:12[m[K,
+                 from [01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskWaitForFace.h:4[m[K,
+                 from [01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskWaitForFace.cpp:2[m[K:
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskWaitForFace.cpp:13:40:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 5 has type ‘[01m[Ksensor_msgs::msg::RegionOfInterest_<std::allocator<void> >::_x_offset_type[m[K’ {aka ‘[01m[Kunsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   13 |         RCLCPP_INFO(node->get_logger(),[01;35m[K"Detected face at %.2f %.2f"[m[K,roiarray->regions[0].x_offset, roiarray->regions[0].y_offset);
+      |                                        [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskWaitForFace.cpp:13:61:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   13 |         RCLCPP_INFO(node->get_logger(),"Detected face at [01;36m[K%.2f[m[K %.2f",roiarray->regions[0].x_offset, roiarray->regions[0].y_offset);
+      |                                                          [01;36m[K~~~^[m[K
+      |                                                             [01;36m[K|[m[K
+      |                                                             [01;36m[Kdouble[m[K
+      |                                                          [32m[K%.2d[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/GTL/apaul/ros2_hw1/install/task_manager_lib/include/task_manager_lib/TaskInstance.h:12[m[K,
+                 from [01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskWaitForFace.h:4[m[K,
+                 from [01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskWaitForFace.cpp:2[m[K:
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskWaitForFace.cpp:13:40:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 6 has type ‘[01m[Ksensor_msgs::msg::RegionOfInterest_<std::allocator<void> >::_y_offset_type[m[K’ {aka ‘[01m[Kunsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   13 |         RCLCPP_INFO(node->get_logger(),[01;35m[K"Detected face at %.2f %.2f"[m[K,roiarray->regions[0].x_offset, roiarray->regions[0].y_offset);
+      |                                        [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskWaitForFace.cpp:13:66:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   13 |         RCLCPP_INFO(node->get_logger(),"Detected face at %.2f [01;36m[K%.2f[m[K",roiarray->regions[0].x_offset, roiarray->regions[0].y_offset);
+      |                                                               [01;36m[K~~~^[m[K
+      |                                                                  [01;36m[K|[m[K
+      |                                                                  [01;36m[Kdouble[m[K
+      |                                                               [32m[K%.2d[m[K
+gmake[2]: *** [CMakeFiles/floornav_TaskWaitForFace.dir/build.make:76: CMakeFiles/floornav_TaskWaitForFace.dir/tasks/TaskWaitForFace.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:421: CMakeFiles/floornav_TaskWaitForFace.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

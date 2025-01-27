@@ -1,0 +1,46 @@
+[0.072s] Invoking command in '/home/GTL/apaul/ros2_hw1/build/floor_nav': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_nav2:/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/home/GTL/apaul/ros2_hw1/install/face_msg:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_nav2:/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/home/GTL/apaul/ros2_hw1/install/face_msg:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib/lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib:/home/GTL/apaul/ros2_hw1/install/face_msg/lib:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/local/lib/python3.10/dist-packages:/home/GTL/apaul/ros2_hw1/install/face_msg/local/lib/python3.10/dist-packages:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/floor_nav -- -j16 -l16
+[0.176s] [35m[1mConsolidate compiler generated dependencies of target floornav_TaskWaitForFace[0m
+[0.222s] [  7%] Built target floornav_TaskWaitForROI
+[0.227s] [ 25%] Built target floornav_TaskSetBool
+[0.227s] [ 25%] Built target floornav_TaskNav2
+[0.230s] [ 51%] Built target floornav_TaskSetMux
+[0.234s] [ 51%] Built target floornav_TaskTrigger
+[0.234s] [ 51%] Built target floornav_TaskSetHeading
+[0.237s] [ 66%] Built target floornav_TaskConstant
+[0.237s] [ 77%] Built target floornav_TaskWander
+[0.238s] [ 77%] [32mBuilding CXX object CMakeFiles/floornav_task_server.dir/src/SimTasksEnv.cpp.o[0m
+[0.238s] [ 77%] Built target floornav_TaskGoTo
+[0.239s] [ 81%] Built target floornav_TaskPlanTo
+[0.241s] [ 85%] Built target floornav_TaskAutoDock
+[0.261s] [ 88%] [32mBuilding CXX object CMakeFiles/floornav_TaskWaitForFace.dir/tasks/TaskWaitForFace.cpp.o[0m
+[4.130s] [01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskWaitForFace.cpp:[m[K In member function ‘[01m[Kvirtual task_manager_lib::TaskIndicator floor_nav::TaskWaitForFace::iterate()[m[K’:
+[4.130s] [01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskWaitForFace.cpp:10:64:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[Kface_msg::msg::Roilist_<std::allocator<void> >::SharedPtr&[m[K’ {aka ‘[01m[Kstd::shared_ptr<face_msg::msg::Roilist_<std::allocator<void> > >&[m[K’} to an rvalue of type ‘[01m[Kface_msg::msg::Roilist_<std::allocator<void> >::SharedPtr[m[K’ {aka ‘[01m[Kstd::shared_ptr<face_msg::msg::Roilist_<std::allocator<void> > >[m[K’}
+[4.130s]    10 |     face_msg::msg::Roilist::SharedPtr & roiarray = [01;31m[Kenv->getFace()[m[K;
+[4.130s]       |                                                    [01;31m[K~~~~~~~~~~~~^~[m[K
+[4.130s] [01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskWaitForFace.cpp:12:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<face_msg::msg::Roilist_<std::allocator<void> > >[m[K’ {aka ‘[01m[Kclass std::shared_ptr<face_msg::msg::Roilist_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kregions[m[K’
+[4.130s]    12 |     if (!roiarray.[01;31m[Kregions[m[K.empty()) {
+[4.130s]       |                   [01;31m[K^~~~~~~[m[K
+[4.131s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[4.131s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[4.131s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[4.131s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[4.131s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[4.131s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[4.131s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[4.131s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[4.131s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[4.131s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[4.131s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.131s]                  from [01m[K/home/GTL/apaul/ros2_hw1/install/task_manager_lib/include/task_manager_lib/TaskInstance.h:12[m[K,
+[4.131s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskWaitForFace.h:4[m[K,
+[4.131s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskWaitForFace.cpp:2[m[K:
+[4.131s] [01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskWaitForFace.cpp:13:109:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<face_msg::msg::Roilist_<std::allocator<void> > >[m[K’ {aka ‘[01m[Kclass std::shared_ptr<face_msg::msg::Roilist_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kregions[m[K’
+[4.131s]    13 |         RCLCPP_INFO(node->get_logger(),"Detected face at %.2f %.2f",roiarray->regions[0].x_offset, roiarray.[01;31m[Kregions[m[K[0].y_offset);
+[4.131s]       |                                                                                                             [01;31m[K^~~~~~~[m[K
+[4.647s] gmake[2]: *** [CMakeFiles/floornav_TaskWaitForFace.dir/build.make:76: CMakeFiles/floornav_TaskWaitForFace.dir/tasks/TaskWaitForFace.cpp.o] Error 1
+[4.648s] gmake[1]: *** [CMakeFiles/Makefile2:421: CMakeFiles/floornav_TaskWaitForFace.dir/all] Error 2
+[4.648s] gmake[1]: *** Waiting for unfinished jobs....
+[21.352s] [ 92%] [32m[1mLinking CXX executable floornav_task_server[0m
+[33.415s] [ 96%] Built target floornav_task_server
+[33.416s] gmake: *** [Makefile:146: all] Error 2
+[33.418s] Invoked command in '/home/GTL/apaul/ros2_hw1/build/floor_nav' returned '2': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_nav2:/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/home/GTL/apaul/ros2_hw1/install/face_msg:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_nav2:/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/home/GTL/apaul/ros2_hw1/install/face_msg:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib/lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib:/home/GTL/apaul/ros2_hw1/install/face_msg/lib:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/local/lib/python3.10/dist-packages:/home/GTL/apaul/ros2_hw1/install/face_msg/local/lib/python3.10/dist-packages:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/floor_nav -- -j16 -l16

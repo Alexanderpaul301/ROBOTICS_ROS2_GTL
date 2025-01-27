@@ -1,0 +1,9 @@
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskStareAtFace.cpp:[m[K In member function ‘[01m[Kvirtual task_manager_lib::TaskIndicator floor_nav::TaskStareAtFace::iterate()[m[K’:
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskStareAtFace.cpp:13:84:[m[K [01;31m[Kerror: [m[K‘[01m[Kroiarrray[m[K’ was not declared in this scope; did you mean ‘[01m[Kroiarray[m[K’?
+   13 |         const float center_position = float(roiarray->regions[0].x_offset) - float([01;31m[Kroiarrray[m[K->regions[0].width)/2;
+      |                                                                                    [01;31m[K^~~~~~~~~[m[K
+      |                                                                                    [32m[Kroiarray[m[K
+gmake[2]: *** [CMakeFiles/floornav_TaskStareAtFace.dir/build.make:76: CMakeFiles/floornav_TaskStareAtFace.dir/tasks/TaskStareAtFace.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:449: CMakeFiles/floornav_TaskStareAtFace.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

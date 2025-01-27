@@ -276,6 +276,19 @@ floornav_TaskConstant/fast:
 .PHONY : floornav_TaskConstant/fast
 
 #=============================================================================
+# Target rules for targets named floornav_TaskGoToPose
+
+# Build rule for target.
+floornav_TaskGoToPose: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 floornav_TaskGoToPose
+.PHONY : floornav_TaskGoToPose
+
+# fast build rule for target.
+floornav_TaskGoToPose/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskGoToPose.dir/build.make CMakeFiles/floornav_TaskGoToPose.dir/build
+.PHONY : floornav_TaskGoToPose/fast
+
+#=============================================================================
 # Target rules for targets named floornav_TaskGoTo
 
 # Build rule for target.
@@ -339,6 +352,19 @@ floornav_TaskWaitForFace: cmake_check_build_system
 floornav_TaskWaitForFace/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskWaitForFace.dir/build.make CMakeFiles/floornav_TaskWaitForFace.dir/build
 .PHONY : floornav_TaskWaitForFace/fast
+
+#=============================================================================
+# Target rules for targets named floornav_TaskStareAtFace
+
+# Build rule for target.
+floornav_TaskStareAtFace: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 floornav_TaskStareAtFace
+.PHONY : floornav_TaskStareAtFace
+
+# fast build rule for target.
+floornav_TaskStareAtFace/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskStareAtFace.dir/build.make CMakeFiles/floornav_TaskStareAtFace.dir/build
+.PHONY : floornav_TaskStareAtFace/fast
 
 #=============================================================================
 # Target rules for targets named floornav_TaskWander
@@ -486,6 +512,30 @@ tasks/TaskGoTo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskGoTo.dir/build.make CMakeFiles/floornav_TaskGoTo.dir/tasks/TaskGoTo.cpp.s
 .PHONY : tasks/TaskGoTo.cpp.s
 
+tasks/TaskGoToPose.o: tasks/TaskGoToPose.cpp.o
+.PHONY : tasks/TaskGoToPose.o
+
+# target to build an object file
+tasks/TaskGoToPose.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskGoToPose.dir/build.make CMakeFiles/floornav_TaskGoToPose.dir/tasks/TaskGoToPose.cpp.o
+.PHONY : tasks/TaskGoToPose.cpp.o
+
+tasks/TaskGoToPose.i: tasks/TaskGoToPose.cpp.i
+.PHONY : tasks/TaskGoToPose.i
+
+# target to preprocess a source file
+tasks/TaskGoToPose.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskGoToPose.dir/build.make CMakeFiles/floornav_TaskGoToPose.dir/tasks/TaskGoToPose.cpp.i
+.PHONY : tasks/TaskGoToPose.cpp.i
+
+tasks/TaskGoToPose.s: tasks/TaskGoToPose.cpp.s
+.PHONY : tasks/TaskGoToPose.s
+
+# target to generate assembly for a file
+tasks/TaskGoToPose.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskGoToPose.dir/build.make CMakeFiles/floornav_TaskGoToPose.dir/tasks/TaskGoToPose.cpp.s
+.PHONY : tasks/TaskGoToPose.cpp.s
+
 tasks/TaskNav2.o: tasks/TaskNav2.cpp.o
 .PHONY : tasks/TaskNav2.o
 
@@ -606,6 +656,30 @@ tasks/TaskSetMux.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskSetMux.dir/build.make CMakeFiles/floornav_TaskSetMux.dir/tasks/TaskSetMux.cpp.s
 .PHONY : tasks/TaskSetMux.cpp.s
 
+tasks/TaskStareAtFace.o: tasks/TaskStareAtFace.cpp.o
+.PHONY : tasks/TaskStareAtFace.o
+
+# target to build an object file
+tasks/TaskStareAtFace.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskStareAtFace.dir/build.make CMakeFiles/floornav_TaskStareAtFace.dir/tasks/TaskStareAtFace.cpp.o
+.PHONY : tasks/TaskStareAtFace.cpp.o
+
+tasks/TaskStareAtFace.i: tasks/TaskStareAtFace.cpp.i
+.PHONY : tasks/TaskStareAtFace.i
+
+# target to preprocess a source file
+tasks/TaskStareAtFace.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskStareAtFace.dir/build.make CMakeFiles/floornav_TaskStareAtFace.dir/tasks/TaskStareAtFace.cpp.i
+.PHONY : tasks/TaskStareAtFace.cpp.i
+
+tasks/TaskStareAtFace.s: tasks/TaskStareAtFace.cpp.s
+.PHONY : tasks/TaskStareAtFace.s
+
+# target to generate assembly for a file
+tasks/TaskStareAtFace.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskStareAtFace.dir/build.make CMakeFiles/floornav_TaskStareAtFace.dir/tasks/TaskStareAtFace.cpp.s
+.PHONY : tasks/TaskStareAtFace.cpp.s
+
 tasks/TaskTrigger.o: tasks/TaskTrigger.cpp.o
 .PHONY : tasks/TaskTrigger.o
 
@@ -720,11 +794,13 @@ help:
 	@echo "... floornav_TaskAutoDock"
 	@echo "... floornav_TaskConstant"
 	@echo "... floornav_TaskGoTo"
+	@echo "... floornav_TaskGoToPose"
 	@echo "... floornav_TaskNav2"
 	@echo "... floornav_TaskPlanTo"
 	@echo "... floornav_TaskSetBool"
 	@echo "... floornav_TaskSetHeading"
 	@echo "... floornav_TaskSetMux"
+	@echo "... floornav_TaskStareAtFace"
 	@echo "... floornav_TaskTrigger"
 	@echo "... floornav_TaskWaitForFace"
 	@echo "... floornav_TaskWaitForROI"
@@ -745,6 +821,9 @@ help:
 	@echo "... tasks/TaskGoTo.o"
 	@echo "... tasks/TaskGoTo.i"
 	@echo "... tasks/TaskGoTo.s"
+	@echo "... tasks/TaskGoToPose.o"
+	@echo "... tasks/TaskGoToPose.i"
+	@echo "... tasks/TaskGoToPose.s"
 	@echo "... tasks/TaskNav2.o"
 	@echo "... tasks/TaskNav2.i"
 	@echo "... tasks/TaskNav2.s"
@@ -760,6 +839,9 @@ help:
 	@echo "... tasks/TaskSetMux.o"
 	@echo "... tasks/TaskSetMux.i"
 	@echo "... tasks/TaskSetMux.s"
+	@echo "... tasks/TaskStareAtFace.o"
+	@echo "... tasks/TaskStareAtFace.i"
+	@echo "... tasks/TaskStareAtFace.s"
 	@echo "... tasks/TaskTrigger.o"
 	@echo "... tasks/TaskTrigger.i"
 	@echo "... tasks/TaskTrigger.s"
