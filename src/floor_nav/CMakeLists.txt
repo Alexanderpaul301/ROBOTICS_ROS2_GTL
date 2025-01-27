@@ -95,6 +95,9 @@ TARGET_LINK_LIBRARIES(floornav_TaskSetBool ${ALL_LIBS})
 ADD_LIBRARY( floornav_TaskConstant SHARED tasks/TaskConstant.cpp)
 TARGET_LINK_LIBRARIES(floornav_TaskConstant ${ALL_LIBS})
 
+ADD_LIBRARY( floornav_TaskGoToPose SHARED tasks/TaskGoToPose.cpp)
+TARGET_LINK_LIBRARIES(floornav_TaskGoToPose ${ALL_LIBS})
+
 ADD_LIBRARY( floornav_TaskGoTo SHARED tasks/TaskGoTo.cpp)
 TARGET_LINK_LIBRARIES(floornav_TaskGoTo ${ALL_LIBS})
 
@@ -109,6 +112,9 @@ TARGET_LINK_LIBRARIES(floornav_TaskWaitForROI ${ALL_LIBS})
 
 ADD_LIBRARY( floornav_TaskWaitForFace SHARED tasks/TaskWaitForFace.cpp)
 TARGET_LINK_LIBRARIES(floornav_TaskWaitForFace ${ALL_LIBS})
+
+ADD_LIBRARY( floornav_TaskStareAtFace SHARED tasks/TaskStareAtFace.cpp)
+TARGET_LINK_LIBRARIES(floornav_TaskStareAtFace ${ALL_LIBS})
 
 ADD_LIBRARY( floornav_TaskWander SHARED tasks/TaskWander.cpp)
 TARGET_LINK_LIBRARIES(floornav_TaskWander ${ALL_LIBS})
@@ -137,7 +143,6 @@ install(TARGETS
 install(TARGETS
     floornav_TaskAutoDock
     floornav_TaskWaitForROI
-    floornav_TaskWaitForFace
     floornav_TaskWander
     floornav_TaskSetHeading
     floornav_TaskPlanTo
@@ -147,6 +152,9 @@ install(TARGETS
     floornav_TaskSetBool
     floornav_TaskSetMux
     floornav_TaskNav2
+    floornav_TaskWaitForFace
+    floornav_TaskStareAtFace
+    floornav_TaskGoToPose
     DESTINATION lib/${PROJECT_NAME})
 
 install(

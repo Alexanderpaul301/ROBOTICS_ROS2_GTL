@@ -19,7 +19,8 @@
 #include <tf2_ros/buffer.h>
 
 
-namespace floor_nav {
+namespace floor_nav 
+{
     class SimTasksEnv: public task_manager_lib::TaskEnvironment
     {
         protected:
@@ -32,10 +33,10 @@ namespace floor_nav {
             std::shared_ptr<tf2_ros::TransformListener> tf_listener{nullptr};
             std::unique_ptr<tf2_ros::Buffer> tf_buffer;
 
-            void pointCloudCallback(sensor_msgs::msg::PointCloud2::SharedPtr msg) ;
-            void pointCloud2DCallback(sensor_msgs::msg::PointCloud2::SharedPtr msg) ;
-            void laserScanCallback(sensor_msgs::msg::LaserScan::SharedPtr msg) ;
-            void faceCallback(face_msg::msg::Roilist::SharedPtr msg) ;
+            void pointCloudCallback(sensor_msgs::msg::PointCloud2::SharedPtr msg);
+            void pointCloud2DCallback(sensor_msgs::msg::PointCloud2::SharedPtr msg);
+            void laserScanCallback(sensor_msgs::msg::LaserScan::SharedPtr msg);
+            void faceCallback(face_msg::msg::Roilist::SharedPtr msg);
 
             bool manualControl;
             std::string joystick_topic;
@@ -44,6 +45,8 @@ namespace floor_nav {
             std::string reference_frame;
             pcl::PointCloud<pcl::PointXYZ> pointCloud;
             pcl::PointCloud<pcl::PointXYZ> pointCloud2D;
+            // ! Face_msg
+            face_msg::msg::Roilist::SharedPtr roiarray;
 
         public:
             SimTasksEnv(std::shared_ptr<rclcpp::Node> node);
@@ -59,7 +62,10 @@ namespace floor_nav {
 
             const pcl::PointCloud<pcl::PointXYZ>& getPointCloud() const {return pointCloud;}
             const pcl::PointCloud<pcl::PointXYZ>& getPointCloud2D() const {return pointCloud2D;}
-
+            
+            // ! Face_msg getter
+            face_msg::msg::Roilist::SharedPtr getFace() const {return roiarray;}
+            
             void publishVelocity(double linear, double angular) ;
             void publishVelocity(double linear_x, double linear_y, double angular) ;
             void publishVelocity(const geometry_msgs::msg::Twist & twist) ;

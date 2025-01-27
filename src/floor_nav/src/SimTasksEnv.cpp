@@ -28,9 +28,10 @@ SimTasksEnv::SimTasksEnv(std::shared_ptr<rclcpp::Node> n) : task_manager_lib::Ta
     laserscanSub = n->create_subscription<sensor_msgs::msg::LaserScan>("~/scan",be,
             std::bind(&SimTasksEnv::laserScanCallback,this,std::placeholders::_1));
     velPub = n->create_publisher<geometry_msgs::msg::Twist>(auto_topic,1);
-
+    // ! Create a face subscriber
     faceSub = n->create_subscription<face_msg::msg::Roilist>("/face_detect/roi",be,
             std::bind(&SimTasksEnv::faceCallback,this,std::placeholders::_1));
+    roiarray = nullptr;
 }
 
 
@@ -47,10 +48,7 @@ geometry_msgs::msg::Pose2D SimTasksEnv::getPose2D() const {
 geometry_msgs::msg::Pose SimTasksEnv::getPose() const {
     return getPoseStamped().pose;
 }
-// ! To be determined
-face_msg::msg::Roilist SimTasksEnv::getFace() const {
-    return roilist;
-}
+
 
 geometry_msgs::msg::PoseStamped SimTasksEnv::getPoseStamped() const {
     geometry_msgs::msg::PoseStamped pose;
@@ -116,8 +114,11 @@ void SimTasksEnv::laserScanCallback(sensor_msgs::msg::LaserScan::SharedPtr msg) 
     // RCLCPP_INFO(getNode()->get_logger(),"Received laser scan with %d points",int(pointCloud2D.size()));
 }
 
-void SimTasksEnv::faceCallback(face_msg::msg::Roilist::SharedPtr msg) {
-    roilist = *msg;
-    RCLCPP_INFO(getNode()->get_logger(),"Received face detection message with %d faces",int(roilist.rois.size()));
+// ! Face_msg getter
+void SimTasksEnv::faceCallback(face_msg::msg::Roilist::SharedPtr msg) 
+{
+    roiarray = msg;
+    //RCLCPP_INFO(getNode()->get_logger(),"Received face detection message with %d faces",int(roiarray->regions.size()));
+    // If we leave this plot on we will have a message everytime we detect a face on the topic /face_detect/roi
 }
 

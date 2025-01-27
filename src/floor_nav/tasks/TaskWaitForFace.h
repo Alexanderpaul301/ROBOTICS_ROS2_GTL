@@ -8,18 +8,21 @@ using namespace task_manager_lib;
 
 namespace floor_nav{
     struct TaskWaitForFaceConfig : public TaskConfig {
-        TaskWaitForFaceConfig() {
-        define("roiarray",  face_msg::msg::Roilist(),"Face detection message",nullptr, roilist);
-        }
+        TaskWaitForFaceConfig() {}
     };
 
     class TaskWaitForFace : public TaskInstance<TaskWaitForFaceConfig, SimTasksEnv>
     {
         public:
             TaskWaitForFace(TaskDefinitionPtr def, TaskEnvironmentPtr env) : Parent(def,env) {}
+        
             virtual ~TaskWaitForFace() {};
 
             virtual TaskIndicator iterate();
+            virtual TaskIndicator terminate(){
+                RCLCPP_INFO(node->get_logger(),"Terminating the task TaskWaitForFace");
+                return TaskStatus::TASK_TERMINATED;
+            }
 
     };
 
@@ -28,9 +31,9 @@ namespace floor_nav{
         public:
             TaskFactoryWaitForFace(TaskEnvironmentPtr env) : 
                 Parent("WaitForFace","Do nothing until we reach a given destination",true,env) {}
-            virtual ~TaskFactoryWaitForFace() {};
+            virtual ~TaskFactoryWaitForFace() {}
     };
 
 
 }
-#endif // TASK_WAIT_FOR_ROI_H
+#endif // TASK_WAIT_FOR_FACE_H
