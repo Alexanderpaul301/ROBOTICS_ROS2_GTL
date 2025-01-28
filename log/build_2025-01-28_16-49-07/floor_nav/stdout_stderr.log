@@ -1,0 +1,27 @@
+[35m[1mConsolidate compiler generated dependencies of target floornav_TaskGoToPose[0m
+[ 51%] Built target floornav_TaskSetBool
+[ 51%] Built target floornav_TaskSetHeading
+[ 51%] Built target floornav_TaskStareAtFace
+[ 51%] Built target floornav_TaskSetMux
+[ 51%] Built target floornav_TaskNav2
+[ 51%] Built target floornav_TaskGoTo
+[ 74%] Built target floornav_TaskWaitForFace
+[ 74%] Built target floornav_TaskConstant
+[ 83%] Built target floornav_TaskWander
+[ 74%] Built target floornav_TaskTrigger
+[ 83%] Built target floornav_TaskPlanTo
+[ 90%] Built target floornav_TaskWaitForROI
+[ 90%] Built target floornav_task_server
+[ 93%] Built target floornav_TaskAutoDock
+[ 96%] [32mBuilding CXX object CMakeFiles/floornav_TaskGoToPose.dir/tasks/TaskGoToPose.cpp.o[0m
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:[m[K In member function ‘[01m[Kvirtual task_manager_lib::TaskIndicator floor_nav::TaskGoToPose::iterate()[m[K’:
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:41:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_teta[m[K’ was not declared in this scope
+   41 |             if ([01;31m[Kgoal_teta[m[K-teta<cfg->angle_threshold){
+      |                 [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:45:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kk_alpha[m[K’ was not declared in this scope; did you mean ‘[01m[Kisalpha[m[K’?
+   45 |             double rot = [01;31m[Kk_alpha[m[K*remainder(cfg->goal_teta-teta,2*M_PI);
+      |                          [01;31m[K^~~~~~~[m[K
+      |                          [32m[Kisalpha[m[K
+gmake[2]: *** [CMakeFiles/floornav_TaskGoToPose.dir/build.make:76: CMakeFiles/floornav_TaskGoToPose.dir/tasks/TaskGoToPose.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:321: CMakeFiles/floornav_TaskGoToPose.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
