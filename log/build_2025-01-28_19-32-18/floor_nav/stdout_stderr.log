@@ -1,0 +1,95 @@
+[35m[1mConsolidate compiler generated dependencies of target floornav_TaskGoToPose[0m
+[ 38%] Built target floornav_TaskPlanTo
+[ 38%] Built target floornav_TaskSetHeading
+[ 38%] Built target floornav_TaskGoTo
+[ 38%] Built target floornav_TaskConstant
+[ 38%] Built target floornav_TaskSetMux
+[ 48%] Built target floornav_TaskSetBool
+[ 58%] Built target floornav_TaskWander
+[ 74%] Built target floornav_task_server
+[ 74%] Built target floornav_TaskStareAtFace
+[ 87%] Built target floornav_TaskWaitForROI
+[ 87%] Built target floornav_TaskAutoDock
+[ 87%] Built target floornav_TaskTrigger
+[ 87%] Built target floornav_TaskNav2
+[ 93%] Built target floornav_TaskWaitForFace
+[ 96%] [32mBuilding CXX object CMakeFiles/floornav_TaskGoToPose.dir/tasks/TaskGoToPose.cpp.o[0m
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:[m[K In member function ‘[01m[Kvirtual task_manager_lib::TaskIndicator floor_nav::TaskGoToPose::iterate()[m[K’:
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:95:18:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K-((std::__shared_ptr_access<floor_nav::TaskGoToPoseConfig, __gnu_cxx::_S_atomic, false, false>*)(&((floor_nav::TaskGoToPose*)this)->floor_nav::TaskGoToPose::<anonymous>.task_manager_lib::TaskInstance<floor_nav::TaskGoToPoseConfig, floor_nav::SimTasksEnv>::cfg))->std::__shared_ptr_access<floor_nav::TaskGoToPoseConfig, __gnu_cxx::_S_atomic, false, false>::operator->()->floor_nav::TaskGoToPoseConfig::k_r[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+   95 |                 {[01;35m[K-cfg->k_r[m[K, 0, 0},
+      |                  [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:95:18:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K-((std::__shared_ptr_access<floor_nav::TaskGoToPoseConfig, __gnu_cxx::_S_atomic, false, false>*)(&((floor_nav::TaskGoToPose*)this)->floor_nav::TaskGoToPose::<anonymous>.task_manager_lib::TaskInstance<floor_nav::TaskGoToPoseConfig, floor_nav::SimTasksEnv>::cfg))->std::__shared_ptr_access<floor_nav::TaskGoToPoseConfig, __gnu_cxx::_S_atomic, false, false>::operator->()->floor_nav::TaskGoToPoseConfig::k_r[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:96:21:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K-(((std::__shared_ptr_access<floor_nav::TaskGoToPoseConfig, __gnu_cxx::_S_atomic, false, false>*)(&((floor_nav::TaskGoToPose*)this)->floor_nav::TaskGoToPose::<anonymous>.task_manager_lib::TaskInstance<floor_nav::TaskGoToPoseConfig, floor_nav::SimTasksEnv>::cfg))->std::__shared_ptr_access<floor_nav::TaskGoToPoseConfig, __gnu_cxx::_S_atomic, false, false>::operator->()->floor_nav::TaskGoToPoseConfig::k_alpha - ((std::__shared_ptr_access<floor_nav::TaskGoToPoseConfig, __gnu_cxx::_S_atomic, false, false>*)(&((floor_nav::TaskGoToPose*)this)->floor_nav::TaskGoToPose::<anonymous>.task_manager_lib::TaskInstance<floor_nav::TaskGoToPoseConfig, floor_nav::SimTasksEnv>::cfg))->std::__shared_ptr_access<floor_nav::TaskGoToPoseConfig, __gnu_cxx::_S_atomic, false, false>::operator->()->floor_nav::TaskGoToPoseConfig::k_r)[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+   96 |                 {0, [01;35m[K-(cfg->k_alpha - cfg->k_r)[m[K, -cfg->k_beta},
+      |                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:96:21:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K-(((std::__shared_ptr_access<floor_nav::TaskGoToPoseConfig, __gnu_cxx::_S_atomic, false, false>*)(&((floor_nav::TaskGoToPose*)this)->floor_nav::TaskGoToPose::<anonymous>.task_manager_lib::TaskInstance<floor_nav::TaskGoToPoseConfig, floor_nav::SimTasksEnv>::cfg))->std::__shared_ptr_access<floor_nav::TaskGoToPoseConfig, __gnu_cxx::_S_atomic, false, false>::operator->()->floor_nav::TaskGoToPoseConfig::k_alpha - ((std::__shared_ptr_access<floor_nav::TaskGoToPoseConfig, __gnu_cxx::_S_atomic, false, false>*)(&((floor_nav::TaskGoToPose*)this)->floor_nav::TaskGoToPose::<anonymous>.task_manager_lib::TaskInstance<floor_nav::TaskGoToPoseConfig, floor_nav::SimTasksEnv>::cfg))->std::__shared_ptr_access<floor_nav::TaskGoToPoseConfig, __gnu_cxx::_S_atomic, false, false>::operator->()->floor_nav::TaskGoToPoseConfig::k_r)[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:96:49:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K-((std::__shared_ptr_access<floor_nav::TaskGoToPoseConfig, __gnu_cxx::_S_atomic, false, false>*)(&((floor_nav::TaskGoToPose*)this)->floor_nav::TaskGoToPose::<anonymous>.task_manager_lib::TaskInstance<floor_nav::TaskGoToPoseConfig, floor_nav::SimTasksEnv>::cfg))->std::__shared_ptr_access<floor_nav::TaskGoToPoseConfig, __gnu_cxx::_S_atomic, false, false>::operator->()->floor_nav::TaskGoToPoseConfig::k_beta[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+   96 |                 {0, -(cfg->k_alpha - cfg->k_r), [01;35m[K-cfg->k_beta[m[K},
+      |                                                 [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:96:49:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K-((std::__shared_ptr_access<floor_nav::TaskGoToPoseConfig, __gnu_cxx::_S_atomic, false, false>*)(&((floor_nav::TaskGoToPose*)this)->floor_nav::TaskGoToPose::<anonymous>.task_manager_lib::TaskInstance<floor_nav::TaskGoToPoseConfig, floor_nav::SimTasksEnv>::cfg))->std::__shared_ptr_access<floor_nav::TaskGoToPoseConfig, __gnu_cxx::_S_atomic, false, false>::operator->()->floor_nav::TaskGoToPoseConfig::k_beta[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:97:26:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((std::__shared_ptr_access<floor_nav::TaskGoToPoseConfig, __gnu_cxx::_S_atomic, false, false>*)(&((floor_nav::TaskGoToPose*)this)->floor_nav::TaskGoToPose::<anonymous>.task_manager_lib::TaskInstance<floor_nav::TaskGoToPoseConfig, floor_nav::SimTasksEnv>::cfg))->std::__shared_ptr_access<floor_nav::TaskGoToPoseConfig, __gnu_cxx::_S_atomic, false, false>::operator->()->floor_nav::TaskGoToPoseConfig::k_r[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+   97 |                 {0, [01;35m[Kcfg->k_r[m[K, 0}
+      |                     [01;35m[K~~~~~^~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:97:26:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((std::__shared_ptr_access<floor_nav::TaskGoToPoseConfig, __gnu_cxx::_S_atomic, false, false>*)(&((floor_nav::TaskGoToPose*)this)->floor_nav::TaskGoToPose::<anonymous>.task_manager_lib::TaskInstance<floor_nav::TaskGoToPoseConfig, floor_nav::SimTasksEnv>::cfg))->std::__shared_ptr_access<floor_nav::TaskGoToPoseConfig, __gnu_cxx::_S_atomic, false, false>::operator->()->floor_nav::TaskGoToPoseConfig::k_r[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:101:18:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kr[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+  101 |                 {[01;35m[Kr[m[K},
+      |                  [01;35m[K^[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:101:18:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kr[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:102:18:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kalpha[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+  102 |                 {[01;35m[Kalpha[m[K},
+      |                  [01;35m[K^~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:102:18:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kalpha[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:103:18:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kbeta[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+  103 |                 {[01;35m[Kbeta[m[K}
+      |                  [01;35m[K^~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:103:18:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kbeta[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:106:66:[m[K [01;31m[Kerror: [m[K‘[01m[KmultiplyMatrices[m[K’ was not declared in this scope
+  106 |             std::vector<std::vector<float>> dot_rho_alpha_beta = [01;31m[KmultiplyMatrices[m[K(A, rho_alpha_beta);
+      |                                                                  [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:110:22:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K- cos(alpha)[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+  110 |                     {[01;35m[K-cos(alpha)[m[K, 0},
+      |                      [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:110:22:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K- cos(alpha)[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:111:33:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(sin(alpha) / r)[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+  111 |                     {[01;35m[Ksin(alpha) / r[m[K, -1},
+      |                      [01;35m[K~~~~~~~~~~~^~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:111:33:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(sin(alpha) / r)[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:112:34:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((- sin(alpha)) / r)[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+  112 |                     {[01;35m[K-sin(alpha) / r[m[K, 0}
+      |                      [01;35m[K~~~~~~~~~~~~^~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:112:34:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((- sin(alpha)) / r)[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:114:55:[m[K [01;31m[Kerror: [m[K‘[01m[KtransposeMatrix[m[K’ was not declared in this scope
+  114 |                 std::vector<std::vector<float>> I1T = [01;31m[KtransposeMatrix[m[K(I1);
+      |                                                       [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:116:91:[m[K [01;31m[Kerror: [m[K‘[01m[KinversMatrix[m[K’ was not declared in this scope
+  116 |                 std::vector<std::vector<float>> v_w_1 = multiplyMatrices(multiplyMatrices([01;31m[KinversMatrix[m[K(I1TI1), I1T), rho_alpha_beta);
+      |                                                                                           [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:122:25:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kcos(alpha)[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+  122 |                     {[01;35m[Kcos(alpha)[m[K, 0},
+      |                      [01;35m[K~~~^~~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:122:25:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kcos(alpha)[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:123:34:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((- sin(alpha)) / r)[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+  123 |                     {[01;35m[K-sin(alpha) / r[m[K, -1},
+      |                      [01;35m[K~~~~~~~~~~~~^~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:123:34:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((- sin(alpha)) / r)[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:124:33:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(sin(alpha) / r)[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+  124 |                     {[01;35m[Ksin(alpha) / r[m[K, 0}
+      |                      [01;35m[K~~~~~~~~~~~^~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:124:33:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(sin(alpha) / r)[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:126:55:[m[K [01;31m[Kerror: [m[K‘[01m[KtransposeMatrix[m[K’ was not declared in this scope
+  126 |                 std::vector<std::vector<float>> I2T = [01;31m[KtransposeMatrix[m[K(I2);
+      |                                                       [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:128:91:[m[K [01;31m[Kerror: [m[K‘[01m[KinversMatrix[m[K’ was not declared in this scope
+  128 |                 std::vector<std::vector<float>> v_w_2 = multiplyMatrices(multiplyMatrices([01;31m[KinversMatrix[m[K(I2TI2), I2T), rho_alpha_beta);
+      |                                                                                           [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:[m[K At global scope:
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:141:9:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kreturn[m[K’
+  141 |         [01;31m[Kreturn[m[K TaskStatus::TASK_RUNNING;
+      |         [01;31m[K^~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:[m[K In member function ‘[01m[Kvirtual task_manager_lib::TaskIndicator floor_nav::TaskGoToPose::iterate()[m[K’:
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:140:9:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+  140 |         [01;35m[K}[m[K
+      |         [01;35m[K^[m[K
+gmake[2]: *** [CMakeFiles/floornav_TaskGoToPose.dir/build.make:76: CMakeFiles/floornav_TaskGoToPose.dir/tasks/TaskGoToPose.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:321: CMakeFiles/floornav_TaskGoToPose.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
