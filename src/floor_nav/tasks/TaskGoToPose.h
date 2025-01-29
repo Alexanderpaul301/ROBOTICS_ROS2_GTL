@@ -13,13 +13,13 @@ namespace floor_nav {
             define("goal_x",  0.0,"X coordinate of destination",false, goal_x);
             define("goal_y",  0.0,"Y coordinate of destination",false, goal_y);
             define("k_v",  1.0,"Gain for velocity control",false, k_v);
-            define("k_r",  1.0,"Gain for angular control",false, k_r);
-            define("k_alpha",  1.0,"Gain for angular control",false, k_alpha);
-            define("k_beta",  -1.0,"Gain for angular control",false, k_beta);
+            define("k_r",  0.6,"Gain for angular control",false, k_r);
+            define("k_alpha",  3.0,"Gain for angular control",false, k_alpha);
+            define("k_beta",  -3.0,"Gain for angular control",false, k_beta);
             define("max_velocity",  1.0,"Max allowed velocity",false, max_velocity);
             define("max_angular_velocity",  1.0,"Max allowed angular velocity",false, max_angular_velocity);
-            define("dist_threshold",  0.1,"Distance at which a the target is considered reached",false, dist_threshold);
-            define("angle_threshold",  0.15,"Angle at which a the target is considered reached",false, angle_threshold);
+            define("dist_threshold",  0.08,"Distance at which a the target is considered reached",false, dist_threshold);
+            define("angle_threshold",  0.05,"Angle at which a the target is considered reached",false, angle_threshold);
             define("relative",  false,"Is the target pose relative or absolute",true, relative);
             define("stupid", false,"Use a stupid control law",false, stupid);
         }

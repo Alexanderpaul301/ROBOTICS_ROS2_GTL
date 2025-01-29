@@ -138,7 +138,7 @@
             //     env->publishVelocity(v, w);
             // }
 
-            if (r < cfg->dist_threshold) {
+            if (r < cfg->dist_threshold && (cfg->goal_teta-teta) < cfg->angle_threshold) {
                 env->publishVelocity(0.0, 0.0);
                 return TaskStatus::TASK_COMPLETED;
             }
