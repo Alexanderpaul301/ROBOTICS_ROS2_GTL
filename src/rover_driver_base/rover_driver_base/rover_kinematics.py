@@ -74,8 +74,8 @@ class RoverKinematics:
                 # TODO: In case we are in skidsteer mode (driving like a tank)
                 # Insert here the steering and velocity of 
                 # each wheel in skid-steer mode
+                motors.drive[k] = twist.linear.x + twist.angular.z*drive_cfg['C'+k[1]].x
                 motors.steering[k] = 0
-                motors.drive[k] = 0
         else:
             for k in drive_cfg.keys():
                 # TODO: In case we are in rolling without slipping mode (driving normally)

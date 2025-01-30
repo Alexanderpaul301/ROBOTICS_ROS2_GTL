@@ -90,7 +90,7 @@ def generate_launch_description():
             package='rover_driver_base', executable='rover_command_node', name='rover_command',
             parameters=[
                 {'~/rover_name': 'rover'},
-                {'~/skidsteer': False},
+                {'~/skidsteer': True},
                 {'~/check_timeout': False},
                 ],
             remappings=[
