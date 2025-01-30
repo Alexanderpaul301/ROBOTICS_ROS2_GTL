@@ -71,37 +71,19 @@ class RoverKinematics:
         motors = RoverMotors()
         if skidsteer:
             for k in drive_cfg.keys():
-                # ? Done
                 # TODO: In case we are in skidsteer mode (driving like a tank)
                 # Insert here the steering and velocity of 
                 # each wheel in skid-steer mode
-                if twist.angular.z != 0:
-                    # Angular Speed
-                    if k in ['FL','CL','RL']:
-                        motors.drive[k] = twist.angular.z
-                    else : 
-                        motors.drive[k] = -twist.angular.z
-                else:
-                    # Linear Speed
-                    motors.drive[k] = twist.linear.x
-
-
-                # Force all motors to be straight bc we are in skid-steer mode
+                motors.drive[k] = (twist.linear.x - twist.angular.z*drive_cfg['C'+k[1]].x)*300
                 motors.steering[k] = 0
-
-
-
         else:
             for k in drive_cfg.keys():
                 # TODO: In case we are in rolling without slipping mode (driving normally)
                 # Insert here the steering and velocity of 
                 # each wheel in rolling-without-slipping mode
-                motors.steering[k] = 0
-                motors.drive[k] = 0
+                motors.drive[k] = (twist.linear.x - twist.angular.z*drive_cfg['C'+k[1]].x)*300
+                motors.steering[k] = (twist.linear.y +twist.angular.z*drive_cfg['C'+k[1]].x)*300
         return motors
-
-
-
 
     def prepare_inversion_matrix(self,drive_cfg):
         # TODO: Build pseudo inverse of W using the notation from the class. The matrix size below is wrong.
