@@ -14,11 +14,11 @@ vel=0.5
 
 while True:
     try:
-        tc.Wander(max_linear_speed=0.1, safety_range=0.8, dont_care_range=2.5, max_angular_speed=0.3,multiplier=0.3,front_sector=False,angular_range=pi/6, task_timeout=60.0)
+        tc.Wander(max_linear_speed=1.0, safety_range=0.8, dont_care_range=2.5, max_angular_speed=3.0,multiplier=0.3,front_sector=False,angular_range=pi/6, task_timeout=60.0)
     except TaskException as e:
         pass
     for i in range(3):
-        tc.SetHeading(target=2*pi/3,relative=True,max_angular_velocity=0.3,angle_threshold=0.1,k_theta=3.0)
+        tc.SetHeading(target=2*pi/3,relative=True,max_angular_velocity=3.0,angle_threshold=0.1,k_theta=3.0)
 
 
 tc.get_logger().info("Mission completed")

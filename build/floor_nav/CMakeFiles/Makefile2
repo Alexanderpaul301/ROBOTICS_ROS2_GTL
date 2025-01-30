@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/GTL/apaul/ros2_hw1/src/floor_nav
+CMAKE_SOURCE_DIR = /home/GTL/pcastere/ros_hw1/ros2_hw1/src/floor_nav
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/GTL/apaul/ros2_hw1/build/floor_nav
+CMAKE_BINARY_DIR = /home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -69,10 +69,13 @@ all: CMakeFiles/floornav_TaskSetMux.dir/all
 all: CMakeFiles/floornav_TaskTrigger.dir/all
 all: CMakeFiles/floornav_TaskSetBool.dir/all
 all: CMakeFiles/floornav_TaskConstant.dir/all
+all: CMakeFiles/floornav_TaskGoToPose.dir/all
 all: CMakeFiles/floornav_TaskGoTo.dir/all
 all: CMakeFiles/floornav_TaskSetHeading.dir/all
 all: CMakeFiles/floornav_TaskPlanTo.dir/all
 all: CMakeFiles/floornav_TaskWaitForROI.dir/all
+all: CMakeFiles/floornav_TaskWaitForFace.dir/all
+all: CMakeFiles/floornav_TaskStareAtFace.dir/all
 all: CMakeFiles/floornav_TaskWander.dir/all
 all: CMakeFiles/floornav_TaskAutoDock.dir/all
 .PHONY : all
@@ -90,10 +93,13 @@ clean: CMakeFiles/floornav_TaskSetMux.dir/clean
 clean: CMakeFiles/floornav_TaskTrigger.dir/clean
 clean: CMakeFiles/floornav_TaskSetBool.dir/clean
 clean: CMakeFiles/floornav_TaskConstant.dir/clean
+clean: CMakeFiles/floornav_TaskGoToPose.dir/clean
 clean: CMakeFiles/floornav_TaskGoTo.dir/clean
 clean: CMakeFiles/floornav_TaskSetHeading.dir/clean
 clean: CMakeFiles/floornav_TaskPlanTo.dir/clean
 clean: CMakeFiles/floornav_TaskWaitForROI.dir/clean
+clean: CMakeFiles/floornav_TaskWaitForFace.dir/clean
+clean: CMakeFiles/floornav_TaskStareAtFace.dir/clean
 clean: CMakeFiles/floornav_TaskWander.dir/clean
 clean: CMakeFiles/floornav_TaskAutoDock.dir/clean
 .PHONY : clean
@@ -105,14 +111,14 @@ clean: CMakeFiles/floornav_TaskAutoDock.dir/clean
 CMakeFiles/uninstall.dir/all: CMakeFiles/floor_nav_uninstall.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles --progress-num= "Built target uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles --progress-num= "Built target uninstall"
 .PHONY : CMakeFiles/uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles 0
 .PHONY : CMakeFiles/uninstall.dir/rule
 
 # Convenience name for target.
@@ -131,14 +137,14 @@ CMakeFiles/uninstall.dir/clean:
 CMakeFiles/floor_nav_uninstall.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/floor_nav_uninstall.dir/build.make CMakeFiles/floor_nav_uninstall.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/floor_nav_uninstall.dir/build.make CMakeFiles/floor_nav_uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles --progress-num= "Built target floor_nav_uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles --progress-num= "Built target floor_nav_uninstall"
 .PHONY : CMakeFiles/floor_nav_uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/floor_nav_uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/floor_nav_uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles 0
 .PHONY : CMakeFiles/floor_nav_uninstall.dir/rule
 
 # Convenience name for target.
@@ -157,14 +163,14 @@ CMakeFiles/floor_nav_uninstall.dir/clean:
 CMakeFiles/floornav_task_server.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_task_server.dir/build.make CMakeFiles/floornav_task_server.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_task_server.dir/build.make CMakeFiles/floornav_task_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles --progress-num=23,24,25 "Built target floornav_task_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles --progress-num=29,30,31 "Built target floornav_task_server"
 .PHONY : CMakeFiles/floornav_task_server.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/floornav_task_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/floornav_task_server.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles 0
 .PHONY : CMakeFiles/floornav_task_server.dir/rule
 
 # Convenience name for target.
@@ -183,14 +189,14 @@ CMakeFiles/floornav_task_server.dir/clean:
 CMakeFiles/floornav_TaskNav2.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskNav2.dir/build.make CMakeFiles/floornav_TaskNav2.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskNav2.dir/build.make CMakeFiles/floornav_TaskNav2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles --progress-num=7,8 "Built target floornav_TaskNav2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles --progress-num=9,10 "Built target floornav_TaskNav2"
 .PHONY : CMakeFiles/floornav_TaskNav2.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/floornav_TaskNav2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/floornav_TaskNav2.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles 0
 .PHONY : CMakeFiles/floornav_TaskNav2.dir/rule
 
 # Convenience name for target.
@@ -209,14 +215,14 @@ CMakeFiles/floornav_TaskNav2.dir/clean:
 CMakeFiles/floornav_TaskSetMux.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskSetMux.dir/build.make CMakeFiles/floornav_TaskSetMux.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskSetMux.dir/build.make CMakeFiles/floornav_TaskSetMux.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles --progress-num=15,16 "Built target floornav_TaskSetMux"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles --progress-num=17,18 "Built target floornav_TaskSetMux"
 .PHONY : CMakeFiles/floornav_TaskSetMux.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/floornav_TaskSetMux.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/floornav_TaskSetMux.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles 0
 .PHONY : CMakeFiles/floornav_TaskSetMux.dir/rule
 
 # Convenience name for target.
@@ -235,14 +241,14 @@ CMakeFiles/floornav_TaskSetMux.dir/clean:
 CMakeFiles/floornav_TaskTrigger.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskTrigger.dir/build.make CMakeFiles/floornav_TaskTrigger.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskTrigger.dir/build.make CMakeFiles/floornav_TaskTrigger.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles --progress-num=17,18 "Built target floornav_TaskTrigger"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles --progress-num=21,22 "Built target floornav_TaskTrigger"
 .PHONY : CMakeFiles/floornav_TaskTrigger.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/floornav_TaskTrigger.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/floornav_TaskTrigger.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles 0
 .PHONY : CMakeFiles/floornav_TaskTrigger.dir/rule
 
 # Convenience name for target.
@@ -261,14 +267,14 @@ CMakeFiles/floornav_TaskTrigger.dir/clean:
 CMakeFiles/floornav_TaskSetBool.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskSetBool.dir/build.make CMakeFiles/floornav_TaskSetBool.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskSetBool.dir/build.make CMakeFiles/floornav_TaskSetBool.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles --progress-num=11,12 "Built target floornav_TaskSetBool"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles --progress-num=13,14 "Built target floornav_TaskSetBool"
 .PHONY : CMakeFiles/floornav_TaskSetBool.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/floornav_TaskSetBool.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/floornav_TaskSetBool.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles 0
 .PHONY : CMakeFiles/floornav_TaskSetBool.dir/rule
 
 # Convenience name for target.
@@ -287,14 +293,14 @@ CMakeFiles/floornav_TaskSetBool.dir/clean:
 CMakeFiles/floornav_TaskConstant.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskConstant.dir/build.make CMakeFiles/floornav_TaskConstant.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskConstant.dir/build.make CMakeFiles/floornav_TaskConstant.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles --progress-num=3,4 "Built target floornav_TaskConstant"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles --progress-num=3,4 "Built target floornav_TaskConstant"
 .PHONY : CMakeFiles/floornav_TaskConstant.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/floornav_TaskConstant.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/floornav_TaskConstant.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles 0
 .PHONY : CMakeFiles/floornav_TaskConstant.dir/rule
 
 # Convenience name for target.
@@ -307,20 +313,46 @@ CMakeFiles/floornav_TaskConstant.dir/clean:
 .PHONY : CMakeFiles/floornav_TaskConstant.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/floornav_TaskGoToPose.dir
+
+# All Build rule for target.
+CMakeFiles/floornav_TaskGoToPose.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskGoToPose.dir/build.make CMakeFiles/floornav_TaskGoToPose.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskGoToPose.dir/build.make CMakeFiles/floornav_TaskGoToPose.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles --progress-num=7,8 "Built target floornav_TaskGoToPose"
+.PHONY : CMakeFiles/floornav_TaskGoToPose.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/floornav_TaskGoToPose.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/floornav_TaskGoToPose.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles 0
+.PHONY : CMakeFiles/floornav_TaskGoToPose.dir/rule
+
+# Convenience name for target.
+floornav_TaskGoToPose: CMakeFiles/floornav_TaskGoToPose.dir/rule
+.PHONY : floornav_TaskGoToPose
+
+# clean rule for target.
+CMakeFiles/floornav_TaskGoToPose.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskGoToPose.dir/build.make CMakeFiles/floornav_TaskGoToPose.dir/clean
+.PHONY : CMakeFiles/floornav_TaskGoToPose.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/floornav_TaskGoTo.dir
 
 # All Build rule for target.
 CMakeFiles/floornav_TaskGoTo.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskGoTo.dir/build.make CMakeFiles/floornav_TaskGoTo.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskGoTo.dir/build.make CMakeFiles/floornav_TaskGoTo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles --progress-num=5,6 "Built target floornav_TaskGoTo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles --progress-num=5,6 "Built target floornav_TaskGoTo"
 .PHONY : CMakeFiles/floornav_TaskGoTo.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/floornav_TaskGoTo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/floornav_TaskGoTo.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles 0
 .PHONY : CMakeFiles/floornav_TaskGoTo.dir/rule
 
 # Convenience name for target.
@@ -339,14 +371,14 @@ CMakeFiles/floornav_TaskGoTo.dir/clean:
 CMakeFiles/floornav_TaskSetHeading.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskSetHeading.dir/build.make CMakeFiles/floornav_TaskSetHeading.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskSetHeading.dir/build.make CMakeFiles/floornav_TaskSetHeading.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles --progress-num=13,14 "Built target floornav_TaskSetHeading"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles --progress-num=15,16 "Built target floornav_TaskSetHeading"
 .PHONY : CMakeFiles/floornav_TaskSetHeading.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/floornav_TaskSetHeading.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/floornav_TaskSetHeading.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles 0
 .PHONY : CMakeFiles/floornav_TaskSetHeading.dir/rule
 
 # Convenience name for target.
@@ -365,14 +397,14 @@ CMakeFiles/floornav_TaskSetHeading.dir/clean:
 CMakeFiles/floornav_TaskPlanTo.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskPlanTo.dir/build.make CMakeFiles/floornav_TaskPlanTo.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskPlanTo.dir/build.make CMakeFiles/floornav_TaskPlanTo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles --progress-num=9,10 "Built target floornav_TaskPlanTo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles --progress-num=11,12 "Built target floornav_TaskPlanTo"
 .PHONY : CMakeFiles/floornav_TaskPlanTo.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/floornav_TaskPlanTo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/floornav_TaskPlanTo.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles 0
 .PHONY : CMakeFiles/floornav_TaskPlanTo.dir/rule
 
 # Convenience name for target.
@@ -391,14 +423,14 @@ CMakeFiles/floornav_TaskPlanTo.dir/clean:
 CMakeFiles/floornav_TaskWaitForROI.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskWaitForROI.dir/build.make CMakeFiles/floornav_TaskWaitForROI.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskWaitForROI.dir/build.make CMakeFiles/floornav_TaskWaitForROI.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles --progress-num=19,20 "Built target floornav_TaskWaitForROI"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles --progress-num=25,26 "Built target floornav_TaskWaitForROI"
 .PHONY : CMakeFiles/floornav_TaskWaitForROI.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/floornav_TaskWaitForROI.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/floornav_TaskWaitForROI.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles 0
 .PHONY : CMakeFiles/floornav_TaskWaitForROI.dir/rule
 
 # Convenience name for target.
@@ -411,20 +443,72 @@ CMakeFiles/floornav_TaskWaitForROI.dir/clean:
 .PHONY : CMakeFiles/floornav_TaskWaitForROI.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/floornav_TaskWaitForFace.dir
+
+# All Build rule for target.
+CMakeFiles/floornav_TaskWaitForFace.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskWaitForFace.dir/build.make CMakeFiles/floornav_TaskWaitForFace.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskWaitForFace.dir/build.make CMakeFiles/floornav_TaskWaitForFace.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles --progress-num=23,24 "Built target floornav_TaskWaitForFace"
+.PHONY : CMakeFiles/floornav_TaskWaitForFace.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/floornav_TaskWaitForFace.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/floornav_TaskWaitForFace.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles 0
+.PHONY : CMakeFiles/floornav_TaskWaitForFace.dir/rule
+
+# Convenience name for target.
+floornav_TaskWaitForFace: CMakeFiles/floornav_TaskWaitForFace.dir/rule
+.PHONY : floornav_TaskWaitForFace
+
+# clean rule for target.
+CMakeFiles/floornav_TaskWaitForFace.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskWaitForFace.dir/build.make CMakeFiles/floornav_TaskWaitForFace.dir/clean
+.PHONY : CMakeFiles/floornav_TaskWaitForFace.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/floornav_TaskStareAtFace.dir
+
+# All Build rule for target.
+CMakeFiles/floornav_TaskStareAtFace.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskStareAtFace.dir/build.make CMakeFiles/floornav_TaskStareAtFace.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskStareAtFace.dir/build.make CMakeFiles/floornav_TaskStareAtFace.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles --progress-num=19,20 "Built target floornav_TaskStareAtFace"
+.PHONY : CMakeFiles/floornav_TaskStareAtFace.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/floornav_TaskStareAtFace.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/floornav_TaskStareAtFace.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles 0
+.PHONY : CMakeFiles/floornav_TaskStareAtFace.dir/rule
+
+# Convenience name for target.
+floornav_TaskStareAtFace: CMakeFiles/floornav_TaskStareAtFace.dir/rule
+.PHONY : floornav_TaskStareAtFace
+
+# clean rule for target.
+CMakeFiles/floornav_TaskStareAtFace.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskStareAtFace.dir/build.make CMakeFiles/floornav_TaskStareAtFace.dir/clean
+.PHONY : CMakeFiles/floornav_TaskStareAtFace.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/floornav_TaskWander.dir
 
 # All Build rule for target.
 CMakeFiles/floornav_TaskWander.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskWander.dir/build.make CMakeFiles/floornav_TaskWander.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskWander.dir/build.make CMakeFiles/floornav_TaskWander.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles --progress-num=21,22 "Built target floornav_TaskWander"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles --progress-num=27,28 "Built target floornav_TaskWander"
 .PHONY : CMakeFiles/floornav_TaskWander.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/floornav_TaskWander.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/floornav_TaskWander.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles 0
 .PHONY : CMakeFiles/floornav_TaskWander.dir/rule
 
 # Convenience name for target.
@@ -443,14 +527,14 @@ CMakeFiles/floornav_TaskWander.dir/clean:
 CMakeFiles/floornav_TaskAutoDock.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskAutoDock.dir/build.make CMakeFiles/floornav_TaskAutoDock.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/floornav_TaskAutoDock.dir/build.make CMakeFiles/floornav_TaskAutoDock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles --progress-num=1,2 "Built target floornav_TaskAutoDock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles --progress-num=1,2 "Built target floornav_TaskAutoDock"
 .PHONY : CMakeFiles/floornav_TaskAutoDock.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/floornav_TaskAutoDock.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/floornav_TaskAutoDock.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/apaul/ros2_hw1/build/floor_nav/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/pcastere/ros_hw1/ros2_hw1/build/floor_nav/CMakeFiles 0
 .PHONY : CMakeFiles/floornav_TaskAutoDock.dir/rule
 
 # Convenience name for target.
