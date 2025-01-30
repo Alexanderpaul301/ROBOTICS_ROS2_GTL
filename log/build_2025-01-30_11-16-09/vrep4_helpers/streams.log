@@ -1,0 +1,78 @@
+[0.463s] Invoking command in '/home/GTL/pcastere/ros_hw1/ros2_hw1/build/vrep4_helpers': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/GTL/pcastere/ros_hw1/ros2_hw1/src/vrep4_helpers -DCMAKE_INSTALL_PREFIX=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/vrep4_helpers
+[0.527s] -- The C compiler identification is GNU 11.4.0
+[0.582s] -- The CXX compiler identification is GNU 11.4.0
+[0.593s] -- Detecting C compiler ABI info
+[0.716s] -- Detecting C compiler ABI info - done
+[0.728s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.728s] -- Detecting C compile features
+[0.728s] -- Detecting C compile features - done
+[0.737s] -- Detecting CXX compiler ABI info
+[0.856s] -- Detecting CXX compiler ABI info - done
+[0.869s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.870s] -- Detecting CXX compile features
+[0.870s] -- Detecting CXX compile features - done
+[0.879s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.979s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.085s] -- Found depth_image_proc: 3.0.6 (/opt/ros/humble/share/depth_image_proc/cmake)
+[1.119s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.123s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.128s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.137s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.152s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.228s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.230s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[1.244s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.254s] -- Looking for pthread.h
+[1.370s] -- Looking for pthread.h - found
+[1.371s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.486s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.487s] -- Found Threads: TRUE  
+[1.646s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.843s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.843s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/GTL/pcastere/ros_hw1/ros2_hw1/src/vrep4_helpers/include>
+[1.843s] -- Configured cppcheck exclude dirs and/or files: 
+[1.850s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.866s] -- Added test 'lint_cmake' to check CMake code style
+[1.875s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.929s] -- Added test 'uncrustify' to check C / C++ code style
+[1.929s] -- Configured uncrustify additional arguments: 
+[1.938s] -- Added test 'xmllint' to check XML markup files
+[1.957s] -- Configuring done
+[2.145s] -- Generating done
+[2.164s] -- Build files have been written to: /home/GTL/pcastere/ros_hw1/ros2_hw1/build/vrep4_helpers
+[2.172s] Invoked command in '/home/GTL/pcastere/ros_hw1/ros2_hw1/build/vrep4_helpers' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/GTL/pcastere/ros_hw1/ros2_hw1/src/vrep4_helpers -DCMAKE_INSTALL_PREFIX=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/vrep4_helpers
+[2.173s] Invoking command in '/home/GTL/pcastere/ros_hw1/ros2_hw1/build/vrep4_helpers': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/GTL/pcastere/ros_hw1/ros2_hw1/build/vrep4_helpers -- -j16 -l16
+[2.231s] [ 50%] [32mBuilding CXX object CMakeFiles/image_flip.dir/src/image_flip.cpp.o[0m
+[2.231s] [ 50%] [32mBuilding CXX object CMakeFiles/clock_repeat.dir/src/clock_repeat.cpp.o[0m
+[7.341s] [ 75%] [32m[1mLinking CXX executable image_flip[0m
+[8.384s] [ 75%] Built target image_flip
+[16.709s] [100%] [32m[1mLinking CXX executable clock_repeat[0m
+[17.262s] [100%] Built target clock_repeat
+[17.271s] Invoked command in '/home/GTL/pcastere/ros_hw1/ros2_hw1/build/vrep4_helpers' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/GTL/pcastere/ros_hw1/ros2_hw1/build/vrep4_helpers -- -j16 -l16
+[17.293s] Invoking command in '/home/GTL/pcastere/ros_hw1/ros2_hw1/build/vrep4_helpers': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/GTL/pcastere/ros_hw1/ros2_hw1/build/vrep4_helpers
+[17.297s] -- Install configuration: ""
+[17.302s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/vrep4_helpers/lib/vrep4_helpers/image_flip
+[17.319s] -- Set runtime path of "/home/GTL/pcastere/ros_hw1/ros2_hw1/install/vrep4_helpers/lib/vrep4_helpers/image_flip" to ""
+[17.320s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/vrep4_helpers/lib/vrep4_helpers/clock_repeat
+[17.432s] -- Set runtime path of "/home/GTL/pcastere/ros_hw1/ros2_hw1/install/vrep4_helpers/lib/vrep4_helpers/clock_repeat" to ""
+[17.432s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers
+[17.437s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/kinect_pc.launch.py
+[17.442s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/kinect_pc_min.launch.py
+[17.446s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/__pycache__
+[17.449s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/__pycache__/kinect_pc_min.launch.cpython-310.pyc
+[17.458s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/vrep4_helpers/share/ament_index/resource_index/package_run_dependencies/vrep4_helpers
+[17.467s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/vrep4_helpers/share/ament_index/resource_index/parent_prefix_path/vrep4_helpers
+[17.473s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/environment/ament_prefix_path.sh
+[17.478s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/environment/ament_prefix_path.dsv
+[17.482s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/environment/path.sh
+[17.485s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/environment/path.dsv
+[17.489s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/local_setup.bash
+[17.493s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/local_setup.sh
+[17.497s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/local_setup.zsh
+[17.501s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/local_setup.dsv
+[17.505s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/package.dsv
+[17.513s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/vrep4_helpers/share/ament_index/resource_index/packages/vrep4_helpers
+[17.518s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/cmake/vrep4_helpersConfig.cmake
+[17.523s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/cmake/vrep4_helpersConfig-version.cmake
+[17.527s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/package.xml
+[17.533s] Invoked command in '/home/GTL/pcastere/ros_hw1/ros2_hw1/build/vrep4_helpers' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/GTL/pcastere/ros_hw1/ros2_hw1/build/vrep4_helpers

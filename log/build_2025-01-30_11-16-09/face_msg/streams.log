@@ -1,0 +1,227 @@
+[0.093s] Invoking command in '/home/GTL/pcastere/ros_hw1/ros2_hw1/build/face_msg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/GTL/pcastere/ros_hw1/ros2_hw1/src/face_msg -DCMAKE_INSTALL_PREFIX=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg
+[0.512s] -- The C compiler identification is GNU 11.4.0
+[0.512s] -- The CXX compiler identification is GNU 11.4.0
+[0.512s] -- Detecting C compiler ABI info
+[0.512s] -- Detecting C compiler ABI info - done
+[0.512s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.512s] -- Detecting C compile features
+[0.512s] -- Detecting C compile features - done
+[0.512s] -- Detecting CXX compiler ABI info
+[0.566s] -- Detecting CXX compiler ABI info - done
+[0.575s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.575s] -- Detecting CXX compile features
+[0.575s] -- Detecting CXX compile features - done
+[0.584s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.689s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.818s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.823s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.853s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.884s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.902s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.949s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.358s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[2.399s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.799s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.816s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[2.818s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.837s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[2.837s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.837s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.837s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[2.853s] -- Found PythonExtra: .so  
+[3.071s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.169s] -- Added test 'lint_cmake' to check CMake code style
+[3.177s] -- Added test 'xmllint' to check XML markup files
+[3.223s] -- Configuring done
+[3.757s] -- Generating done
+[3.806s] -- Build files have been written to: /home/GTL/pcastere/ros_hw1/ros2_hw1/build/face_msg
+[3.814s] Invoked command in '/home/GTL/pcastere/ros_hw1/ros2_hw1/build/face_msg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/GTL/pcastere/ros_hw1/ros2_hw1/src/face_msg -DCMAKE_INSTALL_PREFIX=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg
+[3.822s] Invoking command in '/home/GTL/pcastere/ros_hw1/ros2_hw1/build/face_msg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/GTL/pcastere/ros_hw1/ros2_hw1/build/face_msg -- -j16 -l16
+[3.869s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[3.875s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.885s] [  6%] Built target ament_cmake_python_copy_face_msg
+[4.115s] [  6%] Built target face_msg__cpp
+[4.131s] [ 12%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[4.132s] [ 12%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[4.141s] [ 16%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[4.148s] running egg_info
+[4.150s] creating face_msg.egg-info
+[4.152s] writing face_msg.egg-info/PKG-INFO
+[4.154s] writing dependency_links to face_msg.egg-info/dependency_links.txt
+[4.157s] writing top-level names to face_msg.egg-info/top_level.txt
+[4.160s] writing manifest file 'face_msg.egg-info/SOURCES.txt'
+[4.168s] reading manifest file 'face_msg.egg-info/SOURCES.txt'
+[4.171s] writing manifest file 'face_msg.egg-info/SOURCES.txt'
+[4.195s] [ 19%] [32mBuilding C object CMakeFiles/face_msg__rosidl_generator_c.dir/rosidl_generator_c/face_msg/msg/detail/roilist__functions.c.o[0m
+[4.211s] [ 19%] Built target ament_cmake_python_build_face_msg_egg
+[4.253s] [ 22%] [32m[1mLinking C shared library libface_msg__rosidl_generator_c.so[0m
+[4.300s] [ 22%] Built target face_msg__rosidl_generator_c
+[4.315s] [ 29%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[4.315s] [ 29%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[4.325s] [ 32%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[4.439s] [ 35%] [32mBuilding CXX object CMakeFiles/face_msg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/face_msg/msg/roilist__type_support.cpp.o[0m
+[4.462s] [ 38%] [32mBuilding CXX object CMakeFiles/face_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/face_msg/msg/detail/dds_fastrtps/roilist__type_support.cpp.o[0m
+[4.478s] [ 41%] [32mBuilding CXX object CMakeFiles/face_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/face_msg/msg/detail/roilist__type_support.cpp.o[0m
+[4.633s] [ 45%] [32mBuilding CXX object CMakeFiles/face_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/face_msg/msg/roilist__type_support.cpp.o[0m
+[4.640s] [ 48%] [32mBuilding CXX object CMakeFiles/face_msg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/face_msg/msg/detail/roilist__type_support_c.cpp.o[0m
+[4.662s] [ 51%] [32mBuilding C object CMakeFiles/face_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/face_msg/msg/detail/roilist__type_support.c.o[0m
+[4.680s] [ 54%] [32m[1mLinking CXX shared library libface_msg__rosidl_typesupport_c.so[0m
+[4.765s] [ 61%] Built target face_msg__rosidl_typesupport_c
+[4.765s] [ 61%] [32m[1mLinking C shared library libface_msg__rosidl_typesupport_introspection_c.so[0m
+[4.766s] [ 61%] [32m[1mLinking CXX shared library libface_msg__rosidl_typesupport_cpp.so[0m
+[4.831s] [ 61%] Built target face_msg__rosidl_typesupport_introspection_c
+[4.851s] [ 61%] Built target face_msg__rosidl_typesupport_cpp
+[4.976s] [ 64%] [32m[1mLinking CXX shared library libface_msg__rosidl_typesupport_fastrtps_cpp.so[0m
+[5.061s] [ 67%] [32m[1mLinking CXX shared library libface_msg__rosidl_typesupport_introspection_cpp.so[0m
+[5.085s] [ 70%] [32m[1mLinking CXX shared library libface_msg__rosidl_typesupport_fastrtps_c.so[0m
+[5.126s] [ 70%] Built target face_msg__rosidl_typesupport_fastrtps_cpp
+[5.230s] [ 70%] Built target face_msg__rosidl_typesupport_introspection_cpp
+[5.301s] [ 70%] Built target face_msg__rosidl_typesupport_fastrtps_c
+[5.391s] [ 70%] Built target face_msg
+[5.463s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[5.851s] [ 74%] Built target face_msg__py
+[5.876s] [ 77%] [32mBuilding C object CMakeFiles/face_msg__rosidl_generator_py.dir/rosidl_generator_py/face_msg/msg/_roilist_s.c.o[0m
+[6.019s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/face_msg/libface_msg__rosidl_generator_py.so[0m
+[6.064s] [ 80%] Built target face_msg__rosidl_generator_py
+[6.091s] [ 90%] [32mBuilding C object CMakeFiles/face_msg__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/face_msg/_face_msg_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[6.092s] [ 90%] [32mBuilding C object CMakeFiles/face_msg__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/face_msg/_face_msg_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[6.092s] [ 90%] [32mBuilding C object CMakeFiles/face_msg__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/face_msg/_face_msg_s.ep.rosidl_typesupport_c.c.o[0m
+[6.206s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/face_msg/face_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[6.207s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/face_msg/face_msg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[6.210s] [100%] [32m[1mLinking C shared library rosidl_generator_py/face_msg/face_msg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[6.274s] [100%] Built target face_msg__rosidl_typesupport_c__pyext
+[6.295s] [100%] Built target face_msg__rosidl_typesupport_fastrtps_c__pyext
+[6.298s] [100%] Built target face_msg__rosidl_typesupport_introspection_c__pyext
+[6.341s] Invoked command in '/home/GTL/pcastere/ros_hw1/ros2_hw1/build/face_msg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/GTL/pcastere/ros_hw1/ros2_hw1/build/face_msg -- -j16 -l16
+[6.549s] Invoking command in '/home/GTL/pcastere/ros_hw1/ros2_hw1/build/face_msg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/GTL/pcastere/ros_hw1/ros2_hw1/build/face_msg
+[6.572s] -- Install configuration: ""
+[6.580s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/ament_index/resource_index/rosidl_interfaces/face_msg
+[6.586s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/include/face_msg/face_msg
+[6.593s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/include/face_msg/face_msg/msg
+[6.599s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/include/face_msg/face_msg/msg/roilist.h
+[6.606s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/include/face_msg/face_msg/msg/detail
+[6.611s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/include/face_msg/face_msg/msg/detail/roilist__type_support.h
+[6.616s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/include/face_msg/face_msg/msg/detail/roilist__struct.h
+[6.621s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/include/face_msg/face_msg/msg/detail/roilist__functions.c
+[6.628s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/include/face_msg/face_msg/msg/detail/roilist__functions.h
+[6.633s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/include/face_msg/face_msg/msg/rosidl_generator_c__visibility_control.h
+[6.643s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/face_msg/environment/library_path.sh
+[6.648s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/face_msg/environment/library_path.dsv
+[6.655s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/lib/libface_msg__rosidl_generator_c.so
+[6.663s] -- Set runtime path of "/home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/lib/libface_msg__rosidl_generator_c.so" to ""
+[6.663s] -- Up-to-date: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/include/face_msg/face_msg
+[6.665s] -- Up-to-date: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/include/face_msg/face_msg/msg
+[6.667s] -- Up-to-date: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/include/face_msg/face_msg/msg/detail
+[6.668s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/include/face_msg/face_msg/msg/detail/roilist__rosidl_typesupport_fastrtps_c.h
+[6.673s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/include/face_msg/face_msg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[6.680s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/lib/libface_msg__rosidl_typesupport_fastrtps_c.so
+[6.687s] -- Set runtime path of "/home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/lib/libface_msg__rosidl_typesupport_fastrtps_c.so" to ""
+[6.690s] -- Up-to-date: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/include/face_msg/face_msg
+[6.693s] -- Up-to-date: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/include/face_msg/face_msg/msg
+[6.696s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/include/face_msg/face_msg/msg/roilist.hpp
+[6.701s] -- Up-to-date: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/include/face_msg/face_msg/msg/detail
+[6.703s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/include/face_msg/face_msg/msg/detail/roilist__struct.hpp
+[6.708s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/include/face_msg/face_msg/msg/detail/roilist__traits.hpp
+[6.713s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/include/face_msg/face_msg/msg/detail/roilist__builder.hpp
+[6.722s] -- Up-to-date: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/include/face_msg/face_msg
+[6.724s] -- Up-to-date: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/include/face_msg/face_msg/msg
+[6.725s] -- Up-to-date: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/include/face_msg/face_msg/msg/detail
+[6.730s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/include/face_msg/face_msg/msg/detail/dds_fastrtps
+[6.733s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/include/face_msg/face_msg/msg/detail/roilist__rosidl_typesupport_fastrtps_cpp.hpp
+[6.738s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/include/face_msg/face_msg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[6.749s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/lib/libface_msg__rosidl_typesupport_fastrtps_cpp.so
+[6.757s] -- Set runtime path of "/home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/lib/libface_msg__rosidl_typesupport_fastrtps_cpp.so" to ""
+[6.757s] -- Up-to-date: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/include/face_msg/face_msg
+[6.759s] -- Up-to-date: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/include/face_msg/face_msg/msg
+[6.761s] -- Up-to-date: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/include/face_msg/face_msg/msg/detail
+[6.763s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/include/face_msg/face_msg/msg/detail/roilist__type_support.c
+[6.768s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/include/face_msg/face_msg/msg/detail/roilist__rosidl_typesupport_introspection_c.h
+[6.772s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/include/face_msg/face_msg/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[6.776s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/lib/libface_msg__rosidl_typesupport_introspection_c.so
+[6.783s] -- Set runtime path of "/home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/lib/libface_msg__rosidl_typesupport_introspection_c.so" to ""
+[6.784s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/lib/libface_msg__rosidl_typesupport_c.so
+[6.791s] -- Set runtime path of "/home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/lib/libface_msg__rosidl_typesupport_c.so" to ""
+[6.791s] -- Up-to-date: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/include/face_msg/face_msg
+[6.793s] -- Up-to-date: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/include/face_msg/face_msg/msg
+[6.795s] -- Up-to-date: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/include/face_msg/face_msg/msg/detail
+[6.797s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/include/face_msg/face_msg/msg/detail/roilist__type_support.cpp
+[6.859s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/include/face_msg/face_msg/msg/detail/roilist__rosidl_typesupport_introspection_cpp.hpp
+[6.866s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/lib/libface_msg__rosidl_typesupport_introspection_cpp.so
+[6.873s] -- Set runtime path of "/home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/lib/libface_msg__rosidl_typesupport_introspection_cpp.so" to ""
+[6.874s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/lib/libface_msg__rosidl_typesupport_cpp.so
+[6.884s] -- Set runtime path of "/home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/lib/libface_msg__rosidl_typesupport_cpp.so" to ""
+[6.885s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/face_msg/environment/pythonpath.sh
+[6.892s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/face_msg/environment/pythonpath.dsv
+[6.897s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/local/lib/python3.10/dist-packages/face_msg-0.0.0-py3.10.egg-info
+[6.905s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/local/lib/python3.10/dist-packages/face_msg-0.0.0-py3.10.egg-info/dependency_links.txt
+[6.911s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/local/lib/python3.10/dist-packages/face_msg-0.0.0-py3.10.egg-info/top_level.txt
+[6.916s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/local/lib/python3.10/dist-packages/face_msg-0.0.0-py3.10.egg-info/PKG-INFO
+[6.945s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/local/lib/python3.10/dist-packages/face_msg-0.0.0-py3.10.egg-info/SOURCES.txt
+[6.951s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/local/lib/python3.10/dist-packages/face_msg
+[6.956s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/local/lib/python3.10/dist-packages/face_msg/face_msg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[6.963s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/local/lib/python3.10/dist-packages/face_msg/face_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[6.968s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/local/lib/python3.10/dist-packages/face_msg/msg
+[6.973s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/local/lib/python3.10/dist-packages/face_msg/msg/_roilist.py
+[6.978s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/local/lib/python3.10/dist-packages/face_msg/msg/__init__.py
+[6.982s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/local/lib/python3.10/dist-packages/face_msg/msg/_roilist_s.c
+[6.986s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/local/lib/python3.10/dist-packages/face_msg/_face_msg_s.ep.rosidl_typesupport_c.c
+[6.991s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/local/lib/python3.10/dist-packages/face_msg/_face_msg_s.ep.rosidl_typesupport_introspection_c.c
+[6.996s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/local/lib/python3.10/dist-packages/face_msg/__init__.py
+[7.000s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/local/lib/python3.10/dist-packages/face_msg/_face_msg_s.ep.rosidl_typesupport_fastrtps_c.c
+[7.005s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/local/lib/python3.10/dist-packages/face_msg/face_msg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[7.011s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/local/lib/python3.10/dist-packages/face_msg/libface_msg__rosidl_generator_py.so
+[7.143s] Listing '/home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/local/lib/python3.10/dist-packages/face_msg'...
+[7.143s] Compiling '/home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/local/lib/python3.10/dist-packages/face_msg/__init__.py'...
+[7.143s] Listing '/home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/local/lib/python3.10/dist-packages/face_msg/msg'...
+[7.143s] Compiling '/home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/local/lib/python3.10/dist-packages/face_msg/msg/__init__.py'...
+[7.143s] Compiling '/home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/local/lib/python3.10/dist-packages/face_msg/msg/_roilist.py'...
+[7.154s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/local/lib/python3.10/dist-packages/face_msg/face_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[7.162s] -- Set runtime path of "/home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/local/lib/python3.10/dist-packages/face_msg/face_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[7.164s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/local/lib/python3.10/dist-packages/face_msg/face_msg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[7.171s] -- Set runtime path of "/home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/local/lib/python3.10/dist-packages/face_msg/face_msg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[7.173s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/local/lib/python3.10/dist-packages/face_msg/face_msg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[7.180s] -- Set runtime path of "/home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/local/lib/python3.10/dist-packages/face_msg/face_msg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[7.180s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/lib/libface_msg__rosidl_generator_py.so
+[7.187s] -- Set runtime path of "/home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/lib/libface_msg__rosidl_generator_py.so" to ""
+[7.192s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/face_msg/msg/Roilist.idl
+[7.196s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/face_msg/msg/Roilist.msg
+[7.205s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/ament_index/resource_index/package_run_dependencies/face_msg
+[7.216s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/ament_index/resource_index/parent_prefix_path/face_msg
+[7.224s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/face_msg/environment/ament_prefix_path.sh
+[7.227s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/face_msg/environment/ament_prefix_path.dsv
+[7.233s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/face_msg/environment/path.sh
+[7.237s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/face_msg/environment/path.dsv
+[7.241s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/face_msg/local_setup.bash
+[7.247s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/face_msg/local_setup.sh
+[7.252s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/face_msg/local_setup.zsh
+[7.259s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/face_msg/local_setup.dsv
+[7.264s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/face_msg/package.dsv
+[7.274s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/ament_index/resource_index/packages/face_msg
+[7.284s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/face_msg/cmake/export_face_msg__rosidl_generator_cExport.cmake
+[7.290s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/face_msg/cmake/export_face_msg__rosidl_generator_cExport-noconfig.cmake
+[7.299s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/face_msg/cmake/export_face_msg__rosidl_typesupport_fastrtps_cExport.cmake
+[7.304s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/face_msg/cmake/export_face_msg__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[7.311s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/face_msg/cmake/export_face_msg__rosidl_generator_cppExport.cmake
+[7.316s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/face_msg/cmake/export_face_msg__rosidl_typesupport_fastrtps_cppExport.cmake
+[7.339s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/face_msg/cmake/export_face_msg__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[7.345s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/face_msg/cmake/face_msg__rosidl_typesupport_introspection_cExport.cmake
+[7.351s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/face_msg/cmake/face_msg__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[7.357s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/face_msg/cmake/face_msg__rosidl_typesupport_cExport.cmake
+[7.363s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/face_msg/cmake/face_msg__rosidl_typesupport_cExport-noconfig.cmake
+[7.370s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/face_msg/cmake/face_msg__rosidl_typesupport_introspection_cppExport.cmake
+[7.377s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/face_msg/cmake/face_msg__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[7.382s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/face_msg/cmake/face_msg__rosidl_typesupport_cppExport.cmake
+[7.391s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/face_msg/cmake/face_msg__rosidl_typesupport_cppExport-noconfig.cmake
+[7.396s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/face_msg/cmake/export_face_msg__rosidl_generator_pyExport.cmake
+[7.401s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/face_msg/cmake/export_face_msg__rosidl_generator_pyExport-noconfig.cmake
+[7.407s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/face_msg/cmake/rosidl_cmake-extras.cmake
+[7.412s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/face_msg/cmake/ament_cmake_export_dependencies-extras.cmake
+[7.417s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/face_msg/cmake/ament_cmake_export_include_directories-extras.cmake
+[7.422s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/face_msg/cmake/ament_cmake_export_libraries-extras.cmake
+[7.427s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/face_msg/cmake/ament_cmake_export_targets-extras.cmake
+[7.433s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/face_msg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[7.440s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/face_msg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[7.446s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/face_msg/cmake/face_msgConfig.cmake
+[7.451s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/face_msg/cmake/face_msgConfig-version.cmake
+[7.456s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/share/face_msg/package.xml
+[7.467s] Invoked command in '/home/GTL/pcastere/ros_hw1/ros2_hw1/build/face_msg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/GTL/pcastere/ros_hw1/ros2_hw1/build/face_msg

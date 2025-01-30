@@ -1,0 +1,55 @@
+[0.525s] Invoking command in '/home/GTL/pcastere/ros_hw1/ros2_hw1/src/ros_task_manager/src/task_manager_client_py': AMENT_PREFIX_PATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs LD_LIBRARY_PATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_client_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_client_py/lib/python3.10/site-packages:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../build/task_manager_client_py build --build-base /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_client_py/build install --record /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_client_py/install.log --install-scripts $base/lib/task_manager_client_py --single-version-externally-managed install_data
+[0.706s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[0.706s]   warnings.warn(
+[0.716s] running egg_info
+[0.717s] creating ../../../../build/task_manager_client_py/task_manager_client_py.egg-info
+[0.718s] writing ../../../../build/task_manager_client_py/task_manager_client_py.egg-info/PKG-INFO
+[0.722s] writing dependency_links to ../../../../build/task_manager_client_py/task_manager_client_py.egg-info/dependency_links.txt
+[0.724s] writing entry points to ../../../../build/task_manager_client_py/task_manager_client_py.egg-info/entry_points.txt
+[0.725s] writing requirements to ../../../../build/task_manager_client_py/task_manager_client_py.egg-info/requires.txt
+[0.726s] writing top-level names to ../../../../build/task_manager_client_py/task_manager_client_py.egg-info/top_level.txt
+[0.728s] writing manifest file '../../../../build/task_manager_client_py/task_manager_client_py.egg-info/SOURCES.txt'
+[0.735s] reading manifest file '../../../../build/task_manager_client_py/task_manager_client_py.egg-info/SOURCES.txt'
+[0.737s] writing manifest file '../../../../build/task_manager_client_py/task_manager_client_py.egg-info/SOURCES.txt'
+[0.738s] running build
+[0.738s] running build_py
+[0.739s] creating /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_client_py/build
+[0.740s] creating /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_client_py/build/lib
+[0.741s] creating /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_client_py/build/lib/task_manager_client_py
+[0.742s] copying task_manager_client_py/TaskClient.py -> /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_client_py/build/lib/task_manager_client_py
+[0.745s] copying task_manager_client_py/tasklist.py -> /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_client_py/build/lib/task_manager_client_py
+[0.747s] copying task_manager_client_py/__init__.py -> /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_client_py/build/lib/task_manager_client_py
+[0.749s] copying task_manager_client_py/console.py -> /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_client_py/build/lib/task_manager_client_py
+[0.751s] running build_scripts
+[0.752s] creating /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_client_py/build/scripts-3.10
+[0.753s] copying and adjusting task_manager_client_py/console.py -> /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_client_py/build/scripts-3.10
+[0.755s] copying node/console -> /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_client_py/build/scripts-3.10
+[0.757s] changing mode of /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_client_py/build/scripts-3.10/console.py from 664 to 775
+[0.758s] running install
+[0.758s] running install_lib
+[0.760s] creating /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_client_py/lib/python3.10/site-packages/task_manager_client_py
+[0.762s] copying /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_client_py/build/lib/task_manager_client_py/TaskClient.py -> /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_client_py/lib/python3.10/site-packages/task_manager_client_py
+[0.765s] copying /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_client_py/build/lib/task_manager_client_py/tasklist.py -> /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_client_py/lib/python3.10/site-packages/task_manager_client_py
+[0.768s] copying /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_client_py/build/lib/task_manager_client_py/__init__.py -> /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_client_py/lib/python3.10/site-packages/task_manager_client_py
+[0.770s] copying /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_client_py/build/lib/task_manager_client_py/console.py -> /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_client_py/lib/python3.10/site-packages/task_manager_client_py
+[0.773s] byte-compiling /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_client_py/lib/python3.10/site-packages/task_manager_client_py/TaskClient.py to TaskClient.cpython-310.pyc
+[0.780s] byte-compiling /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_client_py/lib/python3.10/site-packages/task_manager_client_py/tasklist.py to tasklist.cpython-310.pyc
+[0.783s] byte-compiling /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_client_py/lib/python3.10/site-packages/task_manager_client_py/__init__.py to __init__.cpython-310.pyc
+[0.786s] byte-compiling /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_client_py/lib/python3.10/site-packages/task_manager_client_py/console.py to console.cpython-310.pyc
+[0.789s] running install_data
+[0.789s] creating /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_client_py/share/ament_index
+[0.789s] creating /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_client_py/share/ament_index/resource_index
+[0.791s] creating /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_client_py/share/ament_index/resource_index/packages
+[0.793s] copying resource/task_manager_client_py -> /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_client_py/share/ament_index/resource_index/packages
+[0.796s] copying package.xml -> /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_client_py/share/task_manager_client_py
+[0.798s] running install_egg_info
+[0.827s] Copying ../../../../build/task_manager_client_py/task_manager_client_py.egg-info to /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_client_py/lib/python3.10/site-packages/task_manager_client_py-0.0.0-py3.10.egg-info
+[0.975s] running install_scripts
+[0.989s] creating /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_client_py/lib/task_manager_client_py
+[0.990s] copying /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_client_py/build/scripts-3.10/console -> /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_client_py/lib/task_manager_client_py
+[0.992s] copying /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_client_py/build/scripts-3.10/console.py -> /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_client_py/lib/task_manager_client_py
+[0.994s] changing mode of /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_client_py/lib/task_manager_client_py/console to 755
+[0.994s] changing mode of /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_client_py/lib/task_manager_client_py/console.py to 775
+[0.997s] Installing tasklist script to /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_client_py/lib/task_manager_client_py
+[0.999s] writing list of installed files to '/home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_client_py/install.log'
+[1.021s] Invoked command in '/home/GTL/pcastere/ros_hw1/ros2_hw1/src/ros_task_manager/src/task_manager_client_py' returned '0': AMENT_PREFIX_PATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs LD_LIBRARY_PATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_client_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_client_py/lib/python3.10/site-packages:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../build/task_manager_client_py build --build-base /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_client_py/build install --record /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_client_py/install.log --install-scripts $base/lib/task_manager_client_py --single-version-externally-managed install_data
