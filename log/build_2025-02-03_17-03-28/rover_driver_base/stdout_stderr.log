@@ -1,0 +1,29 @@
+running egg_info
+writing ../../build/rover_driver_base/rover_driver_base.egg-info/PKG-INFO
+writing dependency_links to ../../build/rover_driver_base/rover_driver_base.egg-info/dependency_links.txt
+writing entry points to ../../build/rover_driver_base/rover_driver_base.egg-info/entry_points.txt
+writing requirements to ../../build/rover_driver_base/rover_driver_base.egg-info/requires.txt
+writing top-level names to ../../build/rover_driver_base/rover_driver_base.egg-info/top_level.txt
+reading manifest file '../../build/rover_driver_base/rover_driver_base.egg-info/SOURCES.txt'
+writing manifest file '../../build/rover_driver_base/rover_driver_base.egg-info/SOURCES.txt'
+running build
+running build_py
+copying rover_driver_base/rover_kinematics.py -> /home/GTL/apaul/ros2_hw1/build/rover_driver_base/build/lib/rover_driver_base
+running install
+running install_lib
+copying /home/GTL/apaul/ros2_hw1/build/rover_driver_base/build/lib/rover_driver_base/rover_kinematics.py -> /home/GTL/apaul/ros2_hw1/install/rover_driver_base/lib/python3.10/site-packages/rover_driver_base
+byte-compiling /home/GTL/apaul/ros2_hw1/install/rover_driver_base/lib/python3.10/site-packages/rover_driver_base/rover_kinematics.py to rover_kinematics.cpython-310.pyc
+  File "/home/GTL/apaul/ros2_hw1/install/rover_driver_base/lib/python3.10/site-packages/rover_driver_base/rover_kinematics.py", line 84
+    motors.drive[k] = (twist.linear.x - twist.angular.z*drive_cfg[k].y/drive_cfg[k].radius
+                      ^
+SyntaxError: '(' was never closed
+
+running install_data
+copying launch/rover_odom.launch.py -> /home/GTL/apaul/ros2_hw1/install/rover_driver_base/share/rover_driver_base
+running install_egg_info
+removing '/home/GTL/apaul/ros2_hw1/install/rover_driver_base/lib/python3.10/site-packages/rover_driver_base-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/rover_driver_base/rover_driver_base.egg-info to /home/GTL/apaul/ros2_hw1/install/rover_driver_base/lib/python3.10/site-packages/rover_driver_base-0.0.0-py3.10.egg-info
+running install_scripts
+Installing rover_command_node script to /home/GTL/apaul/ros2_hw1/install/rover_driver_base/lib/rover_driver_base
+Installing rover_odom_node script to /home/GTL/apaul/ros2_hw1/install/rover_driver_base/lib/rover_driver_base
+writing list of installed files to '/home/GTL/apaul/ros2_hw1/build/rover_driver_base/install.log'

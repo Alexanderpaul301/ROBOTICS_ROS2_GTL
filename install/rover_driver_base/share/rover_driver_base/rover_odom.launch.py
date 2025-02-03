@@ -61,11 +61,11 @@ def generate_launch_description():
             package='vrep_ros_teleop', executable='teleop_node', name='teleop',
             parameters=[
                 {'~/axis_linear_x': 1},
-                {'~/axis_linear_y': 0},
+                {'~/axis_linear_y': 2},
                 {'~/axis_angular': 3},
                 {'~/scale_linear_x': 1.0},
                 {'~/scale_linear_y': 1.0},
-                {'~/scale_angular': 1.},
+                {'~/scale_angular': 1.0},
                 {'~/timeout': 1.0}
                 ],
             remappings=[
