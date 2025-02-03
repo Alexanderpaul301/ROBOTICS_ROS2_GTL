@@ -32,6 +32,10 @@ SimTasksEnv::SimTasksEnv(std::shared_ptr<rclcpp::Node> n) : task_manager_lib::Ta
     faceSub = n->create_subscription<face_msg::msg::Roilist>("/face_detect/roi",be,
             std::bind(&SimTasksEnv::faceCallback,this,std::placeholders::_1));
     roiarray = nullptr;
+    
+    // ! Create a subscriber for the odometry
+    odoSub = n->create_subscription<nav_msgs::msg::Odometry>("/rover_odom/odom",be,
+            std::bind(&SimTasksEnv::odoCallback,this,std::placeholders::_1)); 
 }
 
 
