@@ -74,26 +74,65 @@ class RoverKinematics:
                 # TODO: In case we are in skidsteer mode (driving like a tank)
                 # Insert here the steering and velocity of 
                 # each wheel in skid-steer mode
-                motors.drive[k] = (twist.linear.x - twist.angular.z*drive_cfg['C'+k[1]].x)*300
+                motors.drive[k] = (twist.linear.x - twist.angular.z*drive_cfg['C'+k[1]].x)/drive_cfg['C'+k[1]].radius
                 motors.steering[k] = 0
         else:
             for k in drive_cfg.keys():
                 # TODO: In case we are in rolling without slipping mode (driving normally)
                 # Insert here the steering and velocity of 
                 # each wheel in rolling-without-slipping mode
-                motors.drive[k] = (twist.linear.x - twist.angular.z*drive_cfg['C'+k[1]].x)*300
-                motors.steering[k] = (twist.linear.y +twist.angular.z*drive_cfg['C'+k[1]].x)*300
+                motors.drive[k] = (twist.linear.x - twist.angular.z*drive_cfg[k].x)/drive_cfg[k].radius
+                motors.steering[k] = (twist.linear.y + twist.angular.z*drive_cfg[k].x)/drive_cfg[k].radius
         return motors
 
     def prepare_inversion_matrix(self,drive_cfg):
         # TODO: Build pseudo inverse of W using the notation from the class. The matrix size below is wrong.
-        iW = np.asmatrix(np.zeros((3,2)))
+        n = len(prefix);
+        W = np.asmatrix(np.zeros((n,3)))
+        # Building the W matrix, hopefully it is in the right coordinate frame  # ! (maybe change it)
+        for i in range(n):
+            if i%2==0:
+                W[i,0] = 1.0
+                W[i,1] = 0.0
+                W[i,2] = -drive_cfg[prefix[i]].y
+            else :
+                W[i,0] = 0.0
+                W[i,1] = 1.0
+                W[i,2] = drive_cfg[prefix[i]].x
+                
+        iW = pinv(W)
+        print("iW",np.shape(iW))
         return iW
 
     def prepare_displacement_matrix(self, motor_state_t1, motor_state_t2, drive_cfg):
         # then compute odometry using least square
         # TODO: Build S using the notation from the class. The matrix size below is wrong.
-        S = np.asmatrix(np.zeros((2,1)))
+        n = len(prefix); # n = 6 here
+        
+        beta=np.asmatrix(np.zeros((n,1)))
+        # Building beta (We want the angle to be in between -pi and pi) # ! Potentially a problem if the angle is in radius
+        for i in range(n): 
+            print(motor_state_t2.steering[prefix[i]])
+            beta_temp = (motor_state_t2.steering[prefix[i]] + motor_state_t1.steering[prefix[i]])*1/2
+            if np.abs(beta_temp)>pi:
+                beta_temp = beta_temp - 2*pi*beta_temp/np.abs(beta_temp)
+                beta[i,0] = beta_temp
+
+            else :
+                beta[i,0] = beta_temp
+        #print(beta)
+        # Building linear displacement
+        dS=np.asmatrix(np.zeros((n,1)))
+        for i in range(n):
+            dS[i,0] = drive_cfg[prefix[i]].radius*(motor_state_t2.drive[prefix[i]] - motor_state_t1.drive[prefix[i]])
+
+        # Building S
+        S=np.asmatrix(np.zeros((2*n,1)))
+        for i in range(0,2*n,2):
+            S[i,0] = dS[i//2,0]*(np.cos(beta[i//2,0]))
+            S[i+1,0]= dS[i//2,0]*(np.sin(beta[i//2,0]))
+        
+        print("S",np.shape(S))
         return S
 
     def compute_displacement(self, motor_state, drive_cfg):
@@ -118,9 +157,11 @@ class RoverKinematics:
         # First compute the local displacement in the robot frame
         dX = self.compute_displacement(motor_state,drive_cfg)
         # TODO: Now integrate the local displacement in the global frame
-        self.X[0,0] += 0.0
-        self.X[1,0] += 0.0
-        self.X[2,0] += 0.0
+        # ! Need to pass from local to global frame 
+
+        self.X[0,0] += dX[0,0]
+        self.X[1,0] += dX[1,0]
+        self.X[2,0] += dX[2,0]
         return self.X
 
 
