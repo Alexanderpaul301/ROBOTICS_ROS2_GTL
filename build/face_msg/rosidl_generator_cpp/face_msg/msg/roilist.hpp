@@ -7,5 +7,6 @@
 #include "face_msg/msg/detail/roilist__struct.hpp"
 #include "face_msg/msg/detail/roilist__builder.hpp"
 #include "face_msg/msg/detail/roilist__traits.hpp"
+#include "face_msg/msg/detail/roilist__type_support.hpp"
 
 #endif  // FACE_MSG__MSG__ROILIST_HPP_

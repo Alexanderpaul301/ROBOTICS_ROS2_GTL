@@ -70,6 +70,8 @@ CMakeFiles/face_msg__cpp: rosidl_generator_cpp/face_msg/msg/roilist.hpp
 CMakeFiles/face_msg__cpp: rosidl_generator_cpp/face_msg/msg/detail/roilist__builder.hpp
 CMakeFiles/face_msg__cpp: rosidl_generator_cpp/face_msg/msg/detail/roilist__struct.hpp
 CMakeFiles/face_msg__cpp: rosidl_generator_cpp/face_msg/msg/detail/roilist__traits.hpp
+CMakeFiles/face_msg__cpp: rosidl_generator_cpp/face_msg/msg/detail/roilist__type_support.hpp
+CMakeFiles/face_msg__cpp: rosidl_generator_cpp/face_msg/msg/rosidl_generator_cpp__visibility_control.hpp
 
 rosidl_generator_cpp/face_msg/msg/roilist.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
 rosidl_generator_cpp/face_msg/msg/roilist.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
@@ -189,10 +191,14 @@ rosidl_generator_cpp/face_msg/msg/detail/roilist__struct.hpp: rosidl_generator_c
 rosidl_generator_cpp/face_msg/msg/detail/roilist__traits.hpp: rosidl_generator_cpp/face_msg/msg/roilist.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/face_msg/msg/detail/roilist__traits.hpp
 
+rosidl_generator_cpp/face_msg/msg/detail/roilist__type_support.hpp: rosidl_generator_cpp/face_msg/msg/roilist.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/face_msg/msg/detail/roilist__type_support.hpp
+
 face_msg__cpp: CMakeFiles/face_msg__cpp
 face_msg__cpp: rosidl_generator_cpp/face_msg/msg/detail/roilist__builder.hpp
 face_msg__cpp: rosidl_generator_cpp/face_msg/msg/detail/roilist__struct.hpp
 face_msg__cpp: rosidl_generator_cpp/face_msg/msg/detail/roilist__traits.hpp
+face_msg__cpp: rosidl_generator_cpp/face_msg/msg/detail/roilist__type_support.hpp
 face_msg__cpp: rosidl_generator_cpp/face_msg/msg/roilist.hpp
 face_msg__cpp: CMakeFiles/face_msg__cpp.dir/build.make
 .PHONY : face_msg__cpp

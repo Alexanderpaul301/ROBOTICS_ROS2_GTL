@@ -7,5 +7,6 @@
 #include "task_manager_msgs/srv/detail/get_task_list__struct.hpp"
 #include "task_manager_msgs/srv/detail/get_task_list__builder.hpp"
 #include "task_manager_msgs/srv/detail/get_task_list__traits.hpp"
+#include "task_manager_msgs/srv/detail/get_task_list__type_support.hpp"
 
 #endif  // TASK_MANAGER_MSGS__SRV__GET_TASK_LIST_HPP_

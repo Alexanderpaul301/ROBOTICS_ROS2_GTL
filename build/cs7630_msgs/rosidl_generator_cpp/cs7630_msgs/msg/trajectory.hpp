@@ -7,5 +7,6 @@
 #include "cs7630_msgs/msg/detail/trajectory__struct.hpp"
 #include "cs7630_msgs/msg/detail/trajectory__builder.hpp"
 #include "cs7630_msgs/msg/detail/trajectory__traits.hpp"
+#include "cs7630_msgs/msg/detail/trajectory__type_support.hpp"
 
 #endif  // CS7630_MSGS__MSG__TRAJECTORY_HPP_

@@ -1,16 +1,12 @@
     #include <math.h>
     #include "TaskGoToPose.h"
-    #include <vector>
     #include <iostream>
     using namespace std;
     using namespace task_manager_msgs;
     using namespace task_manager_lib;
     using namespace floor_nav;
 
-    // #define DEBUG_GOTOPOSE
-    #ifdef DEBUG_GOTOPOSE
-    #warning Debugging task GOTOPOSE
-    #endif
+
 
 
     TaskIndicator TaskGoToPose::initialise() 
@@ -31,7 +27,7 @@
 
 
     TaskIndicator TaskGoToPose::iterate()
-    {   
+    {  
         const geometry_msgs::msg::Pose2D & tpose = env->getPose2D();
         x = tpose.x;
         y = tpose.y;
@@ -45,45 +41,68 @@
     
             if (r < cfg->dist_threshold) {
                 if (fabs(remainder(cfg->goal_teta-teta,2*M_PI))<cfg->angle_threshold){
-                    env->publishVelocity(0.0,0.0);
-                    return TaskStatus::TASK_COMPLETED;
+                    if (cfg->flag_holo==false){
+                        env->publishVelocity(0.0,0.0);
+                        return TaskStatus::TASK_COMPLETED;
+                    }
+                    else{
+                        env->publishVelocity(0.0,0.0,0.0);
+                        return TaskStatus::TASK_COMPLETED;
+                    }
+
                 }
                 else{
                 double sigma = remainder(cfg->goal_teta-teta,2*M_PI);
                 double rot = ((sigma>0.0)?+1.0:-1.0)*cfg->max_angular_velocity*cfg->k_alpha/8.0;
-                env->publishVelocity(0.0,rot);
+                if (cfg->flag_holo==false){
+                    env->publishVelocity(0.0,rot);
+                }
+                else{
+                    env->publishVelocity(0.0,0.0,rot);
+                }
+                return TaskStatus::TASK_RUNNING;
                 }
             }
             else {
 
-            double alpha = remainder(atan2((y_init + cfg->goal_y-y),x_init + cfg->goal_x-x)-teta,2*M_PI);
-    #ifdef DEBUG_GOTOPOSE
-        printf("c %.1f %.1f %.1f g %.1f %.1f r %.3f alpha %.1f\n",
-                x, y, teta*180./M_PI,
-                cfg->goal_x,cfg->goal_y,r,alpha*180./M_PI);
-    #endif
-        if (fabs(alpha) > M_PI/9) {
-            double rot = ((alpha>0)?+1:-1)*cfg->max_angular_velocity;
-    #ifdef DEBUG_GOTOPOSE
-            printf("Cmd v %.2f r %.2f\n",0.,rot);
-    #endif
-            env->publishVelocity(0,rot);
-        } else {
-            double vel = cfg->k_v * r;
-            double rot = std::max(std::min(cfg->k_alpha*alpha,cfg->max_angular_velocity),-cfg->max_angular_velocity);
-            if (vel > cfg->max_velocity) vel = cfg->max_velocity;
-            if (vel <-cfg->max_velocity) vel = -cfg->max_velocity;
-            if (rot > cfg->max_angular_velocity) rot = cfg->max_angular_velocity;
-            if (rot <-cfg->max_angular_velocity) rot = -cfg->max_angular_velocity;
-    #ifdef DEBUG_GOTO
-            printf("Cmd v %.2f r %.2f\n",vel,rot);
-    #endif
-            env->publishVelocity(vel, rot);
-        }
+                double alpha = remainder(atan2((y_init + cfg->goal_y-y),x_init + cfg->goal_x-x)-teta,2*M_PI);
+
+                if (cfg->flag_holo==false){
+                    if (fabs(alpha) > M_PI/9) {
+                        double rot = ((alpha>0)?+1:-1)*cfg->max_angular_velocity;
+                    
+                        env->publishVelocity(0,rot);
+                    }
+
+                    else {
+                    double vel = cfg->k_v * r;
+                    double rot = std::max(std::min(cfg->k_alpha*alpha,cfg->max_angular_velocity),-cfg->max_angular_velocity);
+                    if (vel > cfg->max_velocity) vel = cfg->max_velocity;
+                    if (vel <-cfg->max_velocity) vel = -cfg->max_velocity;
+                    if (rot > cfg->max_angular_velocity) rot = cfg->max_angular_velocity;
+                    if (rot <-cfg->max_angular_velocity) rot = -cfg->max_angular_velocity;
+
+                    env->publishVelocity(vel, rot);
+                    return TaskStatus::TASK_RUNNING;
+                    }
+                } 
+
+                else {
+                    double vel = cfg->k_v * r;
+
+                    if (vel > cfg->max_velocity) vel = cfg->max_velocity;
+                    if (vel <-cfg->max_velocity) vel = -cfg->max_velocity;
+
+                    double vel_x = vel * cos(alpha);
+                    double vel_y = vel * sin(alpha);
+
+                    env->publishVelocity(vel_x, vel_y, 0);
+                    return TaskStatus::TASK_RUNNING;
+                }
+                
 
             }
         } // End of the stupid method
-
 
 
         else {
@@ -93,65 +112,33 @@
 
             double v = cfg->k_r * r;
             double w = cfg->k_alpha * alpha + cfg->k_beta * beta;
+
+            if (cfg->flag_holo == false) {
+                env->publishVelocity(v, w);
+            } 
+
+            else {
+                double vel_x = v * cos(alpha);
+                double vel_y = v * sin(alpha);
+                env->publishVelocity(vel_x, vel_y, w);
+            }
         
 
-
-            env->publishVelocity(v, w);
-
-            // std::vector<std::vector<float>> A = {
-            //     {-cfg->k_r, 0, 0},
-            //     {0, -(cfg->k_alpha - cfg->k_r), -cfg->k_beta},
-            //     {0, cfg->k_r, 0}
-            // };
-
-            // std::vector<std::vector<float>> rho_alpha_beta = {
-            //     {r},
-            //     {alpha},
-            //     {beta}
-            // };
-
-            // std::vector<std::vector<float>> dot_rho_alpha_beta = multiplyMatrices(A, rho_alpha_beta);
-
-            // if (alpha <= M_PI / 2 && alpha > -M_PI / 2) {
-            //     std::vector<std::vector<float>> I1 = {
-            //         {-cos(alpha), 0},
-            //         {sin(alpha) / r, -1},
-            //         {-sin(alpha) / r, 0}
-            //     };
-            //     std::vector<std::vector<float>> I1T = transposeMatrix(I1);
-            //     std::vector<std::vector<float>> I1TI1 = multiplyMatrices(I1T, I1);
-            //     std::vector<std::vector<float>> v_w_1 = multiplyMatrices(multiplyMatrices(inversMatrix(I1TI1), I1T), rho_alpha_beta);
-            //     double v = v_w_1[0][0];
-            //     double w = v_w_1[1][0];
-            //     env->publishVelocity(v, w);
-            // } else {
-            //     std::vector<std::vector<float>> I2 = {
-            //         {cos(alpha), 0},
-            //         {-sin(alpha) / r, -1},
-            //         {sin(alpha) / r, 0}
-            //     };
-            //     std::vector<std::vector<float>> I2T = transposeMatrix(I2);
-            //     std::vector<std::vector<float>> I2TI2 = multiplyMatrices(I2T, I2);
-            //     std::vector<std::vector<float>> v_w_2 = multiplyMatrices(multiplyMatrices(inversMatrix(I2TI2), I2T), rho_alpha_beta);
-            //     double v = v_w_2[0][0];
-            //     double w = v_w_2[1][0];
-            //     env->publishVelocity(v, w);
-            // }
-
             if (r < cfg->dist_threshold && (cfg->goal_teta-teta) < cfg->angle_threshold) {
-                env->publishVelocity(0.0, 0.0);
+                env->publishVelocity(0.0, 0.0, 0.0);
                 return TaskStatus::TASK_COMPLETED;
             }
             
         }
         return TaskStatus::TASK_RUNNING;
-
+         
     }
        
 
     TaskIndicator TaskGoToPose::terminate()
     {
-        env->publishVelocity(0,0);
+
+        env->publishVelocity(0,0,0);
         return TaskStatus::TASK_TERMINATED;
     }
 

@@ -9,7 +9,7 @@ using std::placeholders::_1;
 
 SimTasksEnv::SimTasksEnv(std::shared_ptr<rclcpp::Node> n) : task_manager_lib::TaskEnvironment(n),
     joystick_topic("/teleop/twistCommand"), auto_topic("/mux/autoCommand"), 
-    base_frame("bubbleRob"), reference_frame("world")
+    base_frame("odom"), reference_frame("world")
 {
     manualControl = false; 
     joystick_topic = n->declare_parameter<std::string>("joystick_topic", joystick_topic);
@@ -33,10 +33,7 @@ SimTasksEnv::SimTasksEnv(std::shared_ptr<rclcpp::Node> n) : task_manager_lib::Ta
             std::bind(&SimTasksEnv::faceCallback,this,std::placeholders::_1));
     roiarray = nullptr;
     
-    // ! Create a subscriber for the odometry
-    odoSub = n->create_subscription<nav_msgs::msg::Odometry>("/rover_odom/odom",be,
-            std::bind(&SimTasksEnv::odoCallback,this,std::placeholders::_1)); 
-}
+    }
 
 
 

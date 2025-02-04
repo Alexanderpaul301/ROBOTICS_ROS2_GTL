@@ -7,5 +7,6 @@
 #include "task_manager_msgs/msg/detail/sync_status__struct.hpp"
 #include "task_manager_msgs/msg/detail/sync_status__builder.hpp"
 #include "task_manager_msgs/msg/detail/sync_status__traits.hpp"
+#include "task_manager_msgs/msg/detail/sync_status__type_support.hpp"
 
 #endif  // TASK_MANAGER_MSGS__MSG__SYNC_STATUS_HPP_

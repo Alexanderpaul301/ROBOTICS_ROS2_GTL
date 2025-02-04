@@ -65,7 +65,7 @@ namespace floor_nav
             
             // ! Face_msg getter
             face_msg::msg::Roilist::SharedPtr getFace() const {return roiarray;}
-            
+
             void publishVelocity(double linear, double angular) ;
             void publishVelocity(double linear_x, double linear_y, double angular) ;
             void publishVelocity(const geometry_msgs::msg::Twist & twist) ;

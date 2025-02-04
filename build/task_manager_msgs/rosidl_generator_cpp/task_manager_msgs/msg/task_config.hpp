@@ -7,5 +7,6 @@
 #include "task_manager_msgs/msg/detail/task_config__struct.hpp"
 #include "task_manager_msgs/msg/detail/task_config__builder.hpp"
 #include "task_manager_msgs/msg/detail/task_config__traits.hpp"
+#include "task_manager_msgs/msg/detail/task_config__type_support.hpp"
 
 #endif  // TASK_MANAGER_MSGS__MSG__TASK_CONFIG_HPP_

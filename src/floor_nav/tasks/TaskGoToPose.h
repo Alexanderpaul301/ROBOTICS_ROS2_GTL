@@ -18,10 +18,11 @@ namespace floor_nav {
             define("k_beta",  -3.0,"Gain for angular control",false, k_beta);
             define("max_velocity",  1.0,"Max allowed velocity",false, max_velocity);
             define("max_angular_velocity",  1.0,"Max allowed angular velocity",false, max_angular_velocity);
-            define("dist_threshold",  0.08,"Distance at which a the target is considered reached",false, dist_threshold);
-            define("angle_threshold",  0.05,"Angle at which a the target is considered reached",false, angle_threshold);
+            define("dist_threshold",  0.1,"Distance at which a the target is considered reached",false, dist_threshold);
+            define("angle_threshold",  0.1,"Angle at which a the target is considered reached",false, angle_threshold);
             define("relative",  false,"Is the target pose relative or absolute",true, relative);
             define("stupid", false,"Use a stupid control law",false, stupid);
+            define("flag_holo", false,"Use a holonomic control law",false, flag_holo);
         }
 
         // convenience aliases, updated by update from the config data
@@ -35,6 +36,7 @@ namespace floor_nav {
         double angle_threshold;
         bool relative;
         bool stupid;
+        bool flag_holo;
 
     };
 
@@ -48,6 +50,7 @@ namespace floor_nav {
             double y;
             double teta;
             bool stupid;
+            bool flag_holo;
         public:
             TaskGoToPose(TaskDefinitionPtr def, TaskEnvironmentPtr env) : Parent(def,env) {}
             virtual ~TaskGoToPose() {};

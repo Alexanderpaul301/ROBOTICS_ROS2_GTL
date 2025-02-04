@@ -7,5 +7,6 @@
 #include "cs7630_msgs/msg/detail/roi_array__struct.hpp"
 #include "cs7630_msgs/msg/detail/roi_array__builder.hpp"
 #include "cs7630_msgs/msg/detail/roi_array__traits.hpp"
+#include "cs7630_msgs/msg/detail/roi_array__type_support.hpp"
 
 #endif  // CS7630_MSGS__MSG__ROI_ARRAY_HPP_

@@ -1,8 +1,0 @@
-[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:[m[K In member function ‘[01m[Kvirtual task_manager_lib::TaskIndicator floor_nav::TaskGoToPose::iterate()[m[K’:
-[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:51:93:[m[K [01;31m[Kerror: [m[K‘[01m[Ktheta[m[K’ was not declared in this scope; did you mean ‘[01m[Kteta[m[K’?
-   51 |             double alpha = remainder(atan2((y_init + cfg->goal_y-y),x_init + cfg->goal_x-x)-[01;31m[Ktheta[m[K,2*M_PI);
-      |                                                                                             [01;31m[K^~~~~[m[K
-      |                                                                                             [32m[Kteta[m[K
-gmake[2]: *** [CMakeFiles/floornav_TaskGoToPose.dir/build.make:76: CMakeFiles/floornav_TaskGoToPose.dir/tasks/TaskGoToPose.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:321: CMakeFiles/floornav_TaskGoToPose.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2
