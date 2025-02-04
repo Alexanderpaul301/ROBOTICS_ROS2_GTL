@@ -39,19 +39,36 @@
 
         double r = hypot(y_init + cfg->goal_y-y,x_init + cfg->goal_x-x);
 
+        flag_holo=cfg->flag_holo;
 
         stupid=cfg->stupid;
         if (stupid==true){
     
             if (r < cfg->dist_threshold) {
+                
                 if (fabs(remainder(cfg->goal_teta-teta,2*M_PI))<cfg->angle_threshold){
-                    env->publishVelocity(0.0,0.0);
+                    if (flag_holo==false)
+                    {
+                        env->publishVelocity(0.0,0.0);
+                    }
+                    else
+                    {
+                        env->publishVelocity(0.0,0.0,0.0);
+                    }
                     return TaskStatus::TASK_COMPLETED;
                 }
                 else{
                 double sigma = remainder(cfg->goal_teta-teta,2*M_PI);
                 double rot = ((sigma>0.0)?+1.0:-1.0)*cfg->max_angular_velocity*cfg->k_alpha/8.0;
-                env->publishVelocity(0.0,rot);
+                if (flag_holo==false)
+                {
+                    env->publishVelocity(0.0,rot);
+                }
+                else
+                {
+                    env->publishVelocity(0.0,0.0,rot);
+                }
+                
                 }
             }
             else {
@@ -69,16 +86,35 @@
     #endif
             env->publishVelocity(0,rot);
         } else {
+
+            if (flag_holo==false)
+            {
             double vel = cfg->k_v * r;
             double rot = std::max(std::min(cfg->k_alpha*alpha,cfg->max_angular_velocity),-cfg->max_angular_velocity);
             if (vel > cfg->max_velocity) vel = cfg->max_velocity;
             if (vel <-cfg->max_velocity) vel = -cfg->max_velocity;
             if (rot > cfg->max_angular_velocity) rot = cfg->max_angular_velocity;
             if (rot <-cfg->max_angular_velocity) rot = -cfg->max_angular_velocity;
-    #ifdef DEBUG_GOTO
+#ifdef DEBUG_GOTO
             printf("Cmd v %.2f r %.2f\n",vel,rot);
-    #endif
+#endif
             env->publishVelocity(vel, rot);
+            }
+            else {
+            double vel = cfg->k_v * r;
+            double rot = std::max(std::min(cfg->k_alpha*alpha,cfg->max_angular_velocity),-cfg->max_angular_velocity);
+            if (vel > cfg->max_velocity) vel = cfg->max_velocity;
+            if (vel <-cfg->max_velocity) vel = -cfg->max_velocity;
+            if (rot > cfg->max_angular_velocity) rot = cfg->max_angular_velocity;
+            if (rot <-cfg->max_angular_velocity) rot = -cfg->max_angular_velocity;
+
+            double velx = vel *cos(alpha);
+            double vely = vel *sin(alpha);
+
+#ifdef DEBUG_GOTO
+            printf("Cmd v %.2f r %.2f\n",vel,rot);
+#endif
+            env->publishVelocity(velx,vely, rot);}
         }
 
             }
@@ -93,53 +129,29 @@
 
             double v = cfg->k_r * r;
             double w = cfg->k_alpha * alpha + cfg->k_beta * beta;
-        
 
+            if (flag_holo==false)
+                {
+                    env->publishVelocity(v, w);
+                }
+                else
+                {
+                    double vx= v * cos(alpha);
+                    double vy= v * sin(alpha);
+                    env->publishVelocity(vx, vy, w);
+                }
 
-            env->publishVelocity(v, w);
-
-            // std::vector<std::vector<float>> A = {
-            //     {-cfg->k_r, 0, 0},
-            //     {0, -(cfg->k_alpha - cfg->k_r), -cfg->k_beta},
-            //     {0, cfg->k_r, 0}
-            // };
-
-            // std::vector<std::vector<float>> rho_alpha_beta = {
-            //     {r},
-            //     {alpha},
-            //     {beta}
-            // };
-
-            // std::vector<std::vector<float>> dot_rho_alpha_beta = multiplyMatrices(A, rho_alpha_beta);
-
-            // if (alpha <= M_PI / 2 && alpha > -M_PI / 2) {
-            //     std::vector<std::vector<float>> I1 = {
-            //         {-cos(alpha), 0},
-            //         {sin(alpha) / r, -1},
-            //         {-sin(alpha) / r, 0}
-            //     };
-            //     std::vector<std::vector<float>> I1T = transposeMatrix(I1);
-            //     std::vector<std::vector<float>> I1TI1 = multiplyMatrices(I1T, I1);
-            //     std::vector<std::vector<float>> v_w_1 = multiplyMatrices(multiplyMatrices(inversMatrix(I1TI1), I1T), rho_alpha_beta);
-            //     double v = v_w_1[0][0];
-            //     double w = v_w_1[1][0];
-            //     env->publishVelocity(v, w);
-            // } else {
-            //     std::vector<std::vector<float>> I2 = {
-            //         {cos(alpha), 0},
-            //         {-sin(alpha) / r, -1},
-            //         {sin(alpha) / r, 0}
-            //     };
-            //     std::vector<std::vector<float>> I2T = transposeMatrix(I2);
-            //     std::vector<std::vector<float>> I2TI2 = multiplyMatrices(I2T, I2);
-            //     std::vector<std::vector<float>> v_w_2 = multiplyMatrices(multiplyMatrices(inversMatrix(I2TI2), I2T), rho_alpha_beta);
-            //     double v = v_w_2[0][0];
-            //     double w = v_w_2[1][0];
-            //     env->publishVelocity(v, w);
-            // }
 
             if (r < cfg->dist_threshold && (cfg->goal_teta-teta) < cfg->angle_threshold) {
-                env->publishVelocity(0.0, 0.0);
+
+                if (flag_holo==false)
+                {
+                    env->publishVelocity(0.0, 0.0);
+                }
+                else
+                {
+                    env->publishVelocity(0.0, 0.0, 0.0);
+                }
                 return TaskStatus::TASK_COMPLETED;
             }
             
@@ -151,7 +163,15 @@
 
     TaskIndicator TaskGoToPose::terminate()
     {
-        env->publishVelocity(0,0);
+         if (flag_holo==false)
+        {
+            env->publishVelocity(0,0);
+        }
+        else
+        {
+            env->publishVelocity(0,0,0);
+        }
+        
         return TaskStatus::TASK_TERMINATED;
     }
 

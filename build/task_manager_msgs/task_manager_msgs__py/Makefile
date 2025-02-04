@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_msgs
+CMAKE_SOURCE_DIR = /home/GTL/pcastere/ros_hw1/ros2_hw1/src/ros_task_manager/src/task_manager_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/GTL/apaul/ros2_hw1/build/task_manager_msgs
+CMAKE_BINARY_DIR = /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_msgs
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -77,8 +77,8 @@ test/fast: test
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/GTL/apaul/ros2_hw1/build/task_manager_msgs && $(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/apaul/ros2_hw1/build/task_manager_msgs/CMakeFiles /home/GTL/apaul/ros2_hw1/build/task_manager_msgs/task_manager_msgs__py//CMakeFiles/progress.marks
-	cd /home/GTL/apaul/ros2_hw1/build/task_manager_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task_manager_msgs__py/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/apaul/ros2_hw1/build/task_manager_msgs/CMakeFiles 0
+	cd /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_msgs && $(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_msgs/CMakeFiles /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_msgs/task_manager_msgs__py//CMakeFiles/progress.marks
+	cd /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task_manager_msgs__py/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_msgs/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/GTL/apaul/ros2_hw1/build/task_manager_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task_manager_msgs__py/clean
+	cd /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task_manager_msgs__py/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/GTL/apaul/ros2_hw1/build/task_manager_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task_manager_msgs__py/preinstall
+	cd /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task_manager_msgs__py/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/GTL/apaul/ros2_hw1/build/task_manager_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task_manager_msgs__py/preinstall
+	cd /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task_manager_msgs__py/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/GTL/apaul/ros2_hw1/build/task_manager_msgs && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_msgs && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 task_manager_msgs__py/CMakeFiles/task_manager_msgs__py.dir/rule:
-	cd /home/GTL/apaul/ros2_hw1/build/task_manager_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task_manager_msgs__py/CMakeFiles/task_manager_msgs__py.dir/rule
+	cd /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task_manager_msgs__py/CMakeFiles/task_manager_msgs__py.dir/rule
 .PHONY : task_manager_msgs__py/CMakeFiles/task_manager_msgs__py.dir/rule
 
 # Convenience name for target.
@@ -182,7 +182,7 @@ task_manager_msgs__py: task_manager_msgs__py/CMakeFiles/task_manager_msgs__py.di
 
 # fast build rule for target.
 task_manager_msgs__py/fast:
-	cd /home/GTL/apaul/ros2_hw1/build/task_manager_msgs && $(MAKE) $(MAKESILENT) -f task_manager_msgs__py/CMakeFiles/task_manager_msgs__py.dir/build.make task_manager_msgs__py/CMakeFiles/task_manager_msgs__py.dir/build
+	cd /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_msgs && $(MAKE) $(MAKESILENT) -f task_manager_msgs__py/CMakeFiles/task_manager_msgs__py.dir/build.make task_manager_msgs__py/CMakeFiles/task_manager_msgs__py.dir/build
 .PHONY : task_manager_msgs__py/fast
 
 # Help Target
@@ -210,6 +210,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/GTL/apaul/ros2_hw1/build/task_manager_msgs && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_msgs && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

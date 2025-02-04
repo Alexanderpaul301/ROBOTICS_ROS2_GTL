@@ -1,0 +1,106 @@
+[0.047s] Invoking command in '/home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_lib': CMAKE_PREFIX_PATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/vrep4_helpers:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_sync:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/floor_nav:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_nav2:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/joy_pack:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/cs7630_msgs:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/collision_avoidance_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/vrep_ros_teleop:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_client_py:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/rover_driver_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/keyboard_teleop:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_detect_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/button_server:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs/lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_sync/lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/cs7630_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/GTL/pcastere/ros_hw1/ros2_hw1/src/ros_task_manager/src/task_manager_lib -DCMAKE_INSTALL_PREFIX=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib
+[0.136s] -- The C compiler identification is GNU 11.4.0
+[0.199s] -- The CXX compiler identification is GNU 11.4.0
+[0.212s] -- Detecting C compiler ABI info
+[0.340s] -- Detecting C compiler ABI info - done
+[0.350s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.350s] -- Detecting C compile features
+[0.350s] -- Detecting C compile features - done
+[0.358s] -- Detecting CXX compiler ABI info
+[0.490s] -- Detecting CXX compiler ABI info - done
+[0.499s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.499s] -- Detecting CXX compile features
+[0.500s] -- Detecting CXX compile features - done
+[0.539s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.742s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.223s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[2.567s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.626s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.684s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.752s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.846s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.173s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.204s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[3.533s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[3.627s] -- Looking for pthread.h
+[3.737s] -- Looking for pthread.h - found
+[3.738s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.835s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.836s] -- Found Threads: TRUE  
+[4.198s] -- Found rclcpp_action: 16.0.10 (/opt/ros/humble/share/rclcpp_action/cmake)
+[4.330s] -- Found rclpy: 3.3.14 (/opt/ros/humble/share/rclpy/cmake)
+[4.363s] -- Found std_srvs: 4.2.4 (/opt/ros/humble/share/std_srvs/cmake)
+[4.377s] -- Found task_manager_msgs: 0.0.0 (/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs/share/task_manager_msgs/cmake)
+[4.552s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread 
+[4.584s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.010s] -- Added test 'copyright' to check source files copyright and LICENSE
+[5.036s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.037s] -- Configured cppcheck include dirs: /home/GTL/pcastere/ros_hw1/ros2_hw1/src/ros_task_manager/src/task_manager_lib/include
+[5.037s] -- Configured cppcheck exclude dirs and/or files: 
+[5.057s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[5.058s] -- Configured cpplint exclude dirs and/or files: 
+[5.065s] -- Added test 'flake8' to check Python code syntax and style conventions
+[5.073s] -- Added test 'lint_cmake' to check CMake code style
+[5.079s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[5.099s] -- Added test 'uncrustify' to check C / C++ code style
+[5.099s] -- Configured uncrustify additional arguments: 
+[5.105s] -- Added test 'xmllint' to check XML markup files
+[5.166s] -- Configuring done
+[5.376s] -- Generating done
+[5.398s] -- Build files have been written to: /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_lib
+[5.404s] Invoked command in '/home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_lib' returned '0': CMAKE_PREFIX_PATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/vrep4_helpers:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_sync:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/floor_nav:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_nav2:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/joy_pack:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/cs7630_msgs:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/collision_avoidance_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/vrep_ros_teleop:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_client_py:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/rover_driver_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/keyboard_teleop:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_detect_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/button_server:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs/lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_sync/lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/cs7630_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/GTL/pcastere/ros_hw1/ros2_hw1/src/ros_task_manager/src/task_manager_lib -DCMAKE_INSTALL_PREFIX=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib
+[5.409s] Invoking command in '/home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_lib': CMAKE_PREFIX_PATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/vrep4_helpers:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_sync:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/floor_nav:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_nav2:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/joy_pack:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/cs7630_msgs:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/collision_avoidance_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/vrep_ros_teleop:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_client_py:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/rover_driver_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/keyboard_teleop:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_detect_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/button_server:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs/lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_sync/lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/cs7630_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_lib -- -j16 -l16
+[5.484s] [ 60%] [32mBuilding CXX object CMakeFiles/task_manager_lib.dir/src/TaskScheduler.cpp.o[0m
+[5.486s] [ 60%] [32mBuilding CXX object CMakeFiles/task_manager_lib.dir/src/DynamicTask.cpp.o[0m
+[5.487s] [ 90%] [32mBuilding CXX object CMakeFiles/task_manager_lib.dir/src/TaskIdleDefault.cpp.o[0m
+[5.487s] [ 90%] [32mBuilding CXX object CMakeFiles/task_manager_lib.dir/src/TaskServerDefault.cpp.o[0m
+[5.487s] [ 60%] [32mBuilding CXX object CMakeFiles/task_manager_lib.dir/src/TaskDefinition.cpp.o[0m
+[5.487s] [ 60%] [32mBuilding CXX object CMakeFiles/task_manager_lib.dir/src/TaskConfig.cpp.o[0m
+[5.487s] [ 60%] [32mBuilding CXX object CMakeFiles/task_manager_lib.dir/src/TaskInstance.cpp.o[0m
+[5.487s] [ 90%] [32mBuilding CXX object CMakeFiles/task_manager_lib.dir/src/TaskSystem.cpp.o[0m
+[5.487s] [ 90%] [32mBuilding CXX object CMakeFiles/task_manager_lib.dir/src/TaskWaitDefault.cpp.o[0m
+[19.157s] [100%] [32m[1mLinking CXX shared library libtask_manager_lib.so[0m
+[21.687s] [100%] Built target task_manager_lib
+[21.697s] Invoked command in '/home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_lib' returned '0': CMAKE_PREFIX_PATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/vrep4_helpers:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_sync:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/floor_nav:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_nav2:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/joy_pack:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/cs7630_msgs:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/collision_avoidance_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/vrep_ros_teleop:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_client_py:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/rover_driver_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/keyboard_teleop:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_detect_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/button_server:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs/lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_sync/lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/cs7630_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_lib -- -j16 -l16
+[21.730s] Invoking command in '/home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_lib': CMAKE_PREFIX_PATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/vrep4_helpers:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_sync:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/floor_nav:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_nav2:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/joy_pack:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/cs7630_msgs:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/collision_avoidance_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/vrep_ros_teleop:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_client_py:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/rover_driver_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/keyboard_teleop:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_detect_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/button_server:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs/lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_sync/lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/cs7630_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_lib
+[21.735s] -- Install configuration: ""
+[21.740s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/lib/libtask_manager_lib.so
+[21.993s] -- Set runtime path of "/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/lib/libtask_manager_lib.so" to ""
+[21.993s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/include/task_manager_lib
+[21.997s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/include/task_manager_lib/TaskServerDefault.h
+[22.001s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/include/task_manager_lib/TaskWaitDefault.h
+[22.005s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/include/task_manager_lib/TaskClient.h
+[22.019s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/include/task_manager_lib/ServiceStorage.h
+[22.024s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/include/task_manager_lib/TaskScheduler.h
+[22.029s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/include/task_manager_lib/DynamicTask.h
+[22.033s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/include/task_manager_lib/TaskEnvironment.h
+[22.037s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/include/task_manager_lib/TaskInstance.h
+[22.041s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/include/task_manager_lib/ParameterList.h
+[22.045s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/include/task_manager_lib/TaskIdleDefault.h
+[22.049s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/include/task_manager_lib/TaskServiceGeneric.h
+[22.053s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/include/task_manager_lib/TaskParameterDefinition.h
+[22.056s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/include/task_manager_lib/TaskSystem.h
+[22.060s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/include/task_manager_lib/TaskDefinition.h
+[22.064s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/include/task_manager_lib/TaskConfig.h
+[22.068s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/include/task_manager_lib/TaskActionGeneric.h
+[22.076s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/share/task_manager_lib/environment/library_path.sh
+[22.080s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/share/task_manager_lib/environment/library_path.dsv
+[22.087s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/share/ament_index/resource_index/package_run_dependencies/task_manager_lib
+[22.094s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/share/ament_index/resource_index/parent_prefix_path/task_manager_lib
+[22.098s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/share/task_manager_lib/environment/ament_prefix_path.sh
+[22.101s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/share/task_manager_lib/environment/ament_prefix_path.dsv
+[22.104s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/share/task_manager_lib/environment/path.sh
+[22.108s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/share/task_manager_lib/environment/path.dsv
+[22.112s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/share/task_manager_lib/local_setup.bash
+[22.116s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/share/task_manager_lib/local_setup.sh
+[22.119s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/share/task_manager_lib/local_setup.zsh
+[22.123s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/share/task_manager_lib/local_setup.dsv
+[22.126s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/share/task_manager_lib/package.dsv
+[22.133s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/share/ament_index/resource_index/packages/task_manager_lib
+[22.140s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/share/task_manager_lib/cmake/ament_cmake_export_dependencies-extras.cmake
+[22.143s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/share/task_manager_lib/cmake/ament_cmake_export_include_directories-extras.cmake
+[22.148s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/share/task_manager_lib/cmake/ament_cmake_export_libraries-extras.cmake
+[22.152s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/share/task_manager_lib/cmake/task_manager_libConfig.cmake
+[22.155s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/share/task_manager_lib/cmake/task_manager_libConfig-version.cmake
+[22.159s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/share/task_manager_lib/package.xml
+[22.165s] Invoked command in '/home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_lib' returned '0': CMAKE_PREFIX_PATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/vrep4_helpers:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_sync:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/floor_nav:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_nav2:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/joy_pack:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/cs7630_msgs:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/collision_avoidance_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/vrep_ros_teleop:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_client_py:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/rover_driver_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/keyboard_teleop:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_detect_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/button_server:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs/lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_sync/lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg/lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/cs7630_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_lib

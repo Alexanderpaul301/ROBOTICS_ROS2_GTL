@@ -27,12 +27,15 @@ TaskIndicator TaskGoTo::initialise()
 
 TaskIndicator TaskGoTo::iterate()
 {
+    flag_holo=cfg->flag_holo;
     const geometry_msgs::msg::Pose2D & tpose = env->getPose2D();
     double r = hypot(y_init + cfg->goal_y-tpose.y,x_init + cfg->goal_x-tpose.x);
+
     if (r < cfg->dist_threshold) {
 		return TaskStatus::TASK_COMPLETED;
     }
     double alpha = remainder(atan2((y_init + cfg->goal_y-tpose.y),x_init + cfg->goal_x-tpose.x)-tpose.theta,2*M_PI);
+
 #ifdef DEBUG_GOTO
     printf("c %.1f %.1f %.1f g %.1f %.1f r %.3f alpha %.1f\n",
             tpose.x, tpose.y, tpose.theta*180./M_PI,
@@ -43,25 +46,59 @@ TaskIndicator TaskGoTo::iterate()
 #ifdef DEBUG_GOTO
         printf("Cmd v %.2f r %.2f\n",0.,rot);
 #endif
-        env->publishVelocity(0,rot);
-    } else {
+        if (flag_holo==false)
+        {
+            env->publishVelocity(0,rot);
+        }
+        else
+        {
+        env->publishVelocity(0,0,rot);
+    } 
+    }else {
+        if (flag_holo==false)
+        {
+            double vel = cfg->k_v * r;
+            double rot = std::max(std::min(cfg->k_alpha*alpha,cfg->max_angular_velocity),-cfg->max_angular_velocity);
+            if (vel > cfg->max_velocity) vel = cfg->max_velocity;
+            if (vel <-cfg->max_velocity) vel = -cfg->max_velocity;
+            if (rot > cfg->max_angular_velocity) rot = cfg->max_angular_velocity;
+            if (rot <-cfg->max_angular_velocity) rot = -cfg->max_angular_velocity;
+#ifdef DEBUG_GOTO
+        printf("Cmd v %.2f r %.2f\n",vel,rot);
+#endif
+        env->publishVelocity(vel, rot);
+            }
+        else {
         double vel = cfg->k_v * r;
         double rot = std::max(std::min(cfg->k_alpha*alpha,cfg->max_angular_velocity),-cfg->max_angular_velocity);
         if (vel > cfg->max_velocity) vel = cfg->max_velocity;
         if (vel <-cfg->max_velocity) vel = -cfg->max_velocity;
         if (rot > cfg->max_angular_velocity) rot = cfg->max_angular_velocity;
         if (rot <-cfg->max_angular_velocity) rot = -cfg->max_angular_velocity;
+
+        double velx = vel *cos(alpha);
+        double vely = vel *sin(alpha);
+
 #ifdef DEBUG_GOTO
         printf("Cmd v %.2f r %.2f\n",vel,rot);
 #endif
-        env->publishVelocity(vel, rot);
+        env->publishVelocity(velx, vely, rot);}
     }
 	return TaskStatus::TASK_RUNNING;
 }
 
+
+
 TaskIndicator TaskGoTo::terminate()
 {
-    env->publishVelocity(0,0);
+    if (flag_holo==false)
+    {
+        env->publishVelocity(0,0);
+    }
+    else
+    {
+        env->publishVelocity(0,0,0);
+    }
 	return TaskStatus::TASK_TERMINATED;
 }
 

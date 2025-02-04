@@ -17,6 +17,7 @@ namespace floor_nav {
             define("max_angular_velocity",  1.0,"Max allowed angular velocity",false, max_angular_velocity);
             define("dist_threshold",  0.1,"Distance at which a the target is considered reached",false, dist_threshold);
             define("relative",  false,"Is the target pose relative or absolute",true, relative);
+            define("flag_holo",  false,"Use holonomic control",true, flag_holo);
         }
 
         // convenience aliases, updated by update from the config data
@@ -26,6 +27,7 @@ namespace floor_nav {
         double max_angular_velocity;
         double dist_threshold;
         bool relative;
+        bool flag_holo;
 
     };
 
@@ -34,6 +36,7 @@ namespace floor_nav {
     {
         protected:
             double x_init,y_init;
+            bool flag_holo;
         public:
             TaskGoTo(TaskDefinitionPtr def, TaskEnvironmentPtr env) : Parent(def,env) {}
             virtual ~TaskGoTo() {};

@@ -26,6 +26,7 @@ find_package(tf2_ros REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
 find_package(task_manager_nav2)
 
+
 include_directories(
   include
   ${PCL_COMMON_INCLUDE_DIRS}
@@ -45,6 +46,7 @@ include_directories(
   ${kobuki_ros_interfaces_INCLUDE_DIRS}
   ${cs7630_msgs_INCLUDE_DIRS}
   ${face_msg_INCLUDE_DIRS}
+
 )
 
 SET(ALL_LIBS 
@@ -65,6 +67,7 @@ SET(ALL_LIBS
     ${CMAKE_DL_LIBS}
     ${cs7630_msgs_LIBRARIES}
     ${face_msg_LIBRARIES}
+
   )
 
 file(SHA256 ${PROJECT_SOURCE_DIR}/include/floor_nav/SimTasksEnv.h ENV_CHECK_SUM)
@@ -73,7 +76,7 @@ add_compile_definitions(ENV_CHECK_SUM=${ENV_CHECK_SUM})
 ADD_EXECUTABLE( floornav_task_server src/task_server.cpp src/SimTasksEnv.cpp) 
 ament_target_dependencies(floornav_task_server task_manager_lib
     task_manager_msgs geometry_msgs rclcpp rclcpp_action std_msgs task_manager_nav2
-    tf2 tf2_geometry_msgs face_msg cs7630_msgs)
+    tf2 tf2_geometry_msgs face_msg cs7630_msgs nav_msgs)
 # Necessary target for the tasks to see the symbols of the main
 TARGET_LINK_OPTIONS(floornav_task_server PRIVATE "-rdynamic")
 TARGET_LINK_LIBRARIES(floornav_task_server ${ALL_LIBS})

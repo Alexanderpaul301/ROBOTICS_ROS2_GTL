@@ -9,7 +9,7 @@ using std::placeholders::_1;
 
 SimTasksEnv::SimTasksEnv(std::shared_ptr<rclcpp::Node> n) : task_manager_lib::TaskEnvironment(n),
     joystick_topic("/teleop/twistCommand"), auto_topic("/mux/autoCommand"), 
-    base_frame("bubbleRob"), reference_frame("world")
+    base_frame("odom"), reference_frame("world")
 {
     manualControl = false; 
     joystick_topic = n->declare_parameter<std::string>("joystick_topic", joystick_topic);
@@ -32,6 +32,7 @@ SimTasksEnv::SimTasksEnv(std::shared_ptr<rclcpp::Node> n) : task_manager_lib::Ta
     faceSub = n->create_subscription<face_msg::msg::Roilist>("/face_detect/roi",be,
             std::bind(&SimTasksEnv::faceCallback,this,std::placeholders::_1));
     roiarray = nullptr;
+
 }
 
 

@@ -1,8 +1,8 @@
-# Install script for directory: /home/GTL/apaul/ros2_hw1/build/task_manager_msgs/task_manager_msgs__py
+# Install script for directory: /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_msgs/task_manager_msgs__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/GTL/apaul/ros2_hw1/install/task_manager_msgs")
+  set(CMAKE_INSTALL_PREFIX "/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

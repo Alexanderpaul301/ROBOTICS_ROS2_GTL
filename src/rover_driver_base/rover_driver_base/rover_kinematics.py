@@ -91,7 +91,7 @@ class RoverKinematics:
 
     def prepare_inversion_matrix(self,drive_cfg):
         # TODO: Build pseudo inverse of W using the notation from the class. The matrix size below is wrong.
-        n = len(prefix);
+        n = len(prefix)
         W = np.asmatrix(np.zeros((2*n,3)))
         # Building the W matrix, hopefully it is in the right coordinate frame  # ! (maybe change it)
         for i in range(2*n):
