@@ -1,0 +1,13 @@
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:[m[K In member function ‘[01m[Kvirtual task_manager_lib::TaskIndicator floor_nav::TaskGoToPose::iterate()[m[K’:
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:82:25:[m[K [01;31m[Kerror: [m[K‘[01m[Krot[m[K’ was not declared in this scope
+   82 |                     if ([01;31m[Krot[m[K > cfg->max_angular_velocity) rot = cfg->max_angular_velocity;
+      |                         [01;31m[K^~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:83:25:[m[K [01;31m[Kerror: [m[K‘[01m[Krot[m[K’ was not declared in this scope
+   83 |                     if ([01;31m[Krot[m[K <-cfg->max_angular_velocity) rot = -cfg->max_angular_velocity;
+      |                         [01;31m[K^~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskGoToPose.cpp:85:47:[m[K [01;31m[Kerror: [m[K‘[01m[Krot[m[K’ was not declared in this scope
+   85 |                     env->publishVelocity(vel, [01;31m[Krot[m[K);
+      |                                               [01;31m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/floornav_TaskGoToPose.dir/build.make:76: CMakeFiles/floornav_TaskGoToPose.dir/tasks/TaskGoToPose.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:321: CMakeFiles/floornav_TaskGoToPose.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
