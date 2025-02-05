@@ -1,0 +1,1097 @@
+[1.035s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[1.036s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7efc944b4100>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7efc9447b0a0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7efc9447b0a0>>)
+[1.166s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.166s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.166s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.166s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.166s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.166s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.166s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/GTL/apaul/ros2_hw1'
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.175s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.175s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.175s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.176s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.176s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.176s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.178s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.178s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.178s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.178s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.178s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/collision_avoidance_base) by extensions ['ignore', 'ignore_ament_install']
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/collision_avoidance_base) by extension 'ignore'
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/collision_avoidance_base) by extension 'ignore_ament_install'
+[1.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/collision_avoidance_base) by extensions ['colcon_pkg']
+[1.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/collision_avoidance_base) by extension 'colcon_pkg'
+[1.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/collision_avoidance_base) by extensions ['colcon_meta']
+[1.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/collision_avoidance_base) by extension 'colcon_meta'
+[1.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/collision_avoidance_base) by extensions ['ros']
+[1.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/collision_avoidance_base) by extension 'ros'
+[1.182s] DEBUG:colcon.colcon_core.package_identification:Package 'src/collision_avoidance_base' with type 'ros.ament_cmake' and name 'collision_avoidance_base'
+[1.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/cs7630_msgs) by extensions ['ignore', 'ignore_ament_install']
+[1.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/cs7630_msgs) by extension 'ignore'
+[1.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/cs7630_msgs) by extension 'ignore_ament_install'
+[1.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/cs7630_msgs) by extensions ['colcon_pkg']
+[1.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/cs7630_msgs) by extension 'colcon_pkg'
+[1.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/cs7630_msgs) by extensions ['colcon_meta']
+[1.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/cs7630_msgs) by extension 'colcon_meta'
+[1.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/cs7630_msgs) by extensions ['ros']
+[1.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/cs7630_msgs) by extension 'ros'
+[1.184s] DEBUG:colcon.colcon_core.package_identification:Package 'src/cs7630_msgs' with type 'ros.ament_cmake' and name 'cs7630_msgs'
+[1.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/face_detect_base) by extensions ['ignore', 'ignore_ament_install']
+[1.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/face_detect_base) by extension 'ignore'
+[1.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/face_detect_base) by extension 'ignore_ament_install'
+[1.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/face_detect_base) by extensions ['colcon_pkg']
+[1.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/face_detect_base) by extension 'colcon_pkg'
+[1.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/face_detect_base) by extensions ['colcon_meta']
+[1.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/face_detect_base) by extension 'colcon_meta'
+[1.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/face_detect_base) by extensions ['ros']
+[1.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/face_detect_base) by extension 'ros'
+[1.187s] DEBUG:colcon.colcon_core.package_identification:Package 'src/face_detect_base' with type 'ros.ament_python' and name 'face_detect_base'
+[1.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/face_msg) by extensions ['ignore', 'ignore_ament_install']
+[1.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/face_msg) by extension 'ignore'
+[1.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/face_msg) by extension 'ignore_ament_install'
+[1.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/face_msg) by extensions ['colcon_pkg']
+[1.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/face_msg) by extension 'colcon_pkg'
+[1.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/face_msg) by extensions ['colcon_meta']
+[1.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/face_msg) by extension 'colcon_meta'
+[1.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/face_msg) by extensions ['ros']
+[1.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/face_msg) by extension 'ros'
+[1.189s] DEBUG:colcon.colcon_core.package_identification:Package 'src/face_msg' with type 'ros.ament_cmake' and name 'face_msg'
+[1.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/floor_nav) by extensions ['ignore', 'ignore_ament_install']
+[1.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/floor_nav) by extension 'ignore'
+[1.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/floor_nav) by extension 'ignore_ament_install'
+[1.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/floor_nav) by extensions ['colcon_pkg']
+[1.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/floor_nav) by extension 'colcon_pkg'
+[1.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/floor_nav) by extensions ['colcon_meta']
+[1.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/floor_nav) by extension 'colcon_meta'
+[1.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/floor_nav) by extensions ['ros']
+[1.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/floor_nav) by extension 'ros'
+[1.191s] DEBUG:colcon.colcon_core.package_identification:Package 'src/floor_nav' with type 'ros.ament_cmake' and name 'floor_nav'
+[1.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/joy_pack) by extensions ['ignore', 'ignore_ament_install']
+[1.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/joy_pack) by extension 'ignore'
+[1.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/joy_pack) by extension 'ignore_ament_install'
+[1.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/joy_pack) by extensions ['colcon_pkg']
+[1.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/joy_pack) by extension 'colcon_pkg'
+[1.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/joy_pack) by extensions ['colcon_meta']
+[1.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/joy_pack) by extension 'colcon_meta'
+[1.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/joy_pack) by extensions ['ros']
+[1.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/joy_pack) by extension 'ros'
+[1.193s] DEBUG:colcon.colcon_core.package_identification:Package 'src/joy_pack' with type 'ros.ament_cmake' and name 'joy_pack'
+[1.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_teleop) by extensions ['ignore', 'ignore_ament_install']
+[1.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_teleop) by extension 'ignore'
+[1.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_teleop) by extension 'ignore_ament_install'
+[1.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_teleop) by extensions ['colcon_pkg']
+[1.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_teleop) by extension 'colcon_pkg'
+[1.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_teleop) by extensions ['colcon_meta']
+[1.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_teleop) by extension 'colcon_meta'
+[1.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_teleop) by extensions ['ros']
+[1.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_teleop) by extension 'ros'
+[1.194s] DEBUG:colcon.colcon_core.package_identification:Package 'src/keyboard_teleop' with type 'ros.ament_python' and name 'keyboard_teleop'
+[1.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager) by extensions ['ignore', 'ignore_ament_install']
+[1.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager) by extension 'ignore'
+[1.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager) by extension 'ignore_ament_install'
+[1.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager) by extensions ['colcon_pkg']
+[1.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager) by extension 'colcon_pkg'
+[1.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager) by extensions ['colcon_meta']
+[1.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager) by extension 'colcon_meta'
+[1.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager) by extensions ['ros']
+[1.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager) by extension 'ros'
+[1.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager) by extensions ['cmake', 'python']
+[1.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager) by extension 'cmake'
+[1.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager) by extension 'python'
+[1.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager) by extensions ['python_setup_py']
+[1.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager) by extension 'python_setup_py'
+[1.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src) by extensions ['ignore', 'ignore_ament_install']
+[1.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src) by extension 'ignore'
+[1.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src) by extension 'ignore_ament_install'
+[1.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src) by extensions ['colcon_pkg']
+[1.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src) by extension 'colcon_pkg'
+[1.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src) by extensions ['colcon_meta']
+[1.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src) by extension 'colcon_meta'
+[1.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src) by extensions ['ros']
+[1.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src) by extension 'ros'
+[1.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src) by extensions ['cmake', 'python']
+[1.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src) by extension 'cmake'
+[1.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src) by extension 'python'
+[1.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src) by extensions ['python_setup_py']
+[1.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src) by extension 'python_setup_py'
+[1.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/button_server) by extensions ['ignore', 'ignore_ament_install']
+[1.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/button_server) by extension 'ignore'
+[1.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/button_server) by extension 'ignore_ament_install'
+[1.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/button_server) by extensions ['colcon_pkg']
+[1.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/button_server) by extension 'colcon_pkg'
+[1.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/button_server) by extensions ['colcon_meta']
+[1.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/button_server) by extension 'colcon_meta'
+[1.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/button_server) by extensions ['ros']
+[1.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/button_server) by extension 'ros'
+[1.204s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros_task_manager/src/button_server' with type 'ros.ament_python' and name 'button_server'
+[1.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_client_py) by extensions ['ignore', 'ignore_ament_install']
+[1.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_client_py) by extension 'ignore'
+[1.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_client_py) by extension 'ignore_ament_install'
+[1.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_client_py) by extensions ['colcon_pkg']
+[1.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_client_py) by extension 'colcon_pkg'
+[1.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_client_py) by extensions ['colcon_meta']
+[1.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_client_py) by extension 'colcon_meta'
+[1.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_client_py) by extensions ['ros']
+[1.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_client_py) by extension 'ros'
+[1.207s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros_task_manager/src/task_manager_client_py' with type 'ros.ament_python' and name 'task_manager_client_py'
+[1.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_lib) by extensions ['ignore', 'ignore_ament_install']
+[1.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_lib) by extension 'ignore'
+[1.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_lib) by extension 'ignore_ament_install'
+[1.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_lib) by extensions ['colcon_pkg']
+[1.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_lib) by extension 'colcon_pkg'
+[1.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_lib) by extensions ['colcon_meta']
+[1.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_lib) by extension 'colcon_meta'
+[1.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_lib) by extensions ['ros']
+[1.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_lib) by extension 'ros'
+[1.209s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros_task_manager/src/task_manager_lib' with type 'ros.ament_cmake' and name 'task_manager_lib'
+[1.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_move_base) by extensions ['ignore', 'ignore_ament_install']
+[1.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_move_base) by extension 'ignore'
+[1.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_move_base) ignored
+[1.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_msgs) by extensions ['ignore', 'ignore_ament_install']
+[1.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_msgs) by extension 'ignore'
+[1.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_msgs) by extension 'ignore_ament_install'
+[1.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_msgs) by extensions ['colcon_pkg']
+[1.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_msgs) by extension 'colcon_pkg'
+[1.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_msgs) by extensions ['colcon_meta']
+[1.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_msgs) by extension 'colcon_meta'
+[1.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_msgs) by extensions ['ros']
+[1.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_msgs) by extension 'ros'
+[1.211s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros_task_manager/src/task_manager_msgs' with type 'ros.ament_cmake' and name 'task_manager_msgs'
+[1.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_nav2) by extensions ['ignore', 'ignore_ament_install']
+[1.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_nav2) by extension 'ignore'
+[1.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_nav2) by extension 'ignore_ament_install'
+[1.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_nav2) by extensions ['colcon_pkg']
+[1.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_nav2) by extension 'colcon_pkg'
+[1.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_nav2) by extensions ['colcon_meta']
+[1.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_nav2) by extension 'colcon_meta'
+[1.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_nav2) by extensions ['ros']
+[1.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_nav2) by extension 'ros'
+[1.213s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros_task_manager/src/task_manager_nav2' with type 'ros.ament_cmake' and name 'task_manager_nav2'
+[1.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_sync) by extensions ['ignore', 'ignore_ament_install']
+[1.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_sync) by extension 'ignore'
+[1.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_sync) by extension 'ignore_ament_install'
+[1.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_sync) by extensions ['colcon_pkg']
+[1.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_sync) by extension 'colcon_pkg'
+[1.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_sync) by extensions ['colcon_meta']
+[1.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_sync) by extension 'colcon_meta'
+[1.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_sync) by extensions ['ros']
+[1.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_sync) by extension 'ros'
+[1.215s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros_task_manager/src/task_manager_sync' with type 'ros.ament_cmake' and name 'task_manager_sync'
+[1.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_turtlesim) by extensions ['ignore', 'ignore_ament_install']
+[1.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_turtlesim) by extension 'ignore'
+[1.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_turtlesim) ignored
+[1.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_turtlesim_smach) by extensions ['ignore', 'ignore_ament_install']
+[1.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_turtlesim_smach) by extension 'ignore'
+[1.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_turtlesim_smach) ignored
+[1.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_turtlesim_sync) by extensions ['ignore', 'ignore_ament_install']
+[1.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_turtlesim_sync) by extension 'ignore'
+[1.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/task_manager_turtlesim_sync) ignored
+[1.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/turtlesim_logo) by extensions ['ignore', 'ignore_ament_install']
+[1.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/turtlesim_logo) by extension 'ignore'
+[1.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_task_manager/src/turtlesim_logo) ignored
+[1.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/rover_driver_base) by extensions ['ignore', 'ignore_ament_install']
+[1.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/rover_driver_base) by extension 'ignore'
+[1.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/rover_driver_base) by extension 'ignore_ament_install'
+[1.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/rover_driver_base) by extensions ['colcon_pkg']
+[1.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/rover_driver_base) by extension 'colcon_pkg'
+[1.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/rover_driver_base) by extensions ['colcon_meta']
+[1.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/rover_driver_base) by extension 'colcon_meta'
+[1.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/rover_driver_base) by extensions ['ros']
+[1.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/rover_driver_base) by extension 'ros'
+[1.220s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rover_driver_base' with type 'ros.ament_python' and name 'rover_driver_base'
+[1.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrep4_helpers) by extensions ['ignore', 'ignore_ament_install']
+[1.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrep4_helpers) by extension 'ignore'
+[1.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrep4_helpers) by extension 'ignore_ament_install'
+[1.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrep4_helpers) by extensions ['colcon_pkg']
+[1.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrep4_helpers) by extension 'colcon_pkg'
+[1.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrep4_helpers) by extensions ['colcon_meta']
+[1.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrep4_helpers) by extension 'colcon_meta'
+[1.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrep4_helpers) by extensions ['ros']
+[1.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrep4_helpers) by extension 'ros'
+[1.222s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vrep4_helpers' with type 'ros.ament_cmake' and name 'vrep4_helpers'
+[1.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrep_ros_teleop) by extensions ['ignore', 'ignore_ament_install']
+[1.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrep_ros_teleop) by extension 'ignore'
+[1.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrep_ros_teleop) by extension 'ignore_ament_install'
+[1.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrep_ros_teleop) by extensions ['colcon_pkg']
+[1.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrep_ros_teleop) by extension 'colcon_pkg'
+[1.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrep_ros_teleop) by extensions ['colcon_meta']
+[1.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrep_ros_teleop) by extension 'colcon_meta'
+[1.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrep_ros_teleop) by extensions ['ros']
+[1.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrep_ros_teleop) by extension 'ros'
+[1.223s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vrep_ros_teleop' with type 'ros.ament_python' and name 'vrep_ros_teleop'
+[1.223s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.223s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.223s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.223s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.224s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.240s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.241s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.242s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 407 installed packages in /opt/ros/humble
+[1.244s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.271s] Level 5:colcon.colcon_core.verb:set package 'button_server' build argument 'cmake_args' from command line to 'None'
+[1.271s] Level 5:colcon.colcon_core.verb:set package 'button_server' build argument 'cmake_target' from command line to 'None'
+[1.271s] Level 5:colcon.colcon_core.verb:set package 'button_server' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.271s] Level 5:colcon.colcon_core.verb:set package 'button_server' build argument 'cmake_clean_cache' from command line to 'False'
+[1.271s] Level 5:colcon.colcon_core.verb:set package 'button_server' build argument 'cmake_clean_first' from command line to 'False'
+[1.271s] Level 5:colcon.colcon_core.verb:set package 'button_server' build argument 'cmake_force_configure' from command line to 'False'
+[1.271s] Level 5:colcon.colcon_core.verb:set package 'button_server' build argument 'ament_cmake_args' from command line to 'None'
+[1.271s] Level 5:colcon.colcon_core.verb:set package 'button_server' build argument 'catkin_cmake_args' from command line to 'None'
+[1.271s] Level 5:colcon.colcon_core.verb:set package 'button_server' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.271s] DEBUG:colcon.colcon_core.verb:Building package 'button_server' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/GTL/apaul/ros2_hw1/build/button_server', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/GTL/apaul/ros2_hw1/install/button_server', 'merge_install': False, 'path': '/home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/button_server', 'symlink_install': False, 'test_result_base': None}
+[1.271s] Level 5:colcon.colcon_core.verb:set package 'collision_avoidance_base' build argument 'cmake_args' from command line to 'None'
+[1.271s] Level 5:colcon.colcon_core.verb:set package 'collision_avoidance_base' build argument 'cmake_target' from command line to 'None'
+[1.271s] Level 5:colcon.colcon_core.verb:set package 'collision_avoidance_base' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.271s] Level 5:colcon.colcon_core.verb:set package 'collision_avoidance_base' build argument 'cmake_clean_cache' from command line to 'False'
+[1.271s] Level 5:colcon.colcon_core.verb:set package 'collision_avoidance_base' build argument 'cmake_clean_first' from command line to 'False'
+[1.271s] Level 5:colcon.colcon_core.verb:set package 'collision_avoidance_base' build argument 'cmake_force_configure' from command line to 'False'
+[1.271s] Level 5:colcon.colcon_core.verb:set package 'collision_avoidance_base' build argument 'ament_cmake_args' from command line to 'None'
+[1.272s] Level 5:colcon.colcon_core.verb:set package 'collision_avoidance_base' build argument 'catkin_cmake_args' from command line to 'None'
+[1.272s] Level 5:colcon.colcon_core.verb:set package 'collision_avoidance_base' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.272s] DEBUG:colcon.colcon_core.verb:Building package 'collision_avoidance_base' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/GTL/apaul/ros2_hw1/build/collision_avoidance_base', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/GTL/apaul/ros2_hw1/install/collision_avoidance_base', 'merge_install': False, 'path': '/home/GTL/apaul/ros2_hw1/src/collision_avoidance_base', 'symlink_install': False, 'test_result_base': None}
+[1.272s] Level 5:colcon.colcon_core.verb:set package 'cs7630_msgs' build argument 'cmake_args' from command line to 'None'
+[1.272s] Level 5:colcon.colcon_core.verb:set package 'cs7630_msgs' build argument 'cmake_target' from command line to 'None'
+[1.272s] Level 5:colcon.colcon_core.verb:set package 'cs7630_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.272s] Level 5:colcon.colcon_core.verb:set package 'cs7630_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[1.272s] Level 5:colcon.colcon_core.verb:set package 'cs7630_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[1.272s] Level 5:colcon.colcon_core.verb:set package 'cs7630_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[1.272s] Level 5:colcon.colcon_core.verb:set package 'cs7630_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[1.272s] Level 5:colcon.colcon_core.verb:set package 'cs7630_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[1.272s] Level 5:colcon.colcon_core.verb:set package 'cs7630_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.272s] DEBUG:colcon.colcon_core.verb:Building package 'cs7630_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/GTL/apaul/ros2_hw1/build/cs7630_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs', 'merge_install': False, 'path': '/home/GTL/apaul/ros2_hw1/src/cs7630_msgs', 'symlink_install': False, 'test_result_base': None}
+[1.272s] Level 5:colcon.colcon_core.verb:set package 'face_msg' build argument 'cmake_args' from command line to 'None'
+[1.272s] Level 5:colcon.colcon_core.verb:set package 'face_msg' build argument 'cmake_target' from command line to 'None'
+[1.272s] Level 5:colcon.colcon_core.verb:set package 'face_msg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.272s] Level 5:colcon.colcon_core.verb:set package 'face_msg' build argument 'cmake_clean_cache' from command line to 'False'
+[1.272s] Level 5:colcon.colcon_core.verb:set package 'face_msg' build argument 'cmake_clean_first' from command line to 'False'
+[1.272s] Level 5:colcon.colcon_core.verb:set package 'face_msg' build argument 'cmake_force_configure' from command line to 'False'
+[1.272s] Level 5:colcon.colcon_core.verb:set package 'face_msg' build argument 'ament_cmake_args' from command line to 'None'
+[1.272s] Level 5:colcon.colcon_core.verb:set package 'face_msg' build argument 'catkin_cmake_args' from command line to 'None'
+[1.272s] Level 5:colcon.colcon_core.verb:set package 'face_msg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.272s] DEBUG:colcon.colcon_core.verb:Building package 'face_msg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/GTL/apaul/ros2_hw1/build/face_msg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/GTL/apaul/ros2_hw1/install/face_msg', 'merge_install': False, 'path': '/home/GTL/apaul/ros2_hw1/src/face_msg', 'symlink_install': False, 'test_result_base': None}
+[1.272s] Level 5:colcon.colcon_core.verb:set package 'joy_pack' build argument 'cmake_args' from command line to 'None'
+[1.272s] Level 5:colcon.colcon_core.verb:set package 'joy_pack' build argument 'cmake_target' from command line to 'None'
+[1.272s] Level 5:colcon.colcon_core.verb:set package 'joy_pack' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.272s] Level 5:colcon.colcon_core.verb:set package 'joy_pack' build argument 'cmake_clean_cache' from command line to 'False'
+[1.272s] Level 5:colcon.colcon_core.verb:set package 'joy_pack' build argument 'cmake_clean_first' from command line to 'False'
+[1.272s] Level 5:colcon.colcon_core.verb:set package 'joy_pack' build argument 'cmake_force_configure' from command line to 'False'
+[1.272s] Level 5:colcon.colcon_core.verb:set package 'joy_pack' build argument 'ament_cmake_args' from command line to 'None'
+[1.272s] Level 5:colcon.colcon_core.verb:set package 'joy_pack' build argument 'catkin_cmake_args' from command line to 'None'
+[1.272s] Level 5:colcon.colcon_core.verb:set package 'joy_pack' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.272s] DEBUG:colcon.colcon_core.verb:Building package 'joy_pack' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/GTL/apaul/ros2_hw1/build/joy_pack', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/GTL/apaul/ros2_hw1/install/joy_pack', 'merge_install': False, 'path': '/home/GTL/apaul/ros2_hw1/src/joy_pack', 'symlink_install': False, 'test_result_base': None}
+[1.273s] Level 5:colcon.colcon_core.verb:set package 'keyboard_teleop' build argument 'cmake_args' from command line to 'None'
+[1.273s] Level 5:colcon.colcon_core.verb:set package 'keyboard_teleop' build argument 'cmake_target' from command line to 'None'
+[1.273s] Level 5:colcon.colcon_core.verb:set package 'keyboard_teleop' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.273s] Level 5:colcon.colcon_core.verb:set package 'keyboard_teleop' build argument 'cmake_clean_cache' from command line to 'False'
+[1.273s] Level 5:colcon.colcon_core.verb:set package 'keyboard_teleop' build argument 'cmake_clean_first' from command line to 'False'
+[1.273s] Level 5:colcon.colcon_core.verb:set package 'keyboard_teleop' build argument 'cmake_force_configure' from command line to 'False'
+[1.273s] Level 5:colcon.colcon_core.verb:set package 'keyboard_teleop' build argument 'ament_cmake_args' from command line to 'None'
+[1.273s] Level 5:colcon.colcon_core.verb:set package 'keyboard_teleop' build argument 'catkin_cmake_args' from command line to 'None'
+[1.273s] Level 5:colcon.colcon_core.verb:set package 'keyboard_teleop' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.273s] DEBUG:colcon.colcon_core.verb:Building package 'keyboard_teleop' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/GTL/apaul/ros2_hw1/build/keyboard_teleop', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/GTL/apaul/ros2_hw1/install/keyboard_teleop', 'merge_install': False, 'path': '/home/GTL/apaul/ros2_hw1/src/keyboard_teleop', 'symlink_install': False, 'test_result_base': None}
+[1.273s] Level 5:colcon.colcon_core.verb:set package 'rover_driver_base' build argument 'cmake_args' from command line to 'None'
+[1.273s] Level 5:colcon.colcon_core.verb:set package 'rover_driver_base' build argument 'cmake_target' from command line to 'None'
+[1.273s] Level 5:colcon.colcon_core.verb:set package 'rover_driver_base' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.273s] Level 5:colcon.colcon_core.verb:set package 'rover_driver_base' build argument 'cmake_clean_cache' from command line to 'False'
+[1.273s] Level 5:colcon.colcon_core.verb:set package 'rover_driver_base' build argument 'cmake_clean_first' from command line to 'False'
+[1.273s] Level 5:colcon.colcon_core.verb:set package 'rover_driver_base' build argument 'cmake_force_configure' from command line to 'False'
+[1.273s] Level 5:colcon.colcon_core.verb:set package 'rover_driver_base' build argument 'ament_cmake_args' from command line to 'None'
+[1.273s] Level 5:colcon.colcon_core.verb:set package 'rover_driver_base' build argument 'catkin_cmake_args' from command line to 'None'
+[1.273s] Level 5:colcon.colcon_core.verb:set package 'rover_driver_base' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.273s] DEBUG:colcon.colcon_core.verb:Building package 'rover_driver_base' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/GTL/apaul/ros2_hw1/build/rover_driver_base', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/GTL/apaul/ros2_hw1/install/rover_driver_base', 'merge_install': False, 'path': '/home/GTL/apaul/ros2_hw1/src/rover_driver_base', 'symlink_install': False, 'test_result_base': None}
+[1.273s] Level 5:colcon.colcon_core.verb:set package 'task_manager_msgs' build argument 'cmake_args' from command line to 'None'
+[1.273s] Level 5:colcon.colcon_core.verb:set package 'task_manager_msgs' build argument 'cmake_target' from command line to 'None'
+[1.273s] Level 5:colcon.colcon_core.verb:set package 'task_manager_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.273s] Level 5:colcon.colcon_core.verb:set package 'task_manager_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[1.273s] Level 5:colcon.colcon_core.verb:set package 'task_manager_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[1.273s] Level 5:colcon.colcon_core.verb:set package 'task_manager_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[1.273s] Level 5:colcon.colcon_core.verb:set package 'task_manager_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[1.273s] Level 5:colcon.colcon_core.verb:set package 'task_manager_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[1.273s] Level 5:colcon.colcon_core.verb:set package 'task_manager_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.273s] DEBUG:colcon.colcon_core.verb:Building package 'task_manager_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/GTL/apaul/ros2_hw1/build/task_manager_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/GTL/apaul/ros2_hw1/install/task_manager_msgs', 'merge_install': False, 'path': '/home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_msgs', 'symlink_install': False, 'test_result_base': None}
+[1.274s] Level 5:colcon.colcon_core.verb:set package 'vrep4_helpers' build argument 'cmake_args' from command line to 'None'
+[1.274s] Level 5:colcon.colcon_core.verb:set package 'vrep4_helpers' build argument 'cmake_target' from command line to 'None'
+[1.274s] Level 5:colcon.colcon_core.verb:set package 'vrep4_helpers' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.274s] Level 5:colcon.colcon_core.verb:set package 'vrep4_helpers' build argument 'cmake_clean_cache' from command line to 'False'
+[1.274s] Level 5:colcon.colcon_core.verb:set package 'vrep4_helpers' build argument 'cmake_clean_first' from command line to 'False'
+[1.274s] Level 5:colcon.colcon_core.verb:set package 'vrep4_helpers' build argument 'cmake_force_configure' from command line to 'False'
+[1.274s] Level 5:colcon.colcon_core.verb:set package 'vrep4_helpers' build argument 'ament_cmake_args' from command line to 'None'
+[1.274s] Level 5:colcon.colcon_core.verb:set package 'vrep4_helpers' build argument 'catkin_cmake_args' from command line to 'None'
+[1.274s] Level 5:colcon.colcon_core.verb:set package 'vrep4_helpers' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.274s] DEBUG:colcon.colcon_core.verb:Building package 'vrep4_helpers' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/GTL/apaul/ros2_hw1/build/vrep4_helpers', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/GTL/apaul/ros2_hw1/install/vrep4_helpers', 'merge_install': False, 'path': '/home/GTL/apaul/ros2_hw1/src/vrep4_helpers', 'symlink_install': False, 'test_result_base': None}
+[1.274s] Level 5:colcon.colcon_core.verb:set package 'vrep_ros_teleop' build argument 'cmake_args' from command line to 'None'
+[1.274s] Level 5:colcon.colcon_core.verb:set package 'vrep_ros_teleop' build argument 'cmake_target' from command line to 'None'
+[1.274s] Level 5:colcon.colcon_core.verb:set package 'vrep_ros_teleop' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.274s] Level 5:colcon.colcon_core.verb:set package 'vrep_ros_teleop' build argument 'cmake_clean_cache' from command line to 'False'
+[1.274s] Level 5:colcon.colcon_core.verb:set package 'vrep_ros_teleop' build argument 'cmake_clean_first' from command line to 'False'
+[1.274s] Level 5:colcon.colcon_core.verb:set package 'vrep_ros_teleop' build argument 'cmake_force_configure' from command line to 'False'
+[1.274s] Level 5:colcon.colcon_core.verb:set package 'vrep_ros_teleop' build argument 'ament_cmake_args' from command line to 'None'
+[1.274s] Level 5:colcon.colcon_core.verb:set package 'vrep_ros_teleop' build argument 'catkin_cmake_args' from command line to 'None'
+[1.274s] Level 5:colcon.colcon_core.verb:set package 'vrep_ros_teleop' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.274s] DEBUG:colcon.colcon_core.verb:Building package 'vrep_ros_teleop' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/GTL/apaul/ros2_hw1/build/vrep_ros_teleop', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/GTL/apaul/ros2_hw1/install/vrep_ros_teleop', 'merge_install': False, 'path': '/home/GTL/apaul/ros2_hw1/src/vrep_ros_teleop', 'symlink_install': False, 'test_result_base': None}
+[1.274s] Level 5:colcon.colcon_core.verb:set package 'face_detect_base' build argument 'cmake_args' from command line to 'None'
+[1.274s] Level 5:colcon.colcon_core.verb:set package 'face_detect_base' build argument 'cmake_target' from command line to 'None'
+[1.274s] Level 5:colcon.colcon_core.verb:set package 'face_detect_base' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.274s] Level 5:colcon.colcon_core.verb:set package 'face_detect_base' build argument 'cmake_clean_cache' from command line to 'False'
+[1.274s] Level 5:colcon.colcon_core.verb:set package 'face_detect_base' build argument 'cmake_clean_first' from command line to 'False'
+[1.274s] Level 5:colcon.colcon_core.verb:set package 'face_detect_base' build argument 'cmake_force_configure' from command line to 'False'
+[1.274s] Level 5:colcon.colcon_core.verb:set package 'face_detect_base' build argument 'ament_cmake_args' from command line to 'None'
+[1.274s] Level 5:colcon.colcon_core.verb:set package 'face_detect_base' build argument 'catkin_cmake_args' from command line to 'None'
+[1.274s] Level 5:colcon.colcon_core.verb:set package 'face_detect_base' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.274s] DEBUG:colcon.colcon_core.verb:Building package 'face_detect_base' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/GTL/apaul/ros2_hw1/build/face_detect_base', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/GTL/apaul/ros2_hw1/install/face_detect_base', 'merge_install': False, 'path': '/home/GTL/apaul/ros2_hw1/src/face_detect_base', 'symlink_install': False, 'test_result_base': None}
+[1.274s] Level 5:colcon.colcon_core.verb:set package 'task_manager_client_py' build argument 'cmake_args' from command line to 'None'
+[1.275s] Level 5:colcon.colcon_core.verb:set package 'task_manager_client_py' build argument 'cmake_target' from command line to 'None'
+[1.275s] Level 5:colcon.colcon_core.verb:set package 'task_manager_client_py' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.275s] Level 5:colcon.colcon_core.verb:set package 'task_manager_client_py' build argument 'cmake_clean_cache' from command line to 'False'
+[1.275s] Level 5:colcon.colcon_core.verb:set package 'task_manager_client_py' build argument 'cmake_clean_first' from command line to 'False'
+[1.275s] Level 5:colcon.colcon_core.verb:set package 'task_manager_client_py' build argument 'cmake_force_configure' from command line to 'False'
+[1.275s] Level 5:colcon.colcon_core.verb:set package 'task_manager_client_py' build argument 'ament_cmake_args' from command line to 'None'
+[1.275s] Level 5:colcon.colcon_core.verb:set package 'task_manager_client_py' build argument 'catkin_cmake_args' from command line to 'None'
+[1.275s] Level 5:colcon.colcon_core.verb:set package 'task_manager_client_py' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.275s] DEBUG:colcon.colcon_core.verb:Building package 'task_manager_client_py' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/GTL/apaul/ros2_hw1/build/task_manager_client_py', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/GTL/apaul/ros2_hw1/install/task_manager_client_py', 'merge_install': False, 'path': '/home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_client_py', 'symlink_install': False, 'test_result_base': None}
+[1.275s] Level 5:colcon.colcon_core.verb:set package 'task_manager_lib' build argument 'cmake_args' from command line to 'None'
+[1.275s] Level 5:colcon.colcon_core.verb:set package 'task_manager_lib' build argument 'cmake_target' from command line to 'None'
+[1.275s] Level 5:colcon.colcon_core.verb:set package 'task_manager_lib' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.275s] Level 5:colcon.colcon_core.verb:set package 'task_manager_lib' build argument 'cmake_clean_cache' from command line to 'False'
+[1.275s] Level 5:colcon.colcon_core.verb:set package 'task_manager_lib' build argument 'cmake_clean_first' from command line to 'False'
+[1.275s] Level 5:colcon.colcon_core.verb:set package 'task_manager_lib' build argument 'cmake_force_configure' from command line to 'False'
+[1.275s] Level 5:colcon.colcon_core.verb:set package 'task_manager_lib' build argument 'ament_cmake_args' from command line to 'None'
+[1.275s] Level 5:colcon.colcon_core.verb:set package 'task_manager_lib' build argument 'catkin_cmake_args' from command line to 'None'
+[1.275s] Level 5:colcon.colcon_core.verb:set package 'task_manager_lib' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.275s] DEBUG:colcon.colcon_core.verb:Building package 'task_manager_lib' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/GTL/apaul/ros2_hw1/build/task_manager_lib', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/GTL/apaul/ros2_hw1/install/task_manager_lib', 'merge_install': False, 'path': '/home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_lib', 'symlink_install': False, 'test_result_base': None}
+[1.275s] Level 5:colcon.colcon_core.verb:set package 'task_manager_nav2' build argument 'cmake_args' from command line to 'None'
+[1.275s] Level 5:colcon.colcon_core.verb:set package 'task_manager_nav2' build argument 'cmake_target' from command line to 'None'
+[1.275s] Level 5:colcon.colcon_core.verb:set package 'task_manager_nav2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.275s] Level 5:colcon.colcon_core.verb:set package 'task_manager_nav2' build argument 'cmake_clean_cache' from command line to 'False'
+[1.275s] Level 5:colcon.colcon_core.verb:set package 'task_manager_nav2' build argument 'cmake_clean_first' from command line to 'False'
+[1.275s] Level 5:colcon.colcon_core.verb:set package 'task_manager_nav2' build argument 'cmake_force_configure' from command line to 'False'
+[1.275s] Level 5:colcon.colcon_core.verb:set package 'task_manager_nav2' build argument 'ament_cmake_args' from command line to 'None'
+[1.275s] Level 5:colcon.colcon_core.verb:set package 'task_manager_nav2' build argument 'catkin_cmake_args' from command line to 'None'
+[1.275s] Level 5:colcon.colcon_core.verb:set package 'task_manager_nav2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.275s] DEBUG:colcon.colcon_core.verb:Building package 'task_manager_nav2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/GTL/apaul/ros2_hw1/build/task_manager_nav2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/GTL/apaul/ros2_hw1/install/task_manager_nav2', 'merge_install': False, 'path': '/home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_nav2', 'symlink_install': False, 'test_result_base': None}
+[1.275s] Level 5:colcon.colcon_core.verb:set package 'task_manager_sync' build argument 'cmake_args' from command line to 'None'
+[1.275s] Level 5:colcon.colcon_core.verb:set package 'task_manager_sync' build argument 'cmake_target' from command line to 'None'
+[1.275s] Level 5:colcon.colcon_core.verb:set package 'task_manager_sync' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.275s] Level 5:colcon.colcon_core.verb:set package 'task_manager_sync' build argument 'cmake_clean_cache' from command line to 'False'
+[1.275s] Level 5:colcon.colcon_core.verb:set package 'task_manager_sync' build argument 'cmake_clean_first' from command line to 'False'
+[1.275s] Level 5:colcon.colcon_core.verb:set package 'task_manager_sync' build argument 'cmake_force_configure' from command line to 'False'
+[1.275s] Level 5:colcon.colcon_core.verb:set package 'task_manager_sync' build argument 'ament_cmake_args' from command line to 'None'
+[1.276s] Level 5:colcon.colcon_core.verb:set package 'task_manager_sync' build argument 'catkin_cmake_args' from command line to 'None'
+[1.276s] Level 5:colcon.colcon_core.verb:set package 'task_manager_sync' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.276s] DEBUG:colcon.colcon_core.verb:Building package 'task_manager_sync' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/GTL/apaul/ros2_hw1/build/task_manager_sync', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/GTL/apaul/ros2_hw1/install/task_manager_sync', 'merge_install': False, 'path': '/home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_sync', 'symlink_install': False, 'test_result_base': None}
+[1.276s] Level 5:colcon.colcon_core.verb:set package 'floor_nav' build argument 'cmake_args' from command line to 'None'
+[1.276s] Level 5:colcon.colcon_core.verb:set package 'floor_nav' build argument 'cmake_target' from command line to 'None'
+[1.276s] Level 5:colcon.colcon_core.verb:set package 'floor_nav' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.276s] Level 5:colcon.colcon_core.verb:set package 'floor_nav' build argument 'cmake_clean_cache' from command line to 'False'
+[1.276s] Level 5:colcon.colcon_core.verb:set package 'floor_nav' build argument 'cmake_clean_first' from command line to 'False'
+[1.276s] Level 5:colcon.colcon_core.verb:set package 'floor_nav' build argument 'cmake_force_configure' from command line to 'False'
+[1.276s] Level 5:colcon.colcon_core.verb:set package 'floor_nav' build argument 'ament_cmake_args' from command line to 'None'
+[1.276s] Level 5:colcon.colcon_core.verb:set package 'floor_nav' build argument 'catkin_cmake_args' from command line to 'None'
+[1.276s] Level 5:colcon.colcon_core.verb:set package 'floor_nav' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.276s] DEBUG:colcon.colcon_core.verb:Building package 'floor_nav' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/GTL/apaul/ros2_hw1/build/floor_nav', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/GTL/apaul/ros2_hw1/install/floor_nav', 'merge_install': False, 'path': '/home/GTL/apaul/ros2_hw1/src/floor_nav', 'symlink_install': False, 'test_result_base': None}
+[1.276s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.277s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.277s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_msgs' with build type 'ament_cmake'
+[1.277s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_msgs'
+[1.278s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.278s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.278s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.285s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/GTL/apaul/ros2_hw1/src/cs7630_msgs' with build type 'ament_cmake'
+[1.285s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/GTL/apaul/ros2_hw1/src/cs7630_msgs'
+[1.285s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.285s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.290s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/GTL/apaul/ros2_hw1/src/face_msg' with build type 'ament_cmake'
+[1.290s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/GTL/apaul/ros2_hw1/src/face_msg'
+[1.291s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.291s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.295s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/button_server' with build type 'ament_python'
+[1.295s] Level 1:colcon.colcon_core.shell:create_environment_hook('button_server', 'ament_prefix_path')
+[1.295s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/button_server/share/button_server/hook/ament_prefix_path.ps1'
+[1.297s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/GTL/apaul/ros2_hw1/install/button_server/share/button_server/hook/ament_prefix_path.dsv'
+[1.299s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/button_server/share/button_server/hook/ament_prefix_path.sh'
+[1.300s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.300s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.304s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/GTL/apaul/ros2_hw1/src/collision_avoidance_base' with build type 'ament_cmake'
+[1.304s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/GTL/apaul/ros2_hw1/src/collision_avoidance_base'
+[1.304s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.304s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.308s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/GTL/apaul/ros2_hw1/src/joy_pack' with build type 'ament_cmake'
+[1.308s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/GTL/apaul/ros2_hw1/src/joy_pack'
+[1.308s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.308s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.312s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/GTL/apaul/ros2_hw1/src/keyboard_teleop' with build type 'ament_python'
+[1.312s] Level 1:colcon.colcon_core.shell:create_environment_hook('keyboard_teleop', 'ament_prefix_path')
+[1.313s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/keyboard_teleop/share/keyboard_teleop/hook/ament_prefix_path.ps1'
+[1.314s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/GTL/apaul/ros2_hw1/install/keyboard_teleop/share/keyboard_teleop/hook/ament_prefix_path.dsv'
+[1.316s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/keyboard_teleop/share/keyboard_teleop/hook/ament_prefix_path.sh'
+[1.317s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.317s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.321s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/GTL/apaul/ros2_hw1/src/rover_driver_base' with build type 'ament_python'
+[1.321s] Level 1:colcon.colcon_core.shell:create_environment_hook('rover_driver_base', 'ament_prefix_path')
+[1.321s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/rover_driver_base/share/rover_driver_base/hook/ament_prefix_path.ps1'
+[1.323s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/GTL/apaul/ros2_hw1/install/rover_driver_base/share/rover_driver_base/hook/ament_prefix_path.dsv'
+[1.324s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/rover_driver_base/share/rover_driver_base/hook/ament_prefix_path.sh'
+[1.326s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.326s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.330s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/GTL/apaul/ros2_hw1/src/vrep4_helpers' with build type 'ament_cmake'
+[1.330s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/GTL/apaul/ros2_hw1/src/vrep4_helpers'
+[1.330s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.330s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.334s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/GTL/apaul/ros2_hw1/src/vrep_ros_teleop' with build type 'ament_python'
+[1.334s] Level 1:colcon.colcon_core.shell:create_environment_hook('vrep_ros_teleop', 'ament_prefix_path')
+[1.334s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/vrep_ros_teleop/share/vrep_ros_teleop/hook/ament_prefix_path.ps1'
+[1.336s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/GTL/apaul/ros2_hw1/install/vrep_ros_teleop/share/vrep_ros_teleop/hook/ament_prefix_path.dsv'
+[1.337s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/vrep_ros_teleop/share/vrep_ros_teleop/hook/ament_prefix_path.sh'
+[1.339s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.339s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.355s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/GTL/apaul/ros2_hw1/build/task_manager_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/task_manager_msgs -- -j16 -l16
+[1.362s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/GTL/apaul/ros2_hw1/build/cs7630_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/cs7630_msgs -- -j16 -l16
+[1.495s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/GTL/apaul/ros2_hw1/build/face_msg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/face_msg -- -j16 -l16
+[1.554s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/button_server'
+[1.554s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.554s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.583s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/GTL/apaul/ros2_hw1/build/collision_avoidance_base': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/collision_avoidance_base -- -j16 -l16
+[1.588s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/GTL/apaul/ros2_hw1/build/joy_pack': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/joy_pack -- -j16 -l16
+[1.769s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/GTL/apaul/ros2_hw1/src/keyboard_teleop'
+[1.769s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.769s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.958s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/GTL/apaul/ros2_hw1/src/rover_driver_base'
+[1.958s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.958s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.974s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/GTL/apaul/ros2_hw1/build/vrep4_helpers': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/vrep4_helpers -- -j16 -l16
+[2.152s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/GTL/apaul/ros2_hw1/src/vrep_ros_teleop'
+[2.152s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.152s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.168s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/GTL/apaul/ros2_hw1/build/joy_pack' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/joy_pack -- -j16 -l16
+[2.170s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/GTL/apaul/ros2_hw1/build/collision_avoidance_base' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/collision_avoidance_base -- -j16 -l16
+[2.172s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/GTL/apaul/ros2_hw1/build/cs7630_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/cs7630_msgs -- -j16 -l16
+[2.175s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/GTL/apaul/ros2_hw1/build/task_manager_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/task_manager_msgs -- -j16 -l16
+[2.177s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/GTL/apaul/ros2_hw1/build/face_msg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/face_msg -- -j16 -l16
+[2.183s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/GTL/apaul/ros2_hw1/build/vrep4_helpers' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/vrep4_helpers -- -j16 -l16
+[2.205s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/GTL/apaul/ros2_hw1/build/joy_pack': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/GTL/apaul/ros2_hw1/build/joy_pack
+[2.209s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/GTL/apaul/ros2_hw1/build/collision_avoidance_base': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/GTL/apaul/ros2_hw1/build/collision_avoidance_base
+[2.212s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/GTL/apaul/ros2_hw1/build/face_msg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/GTL/apaul/ros2_hw1/build/face_msg
+[2.216s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/GTL/apaul/ros2_hw1/build/vrep4_helpers': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/GTL/apaul/ros2_hw1/build/vrep4_helpers
+[2.225s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/GTL/apaul/ros2_hw1/build/cs7630_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/GTL/apaul/ros2_hw1/build/cs7630_msgs
+[2.228s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(joy_pack)
+[2.228s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/GTL/apaul/ros2_hw1/build/joy_pack' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/GTL/apaul/ros2_hw1/build/joy_pack
+[2.231s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/joy_pack' for CMake module files
+[2.233s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/joy_pack' for CMake config files
+[2.237s] Level 1:colcon.colcon_core.shell:create_environment_hook('joy_pack', 'cmake_prefix_path')
+[2.237s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/hook/cmake_prefix_path.ps1'
+[2.238s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/hook/cmake_prefix_path.dsv'
+[2.240s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/hook/cmake_prefix_path.sh'
+[2.242s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/joy_pack/lib'
+[2.242s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/joy_pack/bin'
+[2.242s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/joy_pack/lib/pkgconfig/joy_pack.pc'
+[2.242s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/joy_pack/lib/python3.10/site-packages'
+[2.243s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/joy_pack/bin'
+[2.243s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/package.ps1'
+[2.245s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/package.dsv'
+[2.246s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/package.sh'
+[2.248s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/package.bash'
+[2.250s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/package.zsh'
+[2.251s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/GTL/apaul/ros2_hw1/install/joy_pack/share/colcon-core/packages/joy_pack)
+[2.262s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(collision_avoidance_base)
+[2.263s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/collision_avoidance_base' for CMake module files
+[2.263s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/GTL/apaul/ros2_hw1/build/collision_avoidance_base' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/GTL/apaul/ros2_hw1/build/collision_avoidance_base
+[2.265s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/collision_avoidance_base' for CMake config files
+[2.268s] Level 1:colcon.colcon_core.shell:create_environment_hook('collision_avoidance_base', 'cmake_prefix_path')
+[2.268s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/hook/cmake_prefix_path.ps1'
+[2.269s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/hook/cmake_prefix_path.dsv'
+[2.271s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/hook/cmake_prefix_path.sh'
+[2.273s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/lib'
+[2.273s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/bin'
+[2.273s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/lib/pkgconfig/collision_avoidance_base.pc'
+[2.273s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/lib/python3.10/site-packages'
+[2.274s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/bin'
+[2.274s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/package.ps1'
+[2.275s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/package.dsv'
+[2.277s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/package.sh'
+[2.278s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/package.bash'
+[2.280s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/package.zsh'
+[2.281s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/colcon-core/packages/collision_avoidance_base)
+[2.289s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vrep4_helpers)
+[2.289s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/vrep4_helpers' for CMake module files
+[2.290s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/GTL/apaul/ros2_hw1/build/vrep4_helpers' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/GTL/apaul/ros2_hw1/build/vrep4_helpers
+[2.292s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/vrep4_helpers' for CMake config files
+[2.294s] Level 1:colcon.colcon_core.shell:create_environment_hook('vrep4_helpers', 'cmake_prefix_path')
+[2.294s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/hook/cmake_prefix_path.ps1'
+[2.296s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/GTL/apaul/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/hook/cmake_prefix_path.dsv'
+[2.297s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/hook/cmake_prefix_path.sh'
+[2.299s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/vrep4_helpers/lib'
+[2.299s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/vrep4_helpers/bin'
+[2.299s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/vrep4_helpers/lib/pkgconfig/vrep4_helpers.pc'
+[2.300s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/vrep4_helpers/lib/python3.10/site-packages'
+[2.300s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/vrep4_helpers/bin'
+[2.300s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/package.ps1'
+[2.301s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/GTL/apaul/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/package.dsv'
+[2.303s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/package.sh'
+[2.304s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/package.bash'
+[2.306s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/package.zsh'
+[2.307s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/GTL/apaul/ros2_hw1/install/vrep4_helpers/share/colcon-core/packages/vrep4_helpers)
+[2.315s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/GTL/apaul/ros2_hw1/build/task_manager_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/GTL/apaul/ros2_hw1/build/task_manager_msgs
+[2.316s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(joy_pack)
+[2.316s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/joy_pack' for CMake module files
+[2.318s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/joy_pack' for CMake config files
+[2.321s] Level 1:colcon.colcon_core.shell:create_environment_hook('joy_pack', 'cmake_prefix_path')
+[2.322s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/hook/cmake_prefix_path.ps1'
+[2.323s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/hook/cmake_prefix_path.dsv'
+[2.324s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/hook/cmake_prefix_path.sh'
+[2.326s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/joy_pack/lib'
+[2.326s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/joy_pack/bin'
+[2.326s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/joy_pack/lib/pkgconfig/joy_pack.pc'
+[2.327s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/joy_pack/lib/python3.10/site-packages'
+[2.327s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/joy_pack/bin'
+[2.327s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/package.ps1'
+[2.329s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/package.dsv'
+[2.331s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/package.sh'
+[2.332s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/package.bash'
+[2.333s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/package.zsh'
+[2.335s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/GTL/apaul/ros2_hw1/install/joy_pack/share/colcon-core/packages/joy_pack)
+[2.337s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(collision_avoidance_base)
+[2.337s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/collision_avoidance_base' for CMake module files
+[2.343s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/collision_avoidance_base' for CMake config files
+[2.345s] Level 1:colcon.colcon_core.shell:create_environment_hook('collision_avoidance_base', 'cmake_prefix_path')
+[2.346s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/hook/cmake_prefix_path.ps1'
+[2.347s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/hook/cmake_prefix_path.dsv'
+[2.348s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/hook/cmake_prefix_path.sh'
+[2.350s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/lib'
+[2.350s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/bin'
+[2.350s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/lib/pkgconfig/collision_avoidance_base.pc'
+[2.350s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/lib/python3.10/site-packages'
+[2.350s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/bin'
+[2.351s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/package.ps1'
+[2.352s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/package.dsv'
+[2.354s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/package.sh'
+[2.355s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/package.bash'
+[2.356s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/package.zsh'
+[2.357s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/colcon-core/packages/collision_avoidance_base)
+[2.359s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(face_msg)
+[2.359s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/face_msg' for CMake module files
+[2.360s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/GTL/apaul/ros2_hw1/build/face_msg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/GTL/apaul/ros2_hw1/build/face_msg
+[2.361s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/face_msg' for CMake config files
+[2.365s] Level 1:colcon.colcon_core.shell:create_environment_hook('face_msg', 'cmake_prefix_path')
+[2.365s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/face_msg/share/face_msg/hook/cmake_prefix_path.ps1'
+[2.367s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/GTL/apaul/ros2_hw1/install/face_msg/share/face_msg/hook/cmake_prefix_path.dsv'
+[2.368s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/face_msg/share/face_msg/hook/cmake_prefix_path.sh'
+[2.369s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/face_msg/lib'
+[2.369s] Level 1:colcon.colcon_core.shell:create_environment_hook('face_msg', 'ld_library_path_lib')
+[2.370s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/face_msg/share/face_msg/hook/ld_library_path_lib.ps1'
+[2.371s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/GTL/apaul/ros2_hw1/install/face_msg/share/face_msg/hook/ld_library_path_lib.dsv'
+[2.372s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/face_msg/share/face_msg/hook/ld_library_path_lib.sh'
+[2.373s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/face_msg/bin'
+[2.373s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/face_msg/lib/pkgconfig/face_msg.pc'
+[2.373s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/face_msg/lib/python3.10/site-packages'
+[2.373s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/face_msg/bin'
+[2.374s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/face_msg/share/face_msg/package.ps1'
+[2.375s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/GTL/apaul/ros2_hw1/install/face_msg/share/face_msg/package.dsv'
+[2.376s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/face_msg/share/face_msg/package.sh'
+[2.378s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/face_msg/share/face_msg/package.bash'
+[2.379s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/face_msg/share/face_msg/package.zsh'
+[2.380s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/GTL/apaul/ros2_hw1/install/face_msg/share/colcon-core/packages/face_msg)
+[2.389s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vrep4_helpers)
+[2.389s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/vrep4_helpers' for CMake module files
+[2.391s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/vrep4_helpers' for CMake config files
+[2.393s] Level 1:colcon.colcon_core.shell:create_environment_hook('vrep4_helpers', 'cmake_prefix_path')
+[2.393s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/hook/cmake_prefix_path.ps1'
+[2.394s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/GTL/apaul/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/hook/cmake_prefix_path.dsv'
+[2.396s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/hook/cmake_prefix_path.sh'
+[2.397s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/vrep4_helpers/lib'
+[2.397s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/vrep4_helpers/bin'
+[2.398s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/vrep4_helpers/lib/pkgconfig/vrep4_helpers.pc'
+[2.398s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/vrep4_helpers/lib/python3.10/site-packages'
+[2.398s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/vrep4_helpers/bin'
+[2.398s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/package.ps1'
+[2.399s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/GTL/apaul/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/package.dsv'
+[2.401s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/package.sh'
+[2.402s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/package.bash'
+[2.404s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/vrep4_helpers/share/vrep4_helpers/package.zsh'
+[2.405s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/GTL/apaul/ros2_hw1/install/vrep4_helpers/share/colcon-core/packages/vrep4_helpers)
+[2.407s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cs7630_msgs)
+[2.407s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs' for CMake module files
+[2.408s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs' for CMake config files
+[2.408s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/GTL/apaul/ros2_hw1/build/cs7630_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/GTL/apaul/ros2_hw1/build/cs7630_msgs
+[2.415s] Level 1:colcon.colcon_core.shell:create_environment_hook('cs7630_msgs', 'cmake_prefix_path')
+[2.415s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/share/cs7630_msgs/hook/cmake_prefix_path.ps1'
+[2.416s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/share/cs7630_msgs/hook/cmake_prefix_path.dsv'
+[2.417s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/share/cs7630_msgs/hook/cmake_prefix_path.sh'
+[2.419s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib'
+[2.419s] Level 1:colcon.colcon_core.shell:create_environment_hook('cs7630_msgs', 'ld_library_path_lib')
+[2.420s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/share/cs7630_msgs/hook/ld_library_path_lib.ps1'
+[2.421s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/share/cs7630_msgs/hook/ld_library_path_lib.dsv'
+[2.422s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/share/cs7630_msgs/hook/ld_library_path_lib.sh'
+[2.424s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/bin'
+[2.424s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib/pkgconfig/cs7630_msgs.pc'
+[2.424s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib/python3.10/site-packages'
+[2.424s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/bin'
+[2.424s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/share/cs7630_msgs/package.ps1'
+[2.426s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/share/cs7630_msgs/package.dsv'
+[2.427s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/share/cs7630_msgs/package.sh'
+[2.429s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/share/cs7630_msgs/package.bash'
+[2.430s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/share/cs7630_msgs/package.zsh'
+[2.432s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/share/colcon-core/packages/cs7630_msgs)
+[2.438s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(face_msg)
+[2.438s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/face_msg' for CMake module files
+[2.439s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/face_msg' for CMake config files
+[2.443s] Level 1:colcon.colcon_core.shell:create_environment_hook('face_msg', 'cmake_prefix_path')
+[2.443s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/face_msg/share/face_msg/hook/cmake_prefix_path.ps1'
+[2.445s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/GTL/apaul/ros2_hw1/install/face_msg/share/face_msg/hook/cmake_prefix_path.dsv'
+[2.447s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/face_msg/share/face_msg/hook/cmake_prefix_path.sh'
+[2.449s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/face_msg/lib'
+[2.450s] Level 1:colcon.colcon_core.shell:create_environment_hook('face_msg', 'ld_library_path_lib')
+[2.450s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/face_msg/share/face_msg/hook/ld_library_path_lib.ps1'
+[2.452s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/GTL/apaul/ros2_hw1/install/face_msg/share/face_msg/hook/ld_library_path_lib.dsv'
+[2.453s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/face_msg/share/face_msg/hook/ld_library_path_lib.sh'
+[2.455s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/face_msg/bin'
+[2.455s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/face_msg/lib/pkgconfig/face_msg.pc'
+[2.455s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/face_msg/lib/python3.10/site-packages'
+[2.455s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/face_msg/bin'
+[2.455s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/face_msg/share/face_msg/package.ps1'
+[2.457s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/GTL/apaul/ros2_hw1/install/face_msg/share/face_msg/package.dsv'
+[2.459s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/face_msg/share/face_msg/package.sh'
+[2.461s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/face_msg/share/face_msg/package.bash'
+[2.462s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/face_msg/share/face_msg/package.zsh'
+[2.464s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/GTL/apaul/ros2_hw1/install/face_msg/share/colcon-core/packages/face_msg)
+[2.486s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cs7630_msgs)
+[2.486s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs' for CMake module files
+[2.488s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs' for CMake config files
+[2.495s] Level 1:colcon.colcon_core.shell:create_environment_hook('cs7630_msgs', 'cmake_prefix_path')
+[2.495s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/share/cs7630_msgs/hook/cmake_prefix_path.ps1'
+[2.497s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/share/cs7630_msgs/hook/cmake_prefix_path.dsv'
+[2.498s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/share/cs7630_msgs/hook/cmake_prefix_path.sh'
+[2.500s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib'
+[2.501s] Level 1:colcon.colcon_core.shell:create_environment_hook('cs7630_msgs', 'ld_library_path_lib')
+[2.501s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/share/cs7630_msgs/hook/ld_library_path_lib.ps1'
+[2.502s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/share/cs7630_msgs/hook/ld_library_path_lib.dsv'
+[2.504s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/share/cs7630_msgs/hook/ld_library_path_lib.sh'
+[2.505s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/bin'
+[2.505s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib/pkgconfig/cs7630_msgs.pc'
+[2.505s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib/python3.10/site-packages'
+[2.505s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/bin'
+[2.506s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/share/cs7630_msgs/package.ps1'
+[2.507s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/share/cs7630_msgs/package.dsv'
+[2.509s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/share/cs7630_msgs/package.sh'
+[2.511s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/share/cs7630_msgs/package.bash'
+[2.513s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/share/cs7630_msgs/package.zsh'
+[2.514s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/share/colcon-core/packages/cs7630_msgs)
+[2.516s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/GTL/apaul/ros2_hw1/src/face_detect_base' with build type 'ament_python'
+[2.516s] Level 1:colcon.colcon_core.shell:create_environment_hook('face_detect_base', 'ament_prefix_path')
+[2.517s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/face_detect_base/share/face_detect_base/hook/ament_prefix_path.ps1'
+[2.518s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/GTL/apaul/ros2_hw1/install/face_detect_base/share/face_detect_base/hook/ament_prefix_path.dsv'
+[2.519s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/face_detect_base/share/face_detect_base/hook/ament_prefix_path.sh'
+[2.521s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.521s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.532s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(task_manager_msgs)
+[2.532s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_msgs' for CMake module files
+[2.534s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_msgs' for CMake config files
+[2.534s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/button_server': PYTHONPATH=/home/GTL/apaul/ros2_hw1/build/button_server/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/GTL/apaul/ros2_hw1/install/button_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../build/button_server build --build-base /home/GTL/apaul/ros2_hw1/build/button_server/build install --record /home/GTL/apaul/ros2_hw1/build/button_server/install.log --single-version-externally-managed install_data
+[2.539s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/GTL/apaul/ros2_hw1/src/keyboard_teleop': PYTHONPATH=/home/GTL/apaul/ros2_hw1/build/keyboard_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/GTL/apaul/ros2_hw1/install/keyboard_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/keyboard_teleop build --build-base /home/GTL/apaul/ros2_hw1/build/keyboard_teleop/build install --record /home/GTL/apaul/ros2_hw1/build/keyboard_teleop/install.log --single-version-externally-managed install_data
+[2.540s] Level 1:colcon.colcon_core.shell:create_environment_hook('task_manager_msgs', 'cmake_prefix_path')
+[2.541s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/share/task_manager_msgs/hook/cmake_prefix_path.ps1'
+[2.542s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/share/task_manager_msgs/hook/cmake_prefix_path.dsv'
+[2.543s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/share/task_manager_msgs/hook/cmake_prefix_path.sh'
+[2.543s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/GTL/apaul/ros2_hw1/src/vrep_ros_teleop': PYTHONPATH=/home/GTL/apaul/ros2_hw1/build/vrep_ros_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/GTL/apaul/ros2_hw1/install/vrep_ros_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/vrep_ros_teleop build --build-base /home/GTL/apaul/ros2_hw1/build/vrep_ros_teleop/build install --record /home/GTL/apaul/ros2_hw1/build/vrep_ros_teleop/install.log --single-version-externally-managed install_data
+[2.543s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/GTL/apaul/ros2_hw1/build/task_manager_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/GTL/apaul/ros2_hw1/build/task_manager_msgs
+[2.545s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib'
+[2.545s] Level 1:colcon.colcon_core.shell:create_environment_hook('task_manager_msgs', 'ld_library_path_lib')
+[2.545s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/share/task_manager_msgs/hook/ld_library_path_lib.ps1'
+[2.547s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/share/task_manager_msgs/hook/ld_library_path_lib.dsv'
+[2.548s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/share/task_manager_msgs/hook/ld_library_path_lib.sh'
+[2.550s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/bin'
+[2.550s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib/pkgconfig/task_manager_msgs.pc'
+[2.550s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib/python3.10/site-packages'
+[2.550s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/bin'
+[2.550s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/share/task_manager_msgs/package.ps1'
+[2.552s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/share/task_manager_msgs/package.dsv'
+[2.554s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/share/task_manager_msgs/package.sh'
+[2.555s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/share/task_manager_msgs/package.bash'
+[2.557s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/share/task_manager_msgs/package.zsh'
+[2.559s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/share/colcon-core/packages/task_manager_msgs)
+[2.573s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/GTL/apaul/ros2_hw1/src/rover_driver_base': PYTHONPATH=/home/GTL/apaul/ros2_hw1/build/rover_driver_base/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/GTL/apaul/ros2_hw1/install/rover_driver_base/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/rover_driver_base build --build-base /home/GTL/apaul/ros2_hw1/build/rover_driver_base/build install --record /home/GTL/apaul/ros2_hw1/build/rover_driver_base/install.log --single-version-externally-managed install_data
+[2.799s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/GTL/apaul/ros2_hw1/src/face_detect_base'
+[2.799s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.799s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.809s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(task_manager_msgs)
+[2.809s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_msgs' for CMake module files
+[2.810s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_msgs' for CMake config files
+[2.816s] Level 1:colcon.colcon_core.shell:create_environment_hook('task_manager_msgs', 'cmake_prefix_path')
+[2.817s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/share/task_manager_msgs/hook/cmake_prefix_path.ps1'
+[2.818s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/share/task_manager_msgs/hook/cmake_prefix_path.dsv'
+[2.819s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/share/task_manager_msgs/hook/cmake_prefix_path.sh'
+[2.820s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib'
+[2.820s] Level 1:colcon.colcon_core.shell:create_environment_hook('task_manager_msgs', 'ld_library_path_lib')
+[2.820s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/share/task_manager_msgs/hook/ld_library_path_lib.ps1'
+[2.821s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/share/task_manager_msgs/hook/ld_library_path_lib.dsv'
+[2.822s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/share/task_manager_msgs/hook/ld_library_path_lib.sh'
+[2.824s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/bin'
+[2.824s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib/pkgconfig/task_manager_msgs.pc'
+[2.824s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib/python3.10/site-packages'
+[2.824s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/bin'
+[2.824s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/share/task_manager_msgs/package.ps1'
+[2.826s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/share/task_manager_msgs/package.dsv'
+[2.828s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/share/task_manager_msgs/package.sh'
+[2.830s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/share/task_manager_msgs/package.bash'
+[2.831s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/share/task_manager_msgs/package.zsh'
+[2.833s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/share/colcon-core/packages/task_manager_msgs)
+[2.835s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_lib' with build type 'ament_cmake'
+[2.835s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_lib'
+[2.835s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.835s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.839s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_client_py' with build type 'ament_python'
+[2.839s] Level 1:colcon.colcon_core.shell:create_environment_hook('task_manager_client_py', 'ament_prefix_path')
+[2.840s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/task_manager_client_py/share/task_manager_client_py/hook/ament_prefix_path.ps1'
+[2.841s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/GTL/apaul/ros2_hw1/install/task_manager_client_py/share/task_manager_client_py/hook/ament_prefix_path.dsv'
+[2.842s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/task_manager_client_py/share/task_manager_client_py/hook/ament_prefix_path.sh'
+[2.843s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.843s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.849s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/button_server' for CMake module files
+[2.849s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/button_server' returned '0': PYTHONPATH=/home/GTL/apaul/ros2_hw1/build/button_server/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/GTL/apaul/ros2_hw1/install/button_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../build/button_server build --build-base /home/GTL/apaul/ros2_hw1/build/button_server/build install --record /home/GTL/apaul/ros2_hw1/build/button_server/install.log --single-version-externally-managed install_data
+[2.850s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/button_server' for CMake config files
+[2.855s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/button_server/lib'
+[2.856s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/button_server/bin'
+[2.856s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/button_server/lib/pkgconfig/button_server.pc'
+[2.856s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/button_server/lib/python3.10/site-packages'
+[2.856s] Level 1:colcon.colcon_core.shell:create_environment_hook('button_server', 'pythonpath')
+[2.856s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/button_server/share/button_server/hook/pythonpath.ps1'
+[2.858s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/GTL/apaul/ros2_hw1/install/button_server/share/button_server/hook/pythonpath.dsv'
+[2.859s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/button_server/share/button_server/hook/pythonpath.sh'
+[2.860s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/button_server/bin'
+[2.860s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(button_server)
+[2.861s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/button_server/share/button_server/package.ps1'
+[2.862s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/GTL/apaul/ros2_hw1/install/button_server/share/button_server/package.dsv'
+[2.863s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/button_server/share/button_server/package.sh'
+[2.865s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/button_server/share/button_server/package.bash'
+[2.867s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/button_server/share/button_server/package.zsh'
+[2.868s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/GTL/apaul/ros2_hw1/install/button_server/share/colcon-core/packages/button_server)
+[2.869s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/keyboard_teleop' for CMake module files
+[2.870s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/keyboard_teleop' for CMake config files
+[2.871s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/GTL/apaul/ros2_hw1/src/keyboard_teleop' returned '0': PYTHONPATH=/home/GTL/apaul/ros2_hw1/build/keyboard_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/GTL/apaul/ros2_hw1/install/keyboard_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/keyboard_teleop build --build-base /home/GTL/apaul/ros2_hw1/build/keyboard_teleop/build install --record /home/GTL/apaul/ros2_hw1/build/keyboard_teleop/install.log --single-version-externally-managed install_data
+[2.875s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/keyboard_teleop/lib'
+[2.875s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/keyboard_teleop/bin'
+[2.875s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/keyboard_teleop/lib/pkgconfig/keyboard_teleop.pc'
+[2.875s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/keyboard_teleop/lib/python3.10/site-packages'
+[2.875s] Level 1:colcon.colcon_core.shell:create_environment_hook('keyboard_teleop', 'pythonpath')
+[2.875s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/keyboard_teleop/share/keyboard_teleop/hook/pythonpath.ps1'
+[2.877s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/GTL/apaul/ros2_hw1/install/keyboard_teleop/share/keyboard_teleop/hook/pythonpath.dsv'
+[2.878s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/keyboard_teleop/share/keyboard_teleop/hook/pythonpath.sh'
+[2.880s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/keyboard_teleop/bin'
+[2.880s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(keyboard_teleop)
+[2.880s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/keyboard_teleop/share/keyboard_teleop/package.ps1'
+[2.882s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/GTL/apaul/ros2_hw1/install/keyboard_teleop/share/keyboard_teleop/package.dsv'
+[2.883s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/keyboard_teleop/share/keyboard_teleop/package.sh'
+[2.885s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/keyboard_teleop/share/keyboard_teleop/package.bash'
+[2.886s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/keyboard_teleop/share/keyboard_teleop/package.zsh'
+[2.888s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/GTL/apaul/ros2_hw1/install/keyboard_teleop/share/colcon-core/packages/keyboard_teleop)
+[2.890s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/vrep_ros_teleop' for CMake module files
+[2.890s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/vrep_ros_teleop' for CMake config files
+[2.892s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/GTL/apaul/ros2_hw1/src/vrep_ros_teleop' returned '0': PYTHONPATH=/home/GTL/apaul/ros2_hw1/build/vrep_ros_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/GTL/apaul/ros2_hw1/install/vrep_ros_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/vrep_ros_teleop build --build-base /home/GTL/apaul/ros2_hw1/build/vrep_ros_teleop/build install --record /home/GTL/apaul/ros2_hw1/build/vrep_ros_teleop/install.log --single-version-externally-managed install_data
+[2.895s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/vrep_ros_teleop/lib'
+[2.896s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/vrep_ros_teleop/bin'
+[2.896s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/vrep_ros_teleop/lib/pkgconfig/vrep_ros_teleop.pc'
+[2.896s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/vrep_ros_teleop/lib/python3.10/site-packages'
+[2.896s] Level 1:colcon.colcon_core.shell:create_environment_hook('vrep_ros_teleop', 'pythonpath')
+[2.896s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/vrep_ros_teleop/share/vrep_ros_teleop/hook/pythonpath.ps1'
+[2.897s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/GTL/apaul/ros2_hw1/install/vrep_ros_teleop/share/vrep_ros_teleop/hook/pythonpath.dsv'
+[2.899s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/vrep_ros_teleop/share/vrep_ros_teleop/hook/pythonpath.sh'
+[2.900s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/vrep_ros_teleop/bin'
+[2.900s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vrep_ros_teleop)
+[2.900s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/vrep_ros_teleop/share/vrep_ros_teleop/package.ps1'
+[2.902s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/GTL/apaul/ros2_hw1/install/vrep_ros_teleop/share/vrep_ros_teleop/package.dsv'
+[2.903s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/vrep_ros_teleop/share/vrep_ros_teleop/package.sh'
+[2.905s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/vrep_ros_teleop/share/vrep_ros_teleop/package.bash'
+[2.906s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/vrep_ros_teleop/share/vrep_ros_teleop/package.zsh'
+[2.908s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/GTL/apaul/ros2_hw1/install/vrep_ros_teleop/share/colcon-core/packages/vrep_ros_teleop)
+[2.914s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/rover_driver_base' for CMake module files
+[2.915s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/GTL/apaul/ros2_hw1/src/rover_driver_base' returned '0': PYTHONPATH=/home/GTL/apaul/ros2_hw1/build/rover_driver_base/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/GTL/apaul/ros2_hw1/install/rover_driver_base/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/rover_driver_base build --build-base /home/GTL/apaul/ros2_hw1/build/rover_driver_base/build install --record /home/GTL/apaul/ros2_hw1/build/rover_driver_base/install.log --single-version-externally-managed install_data
+[2.915s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/rover_driver_base' for CMake config files
+[2.920s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/rover_driver_base/lib'
+[2.920s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/rover_driver_base/bin'
+[2.920s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/rover_driver_base/lib/pkgconfig/rover_driver_base.pc'
+[2.920s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/rover_driver_base/lib/python3.10/site-packages'
+[2.920s] Level 1:colcon.colcon_core.shell:create_environment_hook('rover_driver_base', 'pythonpath')
+[2.920s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/rover_driver_base/share/rover_driver_base/hook/pythonpath.ps1'
+[2.922s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/GTL/apaul/ros2_hw1/install/rover_driver_base/share/rover_driver_base/hook/pythonpath.dsv'
+[2.923s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/rover_driver_base/share/rover_driver_base/hook/pythonpath.sh'
+[2.925s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/rover_driver_base/bin'
+[2.925s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rover_driver_base)
+[2.925s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/rover_driver_base/share/rover_driver_base/package.ps1'
+[2.926s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/GTL/apaul/ros2_hw1/install/rover_driver_base/share/rover_driver_base/package.dsv'
+[2.928s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/rover_driver_base/share/rover_driver_base/package.sh'
+[2.929s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/rover_driver_base/share/rover_driver_base/package.bash'
+[2.930s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/rover_driver_base/share/rover_driver_base/package.zsh'
+[2.932s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/GTL/apaul/ros2_hw1/install/rover_driver_base/share/colcon-core/packages/rover_driver_base)
+[2.944s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/GTL/apaul/ros2_hw1/build/task_manager_lib': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/task_manager_lib -- -j16 -l16
+[3.120s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_client_py'
+[3.120s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.120s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.127s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/GTL/apaul/ros2_hw1/build/task_manager_lib' returned '0': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/task_manager_lib -- -j16 -l16
+[3.154s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/GTL/apaul/ros2_hw1/build/task_manager_lib': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/GTL/apaul/ros2_hw1/build/task_manager_lib
+[3.179s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(task_manager_lib)
+[3.180s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_lib' for CMake module files
+[3.180s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/GTL/apaul/ros2_hw1/build/task_manager_lib' returned '0': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/GTL/apaul/ros2_hw1/build/task_manager_lib
+[3.182s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_lib' for CMake config files
+[3.184s] Level 1:colcon.colcon_core.shell:create_environment_hook('task_manager_lib', 'cmake_prefix_path')
+[3.184s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/task_manager_lib/hook/cmake_prefix_path.ps1'
+[3.186s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/task_manager_lib/hook/cmake_prefix_path.dsv'
+[3.187s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/task_manager_lib/hook/cmake_prefix_path.sh'
+[3.189s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_lib/lib'
+[3.189s] Level 1:colcon.colcon_core.shell:create_environment_hook('task_manager_lib', 'ld_library_path_lib')
+[3.189s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/task_manager_lib/hook/ld_library_path_lib.ps1'
+[3.191s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/task_manager_lib/hook/ld_library_path_lib.dsv'
+[3.192s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/task_manager_lib/hook/ld_library_path_lib.sh'
+[3.193s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_lib/bin'
+[3.193s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_lib/lib/pkgconfig/task_manager_lib.pc'
+[3.194s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_lib/lib/python3.10/site-packages'
+[3.194s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_lib/bin'
+[3.194s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/task_manager_lib/package.ps1'
+[3.195s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/task_manager_lib/package.dsv'
+[3.197s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/task_manager_lib/package.sh'
+[3.198s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/task_manager_lib/package.bash'
+[3.200s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/task_manager_lib/package.zsh'
+[3.201s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/colcon-core/packages/task_manager_lib)
+[3.212s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/GTL/apaul/ros2_hw1/src/face_detect_base': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/build/face_detect_base/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/GTL/apaul/ros2_hw1/install/face_detect_base/lib/python3.10/site-packages:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/face_detect_base build --build-base /home/GTL/apaul/ros2_hw1/build/face_detect_base/build install --record /home/GTL/apaul/ros2_hw1/build/face_detect_base/install.log --single-version-externally-managed install_data
+[3.225s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(task_manager_lib)
+[3.226s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_lib' for CMake module files
+[3.227s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_lib' for CMake config files
+[3.230s] Level 1:colcon.colcon_core.shell:create_environment_hook('task_manager_lib', 'cmake_prefix_path')
+[3.230s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/task_manager_lib/hook/cmake_prefix_path.ps1'
+[3.232s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/task_manager_lib/hook/cmake_prefix_path.dsv'
+[3.234s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/task_manager_lib/hook/cmake_prefix_path.sh'
+[3.237s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_lib/lib'
+[3.237s] Level 1:colcon.colcon_core.shell:create_environment_hook('task_manager_lib', 'ld_library_path_lib')
+[3.237s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/task_manager_lib/hook/ld_library_path_lib.ps1'
+[3.239s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/task_manager_lib/hook/ld_library_path_lib.dsv'
+[3.240s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/task_manager_lib/hook/ld_library_path_lib.sh'
+[3.242s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_lib/bin'
+[3.242s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_lib/lib/pkgconfig/task_manager_lib.pc'
+[3.242s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_lib/lib/python3.10/site-packages'
+[3.242s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_lib/bin'
+[3.242s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/task_manager_lib/package.ps1'
+[3.244s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/task_manager_lib/package.dsv'
+[3.246s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/task_manager_lib/package.sh'
+[3.248s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/task_manager_lib/package.bash'
+[3.249s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/task_manager_lib/package.zsh'
+[3.250s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/colcon-core/packages/task_manager_lib)
+[3.251s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_nav2' with build type 'ament_cmake'
+[3.251s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_nav2'
+[3.251s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.251s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.256s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_sync' with build type 'ament_cmake'
+[3.256s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_sync'
+[3.256s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.256s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.274s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/GTL/apaul/ros2_hw1/build/task_manager_nav2': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib/lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/task_manager_nav2 -- -j16 -l16
+[3.279s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/GTL/apaul/ros2_hw1/build/task_manager_sync': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib/lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/task_manager_sync -- -j16 -l16
+[3.293s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/GTL/apaul/ros2_hw1/build/task_manager_nav2' returned '0': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib/lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/task_manager_nav2 -- -j16 -l16
+[3.310s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/GTL/apaul/ros2_hw1/build/task_manager_nav2': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib/lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/GTL/apaul/ros2_hw1/build/task_manager_nav2
+[3.326s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(task_manager_nav2)
+[3.327s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_nav2' for CMake module files
+[3.327s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/GTL/apaul/ros2_hw1/build/task_manager_nav2' returned '0': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib/lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/GTL/apaul/ros2_hw1/build/task_manager_nav2
+[3.328s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_nav2' for CMake config files
+[3.330s] Level 1:colcon.colcon_core.shell:create_environment_hook('task_manager_nav2', 'cmake_prefix_path')
+[3.331s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/hook/cmake_prefix_path.ps1'
+[3.332s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/GTL/apaul/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/hook/cmake_prefix_path.dsv'
+[3.333s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/hook/cmake_prefix_path.sh'
+[3.335s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_nav2/bin'
+[3.335s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_nav2/lib/pkgconfig/task_manager_nav2.pc'
+[3.335s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_nav2/lib/python3.10/site-packages'
+[3.335s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_nav2/bin'
+[3.335s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/package.ps1'
+[3.336s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/GTL/apaul/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/package.dsv'
+[3.338s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/package.sh'
+[3.339s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/package.bash'
+[3.341s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/package.zsh'
+[3.342s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/GTL/apaul/ros2_hw1/install/task_manager_nav2/share/colcon-core/packages/task_manager_nav2)
+[3.359s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(task_manager_nav2)
+[3.359s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_nav2' for CMake module files
+[3.360s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_nav2' for CMake config files
+[3.362s] Level 1:colcon.colcon_core.shell:create_environment_hook('task_manager_nav2', 'cmake_prefix_path')
+[3.362s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/hook/cmake_prefix_path.ps1'
+[3.364s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/GTL/apaul/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/hook/cmake_prefix_path.dsv'
+[3.365s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/hook/cmake_prefix_path.sh'
+[3.367s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_nav2/bin'
+[3.367s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_nav2/lib/pkgconfig/task_manager_nav2.pc'
+[3.367s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_nav2/lib/python3.10/site-packages'
+[3.368s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_nav2/bin'
+[3.368s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/package.ps1'
+[3.369s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/GTL/apaul/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/package.dsv'
+[3.370s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/package.sh'
+[3.372s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/package.bash'
+[3.373s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/package.zsh'
+[3.375s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/GTL/apaul/ros2_hw1/install/task_manager_nav2/share/colcon-core/packages/task_manager_nav2)
+[3.376s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/GTL/apaul/ros2_hw1/src/floor_nav' with build type 'ament_cmake'
+[3.376s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/GTL/apaul/ros2_hw1/src/floor_nav'
+[3.377s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.377s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.382s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/GTL/apaul/ros2_hw1/build/task_manager_sync' returned '0': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib/lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/task_manager_sync -- -j16 -l16
+[3.403s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_client_py': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/build/task_manager_client_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/GTL/apaul/ros2_hw1/install/task_manager_client_py/lib/python3.10/site-packages:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../build/task_manager_client_py build --build-base /home/GTL/apaul/ros2_hw1/build/task_manager_client_py/build install --record /home/GTL/apaul/ros2_hw1/build/task_manager_client_py/install.log --install-scripts $base/lib/task_manager_client_py --single-version-externally-managed install_data
+[3.447s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/GTL/apaul/ros2_hw1/build/floor_nav': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_nav2:/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/home/GTL/apaul/ros2_hw1/install/face_msg:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_nav2:/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/home/GTL/apaul/ros2_hw1/install/face_msg:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib/lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib:/home/GTL/apaul/ros2_hw1/install/face_msg/lib:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/local/lib/python3.10/dist-packages:/home/GTL/apaul/ros2_hw1/install/face_msg/local/lib/python3.10/dist-packages:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/floor_nav -- -j16 -l16
+[3.448s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/GTL/apaul/ros2_hw1/build/task_manager_sync': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib/lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/GTL/apaul/ros2_hw1/build/task_manager_sync
+[3.462s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/face_detect_base' for CMake module files
+[3.463s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/GTL/apaul/ros2_hw1/src/face_detect_base' returned '0': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/build/face_detect_base/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/GTL/apaul/ros2_hw1/install/face_detect_base/lib/python3.10/site-packages:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/face_detect_base build --build-base /home/GTL/apaul/ros2_hw1/build/face_detect_base/build install --record /home/GTL/apaul/ros2_hw1/build/face_detect_base/install.log --single-version-externally-managed install_data
+[3.463s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/face_detect_base' for CMake config files
+[3.467s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/face_detect_base/lib'
+[3.468s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/face_detect_base/bin'
+[3.468s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/face_detect_base/lib/pkgconfig/face_detect_base.pc'
+[3.468s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/face_detect_base/lib/python3.10/site-packages'
+[3.468s] Level 1:colcon.colcon_core.shell:create_environment_hook('face_detect_base', 'pythonpath')
+[3.468s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/face_detect_base/share/face_detect_base/hook/pythonpath.ps1'
+[3.470s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/GTL/apaul/ros2_hw1/install/face_detect_base/share/face_detect_base/hook/pythonpath.dsv'
+[3.471s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/face_detect_base/share/face_detect_base/hook/pythonpath.sh'
+[3.472s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/face_detect_base/bin'
+[3.473s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(face_detect_base)
+[3.473s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/face_detect_base/share/face_detect_base/package.ps1'
+[3.475s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/GTL/apaul/ros2_hw1/install/face_detect_base/share/face_detect_base/package.dsv'
+[3.476s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/face_detect_base/share/face_detect_base/package.sh'
+[3.477s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/face_detect_base/share/face_detect_base/package.bash'
+[3.479s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/face_detect_base/share/face_detect_base/package.zsh'
+[3.480s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/GTL/apaul/ros2_hw1/install/face_detect_base/share/colcon-core/packages/face_detect_base)
+[3.482s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(task_manager_sync)
+[3.482s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_sync' for CMake module files
+[3.485s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/GTL/apaul/ros2_hw1/build/task_manager_sync' returned '0': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib/lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/GTL/apaul/ros2_hw1/build/task_manager_sync
+[3.488s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_sync' for CMake config files
+[3.490s] Level 1:colcon.colcon_core.shell:create_environment_hook('task_manager_sync', 'cmake_prefix_path')
+[3.491s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/task_manager_sync/share/task_manager_sync/hook/cmake_prefix_path.ps1'
+[3.492s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/GTL/apaul/ros2_hw1/install/task_manager_sync/share/task_manager_sync/hook/cmake_prefix_path.dsv'
+[3.499s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/task_manager_sync/share/task_manager_sync/hook/cmake_prefix_path.sh'
+[3.501s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_sync/lib'
+[3.501s] Level 1:colcon.colcon_core.shell:create_environment_hook('task_manager_sync', 'ld_library_path_lib')
+[3.502s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/task_manager_sync/share/task_manager_sync/hook/ld_library_path_lib.ps1'
+[3.503s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/GTL/apaul/ros2_hw1/install/task_manager_sync/share/task_manager_sync/hook/ld_library_path_lib.dsv'
+[3.505s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/task_manager_sync/share/task_manager_sync/hook/ld_library_path_lib.sh'
+[3.506s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_sync/bin'
+[3.506s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_sync/lib/pkgconfig/task_manager_sync.pc'
+[3.506s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_sync/lib/python3.10/site-packages'
+[3.507s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_sync/bin'
+[3.507s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/task_manager_sync/share/task_manager_sync/package.ps1'
+[3.509s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/GTL/apaul/ros2_hw1/install/task_manager_sync/share/task_manager_sync/package.dsv'
+[3.512s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/task_manager_sync/share/task_manager_sync/package.sh'
+[3.514s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/task_manager_sync/share/task_manager_sync/package.bash'
+[3.515s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/task_manager_sync/share/task_manager_sync/package.zsh'
+[3.517s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/GTL/apaul/ros2_hw1/install/task_manager_sync/share/colcon-core/packages/task_manager_sync)
+[3.563s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(task_manager_sync)
+[3.564s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_sync' for CMake module files
+[3.565s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_sync' for CMake config files
+[3.569s] Level 1:colcon.colcon_core.shell:create_environment_hook('task_manager_sync', 'cmake_prefix_path')
+[3.569s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/task_manager_sync/share/task_manager_sync/hook/cmake_prefix_path.ps1'
+[3.571s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/GTL/apaul/ros2_hw1/install/task_manager_sync/share/task_manager_sync/hook/cmake_prefix_path.dsv'
+[3.572s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/task_manager_sync/share/task_manager_sync/hook/cmake_prefix_path.sh'
+[3.573s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_sync/lib'
+[3.574s] Level 1:colcon.colcon_core.shell:create_environment_hook('task_manager_sync', 'ld_library_path_lib')
+[3.574s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/task_manager_sync/share/task_manager_sync/hook/ld_library_path_lib.ps1'
+[3.575s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/GTL/apaul/ros2_hw1/install/task_manager_sync/share/task_manager_sync/hook/ld_library_path_lib.dsv'
+[3.576s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/task_manager_sync/share/task_manager_sync/hook/ld_library_path_lib.sh'
+[3.578s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_sync/bin'
+[3.578s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_sync/lib/pkgconfig/task_manager_sync.pc'
+[3.578s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_sync/lib/python3.10/site-packages'
+[3.578s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_sync/bin'
+[3.578s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/task_manager_sync/share/task_manager_sync/package.ps1'
+[3.580s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/GTL/apaul/ros2_hw1/install/task_manager_sync/share/task_manager_sync/package.dsv'
+[3.582s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/task_manager_sync/share/task_manager_sync/package.sh'
+[3.584s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/task_manager_sync/share/task_manager_sync/package.bash'
+[3.585s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/task_manager_sync/share/task_manager_sync/package.zsh'
+[3.587s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/GTL/apaul/ros2_hw1/install/task_manager_sync/share/colcon-core/packages/task_manager_sync)
+[3.702s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_client_py' for CMake module files
+[3.702s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_client_py' returned '0': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/build/task_manager_client_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/GTL/apaul/ros2_hw1/install/task_manager_client_py/lib/python3.10/site-packages:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../build/task_manager_client_py build --build-base /home/GTL/apaul/ros2_hw1/build/task_manager_client_py/build install --record /home/GTL/apaul/ros2_hw1/build/task_manager_client_py/install.log --install-scripts $base/lib/task_manager_client_py --single-version-externally-managed install_data
+[3.703s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_client_py' for CMake config files
+[3.709s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_client_py/lib'
+[3.710s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_client_py/bin'
+[3.710s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_client_py/lib/pkgconfig/task_manager_client_py.pc'
+[3.710s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_client_py/lib/python3.10/site-packages'
+[3.710s] Level 1:colcon.colcon_core.shell:create_environment_hook('task_manager_client_py', 'pythonpath')
+[3.710s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/task_manager_client_py/share/task_manager_client_py/hook/pythonpath.ps1'
+[3.712s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/GTL/apaul/ros2_hw1/install/task_manager_client_py/share/task_manager_client_py/hook/pythonpath.dsv'
+[3.713s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/task_manager_client_py/share/task_manager_client_py/hook/pythonpath.sh'
+[3.714s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/task_manager_client_py/bin'
+[3.714s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(task_manager_client_py)
+[3.715s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/task_manager_client_py/share/task_manager_client_py/package.ps1'
+[3.716s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/GTL/apaul/ros2_hw1/install/task_manager_client_py/share/task_manager_client_py/package.dsv'
+[3.718s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/task_manager_client_py/share/task_manager_client_py/package.sh'
+[3.719s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/task_manager_client_py/share/task_manager_client_py/package.bash'
+[3.721s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/task_manager_client_py/share/task_manager_client_py/package.zsh'
+[3.722s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/GTL/apaul/ros2_hw1/install/task_manager_client_py/share/colcon-core/packages/task_manager_client_py)
+[15.199s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/GTL/apaul/ros2_hw1/build/floor_nav' returned '0': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_nav2:/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/home/GTL/apaul/ros2_hw1/install/face_msg:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_nav2:/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/home/GTL/apaul/ros2_hw1/install/face_msg:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib/lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib:/home/GTL/apaul/ros2_hw1/install/face_msg/lib:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/local/lib/python3.10/dist-packages:/home/GTL/apaul/ros2_hw1/install/face_msg/local/lib/python3.10/dist-packages:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/floor_nav -- -j16 -l16
+[15.272s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/GTL/apaul/ros2_hw1/build/floor_nav': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_nav2:/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/home/GTL/apaul/ros2_hw1/install/face_msg:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_nav2:/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/home/GTL/apaul/ros2_hw1/install/face_msg:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib/lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib:/home/GTL/apaul/ros2_hw1/install/face_msg/lib:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/local/lib/python3.10/dist-packages:/home/GTL/apaul/ros2_hw1/install/face_msg/local/lib/python3.10/dist-packages:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/GTL/apaul/ros2_hw1/build/floor_nav
+[15.360s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(floor_nav)
+[15.360s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/floor_nav' for CMake module files
+[15.360s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/GTL/apaul/ros2_hw1/build/floor_nav' returned '0': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_nav2:/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/home/GTL/apaul/ros2_hw1/install/face_msg:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_nav2:/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/home/GTL/apaul/ros2_hw1/install/face_msg:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib/lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib:/home/GTL/apaul/ros2_hw1/install/face_msg/lib:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/local/lib/python3.10/dist-packages:/home/GTL/apaul/ros2_hw1/install/face_msg/local/lib/python3.10/dist-packages:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/GTL/apaul/ros2_hw1/build/floor_nav
+[15.363s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/floor_nav' for CMake config files
+[15.366s] Level 1:colcon.colcon_core.shell:create_environment_hook('floor_nav', 'cmake_prefix_path')
+[15.366s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/hook/cmake_prefix_path.ps1'
+[15.367s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/hook/cmake_prefix_path.dsv'
+[15.369s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/hook/cmake_prefix_path.sh'
+[15.371s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/floor_nav/lib'
+[15.371s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/floor_nav/bin'
+[15.371s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/floor_nav/lib/pkgconfig/floor_nav.pc'
+[15.371s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/floor_nav/lib/python3.10/site-packages'
+[15.372s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/floor_nav/bin'
+[15.372s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/package.ps1'
+[15.373s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/package.dsv'
+[15.375s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/package.sh'
+[15.376s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/package.bash'
+[15.377s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/package.zsh'
+[15.379s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/GTL/apaul/ros2_hw1/install/floor_nav/share/colcon-core/packages/floor_nav)
+[15.437s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(floor_nav)
+[15.437s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/floor_nav' for CMake module files
+[15.439s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/floor_nav' for CMake config files
+[15.444s] Level 1:colcon.colcon_core.shell:create_environment_hook('floor_nav', 'cmake_prefix_path')
+[15.444s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/hook/cmake_prefix_path.ps1'
+[15.446s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/hook/cmake_prefix_path.dsv'
+[15.448s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/hook/cmake_prefix_path.sh'
+[15.450s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/floor_nav/lib'
+[15.450s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/floor_nav/bin'
+[15.450s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/floor_nav/lib/pkgconfig/floor_nav.pc'
+[15.451s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/floor_nav/lib/python3.10/site-packages'
+[15.451s] Level 1:colcon.colcon_core.environment:checking '/home/GTL/apaul/ros2_hw1/install/floor_nav/bin'
+[15.451s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/package.ps1'
+[15.453s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/package.dsv'
+[15.455s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/package.sh'
+[15.456s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/package.bash'
+[15.458s] INFO:colcon.colcon_core.shell:Creating package script '/home/GTL/apaul/ros2_hw1/install/floor_nav/share/floor_nav/package.zsh'
+[15.459s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/GTL/apaul/ros2_hw1/install/floor_nav/share/colcon-core/packages/floor_nav)
+[15.461s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[15.461s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[15.461s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[15.461s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[15.466s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[15.466s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[15.466s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[15.474s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[15.474s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/GTL/apaul/ros2_hw1/install/local_setup.ps1'
+[15.477s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/GTL/apaul/ros2_hw1/install/_local_setup_util_ps1.py'
+[15.480s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/GTL/apaul/ros2_hw1/install/setup.ps1'
+[15.482s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/GTL/apaul/ros2_hw1/install/local_setup.sh'
+[15.484s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/GTL/apaul/ros2_hw1/install/_local_setup_util_sh.py'
+[15.486s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/GTL/apaul/ros2_hw1/install/setup.sh'
+[15.489s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/GTL/apaul/ros2_hw1/install/local_setup.bash'
+[15.491s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/GTL/apaul/ros2_hw1/install/setup.bash'
+[15.493s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/GTL/apaul/ros2_hw1/install/local_setup.zsh'
+[15.495s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/GTL/apaul/ros2_hw1/install/setup.zsh'

@@ -70,18 +70,14 @@ CMakeFiles/cs7630_msgs__cpp: rosidl_generator_cpp/cs7630_msgs/msg/roi_array.hpp
 CMakeFiles/cs7630_msgs__cpp: rosidl_generator_cpp/cs7630_msgs/msg/detail/roi_array__builder.hpp
 CMakeFiles/cs7630_msgs__cpp: rosidl_generator_cpp/cs7630_msgs/msg/detail/roi_array__struct.hpp
 CMakeFiles/cs7630_msgs__cpp: rosidl_generator_cpp/cs7630_msgs/msg/detail/roi_array__traits.hpp
-CMakeFiles/cs7630_msgs__cpp: rosidl_generator_cpp/cs7630_msgs/msg/detail/roi_array__type_support.hpp
 CMakeFiles/cs7630_msgs__cpp: rosidl_generator_cpp/cs7630_msgs/msg/trajectory.hpp
 CMakeFiles/cs7630_msgs__cpp: rosidl_generator_cpp/cs7630_msgs/msg/detail/trajectory__builder.hpp
 CMakeFiles/cs7630_msgs__cpp: rosidl_generator_cpp/cs7630_msgs/msg/detail/trajectory__struct.hpp
 CMakeFiles/cs7630_msgs__cpp: rosidl_generator_cpp/cs7630_msgs/msg/detail/trajectory__traits.hpp
-CMakeFiles/cs7630_msgs__cpp: rosidl_generator_cpp/cs7630_msgs/msg/detail/trajectory__type_support.hpp
 CMakeFiles/cs7630_msgs__cpp: rosidl_generator_cpp/cs7630_msgs/msg/trajectory_element.hpp
 CMakeFiles/cs7630_msgs__cpp: rosidl_generator_cpp/cs7630_msgs/msg/detail/trajectory_element__builder.hpp
 CMakeFiles/cs7630_msgs__cpp: rosidl_generator_cpp/cs7630_msgs/msg/detail/trajectory_element__struct.hpp
 CMakeFiles/cs7630_msgs__cpp: rosidl_generator_cpp/cs7630_msgs/msg/detail/trajectory_element__traits.hpp
-CMakeFiles/cs7630_msgs__cpp: rosidl_generator_cpp/cs7630_msgs/msg/detail/trajectory_element__type_support.hpp
-CMakeFiles/cs7630_msgs__cpp: rosidl_generator_cpp/cs7630_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
 
 rosidl_generator_cpp/cs7630_msgs/msg/roi_array.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
 rosidl_generator_cpp/cs7630_msgs/msg/roi_array.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
@@ -203,9 +199,6 @@ rosidl_generator_cpp/cs7630_msgs/msg/detail/roi_array__struct.hpp: rosidl_genera
 rosidl_generator_cpp/cs7630_msgs/msg/detail/roi_array__traits.hpp: rosidl_generator_cpp/cs7630_msgs/msg/roi_array.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cs7630_msgs/msg/detail/roi_array__traits.hpp
 
-rosidl_generator_cpp/cs7630_msgs/msg/detail/roi_array__type_support.hpp: rosidl_generator_cpp/cs7630_msgs/msg/roi_array.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cs7630_msgs/msg/detail/roi_array__type_support.hpp
-
 rosidl_generator_cpp/cs7630_msgs/msg/trajectory.hpp: rosidl_generator_cpp/cs7630_msgs/msg/roi_array.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cs7630_msgs/msg/trajectory.hpp
 
@@ -217,9 +210,6 @@ rosidl_generator_cpp/cs7630_msgs/msg/detail/trajectory__struct.hpp: rosidl_gener
 
 rosidl_generator_cpp/cs7630_msgs/msg/detail/trajectory__traits.hpp: rosidl_generator_cpp/cs7630_msgs/msg/roi_array.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cs7630_msgs/msg/detail/trajectory__traits.hpp
-
-rosidl_generator_cpp/cs7630_msgs/msg/detail/trajectory__type_support.hpp: rosidl_generator_cpp/cs7630_msgs/msg/roi_array.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cs7630_msgs/msg/detail/trajectory__type_support.hpp
 
 rosidl_generator_cpp/cs7630_msgs/msg/trajectory_element.hpp: rosidl_generator_cpp/cs7630_msgs/msg/roi_array.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cs7630_msgs/msg/trajectory_element.hpp
@@ -233,22 +223,16 @@ rosidl_generator_cpp/cs7630_msgs/msg/detail/trajectory_element__struct.hpp: rosi
 rosidl_generator_cpp/cs7630_msgs/msg/detail/trajectory_element__traits.hpp: rosidl_generator_cpp/cs7630_msgs/msg/roi_array.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cs7630_msgs/msg/detail/trajectory_element__traits.hpp
 
-rosidl_generator_cpp/cs7630_msgs/msg/detail/trajectory_element__type_support.hpp: rosidl_generator_cpp/cs7630_msgs/msg/roi_array.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cs7630_msgs/msg/detail/trajectory_element__type_support.hpp
-
 cs7630_msgs__cpp: CMakeFiles/cs7630_msgs__cpp
 cs7630_msgs__cpp: rosidl_generator_cpp/cs7630_msgs/msg/detail/roi_array__builder.hpp
 cs7630_msgs__cpp: rosidl_generator_cpp/cs7630_msgs/msg/detail/roi_array__struct.hpp
 cs7630_msgs__cpp: rosidl_generator_cpp/cs7630_msgs/msg/detail/roi_array__traits.hpp
-cs7630_msgs__cpp: rosidl_generator_cpp/cs7630_msgs/msg/detail/roi_array__type_support.hpp
 cs7630_msgs__cpp: rosidl_generator_cpp/cs7630_msgs/msg/detail/trajectory__builder.hpp
 cs7630_msgs__cpp: rosidl_generator_cpp/cs7630_msgs/msg/detail/trajectory__struct.hpp
 cs7630_msgs__cpp: rosidl_generator_cpp/cs7630_msgs/msg/detail/trajectory__traits.hpp
-cs7630_msgs__cpp: rosidl_generator_cpp/cs7630_msgs/msg/detail/trajectory__type_support.hpp
 cs7630_msgs__cpp: rosidl_generator_cpp/cs7630_msgs/msg/detail/trajectory_element__builder.hpp
 cs7630_msgs__cpp: rosidl_generator_cpp/cs7630_msgs/msg/detail/trajectory_element__struct.hpp
 cs7630_msgs__cpp: rosidl_generator_cpp/cs7630_msgs/msg/detail/trajectory_element__traits.hpp
-cs7630_msgs__cpp: rosidl_generator_cpp/cs7630_msgs/msg/detail/trajectory_element__type_support.hpp
 cs7630_msgs__cpp: rosidl_generator_cpp/cs7630_msgs/msg/roi_array.hpp
 cs7630_msgs__cpp: rosidl_generator_cpp/cs7630_msgs/msg/trajectory.hpp
 cs7630_msgs__cpp: rosidl_generator_cpp/cs7630_msgs/msg/trajectory_element.hpp

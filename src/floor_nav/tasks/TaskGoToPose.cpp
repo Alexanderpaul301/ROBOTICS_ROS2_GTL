@@ -112,12 +112,18 @@
 
             double v = cfg->k_r * r;
             double w = cfg->k_alpha * alpha + cfg->k_beta * beta;
+            if (v > cfg->max_velocity) v = cfg->max_velocity;
+            if (v <-cfg->max_velocity) v = -cfg->max_velocity;
+            if (w > cfg->max_angular_velocity) w = cfg->max_angular_velocity;
+            if (w <-cfg->max_angular_velocity) w = -cfg->max_angular_velocity;
 
             if (cfg->flag_holo == false) {
                 env->publishVelocity(v, w);
             } 
 
             else {
+
+                
                 double vel_x = v * cos(alpha);
                 double vel_y = v * sin(alpha);
                 env->publishVelocity(vel_x, vel_y, w);
@@ -125,8 +131,13 @@
         
 
             if (r < cfg->dist_threshold && (cfg->goal_teta-teta) < cfg->angle_threshold) {
+                if (cfg->flag_holo == false) {
+                    env->publishVelocity(0.0, 0.0);
+                } 
+                else {
                 env->publishVelocity(0.0, 0.0, 0.0);
                 return TaskStatus::TASK_COMPLETED;
+                }
             }
             
         }

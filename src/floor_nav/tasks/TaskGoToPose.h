@@ -21,8 +21,8 @@ namespace floor_nav {
             define("dist_threshold",  0.1,"Distance at which a the target is considered reached",false, dist_threshold);
             define("angle_threshold",  0.1,"Angle at which a the target is considered reached",false, angle_threshold);
             define("relative",  false,"Is the target pose relative or absolute",true, relative);
-            define("stupid", false,"Use a stupid control law",false, stupid);
-            define("flag_holo", false,"Use a holonomic control law",false, flag_holo);
+            define("stupid", false,"Use a stupid control law",true, stupid);
+            define("flag_holo", false,"Use a holonomic control law",true, flag_holo);
         }
 
         // convenience aliases, updated by update from the config data
