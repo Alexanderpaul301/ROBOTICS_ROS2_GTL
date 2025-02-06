@@ -84,7 +84,6 @@ class RoverKinematics:
                 v_x = (twist.linear.x - twist.angular.z*drive_cfg[k].y)
                 v_y = (twist.linear.y + twist.angular.z*drive_cfg[k].x)
 
-
                 motors.drive[k] = hypot(v_y,v_x)/drive_cfg[k].radius
                 motors.steering[k] = atan2(v_y,v_x)
         return motors
