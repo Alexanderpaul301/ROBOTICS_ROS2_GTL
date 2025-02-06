@@ -59,7 +59,7 @@
                 }
                 else{
                 double sigma = remainder(cfg->goal_teta-teta,2*M_PI);
-                double rot = ((sigma>0.0)?+1.0:-1.0)*cfg->max_angular_velocity*cfg->k_alpha/8.0;
+                double rot = ((sigma>0.0)?+1.0:-1.0)*cfg->max_angular_velocity*cfg->k_alpha;
                 if (flag_holo==false)
                 {
                     env->publishVelocity(0.0,rot);
@@ -84,7 +84,14 @@
     #ifdef DEBUG_GOTOPOSE
             printf("Cmd v %.2f r %.2f\n",0.,rot);
     #endif
+            if (flag_holo==false)
+            {
             env->publishVelocity(0,rot);
+            }
+            else
+            {
+            env->publishVelocity(0,0,rot);
+            }
         } else {
 
             if (flag_holo==false)
@@ -119,9 +126,6 @@
 
             }
         } // End of the stupid method
-
-
-
         else {
             // Smart method
             double alpha = -cfg->goal_teta + remainder(atan2((y_init + cfg->goal_y - y), x_init + cfg->goal_x - x) - teta, 2 * M_PI);
@@ -129,6 +133,10 @@
 
             double v = cfg->k_r * r;
             double w = cfg->k_alpha * alpha + cfg->k_beta * beta;
+            if (v > cfg->max_velocity) v = cfg->max_velocity;
+            if (v <-cfg->max_velocity) v = -cfg->max_velocity;
+            if (w > cfg->max_angular_velocity) w = cfg->max_angular_velocity;
+            if (w <-cfg->max_angular_velocity) w = -cfg->max_angular_velocity;
 
             if (flag_holo==false)
                 {
