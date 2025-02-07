@@ -1,0 +1,86 @@
+[0.046s] Invoking command in '/home/GTL/apaul/ros2_hw1/build/task_manager_lib': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/task_manager_lib -- -j16 -l16
+[0.179s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.267s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.287s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.288s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.291s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.300s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.309s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.328s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.330s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.340s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.368s] -- Found rclcpp_action: 16.0.11 (/opt/ros/humble/share/rclcpp_action/cmake)
+[0.386s] -- Found rclpy: 3.3.15 (/opt/ros/humble/share/rclpy/cmake)
+[0.386s] -- Found std_srvs: 4.2.4 (/opt/ros/humble/share/std_srvs/cmake)
+[0.395s] -- Found task_manager_msgs: 0.0.0 (/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/share/task_manager_msgs/cmake)
+[0.437s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.549s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.575s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.576s] -- Configured cppcheck include dirs: /home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_lib/include
+[0.576s] -- Configured cppcheck exclude dirs and/or files: 
+[0.591s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.591s] -- Configured cpplint exclude dirs and/or files: 
+[0.593s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.598s] -- Added test 'lint_cmake' to check CMake code style
+[0.600s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.616s] -- Added test 'uncrustify' to check C / C++ code style
+[0.616s] -- Configured uncrustify additional arguments: 
+[0.618s] -- Added test 'xmllint' to check XML markup files
+[0.639s] -- Configuring done
+[0.802s] -- Generating done
+[0.818s] -- Build files have been written to: /home/GTL/apaul/ros2_hw1/build/task_manager_lib
+[0.968s] [35m[1mConsolidate compiler generated dependencies of target task_manager_lib[0m
+[1.079s] [ 40%] [32mBuilding CXX object CMakeFiles/task_manager_lib.dir/src/DynamicTask.cpp.o[0m
+[1.081s] [ 40%] [32mBuilding CXX object CMakeFiles/task_manager_lib.dir/src/TaskInstance.cpp.o[0m
+[1.081s] [ 40%] [32mBuilding CXX object CMakeFiles/task_manager_lib.dir/src/TaskConfig.cpp.o[0m
+[1.083s] [ 70%] [32mBuilding CXX object CMakeFiles/task_manager_lib.dir/src/TaskDefinition.cpp.o[0m
+[1.083s] [ 90%] [32mBuilding CXX object CMakeFiles/task_manager_lib.dir/src/TaskSystem.cpp.o[0m
+[1.083s] [ 70%] [32mBuilding CXX object CMakeFiles/task_manager_lib.dir/src/TaskWaitDefault.cpp.o[0m
+[1.083s] [ 70%] [32mBuilding CXX object CMakeFiles/task_manager_lib.dir/src/TaskScheduler.cpp.o[0m
+[1.083s] [ 90%] [32mBuilding CXX object CMakeFiles/task_manager_lib.dir/src/TaskIdleDefault.cpp.o[0m
+[1.083s] [ 90%] [32mBuilding CXX object CMakeFiles/task_manager_lib.dir/src/TaskServerDefault.cpp.o[0m
+[12.761s] [100%] [32m[1mLinking CXX shared library libtask_manager_lib.so[0m
+[15.363s] [100%] Built target task_manager_lib
+[15.488s] Invoked command in '/home/GTL/apaul/ros2_hw1/build/task_manager_lib' returned '0': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/task_manager_lib -- -j16 -l16
+[15.566s] Invoking command in '/home/GTL/apaul/ros2_hw1/build/task_manager_lib': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/GTL/apaul/ros2_hw1/build/task_manager_lib
+[15.578s] -- Install configuration: ""
+[15.734s] -- Installing: /home/GTL/apaul/ros2_hw1/install/task_manager_lib/lib/libtask_manager_lib.so
+[15.990s] -- Set runtime path of "/home/GTL/apaul/ros2_hw1/install/task_manager_lib/lib/libtask_manager_lib.so" to ""
+[15.991s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/task_manager_lib/include/task_manager_lib
+[15.992s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/task_manager_lib/include/task_manager_lib/TaskServerDefault.h
+[15.993s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/task_manager_lib/include/task_manager_lib/TaskWaitDefault.h
+[15.993s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/task_manager_lib/include/task_manager_lib/TaskClient.h
+[15.994s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/task_manager_lib/include/task_manager_lib/ServiceStorage.h
+[15.994s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/task_manager_lib/include/task_manager_lib/TaskScheduler.h
+[15.995s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/task_manager_lib/include/task_manager_lib/DynamicTask.h
+[15.995s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/task_manager_lib/include/task_manager_lib/TaskEnvironment.h
+[15.996s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/task_manager_lib/include/task_manager_lib/TaskInstance.h
+[15.996s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/task_manager_lib/include/task_manager_lib/ParameterList.h
+[15.997s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/task_manager_lib/include/task_manager_lib/TaskIdleDefault.h
+[15.997s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/task_manager_lib/include/task_manager_lib/TaskServiceGeneric.h
+[15.998s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/task_manager_lib/include/task_manager_lib/TaskParameterDefinition.h
+[15.998s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/task_manager_lib/include/task_manager_lib/TaskSystem.h
+[15.999s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/task_manager_lib/include/task_manager_lib/TaskDefinition.h
+[15.999s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/task_manager_lib/include/task_manager_lib/TaskConfig.h
+[16.000s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/task_manager_lib/include/task_manager_lib/TaskActionGeneric.h
+[16.001s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/task_manager_lib/environment/library_path.sh
+[16.001s] -- Installing: /home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/task_manager_lib/environment/library_path.dsv
+[16.007s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/ament_index/resource_index/package_run_dependencies/task_manager_lib
+[16.008s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/ament_index/resource_index/parent_prefix_path/task_manager_lib
+[16.008s] -- Installing: /home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/task_manager_lib/environment/ament_prefix_path.sh
+[16.012s] -- Installing: /home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/task_manager_lib/environment/ament_prefix_path.dsv
+[16.017s] -- Installing: /home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/task_manager_lib/environment/path.sh
+[16.020s] -- Installing: /home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/task_manager_lib/environment/path.dsv
+[16.024s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/task_manager_lib/local_setup.bash
+[16.025s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/task_manager_lib/local_setup.sh
+[16.025s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/task_manager_lib/local_setup.zsh
+[16.026s] -- Installing: /home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/task_manager_lib/local_setup.dsv
+[16.030s] -- Installing: /home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/task_manager_lib/package.dsv
+[16.036s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/ament_index/resource_index/packages/task_manager_lib
+[16.037s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/task_manager_lib/cmake/ament_cmake_export_dependencies-extras.cmake
+[16.037s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/task_manager_lib/cmake/ament_cmake_export_include_directories-extras.cmake
+[16.038s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/task_manager_lib/cmake/ament_cmake_export_libraries-extras.cmake
+[16.039s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/task_manager_lib/cmake/task_manager_libConfig.cmake
+[16.039s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/task_manager_lib/cmake/task_manager_libConfig-version.cmake
+[16.040s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/task_manager_lib/package.xml
+[16.043s] Invoked command in '/home/GTL/apaul/ros2_hw1/build/task_manager_lib' returned '0': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/GTL/apaul/ros2_hw1/build/task_manager_lib

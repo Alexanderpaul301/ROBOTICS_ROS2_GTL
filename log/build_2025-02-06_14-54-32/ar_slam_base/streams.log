@@ -1,0 +1,52 @@
+[0.815s] Invoking command in '/home/GTL/apaul/ros2_hw1/src/ar_slam_base': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/ar_loc_base:/home/GTL/apaul/ros2_hw1/install/rover_driver_base:/home/GTL/apaul/ros2_hw1/install/ar_mapping_base:${AMENT_PREFIX_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/build/ar_slam_base/prefix_override:/home/GTL/apaul/ros2_hw1/install/ar_slam_base/lib/python3.10/site-packages:/home/GTL/apaul/ros2_hw1/install/ar_loc_base/lib/python3.10/site-packages:/home/GTL/apaul/ros2_hw1/install/rover_driver_base/lib/python3.10/site-packages:/home/GTL/apaul/ros2_hw1/install/ar_mapping_base/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/ar_slam_base build --build-base /home/GTL/apaul/ros2_hw1/build/ar_slam_base/build install --record /home/GTL/apaul/ros2_hw1/build/ar_slam_base/install.log --single-version-externally-managed
+[0.982s] running egg_info
+[0.983s] creating ../../build/ar_slam_base/ar_slam_base.egg-info
+[0.984s] writing ../../build/ar_slam_base/ar_slam_base.egg-info/PKG-INFO
+[0.988s] writing dependency_links to ../../build/ar_slam_base/ar_slam_base.egg-info/dependency_links.txt
+[0.990s] writing entry points to ../../build/ar_slam_base/ar_slam_base.egg-info/entry_points.txt
+[0.991s] writing requirements to ../../build/ar_slam_base/ar_slam_base.egg-info/requires.txt
+[0.992s] writing top-level names to ../../build/ar_slam_base/ar_slam_base.egg-info/top_level.txt
+[0.994s] writing manifest file '../../build/ar_slam_base/ar_slam_base.egg-info/SOURCES.txt'
+[0.999s] reading manifest file '../../build/ar_slam_base/ar_slam_base.egg-info/SOURCES.txt'
+[1.001s] writing manifest file '../../build/ar_slam_base/ar_slam_base.egg-info/SOURCES.txt'
+[1.002s] running build
+[1.002s] running build_py
+[1.002s] creating /home/GTL/apaul/ros2_hw1/build/ar_slam_base/build
+[1.003s] creating /home/GTL/apaul/ros2_hw1/build/ar_slam_base/build/lib
+[1.004s] creating /home/GTL/apaul/ros2_hw1/build/ar_slam_base/build/lib/ar_slam_base
+[1.005s] copying ar_slam_base/mapping_kf.py -> /home/GTL/apaul/ros2_hw1/build/ar_slam_base/build/lib/ar_slam_base
+[1.008s] copying ar_slam_base/tb_mapping.py -> /home/GTL/apaul/ros2_hw1/build/ar_slam_base/build/lib/ar_slam_base
+[1.009s] copying ar_slam_base/__init__.py -> /home/GTL/apaul/ros2_hw1/build/ar_slam_base/build/lib/ar_slam_base
+[1.011s] copying ar_slam_base/rover_mapping.py -> /home/GTL/apaul/ros2_hw1/build/ar_slam_base/build/lib/ar_slam_base
+[1.013s] running install
+[1.013s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.013s]   warnings.warn(
+[1.013s] running install_lib
+[1.016s] creating /home/GTL/apaul/ros2_hw1/install/ar_slam_base/lib/python3.10/site-packages/ar_slam_base
+[1.017s] copying /home/GTL/apaul/ros2_hw1/build/ar_slam_base/build/lib/ar_slam_base/mapping_kf.py -> /home/GTL/apaul/ros2_hw1/install/ar_slam_base/lib/python3.10/site-packages/ar_slam_base
+[1.019s] copying /home/GTL/apaul/ros2_hw1/build/ar_slam_base/build/lib/ar_slam_base/tb_mapping.py -> /home/GTL/apaul/ros2_hw1/install/ar_slam_base/lib/python3.10/site-packages/ar_slam_base
+[1.021s] copying /home/GTL/apaul/ros2_hw1/build/ar_slam_base/build/lib/ar_slam_base/__init__.py -> /home/GTL/apaul/ros2_hw1/install/ar_slam_base/lib/python3.10/site-packages/ar_slam_base
+[1.023s] copying /home/GTL/apaul/ros2_hw1/build/ar_slam_base/build/lib/ar_slam_base/rover_mapping.py -> /home/GTL/apaul/ros2_hw1/install/ar_slam_base/lib/python3.10/site-packages/ar_slam_base
+[1.027s] byte-compiling /home/GTL/apaul/ros2_hw1/install/ar_slam_base/lib/python3.10/site-packages/ar_slam_base/mapping_kf.py to mapping_kf.cpython-310.pyc
+[1.031s] byte-compiling /home/GTL/apaul/ros2_hw1/install/ar_slam_base/lib/python3.10/site-packages/ar_slam_base/tb_mapping.py to tb_mapping.cpython-310.pyc
+[1.034s] byte-compiling /home/GTL/apaul/ros2_hw1/install/ar_slam_base/lib/python3.10/site-packages/ar_slam_base/__init__.py to __init__.cpython-310.pyc
+[1.037s] byte-compiling /home/GTL/apaul/ros2_hw1/install/ar_slam_base/lib/python3.10/site-packages/ar_slam_base/rover_mapping.py to rover_mapping.cpython-310.pyc
+[1.040s] running install_data
+[1.041s] creating /home/GTL/apaul/ros2_hw1/install/ar_slam_base/share/ament_index
+[1.042s] creating /home/GTL/apaul/ros2_hw1/install/ar_slam_base/share/ament_index/resource_index
+[1.043s] creating /home/GTL/apaul/ros2_hw1/install/ar_slam_base/share/ament_index/resource_index/packages
+[1.045s] copying resource/ar_slam_base -> /home/GTL/apaul/ros2_hw1/install/ar_slam_base/share/ament_index/resource_index/packages
+[1.047s] copying package.xml -> /home/GTL/apaul/ros2_hw1/install/ar_slam_base/share/ar_slam_base
+[1.050s] copying launch/tb_slam_env.launch.py -> /home/GTL/apaul/ros2_hw1/install/ar_slam_base/share/ar_slam_base
+[1.052s] copying launch/ar_slam_env.launch.py -> /home/GTL/apaul/ros2_hw1/install/ar_slam_base/share/ar_slam_base
+[1.054s] copying launch/ar_slam_only.launch.py -> /home/GTL/apaul/ros2_hw1/install/ar_slam_base/share/ar_slam_base
+[1.057s] copying launch/ar_slam.launch.py -> /home/GTL/apaul/ros2_hw1/install/ar_slam_base/share/ar_slam_base
+[1.060s] copying launch/tb_slam.launch.py -> /home/GTL/apaul/ros2_hw1/install/ar_slam_base/share/ar_slam_base
+[1.062s] copying launch/tb_slam_only.launch.py -> /home/GTL/apaul/ros2_hw1/install/ar_slam_base/share/ar_slam_base
+[1.064s] running install_egg_info
+[1.066s] Copying ../../build/ar_slam_base/ar_slam_base.egg-info to /home/GTL/apaul/ros2_hw1/install/ar_slam_base/lib/python3.10/site-packages/ar_slam_base-0.0.0-py3.10.egg-info
+[1.090s] running install_scripts
+[1.103s] Installing ar_slam_node script to /home/GTL/apaul/ros2_hw1/install/ar_slam_base/lib/ar_slam_base
+[1.106s] Installing tb_slam_node script to /home/GTL/apaul/ros2_hw1/install/ar_slam_base/lib/ar_slam_base
+[1.108s] writing list of installed files to '/home/GTL/apaul/ros2_hw1/build/ar_slam_base/install.log'
+[1.123s] Invoked command in '/home/GTL/apaul/ros2_hw1/src/ar_slam_base' returned '0': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/ar_loc_base:/home/GTL/apaul/ros2_hw1/install/rover_driver_base:/home/GTL/apaul/ros2_hw1/install/ar_mapping_base:${AMENT_PREFIX_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/build/ar_slam_base/prefix_override:/home/GTL/apaul/ros2_hw1/install/ar_slam_base/lib/python3.10/site-packages:/home/GTL/apaul/ros2_hw1/install/ar_loc_base/lib/python3.10/site-packages:/home/GTL/apaul/ros2_hw1/install/rover_driver_base/lib/python3.10/site-packages:/home/GTL/apaul/ros2_hw1/install/ar_mapping_base/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/ar_slam_base build --build-base /home/GTL/apaul/ros2_hw1/build/ar_slam_base/build install --record /home/GTL/apaul/ros2_hw1/build/ar_slam_base/install.log --single-version-externally-managed
