@@ -49,7 +49,7 @@ def generate_launch_description():
                 {'~/rover_name': 'rover'},
                 {'~/filter_name': 'particle'}, # in ['odo','kalman','particle']
                 {'~/inverse_tf': True},
-                {'~/use_ar': False},
+                {'~/use_ar': True},
                 {'~/use_compass': False},
                 {'~/target_frame': 'world'},
                 {'~/reference_frame': 'loc_world'}, # Only used if inverse_tf

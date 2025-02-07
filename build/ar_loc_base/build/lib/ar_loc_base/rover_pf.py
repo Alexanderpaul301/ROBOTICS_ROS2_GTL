@@ -75,9 +75,15 @@ class RoverPF(RoverOdo):
 
     def evalParticleAR(self,X, Z, L, Uncertainty):
         # Returns the fitness of a particle with state X given observation Z of landmark L
+        # X is the state of the particle
+        # Z is the observation  in the robot frame
+        # L is the position of the landmark in the world frame
+        Z = self.getRotation(-X[2,0])*(L-X[0:2,0])
+        d=sqrt(Z[0,0]**2+Z[1,0]**2)
 
+        fit=exp(-d**2/(2*Uncertainty**2))
 
-        return 0
+        return fit
 
     def evalParticleCompass(self,X, Value, Uncertainty):
         # Returns the fitness of a particle with state X given compass observation value
@@ -86,13 +92,27 @@ class RoverPF(RoverOdo):
 
     def update_ar(self, logger, Z, L, Uncertainty):
         self.lock.acquire()
+        # L is the position of the landmark in the world frame
         # TODO
         logger.info("Update: L="+str(L.T)+" X="+str(self.X.T))
         # Implement particle filter update using landmarks here. Using the function evalParticleAR could be useful
+        # We implement the weight of the particles
+        weights = []
+        for x in self.particles:
+            weights.append(self.evalParticleAR(x,Z,L,Uncertainty))
+        # We normalize the weights so that we can do a random draw using a python function later
+        total = sum(weights)
+        weights = weights/total
 
-        # TODO
+        # We resample the particles according to the weights
+        new_particles = []
+        for i in range(self.N):
+            # We choose a particle with a probability proportional to its weight
+            new_particles.append(self.particles[numpy.random.choice(self.N, p=weights)])
+            
+        print(len(new_particles))
+        self.particles = new_particles
 
-        # self.particles = ...
         
         self.updateMean()
         self.lock.release()
