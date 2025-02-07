@@ -35,14 +35,15 @@ class RoverPF(RoverOdo):
         # including the uncertainty present in variable uncertainty
         x, y, teta = X[0,0], X[1,0], X[2,0]
         dx, dy, dteta = DeltaX[0,0], DeltaX[1,0], DeltaX[2,0]
-        rot= self.getRotationFromWorldToRobot()
-        
+        #rot= self.getRotationFromWorldToRobot()
+        rot = self.getRotation(-X[2,0])
+        noise = numpy.random.normal(0, Uncertainty,3)
+        print(dx,dy,dteta)
         # Apply the displacement
-        X[0,0] = x + dx*cos(rot) + dy*sin(rot) + numpy.random.normal(0, Uncertainty[0,0], 1)
-        X[1,0] = y - dx*sin(rot) + dy*cos(rot) + numpy.random.normal(0, Uncertainty[1,0], 1)
-        X[2,0] = teta + dteta + numpy.random.normal(0, Uncertainty[2,0], 1)
+        X[0,0] = x + dx*rot[0,0] + dy*rot[1,0] + noise[0]
+        X[1,0] = y - dx*rot[1,0] + dy*rot[0,0] + noise[1]
+        X[2,0] = teta + dteta + noise[2]
         
-
         return X 
 
 
@@ -64,14 +65,19 @@ class RoverPF(RoverOdo):
         # DeltaX = iW*S
         DeltaX = iW*S
         # Drive
-        X = applyDisplacement(self.X,DeltaX,encoder_precision)
         # Note, using the function applyDisplacement could be useful to compute the new particles
         # self.particles = ...
+        for x in self.particles:
+            x = self.applyDisplacement(x,DeltaX,encoder_precision)
+
         self.updateMean()
         self.lock.release()
 
     def evalParticleAR(self,X, Z, L, Uncertainty):
         # Returns the fitness of a particle with state X given observation Z of landmark L
+        # Z is the measurement of the distance to the landmark
+        # L is the position of the landmark
+
         return 0
 
     def evalParticleCompass(self,X, Value, Uncertainty):

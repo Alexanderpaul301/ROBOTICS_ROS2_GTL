@@ -33,7 +33,17 @@ class RoverPF(RoverOdo):
     def applyDisplacement(self,X,DeltaX,Uncertainty):
         # TODO: apply the displacement DeltaX, in the robot frame, to the particle X expressed in the world frame,
         # including the uncertainty present in variable uncertainty
-        X = X + getRotationFromWorldToRobot(self)*deltaX + drawNoise(Uncertainty)
+        x, y, teta = X[0,0], X[1,0], X[2,0]
+        dx, dy, dteta = DeltaX[0,0], DeltaX[1,0], DeltaX[2,0]
+        #rot= self.getRotationFromWorldToRobot()
+        rot = self.getRotation(-X[2,0])
+        noise = numpy.random.normal(0, Uncertainty,3)
+        print(dx,dy,dteta)
+        # Apply the displacement
+        X[0,0] = x + dx*rot[0,0] + dy*rot[1,0] + noise[0]
+        X[1,0] = y - dx*rot[1,0] + dy*rot[0,0] + noise[1]
+        X[2,0] = teta + dteta + noise[2]
+        
         return X 
 
 
@@ -49,34 +59,24 @@ class RoverPF(RoverOdo):
         iW = self.prepare_inversion_matrix(drive_cfg)
         S = self.prepare_displacement_matrix(self.motor_state,motor_state,drive_cfg)
         self.motor_state.copy(motor_state)
-
         # Apply the particle filter prediction step here
         # TODO
         # We first compute the commands in the world frame
-        v=(twist.linear.x - twist.angular.z*drive_cfg['C'+k[1]].y)/drive_cfg['C'+k[1]].radius
-        # Drive
-        vpred= #Equation to be completed
-
-        # Steering
-        wpred= #Equation to be completed
-
-        gammapred=
-
-        xpred = 
-        ypred = 
-        tetapred =
-
-
-
-
         # DeltaX = iW*S
+        DeltaX = iW*S
+        # Drive
         # Note, using the function applyDisplacement could be useful to compute the new particles
         # self.particles = ...
+        for x in self.particles:
+            x = self.applyDisplacement(x,DeltaX,encoder_precision)
+
         self.updateMean()
         self.lock.release()
 
     def evalParticleAR(self,X, Z, L, Uncertainty):
         # Returns the fitness of a particle with state X given observation Z of landmark L
+
+
         return 0
 
     def evalParticleCompass(self,X, Value, Uncertainty):

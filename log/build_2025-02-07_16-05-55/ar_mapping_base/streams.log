@@ -1,0 +1,44 @@
+[0.671s] Invoking command in '/home/GTL/apaul/ros2_hw1/src/ar_mapping_base': PYTHONPATH=/home/GTL/apaul/ros2_hw1/build/ar_mapping_base/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/GTL/apaul/ros2_hw1/install/ar_mapping_base/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ar_mapping_base build --build-base /home/GTL/apaul/ros2_hw1/build/ar_mapping_base/build install --record /home/GTL/apaul/ros2_hw1/build/ar_mapping_base/install.log --single-version-externally-managed install_data
+[0.871s] running egg_info
+[0.872s] creating ../../build/ar_mapping_base/ar_mapping_base.egg-info
+[0.873s] writing ../../build/ar_mapping_base/ar_mapping_base.egg-info/PKG-INFO
+[0.878s] writing dependency_links to ../../build/ar_mapping_base/ar_mapping_base.egg-info/dependency_links.txt
+[0.880s] writing entry points to ../../build/ar_mapping_base/ar_mapping_base.egg-info/entry_points.txt
+[0.882s] writing requirements to ../../build/ar_mapping_base/ar_mapping_base.egg-info/requires.txt
+[0.884s] writing top-level names to ../../build/ar_mapping_base/ar_mapping_base.egg-info/top_level.txt
+[0.886s] writing manifest file '../../build/ar_mapping_base/ar_mapping_base.egg-info/SOURCES.txt'
+[0.891s] reading manifest file '../../build/ar_mapping_base/ar_mapping_base.egg-info/SOURCES.txt'
+[0.894s] writing manifest file '../../build/ar_mapping_base/ar_mapping_base.egg-info/SOURCES.txt'
+[0.895s] running build
+[0.895s] running build_py
+[0.896s] creating /home/GTL/apaul/ros2_hw1/build/ar_mapping_base/build
+[0.896s] creating /home/GTL/apaul/ros2_hw1/build/ar_mapping_base/build/lib
+[0.898s] creating /home/GTL/apaul/ros2_hw1/build/ar_mapping_base/build/lib/ar_mapping_base
+[0.900s] copying ar_mapping_base/mapping_kf.py -> /home/GTL/apaul/ros2_hw1/build/ar_mapping_base/build/lib/ar_mapping_base
+[0.902s] copying ar_mapping_base/__init__.py -> /home/GTL/apaul/ros2_hw1/build/ar_mapping_base/build/lib/ar_mapping_base
+[0.903s] copying ar_mapping_base/rover_mapping.py -> /home/GTL/apaul/ros2_hw1/build/ar_mapping_base/build/lib/ar_mapping_base
+[0.905s] running install
+[0.906s] running install_lib
+[0.908s] creating /home/GTL/apaul/ros2_hw1/install/ar_mapping_base/lib/python3.10/site-packages/ar_mapping_base
+[0.909s] copying /home/GTL/apaul/ros2_hw1/build/ar_mapping_base/build/lib/ar_mapping_base/mapping_kf.py -> /home/GTL/apaul/ros2_hw1/install/ar_mapping_base/lib/python3.10/site-packages/ar_mapping_base
+[0.912s] copying /home/GTL/apaul/ros2_hw1/build/ar_mapping_base/build/lib/ar_mapping_base/__init__.py -> /home/GTL/apaul/ros2_hw1/install/ar_mapping_base/lib/python3.10/site-packages/ar_mapping_base
+[0.914s] copying /home/GTL/apaul/ros2_hw1/build/ar_mapping_base/build/lib/ar_mapping_base/rover_mapping.py -> /home/GTL/apaul/ros2_hw1/install/ar_mapping_base/lib/python3.10/site-packages/ar_mapping_base
+[0.917s] byte-compiling /home/GTL/apaul/ros2_hw1/install/ar_mapping_base/lib/python3.10/site-packages/ar_mapping_base/mapping_kf.py to mapping_kf.cpython-310.pyc
+[0.921s] byte-compiling /home/GTL/apaul/ros2_hw1/install/ar_mapping_base/lib/python3.10/site-packages/ar_mapping_base/__init__.py to __init__.cpython-310.pyc
+[0.924s] byte-compiling /home/GTL/apaul/ros2_hw1/install/ar_mapping_base/lib/python3.10/site-packages/ar_mapping_base/rover_mapping.py to rover_mapping.cpython-310.pyc
+[0.926s] running install_data
+[0.927s] creating /home/GTL/apaul/ros2_hw1/install/ar_mapping_base/share/ament_index
+[0.927s] creating /home/GTL/apaul/ros2_hw1/install/ar_mapping_base/share/ament_index/resource_index
+[0.928s] creating /home/GTL/apaul/ros2_hw1/install/ar_mapping_base/share/ament_index/resource_index/packages
+[0.930s] copying resource/ar_mapping_base -> /home/GTL/apaul/ros2_hw1/install/ar_mapping_base/share/ament_index/resource_index/packages
+[0.931s] copying package.xml -> /home/GTL/apaul/ros2_hw1/install/ar_mapping_base/share/ar_mapping_base
+[0.933s] copying launch/board_descriptions.yaml -> /home/GTL/apaul/ros2_hw1/install/ar_mapping_base/share/ar_mapping_base
+[0.935s] copying launch/aruco_tracker.yaml -> /home/GTL/apaul/ros2_hw1/install/ar_mapping_base/share/ar_mapping_base
+[0.937s] copying launch/aruco_tracker.launch.xml -> /home/GTL/apaul/ros2_hw1/install/ar_mapping_base/share/ar_mapping_base
+[0.939s] copying launch/ar_mapping.launch.py -> /home/GTL/apaul/ros2_hw1/install/ar_mapping_base/share/ar_mapping_base
+[0.941s] running install_egg_info
+[0.954s] Copying ../../build/ar_mapping_base/ar_mapping_base.egg-info to /home/GTL/apaul/ros2_hw1/install/ar_mapping_base/lib/python3.10/site-packages/ar_mapping_base-0.0.0-py3.10.egg-info
+[0.980s] running install_scripts
+[0.995s] Installing ar_mapping_node script to /home/GTL/apaul/ros2_hw1/install/ar_mapping_base/lib/ar_mapping_base
+[1.000s] writing list of installed files to '/home/GTL/apaul/ros2_hw1/build/ar_mapping_base/install.log'
+[1.020s] Invoked command in '/home/GTL/apaul/ros2_hw1/src/ar_mapping_base' returned '0': PYTHONPATH=/home/GTL/apaul/ros2_hw1/build/ar_mapping_base/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/GTL/apaul/ros2_hw1/install/ar_mapping_base/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ar_mapping_base build --build-base /home/GTL/apaul/ros2_hw1/build/ar_mapping_base/build install --record /home/GTL/apaul/ros2_hw1/build/ar_mapping_base/install.log --single-version-externally-managed install_data
