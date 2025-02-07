@@ -15,6 +15,7 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/GTL/apaul/ros2_hw1/build/face_msg/rosidl_generator_cpp/face_msg/msg/detail/roilist__builder.hpp" "/home/GTL/apaul/ros2_hw1/build/face_msg/rosidl_generator_cpp/face_msg/msg/roilist.hpp"
   "/home/GTL/apaul/ros2_hw1/build/face_msg/rosidl_generator_cpp/face_msg/msg/detail/roilist__struct.hpp" "/home/GTL/apaul/ros2_hw1/build/face_msg/rosidl_generator_cpp/face_msg/msg/roilist.hpp"
   "/home/GTL/apaul/ros2_hw1/build/face_msg/rosidl_generator_cpp/face_msg/msg/detail/roilist__traits.hpp" "/home/GTL/apaul/ros2_hw1/build/face_msg/rosidl_generator_cpp/face_msg/msg/roilist.hpp"
+  "/home/GTL/apaul/ros2_hw1/build/face_msg/rosidl_generator_cpp/face_msg/msg/detail/roilist__type_support.hpp" "/home/GTL/apaul/ros2_hw1/build/face_msg/rosidl_generator_cpp/face_msg/msg/roilist.hpp"
   )
 
 

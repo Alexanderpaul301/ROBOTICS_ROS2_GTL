@@ -84,7 +84,6 @@ class RoverKinematics:
                 v_x = (twist.linear.x - twist.angular.z*drive_cfg[k].y)
                 v_y = (twist.linear.y + twist.angular.z*drive_cfg[k].x)
 
-
                 motors.drive[k] = hypot(v_y,v_x)/drive_cfg[k].radius
                 motors.steering[k] = atan2(v_y,v_x)
         return motors
@@ -117,6 +116,7 @@ class RoverKinematics:
         # Building beta (We want the angle to be in between -pi and pi) # ! Potentially a problem if the angle is in radius
         for i in range(n): 
             print(motor_state_t2.steering[prefix[i]])
+            # This part of the code is useless bc we compute the angle with a cos and sinus next.
             beta_temp = (motor_state_t2.steering[prefix[i]] + motor_state_t1.steering[prefix[i]])*1/2
             if np.abs(beta_temp)>pi:
                 beta_temp = beta_temp - 2*pi*beta_temp/np.abs(beta_temp)
@@ -128,7 +128,16 @@ class RoverKinematics:
         # Building linear displacement
         dS=np.asmatrix(np.zeros((n,1)))
         for i in range(n):
-            dS[i,0] = drive_cfg[prefix[i]].radius*(motor_state_t2.drive[prefix[i]] - motor_state_t1.drive[prefix[i]])
+            # This line is missing a modulo 2PI to avoid the angle to be too big and the angle to be in between -pi and pi to avoid wheel wharping.
+            # dS[i,0] = drive_cfg[prefix[i]].radius*(motor_state_t2.drive[prefix[i]] - motor_state_t1.drive[prefix[i]])
+
+            ds = (motor_state_t2.drive[prefix[i]] - motor_state_t1.drive[prefix[i]]) % (2*pi)
+            if ds>pi:
+                ds -= 2*pi
+            if ds<-pi:
+                ds += 2*pi
+            ds *= drive_cfg[prefix[i]].radius
+            dS[i,0] = ds
 
         # Building S
         S=np.asmatrix(np.zeros((2*n,1)))

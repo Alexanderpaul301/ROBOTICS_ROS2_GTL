@@ -674,18 +674,14 @@ CMakeFiles/task_manager_lib.dir/src/DynamicTask.cpp.o: /home/GTL/apaul/ros2_hw1/
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__type_support.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/task_description.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__type_support.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/task_config.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__type_support.hpp \
   /home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_lib/include/task_manager_lib/TaskEnvironment.h \
   /home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_lib/include/task_manager_lib/ServiceStorage.h \
   /home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_lib/include/task_manager_lib/TaskConfig.h \
@@ -1360,13 +1356,10 @@ CMakeFiles/task_manager_lib.dir/src/TaskConfig.cpp.o: /home/GTL/apaul/ros2_hw1/s
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__type_support.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/task_config.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__type_support.hpp \
   /home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_lib/include/task_manager_lib/TaskParameterDefinition.h
 
 CMakeFiles/task_manager_lib.dir/src/TaskDefinition.cpp.o: /home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_lib/src/TaskDefinition.cpp \
@@ -2038,18 +2031,14 @@ CMakeFiles/task_manager_lib.dir/src/TaskDefinition.cpp.o: /home/GTL/apaul/ros2_h
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__type_support.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/task_description.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__type_support.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/task_config.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__type_support.hpp \
   /home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_lib/include/task_manager_lib/TaskEnvironment.h \
   /home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_lib/include/task_manager_lib/ServiceStorage.h \
   /home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_lib/include/task_manager_lib/TaskConfig.h \
@@ -2725,18 +2714,14 @@ CMakeFiles/task_manager_lib.dir/src/TaskIdleDefault.cpp.o: /home/GTL/apaul/ros2_
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__type_support.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/task_description.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__type_support.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/task_config.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__type_support.hpp \
   /home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_lib/include/task_manager_lib/TaskEnvironment.h \
   /home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_lib/include/task_manager_lib/ServiceStorage.h \
   /home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_lib/include/task_manager_lib/TaskConfig.h \
@@ -3412,18 +3397,14 @@ CMakeFiles/task_manager_lib.dir/src/TaskInstance.cpp.o: /home/GTL/apaul/ros2_hw1
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__type_support.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/task_description.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__type_support.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/task_config.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__type_support.hpp \
   /home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_lib/include/task_manager_lib/TaskEnvironment.h \
   /home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_lib/include/task_manager_lib/ServiceStorage.h \
   /home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_lib/include/task_manager_lib/TaskConfig.h \
@@ -4108,18 +4089,14 @@ CMakeFiles/task_manager_lib.dir/src/TaskScheduler.cpp.o: /home/GTL/apaul/ros2_hw
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__type_support.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/task_description.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__type_support.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/task_config.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__type_support.hpp \
   /home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_lib/include/task_manager_lib/TaskEnvironment.h \
   /home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_lib/include/task_manager_lib/ServiceStorage.h \
   /home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_lib/include/task_manager_lib/TaskConfig.h \
@@ -4133,22 +4110,18 @@ CMakeFiles/task_manager_lib.dir/src/TaskScheduler.cpp.o: /home/GTL/apaul/ros2_hw
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/start_task__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/start_task__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/start_task__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/start_task__type_support.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/stop_task.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/stop_task__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/stop_task__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/stop_task__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/stop_task__type_support.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/get_task_list.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/get_task_list__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/get_task_list__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/get_task_list__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/get_task_list__type_support.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/get_all_task_status.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/get_all_task_status__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/get_all_task_status__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/get_all_task_status__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/get_all_task_status__type_support.hpp \
   /usr/include/boost/thread.hpp \
   /usr/include/boost/thread/thread.hpp \
   /usr/include/boost/thread/thread_only.hpp \
@@ -5695,18 +5668,14 @@ CMakeFiles/task_manager_lib.dir/src/TaskServerDefault.cpp.o: /home/GTL/apaul/ros
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__type_support.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/task_description.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__type_support.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/task_config.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__type_support.hpp \
   /home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_lib/include/task_manager_lib/TaskEnvironment.h \
   /home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_lib/include/task_manager_lib/ServiceStorage.h \
   /home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_lib/include/task_manager_lib/TaskConfig.h \
@@ -5721,22 +5690,18 @@ CMakeFiles/task_manager_lib.dir/src/TaskServerDefault.cpp.o: /home/GTL/apaul/ros
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/start_task__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/start_task__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/start_task__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/start_task__type_support.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/stop_task.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/stop_task__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/stop_task__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/stop_task__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/stop_task__type_support.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/get_task_list.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/get_task_list__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/get_task_list__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/get_task_list__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/get_task_list__type_support.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/get_all_task_status.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/get_all_task_status__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/get_all_task_status__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/get_all_task_status__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/get_all_task_status__type_support.hpp \
   /usr/include/boost/thread.hpp \
   /usr/include/boost/thread/thread.hpp \
   /usr/include/boost/thread/thread_only.hpp \
@@ -7285,18 +7250,14 @@ CMakeFiles/task_manager_lib.dir/src/TaskSystem.cpp.o: /home/GTL/apaul/ros2_hw1/s
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__type_support.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/task_description.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__type_support.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/task_config.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__type_support.hpp \
   /home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_lib/include/task_manager_lib/TaskEnvironment.h \
   /home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_lib/include/task_manager_lib/ServiceStorage.h \
   /home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_lib/include/task_manager_lib/TaskConfig.h \
@@ -7974,18 +7935,14 @@ CMakeFiles/task_manager_lib.dir/src/TaskWaitDefault.cpp.o: /home/GTL/apaul/ros2_
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__type_support.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/task_description.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__type_support.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/task_config.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__type_support.hpp \
   /home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_lib/include/task_manager_lib/TaskEnvironment.h \
   /home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_lib/include/task_manager_lib/ServiceStorage.h \
   /home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_lib/include/task_manager_lib/TaskConfig.h \
@@ -8065,6 +8022,8 @@ CMakeFiles/task_manager_lib.dir/src/TaskWaitDefault.cpp.o: /home/GTL/apaul/ros2_
 
 /usr/include/boost/type_traits/has_nothrow_assign.hpp:
 
+/usr/include/boost/type_traits/is_nothrow_move_assignable.hpp:
+
 /usr/include/boost/type_traits/type_with_alignment.hpp:
 
 /usr/include/boost/type_traits/is_default_constructible.hpp:
@@ -8126,6 +8085,8 @@ CMakeFiles/task_manager_lib.dir/src/TaskWaitDefault.cpp.o: /home/GTL/apaul/ros2_
 /usr/include/boost/iterator/iterator_adaptor.hpp:
 
 /usr/include/boost/iterator/reverse_iterator.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/arg.hpp:
 
 /usr/include/boost/mpl/aux_/arg_typedef.hpp:
 
@@ -8377,6 +8338,8 @@ CMakeFiles/task_manager_lib.dir/src/TaskWaitDefault.cpp.o: /home/GTL/apaul/ros2_
 
 /usr/include/boost/integer_fwd.hpp:
 
+/usr/include/boost/integer/static_log2.hpp:
+
 /usr/include/boost/container_hash/detail/limits.hpp:
 
 /usr/include/boost/container_hash/detail/float_functions.hpp:
@@ -8488,6 +8451,8 @@ CMakeFiles/task_manager_lib.dir/src/TaskWaitDefault.cpp.o: /home/GTL/apaul/ros2_
 /usr/include/boost/chrono/detail/static_assert.hpp:
 
 /usr/include/boost/predef/hardware/simd/ppc.h:
+
+/usr/include/boost/predef/hardware/simd/arm/versions.h:
 
 /usr/include/boost/predef/hardware/simd/arm.h:
 
@@ -8609,20 +8574,6 @@ CMakeFiles/task_manager_lib.dir/src/TaskWaitDefault.cpp.o: /home/GTL/apaul/ros2_
 
 /usr/include/boost/predef/library/c/cloudabi.h:
 
-/usr/include/boost/predef/library/c/_prefix.h:
-
-/usr/include/boost/predef/library.h:
-
-/usr/include/boost/predef/compiler/watcom.h:
-
-/usr/include/boost/predef/compiler/visualc.h:
-
-/usr/include/boost/predef/compiler/tendra.h:
-
-/usr/include/boost/predef/compiler/sunpro.h:
-
-/usr/include/boost/predef/compiler/sgi_mipspro.h:
-
 /opt/ros/humble/include/rmw/rmw/ret_types.h:
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp:
@@ -8662,10 +8613,6 @@ CMakeFiles/task_manager_lib.dir/src/TaskWaitDefault.cpp.o: /home/GTL/apaul/ros2_
 /usr/include/boost/cerrno.hpp:
 
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:
-
-/usr/include/boost/integer/static_log2.hpp:
-
-/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__type_support.hpp:
 
 /usr/include/boost/type_traits/is_destructible.hpp:
 
@@ -8758,8 +8705,6 @@ CMakeFiles/task_manager_lib.dir/src/TaskWaitDefault.cpp.o: /home/GTL/apaul/ros2_
 /opt/ros/humble/include/rcpputils/rcpputils/time.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
-
-/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/waitable.hpp:
 
@@ -9159,10 +9104,6 @@ CMakeFiles/task_manager_lib.dir/src/TaskWaitDefault.cpp.o: /home/GTL/apaul/ros2_
 
 /usr/include/c++/11/bits/streambuf_iterator.h:
 
-/usr/include/boost/predef/hardware/simd/arm/versions.h:
-
-/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/get_all_task_status__type_support.hpp:
-
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h:
 
 /usr/include/c++/11/math.h:
@@ -9463,6 +9404,8 @@ CMakeFiles/task_manager_lib.dir/src/TaskWaitDefault.cpp.o: /home/GTL/apaul/ros2_
 
 /usr/include/boost/preprocessor/list/detail/fold_right.hpp:
 
+/usr/include/c++/11/bits/this_thread_sleep.h:
+
 /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:
 
 /opt/ros/humble/include/rmw/rmw/event.h:
@@ -9536,10 +9479,6 @@ CMakeFiles/task_manager_lib.dir/src/TaskWaitDefault.cpp.o: /home/GTL/apaul/ros2_
 /usr/include/boost/mpl/aux_/preprocessed/gcc/full_lambda.hpp:
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/topic_statistics_collector.hpp:
-
-/usr/include/boost/type_traits/is_nothrow_move_assignable.hpp:
-
-/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/start_task__type_support.hpp:
 
 /usr/include/c++/11/bits/stl_set.h:
 
@@ -9709,8 +9648,6 @@ CMakeFiles/task_manager_lib.dir/src/TaskWaitDefault.cpp.o: /home/GTL/apaul/ros2_
 
 /usr/include/c++/11/bits/stl_tree.h:
 
-/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/stop_task__type_support.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
 /usr/include/c++/11/ext/atomicity.h:
@@ -9728,10 +9665,6 @@ CMakeFiles/task_manager_lib.dir/src/TaskWaitDefault.cpp.o: /home/GTL/apaul/ros2_
 /usr/include/ctype.h:
 
 /usr/include/c++/11/bits/unordered_map.h:
-
-/usr/include/c++/11/bits/this_thread_sleep.h:
-
-/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/get_task_list__type_support.hpp:
 
 /usr/include/boost/type_traits/is_arithmetic.hpp:
 
@@ -10517,15 +10450,13 @@ CMakeFiles/task_manager_lib.dir/src/TaskWaitDefault.cpp.o: /home/GTL/apaul/ros2_
 
 /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__builder.hpp:
 
+/usr/include/boost/predef/compiler/sgi_mipspro.h:
+
 /usr/include/boost/thread/pthread/thread_data.hpp:
 
 /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__traits.hpp:
 
 /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/task_config.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/arg.hpp:
-
-/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__type_support.hpp:
 
 /home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_lib/include/task_manager_lib/TaskEnvironment.h:
 
@@ -10905,8 +10836,6 @@ CMakeFiles/task_manager_lib.dir/src/TaskWaitDefault.cpp.o: /home/GTL/apaul/ros2_
 
 /usr/include/boost/mpl/lambda_fwd.hpp:
 
-/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__type_support.hpp:
-
 /usr/include/boost/mpl/aux_/config/adl.hpp:
 
 /usr/include/boost/numeric/conversion/bounds.hpp:
@@ -11049,14 +10978,6 @@ CMakeFiles/task_manager_lib.dir/src/TaskWaitDefault.cpp.o: /home/GTL/apaul/ros2_
 
 /usr/include/boost/preprocessor/repetition/enum_params.hpp:
 
-/usr/include/boost/predef/library/c.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/experimental/buffers/intra_process_buffer.hpp:
-
-/usr/include/c++/11/pstl/glue_algorithm_defs.h:
-
-/usr/include/boost/mpl/aux_/msvc_never_true.hpp:
-
 /usr/include/boost/detail/indirect_traits.hpp:
 
 /usr/include/boost/mpl/aux_/include_preprocessed.hpp:
@@ -11106,6 +11027,8 @@ CMakeFiles/task_manager_lib.dir/src/TaskWaitDefault.cpp.o: /home/GTL/apaul/ros2_
 /usr/include/boost/optional/optional_fwd.hpp:
 
 /usr/include/boost/numeric/conversion/udt_builtin_mixture_enum.hpp:
+
+/usr/include/boost/predef/compiler/sunpro.h:
 
 /usr/include/c++/11/ext/alloc_traits.h:
 
@@ -11208,3 +11131,21 @@ CMakeFiles/task_manager_lib.dir/src/TaskWaitDefault.cpp.o: /home/GTL/apaul/ros2_
 /opt/ros/humble/include/rcl/rcl/domain_id.h:
 
 /usr/include/boost/predef/compiler/iar.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/experimental/buffers/intra_process_buffer.hpp:
+
+/usr/include/c++/11/pstl/glue_algorithm_defs.h:
+
+/usr/include/boost/mpl/aux_/msvc_never_true.hpp:
+
+/usr/include/boost/predef/library/c.h:
+
+/usr/include/boost/predef/compiler/tendra.h:
+
+/usr/include/boost/predef/compiler/visualc.h:
+
+/usr/include/boost/predef/compiler/watcom.h:
+
+/usr/include/boost/predef/library.h:
+
+/usr/include/boost/predef/library/c/_prefix.h:

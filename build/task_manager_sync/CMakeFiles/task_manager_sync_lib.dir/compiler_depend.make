@@ -673,9 +673,7 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskEnvironmentSync.cpp.o: /home/GTL/ap
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/sync_status__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/sync_status__traits.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/sync_status__type_support.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__traits.hpp
 
 CMakeFiles/task_manager_sync_lib.dir/src/TaskServerSync.cpp.o: /home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_sync/src/TaskServerSync.cpp \
   /usr/include/stdc-predef.h \
@@ -1347,18 +1345,14 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskServerSync.cpp.o: /home/GTL/apaul/r
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__type_support.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/task_description.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__type_support.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/task_config.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__type_support.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_lib/include/task_manager_lib/TaskEnvironment.h \
   /home/GTL/apaul/ros2_hw1/install/task_manager_lib/include/task_manager_lib/ServiceStorage.h \
   /home/GTL/apaul/ros2_hw1/install/task_manager_lib/include/task_manager_lib/TaskConfig.h \
@@ -1378,22 +1372,18 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskServerSync.cpp.o: /home/GTL/apaul/r
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/start_task__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/start_task__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/start_task__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/start_task__type_support.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/stop_task.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/stop_task__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/stop_task__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/stop_task__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/stop_task__type_support.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/get_task_list.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/get_task_list__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/get_task_list__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/get_task_list__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/get_task_list__type_support.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/get_all_task_status.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/get_all_task_status__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/get_all_task_status__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/get_all_task_status__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/get_all_task_status__type_support.hpp \
   /usr/include/boost/thread.hpp \
   /usr/include/boost/thread/thread.hpp \
   /usr/include/boost/thread/thread_only.hpp \
@@ -2277,7 +2267,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskServerSync.cpp.o: /home/GTL/apaul/r
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/sync_status__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/sync_status__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/sync_status__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/sync_status__type_support.hpp \
   /home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_sync/include/task_manager_sync/TaskWaitForStatusSync.h
 
 CMakeFiles/task_manager_sync_lib.dir/src/TaskSetStatusSync.cpp.o: /home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_sync/src/TaskSetStatusSync.cpp \
@@ -2950,18 +2939,14 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskSetStatusSync.cpp.o: /home/GTL/apau
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__type_support.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/task_description.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__type_support.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/task_config.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__type_support.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_lib/include/task_manager_lib/TaskEnvironment.h \
   /home/GTL/apaul/ros2_hw1/install/task_manager_lib/include/task_manager_lib/ServiceStorage.h \
   /home/GTL/apaul/ros2_hw1/install/task_manager_lib/include/task_manager_lib/TaskConfig.h \
@@ -2973,8 +2958,7 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskSetStatusSync.cpp.o: /home/GTL/apau
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/sync_status__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/sync_status__traits.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/sync_status__type_support.hpp
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__traits.hpp
 
 CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_sync/src/TaskWaitForStatusSync.cpp \
   /usr/include/stdc-predef.h \
@@ -3646,18 +3630,14 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__type_support.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/task_description.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__type_support.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/task_config.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__type_support.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_lib/include/task_manager_lib/TaskEnvironment.h \
   /home/GTL/apaul/ros2_hw1/install/task_manager_lib/include/task_manager_lib/ServiceStorage.h \
   /home/GTL/apaul/ros2_hw1/install/task_manager_lib/include/task_manager_lib/TaskConfig.h \
@@ -3669,8 +3649,7 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/sync_status__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/sync_status__traits.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/sync_status__type_support.hpp
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__traits.hpp
 
 
 /home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_sync/src/TaskWaitForStatusSync.cpp:
@@ -3735,6 +3714,8 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 
 /usr/include/boost/type_traits/has_nothrow_assign.hpp:
 
+/usr/include/boost/type_traits/is_nothrow_move_assignable.hpp:
+
 /usr/include/boost/type_traits/type_with_alignment.hpp:
 
 /usr/include/boost/type_traits/is_default_constructible.hpp:
@@ -3794,6 +3775,8 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 /usr/include/boost/iterator/iterator_adaptor.hpp:
 
 /usr/include/boost/iterator/reverse_iterator.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/arg.hpp:
 
 /usr/include/boost/mpl/aux_/arg_typedef.hpp:
 
@@ -4047,6 +4030,8 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 
 /usr/include/boost/integer_fwd.hpp:
 
+/usr/include/boost/integer/static_log2.hpp:
+
 /usr/include/boost/container_hash/detail/limits.hpp:
 
 /usr/include/boost/container_hash/detail/float_functions.hpp:
@@ -4163,6 +4148,8 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 
 /usr/include/boost/predef/hardware/simd/ppc.h:
 
+/usr/include/boost/predef/hardware/simd/arm/versions.h:
+
 /usr/include/boost/predef/hardware/simd/arm.h:
 
 /usr/include/boost/predef/hardware/simd/x86_amd.h:
@@ -4275,22 +4262,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 
 /usr/include/boost/predef/library/c/zos.h:
 
-/usr/include/boost/predef/platform/mingw32.h:
-
-/usr/include/boost/predef/library/c/gnu.h:
-
-/usr/include/boost/predef/os/hpux.h:
-
-/usr/include/boost/predef/library/c/cloudabi.h:
-
-/usr/include/boost/predef/library/c/_prefix.h:
-
-/usr/include/boost/predef/library.h:
-
-/usr/include/boost/predef/compiler/watcom.h:
-
-/usr/include/boost/predef/compiler/visualc.h:
-
 /usr/include/linux/close_range.h:
 
 /usr/include/boost/mpl/aux_/config/dependent_nttp.hpp:
@@ -4338,10 +4309,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__traits.hpp:
 
 /usr/include/boost/cerrno.hpp:
-
-/usr/include/boost/integer/static_log2.hpp:
-
-/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__type_support.hpp:
 
 /usr/include/boost/type_traits/is_destructible.hpp:
 
@@ -4430,8 +4397,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 /opt/ros/humble/include/rcpputils/rcpputils/time.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
-
-/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/waitable.hpp:
 
@@ -4645,12 +4610,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 
 /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h:
 
-/usr/include/boost/predef/detail/_cassert.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp:
-
-/opt/ros/humble/include/rcl/rcl/client.h:
-
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdalign.h:
 
 /usr/include/c++/11/bits/locale_facets.tcc:
@@ -4801,6 +4760,10 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp:
 
+/usr/include/boost/predef/platform/mingw32.h:
+
+/usr/include/boost/predef/library/c/gnu.h:
+
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
 /usr/include/boost/mpl/arg_fwd.hpp:
@@ -4848,10 +4811,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
 
 /usr/include/c++/11/bits/streambuf_iterator.h:
-
-/usr/include/boost/predef/hardware/simd/arm/versions.h:
-
-/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/get_all_task_status__type_support.hpp:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h:
 
@@ -4926,6 +4885,8 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 /usr/include/boost/assert.hpp:
 
 /usr/include/c++/11/bits/cxxabi_forced.h:
+
+/usr/include/c++/11/bits/this_thread_sleep.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:
 
@@ -5104,8 +5065,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 /usr/include/boost/mpl/aux_/config/msvc.hpp:
 
 /usr/include/c++/11/bits/stl_tree.h:
-
-/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/stop_task__type_support.hpp:
 
 /opt/ros/humble/include/rcl/rcl/wait.h:
 
@@ -5401,8 +5360,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 
 /opt/ros/humble/include/rmw/rmw/serialized_message.h:
 
-/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/sync_status__type_support.hpp:
-
 /usr/include/boost/core/use_default.hpp:
 
 /usr/include/boost/thread/cv_status.hpp:
@@ -5580,10 +5537,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 /usr/include/x86_64-linux-gnu/bits/sched.h:
 
 /usr/include/c++/11/bits/unordered_map.h:
-
-/usr/include/c++/11/bits/this_thread_sleep.h:
-
-/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/get_task_list__type_support.hpp:
 
 /usr/include/boost/type_traits/is_arithmetic.hpp:
 
@@ -5767,10 +5720,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/topic_statistics_collector.hpp:
 
-/usr/include/boost/type_traits/is_nothrow_move_assignable.hpp:
-
-/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/start_task__type_support.hpp:
-
 /usr/include/stdlib.h:
 
 /usr/include/boost/date_time/locale_config.hpp:
@@ -5896,12 +5845,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 /opt/ros/humble/include/rclcpp/rclcpp/node.hpp:
 
 /usr/include/boost/date_time/date_defs.hpp:
-
-/usr/include/boost/atomic/detail/wait_ops_emulated.hpp:
-
-/usr/include/boost/predef/library/c/uc.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/list_parameters_result.hpp:
 
 /usr/include/boost/type_traits/is_union.hpp:
 
@@ -6203,10 +6146,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 
 /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/task_config.hpp:
 
-/usr/include/boost/mpl/aux_/preprocessed/gcc/arg.hpp:
-
-/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__type_support.hpp:
-
 /home/GTL/apaul/ros2_hw1/install/task_manager_lib/include/task_manager_lib/TaskConfig.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/macros.hpp:
@@ -6374,6 +6313,12 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 /usr/include/boost/core/explicit_operator_bool.hpp:
 
 /usr/include/boost/type_traits/remove_extent.hpp:
+
+/usr/include/boost/atomic/detail/wait_ops_emulated.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/list_parameters_result.hpp:
+
+/usr/include/boost/predef/library/c/uc.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/intra_process_manager.hpp:
 
@@ -6569,8 +6514,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 
 /usr/include/boost/mpl/lambda_fwd.hpp:
 
-/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__type_support.hpp:
-
 /usr/include/boost/mpl/aux_/config/adl.hpp:
 
 /usr/include/boost/numeric/conversion/bounds.hpp:
@@ -6718,14 +6661,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 /usr/include/boost/mpl/aux_/config/msvc_typename.hpp:
 
 /usr/include/boost/preprocessor/repetition/enum_params.hpp:
-
-/usr/include/boost/predef/library/c.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/experimental/buffers/intra_process_buffer.hpp:
-
-/usr/include/c++/11/pstl/glue_algorithm_defs.h:
-
-/usr/include/boost/mpl/aux_/msvc_never_true.hpp:
 
 /usr/include/boost/detail/indirect_traits.hpp:
 
@@ -6877,4 +6812,30 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 
 /usr/include/boost/predef/compiler/iar.h:
 
+/opt/ros/humble/include/rclcpp/rclcpp/experimental/buffers/intra_process_buffer.hpp:
+
+/usr/include/c++/11/pstl/glue_algorithm_defs.h:
+
+/usr/include/boost/mpl/aux_/msvc_never_true.hpp:
+
+/usr/include/boost/predef/library/c.h:
+
 /usr/include/boost/predef/compiler/tendra.h:
+
+/usr/include/boost/predef/compiler/visualc.h:
+
+/usr/include/boost/predef/compiler/watcom.h:
+
+/usr/include/boost/predef/library.h:
+
+/usr/include/boost/predef/library/c/_prefix.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp:
+
+/opt/ros/humble/include/rcl/rcl/client.h:
+
+/usr/include/boost/predef/detail/_cassert.h:
+
+/usr/include/boost/predef/os/hpux.h:
+
+/usr/include/boost/predef/library/c/cloudabi.h:

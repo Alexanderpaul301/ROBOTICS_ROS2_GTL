@@ -680,18 +680,14 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__type_support.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/task_description.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__type_support.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/task_config.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__type_support.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_lib/include/task_manager_lib/TaskEnvironment.h \
   /home/GTL/apaul/ros2_hw1/install/task_manager_lib/include/task_manager_lib/ServiceStorage.h \
   /home/GTL/apaul/ros2_hw1/install/task_manager_lib/include/task_manager_lib/TaskConfig.h \
@@ -741,8 +737,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
   /home/GTL/apaul/ros2_hw1/install/face_msg/include/face_msg/face_msg/msg/detail/roilist__builder.hpp \
   /home/GTL/apaul/ros2_hw1/install/face_msg/include/face_msg/face_msg/msg/detail/roilist__traits.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/region_of_interest__traits.hpp \
-  /home/GTL/apaul/ros2_hw1/install/face_msg/include/face_msg/face_msg/msg/detail/roilist__type_support.hpp \
-  /home/GTL/apaul/ros2_hw1/install/face_msg/include/face_msg/face_msg/msg/rosidl_generator_cpp__visibility_control.hpp \
   /usr/include/pcl-1.12/pcl/point_types.h \
   /usr/include/c++/11/bitset \
   /usr/include/pcl-1.12/pcl/impl/point_types.hpp \
@@ -1628,10 +1622,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__builder.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__traits.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__traits.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/velocity_stamped.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__struct.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__builder.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__traits.hpp \
   /opt/ros/humble/include/tf2/tf2/buffer_core_interface.h \
   /opt/ros/humble/include/tf2/tf2/time.h \
   /opt/ros/humble/include/tf2/tf2/exceptions.h \
@@ -1925,8 +1915,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /opt/ros/humble/include/tf2/tf2/buffer_core_interface.h:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__traits.hpp:
-
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__traits.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__builder.hpp:
@@ -1982,8 +1970,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 /usr/include/boost/interprocess/sync/detail/common_algorithms.hpp:
 
 /usr/include/boost/date_time/posix_time/posix_time_duration.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__struct.hpp:
 
 /usr/include/boost/date_time/time.hpp:
 
@@ -2617,12 +2603,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /usr/include/boost/mpl/placeholders.hpp:
 
-/usr/include/boost/mpl/apply_fwd.hpp:
-
-/usr/include/boost/mpl/apply.hpp:
-
-/usr/include/boost/mpl/aux_/iter_apply.hpp:
-
 /usr/include/boost/preprocessor/facilities/identity.hpp:
 
 /usr/include/boost/range/size.hpp:
@@ -2648,8 +2628,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__traits.hpp:
 
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:
-
-/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__type_support.hpp:
 
 /usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h:
 
@@ -2732,8 +2710,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
 /usr/include/boost/mpl/begin_end_fwd.hpp:
-
-/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/waitable.hpp:
 
@@ -2897,8 +2873,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point_stamped.hpp:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__builder.hpp:
-
 /opt/ros/humble/include/rcl/rcl/timer.h:
 
 /usr/include/eigen3/Eigen/src/Core/Inverse.h:
@@ -3045,8 +3019,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /opt/ros/humble/include/rmw/rmw/types.h:
 
-/home/GTL/apaul/ros2_hw1/install/face_msg/include/face_msg/face_msg/msg/detail/roilist__type_support.hpp:
-
 /usr/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/expand_topic_or_service_name.hpp:
@@ -3084,8 +3056,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 /usr/include/boost/mpl/arg_fwd.hpp:
 
 /opt/ros/humble/include/rcutils/rcutils/testing/fault_injection.h:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/velocity_stamped.hpp:
 
 /opt/ros/humble/include/rcutils/rcutils/macros.h:
 
@@ -3715,10 +3685,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /usr/include/eigen3/Eigen/src/Core/Assign.h:
 
-/usr/include/boost/mpl/aux_/preprocessed/gcc/apply_fwd.hpp:
-
-/opt/ros/humble/include/rmw/rmw/incompatible_qos_events_statuses.h:
-
 /usr/include/c++/11/ext/new_allocator.h:
 
 /usr/include/boost/range/has_range_iterator.hpp:
@@ -3808,10 +3774,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 /usr/include/boost/mpl/aux_/msvc_eti_base.hpp:
 
 /usr/include/c++/11/bits/shared_ptr.h:
-
-/usr/include/boost/mpl/aux_/find_if_pred.hpp:
-
-/usr/include/c++/11/bits/stl_construct.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp:
 
@@ -3981,6 +3943,8 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /usr/include/boost/config/detail/select_compiler_config.hpp:
 
+/usr/include/boost/mpl/apply.hpp:
+
 /usr/include/c++/11/cstdlib:
 
 /usr/include/x86_64-linux-gnu/bits/signum-generic.h:
@@ -4088,6 +4052,10 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
 
 /usr/include/c++/11/bits/ptr_traits.h:
+
+/usr/include/c++/11/bits/stl_construct.h:
+
+/usr/include/boost/mpl/aux_/find_if_pred.hpp:
 
 /usr/include/c++/11/bits/erase_if.h:
 
@@ -4651,6 +4619,8 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /home/GTL/apaul/ros2_hw1/install/face_msg/include/face_msg/face_msg/msg/roilist.hpp:
 
+/usr/include/boost/mpl/apply_fwd.hpp:
+
 /usr/include/pcl-1.12/pcl/point_types.h:
 
 /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__struct.hpp:
@@ -4670,8 +4640,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 /usr/include/eigen3/Eigen/src/Core/DiagonalMatrix.h:
 
 /usr/include/boost/preprocessor/arithmetic/detail/div_base.hpp:
-
-/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_status__type_support.hpp:
 
 /usr/include/boost/mpl/aux_/config/adl.hpp:
 
@@ -4766,8 +4734,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 /usr/include/boost/mpl/aux_/config/dtp.hpp:
 
 /usr/include/boost/mpl/vector/vector10.hpp:
-
-/home/GTL/apaul/ros2_hw1/install/face_msg/include/face_msg/face_msg/msg/rosidl_generator_cpp__visibility_control.hpp:
 
 /usr/include/boost/preprocessor/seq/size.hpp:
 
@@ -5271,8 +5237,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/arg.hpp:
 
-/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__type_support.hpp:
-
 /usr/include/boost/preprocessor/seq/for_each.hpp:
 
 /usr/include/boost/preprocessor/seq/elem.hpp:
@@ -5294,3 +5258,9 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 /usr/include/boost/mpl/sequence_tag_fwd.hpp:
 
 /usr/include/boost/mpl/aux_/begin_end_impl.hpp:
+
+/usr/include/boost/mpl/aux_/iter_apply.hpp:
+
+/opt/ros/humble/include/rmw/rmw/incompatible_qos_events_statuses.h:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/apply_fwd.hpp:
