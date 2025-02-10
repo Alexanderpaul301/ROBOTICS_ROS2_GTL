@@ -104,7 +104,7 @@ class RoverKinematics:
                 W[i,2] = drive_cfg[prefix[i//2]].x
                 
         iW = pinv(W)
-        print("iW",np.shape(iW))
+        #print("iW",np.shape(iW))
         return iW
 
     def prepare_displacement_matrix(self, motor_state_t1, motor_state_t2, drive_cfg):
@@ -115,7 +115,7 @@ class RoverKinematics:
         beta=np.asmatrix(np.zeros((n,1)))
         # Building beta (We want the angle to be in between -pi and pi) # ! Potentially a problem if the angle is in radius
         for i in range(n): 
-            print(motor_state_t2.steering[prefix[i]])
+            #print(motor_state_t2.steering[prefix[i]])
             # This part of the code is useless bc we compute the angle with a cos and sinus next.
             beta_temp = (motor_state_t2.steering[prefix[i]] + motor_state_t1.steering[prefix[i]])*1/2
             if np.abs(beta_temp)>pi:

@@ -3,7 +3,6 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/face_msg/msg/detail/roilist__builder.hpp"
   "rosidl_generator_cpp/face_msg/msg/detail/roilist__struct.hpp"
   "rosidl_generator_cpp/face_msg/msg/detail/roilist__traits.hpp"
-  "rosidl_generator_cpp/face_msg/msg/detail/roilist__type_support.hpp"
   "rosidl_generator_cpp/face_msg/msg/roilist.hpp"
 )
 

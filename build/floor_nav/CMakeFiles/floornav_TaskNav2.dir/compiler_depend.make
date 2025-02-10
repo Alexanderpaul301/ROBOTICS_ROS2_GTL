@@ -438,14 +438,12 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
   /usr/include/c++/11/bits/quoted_string.h \
-  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp \
-  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
-  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
   /opt/ros/humble/include/rcl/rcl/logging_rosout.h \
   /opt/ros/humble/include/rmw/rmw/incompatible_qos_events_statuses.h \
   /opt/ros/humble/include/rclcpp/rclcpp/type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/service_type_support_decl.hpp \
+  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp \
   /opt/ros/humble/include/rmw/rmw/error_handling.h \
   /opt/ros/humble/include/rmw/rmw/impl/cpp/demangle.hpp \
@@ -494,7 +492,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp \
-  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/rate.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp \
@@ -510,8 +507,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics_state.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription_traits.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp \
@@ -522,8 +517,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__builder.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__traits.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp \
-  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp \
-  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp \
   /usr/include/c++/11/cmath \
@@ -576,7 +569,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp \
@@ -585,7 +577,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_event.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp \
@@ -594,7 +585,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp \
   /opt/ros/humble/include/rcpputils/rcpputils/shared_library.hpp \
   /opt/ros/humble/include/rcutils/rcutils/shared_library.h \
@@ -610,16 +600,13 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
   /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_type.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_time_source_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_waitables_interface.hpp \
@@ -652,32 +639,26 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters_atomically.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/visibility_control.h \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_map.hpp \
@@ -720,16 +701,12 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__builder.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__traits.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__type_support.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__builder.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__type_support.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp \
@@ -738,32 +715,26 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__traits.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__type_support.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose2_d.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose2_d__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose2_d__builder.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose2_d__traits.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose2_d__type_support.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__builder.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__traits.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__traits.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__type_support.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/laser_scan.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/laser_scan__struct.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/laser_scan__builder.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/laser_scan__traits.hpp \
-  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/laser_scan__type_support.hpp \
-  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/point_cloud2.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__struct.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__struct.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__builder.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__traits.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__traits.hpp \
-  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__type_support.hpp \
   /home/GTL/apaul/ros2_hw1/install/face_msg/include/face_msg/face_msg/msg/roilist.hpp \
   /home/GTL/apaul/ros2_hw1/install/face_msg/include/face_msg/face_msg/msg/detail/roilist__struct.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/region_of_interest__struct.hpp \
@@ -1362,40 +1333,32 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
   /usr/include/boost/foreach_fwd.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/header.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__builder.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__type_support.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/image.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__struct.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__builder.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__traits.hpp \
-  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__type_support.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/point_field.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__builder.hpp \
-  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__type_support.hpp \
   /usr/include/pcl-1.12/pcl/PointIndices.h \
   /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/point_indices.hpp \
   /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/point_indices__struct.hpp \
   /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/point_indices__builder.hpp \
   /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/point_indices__traits.hpp \
-  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/point_indices__type_support.hpp \
-  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /usr/include/pcl-1.12/pcl/ModelCoefficients.h \
   /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/model_coefficients.hpp \
   /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/model_coefficients__struct.hpp \
   /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/model_coefficients__builder.hpp \
   /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/model_coefficients__traits.hpp \
-  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/model_coefficients__type_support.hpp \
   /usr/include/pcl-1.12/pcl/Vertices.h \
   /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/vertices.hpp \
   /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/vertices__struct.hpp \
   /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/vertices__builder.hpp \
   /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/vertices__traits.hpp \
-  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/vertices__type_support.hpp \
   /usr/include/pcl-1.12/pcl/PolygonMesh.h \
   /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/polygon_mesh.hpp \
   /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/polygon_mesh__struct.hpp \
   /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/polygon_mesh__builder.hpp \
   /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/polygon_mesh__traits.hpp \
-  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/polygon_mesh__type_support.hpp \
   /usr/include/pcl-1.12/pcl/io/pcd_io.h \
   /usr/include/pcl-1.12/pcl/io/file_io.h \
   /usr/include/boost/numeric/conversion/cast.hpp \
@@ -1665,12 +1628,10 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__builder.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__traits.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__traits.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__type_support.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/velocity_stamped.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__builder.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__traits.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__type_support.hpp \
   /opt/ros/humble/include/tf2/tf2/buffer_core_interface.h \
   /opt/ros/humble/include/tf2/tf2/time.h \
   /opt/ros/humble/include/tf2/tf2/exceptions.h \
@@ -1682,8 +1643,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
   /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp \
   /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__builder.hpp \
   /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__traits.hpp \
-  /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__type_support.hpp \
-  /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/tf2_ros/tf2_ros/qos.hpp \
   /opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h \
   /opt/ros/humble/include/tf2_ros/tf2_ros/async_buffer_interface.h \
@@ -1696,7 +1655,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
   /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__struct.hpp \
   /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__builder.hpp \
   /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__traits.hpp \
-  /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__type_support.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_nav2/include/task_manager_nav2/TaskActionNav2.h \
   /home/GTL/apaul/ros2_hw1/install/task_manager_lib/include/task_manager_lib/TaskActionGeneric.h \
   /opt/ros/humble/include/rclcpp_action/rclcpp_action/rclcpp_action.hpp \
@@ -1734,13 +1692,10 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
   /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status__traits.hpp \
   /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_info__traits.hpp \
   /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__traits.hpp \
-  /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status__type_support.hpp \
-  /opt/ros/humble/include/action_msgs/action_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/rclcpp_action/rclcpp_action/exceptions.hpp \
   /opt/ros/humble/include/rclcpp_action/rclcpp_action/types.hpp \
   /opt/ros/humble/include/action_msgs/action_msgs/msg/goal_info.hpp \
   /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_info__builder.hpp \
-  /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_info__type_support.hpp \
   /opt/ros/humble/include/rclcpp_action/rclcpp_action/visibility_control.hpp \
   /opt/ros/humble/include/rclcpp_action/rclcpp_action/client_goal_handle_impl.hpp \
   /opt/ros/humble/include/rclcpp_action/rclcpp_action/create_client.hpp \
@@ -1758,74 +1713,58 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
   /opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__struct.hpp \
   /opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__builder.hpp \
   /opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__traits.hpp \
-  /opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__type_support.hpp \
   /opt/ros/humble/include/action_msgs/action_msgs/msg/goal_status_array.hpp \
   /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__struct.hpp \
   /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__builder.hpp \
   /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__traits.hpp \
-  /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__type_support.hpp \
   /opt/ros/humble/include/nav2_msgs/nav2_msgs/action/detail/navigate_to_pose__builder.hpp \
   /opt/ros/humble/include/nav2_msgs/nav2_msgs/action/detail/navigate_to_pose__traits.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/empty__traits.hpp \
-  /opt/ros/humble/include/nav2_msgs/nav2_msgs/action/detail/navigate_to_pose__type_support.hpp \
-  /opt/ros/humble/include/nav2_msgs/nav2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point_stamped.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__builder.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__traits.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__type_support.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/quaternion_stamped.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__builder.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__traits.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__type_support.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/transform.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__builder.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__type_support.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/vector3.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__builder.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__type_support.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/vector3_stamped.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__builder.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__traits.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__type_support.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__builder.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__type_support.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point32.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__builder.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__traits.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__type_support.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_with_covariance.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__builder.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__traits.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__type_support.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_with_covariance_stamped.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__builder.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__traits.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__type_support.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/polygon_stamped.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__builder.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__traits.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon__traits.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__type_support.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/wrench.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__builder.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__traits.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__type_support.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/wrench_stamped.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench_stamped__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench_stamped__builder.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench_stamped__traits.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench_stamped__type_support.hpp \
   /usr/include/kdl/frames.hpp \
   /usr/include/kdl/utilities/kdl-config.h \
   /usr/include/kdl/utilities/utility.h \
@@ -1836,15 +1775,11 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /usr/include/kdl/frames.inl:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench_stamped__type_support.hpp:
-
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench_stamped__traits.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench_stamped__struct.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/wrench_stamped.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__type_support.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__traits.hpp:
 
@@ -1852,15 +1787,11 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/wrench.hpp:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__type_support.hpp:
-
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon__traits.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__builder.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__struct.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__type_support.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__traits.hpp:
 
@@ -1869,8 +1800,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_with_covariance_stamped.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__builder.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__type_support.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__traits.hpp:
 
@@ -1888,19 +1817,17 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__builder.hpp:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__builder.hpp:
+
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__builder.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/quaternion_stamped.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__type_support.hpp:
 
 /opt/ros/humble/include/nav2_msgs/nav2_msgs/action/detail/navigate_to_pose__builder.hpp:
 
 /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__builder.hpp:
 
 /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__struct.hpp:
-
-/opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__type_support.hpp:
 
 /opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__traits.hpp:
 
@@ -1925,8 +1852,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 /opt/ros/humble/include/action_msgs/action_msgs/msg/goal_info.hpp:
 
 /opt/ros/humble/include/rclcpp_action/rclcpp_action/types.hpp:
-
-/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status__type_support.hpp:
 
 /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__traits.hpp:
 
@@ -1968,8 +1893,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /home/GTL/apaul/ros2_hw1/install/task_manager_nav2/include/task_manager_nav2/TaskActionNav2.h:
 
-/opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__type_support.hpp:
-
 /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__traits.hpp:
 
 /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__builder.hpp:
@@ -2001,8 +1924,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 /opt/ros/humble/include/tf2/tf2/time.h:
 
 /opt/ros/humble/include/tf2/tf2/buffer_core_interface.h:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__type_support.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__traits.hpp:
 
@@ -2037,6 +1958,8 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 /usr/include/pcl-1.12/pcl/common/concatenate.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
 
 /usr/include/c++/11/fstream:
 
@@ -2224,8 +2147,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /usr/include/boost/type_traits/detail/has_binary_operator.hpp:
 
-/opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__type_support.hpp:
-
 /usr/include/boost/range/detail/safe_bool.hpp:
 
 /usr/include/boost/range/algorithm/equal.hpp:
@@ -2268,13 +2189,13 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /usr/include/boost/type_traits/conversion_traits.hpp:
 
-/opt/ros/humble/include/action_msgs/action_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
-
 /usr/include/boost/type_traits/conditional.hpp:
 
 /usr/include/boost/concept/detail/backward_compatibility.hpp:
 
 /usr/include/boost/concept/assert.hpp:
+
+/usr/include/boost/range/concepts.hpp:
 
 /usr/include/boost/core/enable_if.hpp:
 
@@ -2295,6 +2216,8 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 /opt/ros/humble/include/tf2_ros/tf2_ros/async_buffer_interface.h:
 
 /usr/include/boost/numeric/conversion/detail/numeric_cast_traits.hpp:
+
+/usr/include/boost/numeric/conversion/numeric_cast_traits.hpp:
 
 /usr/include/boost/numeric/conversion/detail/bounds.hpp:
 
@@ -2364,19 +2287,11 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /usr/include/pcl-1.12/pcl/ModelCoefficients.h:
 
-/opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
-
 /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/point_indices__traits.hpp:
 
 /usr/include/pcl-1.12/pcl/PointIndices.h:
 
-/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__type_support.hpp:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__type_support.hpp:
-
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__builder.hpp:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__type_support.hpp:
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__traits.hpp:
 
@@ -2385,8 +2300,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__struct.hpp:
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/image.hpp:
-
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__type_support.hpp:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__builder.hpp:
 
@@ -2522,8 +2435,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /usr/include/boost/current_function.hpp:
 
-/opt/ros/humble/include/nav2_msgs/nav2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
-
 /usr/include/pcl-1.12/pcl/exceptions.h:
 
 /usr/include/eigen3/Eigen/src/Geometry/ParametrizedLine.h:
@@ -2622,8 +2533,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /usr/include/boost/predef/detail/test.h:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__type_support.hpp:
-
 /usr/include/boost/predef/make.h:
 
 /usr/include/boost/predef/other/endian.h:
@@ -2641,8 +2550,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 /usr/include/boost/mpl/aux_/has_size.hpp:
 
 /usr/include/boost/mpl/aux_/O1_size_impl.hpp:
-
-/opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/point_indices__type_support.hpp:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/iter_fold_if_impl.hpp:
 
@@ -2708,8 +2615,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /usr/include/boost/mpl/arg.hpp:
 
-/opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
-
 /usr/include/boost/mpl/placeholders.hpp:
 
 /usr/include/boost/mpl/apply_fwd.hpp:
@@ -2718,51 +2623,11 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /usr/include/boost/mpl/aux_/iter_apply.hpp:
 
-/usr/include/boost/mpl/aux_/begin_end_impl.hpp:
+/usr/include/boost/preprocessor/facilities/identity.hpp:
 
-/opt/ros/humble/include/rclcpp_action/rclcpp_action/client_goal_handle.hpp:
+/usr/include/boost/range/size.hpp:
 
-/usr/include/boost/mpl/aux_/contains_impl.hpp:
-
-/usr/include/boost/date_time/time_resolution_traits.hpp:
-
-/usr/include/boost/mpl/sequence_tag.hpp:
-
-/usr/include/boost/mpl/contains.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/and.hpp:
-
-/usr/include/boost/mpl/and.hpp:
-
-/usr/include/boost/predef/os/ios.h:
-
-/usr/include/boost/preprocessor/seq/fold_left.hpp:
-
-/usr/include/boost/preprocessor/seq/transform.hpp:
-
-/usr/include/boost/preprocessor/seq/elem.hpp:
-
-/usr/include/boost/preprocessor/seq/seq.hpp:
-
-/usr/include/boost/preprocessor/repetition/detail/for.hpp:
-
-/usr/include/boost/date_time/year_month_day.hpp:
-
-/usr/include/boost/preprocessor/repetition/for.hpp:
-
-/usr/include/pcl-1.12/pcl/register_point_struct.h:
-
-/usr/include/pcl-1.12/pcl/types.h:
-
-/usr/include/boost/preprocessor/logical/not.hpp:
-
-/usr/include/boost/preprocessor/comparison/less_equal.hpp:
-
-/usr/include/boost/type_traits/detail/yes_no_type.hpp:
-
-/usr/include/boost/preprocessor/comparison/equal.hpp:
-
-/usr/include/pcl-1.12/pcl/pcl_config.h:
+/usr/include/eigen3/Eigen/src/Core/NestByValue.h:
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/region_of_interest__traits.hpp:
 
@@ -2813,8 +2678,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 /usr/include/boost/preprocessor/logical/bitand.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/create_intra_process_buffer.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__type_support.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/clock.hpp:
 
@@ -2892,8 +2755,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /opt/ros/humble/include/rcl/rcl/logging_rosout.h:
 
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
-
 /usr/include/c++/11/bits/locale_conv.h:
 
 /usr/include/eigen3/Eigen/src/Core/Random.h:
@@ -2956,8 +2817,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /usr/include/boost/mpl/void.hpp:
 
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp:
-
 /opt/ros/humble/include/rclcpp/rclcpp/logger.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/type_support_decl.hpp:
@@ -2967,6 +2826,8 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 /usr/include/boost/next_prior.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/Transpose.h:
+
+/usr/include/c++/11/tr1/hypergeometric.tcc:
 
 /usr/include/c++/11/sstream:
 
@@ -2985,8 +2846,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 /usr/include/boost/smart_ptr/detail/sp_counted_base_gcc_atomic.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/signal_ext.h:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__type_support.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp:
 
@@ -3076,6 +2935,8 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /usr/include/c++/11/bits/locale_facets.tcc:
 
+/usr/include/c++/11/codecvt:
+
 /usr/include/c++/11/bits/allocated_ptr.h:
 
 /opt/ros/humble/include/rcl/rcl/visibility_control.h:
@@ -3150,12 +3011,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /opt/ros/humble/include/rcutils/rcutils/types/char_array.h:
 
-/usr/include/boost/date_time/compiler_config.hpp:
-
-/usr/include/boost/mpl/begin_end.hpp:
-
-/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
-
 /opt/ros/humble/include/rclcpp/rclcpp/detail/resolve_enable_topic_statistics.hpp:
 
 /opt/ros/humble/include/rcutils/rcutils/time.h:
@@ -3165,6 +3020,10 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 /usr/include/boost/preprocessor/array/data.hpp:
 
 /opt/ros/humble/include/rcutils/rcutils/snprintf.h:
+
+/usr/include/boost/date_time/time_resolution_traits.hpp:
+
+/usr/include/boost/mpl/sequence_tag.hpp:
 
 /usr/include/boost/type_traits/has_minus_assign.hpp:
 
@@ -3276,8 +3135,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /usr/include/c++/11/bits/streambuf_iterator.h:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__type_support.hpp:
-
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h:
 
 /usr/include/c++/11/math.h:
@@ -3293,10 +3150,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 /usr/include/boost/mpl/O1_size.hpp:
 
 /usr/include/c++/11/bits/streambuf.tcc:
-
-/usr/include/boost/mpl/contains_fwd.hpp:
-
-/usr/include/c++/11/bits/stl_iterator_base_funcs.h:
 
 /usr/include/boost/preprocessor/control/if.hpp:
 
@@ -3339,6 +3192,10 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 /usr/include/boost/date_time/date.hpp:
 
 /usr/include/c++/11/bits/stl_algo.h:
+
+/opt/ros/humble/include/rclcpp_action/rclcpp_action/client_goal_handle.hpp:
+
+/usr/include/boost/mpl/aux_/contains_impl.hpp:
 
 /usr/include/boost/date_time/period.hpp:
 
@@ -3394,6 +3251,10 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
+/usr/include/boost/preprocessor/repetition/repeat_from_to.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/wchar2.h:
+
 /usr/include/boost/range/iterator_range_io.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
@@ -3442,12 +3303,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /usr/include/c++/11/bits/charconv.h:
 
-/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/CommaInitializer.h:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose2_d__builder.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
 /opt/ros/humble/include/rmw/rmw/get_topic_names_and_types.h:
@@ -3476,10 +3331,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /usr/include/stdio.h:
 
-/usr/include/boost/preprocessor/comparison/not_equal.hpp:
-
-/usr/include/c++/11/bits/string_view.tcc:
-
 /usr/include/c++/11/unordered_set:
 
 /usr/include/eigen3/Eigen/src/Core/ProductEvaluators.h:
@@ -3489,8 +3340,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 /usr/include/c++/11/typeinfo:
 
 /usr/include/c++/11/bits/node_handle.h:
-
-/usr/include/c++/11/bits/std_thread.h:
 
 /usr/include/c++/11/debug/assertions.h:
 
@@ -3515,6 +3364,10 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 /opt/ros/humble/include/rcl/rcl/publisher.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+
+/opt/ros/humble/include/rcl/rcl/node_options.h:
+
+/usr/include/features-time64.h:
 
 /usr/include/c++/11/system_error:
 
@@ -3562,10 +3415,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /usr/include/pcl-1.12/pcl/memory.h:
 
-/usr/include/boost/preprocessor/comparison/less.hpp:
-
-/usr/include/boost/mpl/aux_/yes_no.hpp:
-
 /home/GTL/apaul/ros2_hw1/src/floor_nav/tasks/TaskNav2.h:
 
 /usr/include/c++/11/typeindex:
@@ -3585,6 +3434,10 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 /usr/include/boost/numeric/conversion/udt_builtin_mixture_enum.hpp:
 
 /home/GTL/apaul/ros2_hw1/install/task_manager_lib/include/task_manager_lib/ServiceStorage.h:
+
+/usr/include/c++/11/bits/stl_iterator_base_funcs.h:
+
+/usr/include/boost/mpl/contains_fwd.hpp:
 
 /usr/include/c++/11/atomic:
 
@@ -3629,6 +3482,12 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 /opt/ros/humble/include/rcpputils/rcpputils/pointer_traits.hpp:
 
 /usr/include/c++/11/tr1/beta_function.tcc:
+
+/usr/include/eigen3/Eigen/src/Geometry/RotationBase.h:
+
+/usr/include/c++/11/tr1/poly_laguerre.tcc:
+
+/usr/include/c++/11/array:
 
 /usr/include/c++/11/iterator:
 
@@ -3694,13 +3553,15 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /usr/include/c++/11/bits/cpp_type_traits.h:
 
+/usr/include/c++/11/bits/std_thread.h:
+
+/usr/include/boost/preprocessor/logical/not.hpp:
+
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
 /usr/include/libintl.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
@@ -3732,6 +3593,14 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /usr/include/c++/11/bits/stl_function.h:
 
+/usr/include/c++/11/tr1/poly_hermite.tcc:
+
+/usr/include/c++/11/bits/memoryfwd.h:
+
+/usr/include/boost/type_traits/detail/yes_no_type.hpp:
+
+/usr/include/boost/preprocessor/comparison/equal.hpp:
+
 /usr/include/boost/type_traits/add_volatile.hpp:
 
 /usr/include/boost/predef/os/bsd/open.h:
@@ -3739,16 +3608,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:
 
 /usr/include/c++/11/initializer_list:
-
-/opt/ros/humble/include/action_msgs/action_msgs/msg/goal_status.h:
-
-/usr/include/boost/preprocessor/seq/detail/is_empty.hpp:
-
-/usr/include/c++/11/ext/string_conversions.h:
-
-/usr/include/boost/preprocessor/list/detail/fold_right.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp:
 
 /usr/include/c++/11/iosfwd:
 
@@ -3768,25 +3627,11 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h:
 
-/opt/ros/humble/include/rcl/rcl/node_options.h:
-
-/usr/include/features-time64.h:
-
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp:
-
-/opt/ros/humble/include/rcutils/rcutils/types/array_list.h:
-
 /usr/include/c++/11/ctime:
 
 /usr/include/eigen3/Eigen/src/LU/InverseImpl.h:
 
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
-
-/usr/include/pcl-1.12/pcl/PCLPointField.h:
-
-/usr/include/c++/11/bits/quoted_string.h:
 
 /usr/include/eigen3/Eigen/Jacobi:
 
@@ -3821,8 +3666,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 /usr/include/boost/numeric/conversion/detail/preprocessed/numeric_cast_traits_long_long.hpp:
 
 /usr/include/unistd.h:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__type_support.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp:
 
@@ -3859,10 +3702,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 /opt/ros/humble/include/tf2/tf2/buffer_core.h:
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
-
-/usr/include/c++/11/codecvt:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp:
 
 /usr/include/c++/11/future:
 
@@ -3924,6 +3763,14 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
+/usr/include/pcl-1.12/pcl/register_point_struct.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+
+/usr/include/c++/11/tr1/legendre_function.tcc:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
@@ -3939,6 +3786,10 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp:
+
+/usr/include/boost/predef/os/ios.h:
+
+/usr/include/boost/preprocessor/seq/fold_left.hpp:
 
 /usr/include/linux/errno.h:
 
@@ -3957,8 +3808,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 /usr/include/boost/mpl/aux_/msvc_eti_base.hpp:
 
 /usr/include/c++/11/bits/shared_ptr.h:
-
-/opt/ros/humble/include/nav2_msgs/nav2_msgs/action/detail/navigate_to_pose__type_support.hpp:
 
 /usr/include/boost/mpl/aux_/find_if_pred.hpp:
 
@@ -3991,6 +3840,8 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 /usr/include/c++/11/cstdio:
 
 /usr/include/c++/11/ratio:
+
+/usr/include/pcl-1.12/pcl/types.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/any_subscription_callback.hpp:
 
@@ -4036,6 +3887,10 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h:
 
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__struct.hpp:
+
+/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp:
+
 /usr/include/boost/preprocessor/tuple/detail/is_single_return.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
@@ -4043,6 +3898,8 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__traits.hpp:
 
 /opt/ros/humble/include/rcpputils/rcpputils/filesystem_helper.hpp:
+
+/opt/ros/humble/include/rcutils/rcutils/types/array_list.h:
 
 /usr/include/c++/11/utility:
 
@@ -4088,8 +3945,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp:
 
-/opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/model_coefficients__type_support.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/sched.h:
 
 /usr/include/boost/numeric/conversion/detail/is_subranged.hpp:
@@ -4121,8 +3976,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 /usr/include/boost/mpl/find.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
-
-/opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/polygon_mesh__type_support.hpp:
 
 /usr/include/boost/detail/select_type.hpp:
 
@@ -4184,8 +4037,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /usr/include/c++/11/csignal:
 
-/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_info__type_support.hpp:
-
 /opt/ros/humble/include/rcl/rcl/service.h:
 
 /usr/include/boost/mpl/vector/aux_/pop_front.hpp:
@@ -4203,12 +4054,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 /usr/include/boost/mpl/aux_/full_lambda.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/signum-arch.h:
-
-/usr/include/boost/preprocessor/repetition/repeat_from_to.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/wchar2.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp:
 
 /usr/include/boost/core/ref.hpp:
 
@@ -4352,37 +4197,11 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /usr/include/c++/11/bits/move.h:
 
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__type_support.hpp:
-
-/usr/include/c++/11/tr1/hypergeometric.tcc:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
-
-/usr/include/c++/11/tr1/legendre_function.tcc:
-
-/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__struct.hpp:
-
-/usr/include/boost/preprocessor/facilities/identity.hpp:
-
-/usr/include/boost/range/size.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/NestByValue.h:
-
-/usr/include/c++/11/bits/memoryfwd.h:
-
-/usr/include/c++/11/tr1/poly_hermite.tcc:
-
-/usr/include/eigen3/Eigen/src/Geometry/RotationBase.h:
-
-/usr/include/c++/11/array:
-
-/usr/include/c++/11/tr1/poly_laguerre.tcc:
-
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp:
+
+/usr/include/boost/date_time/compiler_config.hpp:
+
+/usr/include/boost/mpl/begin_end.hpp:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/full_lambda.hpp:
 
@@ -4403,6 +4222,8 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 /opt/ros/humble/include/rcpputils/rcpputils/thread_safety_annotations.hpp:
 
 /usr/include/boost/mpl/apply_wrap.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/and.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/get_message_type_support_handle.hpp:
 
@@ -4472,8 +4293,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp:
-
 /opt/ros/humble/include/rcpputils/rcpputils/shared_library.hpp:
 
 /opt/ros/humble/include/rcutils/rcutils/shared_library.h:
@@ -4502,17 +4321,11 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter.hpp:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__type_support.hpp:
-
 /usr/include/boost/mpl/or.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp:
-
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp:
 
 /usr/include/c++/11/bits/unordered_set.h:
 
@@ -4553,10 +4366,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_timers_interface.hpp:
-
-/usr/include/boost/range/concepts.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:
 
@@ -4612,23 +4421,11 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp:
-
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/transform_stamped.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp:
-
-/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__traits.hpp:
-
-/usr/include/c++/11/bits/refwrap.h:
-
-/usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp:
 
@@ -4637,10 +4434,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 /opt/ros/humble/include/rclcpp/rclcpp/detail/cpp_callback_trampoline.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/products/SelfadjointRank2Update.h:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__builder.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__type_support.hpp:
 
 /usr/include/c++/11/bits/hash_bytes.h:
 
@@ -4716,15 +4509,17 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__builder.hpp:
 
+/usr/include/boost/preprocessor/repetition/detail/for.hpp:
+
+/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__traits.hpp:
+
+/usr/include/c++/11/bits/refwrap.h:
+
+/usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h:
+
 /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/task_config.hpp:
 
 /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__struct.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/arg.hpp:
-
-/usr/include/boost/preprocessor/seq/for_each.hpp:
-
-/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__type_support.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/CwiseUnaryView.h:
 
@@ -4752,8 +4547,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__type_support.hpp:
-
 /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status__struct.hpp:
 
 /opt/ros/humble/include/rmw/rmw/network_flow_endpoint_array.h:
@@ -4768,23 +4561,9 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /usr/include/boost/preprocessor/tuple/rem.hpp:
 
-/opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
-
-/usr/include/eigen3/Eigen/src/plugins/BlockMethods.h:
-
-/usr/include/boost/mpl/aux_/push_front_impl.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:
-
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_parameters_interface.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__type_support.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
 /usr/include/c++/11/ios:
 
@@ -4820,17 +4599,11 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp:
 
-/usr/include/boost/numeric/conversion/numeric_cast_traits.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__type_support.hpp:
-
 /usr/include/boost/type_traits/is_rvalue_reference.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose2_d.hpp:
 
 /usr/include/boost/config/detail/select_platform_config.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose2_d__type_support.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp:
 
@@ -4858,21 +4631,15 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__builder.hpp:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__type_support.hpp:
-
 /usr/include/c++/11/bits/cxxabi_forced.h:
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/laser_scan__struct.hpp:
 
+/usr/include/boost/preprocessor/comparison/less_equal.hpp:
+
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/laser_scan__builder.hpp:
 
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/laser_scan__type_support.hpp:
-
 /usr/include/eigen3/Eigen/src/Core/CoreIterators.h:
-
-/usr/include/boost/mpl/aux_/config/ctps.hpp:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__struct.hpp:
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__builder.hpp:
 
@@ -4954,11 +4721,13 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /usr/include/boost/mpl/aux_/na_spec.hpp:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__type_support.hpp:
-
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__struct.hpp:
 
 /usr/include/boost/mpl/lambda_fwd.hpp:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__struct.hpp:
+
+/usr/include/boost/mpl/aux_/config/ctps.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface_traits.hpp:
 
@@ -5004,8 +4773,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /usr/include/boost/preprocessor/comma_if.hpp:
 
-/opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/vertices__type_support.hpp:
-
 /usr/include/boost/preprocessor/punctuation/comma_if.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h:
@@ -5048,8 +4815,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /opt/ros/humble/include/rclcpp/rclcpp/allocator/allocator_deleter.hpp:
 
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__type_support.hpp:
-
 /usr/include/boost/preprocessor/control/detail/while.hpp:
 
 /usr/include/eigen3/Eigen/src/Geometry/Hyperplane.h:
@@ -5066,12 +4831,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /usr/include/boost/preprocessor/facilities/overload.hpp:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp:
-
-/usr/include/boost/mpl/push_front_fwd.hpp:
-
-/usr/include/boost/preprocessor/variadic/size.hpp:
-
 /usr/include/boost/preprocessor/variadic/elem.hpp:
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/point_cloud2.hpp:
@@ -5082,7 +4841,7 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /usr/include/boost/mpl/aux_/config/overload_resolution.hpp:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__type_support.hpp:
+/usr/include/boost/mpl/and.hpp:
 
 /usr/include/boost/mpl/aux_/lambda_support.hpp:
 
@@ -5133,6 +4892,12 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 /opt/ros/humble/include/rclcpp_action/rclcpp_action/rclcpp_action.hpp:
 
 /usr/include/boost/mpl/vector/aux_/push_front.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp:
+
+/usr/include/boost/preprocessor/variadic/size.hpp:
+
+/usr/include/boost/mpl/push_front_fwd.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp:
 
@@ -5216,8 +4981,6 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /usr/include/boost/mpl/aux_/is_msvc_eti_arg.hpp:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp:
-
 /usr/include/c++/11/tr1/bessel_function.tcc:
 
 /usr/include/eigen3/Eigen/src/Core/util/ReshapedHelper.h:
@@ -5238,11 +5001,11 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /usr/include/boost/mpl/prior.hpp:
 
+/usr/include/c++/11/tr1/modified_bessel_func.tcc:
+
 /usr/include/c++/11/bits/ostream.tcc:
 
 /opt/ros/humble/include/rclcpp/rclcpp/create_generic_publisher.hpp:
-
-/usr/include/c++/11/tr1/modified_bessel_func.tcc:
 
 /usr/include/boost/mpl/size_fwd.hpp:
 
@@ -5270,6 +5033,8 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /usr/include/eigen3/Eigen/src/Core/util/ConfigureVectorization.h:
 
+/usr/include/boost/mpl/contains.hpp:
+
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon__struct.hpp:
 
 /usr/include/c++/11/climits:
@@ -5284,9 +5049,9 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /opt/ros/humble/include/action_msgs/action_msgs/srv/cancel_goal.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/detail/rmw_implementation_specific_subscription_payload.hpp:
-
 /opt/ros/humble/include/rcl/rcl/error_handling.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/detail/rmw_implementation_specific_subscription_payload.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/MathFunctions.h:
 
@@ -5304,13 +5069,13 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /usr/include/eigen3/Eigen/src/Core/util/XprHelper.h:
 
+/usr/include/boost/date_time/year_month_day.hpp:
+
+/usr/include/boost/preprocessor/repetition/for.hpp:
+
 /usr/include/eigen3/Eigen/src/Core/util/Memory.h:
 
 /usr/include/eigen3/Eigen/src/Core/NumTraits.h:
-
-/usr/include/boost/mpl/sequence_tag_fwd.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:
 
 /usr/include/eigen3/Eigen/src/Core/MathFunctionsImpl.h:
 
@@ -5369,6 +5134,12 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 /usr/include/eigen3/Eigen/src/Core/ArithmeticSequence.h:
 
 /usr/include/eigen3/Eigen/src/Core/IO.h:
+
+/usr/include/eigen3/Eigen/src/plugins/BlockMethods.h:
+
+/usr/include/boost/mpl/aux_/push_front_impl.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:
 
 /usr/include/eigen3/Eigen/src/plugins/IndexedViewMethods.h:
 
@@ -5446,6 +5217,10 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /usr/include/eigen3/Eigen/src/Core/Redux.h:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose2_d__builder.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/CommaInitializer.h:
+
 /usr/include/eigen3/Eigen/src/Core/Solve.h:
 
 /usr/include/eigen3/Eigen/src/Core/TriangularMatrix.h:
@@ -5476,4 +5251,46 @@ CMakeFiles/floornav_TaskNav2.dir/tasks/TaskNav2.cpp.o: /home/GTL/apaul/ros2_hw1/
 
 /usr/include/eigen3/Eigen/src/Core/GlobalFunctions.h:
 
+/usr/include/boost/preprocessor/seq/seq.hpp:
+
 /usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h:
+
+/usr/include/pcl-1.12/pcl/pcl_config.h:
+
+/usr/include/c++/11/bits/string_view.tcc:
+
+/usr/include/boost/preprocessor/comparison/not_equal.hpp:
+
+/usr/include/boost/mpl/aux_/yes_no.hpp:
+
+/usr/include/boost/preprocessor/comparison/less.hpp:
+
+/usr/include/c++/11/bits/quoted_string.h:
+
+/usr/include/pcl-1.12/pcl/PCLPointField.h:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/arg.hpp:
+
+/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_config__type_support.hpp:
+
+/usr/include/boost/preprocessor/seq/for_each.hpp:
+
+/usr/include/boost/preprocessor/seq/elem.hpp:
+
+/opt/ros/humble/include/action_msgs/action_msgs/msg/goal_status.h:
+
+/usr/include/c++/11/ext/string_conversions.h:
+
+/usr/include/boost/preprocessor/list/detail/fold_right.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp:
+
+/usr/include/boost/preprocessor/seq/detail/is_empty.hpp:
+
+/usr/include/boost/preprocessor/seq/transform.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:
+
+/usr/include/boost/mpl/sequence_tag_fwd.hpp:
+
+/usr/include/boost/mpl/aux_/begin_end_impl.hpp:

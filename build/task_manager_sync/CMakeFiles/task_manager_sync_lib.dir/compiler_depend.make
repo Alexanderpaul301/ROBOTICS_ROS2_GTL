@@ -427,14 +427,12 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskEnvironmentSync.cpp.o: /home/GTL/ap
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
   /usr/include/c++/11/bits/quoted_string.h \
-  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp \
-  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
-  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
   /opt/ros/humble/include/rcl/rcl/logging_rosout.h \
   /opt/ros/humble/include/rmw/rmw/incompatible_qos_events_statuses.h \
   /opt/ros/humble/include/rclcpp/rclcpp/type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/service_type_support_decl.hpp \
+  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp \
   /opt/ros/humble/include/rmw/rmw/error_handling.h \
   /opt/ros/humble/include/rmw/rmw/impl/cpp/demangle.hpp \
@@ -483,7 +481,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskEnvironmentSync.cpp.o: /home/GTL/ap
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp \
-  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/rate.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp \
@@ -499,8 +496,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskEnvironmentSync.cpp.o: /home/GTL/ap
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics_state.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription_traits.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp \
@@ -511,8 +506,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskEnvironmentSync.cpp.o: /home/GTL/ap
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__builder.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__traits.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp \
-  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp \
-  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp \
   /usr/include/c++/11/cmath \
@@ -565,7 +558,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskEnvironmentSync.cpp.o: /home/GTL/ap
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp \
@@ -574,7 +566,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskEnvironmentSync.cpp.o: /home/GTL/ap
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_event.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp \
@@ -583,7 +574,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskEnvironmentSync.cpp.o: /home/GTL/ap
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp \
   /opt/ros/humble/include/rcpputils/rcpputils/shared_library.hpp \
   /opt/ros/humble/include/rcutils/rcutils/shared_library.h \
@@ -599,16 +589,13 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskEnvironmentSync.cpp.o: /home/GTL/ap
   /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_type.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_time_source_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_waitables_interface.hpp \
@@ -641,32 +628,26 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskEnvironmentSync.cpp.o: /home/GTL/ap
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters_atomically.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/visibility_control.h \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_map.hpp \
@@ -1122,14 +1103,12 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskServerSync.cpp.o: /home/GTL/apaul/r
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
   /usr/include/c++/11/bits/quoted_string.h \
-  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp \
-  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
-  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
   /opt/ros/humble/include/rcl/rcl/logging_rosout.h \
   /opt/ros/humble/include/rmw/rmw/incompatible_qos_events_statuses.h \
   /opt/ros/humble/include/rclcpp/rclcpp/type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/service_type_support_decl.hpp \
+  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp \
   /opt/ros/humble/include/rmw/rmw/error_handling.h \
   /opt/ros/humble/include/rmw/rmw/impl/cpp/demangle.hpp \
@@ -1178,7 +1157,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskServerSync.cpp.o: /home/GTL/apaul/r
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp \
-  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/rate.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp \
@@ -1194,8 +1172,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskServerSync.cpp.o: /home/GTL/apaul/r
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics_state.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription_traits.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp \
@@ -1206,8 +1182,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskServerSync.cpp.o: /home/GTL/apaul/r
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__builder.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__traits.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp \
-  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp \
-  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp \
   /usr/include/c++/11/cmath \
@@ -1260,7 +1234,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskServerSync.cpp.o: /home/GTL/apaul/r
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp \
@@ -1269,7 +1242,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskServerSync.cpp.o: /home/GTL/apaul/r
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_event.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp \
@@ -1278,7 +1250,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskServerSync.cpp.o: /home/GTL/apaul/r
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp \
   /opt/ros/humble/include/rcpputils/rcpputils/shared_library.hpp \
   /opt/ros/humble/include/rcutils/rcutils/shared_library.h \
@@ -1294,16 +1265,13 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskServerSync.cpp.o: /home/GTL/apaul/r
   /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_type.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_time_source_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_waitables_interface.hpp \
@@ -1336,32 +1304,26 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskServerSync.cpp.o: /home/GTL/apaul/r
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters_atomically.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/visibility_control.h \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_map.hpp \
@@ -1406,16 +1368,12 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskServerSync.cpp.o: /home/GTL/apaul/r
   /opt/ros/humble/include/std_srvs/std_srvs/srv/detail/empty__struct.hpp \
   /opt/ros/humble/include/std_srvs/std_srvs/srv/detail/empty__builder.hpp \
   /opt/ros/humble/include/std_srvs/std_srvs/srv/detail/empty__traits.hpp \
-  /opt/ros/humble/include/std_srvs/std_srvs/srv/detail/empty__type_support.hpp \
-  /opt/ros/humble/include/std_srvs/std_srvs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_lib/include/task_manager_lib/TaskScheduler.h \
   /home/GTL/apaul/ros2_hw1/install/task_manager_lib/include/task_manager_lib/TaskInstance.h \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/header.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__builder.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__traits.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__type_support.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/start_task.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/start_task__struct.hpp \
   /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/start_task__builder.hpp \
@@ -2750,14 +2708,12 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskSetStatusSync.cpp.o: /home/GTL/apau
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
   /usr/include/c++/11/bits/quoted_string.h \
-  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp \
-  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
-  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
   /opt/ros/humble/include/rcl/rcl/logging_rosout.h \
   /opt/ros/humble/include/rmw/rmw/incompatible_qos_events_statuses.h \
   /opt/ros/humble/include/rclcpp/rclcpp/type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/service_type_support_decl.hpp \
+  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp \
   /opt/ros/humble/include/rmw/rmw/error_handling.h \
   /opt/ros/humble/include/rmw/rmw/impl/cpp/demangle.hpp \
@@ -2806,7 +2762,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskSetStatusSync.cpp.o: /home/GTL/apau
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp \
-  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/rate.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp \
@@ -2822,8 +2777,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskSetStatusSync.cpp.o: /home/GTL/apau
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics_state.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription_traits.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp \
@@ -2834,8 +2787,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskSetStatusSync.cpp.o: /home/GTL/apau
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__builder.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__traits.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp \
-  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp \
-  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp \
   /usr/include/c++/11/cmath \
@@ -2888,7 +2839,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskSetStatusSync.cpp.o: /home/GTL/apau
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp \
@@ -2897,7 +2847,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskSetStatusSync.cpp.o: /home/GTL/apau
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_event.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp \
@@ -2906,7 +2855,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskSetStatusSync.cpp.o: /home/GTL/apau
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp \
   /opt/ros/humble/include/rcpputils/rcpputils/shared_library.hpp \
   /opt/ros/humble/include/rcutils/rcutils/shared_library.h \
@@ -2922,16 +2870,13 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskSetStatusSync.cpp.o: /home/GTL/apau
   /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_type.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_time_source_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_waitables_interface.hpp \
@@ -2964,32 +2909,26 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskSetStatusSync.cpp.o: /home/GTL/apau
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters_atomically.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/visibility_control.h \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_map.hpp \
@@ -3465,14 +3404,12 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
   /usr/include/c++/11/bits/quoted_string.h \
-  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp \
-  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
-  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
   /opt/ros/humble/include/rcl/rcl/logging_rosout.h \
   /opt/ros/humble/include/rmw/rmw/incompatible_qos_events_statuses.h \
   /opt/ros/humble/include/rclcpp/rclcpp/type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/service_type_support_decl.hpp \
+  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp \
   /opt/ros/humble/include/rmw/rmw/error_handling.h \
   /opt/ros/humble/include/rmw/rmw/impl/cpp/demangle.hpp \
@@ -3521,7 +3458,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp \
-  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/rate.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp \
@@ -3537,8 +3473,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics_state.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription_traits.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp \
@@ -3549,8 +3483,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__builder.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__traits.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp \
-  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp \
-  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp \
   /usr/include/c++/11/cmath \
@@ -3603,7 +3535,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp \
@@ -3612,7 +3543,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_event.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp \
@@ -3621,7 +3551,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp \
   /opt/ros/humble/include/rcpputils/rcpputils/shared_library.hpp \
   /opt/ros/humble/include/rcutils/rcutils/shared_library.h \
@@ -3637,16 +3566,13 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
   /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_type.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_time_source_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_waitables_interface.hpp \
@@ -3679,32 +3605,26 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters_atomically.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp \
-  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/visibility_control.h \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_map.hpp \
@@ -3798,6 +3718,8 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 /usr/include/boost/function/detail/prologue.hpp:
 
 /usr/include/boost/preprocessor/iterate.hpp:
+
+/usr/include/boost/function.hpp:
 
 /usr/include/boost/optional/detail/optional_swap.hpp:
 
@@ -3929,6 +3851,8 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 
 /usr/include/boost/thread/detail/variadic_footer.hpp:
 
+/usr/include/boost/preprocessor/repetition/repeat_from_to.hpp:
+
 /usr/include/boost/core/swap.hpp:
 
 /usr/include/boost/utility/swap.hpp:
@@ -3982,6 +3906,8 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 /usr/include/boost/atomic/detail/type_traits/is_iec559.hpp:
 
 /usr/include/boost/atomic/detail/extra_fp_ops_generic.hpp:
+
+/usr/include/boost/atomic/detail/fp_ops_generic.hpp:
 
 /usr/include/boost/atomic/detail/type_traits/conditional.hpp:
 
@@ -4052,6 +3978,8 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 /usr/include/linux/stddef.h:
 
 /usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
+
+/usr/include/asm-generic/int-ll64.h:
 
 /usr/include/asm-generic/types.h:
 
@@ -4152,6 +4080,8 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 /usr/include/boost/bind/mem_fn_cc.hpp:
 
 /usr/include/boost/config/no_tr1/memory.hpp:
+
+/usr/include/boost/mem_fn.hpp:
 
 /usr/include/boost/ref.hpp:
 
@@ -4361,49 +4291,21 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 
 /usr/include/boost/predef/compiler/visualc.h:
 
-/usr/include/boost/predef/compiler/tendra.h:
+/usr/include/linux/close_range.h:
 
-/usr/include/boost/predef/compiler/sunpro.h:
+/usr/include/boost/mpl/aux_/config/dependent_nttp.hpp:
 
-/usr/include/boost/predef/compiler/sgi_mipspro.h:
+/usr/include/c++/11/numeric:
 
-/usr/include/boost/predef/compiler/pgi.h:
-
-/usr/include/boost/function/detail/maybe_include.hpp:
-
-/usr/include/boost/predef/compiler/nvcc.h:
-
-/usr/include/boost/predef/compiler/microtec.h:
-
-/usr/include/boost/predef/compiler/metaware.h:
-
-/usr/include/boost/mpl/next_prior.hpp:
-
-/usr/include/boost/predef/compiler/llvm.h:
-
-/usr/include/boost/predef/compiler/kai.h:
-
-/usr/include/boost/predef/compiler/hp_acc.h:
-
-/usr/include/boost/predef/compiler/palm.h:
-
-/usr/include/boost/predef/compiler/greenhills.h:
-
-/usr/include/boost/atomic/detail/wait_operations.hpp:
-
-/usr/include/boost/predef/detail/comp_detected.h:
-
-/usr/include/boost/type_traits/is_assignable.hpp:
-
-/usr/include/boost/predef/compiler/gcc.h:
-
-/usr/include/boost/predef/compiler/ekopath.h:
-
-/usr/include/boost/predef/compiler/edg.h:
+/opt/ros/humble/include/rmw/rmw/ret_types.h:
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp:
 
 /usr/include/boost/date_time/year_month_day.hpp:
+
+/usr/include/boost/predef/library/c/vms.h:
+
+/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/metric_details_interface.hpp:
 
 /usr/include/limits.h:
 
@@ -4521,6 +4423,10 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 
 /usr/include/boost/type_traits/conditional.hpp:
 
+/usr/include/boost/type_traits/is_assignable.hpp:
+
+/usr/include/boost/predef/compiler/gcc.h:
+
 /opt/ros/humble/include/rcpputils/rcpputils/time.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
@@ -4555,14 +4461,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 
 /opt/ros/humble/include/rcl/rcl/logging_rosout.h:
 
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
-
-/usr/include/boost/smart_ptr/detail/sp_has_sync_intrinsics.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/subscription_base.hpp:
-
-/usr/include/boost/predef/architecture/superh.h:
-
 /usr/include/c++/11/bits/locale_conv.h:
 
 /usr/include/c++/11/bits/locale_facets_nonio.tcc:
@@ -4588,6 +4486,8 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/stop_task.hpp:
 
 /usr/include/boost/preprocessor/list/reverse.hpp:
+
+/usr/include/boost/predef/compiler/ekopath.h:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp:
 
@@ -4624,10 +4524,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp:
 
 /usr/include/boost/mpl/void.hpp:
-
-/usr/include/boost/atomic/detail/fp_ops_generic.hpp:
-
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp:
 
 /usr/include/boost/thread/shared_lock_guard.hpp:
 
@@ -4681,6 +4577,8 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 
 /opt/ros/humble/include/rcpputils/rcpputils/scope_exit.hpp:
 
+/usr/include/boost/predef/compiler/hp_acc.h:
+
 /usr/include/boost/checked_delete.hpp:
 
 /opt/ros/humble/include/rcl/rcl/event.h:
@@ -4727,12 +4625,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 
 /opt/ros/humble/include/rcl/rcl/service.h:
 
-/usr/include/boost/predef/compiler/iar.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:
-
-/opt/ros/humble/include/rcl/rcl/domain_id.h:
-
 /usr/include/boost/atomic/detail/type_traits/make_unsigned.hpp:
 
 /usr/include/boost/numeric/conversion/detail/preprocessed/numeric_cast_traits_common.hpp:
@@ -4765,6 +4657,8 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 
 /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/types.h:
 
+/usr/include/c++/11/codecvt:
+
 /usr/include/c++/11/bits/allocated_ptr.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/service.hpp:
@@ -4784,8 +4678,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 /usr/include/boost/atomic/detail/extra_ops_gcc_x86.hpp:
 
 /opt/ros/humble/include/rmw/rmw/events_statuses/message_lost.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp:
 
 /usr/include/c++/11/tr1/bessel_function.tcc:
 
@@ -4841,6 +4733,8 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 
 /opt/ros/humble/include/rcutils/rcutils/types.h:
 
+/usr/include/boost/mpl/apply_wrap.hpp:
+
 /opt/ros/humble/include/rcutils/rcutils/time.h:
 
 /usr/include/boost/move/traits.hpp:
@@ -4881,8 +4775,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 
 /usr/include/boost/predef/compiler/diab.h:
 
-/opt/ros/humble/include/rmw/rmw/ret_types.h:
-
 /opt/ros/humble/include/rmw/rmw/macros.h:
 
 /opt/ros/humble/include/rmw/rmw/visibility_control.h:
@@ -4914,10 +4806,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 /usr/include/boost/mpl/arg_fwd.hpp:
 
 /opt/ros/humble/include/rcutils/rcutils/testing/fault_injection.h:
-
-/usr/include/boost/predef/compiler/intel.h:
-
-/opt/ros/humble/include/rcutils/rcutils/macros.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h:
 
@@ -5063,8 +4951,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 
 /opt/ros/humble/include/rcpputils/rcpputils/join.hpp:
 
-/usr/include/linux/close_range.h:
-
 /usr/include/c++/11/bits/stl_uninitialized.h:
 
 /usr/include/c++/11/ext/new_allocator.h:
@@ -5144,6 +5030,8 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 /usr/include/wchar.h:
 
 /usr/include/boost/date_time/gregorian/greg_duration_types.hpp:
+
+/usr/include/boost/predef/compiler/edg.h:
 
 /usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
@@ -5325,10 +5213,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 
 /home/GTL/apaul/ros2_hw1/install/task_manager_lib/include/task_manager_lib/TaskServerDefault.h:
 
-/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp:
-
-/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/get_task_list__builder.hpp:
-
 /usr/include/boost/preprocessor/repetition/enum_shifted_params.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
@@ -5367,11 +5251,13 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 
 /opt/ros/humble/include/rcl/rcl/node_options.h:
 
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp:
-
 /usr/include/features-time64.h:
 
 /usr/include/c++/11/system_error:
+
+/opt/ros/humble/include/rcutils/rcutils/macros.h:
+
+/usr/include/boost/predef/compiler/intel.h:
 
 /usr/include/c++/11/unordered_set:
 
@@ -5396,8 +5282,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 /usr/include/x86_64-linux-gnu/bits/environments.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
-
-/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
 /usr/include/boost/date_time/compiler_config.hpp:
 
@@ -5426,6 +5310,10 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 /usr/include/c++/11/ext/string_conversions.h:
 
 /usr/include/boost/preprocessor/list/detail/fold_right.hpp:
+
+/opt/ros/humble/include/rcpputils/rcpputils/thread_safety_annotations.hpp:
+
+/usr/include/c++/11/bits/atomic_base.h:
 
 /usr/include/features.h:
 
@@ -5473,11 +5361,11 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 
 /opt/ros/humble/include/rclcpp/rclcpp/detail/resolve_intra_process_buffer_type.hpp:
 
+/usr/include/boost/predef/compiler/metaware.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
 /usr/include/libintl.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
@@ -5561,6 +5449,10 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:
+
+/usr/include/boost/predef/compiler/mpw.h:
+
 /usr/include/c++/11/bits/parse_numbers.h:
 
 /usr/include/boost/date_time/gregorian_calendar.hpp:
@@ -5576,6 +5468,8 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h:
 
 /usr/include/x86_64-linux-gnu/bits/time.h:
+
+/usr/include/boost/predef/compiler/pgi.h:
 
 /usr/include/c++/11/bits/stl_relops.h:
 
@@ -5632,6 +5526,14 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 /usr/include/c++/11/bits/uniform_int_dist.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+
+/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/collector.hpp:
+
+/usr/include/c++/11/bitset:
+
+/opt/ros/humble/include/rclcpp/rclcpp/experimental/subscription_intra_process_buffer.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_timers_interface_traits.hpp:
 
 /usr/include/boost/atomic/detail/type_traits/is_integral.hpp:
 
@@ -5765,10 +5667,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 
 /usr/include/x86_64-linux-gnu/bits/signum-arch.h:
 
-/usr/include/boost/preprocessor/repetition/repeat_from_to.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
 /usr/include/boost/type_traits/remove_volatile.hpp:
@@ -5795,14 +5693,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 
 /usr/include/c++/11/functional:
 
-/usr/include/boost/predef/os/cygwin.h:
-
-/usr/include/boost/predef/compiler/dignus.h:
-
-/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp:
-
 /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/stop_task__traits.hpp:
 
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp:
@@ -5819,13 +5709,9 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 
 /usr/include/c++/11/stdexcept:
 
-/usr/include/boost/mem_fn.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
-
-/usr/include/c++/11/bits/std_thread.h:
-
 /usr/include/c++/11/bits/localefwd.h:
+
+/usr/include/c++/11/pstl/glue_numeric_defs.h:
 
 /usr/include/boost/thread/futures/future_status.hpp:
 
@@ -5860,14 +5746,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
-
-/usr/include/boost/predef/compiler/mpw.h:
-
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:
-
-/usr/include/boost/mpl/aux_/config/dependent_nttp.hpp:
-
-/usr/include/c++/11/numeric:
 
 /usr/include/boost/detail/select_type.hpp:
 
@@ -5911,10 +5789,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
-/usr/include/c++/11/codecvt:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp:
-
 /usr/include/boost/exception/current_exception_cast.hpp:
 
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp:
@@ -5930,6 +5804,8 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 /opt/ros/humble/include/rcutils/rcutils/logging_macros.h:
 
 /usr/include/boost/preprocessor/repeat.hpp:
+
+/usr/include/c++/11/bits/std_thread.h:
 
 /usr/include/boost/system/detail/system_category_posix.hpp:
 
@@ -5969,6 +5845,14 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 
 /opt/ros/humble/include/rcpputils/rcpputils/pointer_traits.hpp:
 
+/usr/include/boost/predef/os/cygwin.h:
+
+/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp:
+
+/usr/include/boost/predef/compiler/dignus.h:
+
 /usr/include/c++/11/bits/stl_heap.h:
 
 /usr/include/boost/get_pointer.hpp:
@@ -5988,26 +5872,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 /usr/include/boost/type_traits/is_enum.hpp:
 
 /usr/include/boost/type_traits/detail/config.hpp:
-
-/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/collector.hpp:
-
-/usr/include/c++/11/bitset:
-
-/opt/ros/humble/include/rclcpp/rclcpp/experimental/subscription_intra_process_buffer.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_timers_interface_traits.hpp:
-
-/usr/include/c++/11/pstl/glue_numeric_defs.h:
-
-/usr/include/c++/11/bits/atomic_base.h:
-
-/opt/ros/humble/include/rcpputils/rcpputils/thread_safety_annotations.hpp:
-
-/usr/include/boost/mpl/apply_wrap.hpp:
-
-/usr/include/boost/predef/library/c/vms.h:
-
-/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/metric_details_interface.hpp:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/and.hpp:
 
@@ -6075,10 +5939,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp:
 
-/usr/include/boost/function.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp:
-
 /opt/ros/humble/include/rcpputils/rcpputils/shared_library.hpp:
 
 /opt/ros/humble/include/rcutils/rcutils/shared_library.h:
@@ -6107,8 +5967,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter.hpp:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__type_support.hpp:
-
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_type.hpp:
 
 /usr/include/boost/numeric/conversion/detail/meta.hpp:
@@ -6117,17 +5975,9 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp:
-
-/usr/include/boost/core/checked_delete.hpp:
-
-/usr/include/boost/smart_ptr/detail/shared_count.hpp:
-
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp:
 
 /usr/include/boost/thread/detail/thread_safety.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp:
 
 /usr/include/boost/thread/detail/platform_time.hpp:
 
@@ -6165,8 +6015,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_timers_interface.hpp:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp:
-
 /usr/include/boost/optional/detail/optional_aligned_storage.hpp:
 
 /usr/include/c++/11/set:
@@ -6174,12 +6022,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 /usr/include/boost/preprocessor/identity.hpp:
 
 /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/get_all_task_status__traits.hpp:
-
-/usr/include/boost/thread/thread.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:
-
-/usr/include/boost/mpl/tag.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/create_timer.hpp:
 
@@ -6192,8 +6034,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 /usr/include/boost/thread/exceptional_ptr.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/executors/static_executor_entities_collector.hpp:
-
-/opt/ros/humble/include/std_srvs/std_srvs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
 /usr/include/boost/mpl/bind.hpp:
 
@@ -6227,10 +6067,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp:
-
-/usr/include/boost/type_traits/is_void.hpp:
-
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_logging_interface.hpp:
@@ -6249,12 +6085,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 
 /usr/include/boost/chrono/config.hpp:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp:
-
-/usr/include/boost/thread/pthread/thread_data.hpp:
-
-/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__traits.hpp:
-
 /usr/include/boost/atomic/detail/float_sizes.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp:
@@ -6264,8 +6094,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 /usr/include/boost/atomic/detail/atomic_impl.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__type_support.hpp:
 
 /usr/include/c++/11/bits/hash_bytes.h:
 
@@ -6367,6 +6195,12 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 
 /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__builder.hpp:
 
+/usr/include/boost/predef/compiler/sgi_mipspro.h:
+
+/usr/include/boost/thread/pthread/thread_data.hpp:
+
+/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/detail/task_description__traits.hpp:
+
 /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/msg/task_config.hpp:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/arg.hpp:
@@ -6391,10 +6225,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 
 /opt/ros/humble/include/std_srvs/std_srvs/srv/detail/empty__builder.hpp:
 
-/usr/include/asm-generic/int-ll64.h:
-
-/opt/ros/humble/include/std_srvs/std_srvs/srv/detail/empty__type_support.hpp:
-
 /home/GTL/apaul/ros2_hw1/install/task_manager_lib/include/task_manager_lib/TaskScheduler.h:
 
 /usr/include/boost/predef/compiler.h:
@@ -6404,10 +6234,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 /home/GTL/apaul/ros2_hw1/install/task_manager_lib/include/task_manager_lib/TaskInstance.h:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__builder.hpp:
-
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__type_support.hpp:
-
-/opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
 /usr/include/boost/date_time/time_iterator.hpp:
 
@@ -6429,7 +6255,17 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 
 /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/get_task_list__struct.hpp:
 
+/usr/include/boost/predef/compiler/kai.h:
+
+/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/get_task_list__builder.hpp:
+
 /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/include/task_manager_msgs/task_manager_msgs/srv/detail/get_all_task_status__builder.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:
+
+/usr/include/boost/mpl/tag.hpp:
+
+/usr/include/boost/thread/thread.hpp:
 
 /usr/include/boost/thread/thread_only.hpp:
 
@@ -6504,6 +6340,8 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 /usr/include/boost/type_traits/integral_constant.hpp:
 
 /usr/include/boost/type_traits/add_reference.hpp:
+
+/usr/include/boost/type_traits/is_void.hpp:
 
 /usr/include/boost/function/function_template.hpp:
 
@@ -6604,6 +6442,16 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 /usr/include/boost/current_function.hpp:
 
 /usr/include/boost/smart_ptr/shared_ptr.hpp:
+
+/usr/include/boost/core/checked_delete.hpp:
+
+/usr/include/boost/smart_ptr/detail/shared_count.hpp:
+
+/usr/include/boost/smart_ptr/detail/sp_has_sync_intrinsics.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/subscription_base.hpp:
+
+/usr/include/boost/predef/architecture/superh.h:
 
 /usr/include/boost/smart_ptr/detail/sp_counted_impl.hpp:
 
@@ -6803,6 +6651,10 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 
 /usr/include/boost/preprocessor/list/detail/fold_left.hpp:
 
+/usr/include/boost/function/detail/maybe_include.hpp:
+
+/usr/include/boost/predef/compiler/nvcc.h:
+
 /usr/include/boost/preprocessor/detail/check.hpp:
 
 /usr/include/boost/preprocessor/logical/compl.hpp:
@@ -6829,6 +6681,10 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 
 /usr/include/boost/preprocessor/tuple/rem.hpp:
 
+/usr/include/boost/mpl/next_prior.hpp:
+
+/usr/include/boost/predef/compiler/llvm.h:
+
 /usr/include/boost/type_traits/has_trivial_copy.hpp:
 
 /usr/include/boost/preprocessor/variadic/elem.hpp:
@@ -6842,8 +6698,6 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 /usr/include/boost/mpl/aux_/config/overload_resolution.hpp:
 
 /usr/include/boost/mpl/and.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__type_support.hpp:
 
 /usr/include/boost/mpl/aux_/lambda_support.hpp:
 
@@ -6901,6 +6755,8 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 
 /usr/include/boost/mpl/not.hpp:
 
+/usr/include/boost/predef/compiler/microtec.h:
+
 /usr/include/boost/mpl/aux_/nested_type_wknd.hpp:
 
 /usr/include/boost/mpl/identity.hpp:
@@ -6920,6 +6776,8 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 /home/GTL/apaul/ros2_hw1/install/task_manager_lib/include/task_manager_lib/ServiceStorage.h:
 
 /usr/include/boost/numeric/conversion/udt_builtin_mixture_enum.hpp:
+
+/usr/include/boost/predef/compiler/sunpro.h:
 
 /usr/include/c++/11/ext/alloc_traits.h:
 
@@ -7004,3 +6862,19 @@ CMakeFiles/task_manager_sync_lib.dir/src/TaskWaitForStatusSync.cpp.o: /home/GTL/
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp:
 
 /usr/include/boost/predef/architecture/z.h:
+
+/usr/include/boost/atomic/detail/wait_operations.hpp:
+
+/usr/include/boost/predef/detail/comp_detected.h:
+
+/usr/include/boost/predef/compiler/palm.h:
+
+/usr/include/boost/predef/compiler/greenhills.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:
+
+/opt/ros/humble/include/rcl/rcl/domain_id.h:
+
+/usr/include/boost/predef/compiler/iar.h:
+
+/usr/include/boost/predef/compiler/tendra.h:

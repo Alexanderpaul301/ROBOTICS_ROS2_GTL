@@ -38,7 +38,7 @@ class RoverPF(RoverOdo):
         #rot= self.getRotationFromWorldToRobot()
         rot = self.getRotation(-X[2,0])
         noise = numpy.random.normal(0, Uncertainty,3)
-        print(dx,dy,dteta)
+        #print(dx,dy,dteta)
         # Apply the displacement
         X[0,0] = x + dx*rot[0,0] + dy*rot[1,0] + noise[0]
         X[1,0] = y - dx*rot[1,0] + dy*rot[0,0] + noise[1]
@@ -67,8 +67,9 @@ class RoverPF(RoverOdo):
         # Drive
         # Note, using the function applyDisplacement could be useful to compute the new particles
         # self.particles = ...
-        for x in self.particles:
-            x = self.applyDisplacement(x,DeltaX,encoder_precision)
+        for i in range(len(self.particles)):
+            self.particles[i] = self.applyDisplacement(self.particles[i], DeltaX, encoder_precision)
+
 
         self.updateMean()
         self.lock.release()
@@ -88,13 +89,17 @@ class RoverPF(RoverOdo):
     def evalParticleCompass(self,X, Value, Uncertainty):
         # Returns the fitness of a particle with state X given compass observation value
         # Beware of the module when computing the difference of angles
-        return 0
+        dteta = diffAngle(X[2,0],Value)
+        
+        fit=exp(-dteta**2/(2*Uncertainty**2))
+
+        return fit
 
     def update_ar(self, logger, Z, L, Uncertainty):
         self.lock.acquire()
         # L is the position of the landmark in the world frame
         # TODO
-        logger.info("Update: L="+str(L.T)+" X="+str(self.X.T))
+        #logger.info("Update: L="+str(L.T)+" X="+str(self.X.T))
         # Implement particle filter update using landmarks here. Using the function evalParticleAR could be useful
         # We implement the weight of the particles
         weights = []
@@ -102,34 +107,63 @@ class RoverPF(RoverOdo):
             weights.append(self.evalParticleAR(x,Z,L,Uncertainty))
         # We normalize the weights so that we can do a random draw using a python function later
         total = sum(weights)
-        weights = weights/total
 
+        if total == 0:
+            weights = [1.0/self.N] * self.N  #Avoid 0 division  
+        else:
+            weights = numpy.array(weights) / total
+        
+        #logger.info("total_weight_distance="+str(sum(weights)))
         # We resample the particles according to the weights
-        new_particles = []
-        for i in range(self.N):
-            # We choose a particle with a probability proportional to its weight
-            new_particles.append(self.particles[numpy.random.choice(self.N, p=weights)])
-            
-        print(len(new_particles))
-        self.particles = new_particles
+        # We choose a particle with a probability proportional to its weight
+        logger.info("taille_particules: " + str(len(self.particles)))
+
+        # Convert to array
+        particles_array = numpy.array(self.particles) 
+
+        
+        index = numpy.random.choice(len(self.particles), size=self.N, p=weights)
+
+        # get the new particles
+        self.particles = [self.particles[i].copy() for i in index]
+
 
         
         self.updateMean()
         self.lock.release()
+
+
 
     def update_compass(self, logger, angle, Uncertainty):
         self.lock.acquire()
         # TODO
         # print self.particles
-        logger.info("Update: S="+str(angle)+" X="+str(self.X.T))
+        #logger.info("Update: S="+str(angle)+" X="+str(self.X.T))
         # Implement particle filter update using landmarks here. Using the function evalParticleCompass could be useful
+        weights=[]
+        for x in self.particles:
+            weights.append(self.evalParticleCompass(X,Value,Uncertainty))
+        total=sum(weights)
 
-        # TODO
-
-        # self.particles = ...
+        if total == 0: 
+            weights = [1.0/self.N] *self.N # Avoid 0 division
+        else:
+            weights = numpy.array(weights) / total
         
+        logger.info("total_weight_angle="+str(len(self.particles)))
+
+        # Convert to array
+        particles_array = numpy.array(self.particles) 
+
+        
+        index = numpy.random.choice(len(self.particles), size=self.N, p=weights)
+
+        # Get the new particles
+        self.particles = [self.particles[i].copy() for i in index]
+
         self.updateMean()
         self.lock.release()
+
 
     def updateMean(self):
         X = mat(zeros((3,1)))
