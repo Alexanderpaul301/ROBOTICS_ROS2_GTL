@@ -37,11 +37,14 @@ class RoverPF(RoverOdo):
         dx, dy, dteta = DeltaX[0,0], DeltaX[1,0], DeltaX[2,0]
         #rot= self.getRotationFromWorldToRobot()
         rot = self.getRotation(-X[2,0])
-        noise = numpy.random.normal(0, Uncertainty,3)
-        #print(dx,dy,dteta)
+
+
+        #noise = numpy.random.normal(0, Uncertainty,3) #This doesnt work and create a drifting of the particles
+        noise = numpy.random.normal(0, Uncertainty, 3)
+        
         # Apply the displacement
-        X[0,0] = x + dx*rot[0,0] + dy*rot[1,0] + noise[0]
-        X[1,0] = y - dx*rot[1,0] + dy*rot[0,0] + noise[1]
+        X[0,0] = x + (dx)*rot[0,0] + (dy)*rot[1,0] + noise[0]
+        X[1,0] = y - (dx)*rot[1,0] + (dy)*rot[0,0] + noise[1]
         X[2,0] = teta + dteta + noise[2]
         
         return X 
@@ -64,11 +67,14 @@ class RoverPF(RoverOdo):
         # We first compute the commands in the world frame
         # DeltaX = iW*S
         DeltaX = iW*S
+        noise_value=iW * numpy.mat(numpy.ones((12,1)) * encoder_precision)
+
+        #logger.info("sizenoise"+str(numpy.size(noise_value)[0])+str(numpy.size(noise_value)[1]))
         # Drive
         # Note, using the function applyDisplacement could be useful to compute the new particles
-        # self.particles = ...
+        
         for i in range(len(self.particles)):
-            self.particles[i] = self.applyDisplacement(self.particles[i], DeltaX, encoder_precision)
+            self.particles[i] = self.applyDisplacement(X=self.particles[i], DeltaX=DeltaX, Uncertainty=noise_value)
 
 
         self.updateMean()
@@ -79,8 +85,8 @@ class RoverPF(RoverOdo):
         # X is the state of the particle
         # Z is the observation  in the robot frame
         # L is the position of the landmark in the world frame
-        Z = self.getRotation(-X[2,0])*(L-X[0:2,0])
-        d=sqrt(Z[0,0]**2+Z[1,0]**2)
+        Zpred = self.getRotation(-X[2,0])*(L-X[0:1])
+        d=sqrt((Z[0,0]-Zpred[0,0])**2+(Z[1,0]-Zpred[1,0])**2)
 
         fit=exp(-d**2/(2*Uncertainty**2))
 
@@ -89,7 +95,7 @@ class RoverPF(RoverOdo):
     def evalParticleCompass(self,X, Value, Uncertainty):
         # Returns the fitness of a particle with state X given compass observation value
         # Beware of the module when computing the difference of angles
-        dteta = diffAngle(X[2,0],Value)
+        dteta = self.diffAngle(X[2,0],Value)
         
         fit=exp(-dteta**2/(2*Uncertainty**2))
 
@@ -116,16 +122,14 @@ class RoverPF(RoverOdo):
         #logger.info("total_weight_distance="+str(sum(weights)))
         # We resample the particles according to the weights
         # We choose a particle with a probability proportional to its weight
-        logger.info("taille_particules: " + str(len(self.particles)))
-
-        # Convert to array
-        particles_array = numpy.array(self.particles) 
+        #logger.info("taille_particules: " + str(len(self.particles)))
 
         
         index = numpy.random.choice(len(self.particles), size=self.N, p=weights)
 
         # get the new particles
-        self.particles = [self.particles[i].copy() for i in index]
+        self.particlesbis=self.particles.copy()
+        self.particles = [self.particlesbis[i].copy() for i in index]
 
 
         
@@ -142,7 +146,7 @@ class RoverPF(RoverOdo):
         # Implement particle filter update using landmarks here. Using the function evalParticleCompass could be useful
         weights=[]
         for x in self.particles:
-            weights.append(self.evalParticleCompass(X,Value,Uncertainty))
+            weights.append(self.evalParticleCompass(x,Value,Uncertainty))
         total=sum(weights)
 
         if total == 0: 
