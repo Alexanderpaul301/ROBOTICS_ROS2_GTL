@@ -1,0 +1,50 @@
+[0.668s] Invoking command in '/home/GTL/pcastere/ros_hw1/ros2_hw1/src/ar_slam_base': AMENT_PREFIX_PATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_loc_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/rover_driver_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_mapping_base:${AMENT_PREFIX_PATH} PYTHONPATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/build/ar_slam_base/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_slam_base/lib/python3.10/site-packages:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_loc_base/lib/python3.10/site-packages:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/rover_driver_base/lib/python3.10/site-packages:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_mapping_base/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ar_slam_base build --build-base /home/GTL/pcastere/ros_hw1/ros2_hw1/build/ar_slam_base/build install --record /home/GTL/pcastere/ros_hw1/ros2_hw1/build/ar_slam_base/install.log --single-version-externally-managed install_data
+[0.992s] running egg_info
+[0.993s] creating ../../build/ar_slam_base/ar_slam_base.egg-info
+[0.994s] writing ../../build/ar_slam_base/ar_slam_base.egg-info/PKG-INFO
+[0.999s] writing dependency_links to ../../build/ar_slam_base/ar_slam_base.egg-info/dependency_links.txt
+[1.001s] writing entry points to ../../build/ar_slam_base/ar_slam_base.egg-info/entry_points.txt
+[1.003s] writing requirements to ../../build/ar_slam_base/ar_slam_base.egg-info/requires.txt
+[1.004s] writing top-level names to ../../build/ar_slam_base/ar_slam_base.egg-info/top_level.txt
+[1.006s] writing manifest file '../../build/ar_slam_base/ar_slam_base.egg-info/SOURCES.txt'
+[1.010s] reading manifest file '../../build/ar_slam_base/ar_slam_base.egg-info/SOURCES.txt'
+[1.012s] writing manifest file '../../build/ar_slam_base/ar_slam_base.egg-info/SOURCES.txt'
+[1.013s] running build
+[1.013s] running build_py
+[1.014s] creating /home/GTL/pcastere/ros_hw1/ros2_hw1/build/ar_slam_base/build
+[1.015s] creating /home/GTL/pcastere/ros_hw1/ros2_hw1/build/ar_slam_base/build/lib
+[1.016s] creating /home/GTL/pcastere/ros_hw1/ros2_hw1/build/ar_slam_base/build/lib/ar_slam_base
+[1.018s] copying ar_slam_base/mapping_kf.py -> /home/GTL/pcastere/ros_hw1/ros2_hw1/build/ar_slam_base/build/lib/ar_slam_base
+[1.058s] copying ar_slam_base/tb_mapping.py -> /home/GTL/pcastere/ros_hw1/ros2_hw1/build/ar_slam_base/build/lib/ar_slam_base
+[1.074s] copying ar_slam_base/__init__.py -> /home/GTL/pcastere/ros_hw1/ros2_hw1/build/ar_slam_base/build/lib/ar_slam_base
+[1.076s] copying ar_slam_base/rover_mapping.py -> /home/GTL/pcastere/ros_hw1/ros2_hw1/build/ar_slam_base/build/lib/ar_slam_base
+[1.091s] running install
+[1.092s] running install_lib
+[1.095s] creating /home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_slam_base/lib/python3.10/site-packages/ar_slam_base
+[1.097s] copying /home/GTL/pcastere/ros_hw1/ros2_hw1/build/ar_slam_base/build/lib/ar_slam_base/mapping_kf.py -> /home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_slam_base/lib/python3.10/site-packages/ar_slam_base
+[1.099s] copying /home/GTL/pcastere/ros_hw1/ros2_hw1/build/ar_slam_base/build/lib/ar_slam_base/tb_mapping.py -> /home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_slam_base/lib/python3.10/site-packages/ar_slam_base
+[1.101s] copying /home/GTL/pcastere/ros_hw1/ros2_hw1/build/ar_slam_base/build/lib/ar_slam_base/__init__.py -> /home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_slam_base/lib/python3.10/site-packages/ar_slam_base
+[1.103s] copying /home/GTL/pcastere/ros_hw1/ros2_hw1/build/ar_slam_base/build/lib/ar_slam_base/rover_mapping.py -> /home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_slam_base/lib/python3.10/site-packages/ar_slam_base
+[1.107s] byte-compiling /home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_slam_base/lib/python3.10/site-packages/ar_slam_base/mapping_kf.py to mapping_kf.cpython-310.pyc
+[1.112s] byte-compiling /home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_slam_base/lib/python3.10/site-packages/ar_slam_base/tb_mapping.py to tb_mapping.cpython-310.pyc
+[1.116s] byte-compiling /home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_slam_base/lib/python3.10/site-packages/ar_slam_base/__init__.py to __init__.cpython-310.pyc
+[1.119s] byte-compiling /home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_slam_base/lib/python3.10/site-packages/ar_slam_base/rover_mapping.py to rover_mapping.cpython-310.pyc
+[1.124s] running install_data
+[1.124s] creating /home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_slam_base/share/ament_index
+[1.125s] creating /home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_slam_base/share/ament_index/resource_index
+[1.126s] creating /home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_slam_base/share/ament_index/resource_index/packages
+[1.127s] copying resource/ar_slam_base -> /home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_slam_base/share/ament_index/resource_index/packages
+[1.130s] copying package.xml -> /home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_slam_base/share/ar_slam_base
+[1.132s] copying launch/tb_slam_env.launch.py -> /home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_slam_base/share/ar_slam_base
+[1.142s] copying launch/ar_slam_env.launch.py -> /home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_slam_base/share/ar_slam_base
+[1.145s] copying launch/ar_slam_only.launch.py -> /home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_slam_base/share/ar_slam_base
+[1.148s] copying launch/ar_slam.launch.py -> /home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_slam_base/share/ar_slam_base
+[1.150s] copying launch/tb_slam.launch.py -> /home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_slam_base/share/ar_slam_base
+[1.158s] copying launch/tb_slam_only.launch.py -> /home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_slam_base/share/ar_slam_base
+[1.160s] running install_egg_info
+[1.163s] Copying ../../build/ar_slam_base/ar_slam_base.egg-info to /home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_slam_base/lib/python3.10/site-packages/ar_slam_base-0.0.0-py3.10.egg-info
+[1.186s] running install_scripts
+[1.256s] Installing ar_slam_node script to /home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_slam_base/lib/ar_slam_base
+[1.259s] Installing tb_slam_node script to /home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_slam_base/lib/ar_slam_base
+[1.261s] writing list of installed files to '/home/GTL/pcastere/ros_hw1/ros2_hw1/build/ar_slam_base/install.log'
+[1.317s] Invoked command in '/home/GTL/pcastere/ros_hw1/ros2_hw1/src/ar_slam_base' returned '0': AMENT_PREFIX_PATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_loc_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/rover_driver_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_mapping_base:${AMENT_PREFIX_PATH} PYTHONPATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/build/ar_slam_base/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_slam_base/lib/python3.10/site-packages:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_loc_base/lib/python3.10/site-packages:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/rover_driver_base/lib/python3.10/site-packages:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_mapping_base/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ar_slam_base build --build-base /home/GTL/pcastere/ros_hw1/ros2_hw1/build/ar_slam_base/build install --record /home/GTL/pcastere/ros_hw1/ros2_hw1/build/ar_slam_base/install.log --single-version-externally-managed install_data

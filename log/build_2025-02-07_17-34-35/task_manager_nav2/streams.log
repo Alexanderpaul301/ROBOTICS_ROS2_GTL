@@ -1,0 +1,73 @@
+[0.020s] Invoking command in '/home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_nav2': AMENT_PREFIX_PATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/GTL/pcastere/ros_hw1/ros2_hw1/src/ros_task_manager/src/task_manager_nav2 -DCMAKE_INSTALL_PREFIX=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_nav2
+[0.085s] -- The C compiler identification is GNU 11.4.0
+[0.135s] -- The CXX compiler identification is GNU 11.4.0
+[0.144s] -- Detecting C compiler ABI info
+[0.244s] -- Detecting C compiler ABI info - done
+[0.252s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.252s] -- Detecting C compile features
+[0.252s] -- Detecting C compile features - done
+[0.259s] -- Detecting CXX compiler ABI info
+[0.363s] -- Detecting CXX compiler ABI info - done
+[0.371s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.371s] -- Detecting CXX compile features
+[0.371s] -- Detecting CXX compile features - done
+[0.383s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.491s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.644s] -- Found nav2_msgs: 1.1.16 (/opt/ros/humble/share/nav2_msgs/cmake)
+[0.710s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.722s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.737s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.755s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.780s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.884s] -- Found task_manager_lib: 0.0.0 (/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/share/task_manager_lib/cmake)
+[0.969s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.974s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[1.012s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.035s] -- Looking for pthread.h
+[1.131s] -- Looking for pthread.h - found
+[1.133s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.230s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.232s] -- Found Threads: TRUE  
+[1.345s] -- Found tf2_geometry_msgs: 0.25.8 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[1.375s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.376s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.376s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.466s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.585s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.593s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.593s] -- Configured cppcheck include dirs: 
+[1.593s] -- Configured cppcheck exclude dirs and/or files: 
+[1.599s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.599s] -- Configured cpplint exclude dirs and/or files: 
+[1.603s] -- Added test 'lint_cmake' to check CMake code style
+[1.610s] -- Added test 'uncrustify' to check C / C++ code style
+[1.610s] -- Configured uncrustify additional arguments: 
+[1.612s] -- Added test 'xmllint' to check XML markup files
+[1.646s] -- Configuring done
+[1.705s] -- Generating done
+[1.717s] -- Build files have been written to: /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_nav2
+[1.723s] Invoked command in '/home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_nav2' returned '0': AMENT_PREFIX_PATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/GTL/pcastere/ros_hw1/ros2_hw1/src/ros_task_manager/src/task_manager_nav2 -DCMAKE_INSTALL_PREFIX=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_nav2
+[1.728s] Invoking command in '/home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_nav2': AMENT_PREFIX_PATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_nav2 -- -j16 -l16
+[1.758s] Invoked command in '/home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_nav2' returned '0': AMENT_PREFIX_PATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_nav2 -- -j16 -l16
+[1.773s] Invoking command in '/home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_nav2': AMENT_PREFIX_PATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_nav2
+[1.778s] -- Install configuration: ""
+[1.778s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_nav2/include/task_manager_nav2
+[1.781s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_nav2/include/task_manager_nav2/TaskActionNav2.h
+[1.790s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_nav2/share/ament_index/resource_index/package_run_dependencies/task_manager_nav2
+[1.801s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_nav2/share/ament_index/resource_index/parent_prefix_path/task_manager_nav2
+[1.808s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/environment/ament_prefix_path.sh
+[1.811s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/environment/ament_prefix_path.dsv
+[1.814s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/environment/path.sh
+[1.816s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/environment/path.dsv
+[1.819s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/local_setup.bash
+[1.822s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/local_setup.sh
+[1.828s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/local_setup.zsh
+[1.832s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/local_setup.dsv
+[1.835s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/package.dsv
+[1.841s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_nav2/share/ament_index/resource_index/packages/task_manager_nav2
+[1.847s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.850s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.854s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/cmake/task_manager_nav2Config.cmake
+[1.858s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/cmake/task_manager_nav2Config-version.cmake
+[1.861s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/package.xml
+[1.872s] Invoked command in '/home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_nav2' returned '0': AMENT_PREFIX_PATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/lib:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_nav2

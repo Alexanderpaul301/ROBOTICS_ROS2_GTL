@@ -71,71 +71,55 @@ class RoverKinematics:
         motors = RoverMotors()
         if skidsteer:
             for k in drive_cfg.keys():
-                # TODO: In case we are in skidsteer mode (driving like a tank)
-                # Insert here the steering and velocity of 
-                # each wheel in skid-steer mode
-                motors.drive[k] = (twist.linear.x - twist.angular.z*drive_cfg['C'+k[1]].y)/drive_cfg['C'+k[1]].radius 
+                # First compute the speed from each wheel 
+                #     V_wheel = V_body + Omega x R
+                vw_x = twist.linear.x - 2*twist.angular.z*drive_cfg[k].y
+                vw_y = 0
                 motors.steering[k] = 0
+                motors.drive[k] = vw_x / drive_cfg[k].radius
         else:
             for k in drive_cfg.keys():
-                # TODO: In case we are in rolling without slipping mode (driving normally)
-                # Insert here the steering and velocity of 
-                # each wheel in rolling-without-slipping mode
-                v_x = (twist.linear.x - twist.angular.z*drive_cfg[k].y)
-                v_y = (twist.linear.y + twist.angular.z*drive_cfg[k].x)
-
-
-                motors.drive[k] = hypot(v_y,v_x)/drive_cfg[k].radius
-                motors.steering[k] = atan2(v_y,v_x)
+                # First compute the speed from each wheel 
+                #     V_wheel = V_body + Omega x R
+                vw_x = twist.linear.x - twist.angular.z*drive_cfg[k].y
+                vw_y = twist.linear.y + twist.angular.z*drive_cfg[k].x
+                motors.steering[k] = atan2(vw_y,vw_x); 
+                motors.drive[k] = hypot(vw_y,vw_x) / drive_cfg[k].radius
+                if motors.steering[k] > pi/2:
+                    motors.steering[k] -= pi
+                    motors.drive[k] = -motors.drive[k]
+                if motors.steering[k] <-pi/2:
+                    motors.steering[k] += pi
+                    motors.drive[k] = -motors.drive[k]
+                # rospy.loginfo("%s: T %.2f %.2f %.2f V %.2f %.2f S %.2f D %.2f" % \
+                #     (k,drive_pose[k]["x"],drive_pose[k]["y"],drive_pose[k]["z"],\
+                #     vw_x,vw_y,motors.steering[k]*180./pi,motors.drive[k]))
         return motors
 
     def prepare_inversion_matrix(self,drive_cfg):
-        # TODO: Build pseudo inverse of W using the notation from the class. The matrix size below is wrong.
-        n = len(prefix)
-        W = np.asmatrix(np.zeros((2*n,3)))
-        # Building the W matrix, hopefully it is in the right coordinate frame  # ! (maybe change it)
-        for i in range(2*n):
-            if i%2==0:
-                W[i,0] = 1.0
-                W[i,1] = 0.0
-                W[i,2] = -drive_cfg[prefix[i//2]].y
-            else :
-                W[i,0] = 0.0
-                W[i,1] = 1.0
-                W[i,2] = drive_cfg[prefix[i//2]].x
-                
-        iW = pinv(W)
-        print("iW",np.shape(iW))
-        return iW
+        W = np.asmatrix(np.zeros((len(prefix)*2,3)))
+        for i in range(len(prefix)):
+            k = prefix[i]
+            # prepare the least-square matrices
+            W[2*i+0,0] = 1; W[2*i+0,1] = 0; W[2*i+0,2] = -drive_cfg[k].y; 
+            W[2*i+1,0] = 0; W[2*i+1,1] = 1; W[2*i+1,2] = +drive_cfg[k].x; 
+        return pinv(W)
 
     def prepare_displacement_matrix(self, motor_state_t1, motor_state_t2, drive_cfg):
         # then compute odometry using least square
-        # TODO: Build S using the notation from the class. The matrix size below is wrong.
-        n = len(prefix); # n = 6 here
-        
-        beta=np.asmatrix(np.zeros((n,1)))
-        # Building beta (We want the angle to be in between -pi and pi) # ! Potentially a problem if the angle is in radius
-        for i in range(n): 
-            print(motor_state_t2.steering[prefix[i]])
-            beta_temp = (motor_state_t2.steering[prefix[i]] + motor_state_t1.steering[prefix[i]])*1/2
-            if np.abs(beta_temp)>pi:
-                beta_temp = beta_temp - 2*pi*beta_temp/np.abs(beta_temp)
-                beta[i,0] = beta_temp
-
-            else :
-                beta[i,0] = beta_temp
-        
-        # Building linear displacement
-        dS=np.asmatrix(np.zeros((n,1)))
-        for i in range(n):
-            dS[i,0] = drive_cfg[prefix[i]].radius*(motor_state_t2.drive[prefix[i]] - motor_state_t1.drive[prefix[i]])
-
-        # Building S
-        S=np.asmatrix(np.zeros((2*n,1)))
-        for i in range(0,2*n,2):
-            S[i,0] = dS[i//2,0]*(np.cos(beta[i//2,0]))
-            S[i+1,0]= dS[i//2,0]*(np.sin(beta[i//2,0]))
-        
+        S = np.asmatrix(np.zeros((len(prefix)*2,1)))
+        for i in range(len(prefix)):
+            k = prefix[i]
+            # compute differentials
+            beta = (motor_state_t1.steering[k]+motor_state_t2.steering[k])/2
+            ds = (motor_state_t2.drive[k] - motor_state_t1.drive[k]) % (2*pi)
+            if ds>pi:
+                ds -= 2*pi
+            if ds<-pi:
+                ds += 2*pi
+            ds *= drive_cfg[k].radius
+            S[2*i+0,0] = ds*cos(beta)
+            S[2*i+1,0] = ds*sin(beta)
         return S
 
     def compute_displacement(self, motor_state, drive_cfg):
@@ -144,6 +128,7 @@ class RoverKinematics:
             self.motor_state.copy(motor_state)
             self.first_run = False
             return np.asmatrix(np.zeros((3,1)))
+        # print "-"*32
         # then compute odometry using least square
         # We assume that S = W * dX, hence dX = iW * S, where iW is the pseudo inverse of W
         # TODO: First compute iW based on the wheel positions given in drive_cfg
@@ -157,20 +142,9 @@ class RoverKinematics:
         return dX
 
     def integrate_odometry(self, motor_state, drive_cfg):
-        # First compute the local displacement in the robot frame
         dX = self.compute_displacement(motor_state,drive_cfg)
-        # TODO: Now integrate the local displacement in the global frame
-        # ! Need to pass from local to global frame 
-        # Define Rotation matrix
-        R=np.asmatrix(np.zeros((3,3)))
-        R[0,0] = cos(self.X[2,0])
-        R[0,1] = -sin(self.X[2,0])
-        R[1,0] = sin(self.X[2,0])
-        R[1,1] = cos(self.X[2,0])
-        R[2,2] = 1.0
-        dX = R*dX
-        self.X[0,0] += dX[0,0]
-        self.X[1,0] += dX[1,0]
+        self.X[0,0] += dX[0,0]*cos(self.X[2,0]) - dX[1,0]*sin(self.X[2,0])
+        self.X[1,0] += dX[0,0]*sin(self.X[2,0]) + dX[1,0]*cos(self.X[2,0])
         self.X[2,0] += dX[2,0]
         return self.X
 
@@ -198,4 +172,3 @@ def quaternion_from_euler(ai, aj, ak):
     q[3] = cj*cc + sj*ss
 
     return q
-

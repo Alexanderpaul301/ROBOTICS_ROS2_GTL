@@ -1,0 +1,54 @@
+[0.537s] Invoking command in '/home/GTL/pcastere/ros_hw1/ros2_hw1/src/ar_loc_base': AMENT_PREFIX_PATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/rover_driver_base:${AMENT_PREFIX_PATH} PYTHONPATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/build/ar_loc_base/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_loc_base/lib/python3.10/site-packages:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/rover_driver_base/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ar_loc_base build --build-base /home/GTL/pcastere/ros_hw1/ros2_hw1/build/ar_loc_base/build install --record /home/GTL/pcastere/ros_hw1/ros2_hw1/build/ar_loc_base/install.log --single-version-externally-managed install_data
+[0.734s] running egg_info
+[0.735s] creating ../../build/ar_loc_base/ar_loc_base.egg-info
+[0.736s] writing ../../build/ar_loc_base/ar_loc_base.egg-info/PKG-INFO
+[0.738s] writing dependency_links to ../../build/ar_loc_base/ar_loc_base.egg-info/dependency_links.txt
+[0.740s] writing entry points to ../../build/ar_loc_base/ar_loc_base.egg-info/entry_points.txt
+[0.741s] writing requirements to ../../build/ar_loc_base/ar_loc_base.egg-info/requires.txt
+[0.742s] writing top-level names to ../../build/ar_loc_base/ar_loc_base.egg-info/top_level.txt
+[0.744s] writing manifest file '../../build/ar_loc_base/ar_loc_base.egg-info/SOURCES.txt'
+[0.747s] reading manifest file '../../build/ar_loc_base/ar_loc_base.egg-info/SOURCES.txt'
+[0.749s] writing manifest file '../../build/ar_loc_base/ar_loc_base.egg-info/SOURCES.txt'
+[0.750s] running build
+[0.750s] running build_py
+[0.750s] creating /home/GTL/pcastere/ros_hw1/ros2_hw1/build/ar_loc_base/build
+[0.751s] creating /home/GTL/pcastere/ros_hw1/ros2_hw1/build/ar_loc_base/build/lib
+[0.752s] creating /home/GTL/pcastere/ros_hw1/ros2_hw1/build/ar_loc_base/build/lib/ar_loc_base
+[0.753s] copying ar_loc_base/rover_loc.py -> /home/GTL/pcastere/ros_hw1/ros2_hw1/build/ar_loc_base/build/lib/ar_loc_base
+[0.755s] copying ar_loc_base/__init__.py -> /home/GTL/pcastere/ros_hw1/ros2_hw1/build/ar_loc_base/build/lib/ar_loc_base
+[0.757s] copying ar_loc_base/rover_odo.py -> /home/GTL/pcastere/ros_hw1/ros2_hw1/build/ar_loc_base/build/lib/ar_loc_base
+[0.759s] copying ar_loc_base/rover_kf.py -> /home/GTL/pcastere/ros_hw1/ros2_hw1/build/ar_loc_base/build/lib/ar_loc_base
+[0.782s] copying ar_loc_base/rover_pf.py -> /home/GTL/pcastere/ros_hw1/ros2_hw1/build/ar_loc_base/build/lib/ar_loc_base
+[0.784s] running install
+[0.784s] running install_lib
+[0.787s] creating /home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_loc_base/lib/python3.10/site-packages/ar_loc_base
+[0.788s] copying /home/GTL/pcastere/ros_hw1/ros2_hw1/build/ar_loc_base/build/lib/ar_loc_base/rover_loc.py -> /home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_loc_base/lib/python3.10/site-packages/ar_loc_base
+[0.791s] copying /home/GTL/pcastere/ros_hw1/ros2_hw1/build/ar_loc_base/build/lib/ar_loc_base/__init__.py -> /home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_loc_base/lib/python3.10/site-packages/ar_loc_base
+[0.793s] copying /home/GTL/pcastere/ros_hw1/ros2_hw1/build/ar_loc_base/build/lib/ar_loc_base/rover_odo.py -> /home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_loc_base/lib/python3.10/site-packages/ar_loc_base
+[0.795s] copying /home/GTL/pcastere/ros_hw1/ros2_hw1/build/ar_loc_base/build/lib/ar_loc_base/rover_kf.py -> /home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_loc_base/lib/python3.10/site-packages/ar_loc_base
+[0.797s] copying /home/GTL/pcastere/ros_hw1/ros2_hw1/build/ar_loc_base/build/lib/ar_loc_base/rover_pf.py -> /home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_loc_base/lib/python3.10/site-packages/ar_loc_base
+[0.800s] byte-compiling /home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_loc_base/lib/python3.10/site-packages/ar_loc_base/rover_loc.py to rover_loc.cpython-310.pyc
+[0.804s] byte-compiling /home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_loc_base/lib/python3.10/site-packages/ar_loc_base/__init__.py to __init__.cpython-310.pyc
+[0.807s] byte-compiling /home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_loc_base/lib/python3.10/site-packages/ar_loc_base/rover_odo.py to rover_odo.cpython-310.pyc
+[0.809s] byte-compiling /home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_loc_base/lib/python3.10/site-packages/ar_loc_base/rover_kf.py to rover_kf.cpython-310.pyc
+[0.812s] byte-compiling /home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_loc_base/lib/python3.10/site-packages/ar_loc_base/rover_pf.py to rover_pf.cpython-310.pyc
+[0.813s]   File "/home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_loc_base/lib/python3.10/site-packages/ar_loc_base/rover_pf.py", line 70
+[0.813s]     for x in self.particles
+[0.813s]                            ^
+[0.813s] SyntaxError: expected ':'
+[0.813s] 
+[0.813s] running install_data
+[0.813s] creating /home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_loc_base/share/ament_index
+[0.814s] creating /home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_loc_base/share/ament_index/resource_index
+[0.815s] creating /home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_loc_base/share/ament_index/resource_index/packages
+[0.816s] copying resource/ar_loc_base -> /home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_loc_base/share/ament_index/resource_index/packages
+[0.818s] copying package.xml -> /home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_loc_base/share/ar_loc_base
+[0.819s] copying launch/ar_loc_env.launch.py -> /home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_loc_base/share/ar_loc_base
+[0.821s] copying launch/ar_loc.launch.py -> /home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_loc_base/share/ar_loc_base
+[0.823s] copying launch/ar_loc_only.launch.py -> /home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_loc_base/share/ar_loc_base
+[0.824s] running install_egg_info
+[0.826s] Copying ../../build/ar_loc_base/ar_loc_base.egg-info to /home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_loc_base/lib/python3.10/site-packages/ar_loc_base-0.0.0-py3.10.egg-info
+[0.843s] running install_scripts
+[0.860s] Installing ar_loc_node script to /home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_loc_base/lib/ar_loc_base
+[0.863s] writing list of installed files to '/home/GTL/pcastere/ros_hw1/ros2_hw1/build/ar_loc_base/install.log'
+[0.892s] Invoked command in '/home/GTL/pcastere/ros_hw1/ros2_hw1/src/ar_loc_base' returned '0': AMENT_PREFIX_PATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/rover_driver_base:${AMENT_PREFIX_PATH} PYTHONPATH=/home/GTL/pcastere/ros_hw1/ros2_hw1/build/ar_loc_base/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_loc_base/lib/python3.10/site-packages:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/rover_driver_base/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ar_loc_base build --build-base /home/GTL/pcastere/ros_hw1/ros2_hw1/build/ar_loc_base/build install --record /home/GTL/pcastere/ros_hw1/ros2_hw1/build/ar_loc_base/install.log --single-version-externally-managed install_data

@@ -37,10 +37,32 @@ class RoverKF(RoverOdo):
         self.motor_state.copy(motor_state)
         
         # TODO: Implement Kalman prediction here
-        
-        # ultimately : 
-        # self.X =  
-        # self.P = 
+
+        A = eye(self.X.shape[0])  ###############################
+        B = eye(self.X.shape[0])  ##############################
+
+        # Process noise covariance 
+        Q = eye(self.X.shape[0]) * 0.01  
+
+        # Measurement noise covariance 
+        R = eye(self.X.shape[0]) * encoder_precision  
+
+        # Prediction step
+        DeltaX = iW * S 
+        self.X = A * self.X + B * DeltaX            
+        self.P = A * self.P * A.T + Q               
+
+        # Measurement matrix 
+        H = eye(self.X.shape[0])  ############################
+
+        # Compute Kalman Gain
+        transposH = H.T
+        K = self.P * transposH * inv(H * self.P * transposH + R)
+
+        z = self.X 
+        self.X = self.X + K * (z - H * self.X)
+        self.P = (eye(self.X.shape[0]) - K * H) * self.P
+
 
         self.lock.release()
         return (self.X,self.P)
