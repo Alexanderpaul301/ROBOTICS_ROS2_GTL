@@ -51,10 +51,10 @@ class RoverKF(RoverOdo):
 
 
         # Predict with the movement deltaX = iWS and then Xk= Xk-1 + R*iW*S=Xk-1 +R*deltaX, incertainty is in the S matrix and Xk-1, 
-        # CovF(X,Y)=dF/dX Cov(X)dF/dX.T + dF/dY*Cov(Y)*dF/dY.T      
+        # CovF(X,Y)=dF/dX Cov(X)dF/dX.T + dF/dY*Cov(Y)*dF/dY.T
+
         self.X =  self.X.copy() + Rteta @ iW @ S
-        # The noises are from the command point of view and the censors point of view.
-        #
+        # The noises are from the command point of view and the censors point of view. Qu is front the motor point of view and is equal to encoder_precision and Q is made to avoid singular matrix
         self.P = A @ self.P.copy() @ A.T + B @ Qu @ B.T + Q
 
         self.lock.release()
@@ -63,9 +63,13 @@ class RoverKF(RoverOdo):
     def update_ar(self, logger, Z, L, uncertainty):
         self.lock.acquire()
         logger.info("Update: L="+str(L.T)+" X="+str(self.X.T))
-        # TODO
-        # self.X = 
-        # self.P = 
+        # TODO: Implement Kalman Obervation here
+        Rteta=self.getRotationFromWorldToRobot()
+        H=np.eyes(n)
+
+        K=self.P @ H.T @ np.invert(H @ self.P @ H.T + Rteta)
+        self.X = self.X.copy() + K @ (Z - self.X.copy() + Rteta @ iW @ S)
+        self.P = (np.eyes(n)-K @ H) @ self.P
         self.lock.release()
         return (self.X,self.P)
 
