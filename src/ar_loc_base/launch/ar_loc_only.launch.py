@@ -47,7 +47,7 @@ def generate_launch_description():
             package='ar_loc_base', executable='ar_loc_node', name='ar_loc',
             parameters=[
                 {'~/rover_name': 'rover'},
-                {'~/filter_name': 'particle'}, # in ['odo','kalman','particle']
+                {'~/filter_name': 'kalman'}, # in ['odo','kalman','particle']
                 {'~/inverse_tf': True},
                 {'~/use_ar': True},
                 {'~/use_compass': True},

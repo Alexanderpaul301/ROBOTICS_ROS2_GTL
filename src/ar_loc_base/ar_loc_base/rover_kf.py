@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import rclpy
 from rclpy.node import Node
-from numpy import *
+from numpy import as np
 from numpy.linalg import inv
 from math import pi, sin, cos
 from visualization_msgs.msg import Marker, MarkerArray
@@ -39,8 +39,23 @@ class RoverKF(RoverOdo):
         # TODO: Implement Kalman prediction here
         
         # ultimately : 
-        # self.X =  
-        # self.P = 
+        n=np.shape(iW)[0]
+        # Definition of the matrices 
+        Q=np.eyes(n)*10**(-6) # We define the covariance matrix for model incompletion and also in order to invert the Pk matrix (avoid singularity of the matrix)
+        Qu=np.eyes(n)*encoder_precision
+        self.P=np.eyes(n)*10**(-6)
+        Rteta=self.getRotationFromWorldToRobot()
+        # A and B matrices are the jacobian A=df/dX and B=df/dS
+        A=np.eyes(n)
+        B=Rteta @ iW
+
+
+        # Predict with the movement deltaX = iWS and then Xk= Xk-1 + R*iW*S=Xk-1 +R*deltaX, incertainty is in the S matrix and Xk-1, 
+        # CovF(X,Y)=dF/dX Cov(X)dF/dX.T + dF/dY*Cov(Y)*dF/dY.T      
+        self.X =  self.X.copy() + Rteta @ iW @ S
+        # The noises are from the command point of view and the censors point of view.
+        #
+        self.P = A @ self.P.copy() @ A.T + B @ Qu @ B.T + Q
 
         self.lock.release()
         return (self.X,self.P)
