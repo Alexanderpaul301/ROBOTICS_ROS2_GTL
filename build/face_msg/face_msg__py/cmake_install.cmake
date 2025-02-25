@@ -1,8 +1,8 @@
-# Install script for directory: /home/GTL/pcastere/ros_hw1/ros2_hw1/build/face_msg/face_msg__py
+# Install script for directory: /home/GTL/apaul/ros2_hw1/build/face_msg/face_msg__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_msg")
+  set(CMAKE_INSTALL_PREFIX "/home/GTL/apaul/ros2_hw1/install/face_msg")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

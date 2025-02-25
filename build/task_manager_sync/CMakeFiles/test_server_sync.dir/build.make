@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/GTL/pcastere/ros_hw1/ros2_hw1/src/ros_task_manager/src/task_manager_sync
+CMAKE_SOURCE_DIR = /home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_sync
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_sync
+CMAKE_BINARY_DIR = /home/GTL/apaul/ros2_hw1/build/task_manager_sync
 
 # Include any dependencies generated for this target.
 include CMakeFiles/test_server_sync.dir/depend.make
@@ -70,18 +70,18 @@ include CMakeFiles/test_server_sync.dir/progress.make
 include CMakeFiles/test_server_sync.dir/flags.make
 
 CMakeFiles/test_server_sync.dir/src/task_server.cpp.o: CMakeFiles/test_server_sync.dir/flags.make
-CMakeFiles/test_server_sync.dir/src/task_server.cpp.o: /home/GTL/pcastere/ros_hw1/ros2_hw1/src/ros_task_manager/src/task_manager_sync/src/task_server.cpp
+CMakeFiles/test_server_sync.dir/src/task_server.cpp.o: /home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_sync/src/task_server.cpp
 CMakeFiles/test_server_sync.dir/src/task_server.cpp.o: CMakeFiles/test_server_sync.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_sync/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test_server_sync.dir/src/task_server.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_server_sync.dir/src/task_server.cpp.o -MF CMakeFiles/test_server_sync.dir/src/task_server.cpp.o.d -o CMakeFiles/test_server_sync.dir/src/task_server.cpp.o -c /home/GTL/pcastere/ros_hw1/ros2_hw1/src/ros_task_manager/src/task_manager_sync/src/task_server.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/GTL/apaul/ros2_hw1/build/task_manager_sync/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test_server_sync.dir/src/task_server.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_server_sync.dir/src/task_server.cpp.o -MF CMakeFiles/test_server_sync.dir/src/task_server.cpp.o.d -o CMakeFiles/test_server_sync.dir/src/task_server.cpp.o -c /home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_sync/src/task_server.cpp
 
 CMakeFiles/test_server_sync.dir/src/task_server.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_server_sync.dir/src/task_server.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/GTL/pcastere/ros_hw1/ros2_hw1/src/ros_task_manager/src/task_manager_sync/src/task_server.cpp > CMakeFiles/test_server_sync.dir/src/task_server.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_sync/src/task_server.cpp > CMakeFiles/test_server_sync.dir/src/task_server.cpp.i
 
 CMakeFiles/test_server_sync.dir/src/task_server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_server_sync.dir/src/task_server.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/GTL/pcastere/ros_hw1/ros2_hw1/src/ros_task_manager/src/task_manager_sync/src/task_server.cpp -o CMakeFiles/test_server_sync.dir/src/task_server.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_sync/src/task_server.cpp -o CMakeFiles/test_server_sync.dir/src/task_server.cpp.s
 
 # Object files for target test_server_sync
 test_server_sync_OBJECTS = \
@@ -159,9 +159,9 @@ test_server_sync: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so
 test_server_sync: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
 test_server_sync: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
 test_server_sync: /opt/ros/humble/lib/librosidl_typesupport_cpp.so
-test_server_sync: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs/lib/libtask_manager_msgs__rosidl_typesupport_c.so
+test_server_sync: /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib/libtask_manager_msgs__rosidl_typesupport_c.so
 test_server_sync: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_c.so
-test_server_sync: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs/lib/libtask_manager_msgs__rosidl_generator_c.so
+test_server_sync: /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib/libtask_manager_msgs__rosidl_generator_c.so
 test_server_sync: /opt/ros/humble/lib/librcl_interfaces__rosidl_generator_c.so
 test_server_sync: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
 test_server_sync: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
@@ -231,9 +231,9 @@ test_server_sync: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_fast
 test_server_sync: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so
 test_server_sync: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_cpp.so
 test_server_sync: /opt/ros/humble/lib/librcl_interfaces__rosidl_generator_py.so
-test_server_sync: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs/lib/libtask_manager_msgs__rosidl_generator_c.so
-test_server_sync: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs/lib/libtask_manager_msgs__rosidl_typesupport_c.so
-test_server_sync: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs/lib/libtask_manager_msgs__rosidl_typesupport_cpp.so
+test_server_sync: /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib/libtask_manager_msgs__rosidl_generator_c.so
+test_server_sync: /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib/libtask_manager_msgs__rosidl_typesupport_c.so
+test_server_sync: /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib/libtask_manager_msgs__rosidl_typesupport_cpp.so
 test_server_sync: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_c.so
 test_server_sync: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_fastrtps_c.so
 test_server_sync: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_fastrtps_cpp.so
@@ -244,11 +244,11 @@ test_server_sync: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_cpp.so
 test_server_sync: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_py.so
 test_server_sync: /opt/ros/humble/lib/librcl_action.so
 test_server_sync: /opt/ros/humble/lib/librclcpp_action.so
-test_server_sync: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs/lib/libtask_manager_msgs__rosidl_typesupport_fastrtps_c.so
-test_server_sync: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs/lib/libtask_manager_msgs__rosidl_typesupport_fastrtps_cpp.so
-test_server_sync: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs/lib/libtask_manager_msgs__rosidl_typesupport_introspection_c.so
-test_server_sync: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs/lib/libtask_manager_msgs__rosidl_typesupport_introspection_cpp.so
-test_server_sync: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs/lib/libtask_manager_msgs__rosidl_generator_py.so
+test_server_sync: /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib/libtask_manager_msgs__rosidl_typesupport_fastrtps_c.so
+test_server_sync: /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib/libtask_manager_msgs__rosidl_typesupport_fastrtps_cpp.so
+test_server_sync: /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib/libtask_manager_msgs__rosidl_typesupport_introspection_c.so
+test_server_sync: /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib/libtask_manager_msgs__rosidl_typesupport_introspection_cpp.so
+test_server_sync: /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib/libtask_manager_msgs__rosidl_generator_py.so
 test_server_sync: /opt/ros/humble/lib/libstd_srvs__rosidl_generator_c.so
 test_server_sync: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_fastrtps_c.so
 test_server_sync: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_introspection_c.so
@@ -257,7 +257,7 @@ test_server_sync: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_fastrtps_c
 test_server_sync: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_introspection_cpp.so
 test_server_sync: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_cpp.so
 test_server_sync: /opt/ros/humble/lib/libstd_srvs__rosidl_generator_py.so
-test_server_sync: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/lib/libtask_manager_lib.so
+test_server_sync: /home/GTL/apaul/ros2_hw1/install/task_manager_lib/lib/libtask_manager_lib.so
 test_server_sync: /opt/ros/humble/lib/librclcpp.so
 test_server_sync: /opt/ros/humble/lib/libament_index_cpp.so
 test_server_sync: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
@@ -314,9 +314,9 @@ test_server_sync: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_fast
 test_server_sync: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so
 test_server_sync: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_cpp.so
 test_server_sync: /opt/ros/humble/lib/librcl_interfaces__rosidl_generator_py.so
-test_server_sync: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs/lib/libtask_manager_msgs__rosidl_generator_c.so
-test_server_sync: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs/lib/libtask_manager_msgs__rosidl_typesupport_c.so
-test_server_sync: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs/lib/libtask_manager_msgs__rosidl_typesupport_cpp.so
+test_server_sync: /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib/libtask_manager_msgs__rosidl_generator_c.so
+test_server_sync: /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib/libtask_manager_msgs__rosidl_typesupport_c.so
+test_server_sync: /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib/libtask_manager_msgs__rosidl_typesupport_cpp.so
 test_server_sync: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_c.so
 test_server_sync: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_fastrtps_c.so
 test_server_sync: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_fastrtps_cpp.so
@@ -327,11 +327,11 @@ test_server_sync: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_cpp.so
 test_server_sync: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_py.so
 test_server_sync: /opt/ros/humble/lib/librcl_action.so
 test_server_sync: /opt/ros/humble/lib/librclcpp_action.so
-test_server_sync: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs/lib/libtask_manager_msgs__rosidl_typesupport_fastrtps_c.so
-test_server_sync: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs/lib/libtask_manager_msgs__rosidl_typesupport_fastrtps_cpp.so
-test_server_sync: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs/lib/libtask_manager_msgs__rosidl_typesupport_introspection_c.so
-test_server_sync: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs/lib/libtask_manager_msgs__rosidl_typesupport_introspection_cpp.so
-test_server_sync: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_msgs/lib/libtask_manager_msgs__rosidl_generator_py.so
+test_server_sync: /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib/libtask_manager_msgs__rosidl_typesupport_fastrtps_c.so
+test_server_sync: /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib/libtask_manager_msgs__rosidl_typesupport_fastrtps_cpp.so
+test_server_sync: /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib/libtask_manager_msgs__rosidl_typesupport_introspection_c.so
+test_server_sync: /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib/libtask_manager_msgs__rosidl_typesupport_introspection_cpp.so
+test_server_sync: /home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib/libtask_manager_msgs__rosidl_generator_py.so
 test_server_sync: /opt/ros/humble/lib/libstd_srvs__rosidl_generator_c.so
 test_server_sync: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_fastrtps_c.so
 test_server_sync: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_introspection_c.so
@@ -340,10 +340,10 @@ test_server_sync: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_fastrtps_c
 test_server_sync: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_introspection_cpp.so
 test_server_sync: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_cpp.so
 test_server_sync: /opt/ros/humble/lib/libstd_srvs__rosidl_generator_py.so
-test_server_sync: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_lib/lib/libtask_manager_lib.so
+test_server_sync: /home/GTL/apaul/ros2_hw1/install/task_manager_lib/lib/libtask_manager_lib.so
 test_server_sync: /usr/lib/x86_64-linux-gnu/libpython3.10.so
 test_server_sync: CMakeFiles/test_server_sync.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_sync/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test_server_sync"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/GTL/apaul/ros2_hw1/build/task_manager_sync/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test_server_sync"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_server_sync.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -355,6 +355,6 @@ CMakeFiles/test_server_sync.dir/clean:
 .PHONY : CMakeFiles/test_server_sync.dir/clean
 
 CMakeFiles/test_server_sync.dir/depend:
-	cd /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_sync && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/GTL/pcastere/ros_hw1/ros2_hw1/src/ros_task_manager/src/task_manager_sync /home/GTL/pcastere/ros_hw1/ros2_hw1/src/ros_task_manager/src/task_manager_sync /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_sync /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_sync /home/GTL/pcastere/ros_hw1/ros2_hw1/build/task_manager_sync/CMakeFiles/test_server_sync.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/GTL/apaul/ros2_hw1/build/task_manager_sync && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_sync /home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_sync /home/GTL/apaul/ros2_hw1/build/task_manager_sync /home/GTL/apaul/ros2_hw1/build/task_manager_sync /home/GTL/apaul/ros2_hw1/build/task_manager_sync/CMakeFiles/test_server_sync.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/test_server_sync.dir/depend
 

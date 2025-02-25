@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/GTL/pcastere/ros_hw1/ros2_hw1/src/cs7630_msgs
+CMAKE_SOURCE_DIR = /home/GTL/apaul/ros2_hw1/src/cs7630_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/GTL/pcastere/ros_hw1/ros2_hw1/build/cs7630_msgs
+CMAKE_BINARY_DIR = /home/GTL/apaul/ros2_hw1/build/cs7630_msgs
 
 # Include any dependencies generated for this target.
 include CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/depend.make
@@ -175,8 +175,8 @@ rosidl_generator_c/cs7630_msgs/msg/roi_array.h: /opt/ros/humble/share/std_msgs/m
 rosidl_generator_c/cs7630_msgs/msg/roi_array.h: /opt/ros/humble/share/std_msgs/msg/UInt64MultiArray.idl
 rosidl_generator_c/cs7630_msgs/msg/roi_array.h: /opt/ros/humble/share/std_msgs/msg/UInt8.idl
 rosidl_generator_c/cs7630_msgs/msg/roi_array.h: /opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/GTL/pcastere/ros_hw1/ros2_hw1/build/cs7630_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/GTL/pcastere/ros_hw1/ros2_hw1/build/cs7630_msgs/rosidl_generator_c__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/GTL/apaul/ros2_hw1/build/cs7630_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/GTL/apaul/ros2_hw1/build/cs7630_msgs/rosidl_generator_c__arguments.json
 
 rosidl_generator_c/cs7630_msgs/msg/detail/roi_array__functions.h: rosidl_generator_c/cs7630_msgs/msg/roi_array.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cs7630_msgs/msg/detail/roi_array__functions.h
@@ -223,44 +223,44 @@ rosidl_generator_c/cs7630_msgs/msg/detail/trajectory_element__functions.c: rosid
 CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/roi_array__functions.c.o: CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/roi_array__functions.c.o: rosidl_generator_c/cs7630_msgs/msg/detail/roi_array__functions.c
 CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/roi_array__functions.c.o: CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/GTL/pcastere/ros_hw1/ros2_hw1/build/cs7630_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/roi_array__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/roi_array__functions.c.o -MF CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/roi_array__functions.c.o.d -o CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/roi_array__functions.c.o -c /home/GTL/pcastere/ros_hw1/ros2_hw1/build/cs7630_msgs/rosidl_generator_c/cs7630_msgs/msg/detail/roi_array__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/GTL/apaul/ros2_hw1/build/cs7630_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/roi_array__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/roi_array__functions.c.o -MF CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/roi_array__functions.c.o.d -o CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/roi_array__functions.c.o -c /home/GTL/apaul/ros2_hw1/build/cs7630_msgs/rosidl_generator_c/cs7630_msgs/msg/detail/roi_array__functions.c
 
 CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/roi_array__functions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/roi_array__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/GTL/pcastere/ros_hw1/ros2_hw1/build/cs7630_msgs/rosidl_generator_c/cs7630_msgs/msg/detail/roi_array__functions.c > CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/roi_array__functions.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/GTL/apaul/ros2_hw1/build/cs7630_msgs/rosidl_generator_c/cs7630_msgs/msg/detail/roi_array__functions.c > CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/roi_array__functions.c.i
 
 CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/roi_array__functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/roi_array__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/GTL/pcastere/ros_hw1/ros2_hw1/build/cs7630_msgs/rosidl_generator_c/cs7630_msgs/msg/detail/roi_array__functions.c -o CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/roi_array__functions.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/GTL/apaul/ros2_hw1/build/cs7630_msgs/rosidl_generator_c/cs7630_msgs/msg/detail/roi_array__functions.c -o CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/roi_array__functions.c.s
 
 CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory__functions.c.o: CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory__functions.c.o: rosidl_generator_c/cs7630_msgs/msg/detail/trajectory__functions.c
 CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory__functions.c.o: CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/GTL/pcastere/ros_hw1/ros2_hw1/build/cs7630_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory__functions.c.o -MF CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory__functions.c.o.d -o CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory__functions.c.o -c /home/GTL/pcastere/ros_hw1/ros2_hw1/build/cs7630_msgs/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/GTL/apaul/ros2_hw1/build/cs7630_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory__functions.c.o -MF CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory__functions.c.o.d -o CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory__functions.c.o -c /home/GTL/apaul/ros2_hw1/build/cs7630_msgs/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory__functions.c
 
 CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory__functions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/GTL/pcastere/ros_hw1/ros2_hw1/build/cs7630_msgs/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory__functions.c > CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory__functions.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/GTL/apaul/ros2_hw1/build/cs7630_msgs/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory__functions.c > CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory__functions.c.i
 
 CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory__functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/GTL/pcastere/ros_hw1/ros2_hw1/build/cs7630_msgs/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory__functions.c -o CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory__functions.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/GTL/apaul/ros2_hw1/build/cs7630_msgs/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory__functions.c -o CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory__functions.c.s
 
 CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory_element__functions.c.o: CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory_element__functions.c.o: rosidl_generator_c/cs7630_msgs/msg/detail/trajectory_element__functions.c
 CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory_element__functions.c.o: CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/GTL/pcastere/ros_hw1/ros2_hw1/build/cs7630_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory_element__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory_element__functions.c.o -MF CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory_element__functions.c.o.d -o CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory_element__functions.c.o -c /home/GTL/pcastere/ros_hw1/ros2_hw1/build/cs7630_msgs/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory_element__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/GTL/apaul/ros2_hw1/build/cs7630_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory_element__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory_element__functions.c.o -MF CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory_element__functions.c.o.d -o CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory_element__functions.c.o -c /home/GTL/apaul/ros2_hw1/build/cs7630_msgs/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory_element__functions.c
 
 CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory_element__functions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory_element__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/GTL/pcastere/ros_hw1/ros2_hw1/build/cs7630_msgs/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory_element__functions.c > CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory_element__functions.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/GTL/apaul/ros2_hw1/build/cs7630_msgs/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory_element__functions.c > CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory_element__functions.c.i
 
 CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory_element__functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory_element__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/GTL/pcastere/ros_hw1/ros2_hw1/build/cs7630_msgs/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory_element__functions.c -o CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory_element__functions.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/GTL/apaul/ros2_hw1/build/cs7630_msgs/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory_element__functions.c -o CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/rosidl_generator_c/cs7630_msgs/msg/detail/trajectory_element__functions.c.s
 
 # Object files for target cs7630_msgs__rosidl_generator_c
 cs7630_msgs__rosidl_generator_c_OBJECTS = \
@@ -282,7 +282,7 @@ libcs7630_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/libbuiltin_interfaces
 libcs7630_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libcs7630_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 libcs7630_msgs__rosidl_generator_c.so: CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/GTL/pcastere/ros_hw1/ros2_hw1/build/cs7630_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library libcs7630_msgs__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/GTL/apaul/ros2_hw1/build/cs7630_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library libcs7630_msgs__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -308,6 +308,6 @@ CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/cs7630
 CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/cs7630_msgs/msg/roi_array.h
 CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/cs7630_msgs/msg/trajectory.h
 CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/cs7630_msgs/msg/trajectory_element.h
-	cd /home/GTL/pcastere/ros_hw1/ros2_hw1/build/cs7630_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/GTL/pcastere/ros_hw1/ros2_hw1/src/cs7630_msgs /home/GTL/pcastere/ros_hw1/ros2_hw1/src/cs7630_msgs /home/GTL/pcastere/ros_hw1/ros2_hw1/build/cs7630_msgs /home/GTL/pcastere/ros_hw1/ros2_hw1/build/cs7630_msgs /home/GTL/pcastere/ros_hw1/ros2_hw1/build/cs7630_msgs/CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/GTL/apaul/ros2_hw1/build/cs7630_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/GTL/apaul/ros2_hw1/src/cs7630_msgs /home/GTL/apaul/ros2_hw1/src/cs7630_msgs /home/GTL/apaul/ros2_hw1/build/cs7630_msgs /home/GTL/apaul/ros2_hw1/build/cs7630_msgs /home/GTL/apaul/ros2_hw1/build/cs7630_msgs/CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/cs7630_msgs__rosidl_generator_c.dir/depend
 
