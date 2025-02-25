@@ -42,7 +42,7 @@ class RoverKF(RoverOdo):
         B = eye(self.X.shape[0])  ##############################
 
         # Process noise covariance 
-        Q = eye(self.X.shape[0]) * 0.01  
+        Q = eye(self.X.shape[0]) * 0.0001  
 
         # Measurement noise covariance 
         R = eye(self.X.shape[0]) * encoder_precision  
@@ -50,7 +50,7 @@ class RoverKF(RoverOdo):
         # Prediction step
         DeltaX = iW * S 
         self.X = A * self.X + B * DeltaX            
-        self.P = A * self.P * A.T + Q               
+        self.P = A * self.P * A.T + B * self.P * Q.T + Q               
 
         # Measurement matrix 
         H = eye(self.X.shape[0])  ############################
