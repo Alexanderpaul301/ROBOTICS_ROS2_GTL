@@ -115,12 +115,37 @@ class RoverKF(RoverOdo):
         logger.info("Update: S="+str(Z)+" X="+str(self.X.T))
         # Implement kalman update using compass here
         # TODO
+
+####################################################################################################################
+        # Define observation matrix H (the compass only affects theta)
+        H = np.array([[0, 0, 1]])
+
+        # Compute the innovation (difference between measurement and estimate)
+        theta_estimated = self.X[2, 0]
+        innovation = (Z - theta_estimated + np.pi) % (2 * np.pi) - np.pi  # Normalize angle difference
+
+        # Compute the Kalman gain
+        K = self.P @ H.T @ np.invert(H @ self.P @ H.T + uncertainty)  # Kalman gain
+
+        # Update the state estimate using the observation
+        self.X = self.X.copy() + K @ innovation
+
+        # Normalize theta to keep it in [-pi, pi]
+        self.X[2, 0] = (self.X[2, 0] + np.pi) % (2 * np.pi) - np.pi  
+
+        # Update the state covariance matrix
+        self.P = (np.eye(self.P.shape[0]) - K @ H) @ self.P
+####################################################################################################################
+
         # self.X = 
         # self.P = 
         self.lock.release()
         return (self.X,self.P)
 
     def publish(self, pose_pub, odom_pub, target_frame, stamp, child_frame):
+        logger = rclpy.logging.get_logger('rover_kf')
+        logger.info("Publishing pose...")
+        
         pose_simple = super().publish(pose_pub, odom_pub, target_frame, stamp, child_frame)
         pose = PoseWithCovarianceStamped()
         pose.header = pose_simple.header

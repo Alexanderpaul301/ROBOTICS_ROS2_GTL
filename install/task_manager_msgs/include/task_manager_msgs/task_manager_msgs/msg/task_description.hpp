@@ -7,6 +7,5 @@
 #include "task_manager_msgs/msg/detail/task_description__struct.hpp"
 #include "task_manager_msgs/msg/detail/task_description__builder.hpp"
 #include "task_manager_msgs/msg/detail/task_description__traits.hpp"
-#include "task_manager_msgs/msg/detail/task_description__type_support.hpp"
 
 #endif  // TASK_MANAGER_MSGS__MSG__TASK_DESCRIPTION_HPP_

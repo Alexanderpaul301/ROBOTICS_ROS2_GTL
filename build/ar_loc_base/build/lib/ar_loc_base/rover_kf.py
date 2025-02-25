@@ -40,14 +40,28 @@ class RoverKF(RoverOdo):
         
         # ultimately : 
         n=np.shape(iW)[0]
+
         # Definition of the matrices 
         Q=np.eyes(n)*10**(-6) # We define the covariance matrix for model incompletion and also in order to invert the Pk matrix (avoid singularity of the matrix)
         Qu=np.eyes(n)*encoder_precision
         self.P=np.eyes(n)*10**(-6)
         Rteta=self.getRotationFromWorldToRobot()
+
         # A and B matrices are the jacobian A=df/dX and B=df/dS
-        A=np.eyes(n)
-        B=Rteta @ iW
+        B= Rteta @ iW
+
+        #A = np.eyes(n)
+
+
+##########################Philippe Casteres
+#####################################################################################################
+        delta_x, delta_y = (iW @ S)[:2] 
+
+        A = np.eye(n)
+        A[0, 2] = Rteta[0, 0] * delta_x + Rteta[1, 0] * delta_y
+        A[1, 2] = -Rteta[1, 0] * delta_x + Rteta[0, 0] * delta_y
+###########################################################################################################
+
 
 
         # Predict with the movement deltaX = iWS and then Xk= Xk-1 + R*iW*S=Xk-1 +R*deltaX, incertainty is in the S matrix and Xk-1, 
@@ -65,11 +79,34 @@ class RoverKF(RoverOdo):
         logger.info("Update: L="+str(L.T)+" X="+str(self.X.T))
         # TODO: Implement Kalman Obervation here
         Rteta=self.getRotationFromWorldToRobot()
-        H=np.eyes(n)
+        #H=np.eyes(n)
 
-        K=self.P @ H.T @ np.invert(H @ self.P @ H.T + Rteta)
-        self.X = self.X.copy() + K @ (Z - self.X.copy() + Rteta @ iW @ S)
-        self.P = (np.eyes(n)-K @ H) @ self.P
+##########################Philippe Casteres
+#####################################################################################################################
+         # Define the observation matrix H 
+        Lx, Ly = L[0, 0], L[1, 0]  # AR tag position (landmark)
+        x, y, theta = self.X[0, 0], self.X[1, 0], self.X[2, 0]  # Current state variables
+        
+        H = np.array([
+            [1, 0, -(Ly - y)],  # Partial derivatives of x with respect to the state
+            [0, 1, (Lx - x)]    # Partial derivatives of y with respect to the state
+        ])
+
+        # Compute the Kalman gain
+        K = self.P @ H.T @ np.invert(H @ self.P @ H.T + uncertainty) 
+
+        # Update the state estimate using the observation
+        self.X = self.X.copy() + K @ (Z - (Rteta @ (L - self.X[:2]))) 
+
+        # Update the state covariance matrix
+        self.P = (np.eye(self.P.shape[0]) - K @ H) @ self.P
+####################################################################################################################
+
+
+        #K=self.P @ H.T @ np.invert(H @ self.P @ H.T + Rteta)
+        #self.X = self.X.copy() + K @ (Z - self.X.copy() + Rteta @ iW @ S)
+        #self.P = (np.eyes(n)-K @ H) @ self.P
+
         self.lock.release()
         return (self.X,self.P)
 
@@ -78,6 +115,28 @@ class RoverKF(RoverOdo):
         logger.info("Update: S="+str(Z)+" X="+str(self.X.T))
         # Implement kalman update using compass here
         # TODO
+
+####################################################################################################################
+        # Define observation matrix H (the compass only affects theta)
+        H = np.array([[0, 0, 1]])
+
+        # Compute the innovation (difference between measurement and estimate)
+        theta_estimated = self.X[2, 0]
+        innovation = (Z - theta_estimated + np.pi) % (2 * np.pi) - np.pi  # Normalize angle difference
+
+        # Compute the Kalman gain
+        K = self.P @ H.T @ np.invert(H @ self.P @ H.T + uncertainty)  # Kalman gain
+
+        # Update the state estimate using the observation
+        self.X = self.X.copy() + K @ innovation
+
+        # Normalize theta to keep it in [-pi, pi]
+        self.X[2, 0] = (self.X[2, 0] + np.pi) % (2 * np.pi) - np.pi  
+
+        # Update the state covariance matrix
+        self.P = (np.eye(self.P.shape[0]) - K @ H) @ self.P
+####################################################################################################################
+
         # self.X = 
         # self.P = 
         self.lock.release()

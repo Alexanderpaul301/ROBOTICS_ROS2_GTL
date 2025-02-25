@@ -7,6 +7,5 @@
 #include "task_manager_msgs/srv/detail/get_all_task_status__struct.hpp"
 #include "task_manager_msgs/srv/detail/get_all_task_status__builder.hpp"
 #include "task_manager_msgs/srv/detail/get_all_task_status__traits.hpp"
-#include "task_manager_msgs/srv/detail/get_all_task_status__type_support.hpp"
 
 #endif  // TASK_MANAGER_MSGS__SRV__GET_ALL_TASK_STATUS_HPP_

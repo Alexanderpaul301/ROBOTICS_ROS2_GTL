@@ -1,8 +1,8 @@
-# Install script for directory: /home/GTL/apaul/ros2_hw1/src/joy_pack
+# Install script for directory: /home/GTL/pcastere/ros_hw1/ros2_hw1/src/joy_pack
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/GTL/apaul/ros2_hw1/install/joy_pack")
+  set(CMAKE_INSTALL_PREFIX "/home/GTL/pcastere/ros_hw1/ros2_hw1/install/joy_pack")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,7 +49,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/joy_pack/joy_node"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/joy_pack" TYPE EXECUTABLE FILES "/home/GTL/apaul/ros2_hw1/build/joy_pack/joy_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/joy_pack" TYPE EXECUTABLE FILES "/home/GTL/pcastere/ros_hw1/ros2_hw1/build/joy_pack/joy_node")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/joy_pack/joy_node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/joy_pack/joy_node")
     file(RPATH_CHANGE
@@ -63,11 +63,11 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/GTL/apaul/ros2_hw1/build/joy_pack/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/joy_pack")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/GTL/pcastere/ros_hw1/ros2_hw1/build/joy_pack/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/joy_pack")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/GTL/apaul/ros2_hw1/build/joy_pack/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/joy_pack")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/GTL/pcastere/ros_hw1/ros2_hw1/build/joy_pack/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/joy_pack")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -75,7 +75,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joy_pack/environment" TYPE FILE FILES "/home/GTL/apaul/ros2_hw1/build/joy_pack/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joy_pack/environment" TYPE FILE FILES "/home/GTL/pcastere/ros_hw1/ros2_hw1/build/joy_pack/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -83,42 +83,42 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joy_pack/environment" TYPE FILE FILES "/home/GTL/apaul/ros2_hw1/build/joy_pack/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joy_pack/environment" TYPE FILE FILES "/home/GTL/pcastere/ros_hw1/ros2_hw1/build/joy_pack/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joy_pack" TYPE FILE FILES "/home/GTL/apaul/ros2_hw1/build/joy_pack/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joy_pack" TYPE FILE FILES "/home/GTL/pcastere/ros_hw1/ros2_hw1/build/joy_pack/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joy_pack" TYPE FILE FILES "/home/GTL/apaul/ros2_hw1/build/joy_pack/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joy_pack" TYPE FILE FILES "/home/GTL/pcastere/ros_hw1/ros2_hw1/build/joy_pack/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joy_pack" TYPE FILE FILES "/home/GTL/apaul/ros2_hw1/build/joy_pack/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joy_pack" TYPE FILE FILES "/home/GTL/pcastere/ros_hw1/ros2_hw1/build/joy_pack/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joy_pack" TYPE FILE FILES "/home/GTL/apaul/ros2_hw1/build/joy_pack/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joy_pack" TYPE FILE FILES "/home/GTL/pcastere/ros_hw1/ros2_hw1/build/joy_pack/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joy_pack" TYPE FILE FILES "/home/GTL/apaul/ros2_hw1/build/joy_pack/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joy_pack" TYPE FILE FILES "/home/GTL/pcastere/ros_hw1/ros2_hw1/build/joy_pack/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/GTL/apaul/ros2_hw1/build/joy_pack/ament_cmake_index/share/ament_index/resource_index/packages/joy_pack")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/GTL/pcastere/ros_hw1/ros2_hw1/build/joy_pack/ament_cmake_index/share/ament_index/resource_index/packages/joy_pack")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joy_pack/cmake" TYPE FILE FILES
-    "/home/GTL/apaul/ros2_hw1/build/joy_pack/ament_cmake_core/joy_packConfig.cmake"
-    "/home/GTL/apaul/ros2_hw1/build/joy_pack/ament_cmake_core/joy_packConfig-version.cmake"
+    "/home/GTL/pcastere/ros_hw1/ros2_hw1/build/joy_pack/ament_cmake_core/joy_packConfig.cmake"
+    "/home/GTL/pcastere/ros_hw1/ros2_hw1/build/joy_pack/ament_cmake_core/joy_packConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joy_pack" TYPE FILE FILES "/home/GTL/apaul/ros2_hw1/src/joy_pack/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joy_pack" TYPE FILE FILES "/home/GTL/pcastere/ros_hw1/ros2_hw1/src/joy_pack/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -129,5 +129,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/GTL/apaul/ros2_hw1/build/joy_pack/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/GTL/pcastere/ros_hw1/ros2_hw1/build/joy_pack/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

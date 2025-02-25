@@ -1,0 +1,90 @@
+[0.878s] Invoking command in '/home/GTL/pcastere/ros_hw1/ros2_hw1/build/collision_avoidance_base': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/vrep_ros_teleop:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_client_py:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_slam_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_loc_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/rover_driver_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/keyboard_teleop:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_detect_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/button_server:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_mapping_base:/opt/ros/humble /usr/bin/cmake /home/GTL/pcastere/ros_hw1/ros2_hw1/src/collision_avoidance_base -DCMAKE_INSTALL_PREFIX=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/collision_avoidance_base
+[1.088s] -- The C compiler identification is GNU 11.4.0
+[1.088s] -- The CXX compiler identification is GNU 11.4.0
+[1.088s] -- Detecting C compiler ABI info
+[1.090s] -- Detecting C compiler ABI info - done
+[1.101s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.101s] -- Detecting C compile features
+[1.101s] -- Detecting C compile features - done
+[1.108s] -- Detecting CXX compiler ABI info
+[1.210s] -- Detecting CXX compiler ABI info - done
+[1.218s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.218s] -- Detecting CXX compile features
+[1.219s] -- Detecting CXX compile features - done
+[1.233s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.367s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.631s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[1.806s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.834s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.863s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.895s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.940s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.116s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.129s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[2.214s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[2.259s] -- Looking for pthread.h
+[2.358s] -- Looking for pthread.h - found
+[2.360s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.455s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.457s] -- Found Threads: TRUE  
+[2.550s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.610s] -- Checking for module 'eigen3'
+[2.619s] --   Found eigen3, version 3.4.0
+[2.638s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[2.638s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[2.826s] -- Checking for module 'libusb-1.0'
+[2.834s] --   Found libusb-1.0, version 1.0.25
+[2.854s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[2.854s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.888s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[3.959s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[3.959s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[3.959s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[3.959s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[3.981s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[4.061s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.282s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.282s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/GTL/pcastere/ros_hw1/ros2_hw1/src/collision_avoidance_base/include>
+[4.282s] -- Configured cppcheck exclude dirs and/or files: 
+[4.286s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.291s] -- Added test 'lint_cmake' to check CMake code style
+[4.294s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[4.304s] -- Added test 'uncrustify' to check C / C++ code style
+[4.305s] -- Configured uncrustify additional arguments: 
+[4.308s] -- Added test 'xmllint' to check XML markup files
+[4.326s] -- Configuring done
+[4.439s] -- Generating done
+[4.457s] -- Build files have been written to: /home/GTL/pcastere/ros_hw1/ros2_hw1/build/collision_avoidance_base
+[4.484s] Invoked command in '/home/GTL/pcastere/ros_hw1/ros2_hw1/build/collision_avoidance_base' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/vrep_ros_teleop:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_client_py:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_slam_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_loc_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/rover_driver_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/keyboard_teleop:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_detect_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/button_server:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_mapping_base:/opt/ros/humble /usr/bin/cmake /home/GTL/pcastere/ros_hw1/ros2_hw1/src/collision_avoidance_base -DCMAKE_INSTALL_PREFIX=/home/GTL/pcastere/ros_hw1/ros2_hw1/install/collision_avoidance_base
+[4.486s] Invoking command in '/home/GTL/pcastere/ros_hw1/ros2_hw1/build/collision_avoidance_base': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/vrep_ros_teleop:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_client_py:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_slam_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_loc_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/rover_driver_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/keyboard_teleop:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_detect_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/button_server:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_mapping_base:/opt/ros/humble /usr/bin/cmake --build /home/GTL/pcastere/ros_hw1/ros2_hw1/build/collision_avoidance_base -- -j16 -l16
+[4.575s] [ 50%] [32mBuilding CXX object CMakeFiles/collision_avoidance_base.dir/src/collision_avoidance.cpp.o[0m
+[31.380s] [100%] [32m[1mLinking CXX executable collision_avoidance_base[0m
+[32.498s] [100%] Built target collision_avoidance_base
+[32.507s] Invoked command in '/home/GTL/pcastere/ros_hw1/ros2_hw1/build/collision_avoidance_base' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/vrep_ros_teleop:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_client_py:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_slam_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_loc_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/rover_driver_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/keyboard_teleop:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_detect_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/button_server:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_mapping_base:/opt/ros/humble /usr/bin/cmake --build /home/GTL/pcastere/ros_hw1/ros2_hw1/build/collision_avoidance_base -- -j16 -l16
+[32.530s] Invoking command in '/home/GTL/pcastere/ros_hw1/ros2_hw1/build/collision_avoidance_base': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/vrep_ros_teleop:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_client_py:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_slam_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_loc_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/rover_driver_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/keyboard_teleop:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_detect_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/button_server:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_mapping_base:/opt/ros/humble /usr/bin/cmake --install /home/GTL/pcastere/ros_hw1/ros2_hw1/build/collision_avoidance_base
+[32.536s] -- Install configuration: ""
+[32.543s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/collision_avoidance_base/lib/collision_avoidance_base/collision_avoidance_base
+[32.780s] -- Set runtime path of "/home/GTL/pcastere/ros_hw1/ros2_hw1/install/collision_avoidance_base/lib/collision_avoidance_base/collision_avoidance_base" to ""
+[32.781s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base
+[32.785s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/coll_teleop.launch.py
+[32.804s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/ca_auto.launch.py
+[32.808s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/ca.launch.py
+[32.812s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/__pycache__
+[32.815s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/__pycache__/coll_teleop.launch.cpython-310.pyc
+[32.820s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/__pycache__/ca.launch.cpython-310.pyc
+[32.828s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/collision_avoidance_base/share/ament_index/resource_index/package_run_dependencies/collision_avoidance_base
+[32.835s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/collision_avoidance_base/share/ament_index/resource_index/parent_prefix_path/collision_avoidance_base
+[32.841s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/environment/ament_prefix_path.sh
+[32.845s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/environment/ament_prefix_path.dsv
+[32.849s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/environment/path.sh
+[32.852s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/environment/path.dsv
+[32.856s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/local_setup.bash
+[32.860s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/local_setup.sh
+[32.864s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/local_setup.zsh
+[32.869s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/local_setup.dsv
+[32.872s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/package.dsv
+[32.880s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/collision_avoidance_base/share/ament_index/resource_index/packages/collision_avoidance_base
+[32.886s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/cmake/collision_avoidance_baseConfig.cmake
+[32.890s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/cmake/collision_avoidance_baseConfig-version.cmake
+[32.894s] -- Installing: /home/GTL/pcastere/ros_hw1/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/package.xml
+[32.899s] Invoked command in '/home/GTL/pcastere/ros_hw1/ros2_hw1/build/collision_avoidance_base' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/vrep_ros_teleop:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/task_manager_client_py:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_slam_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_loc_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/rover_driver_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/keyboard_teleop:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/face_detect_base:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/button_server:/home/GTL/pcastere/ros_hw1/ros2_hw1/install/ar_mapping_base:/opt/ros/humble /usr/bin/cmake --install /home/GTL/pcastere/ros_hw1/ros2_hw1/build/collision_avoidance_base

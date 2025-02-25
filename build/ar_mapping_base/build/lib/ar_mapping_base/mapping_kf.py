@@ -28,6 +28,24 @@ class Landmark:
         # TODO
         # L = g(X,Z)
         # Cov(L) = dG/dX Cov(X) dG/dX^T + dG/dZ Cov(Z) dG/dZ^T
+
+#######################################################################################################################
+        # Compute the landmark position in the global frame
+        theta = X[2, 0] 
+        R_theta = array([[cos(theta), -sin(theta)],
+                         [sin(theta),  cos(theta)]])  
+        
+        self.L = Z + R_theta @ X[:2]
+
+        # Compute the initial covariance of the landmark
+        J_X = eye(2)  # Jacobian of landmark position wrt X
+        J_Z = R_theta  # Jacobian of landmark position wrt Z
+
+        self.P = J_X @ X[3:, 3:] @ J_X.T + J_Z @ R @ J_Z.T  # Covariance propagation
+
+###########################################################################################################################################
+
+
         self.L =vstack([0,0])
         self.P =mat([[0,0],[0,0]])
 
@@ -35,6 +53,24 @@ class Landmark:
         # Update the landmark based on measurement Z, 
         # current position X and uncertainty R
         # TODO
+
+#######################################################################################################################
+        theta = X[2, 0]  # Rover orientation
+        R_theta = array([[cos(theta), -sin(theta)],
+                         [sin(theta),  cos(theta)]])  
+        
+        Z_global = Z + R_theta @ X[:2]   
+
+        H = eye(2)  # Observation matrix
+        K = self.P @ H.T @ inv(S = H @ self.P @ H.T + R)  # Kalman gain
+
+        # Update state estimate
+        self.L = self.L + K @ (Z_global - self.L)
+
+        # Update covariance
+        self.P = (eye(2) - K @ H) @ self.P
+###########################################################################################################################################
+
         return
         
 
@@ -53,13 +89,22 @@ class MappingKF:
         if Id in self.marker_list:
             # Known landmark, we can run the KF update
             # TODO
-            self.marker_list[Id] += 0
+###########################################################################################################################################
+            # If landmark is known, perform Kalman update
+            logger.info(f"Updating existing landmark {Id}")
+            self.marker_list[Id].update(Z, X, R)
+###########################################################################################################################################
+            #self.marker_list[Id] += 0
         else:
             # New landmark, we need to create it
             # TODO
-            self.marker_list[Id] = 0
-            logger.info("Initialised landmark %d at %s" %
-                    (Id,str(self.marker_list[Id].L.T)))
+###########################################################################################################################################           
+            # If landmark is new, initialize it
+            logger.info(f"Initializing new landmark {Id}")
+            self.marker_list[Id] = Landmark(Z, X, R)
+###########################################################################################################################################
+            #self.marker_list[Id] = 0
+            logger.info("Initialised landmark %d at %s" % (Id,str(self.marker_list[Id].L.T)))
         self.lock.release()
 
 

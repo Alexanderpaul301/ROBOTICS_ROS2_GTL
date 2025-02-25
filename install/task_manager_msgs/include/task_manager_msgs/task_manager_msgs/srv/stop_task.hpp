@@ -7,6 +7,5 @@
 #include "task_manager_msgs/srv/detail/stop_task__struct.hpp"
 #include "task_manager_msgs/srv/detail/stop_task__builder.hpp"
 #include "task_manager_msgs/srv/detail/stop_task__traits.hpp"
-#include "task_manager_msgs/srv/detail/stop_task__type_support.hpp"
 
 #endif  // TASK_MANAGER_MSGS__SRV__STOP_TASK_HPP_
