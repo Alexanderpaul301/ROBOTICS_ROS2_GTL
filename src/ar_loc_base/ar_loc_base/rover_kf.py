@@ -83,7 +83,7 @@ class RoverKF(RoverOdo):
 
 ##########################Philippe Casteres
 #####################################################################################################################
-         # Define the observation matrix H (AR Tag Localization)
+         # Define the observation matrix H 
         Lx, Ly = L[0, 0], L[1, 0]  # AR tag position (landmark)
         x, y, theta = self.X[0, 0], self.X[1, 0], self.X[2, 0]  # Current state variables
         
@@ -103,9 +103,9 @@ class RoverKF(RoverOdo):
 ####################################################################################################################
 
 
-        K=self.P @ H.T @ np.invert(H @ self.P @ H.T + Rteta)
-        self.X = self.X.copy() + K @ (Z - self.X.copy() + Rteta @ iW @ S)
-        self.P = (np.eyes(n)-K @ H) @ self.P
+        #K=self.P @ H.T @ np.invert(H @ self.P @ H.T + Rteta)
+        #self.X = self.X.copy() + K @ (Z - self.X.copy() + Rteta @ iW @ S)
+        #self.P = (np.eyes(n)-K @ H) @ self.P
 
         self.lock.release()
         return (self.X,self.P)
