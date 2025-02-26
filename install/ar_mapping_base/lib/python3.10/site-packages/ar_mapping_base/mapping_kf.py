@@ -28,48 +28,41 @@ class Landmark:
         # TODO
         # L = g(X,Z)
         # Cov(L) = dG/dX Cov(X) dG/dX^T + dG/dZ Cov(Z) dG/dZ^T
+        # ! In this init function I only used the uncertainty over the measurement, we consider that the uncertainty over the state is null ?
 
-#######################################################################################################################
-        # Compute the landmark position in the global frame
-        theta = X[2, 0] 
-        R_theta = array([[cos(theta), -sin(theta)],
-                         [sin(theta),  cos(theta)]])  
+        teta=self.X[2,0]
+        Rteta=array([[cos(teta),-sin(teta)],[sin(teta),cos(teta)]])
         
-        self.L = Z + R_theta @ X[:2]
-
-        # Compute the initial covariance of the landmark
-        J_X = eye(2)  # Jacobian of landmark position wrt X
-        J_Z = R_theta  # Jacobian of landmark position wrt Z
-
-        self.P = J_X @ X[3:, 3:] @ J_X.T + J_Z @ R @ J_Z.T  # Covariance propagation
-
-###########################################################################################################################################
+        # The Landmark object contains two informations : 1) L : Tag's position  2) P : Covariance characterizing the level of knowledge we have  
+        # Position of the tag, we use the robot position and the distance measured between the tag and the robot (Z) that we put in the world reference. 
+        self.L = X[:2]+ Rteta*Z
+        # Covariance
+        self.P = Rteta @ R @ Rteta.T
 
 
-        self.L =vstack([0,0])
-        self.P =mat([[0,0],[0,0]])
 
     def update(self,Z, X, R):
         # Update the landmark based on measurement Z, 
         # current position X and uncertainty R
         # TODO
+        Q=eye(3)*10**(-6)
+        teta=X[2,0]
+        Rteta=array([[cos(teta),-sin(teta)],[sin(teta),cos(teta)]])
+        # Define R(-teta)
+        R_teta=Rteta.T
 
-#######################################################################################################################
-        theta = X[2, 0]  # Rover orientation
-        R_theta = array([[cos(theta), -sin(theta)],
-                         [sin(theta),  cos(theta)]])  
-        
-        Z_global = Z + R_theta @ X[:2]   
+        # We run the extended kalman filter
+        B=zeros(3)
+        A=eye(3)
 
-        H = eye(2)  # Observation matrix
-        K = self.P @ H.T @ inv(S = H @ self.P @ H.T + R)  # Kalman gain
+        # Prediction stage
+        self.P=self.P.copy()+Q
 
-        # Update state estimate
-        self.L = self.L + K @ (Z_global - self.L)
-
-        # Update covariance
-        self.P = (eye(2) - K @ H) @ self.P
-###########################################################################################################################################
+        #Observation stage
+        H=-R_teta
+        K=self.P @ H @ inv(H @ self.P @ H.T + R)
+        self.P= (eye(3)-K @ H) @ self.P
+        self.L= self.L.copy() + K @ (Z-R_teta @ (self.L.copy()-X[0:2]))
 
         return
         
@@ -81,6 +74,7 @@ class MappingKF:
         self.marker_list = {}
         self.marker_pub = node.create_publisher(MarkerArray,"~/landmarks",1)
 
+
     def update_ar(self, logger, Z, X, Id, uncertainty):
         self.lock.acquire()
         # TODO
@@ -89,23 +83,16 @@ class MappingKF:
         if Id in self.marker_list:
             # Known landmark, we can run the KF update
             # TODO
-###########################################################################################################################################
-            # If landmark is known, perform Kalman update
-            logger.info(f"Updating existing landmark {Id}")
-            self.marker_list[Id].update(Z, X, R)
-###########################################################################################################################################
-            #self.marker_list[Id] += 0
+            self.marker_list[Id].update(Z,X,R)
+
         else:
             # New landmark, we need to create it
             # TODO
-###########################################################################################################################################           
-            # If landmark is new, initialize it
-            logger.info(f"Initializing new landmark {Id}")
-            self.marker_list[Id] = Landmark(Z, X, R)
-###########################################################################################################################################
-            #self.marker_list[Id] = 0
-            logger.info("Initialised landmark %d at %s" % (Id,str(self.marker_list[Id].L.T)))
+            self.marker_list[Id] = Landmark(Z,X,R)
+            logger.info("Initialised landmark %d at %s" %
+                    (Id,str(self.marker_list[Id].L.T)))
         self.lock.release()
+
 
 
     def publish(self, target_frame, timestamp):
@@ -161,4 +148,3 @@ class MappingKF:
             marker.lifetime = rclpy.time.Duration(seconds=3.).to_msg()
             ma.markers.append(marker)
         self.marker_pub.publish(ma)
-
