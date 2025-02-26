@@ -46,14 +46,14 @@ class RoverKF(RoverOdo):
 
         # Definition of the matrices 
         Q=eye(n)*10**(-6) # We define the covariance matrix for model incompletion and also in order to invert the Pk matrix (avoid singularity of the matrix)
-        Qu=eye(n)*encoder_precision
+        Qu=eye(n)*encoder_precision*10**(4)
 
         Rteta=zeros((3,3))
         Rteta[0:2,0:2]=self.getRotationFromWorldToRobot()
         Rteta[2,2]=1
         # logger.info("Rteta" + str(Rteta)) #Rteta seems to have the good form
 
-        # A and B matrices are the jacobian A=df/dX and B=df/dS
+        # A and B matrices are the jacobian A=df/dX and B=df/ddelraX
         B= Rteta
         # logger.info("Taille B" + str(B.shape))
 

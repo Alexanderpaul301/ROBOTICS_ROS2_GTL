@@ -30,7 +30,7 @@ class Landmark:
         # Cov(L) = dG/dX Cov(X) dG/dX^T + dG/dZ Cov(Z) dG/dZ^T
         # ! In this init function I only used the uncertainty over the measurement, we consider that the uncertainty over the state is null ?
 
-        teta=self.X[2,0]
+        teta=X[2,0]
         Rteta=array([[cos(teta),-sin(teta)],[sin(teta),cos(teta)]])
         
         # The Landmark object contains two informations : 1) L : Tag's position  2) P : Covariance characterizing the level of knowledge we have  
