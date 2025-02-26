@@ -97,7 +97,7 @@ class RoverKF(RoverOdo):
         # logger.info("taille Rtronqué" +str((Rteta[0:2,0:2].shape)))
         # logger.info("taille X" +str((self.X[0:2].shape)))
         # logger.info("taille K" +str((K.shape)))
-        self.X = self.X.copy() + K @ (Z - (Rteta[0:2,0:2] @ (L - self.X[0:2]))) 
+        self.X = self.X.copy() + K @ (Z - (Rteta[0:2,0:2] @ (L - self.X[0:2])))
 
 
         # Update the state covariance matrix
