@@ -31,12 +31,12 @@ class Landmark:
         # ! In this init function I only used the uncertainty over the measurement, we consider that the uncertainty over the state is null ?
 
         teta=X[2,0]
-        Rteta=array([[cos(teta),-sin(teta)],[sin(teta),cos(teta)]])
-        Rteta_augment=array([[cos(teta), -sin(teta), 0],[sin(teta), cos(teta), 0 ],[0, 0, 1]])
+        Rteta=mat([[cos(teta),-sin(teta)],[sin(teta),cos(teta)]])
+        Rteta_augment=mat([[cos(teta), -sin(teta), 0],[sin(teta), cos(teta), 0 ],[0, 0, 1]])
         
         # The Landmark object contains two informations : 1) L : Tag's position  2) P : Covariance characterizing the level of knowledge we have  
         # Position of the tag, we use the robot position and the distance measured between the tag and the robot (Z) that we put in the world reference. 
-        self.L = X[:2]+ Rteta @ Z
+        self.L = X[0:2]+ Rteta @ Z
         # Covariance
         self.P = Rteta @ R @ Rteta.T
 
@@ -48,25 +48,25 @@ class Landmark:
         # TODO
         Q=zeros((2,2))
         teta=X[2,0]
-        Rteta=array([[cos(teta),-sin(teta)],[sin(teta),cos(teta)]])
+        Rteta=mat([[cos(teta),-sin(teta)],[sin(teta),cos(teta)]])
 
         # Define R(-teta)
         R_teta=Rteta.T
 
         # We run the extended kalman filter
         # B=0
-        # A=I
+        A=eye(2)
 
         # Prediction stage
-        self.P=self.P.copy()+Q  # B is the null matrix
+        self.P=self.P+Q  # B is the null matrix
 
         #Observation stage
         H=R_teta    # ! dim H = (2,2)
         
 
-        K=self.P @ H @ inv(H @ self.P @ H.T + R)
+        K=self.P @ H.T @ inv(H @ self.P @ H.T + R)
         self.P= (eye(2)-K @ H) @ self.P
-        self.L= self.L.copy() + K @ (Z-R_teta @ (self.L.copy()-X[0:2]))
+        self.L= self.L + K @ (Z-R_teta @ (self.L-X[0:2]))
 
         return
         
