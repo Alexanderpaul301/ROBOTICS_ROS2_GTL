@@ -46,7 +46,7 @@ class RoverKF(RoverOdo):
 
         # Definition of the matrices 
         Q=eye(n)*10**(-6) # We define the covariance matrix for model incompletion and also in order to invert the Pk matrix (avoid singularity of the matrix)
-        Qu=eye(n)*encoder_precision*10**(4)
+        Qu=eye(12)*encoder_precision*10**(4)
 
         Rteta=zeros((3,3))
         Rteta[0:2,0:2]=self.getRotationFromWorldToRobot()
@@ -54,10 +54,15 @@ class RoverKF(RoverOdo):
         # logger.info("Rteta" + str(Rteta)) #Rteta seems to have the good form
 
         # A and B matrices are the jacobian A=df/dX and B=df/ddelraX
-        B= Rteta
+        B = Rteta @ iW
         # logger.info("Taille B" + str(B.shape))
 
+        theta = self.X[2, 0] 
+        delta_x, delta_y = (iW @ S)[:2]
+
         A = eye(n)
+        A[0, 2] = -sin(theta) * delta_x - cos(theta) * delta_y
+        A[1, 2] = cos(theta) * delta_x - sin(theta) * delta_y
         # logger.info("Taille A" + str(A.shape))
         # Predict with the movement deltaX = iWS and then Xk= Xk-1 + R*iW*S=Xk-1 +R*deltaX, incertainty is in the S matrix and Xk-1, 
         # CovF(X,Y)=dF/dX Cov(X)dF/dX.T + dF/dY*Cov(Y)*dF/dY.T
@@ -78,7 +83,7 @@ class RoverKF(RoverOdo):
         Rteta[2,2]=1
 
         # We declare this matrix to be able to have a H of the right dimension
-        T=eye(2,3)
+        T=zeros((2,3))
         T[0,0]=1
         T[1,1]=1
         
@@ -97,7 +102,7 @@ class RoverKF(RoverOdo):
         # logger.info("taille Rtronqué" +str((Rteta[0:2,0:2].shape)))
         # logger.info("taille X" +str((self.X[0:2].shape)))
         # logger.info("taille K" +str((K.shape)))
-        self.X = self.X.copy() + K @ (Z - (Rteta[0:2,0:2] @ (L - self.X[0:2])))
+        self.X = self.X.copy() + K @ (Z - (Rteta[0:2,0:2] @ (L - self.X[0:2]))) 
 
 
         # Update the state covariance matrix
