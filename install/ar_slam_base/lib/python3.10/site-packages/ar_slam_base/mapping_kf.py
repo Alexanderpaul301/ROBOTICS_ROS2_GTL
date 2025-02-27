@@ -93,8 +93,8 @@ class MappingKF(RoverOdo):
             Hx= np.zeros((2,3)) # ! dim(Hx)=(2,3)
             Hx[0,0]=1
             Hx[1,1]=1
-            Hx[0, 2] = -sin(theta) * Z[0,0] - cos(theta) * Z[1,0]
-            Hx[1, 2] = cos(theta) * Z[0,0] - sin(theta) * Z[1,0]
+            Hx[0, 2] = -sin(theta) * Z[0,0] + cos(theta) * Z[1,0]
+            Hx[1, 2] = -cos(theta) * Z[0,0] - sin(theta) * Z[1,0]
 
             Hz=Rtheta
 
@@ -133,7 +133,7 @@ class MappingKF(RoverOdo):
         logger.info("taille X" + str(self.X.shape))
         logger.info("taille K"+ str(K.shape))
 
-        self.X = self.X.copy() + K @ (Rtheta @ Z - h_x)
+        self.X = self.X.copy() + K @ (Z - h_x)
         
         # ! Covariance
         self.P = (np.eye(self.P.shape[0]) - K @ H) @ self.P
