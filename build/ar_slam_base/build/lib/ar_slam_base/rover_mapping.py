@@ -29,6 +29,9 @@ class RoverMapping(Node):
         self.name = name
         self.declare_parameter('~/rover_name', self.name)
         self.declare_parameter('~/target_frame', "world")
+        self.declare_parameter('~/base_frame', '%s_ground'%(self.name))
+        self.declare_parameter('~/reference_frame', "loc_world")
+        self.declare_parameter('~/inverse_tf', True)
         self.declare_parameter('~/use_ar', False)
         self.declare_parameter('~/use_compass', False)
         self.declare_parameter('~/ignore_id', False)
@@ -40,9 +43,12 @@ class RoverMapping(Node):
         self.declare_parameter('~/initial_theta', -pi/4) #[m]
         self.name = self.get_parameter('~/rover_name').get_parameter_value().string_value
         self.use_ar = self.get_parameter('~/use_ar').get_parameter_value().bool_value
+        self.inverse_tf = self.get_parameter('~/inverse_tf').get_parameter_value().bool_value
         self.use_compass = self.get_parameter('~/use_compass').get_parameter_value().bool_value
         self.ignore_id = self.get_parameter('~/ignore_id').get_parameter_value().bool_value
         self.target_frame = self.get_parameter('~/target_frame').get_parameter_value().string_value
+        self.base_frame = self.get_parameter('~/base_frame').get_parameter_value().string_value
+        self.reference_frame = self.get_parameter('~/reference_frame').get_parameter_value().string_value
         self.encoder_precision = self.get_parameter('~/encoder_precision').get_parameter_value().double_value
         self.ar_precision = self.get_parameter('~/ar_precision').get_parameter_value().double_value
         self.compass_precision = self.get_parameter('~/compass_precision').get_parameter_value().double_value
@@ -67,9 +73,9 @@ class RoverMapping(Node):
         self.radius={}
         for k in prefix:
             try:
-                if not self.waittf('%s_ground'%(self.name), '%sDrive'%k, 60.0):
+                if not self.waittf(self.base_frame, '%sDrive'%k, 60.0):
                     raise TransformException
-                t = self.tf_buffer.lookup_transform('%s_ground'%(self.name),
+                t = self.tf_buffer.lookup_transform(self.base_frame,
                         '%sDrive'%k, rclpy.time.Time())
                 self.radius[k] = t.transform.translation.z
                 self.get_logger().info("Got transform for " + k)
@@ -113,8 +119,11 @@ class RoverMapping(Node):
 
 
     def publish(self, stamp):
-        self.mapper.publish(self.pose_pub,self.odom_pub,self.target_frame,stamp,"%s_ground" % self.name)
-        self.mapper.broadcast(self.broadcaster, self.target_frame, stamp)
+        self.mapper.publish(self.pose_pub,self.odom_pub,self.target_frame,stamp,self.base_frame)
+        tgt_frame = self.target_frame
+        if self.inverse_tf:
+            tgt_frame = self.reference_frame
+        self.mapper.broadcast(self.broadcaster, tgt_frame, self.base_frame, stamp, self.inverse_tf)
 
 
     def sync_odo_cb(self,*args):
@@ -134,7 +143,7 @@ class RoverMapping(Node):
     def odo_cb(self,timestamp,motors):
         # Get the pose of all drives
         drive_cfg={}
-        to_frame_rel = '%s_ground'%(self.name)
+        to_frame_rel = self.base_frame
         for k in prefix:
             try:
                 from_frame_rel = '%sDrive'%k
@@ -160,14 +169,14 @@ class RoverMapping(Node):
         self.get_logger().info("Received marker array with %d detections" % len(markers.markers))
         for m in markers.markers:
             try:
-                res = self.tf_buffer.can_transform('%s_ground'% self.name, markers.header.frame_id, markers.header.stamp, rclpy.time.Duration(seconds=1.0),True)
+                res = self.tf_buffer.can_transform(self.base_frame, markers.header.frame_id, markers.header.stamp, rclpy.time.Duration(seconds=1.0),True)
                 if not res[0]:
                     self.get_logger().info(res[1])
                     continue
                 m_pose = PointStamped()
                 m_pose.header = markers.header
                 m_pose.point = m.pose.position
-                t = self.tf_buffer.lookup_transform('%s_ground'%(self.name),markers.header.frame_id,markers.header.stamp)
+                t = self.tf_buffer.lookup_transform(self.base_frame,markers.header.frame_id,markers.header.stamp)
                 m_pose = tf2_geometry_msgs.do_transform_point(m_pose,t)
                 Z = np.vstack([m_pose.point.x,m_pose.point.y])
 
@@ -195,4 +204,3 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
-

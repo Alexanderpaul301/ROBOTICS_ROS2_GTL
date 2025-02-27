@@ -93,13 +93,10 @@ class RoverKF(RoverOdo):
         delta_x = Lx - x
         delta_y = Ly - y
 
-        cos_theta = cos(theta)
-        sin_theta = sin(theta)
-
         # Jacobian H (2x3)
-        H = array([
-            [-cos_theta, -sin_theta, -sin_theta * delta_x + cos_theta * delta_y],
-            [ sin_theta, -cos_theta,  -cos_theta * delta_x - sin_theta * delta_y]
+        H = mat([
+            [-cos(theta), -sin(theta), -sin(theta) * delta_x + cos(theta) * delta_y],
+            [ sin(theta), -cos(theta),  -cos(theta) * delta_x - sin(theta) * delta_y]
         ])
 
         # Compute the Kalman gain        

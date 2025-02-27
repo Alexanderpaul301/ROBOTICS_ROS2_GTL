@@ -46,7 +46,7 @@ class RoverKF(RoverOdo):
 
         # Definition of the matrices 
         Q=eye(n)*10**(-4) # We define the covariance matrix for model incompletion and also in order to invert the Pk matrix (avoid singularity of the matrix)
-        Qu=eye(12)*encoder_precision*10**(-1)
+        Qu=eye(12)*encoder_precision*10**(-2)
 
         Rteta=zeros((3,3))
         Rteta[0:2,0:2]=self.getRotationFromWorldToRobot()
@@ -93,19 +93,14 @@ class RoverKF(RoverOdo):
         delta_x = Lx - x
         delta_y = Ly - y
 
-        cos_theta = cos(theta)
-        sin_theta = sin(theta)
-
         # Jacobian H (2x3)
-        H = array([
-            [-cos_theta, -sin_theta, -sin_theta * delta_x + cos_theta * delta_y],
-            [ sin_theta, -cos_theta,  -cos_theta * delta_x - sin_theta * delta_y]
+        H = mat([
+            [-cos(theta), -sin(theta), -sin(theta) * delta_x + cos(theta) * delta_y],
+            [ sin(theta), -cos(theta),  -cos(theta) * delta_x - sin(theta) * delta_y]
         ])
-    
 
         # Compute the Kalman gain        
         K = self.P @ H.T @ inv(H @ self.P @ H.T + uncertainty*eye(2))
-
 
         # logger.info("Dim L"+ str(L.shape))
         # logger.info("Dim R"+ str(Rteta.shape))
@@ -115,7 +110,6 @@ class RoverKF(RoverOdo):
         # logger.info("taille X" +str((self.X[0:2].shape)))
         # logger.info("taille K" +str((K.shape)))
         self.X = self.X.copy() + K @ (Z - (Rteta[0:2,0:2] @ (L - self.X[0:2]))) 
-
 
         # Update the state covariance matrix
         self.P = (eye(self.P.shape[0]) - K @ H) @ self.P
