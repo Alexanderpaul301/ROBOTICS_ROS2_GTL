@@ -45,8 +45,8 @@ class RoverKF(RoverOdo):
         # logger.info("taille iW"+str(iW.shape))
 
         # Definition of the matrices 
-        Q=eye(n)*10**(-6) # We define the covariance matrix for model incompletion and also in order to invert the Pk matrix (avoid singularity of the matrix)
-        Qu=eye(12)*encoder_precision*10**(4)
+        Q=eye(n)*10**(-4) # We define the covariance matrix for model incompletion and also in order to invert the Pk matrix (avoid singularity of the matrix)
+        Qu=eye(12)*encoder_precision*10**(-1)
 
         Rteta=zeros((3,3))
         Rteta[0:2,0:2]=self.getRotationFromWorldToRobot()
@@ -83,13 +83,25 @@ class RoverKF(RoverOdo):
         Rteta[2,2]=1
 
         # We declare this matrix to be able to have a H of the right dimension
-        T=zeros((2,3))
-        T[0,0]=1
-        T[1,1]=1
-        
-        H= -T @ Rteta
         # ! dim H = (2,3)
         # logger.info("taille H" + str(H.shape))
+
+        theta = self.X[2, 0]  # Rover orientation
+        Lx, Ly = L[0, 0], L[1, 0]  # Landmark position
+        x, y = self.X[0, 0], self.X[1, 0]  # Rover position
+
+        delta_x = Lx - x
+        delta_y = Ly - y
+
+        cos_theta = cos(theta)
+        sin_theta = sin(theta)
+
+        # Jacobian H (2x3)
+        H = array([
+            [-cos_theta, -sin_theta, -sin_theta * delta_x + cos_theta * delta_y],
+            [ sin_theta, -cos_theta,  -cos_theta * delta_x - sin_theta * delta_y]
+        ])
+    
 
         # Compute the Kalman gain        
         K = self.P @ H.T @ inv(H @ self.P @ H.T + uncertainty*eye(2))
@@ -113,36 +125,32 @@ class RoverKF(RoverOdo):
         return (self.X,self.P)
 
 
-    # def update_compass(self, logger, Z, uncertainty):
-    #     self.lock.acquire()
-    #     logger.info("Update: S="+str(Z)+" X="+str(self.X.T))
-    #     # Implement kalman update using compass here
-    #     # TODO
+    def update_compass(self, logger, Z, uncertainty):
+        self.lock.acquire()
+        logger.info("Update: S="+str(Z)+" X="+str(self.X.T))
+        # Implement kalman update using compass here
+        # TODO
+        # Define observation matrix H (only affects theta)
+        H = array([[0, 0, 1]])  # 1x3 matrix
 
-    #     # Define observation matrix H (the compass only affects theta)
-    #     Rteta=self.getRotationFromWorldToRobot()
-    #     H=zeros((1,3))
-    #     H[0,2]=1
-    #     # ! Dim H = (1,3)
-    #     logger.info("X"+str(self.X[2,0]))
-    #     logger.info("Z"+str(Z[2,0]))
-    #     # Compute the difference between measurement and estimation
-    #     d = (Z[2,0] - self.X[2,0]  + pi) % (2 * pi) - pi  # Normalize angle difference
+        # Compute the innovation (difference between measurement and estimate)
+        theta_estimated = self.X[2, 0]
+        innovation = array([[ (Z - theta_estimated + pi) % (2 * pi) - pi ]])  # Convert to (1,1) shape
+        # Compute the Kalman gain
+        S = H @ self.P @ H.T + uncertainty  # Innovation covariance
+        K = self.P @ H.T @ inv(S)  # Kalman gain
 
-    #     # Compute the Kalman gain
-    #     K = self.P @ H.T @ inv(H @ self.P @ H.T + uncertainty)  # Kalman gain
+        # Update the state estimate using the observation
+        self.X = self.X.copy() + K @ innovation
 
-    #     # Update the state estimate using the observation
-    #     self.X = self.X.copy() + K @ d
+        # Normalize theta to keep it in [-pi, pi]
+        self.X[2, 0] = (self.X[2, 0] + pi) % (2 * pi) - pi  
 
-    #     # Normalize theta to keep it in [-pi, pi]
-    #     self.X[2, 0] = (self.X[2, 0] + pi) % (2 * pi) - pi  
+        # Update the state covariance matrix
+        self.P = (eye(self.P.shape[0]) - K @ H) @ self.P
 
-    #     # Update the state covariance matrix
-    #     self.P = (eye(self.P.shape[0]) - K @ H) @ self.P
-
-    #     self.lock.release()
-    #     return (self.X,self.P)
+        self.lock.release()
+        return (self.X,self.P)
 
 
 
@@ -178,4 +186,3 @@ class RoverKF(RoverOdo):
         self.ellipse_pub.publish(marker)
 
         
-

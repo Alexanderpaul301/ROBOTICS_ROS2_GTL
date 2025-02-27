@@ -54,6 +54,7 @@ class MappingKF(RoverOdo):
                       [         0,           0, 1]]);
         # self.X[0:3,0] = ...
         # self.P[0:3,0:3] = ...
+
         self.lock.release()
         return (self.X,self.P)
 
@@ -64,11 +65,31 @@ class MappingKF(RoverOdo):
         # TODO
         logger.info("Update: Z="+str(Z.T)+" X="+str(self.X.T)+" Id="+str(id))
         print("Update: Z="+str(Z.T)+" X="+str(self.X.T)+" Id="+str(id))
+
+        if id in self.idx:
+            # Known landmark, we can run the KF update
+            j=self.idx[id]
+        else:
+            j=len(self.X)
+            self.idx[id]=j
+            # ! Initiliaze()
+            teta=self.X[2,0]
+            Rteta=np.mat([[cos(teta),-sin(teta)],[sin(teta),cos(teta)]]);
+            self.X[j] + Rteta*Z[]
+            self.X.append(Z["j"])
+
+        # ! Update(j)
+
+
+
+
+
+
         # Update the full state self.X and self.P based on landmark id
         # be careful that this might be the first time that id is observed
         # TODO
-        # self.X = ...
-        # self.P = ...
+        # self.X =  
+        # self.P = 
         self.lock.release()
         return (self.X,self.P)
 
