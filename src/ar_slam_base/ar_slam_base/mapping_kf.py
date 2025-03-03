@@ -47,18 +47,19 @@ class MappingKF(RoverOdo):
         # Update the state using the provided displacement, but we only need to deal with a subset of the state
         # Assumption: deltaX and deltaP are defined in the body frame and need to be rotated to account for the jacobian 
         # of the transfer function
-        # TODO
+        # ! Checked the code and it seems to be okay
         theta = self.X[2,0]
         Rtheta = np.mat([[cos(theta), -sin(theta), 0], 
                       [sin(theta),  cos(theta), 0],
-                      [         0,           0, 1]]);
+                      [         0,           0, 1]])
+
         A = np.eye(3)
         A[0, 2] = -sin(theta) * DeltaX[0,0] - cos(theta) * DeltaX[1,0]
         A[1, 2] = cos(theta) * DeltaX[0,0] - sin(theta) * DeltaX[1,0]
 
-        Q=np.eye(3)*10**(-4)
+        Q=np.eye(3)*1e-4
 
-        self.X[0:3,0] = self.X[0:3,0] + Rtheta @ DeltaX
+        self.X[0:3] = self.X[0:3] + Rtheta @ DeltaX
         self.P[0:3,0:3] = A @ self.P[0:3,0:3] @ A.T + Rtheta @ DeltaP @ Rtheta.T + Q
 
         self.lock.release()
@@ -70,7 +71,8 @@ class MappingKF(RoverOdo):
         
         R = np.mat(np.diag([uncertainty,uncertainty]))
         theta=self.X[2,0]
-        Rtheta=np.mat([[cos(theta),-sin(theta)],[sin(theta),cos(theta)]]);
+        Rtheta=np.mat([[cos(theta),-sin(theta)],[sin(theta),cos(theta)]])
+
         # TODO
         logger.info("Update: Z="+str(Z.T)+" X="+str(self.X.T)+" Id="+str(id))
         print("Update: Z="+str(Z.T)+" X="+str(self.X.T)+" Id="+str(id))
@@ -82,9 +84,10 @@ class MappingKF(RoverOdo):
         else:
             j=len(self.X)
             self.idx[id]=j
-            # ! Initiliaze()
+        # ! Initiliaze()
             # ! Adding the new landmark to the X vector
             Ln=self.X[0:2] + Rtheta @ Z
+            logger.info("taille Ln" + str(Ln.shape))
             self.X=np.vstack((self.X,Ln))
 
             # ! Updating the covariance
@@ -101,33 +104,33 @@ class MappingKF(RoverOdo):
             Pn=Hx @ Pr @ Hx.T + Hz @ R @ Hz.T
 
             Pnew = np.zeros((self.P.shape[0] + Pn.shape[0], self.P.shape[1] + Pn.shape[1]))
-            
             # Copy the covariance
             Pnew[0:self.P.shape[0], 0:self.P.shape[1]] = self.P
 
             # Add new covariance block
-            Pnew[self.P.shape[0]:, self.P.shape[0]:] = Pn
+            Pnew[self.P.shape[0]:, self.P.shape[1]:] = Pn
             self.P = Pnew
 
-        # ! Update(j) Updating the data we have with the information 
+
+    # ! Update(j) Updating the data we have with the information 
         # Update the full state self.X and self.P based on landmark id
         # be careful that this might be the first time that id is observed
         
 
-        h_x=Rtheta @ (self.X[j:j+2]-self.X[0:2])
+        h_x=Rtheta.T @ (self.X[j:j+2]-self.X[0:2])
 
-        H=np.zeros((2,len(self.X)))
+        H=np.zeros((2,self.X.shape[0]))
 
         delta_x=self.X[j,0]-self.X[0,0]
         delta_y=self.X[j+1,0]-self.X[1,0]
 
-        H[0:2,0:3] = np.mat([[-cos(theta), -sin(theta), -sin(theta) * delta_x + cos(theta) * delta_y],
-                    [ sin(theta), -cos(theta),  -cos(theta) * delta_x - sin(theta) * delta_y]])
+        H[0:2,0:3] = np.mat([[-cos(theta), sin(theta), -sin(theta) * delta_x - cos(theta) * delta_y],
+                    [ -sin(theta), -cos(theta),  -cos(theta) * delta_x - sin(theta) * delta_y]])
 
         H[0:2,j:j+2]=Rtheta
-
+        logger.info("taille H" + str(H.shape))
         # ! Kalman Gain
-        K = self.P @ H.T @ inv(H @ self.P @ H.T + uncertainty * np.eye(H.shape[0]))
+        K = self.P @ H.T @ inv(H @ self.P @ H.T + R)
 
         # ! Evolution of state
         logger.info("taille X" + str(self.X.shape))
