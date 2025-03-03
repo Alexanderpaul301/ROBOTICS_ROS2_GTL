@@ -149,29 +149,25 @@ class MappingKF(RoverOdo):
 
         logger.info("Update: Z=" + str(Z) + " X=" + str(self.X.T))
         
-        H= np.zeros((1,len(self.X)))
+        H= np.zeros((1,self.P.shape[0]))
         H[0,2] = 1  
         
+        R=uncertainty**2
+
         # Innovation (différence entre la mesure et l'orientation prédite)
         innovation = np.mat([[(Z - self.X[2, 0] + pi) % (2 * pi) - pi]])  # Normaliser à [-pi, pi]
         
         # Calcul de la covariance de l'innovation S (incertitude de la mesure du compas)
-        S = H @ self.P @ H.T + uncertainty  
-        K = self.P @ H.T @ inv(S)  # Gain de Kalman
+        K = self.P @ H.T @ inv(H @ self.P @ H.T + R)  # Gain de Kalman
         
         # Mise à jour de l'estimation de l'état (X) avec l'innovation
         self.X = self.X.copy() + K @ innovation
         
-        # Normalisation de theta pour qu'il soit dans l'intervalle [-pi, pi]
-        self.X[2, 0] = (self.X[2, 0] + pi) % (2 * pi) - pi  # Assurer que theta reste dans la plage
-        
-        # Mise à jour de la matrice de covariance (P)
+        # Compute the updated covariance
         self.P = (np.eye(self.P.shape[0]) - K @ H) @ self.P
 
         self.lock.release()
         return self.X, self.P
-
-
 
 
     def publish(self, pose_pub, odom_pub, target_frame, stamp, child_frame):

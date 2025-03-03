@@ -48,7 +48,7 @@ def generate_launch_description():
             parameters=[
                 {'~/rover_name': 'rover'},
                 {'~/use_ar': True},
-                {'~/use_compass': False},
+                {'~/use_compass': True},
                 {'~/ignore_id': False},
                 {'~/target_frame': 'world'},
                 {'~/ar_precision': 0.5},
