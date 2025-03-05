@@ -50,7 +50,7 @@ def generate_launch_description():
                 {'~/filter_name': 'kalman'}, # in ['odo','kalman','particle']
                 {'~/inverse_tf': True},
                 {'~/use_ar': True},
-                {'~/use_compass': False},
+                {'~/use_compass': True},
                 {'~/target_frame': 'world'},
                 {'~/reference_frame': 'loc_world'}, # Only used if inverse_tf
                 {'~/ar_precision': 0.5},

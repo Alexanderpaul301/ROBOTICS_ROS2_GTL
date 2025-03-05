@@ -50,9 +50,6 @@ class Landmark:
         teta=X[2,0]
         Rteta=mat([[cos(teta),-sin(teta)],[sin(teta),cos(teta)]])
 
-        # Define R(-teta)
-        R_teta=Rteta.T
-
         # We run the extended kalman filter
         # B=0
         A=eye(2)
@@ -61,12 +58,12 @@ class Landmark:
         self.P=self.P+Q  # B is the null matrix
 
         #Observation stage
-        H=R_teta    # ! dim H = (2,2)
+        H=Rteta.T    # ! dim H = (2,2)
         
 
         K=self.P @ H.T @ inv(H @ self.P @ H.T + R)
         self.P= (eye(2)-K @ H) @ self.P
-        self.L= self.L + K @ (Z-R_teta @ (self.L-X[0:2]))
+        self.L= self.L + K @ (Z-Rteta.T @ (self.L-X[0:2]))
 
         return
         
