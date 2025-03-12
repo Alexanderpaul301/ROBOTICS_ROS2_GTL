@@ -1,0 +1,101 @@
+[0.898s] Invoking command in '/home/GTL/apaul/ros2_hw1/build/turtlebot_launch': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/GTL/apaul/ros2_hw1/src/turtlebot_launch -DCMAKE_INSTALL_PREFIX=/home/GTL/apaul/ros2_hw1/install/turtlebot_launch
+[0.950s] -- The C compiler identification is GNU 11.4.0
+[1.008s] -- The CXX compiler identification is GNU 11.4.0
+[1.017s] -- Detecting C compiler ABI info
+[1.122s] -- Detecting C compiler ABI info - done
+[1.135s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.135s] -- Detecting C compile features
+[1.135s] -- Detecting C compile features - done
+[1.139s] -- Detecting CXX compiler ABI info
+[1.279s] -- Detecting CXX compiler ABI info - done
+[1.291s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.291s] -- Detecting CXX compile features
+[1.292s] -- Detecting CXX compile features - done
+[1.299s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.431s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.555s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.680s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.687s] -- Added test 'lint_cmake' to check CMake code style
+[1.691s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.715s] -- Added test 'xmllint' to check XML markup files
+[1.731s] -- Configuring done
+[1.787s] -- Generating done
+[1.814s] -- Build files have been written to: /home/GTL/apaul/ros2_hw1/build/turtlebot_launch
+[1.818s] Invoked command in '/home/GTL/apaul/ros2_hw1/build/turtlebot_launch' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/GTL/apaul/ros2_hw1/src/turtlebot_launch -DCMAKE_INSTALL_PREFIX=/home/GTL/apaul/ros2_hw1/install/turtlebot_launch
+[1.827s] Invoking command in '/home/GTL/apaul/ros2_hw1/build/turtlebot_launch': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/turtlebot_launch -- -j16 -l16
+[2.099s] Invoked command in '/home/GTL/apaul/ros2_hw1/build/turtlebot_launch' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/turtlebot_launch -- -j16 -l16
+[2.871s] Invoking command in '/home/GTL/apaul/ros2_hw1/build/turtlebot_launch': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/GTL/apaul/ros2_hw1/build/turtlebot_launch
+[2.877s] -- Install configuration: ""
+[2.990s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch
+[2.993s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/tb_slam_env.launch.py
+[2.997s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/mapper_params_tb_sync_turtlebot.yaml
+[3.000s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/kinect_min.launch.py
+[3.003s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/minimal.launch.py
+[3.006s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/slam_tb_sync_rviz.launch.py
+[3.008s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/slam_tb_sync.launch.py
+[3.011s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/aruco_tracker_tb.yaml
+[3.014s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/turtlebot_description.launch.py
+[3.018s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/kinect.launch.py
+[3.021s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/cartographer.launch.py
+[3.025s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/autodock.launch.py
+[3.028s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/turtlebot_cartographer.lua
+[3.032s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/cartographer_rviz.launch.py
+[3.036s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/turtlebot_cartographer.rviz
+[3.040s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/tb3_cartographer.rviz
+[3.044s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/mapper_params_tb_sync.yaml
+[3.048s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/rplidar_a1_launch.py
+[3.052s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/kinect_min_comp.launch.py
+[3.056s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/occupancy_grid.launch.py
+[3.060s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/__pycache__
+[3.063s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/__pycache__/slam_tb_sync_rviz.launch.cpython-310.pyc
+[3.067s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/__pycache__/cartographer_rviz.launch.cpython-310.pyc
+[3.071s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/__pycache__/cartographer.launch.cpython-310.pyc
+[3.074s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/__pycache__/kinect.launch.cpython-310.pyc
+[3.079s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/__pycache__/slam_tb_sync.launch.cpython-310.pyc
+[3.083s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/__pycache__/occupancy_grid.launch.cpython-310.pyc
+[3.087s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/__pycache__/kinect_min.launch.cpython-310.pyc
+[3.091s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/urdf
+[3.094s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/urdf/turtlebot_hardware.urdf.xacro
+[3.098s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/urdf/turtlebot_kinect.urdf.xacro
+[3.101s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/urdf/turtlebot_standalone.urdf.xacro
+[3.106s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/urdf/turtlebot.urdf.xacro
+[3.110s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/urdf/turtlebot_xtion_pro.urdf.xacro
+[3.114s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/urdf/turtlebot_body.urdf.xacro
+[3.118s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/urdf/gazebo.urdf.xacro
+[3.121s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/urdf/turtlebot_calibration.xacro
+[3.125s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/meshes
+[3.128s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/meshes/create_body.tga
+[3.132s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/meshes/plate_2_logo.tga
+[3.137s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/meshes/kinect.dae
+[3.149s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/meshes/68-02421-8000-RA_Turtlebot_F-F_Standoff.dae
+[3.157s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/meshes/kinect.tga
+[3.163s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/meshes/68-04552-1000-RA_Turtlebot_M-F_Standoff.dae
+[3.171s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/meshes/68-04552-2000-RA_Turtlebot_M-F_Standoff_color.png
+[3.177s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/meshes/68-04556-RA_Kinect_Standoff_Assy.dae
+[3.185s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/meshes/plate_0_logo.tga
+[3.189s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/meshes/68-02403-125_Spacer.dae
+[3.193s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/meshes/68-04552-1000-RA_Turtlebot_M-F_Standoff_color.png
+[3.200s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/meshes/68-04552-2000-RA_Turtlebot_M-F_Standoff.dae
+[3.208s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/meshes/68-02421-8000-RA_Turtlebot_F-F_Standoff_color.png
+[3.213s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/meshes/create_body.dae
+[3.230s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/meshes/68-04556-RA_Kinect_Standoff_Assy.3ds
+[3.235s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/meshes/plate_1_logo.tga
+[3.239s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/meshes/plate_0_logo.dae
+[3.243s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/meshes/plate_2_logo.dae
+[3.247s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/meshes/plate_1_logo.dae
+[3.254s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/ament_index/resource_index/package_run_dependencies/turtlebot_launch
+[3.260s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/ament_index/resource_index/parent_prefix_path/turtlebot_launch
+[3.265s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/environment/ament_prefix_path.sh
+[3.268s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/environment/ament_prefix_path.dsv
+[3.272s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/environment/path.sh
+[3.275s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/environment/path.dsv
+[3.278s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/local_setup.bash
+[3.282s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/local_setup.sh
+[3.286s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/local_setup.zsh
+[3.289s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/local_setup.dsv
+[3.292s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/package.dsv
+[3.297s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/ament_index/resource_index/packages/turtlebot_launch
+[3.302s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/cmake/turtlebot_launchConfig.cmake
+[3.306s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/cmake/turtlebot_launchConfig-version.cmake
+[3.309s] -- Installing: /home/GTL/apaul/ros2_hw1/install/turtlebot_launch/share/turtlebot_launch/package.xml
+[4.113s] Invoked command in '/home/GTL/apaul/ros2_hw1/build/turtlebot_launch' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/GTL/apaul/ros2_hw1/build/turtlebot_launch

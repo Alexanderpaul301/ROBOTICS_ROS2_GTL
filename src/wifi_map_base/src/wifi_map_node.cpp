@@ -98,11 +98,11 @@ class WifiMapNode : public rclcpp::Node {
                 return;
             }
 
-
             if (weights_.rows == 0) {
                 RCLCPP_INFO(this->get_logger(),"Initialising voting weights");
                 int winsize = round(2*measurement_radius_/info_.resolution);
                 winsize += 1 - (winsize & 1); // Make it odd
+                float sigma = measurement_radius_;
                 // Initialise the signal voting weights as a (winsize x winsize) matrix
                 weights_ = cv::Mat_<float>(winsize,winsize,0.0f);
                 for (int i=0;i<weights_.rows;i++) {
@@ -112,7 +112,8 @@ class WifiMapNode : public rclcpp::Node {
                         float x = j - winsize/2;
 
                         // TODO 1: Affect a weight to i,j as a function of x,y. Weights should be in [0,1]
-                        weights_(i,j) = 1.0 - hypot(x,y) / hypot(winsize/2,winsize/2);
+                        // weights_(i,j) = hypot(x,y) / hypot(winsize/2,winsize/2);
+                        weights_(i, j) = exp(-(x*x + y*y) / (2*sigma * sigma)); 
                     }
                 }
                 cv::imwrite("weights.png",weights_*255);
@@ -134,20 +135,25 @@ class WifiMapNode : public rclcpp::Node {
             // TODO Initialise mat.
             // In the end, every pixel should contain sum(w_i s_i) / sum(w_i)
 
-            cv::Mat_<float> numerator(info_.height, info_.width,0.0);
-            cv::Mat_<float> denominator(info_.height, info_.width,0.0);
-            
+            //cv::Mat_<float> example_float_mat(info_.height, info_.width,0.0);
+            //cv::Mat_<uint8_t> example_byte_mat(info_.height, info_.width,uint8_t(0));
+                        
+            cv::Mat_<float> numerator(info_.height, info_.width, 0.0f);
+            cv::Mat_<float> denominator(info_.height, info_.width, 0.0f);
+
+
             RCLCPP_INFO(this->get_logger(),"Bssid %s has received %d measurements",it->first.c_str(),int(it->second.size()));
             for (size_t i=0;i<it->second.size();i++) {
                 const WifiStrength & ws = it->second[i];
                 float intensity = std::max<float>(0.,std::min<float>(100., 100 - float(ws.value)));
                 // TODO 2: handle measurement i at position (ws.x,ws.y) with value intensity
                 // You should use addWeightedWindow to add a smoothly weighted signal around (ws.x,ws.y).
-                
-                cv::Point2i center((ws.x - info_.origin.position.x) / info_.resolution, 
-                  (ws.y - info_.origin.position.y) / info_.resolution);
-                addWeightedWindow(numerator, weights_ * intensity, center);
-                addWeightedWindow(denominator, weights_, center);
+                // Example usage:
+                cv::Point2i where((ws.x - info_.origin.position.x) / info_.resolution, (ws.y - info_.origin.position.y) / info_.resolution);
+                // addWeightedWindow(example_float_mat, weights_ * 5.0, where);
+
+                addWeightedWindow(numerator, weights_ * intensity, where); // TODO 2
+                addWeightedWindow(denominator, weights_, where);
             }
 
             // og_mat needs to be a clone of og_ for info_ to make sense
@@ -160,8 +166,25 @@ class WifiMapNode : public rclcpp::Node {
                     // og_(j,i) can be OCCUPIED, FREE, UNKNOWN
 
                     // Example affectation for an unknown value
-                    og_mat(j,i) = example_float_mat(j,i);
-
+                    // og_mat(j,i) = example_float_mat(j,i);
+                    
+                    if (og_(j, i) == OCCUPIED) {
+                        // Keep occupied cells as occupied
+                        og_mat(j, i) = OCCUPIED;
+                    } 
+                    else if (og_(j, i) == FREE) {
+                    // Compute weighted sum only for free spaces
+                        if (denominator(j, i) > 0) {
+                            og_mat(j, i) = static_cast<uint8_t>(std::max(0.0f, std::min(255.0f, numerator(j, i) / denominator(j, i))));
+                        } 
+                        else {
+                            og_mat(j, i) = UNKNOWN; // No WiFi data, keep unknown
+                        }
+                    } 
+                    else {
+                    // Keep unknown areas as unknown
+                        og_mat(j, i) = UNKNOWN;
+                    }
                 }
             }
 
@@ -278,5 +301,3 @@ int main(int argc, char * argv[]) {
     rclcpp::spin(std::make_shared<WifiMapNode>());
     rclcpp::shutdown();
 }
-
-
