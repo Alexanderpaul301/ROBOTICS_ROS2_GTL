@@ -1,0 +1,90 @@
+[0.682s] Invoking command in '/home/GTL/apaul/ros2_hw1/build/collision_avoidance_base': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/GTL/apaul/ros2_hw1/src/collision_avoidance_base -DCMAKE_INSTALL_PREFIX=/home/GTL/apaul/ros2_hw1/install/collision_avoidance_base
+[0.919s] -- The C compiler identification is GNU 11.4.0
+[0.919s] -- The CXX compiler identification is GNU 11.4.0
+[0.919s] -- Detecting C compiler ABI info
+[0.929s] -- Detecting C compiler ABI info - done
+[0.940s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.940s] -- Detecting C compile features
+[0.940s] -- Detecting C compile features - done
+[0.948s] -- Detecting CXX compiler ABI info
+[1.074s] -- Detecting CXX compiler ABI info - done
+[1.084s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.084s] -- Detecting CXX compile features
+[1.085s] -- Detecting CXX compile features - done
+[1.092s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.209s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.323s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[1.366s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.371s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.380s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.390s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.407s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.445s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.447s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[1.461s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.472s] -- Looking for pthread.h
+[1.624s] -- Looking for pthread.h - found
+[1.626s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.749s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.750s] -- Found Threads: TRUE  
+[1.796s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.839s] -- Checking for module 'eigen3'
+[1.855s] --   Found eigen3, version 3.4.0
+[1.879s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[1.879s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.942s] -- Checking for module 'libusb-1.0'
+[1.949s] --   Found libusb-1.0, version 1.0.25
+[1.968s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[1.968s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.997s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[3.224s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[3.225s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[3.226s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[3.227s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[3.229s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[3.258s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.364s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.365s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/GTL/apaul/ros2_hw1/src/collision_avoidance_base/include>
+[3.365s] -- Configured cppcheck exclude dirs and/or files: 
+[3.369s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.374s] -- Added test 'lint_cmake' to check CMake code style
+[3.377s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.388s] -- Added test 'uncrustify' to check C / C++ code style
+[3.388s] -- Configured uncrustify additional arguments: 
+[3.391s] -- Added test 'xmllint' to check XML markup files
+[3.411s] -- Configuring done
+[3.527s] -- Generating done
+[3.544s] -- Build files have been written to: /home/GTL/apaul/ros2_hw1/build/collision_avoidance_base
+[3.564s] Invoked command in '/home/GTL/apaul/ros2_hw1/build/collision_avoidance_base' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/GTL/apaul/ros2_hw1/src/collision_avoidance_base -DCMAKE_INSTALL_PREFIX=/home/GTL/apaul/ros2_hw1/install/collision_avoidance_base
+[3.565s] Invoking command in '/home/GTL/apaul/ros2_hw1/build/collision_avoidance_base': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/collision_avoidance_base -- -j16 -l16
+[3.620s] [ 50%] [32mBuilding CXX object CMakeFiles/collision_avoidance_base.dir/src/collision_avoidance.cpp.o[0m
+[37.770s] [100%] [32m[1mLinking CXX executable collision_avoidance_base[0m
+[39.238s] [100%] Built target collision_avoidance_base
+[39.249s] Invoked command in '/home/GTL/apaul/ros2_hw1/build/collision_avoidance_base' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/collision_avoidance_base -- -j16 -l16
+[39.273s] Invoking command in '/home/GTL/apaul/ros2_hw1/build/collision_avoidance_base': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/GTL/apaul/ros2_hw1/build/collision_avoidance_base
+[39.278s] -- Install configuration: ""
+[39.283s] -- Installing: /home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/lib/collision_avoidance_base/collision_avoidance_base
+[39.742s] -- Set runtime path of "/home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/lib/collision_avoidance_base/collision_avoidance_base" to ""
+[39.743s] -- Installing: /home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base
+[39.746s] -- Installing: /home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/coll_teleop.launch.py
+[39.750s] -- Installing: /home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/ca_auto.launch.py
+[39.754s] -- Installing: /home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/ca.launch.py
+[39.758s] -- Installing: /home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/__pycache__
+[39.761s] -- Installing: /home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/__pycache__/coll_teleop.launch.cpython-310.pyc
+[39.765s] -- Installing: /home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/__pycache__/ca.launch.cpython-310.pyc
+[39.773s] -- Installing: /home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/ament_index/resource_index/package_run_dependencies/collision_avoidance_base
+[39.780s] -- Installing: /home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/ament_index/resource_index/parent_prefix_path/collision_avoidance_base
+[39.786s] -- Installing: /home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/environment/ament_prefix_path.sh
+[39.789s] -- Installing: /home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/environment/ament_prefix_path.dsv
+[39.793s] -- Installing: /home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/environment/path.sh
+[39.796s] -- Installing: /home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/environment/path.dsv
+[39.799s] -- Installing: /home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/local_setup.bash
+[39.803s] -- Installing: /home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/local_setup.sh
+[39.807s] -- Installing: /home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/local_setup.zsh
+[39.810s] -- Installing: /home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/local_setup.dsv
+[39.814s] -- Installing: /home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/package.dsv
+[39.820s] -- Installing: /home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/ament_index/resource_index/packages/collision_avoidance_base
+[39.826s] -- Installing: /home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/cmake/collision_avoidance_baseConfig.cmake
+[39.830s] -- Installing: /home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/cmake/collision_avoidance_baseConfig-version.cmake
+[39.834s] -- Installing: /home/GTL/apaul/ros2_hw1/install/collision_avoidance_base/share/collision_avoidance_base/package.xml
+[39.839s] Invoked command in '/home/GTL/apaul/ros2_hw1/build/collision_avoidance_base' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/GTL/apaul/ros2_hw1/build/collision_avoidance_base

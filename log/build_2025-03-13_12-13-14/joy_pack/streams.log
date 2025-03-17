@@ -1,0 +1,69 @@
+[0.684s] Invoking command in '/home/GTL/apaul/ros2_hw1/build/joy_pack': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/GTL/apaul/ros2_hw1/src/joy_pack -DCMAKE_INSTALL_PREFIX=/home/GTL/apaul/ros2_hw1/install/joy_pack
+[0.914s] -- The C compiler identification is GNU 11.4.0
+[0.914s] -- The CXX compiler identification is GNU 11.4.0
+[0.914s] -- Detecting C compiler ABI info
+[0.921s] -- Detecting C compiler ABI info - done
+[0.933s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.933s] -- Detecting C compile features
+[0.933s] -- Detecting C compile features - done
+[0.943s] -- Detecting CXX compiler ABI info
+[1.073s] -- Detecting CXX compiler ABI info - done
+[1.085s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.085s] -- Detecting CXX compile features
+[1.086s] -- Detecting CXX compile features - done
+[1.094s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.210s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.335s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[1.376s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.382s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.391s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.405s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.425s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.475s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.477s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[1.492s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.502s] -- Looking for pthread.h
+[1.646s] -- Looking for pthread.h - found
+[1.649s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.784s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.786s] -- Found Threads: TRUE  
+[1.834s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.859s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.136s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.136s] -- Configured cppcheck include dirs: 
+[2.136s] -- Configured cppcheck exclude dirs and/or files: 
+[2.151s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.182s] -- Added test 'lint_cmake' to check CMake code style
+[2.198s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.313s] -- Added test 'uncrustify' to check C / C++ code style
+[2.313s] -- Configured uncrustify additional arguments: 
+[2.328s] -- Added test 'xmllint' to check XML markup files
+[2.347s] -- Configuring done
+[2.437s] -- Generating done
+[2.453s] -- Build files have been written to: /home/GTL/apaul/ros2_hw1/build/joy_pack
+[2.489s] Invoked command in '/home/GTL/apaul/ros2_hw1/build/joy_pack' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/GTL/apaul/ros2_hw1/src/joy_pack -DCMAKE_INSTALL_PREFIX=/home/GTL/apaul/ros2_hw1/install/joy_pack
+[2.493s] Invoking command in '/home/GTL/apaul/ros2_hw1/build/joy_pack': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/joy_pack -- -j16 -l16
+[2.547s] [ 50%] [32mBuilding CXX object CMakeFiles/joy_node.dir/src/joy_function.cpp.o[0m
+[12.228s] [100%] [32m[1mLinking CXX executable joy_node[0m
+[13.079s] [100%] Built target joy_node
+[13.124s] Invoked command in '/home/GTL/apaul/ros2_hw1/build/joy_pack' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/joy_pack -- -j16 -l16
+[13.200s] Invoking command in '/home/GTL/apaul/ros2_hw1/build/joy_pack': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/GTL/apaul/ros2_hw1/build/joy_pack
+[13.220s] -- Install configuration: ""
+[13.229s] -- Installing: /home/GTL/apaul/ros2_hw1/install/joy_pack/lib/joy_pack/joy_node
+[13.272s] -- Set runtime path of "/home/GTL/apaul/ros2_hw1/install/joy_pack/lib/joy_pack/joy_node" to ""
+[13.281s] -- Installing: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/ament_index/resource_index/package_run_dependencies/joy_pack
+[13.295s] -- Installing: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/ament_index/resource_index/parent_prefix_path/joy_pack
+[13.305s] -- Installing: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/environment/ament_prefix_path.sh
+[13.310s] -- Installing: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/environment/ament_prefix_path.dsv
+[13.315s] -- Installing: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/environment/path.sh
+[13.322s] -- Installing: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/environment/path.dsv
+[13.328s] -- Installing: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/local_setup.bash
+[13.333s] -- Installing: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/local_setup.sh
+[13.338s] -- Installing: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/local_setup.zsh
+[13.347s] -- Installing: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/local_setup.dsv
+[13.349s] -- Installing: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/package.dsv
+[13.356s] -- Installing: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/ament_index/resource_index/packages/joy_pack
+[13.362s] -- Installing: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/cmake/joy_packConfig.cmake
+[13.368s] -- Installing: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/cmake/joy_packConfig-version.cmake
+[13.372s] -- Installing: /home/GTL/apaul/ros2_hw1/install/joy_pack/share/joy_pack/package.xml
+[13.381s] Invoked command in '/home/GTL/apaul/ros2_hw1/build/joy_pack' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/GTL/apaul/ros2_hw1/build/joy_pack
