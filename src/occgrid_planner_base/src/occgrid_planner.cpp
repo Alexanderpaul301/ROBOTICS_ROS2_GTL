@@ -38,7 +38,7 @@ class OccupancyGridPlanner : public rclcpp::Node {
         std::shared_ptr<tf2_ros::TransformListener> tf_listener{nullptr};
         std::unique_ptr<tf2_ros::Buffer> tf_buffer;
 
-        cv::Rect roi_;
+        cv::Rect roi_; 
         cv::Mat_<uint8_t> og_, cropped_og_;
         cv::Mat_<cv::Vec3b> og_rgb_, og_rgb_marked_;
         cv::Point og_center_;
@@ -64,9 +64,15 @@ class OccupancyGridPlanner : public rclcpp::Node {
             info_ = msg->info;
             frame_id_ = msg->header.frame_id;
             // Create an image to store the value of the grid.
-            og_ = cv::Mat_<uint8_t>(msg->info.height, msg->info.width,0xFF);
-            og_center_ = cv::Point(-info_.origin.position.x/info_.resolution,
-                    -info_.origin.position.y/info_.resolution);
+
+            og_ = cv::Mat_<uint8_t>(msg->info.height, msg->info.width,2,0xFF);
+            og_center_ = cv::Point3i(-info_.origin.position.x/info_.resolution,
+                    -info_.origin.position.y/info_.resolution,
+                    -info_.origin.orientation.theta);
+
+            // cv::Mat<uint8_t> og_(info.height, info.width, info.depth, 0xFF);    // ! I modified og_ to be a 3D matrix, now we have 3D for x, y, theta
+            // og_center_ = cv::Point3i(-info_.origin.position.x/info_.resolution,
+            //         -info_.origin.position.y/info_.resolution);
 
             // Some variables to select the useful bounding box 
             unsigned int maxx=0, minx=msg->info.width, 
@@ -97,8 +103,8 @@ class OccupancyGridPlanner : public rclcpp::Node {
                 }
             }
             // TODO: Implement obstacle expansion here
-            //-----------------------
-            // Create a binary mask where occupied cells are 255 and free cells are 0
+
+            // Create a binary mask where we have occupied cells so that we expand only the obstacles
             cv::Mat binary_mask;
             cv::compare(og_, OCCUPIED, binary_mask, cv::CMP_EQ);
             binary_mask *= 255; // Convert boolean mask (0 or 1) to 0 or 255
@@ -116,7 +122,7 @@ class OccupancyGridPlanner : public rclcpp::Node {
             // ! Don't know why but it looks like the map is reversed.
 
 
-            
+
             if (!ready_) {
                 ready_ = true;
                 RCLCPP_INFO(this->get_logger(),"Received occupancy grid, ready_ to plan");
@@ -287,6 +293,7 @@ class OccupancyGridPlanner : public rclcpp::Node {
             // element is always the closer to the start.
             // TODO: from Dijkstra to A*, add a heuristic and an early exit
             Heap heap;
+            float eps = 0.5;
             heap.insert(Heap::value_type(0, start));
             cell_value(start.x,start.y) = 0;
             while (!heap.empty()) {
@@ -296,8 +303,12 @@ class OccupancyGridPlanner : public rclcpp::Node {
                 cv::Point this_cell = hit->second;
                 // and its score is this_cost
                 float this_cost = cell_value(this_cell.x,this_cell.y);
+                // ! Let's now add the heuristic coming from A* 
+                float add_cost = eps*sqrt((this_cell.x-target.x)*(this_cell.x-target.x)+(this_cell.y-target.y)*(this_cell.y-target.y));
+
                 // We can remove it from the heap now.
                 heap.erase(hit);
+
                 // Now see where we can go from this_cell
                 for (size_t i=0;i<neighbours.size();i++) {
                     cv::Point dest = this_cell + neighbours[i];
@@ -311,7 +322,7 @@ class OccupancyGridPlanner : public rclcpp::Node {
                         continue;
                     }
                     float cv = cell_value(dest.x,dest.y);
-                    float new_cost = this_cost + cost[i];
+                    float new_cost = this_cost + add_cost + cost[i];
                     if (std::isnan(cv) || (new_cost < cv)) {
                         // found shortest path (or new path), updating the
                         // predecessor and the value of the cell
