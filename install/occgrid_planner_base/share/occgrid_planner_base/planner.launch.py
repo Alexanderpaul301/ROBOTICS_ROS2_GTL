@@ -90,6 +90,7 @@ def generate_launch_description():
                 {'~/neighbourhood': 8},
                 {'~/base_frame': 'bubbleRob'},
                 {'~/debug': False},
+                {'~/headless': False},
                 ],
             remappings=[
                 ('~/occ_grid', '/map'),

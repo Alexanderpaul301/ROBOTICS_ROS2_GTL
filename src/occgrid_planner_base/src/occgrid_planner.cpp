@@ -1,4 +1,3 @@
-
 #include <vector>
 #include <string>
 #include <map>
@@ -26,6 +25,7 @@
 
 using std::placeholders::_1;
 using namespace std::chrono_literals;
+using namespace cv;
 
 class OccupancyGridPlanner : public rclcpp::Node {
     protected:
@@ -49,6 +49,10 @@ class OccupancyGridPlanner : public rclcpp::Node {
         bool ready_;
         bool debug_;
         double robot_radius_;
+
+        // OpenCV variables
+        int dilation_type = cv::MORPH_ELLIPSE;
+        int dilation_size = 5; 
 
         typedef std::multimap<float, cv::Point> Heap;
 
@@ -93,25 +97,26 @@ class OccupancyGridPlanner : public rclcpp::Node {
                 }
             }
             // TODO: Implement obstacle expansion here
-            // -----------------------
-            int dilation_type = cv::MORPH_ELLIPSE;
-            int dilation_size = 5; 
-
+            //-----------------------
             // Create a binary mask where occupied cells are 255 and free cells are 0
-            cv::Mat binary_mask = og_ == OCCUPIED;
+            cv::Mat binary_mask;
+            cv::compare(og_, OCCUPIED, binary_mask, cv::CMP_EQ);
+            binary_mask *= 255; // Convert boolean mask (0 or 1) to 0 or 255
 
             cv::Mat element = cv::getStructuringElement(dilation_type,
-                                cv::Size(2 * dilation_size + 1, 2 * dilation_size + 1),
-                                cv::Point(dilation_size, dilation_size));
+                            cv::Size(2 * dilation_size + 1, 2 * dilation_size + 1),
+                            cv::Point(dilation_size, dilation_size));
 
 
             // Dilate the binary mask to expand obstacles
             cv::Mat dilated_mask;
             cv::dilate(binary_mask, dilated_mask, element);
 
-            // Apply the dilated mask back to the occupancy grid
-            og_ = og_.mul(dilated_mask);        
+            og_.setTo(OCCUPIED, dilated_mask);
+            // ! Don't know why but it looks like the map is reversed.
 
+
+            
             if (!ready_) {
                 ready_ = true;
                 RCLCPP_INFO(this->get_logger(),"Received occupancy grid, ready_ to plan");
@@ -396,4 +401,3 @@ int main(int argc, char * argv[]) {
     rclcpp::spin(std::make_shared<OccupancyGridPlanner>());
     rclcpp::shutdown();
 }
-

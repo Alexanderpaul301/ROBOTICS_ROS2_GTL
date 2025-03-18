@@ -1,0 +1,13 @@
+[0.247s] Invoking command in '/home/GTL/apaul/ros2_hw1/build/occgrid_planner_base': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/occgrid_planner_base -- -j16 -l16
+[0.274s] [35m[1mConsolidate compiler generated dependencies of target occgrid_planner_base[0m
+[0.287s] [ 66%] Built target path_follower_base
+[0.288s] [ 66%] Built target path_optimizer_base
+[0.294s] [ 83%] [32mBuilding CXX object CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o[0m
+[3.121s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:[m[K In member function ‘[01m[Kvoid OccupancyGridPlanner::og_callback(nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.121s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:102:21:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kbinary_mask[m[K’
+[3.121s]   102 |             cv::Mat [01;31m[Kbinary_mask[m[K = og_ == OCCUPIED;
+[3.121s]       |                     [01;31m[K^~~~~~~~~~~[m[K
+[6.904s] gmake[2]: *** [CMakeFiles/occgrid_planner_base.dir/build.make:76: CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o] Error 1
+[6.904s] gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/occgrid_planner_base.dir/all] Error 2
+[6.904s] gmake: *** [Makefile:146: all] Error 2
+[6.906s] Invoked command in '/home/GTL/apaul/ros2_hw1/build/occgrid_planner_base' returned '2': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/occgrid_planner_base -- -j16 -l16

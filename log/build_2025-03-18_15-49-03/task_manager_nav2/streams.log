@@ -1,0 +1,73 @@
+[0.025s] Invoking command in '/home/GTL/apaul/ros2_hw1/build/task_manager_nav2': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib/lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_nav2 -DCMAKE_INSTALL_PREFIX=/home/GTL/apaul/ros2_hw1/install/task_manager_nav2
+[0.094s] -- The C compiler identification is GNU 11.4.0
+[0.145s] -- The CXX compiler identification is GNU 11.4.0
+[0.153s] -- Detecting C compiler ABI info
+[0.250s] -- Detecting C compiler ABI info - done
+[0.258s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.258s] -- Detecting C compile features
+[0.258s] -- Detecting C compile features - done
+[0.265s] -- Detecting CXX compiler ABI info
+[0.365s] -- Detecting CXX compiler ABI info - done
+[0.374s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.374s] -- Detecting CXX compile features
+[0.374s] -- Detecting CXX compile features - done
+[0.385s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.617s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.769s] -- Found nav2_msgs: 1.1.16 (/opt/ros/humble/share/nav2_msgs/cmake)
+[0.842s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.858s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.877s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.897s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.925s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.029s] -- Found task_manager_lib: 0.0.0 (/home/GTL/apaul/ros2_hw1/install/task_manager_lib/share/task_manager_lib/cmake)
+[1.118s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.124s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[1.163s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.188s] -- Looking for pthread.h
+[1.290s] -- Looking for pthread.h - found
+[1.292s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.392s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.393s] -- Found Threads: TRUE  
+[1.500s] -- Found tf2_geometry_msgs: 0.25.8 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[1.528s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.529s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.529s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.623s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.747s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.756s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.756s] -- Configured cppcheck include dirs: 
+[1.756s] -- Configured cppcheck exclude dirs and/or files: 
+[1.762s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.762s] -- Configured cpplint exclude dirs and/or files: 
+[1.767s] -- Added test 'lint_cmake' to check CMake code style
+[1.774s] -- Added test 'uncrustify' to check C / C++ code style
+[1.774s] -- Configured uncrustify additional arguments: 
+[3.260s] -- Added test 'xmllint' to check XML markup files
+[3.896s] -- Configuring done
+[4.065s] -- Generating done
+[4.079s] -- Build files have been written to: /home/GTL/apaul/ros2_hw1/build/task_manager_nav2
+[4.085s] Invoked command in '/home/GTL/apaul/ros2_hw1/build/task_manager_nav2' returned '0': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib/lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/GTL/apaul/ros2_hw1/src/ros_task_manager/src/task_manager_nav2 -DCMAKE_INSTALL_PREFIX=/home/GTL/apaul/ros2_hw1/install/task_manager_nav2
+[4.090s] Invoking command in '/home/GTL/apaul/ros2_hw1/build/task_manager_nav2': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib/lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/task_manager_nav2 -- -j16 -l16
+[4.120s] Invoked command in '/home/GTL/apaul/ros2_hw1/build/task_manager_nav2' returned '0': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib/lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/task_manager_nav2 -- -j16 -l16
+[4.158s] Invoking command in '/home/GTL/apaul/ros2_hw1/build/task_manager_nav2': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib/lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/GTL/apaul/ros2_hw1/build/task_manager_nav2
+[4.163s] -- Install configuration: ""
+[4.163s] -- Installing: /home/GTL/apaul/ros2_hw1/install/task_manager_nav2/include/task_manager_nav2
+[4.168s] -- Installing: /home/GTL/apaul/ros2_hw1/install/task_manager_nav2/include/task_manager_nav2/TaskActionNav2.h
+[4.176s] -- Installing: /home/GTL/apaul/ros2_hw1/install/task_manager_nav2/share/ament_index/resource_index/package_run_dependencies/task_manager_nav2
+[4.183s] -- Installing: /home/GTL/apaul/ros2_hw1/install/task_manager_nav2/share/ament_index/resource_index/parent_prefix_path/task_manager_nav2
+[4.189s] -- Installing: /home/GTL/apaul/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/environment/ament_prefix_path.sh
+[4.192s] -- Installing: /home/GTL/apaul/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/environment/ament_prefix_path.dsv
+[4.196s] -- Installing: /home/GTL/apaul/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/environment/path.sh
+[4.199s] -- Installing: /home/GTL/apaul/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/environment/path.dsv
+[4.203s] -- Installing: /home/GTL/apaul/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/local_setup.bash
+[4.207s] -- Installing: /home/GTL/apaul/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/local_setup.sh
+[4.212s] -- Installing: /home/GTL/apaul/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/local_setup.zsh
+[4.216s] -- Installing: /home/GTL/apaul/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/local_setup.dsv
+[4.220s] -- Installing: /home/GTL/apaul/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/package.dsv
+[4.227s] -- Installing: /home/GTL/apaul/ros2_hw1/install/task_manager_nav2/share/ament_index/resource_index/packages/task_manager_nav2
+[4.233s] -- Installing: /home/GTL/apaul/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.237s] -- Installing: /home/GTL/apaul/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.241s] -- Installing: /home/GTL/apaul/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/cmake/task_manager_nav2Config.cmake
+[4.245s] -- Installing: /home/GTL/apaul/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/cmake/task_manager_nav2Config-version.cmake
+[4.249s] -- Installing: /home/GTL/apaul/ros2_hw1/install/task_manager_nav2/share/task_manager_nav2/package.xml
+[4.255s] Invoked command in '/home/GTL/apaul/ros2_hw1/build/task_manager_nav2' returned '0': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/task_manager_lib/lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/task_manager_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/GTL/apaul/ros2_hw1/build/task_manager_nav2
