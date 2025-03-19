@@ -1,4 +1,3 @@
-#include <vector>
 #include <string>
 #include <map>
 #include <list>
@@ -54,7 +53,7 @@ class OccupancyGridPlanner : public rclcpp::Node {
         int dilation_type = cv::MORPH_ELLIPSE;
         int dilation_size = 5; 
 
-        typedef std::multimap<float, cv::Point> Heap;
+        typedef std::multimap<float, cv::Point3i> Heap;
 
         // Example of code to convert between Point3i and Point2i, aka Point
         cv::Point P2(const cv::Point3i & P) {return cv::Point(P.x,P.y);}
@@ -286,25 +285,21 @@ class OccupancyGridPlanner : public rclcpp::Node {
             // std::array<cv::Point,8> neighbours = {cv::Point(1,0), cv::Point(0,1), cv::Point(-1,0), cv::Point(0, -1),
             //     cv::Point(1,1), cv::Point(-1,1), cv::Point(-1,-1), cv::Point(1,-1)};
             // TODO: Create a new set of neighbours in 3D
-            std::array<cv::Point3i,26> neighbours = {cv::Point3i(1, 0, 0), cv::Point3i(0, 1, 0), cv::Point3i(0, 0, 1),  // Face neighbors
-                                                    cv::Point3i(-1, 0, 0), cv::Point3i(0, -1, 0), cv::Point3i(0, 0, -1),
-                                                    cv::Point3i(1, 1, 0), cv::Point3i(1, 0, 1), cv::Point3i(0, 1, 1),  // Edge neighbors
-                                                    cv::Point3i(-1, -1, 0), cv::Point3i(-1, 0, -1), cv::Point3i(0, -1, -1),
-                                                    cv::Point3i(1, -1, 0), cv::Point3i(1, 0, -1), cv::Point3i(0, 1, -1),
-                                                    cv::Point3i(-1, 1, 0), cv::Point3i(-1, 1, 1), cv::Point3i(1, -1, -1),
-                                                    cv::Point3i(-1, -1, -1), cv::Point3i(1, 1, 1), cv::Point3i(1, -1, 1),
-                                                    cv::Point3i(-1, 0, 1), cv::Point3i(0, -1, 1), cv::Point3i(0, 1, -1)}; 
-            // Cost of displacement corresponding the neighbours. Diagonal
-            // moves are 44% longer.
+            std::array<cv::Point3i,12> neighbours = {cv::Point3i(0, 1, 0), cv::Point3i(-1, 1, 1), cv::Point3i(-1, 0, 2),  // Moving in front of the robot
+                                                    cv::Point3i(1, 0, 6), cv::Point3i(1, 1, 7),
+                                                    
+                                                    cv::Point3i(0, 0, 0),cv::Point3i(0, 0, 1),cv::Point3i(0, 0, 2), // These points are the rotation auround itself
+                                                    cv::Point3i(0, 0, 3),cv::Point3i(0, 0, 4),cv::Point3i(0, 0, 5),
+                                                    cv::Point3i(0, 0, 6),cv::Point3i(0, 0, 7)};
+            // moves are 44% longer when on the diagonal.
 
-            std::array<float, 26> cost = {
-                    1, 1, 1, 1, 
-                    1, 1, 1, 1, 
-                    sqrt(2), sqrt(2), sqrt(2), sqrt(2), 
-                    sqrt(2), sqrt(2), sqrt(2), sqrt(2),
-                    sqrt(2), sqrt(2), sqrt(2), sqrt(2), 
-                    sqrt(2), sqrt(2), sqrt(2), sqrt(2),
-                    sqrt(2), sqrt(2) 
+            std::array<float, 12> cost = {
+                    1, sqrt(2), 1, // Cost of moving forward
+                    sqrt(2), 1, 
+
+                    2, 2, 2,  // Cost of rotating around itself
+                    2, 2, 2,
+                    2, 2
                 };
 
 

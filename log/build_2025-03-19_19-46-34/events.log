@@ -1,0 +1,122 @@
+[0.000000] (-) TimerEvent: {}
+[0.000148] (-) JobUnselected: {'identifier': 'ar_loc_base'}
+[0.000165] (-) JobUnselected: {'identifier': 'ar_mapping_base'}
+[0.000176] (-) JobUnselected: {'identifier': 'ar_slam_base'}
+[0.000185] (-) JobUnselected: {'identifier': 'button_server'}
+[0.000193] (-) JobUnselected: {'identifier': 'collision_avoidance_base'}
+[0.000201] (-) JobUnselected: {'identifier': 'cs7630_msgs'}
+[0.000209] (-) JobUnselected: {'identifier': 'face_detect_base'}
+[0.000217] (-) JobUnselected: {'identifier': 'face_msg'}
+[0.000225] (-) JobUnselected: {'identifier': 'floor_nav'}
+[0.000233] (-) JobUnselected: {'identifier': 'joy_pack'}
+[0.000241] (-) JobUnselected: {'identifier': 'keyboard_teleop'}
+[0.000249] (-) JobUnselected: {'identifier': 'rover_driver_base'}
+[0.000257] (-) JobUnselected: {'identifier': 'task_manager_client_py'}
+[0.000265] (-) JobUnselected: {'identifier': 'task_manager_lib'}
+[0.000273] (-) JobUnselected: {'identifier': 'task_manager_msgs'}
+[0.000281] (-) JobUnselected: {'identifier': 'task_manager_nav2'}
+[0.000289] (-) JobUnselected: {'identifier': 'task_manager_sync'}
+[0.000297] (-) JobUnselected: {'identifier': 'turtlebot_launch'}
+[0.000305] (-) JobUnselected: {'identifier': 'vrep4_helpers'}
+[0.000316] (-) JobUnselected: {'identifier': 'vrep_ros_teleop'}
+[0.000324] (-) JobUnselected: {'identifier': 'wifi_map_base'}
+[0.000332] (-) JobUnselected: {'identifier': 'wpa_cli_msgs'}
+[0.000342] (occgrid_planner_base) JobQueued: {'identifier': 'occgrid_planner_base', 'dependencies': OrderedDict([('cs7630_msgs', '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs')])}
+[0.000355] (occgrid_planner_base) JobStarted: {'identifier': 'occgrid_planner_base'}
+[0.049655] (occgrid_planner_base) JobProgress: {'identifier': 'occgrid_planner_base', 'progress': 'cmake'}
+[0.053770] (occgrid_planner_base) JobProgress: {'identifier': 'occgrid_planner_base', 'progress': 'build'}
+[0.054582] (occgrid_planner_base) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/GTL/apaul/ros2_hw1/build/occgrid_planner_base', '--', '-j16', '-l16'], 'cwd': '/home/GTL/apaul/ros2_hw1/build/occgrid_planner_base', 'env': OrderedDict([('USER', 'apaul'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/GTL/apaul'), ('CYCLONEDDS_URI', '/cs-share/pradalier/gtlpc_cyclonedds.xml'), ('OLDPWD', '/home/GTL/apaul'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2289'), ('SYSTEMD_EXEC_PID', '2651'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/37726/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5612'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'apaul'), ('JOURNAL_STREAM', '8:37609'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'apaul'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/gtlpc109.georgiatech-metz.fr:@/tmp/.ICE-unix/2452,unix/gtlpc109.georgiatech-metz.fr:/tmp/.ICE-unix/2452'), ('INVOCATION_ID', '65bdb450faaf4c72ac10b185488162b9'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/37726'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/37726/gdm/Xauthority'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/37726/keyring/ssh'), ('ROS_DOMAIN_ID', '59'), ('AMENT_PREFIX_PATH', '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:509fd8ff-a653-487c-bcbe-d10744249b23'), ('KRB5CCNAME', 'FILE:/tmp/krb5cc_37726'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/37726/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/GTL/apaul/ros2_hw1/build/occgrid_planner_base'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble')]), 'shell': False}
+[0.099269] (-) TimerEvent: {}
+[0.115862] (occgrid_planner_base) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target occgrid_planner_base\x1b[0m\n'}
+[0.135020] (occgrid_planner_base) StdoutLine: {'line': b'[ 66%] Built target path_optimizer_base\n'}
+[0.135353] (occgrid_planner_base) StdoutLine: {'line': b'[ 66%] Built target path_follower_base\n'}
+[0.159015] (occgrid_planner_base) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o\x1b[0m\n'}
+[0.199379] (-) TimerEvent: {}
+[0.299659] (-) TimerEvent: {}
+[0.399924] (-) TimerEvent: {}
+[0.500190] (-) TimerEvent: {}
+[0.600470] (-) TimerEvent: {}
+[0.700704] (-) TimerEvent: {}
+[0.800948] (-) TimerEvent: {}
+[0.901189] (-) TimerEvent: {}
+[1.001441] (-) TimerEvent: {}
+[1.101689] (-) TimerEvent: {}
+[1.201965] (-) TimerEvent: {}
+[1.302230] (-) TimerEvent: {}
+[1.402445] (-) TimerEvent: {}
+[1.502663] (-) TimerEvent: {}
+[1.602905] (-) TimerEvent: {}
+[1.703163] (-) TimerEvent: {}
+[1.803389] (-) TimerEvent: {}
+[1.903626] (-) TimerEvent: {}
+[2.003849] (-) TimerEvent: {}
+[2.104114] (-) TimerEvent: {}
+[2.204402] (-) TimerEvent: {}
+[2.304654] (-) TimerEvent: {}
+[2.404907] (-) TimerEvent: {}
+[2.505158] (-) TimerEvent: {}
+[2.605380] (-) TimerEvent: {}
+[2.705619] (-) TimerEvent: {}
+[2.805862] (-) TimerEvent: {}
+[2.906128] (-) TimerEvent: {}
+[3.006421] (-) TimerEvent: {}
+[3.106658] (-) TimerEvent: {}
+[3.206895] (-) TimerEvent: {}
+[3.307154] (-) TimerEvent: {}
+[3.407381] (-) TimerEvent: {}
+[3.507650] (-) TimerEvent: {}
+[3.607886] (-) TimerEvent: {}
+[3.708151] (-) TimerEvent: {}
+[3.808370] (-) TimerEvent: {}
+[3.908595] (-) TimerEvent: {}
+[4.008894] (-) TimerEvent: {}
+[4.109130] (-) TimerEvent: {}
+[4.209441] (-) TimerEvent: {}
+[4.307608] (occgrid_planner_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_map.h:63\x1b[m\x1b[K,\n'}
+[4.307762] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/map:61\x1b[m\x1b[K,\n'}
+[4.307809] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:2\x1b[m\x1b[K:\n'}
+[4.307850] (occgrid_planner_base) StderrLine: {'line': b'/usr/include/c++/11/tuple: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kstd::pair<_T1, _T2>::pair(std::tuple<_Args1 ...>&, std::tuple<_Args2 ...>&, std::_Index_tuple<_Indexes1 ...>, std::_Index_tuple<_Indexes2 ...>) [with _Args1 = {const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&}; long unsigned int ..._Indexes1 = {0}; _Args2 = {}; long unsigned int ..._Indexes2 = {}; _T1 = const std::__cxx11::basic_string<char>; _T2 = OccupancyGridPlanner::Node3D]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.307888] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:1809:63:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::pair<_T1, _T2>::pair(std::piecewise_construct_t, std::tuple<_Args1 ...>, std::tuple<_Args2 ...>) [with _Args1 = {const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&}; _Args2 = {}; _T1 = const std::__cxx11::basic_string<char>; _T2 = OccupancyGridPlanner::Node3D]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.307926] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/ext/new_allocator.h:162:4:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = std::pair<const std::__cxx11::basic_string<char>, OccupancyGridPlanner::Node3D>; _Args = {const std::piecewise_construct_t&, std::tuple<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>, std::tuple<>}; _Tp = std::__detail::_Hash_node<std::pair<const std::__cxx11::basic_string<char>, OccupancyGridPlanner::Node3D>, true>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.307962] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/alloc_traits.h:516:17:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstatic void std::allocator_traits<std::allocator<_CharT> >::construct(std::allocator_traits<std::allocator<_CharT> >::allocator_type&, _Up*, _Args&& ...) [with _Up = std::pair<const std::__cxx11::basic_string<char>, OccupancyGridPlanner::Node3D>; _Args = {const std::piecewise_construct_t&, std::tuple<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>, std::tuple<>}; _Tp = std::__detail::_Hash_node<std::pair<const std::__cxx11::basic_string<char>, OccupancyGridPlanner::Node3D>, true>; std::allocator_traits<std::allocator<_CharT> >::allocator_type = std::allocator<std::__detail::_Hash_node<std::pair<const std::__cxx11::basic_string<char>, OccupancyGridPlanner::Node3D>, true> >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.308006] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/hashtable_policy.h:1878:36:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__detail::_Hashtable_alloc<_NodeAlloc>::__node_type* std::__detail::_Hashtable_alloc<_NodeAlloc>::_M_allocate_node(_Args&& ...) [with _Args = {const std::piecewise_construct_t&, std::tuple<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>, std::tuple<>}; _NodeAlloc = std::allocator<std::__detail::_Hash_node<std::pair<const std::__cxx11::basic_string<char>, OccupancyGridPlanner::Node3D>, true> >; std::__detail::_Hashtable_alloc<_NodeAlloc>::__node_ptr = std::allocator<std::__detail::_Hash_node<std::pair<const std::__cxx11::basic_string<char>, OccupancyGridPlanner::Node3D>, true> >::value_type*]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.308044] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/hashtable.h:304:35:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal, _Hash, _RangeHash, _Unused, _RehashPolicy, _Traits>::_Scoped_node::_Scoped_node(std::_Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal, _Hash, _RangeHash, _Unused, _RehashPolicy, _Traits>::__hashtable_alloc*, _Args&& ...) [with _Args = {const std::piecewise_construct_t&, std::tuple<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>, std::tuple<>}; _Key = std::__cxx11::basic_string<char>; _Value = std::pair<const std::__cxx11::basic_string<char>, OccupancyGridPlanner::Node3D>; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, OccupancyGridPlanner::Node3D> >; _ExtractKey = std::__detail::_Select1st; _Equal = std::equal_to<std::__cxx11::basic_string<char> >; _Hash = std::hash<std::__cxx11::basic_string<char> >; _RangeHash = std::__detail::_Mod_range_hashing; _Unused = std::__detail::_Default_ranged_hash; _RehashPolicy = std::__detail::_Prime_rehash_policy; _Traits = std::__detail::_Hashtable_traits<true, false, true>; std::_Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal, _Hash, _RangeHash, _Unused, _RehashPolicy, _Traits>::__hashtable_alloc = std::_Hashtable<std::__cxx11::basic_string<char>, std::pair<const std::__cxx11::basic_string<char>, OccupancyGridPlanner::Node3D>, std::allocator<std::pair<const std::__cxx11::basic_string<char>, OccupancyGridPlanner::Node3D> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char> >, std::hash<std::__cxx11::basic_string<char> >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::__hashtable_alloc]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.308096] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/hashtable_policy.h:707:42:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__detail::_Map_base<_Key, _Pair, _Alloc, std::__detail::_Select1st, _Equal, _Hash, _RangeHash, _Unused, _RehashPolicy, _Traits, true>::mapped_type& std::__detail::_Map_base<_Key, _Pair, _Alloc, std::__detail::_Select1st, _Equal, _Hash, _RangeHash, _Unused, _RehashPolicy, _Traits, true>::operator[](const key_type&) [with _Key = std::__cxx11::basic_string<char>; _Pair = std::pair<const std::__cxx11::basic_string<char>, OccupancyGridPlanner::Node3D>; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, OccupancyGridPlanner::Node3D> >; _Equal = std::equal_to<std::__cxx11::basic_string<char> >; _Hash = std::hash<std::__cxx11::basic_string<char> >; _RangeHash = std::__detail::_Mod_range_hashing; _Unused = std::__detail::_Default_ranged_hash; _RehashPolicy = std::__detail::_Prime_rehash_policy; _Traits = std::__detail::_Hashtable_traits<true, false, true>; std::__detail::_Map_base<_Key, _Pair, _Alloc, std::__detail::_Select1st, _Equal, _Hash, _RangeHash, _Unused, _RehashPolicy, _Traits, true>::mapped_type = OccupancyGridPlanner::Node3D; std::__detail::_Map_base<_Key, _Pair, _Alloc, std::__detail::_Select1st, _Equal, _Hash, _RangeHash, _Unused, _RehashPolicy, _Traits, true>::key_type = std::__cxx11::basic_string<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.308137] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/unordered_map.h:980:20:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::mapped_type& std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::operator[](const key_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = OccupancyGridPlanner::Node3D; _Hash = std::hash<std::__cxx11::basic_string<char> >; _Pred = std::equal_to<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, OccupancyGridPlanner::Node3D> >; std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::mapped_type = OccupancyGridPlanner::Node3D; std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::key_type = std::__cxx11::basic_string<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.308175] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:368:47:\x1b[m\x1b[K   required from here\n'}
+[4.308241] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:1820:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KOccupancyGridPlanner::Node3D::Node3D()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.308277] (occgrid_planner_base) StderrLine: {'line': b' 1820 |         \x1b[01;31m\x1b[Ksecond(std::forward<_Args2>(std::get<_Indexes2>(__tuple2))...)\x1b[m\x1b[K\n'}
+[4.308308] (occgrid_planner_base) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.308340] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:62:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[KOccupancyGridPlanner::Node3D::Node3D(int, int, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.308373] (occgrid_planner_base) StderrLine: {'line': b'   62 |             \x1b[01;36m\x1b[KNode3D\x1b[m\x1b[K(int _x, int _y, int _theta) : x(_x), y(_y), theta(_theta) {}\n'}
+[4.308405] (occgrid_planner_base) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.308440] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:62:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 0 provided\n'}
+[4.308478] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:59:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr OccupancyGridPlanner::Node3D::Node3D(const OccupancyGridPlanner::Node3D&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.308512] (occgrid_planner_base) StderrLine: {'line': b'   59 |         struct \x1b[01;36m\x1b[KNode3D\x1b[m\x1b[K {\n'}
+[4.308544] (occgrid_planner_base) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.308575] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:59:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 0 provided\n'}
+[4.308606] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:59:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr OccupancyGridPlanner::Node3D::Node3D(OccupancyGridPlanner::Node3D&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.308638] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:59:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 0 provided\n'}
+[4.309500] (-) TimerEvent: {}
+[4.409678] (-) TimerEvent: {}
+[4.509918] (-) TimerEvent: {}
+[4.610242] (-) TimerEvent: {}
+[4.710504] (-) TimerEvent: {}
+[4.810755] (-) TimerEvent: {}
+[4.910991] (-) TimerEvent: {}
+[5.011229] (-) TimerEvent: {}
+[5.111492] (-) TimerEvent: {}
+[5.211761] (-) TimerEvent: {}
+[5.312017] (-) TimerEvent: {}
+[5.412292] (-) TimerEvent: {}
+[5.512565] (-) TimerEvent: {}
+[5.612783] (-) TimerEvent: {}
+[5.713013] (-) TimerEvent: {}
+[5.807317] (occgrid_planner_base) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/occgrid_planner_base.dir/build.make:76: CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o] Error 1\n'}
+[5.807467] (occgrid_planner_base) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/occgrid_planner_base.dir/all] Error 2\n'}
+[5.807532] (occgrid_planner_base) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[5.808907] (occgrid_planner_base) CommandEnded: {'returncode': 2}
+[5.813109] (-) TimerEvent: {}
+[5.903813] (occgrid_planner_base) JobEnded: {'identifier': 'occgrid_planner_base', 'rc': 2}
+[5.913209] (-) TimerEvent: {}
+[5.914114] (-) EventReactorShutdown: {}

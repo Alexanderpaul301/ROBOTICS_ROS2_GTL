@@ -1,0 +1,840 @@
+[0.051s] Invoking command in '/home/GTL/apaul/ros2_hw1/build/occgrid_planner_base': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/occgrid_planner_base -- -j16 -l16
+[0.079s] [35m[1mConsolidate compiler generated dependencies of target occgrid_planner_base[0m
+[0.093s] [ 66%] Built target path_optimizer_base
+[0.093s] [ 66%] Built target path_follower_base
+[0.101s] [ 83%] [32mBuilding CXX object CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o[0m
+[2.644s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:[m[K In member function ‘[01m[Kvoid OccupancyGridPlanner::og_callback(nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.644s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:81:38:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((std::__shared_ptr_access<nav_msgs::msg::OccupancyGrid_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<nav_msgs::msg::OccupancyGrid_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::info.nav_msgs::msg::MapMetaData_<std::allocator<void> >::height[m[K’ from ‘[01m[Knav_msgs::msg::MapMetaData_<std::allocator<void> >::_height_type[m[K’ {aka ‘[01m[Kunsigned int[m[K’} to ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[2.644s]    81 |             int sizes[] = {[01;35m[Kmsg->info.height[m[K, msg->info.width, 8};
+[2.644s]       |                            [01;35m[K~~~~~~~~~~^~~~~~[m[K
+[2.644s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:81:56:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((std::__shared_ptr_access<nav_msgs::msg::OccupancyGrid_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<nav_msgs::msg::OccupancyGrid_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::info.nav_msgs::msg::MapMetaData_<std::allocator<void> >::width[m[K’ from ‘[01m[Knav_msgs::msg::MapMetaData_<std::allocator<void> >::_width_type[m[K’ {aka ‘[01m[Kunsigned int[m[K’} to ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[2.644s]    81 |             int sizes[] = {msg->info.height, [01;35m[Kmsg->info.width[m[K, 8};
+[2.645s]       |                                              [01;35m[K~~~~~~~~~~^~~~~[m[K
+[2.645s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:[m[K In member function ‘[01m[Kbool OccupancyGridPlanner::isInGrid(const Point3i&)[m[K’:
+[2.645s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:107:39:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kconst int[m[K’ and ‘[01m[Knav_msgs::msg::MapMetaData_<std::allocator<void> >::_width_type[m[K’ {aka ‘[01m[Kunsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.645s]   107 |             return (P.x >= 0) && ([01;35m[KP.x < info_.width[m[K) &&
+[2.645s]       |                                   [01;35m[K~~~~^~~~~~~~~~~~~[m[K
+[2.645s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:108:39:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kconst int[m[K’ and ‘[01m[Knav_msgs::msg::MapMetaData_<std::allocator<void> >::_height_type[m[K’ {aka ‘[01m[Kunsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.645s]   108 |                    (P.y >= 0) && ([01;35m[KP.y < info_.height[m[K) &&
+[2.645s]       |                                   [01;35m[K~~~~^~~~~~~~~~~~~~[m[K
+[2.655s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:[m[K In member function ‘[01m[Kvoid OccupancyGridPlanner::target_callback(geometry_msgs::msg::PoseStamped_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.655s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:126:44:[m[K [01;31m[Kerror: [m[K‘[01m[KtransformStamped[m[K’ was not declared in this scope
+[2.655s]   126 |             cv::Point3i start = poseToGrid([01;31m[KtransformStamped[m[K.transform);
+[2.656s]       |                                            [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[2.661s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:126:33:[m[K [01;31m[Kerror: [m[K‘[01m[KposeToGrid[m[K’ was not declared in this scope
+[2.661s]   126 |             cv::Point3i start = [01;31m[KposeToGrid[m[K(transformStamped.transform);
+[2.661s]       |                                 [01;31m[K^~~~~~~~~~[m[K
+[2.664s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:131:105:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcv::Mat_<float>::Mat_(nav_msgs::msg::MapMetaData_<std::allocator<void> >::_height_type&, nav_msgs::msg::MapMetaData_<std::allocator<void> >::_width_type&, int, float)[m[K’
+[2.664s]   131 | :Mat_<float> g_score(info_.height, info_.width, 8, std::numeric_limits<float>::infinity()[01;31m[K)[m[K;
+[2.664s]       |                                                                                          [01;31m[K^[m[K
+[2.664s] 
+[2.664s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[2.664s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[2.664s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13[m[K:
+[2.664s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:2249:41:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Nm> cv::Mat_<_Tp>::Mat_(const std::array<_Tp, _Nm>&, bool) [with long unsigned int _Nm = _Nm; _Tp = float][m[K’
+[2.664s]  2249 |     template <std::size_t _Nm> explicit [01;36m[KMat_[m[K(const std::array<_Tp, _Nm>& arr, bool copyData=false);
+[2.664s]       |                                         [01;36m[K^~~~[m[K
+[2.664s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:2249:41:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.664s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:131:105:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::array<float, _Nm>[m[K’ and ‘[01m[Knav_msgs::msg::MapMetaData_<std::allocator<void> >::_height_type[m[K’ {aka ‘[01m[Kunsigned int[m[K’}
+[2.664s]   131 | :Mat_<float> g_score(info_.height, info_.width, 8, std::numeric_limits<float>::infinity()[01;36m[K)[m[K;
+[2.665s]       |                                                                                          [01;36m[K^[m[K
+[2.665s] 
+[2.665s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[2.665s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[2.665s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13[m[K:
+[2.665s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:2241:37:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<int m, int n> cv::Mat_<_Tp>::Mat_(const cv::Matx<typename cv::DataType<_Tp>::channel_type, m, n>&, bool) [with int m = m; int n = n; _Tp = float][m[K’
+[2.665s]  2241 |     template<int m, int n> explicit [01;36m[KMat_[m[K(const Matx<typename DataType<_Tp>::channel_type, m, n>& mtx, bool copyData=true);
+[2.665s]       |                                     [01;36m[K^~~~[m[K
+[2.665s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:2241:37:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.665s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:131:105:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst cv::Matx<float, m1, n1>[m[K’ and ‘[01m[Knav_msgs::msg::MapMetaData_<std::allocator<void> >::_height_type[m[K’ {aka ‘[01m[Kunsigned int[m[K’}
+[2.665s]   131 | :Mat_<float> g_score(info_.height, info_.width, 8, std::numeric_limits<float>::infinity()[01;36m[K)[m[K;
+[2.665s]       |                                                                                          [01;36m[K^[m[K
+[2.665s] 
+[2.665s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[2.665s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[2.665s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13[m[K:
+[2.665s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:2240:30:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<int n> cv::Mat_<_Tp>::Mat_(const cv::Vec<typename cv::DataType<_Tp>::channel_type, n>&, bool) [with int n = n; _Tp = float][m[K’
+[2.665s]  2240 |     template<int n> explicit [01;36m[KMat_[m[K(const Vec<typename DataType<_Tp>::channel_type, n>& vec, bool copyData=true);
+[2.665s]       |                              [01;36m[K^~~~[m[K
+[2.666s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:2240:30:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.666s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:131:105:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst cv::Vec<float, n>[m[K’ and ‘[01m[Knav_msgs::msg::MapMetaData_<std::allocator<void> >::_height_type[m[K’ {aka ‘[01m[Kunsigned int[m[K’}
+[2.666s]   131 | :Mat_<float> g_score(info_.height, info_.width, 8, std::numeric_limits<float>::infinity()[01;36m[K)[m[K;
+[2.666s]       |                                                                                          [01;36m[K^[m[K
+[2.666s] 
+[2.666s] In file included from [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3764[m[K,
+[2.666s]                  from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[2.666s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[2.666s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13[m[K:
+[2.666s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1853:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(cv::MatExpr&&) [with _Tp = float][m[K’
+[2.666s]  1853 | [01;36m[KMat_<_Tp>[m[K::Mat_(MatExpr&& e)
+[2.666s]       | [01;36m[K^~~~~~~~~[m[K
+[2.666s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1853:1:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+[2.666s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1822:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(cv::Mat&&) [with _Tp = float][m[K’
+[2.666s]  1822 | [01;36m[KMat_<_Tp>[m[K::Mat_(Mat&& m)
+[2.666s]       | [01;36m[K^~~~~~~~~[m[K
+[2.666s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1822:1:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+[2.666s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1809:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(cv::Mat_<_Tp>&&) [with _Tp = float][m[K’
+[2.666s]  1809 | [01;36m[KMat_<_Tp>[m[K::Mat_(Mat_&& m)
+[2.666s]       | [01;36m[K^~~~~~~~~[m[K
+[2.666s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1809:1:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+[2.666s] In file included from [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3764[m[K,
+[2.666s]                  from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[2.666s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[2.666s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13[m[K:
+[2.666s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1416:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(std::initializer_list<int>, std::initializer_list<_Tp>) [with _Tp = float][m[K’
+[2.666s]  1416 | [01;36m[KMat_<_Tp>[m[K::Mat_(const std::initializer_list<int> sizes, std::initializer_list<_Tp> list)
+[2.666s]       | [01;36m[K^~~~~~~~~[m[K
+[2.666s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1416:1:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 4 provided
+[2.666s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1411:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(std::initializer_list<_Tp>) [with _Tp = float][m[K’
+[2.666s]  1411 | [01;36m[KMat_<_Tp>[m[K::Mat_(std::initializer_list<_Tp> list)
+[2.666s]       | [01;36m[K^~~~~~~~~[m[K
+[2.667s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1411:1:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+[2.667s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1401:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(const cv::MatCommaInitializer_<_Tp>&) [with _Tp = float][m[K’
+[2.667s]  1401 | [01;36m[KMat_<_Tp>[m[K::Mat_(const MatCommaInitializer_<_Tp>& commaInitializer)
+[2.667s]       | [01;36m[K^~~~~~~~~[m[K
+[2.667s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1401:1:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+[2.667s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1392:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(const cv::Point3_<typename cv::DataType<_Tp>::channel_type>&, bool) [with _Tp = float; typename cv::DataType<_Tp>::channel_type = float][m[K’
+[2.667s]  1392 | [01;36m[KMat_<_Tp>[m[K::Mat_(const Point3_<typename DataType<_Tp>::channel_type>& pt, bool copyData)
+[2.667s]       | [01;36m[K^~~~~~~~~[m[K
+[2.667s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1392:1:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 4 provided
+[2.667s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1383:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(const cv::Point_<typename cv::DataType<_Tp>::channel_type>&, bool) [with _Tp = float; typename cv::DataType<_Tp>::channel_type = float][m[K’
+[2.667s]  1383 | [01;36m[KMat_<_Tp>[m[K::Mat_(const Point_<typename DataType<_Tp>::channel_type>& pt, bool copyData)
+[2.667s]       | [01;36m[K^~~~~~~~~[m[K
+[2.667s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1383:1:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 4 provided
+[2.667s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1406:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(const std::vector<BufferT>&, bool) [with _Tp = float][m[K’
+[2.667s]  1406 | [01;36m[KMat_<_Tp>[m[K::Mat_(const std::vector<_Tp>& vec, bool copyData)
+[2.667s]       | [01;36m[K^~~~~~~~~[m[K
+[2.667s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1406:1:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 4 provided
+[2.667s] In file included from [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3764[m[K,
+[2.667s]                  from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[2.667s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[2.667s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13[m[K:
+[2.667s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:3015:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(const cv::MatExpr&) [with _Tp = float][m[K’
+[2.667s]  3015 | [01;36m[KMat_<_Tp>[m[K::Mat_(const MatExpr& e)
+[2.667s]       | [01;36m[K^~~~~~~~~[m[K
+[2.667s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:3015:1:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+[2.667s] In file included from [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3764[m[K,
+[2.667s]                  from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[2.667s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[2.667s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13[m[K:
+[2.667s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1332:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(const cv::Mat_<_Tp>&, const std::vector<cv::Range>&) [with _Tp = float][m[K’
+[2.667s]  1332 | [01;36m[KMat_<_Tp>[m[K::Mat_(const Mat_<_Tp>& m, const std::vector<Range>& ranges)
+[2.668s]       | [01;36m[K^~~~~~~~~[m[K
+[2.668s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1332:1:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 4 provided
+[2.668s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1327:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(const cv::Mat_<_Tp>&, const cv::Range*) [with _Tp = float][m[K’
+[2.668s]  1327 | [01;36m[KMat_<_Tp>[m[K::Mat_(const Mat_<_Tp>& m, const Range* ranges)
+[2.668s]       | [01;36m[K^~~~~~~~~[m[K
+[2.668s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1327:1:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 4 provided
+[2.668s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1360:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(const cv::Mat_<_Tp>&, const Rect&) [with _Tp = float; cv::Rect = cv::Rect_<int>][m[K’
+[2.668s]  1360 | [01;36m[KMat_<_Tp>[m[K::Mat_(const Mat_& m, const Rect& roi)
+[2.668s]       | [01;36m[K^~~~~~~~~[m[K
+[2.668s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1360:1:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 4 provided
+[2.668s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1355:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(const cv::Mat_<_Tp>&, const cv::Range&, const cv::Range&) [with _Tp = float][m[K’
+[2.668s]  1355 | [01;36m[KMat_<_Tp>[m[K::Mat_(const Mat_& m, const Range& _rowRange, const Range& _colRange)
+[2.668s]       | [01;36m[K^~~~~~~~~[m[K
+[2.668s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1355:1:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 4 provided
+[2.668s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1322:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(int, const int*, _Tp*, const size_t*) [with _Tp = float; size_t = long unsigned int][m[K’
+[2.668s]  1322 | [01;36m[KMat_<_Tp>[m[K::Mat_(int _dims, const int* _sz, _Tp* _data, const size_t* _steps)
+[2.668s]       | [01;36m[K^~~~~~~~~[m[K
+[2.668s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1322:70:[m[K [01;36m[Knote: [m[K  no known conversion for argument 4 from ‘[01m[Kfloat[m[K’ to ‘[01m[Kconst size_t*[m[K’ {aka ‘[01m[Kconst long unsigned int*[m[K’}
+[2.668s]  1322 | Mat_<_Tp>::Mat_(int _dims, const int* _sz, _Tp* _data, [01;36m[Kconst size_t* _steps[m[K)
+[2.668s]       |                                                        [01;36m[K~~~~~~~~~~~~~~^~~~~~[m[K
+[2.668s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1350:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(int, int, _Tp*, size_t) [with _Tp = float; size_t = long unsigned int][m[K’ (near match)
+[2.668s]  1350 | [01;36m[KMat_<_Tp>[m[K::Mat_(int _rows, int _cols, _Tp* _data, size_t steps)
+[2.668s]       | [01;36m[K^~~~~~~~~[m[K
+[2.668s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1350:1:[m[K [01;36m[Knote: [m[K  conversion of argument 3 would be ill-formed:
+[2.668s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:131:64:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kint[m[K’ to ‘[01m[Kfloat*[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[2.668s]   131 |             cv::Mat_<float> g_score(info_.height, info_.width, [01;31m[K8[m[K, std::numeric_limits<float>::infinity());
+[2.668s]       |                                                                [01;31m[K^[m[K
+[2.668s]       |                                                                [01;31m[K|[m[K
+[2.668s]       |                                                                [01;31m[Kint[m[K
+[2.668s] In file included from [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3764[m[K,
+[2.668s]                  from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[2.668s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[2.668s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13[m[K:
+[2.669s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1345:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(const cv::Mat_<_Tp>&) [with _Tp = float][m[K’
+[2.669s]  1345 | [01;36m[KMat_<_Tp>[m[K::Mat_(const Mat_& m)
+[2.669s]       | [01;36m[K^~~~~~~~~[m[K
+[2.669s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1345:1:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+[2.669s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1337:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(const cv::Mat&) [with _Tp = float][m[K’
+[2.669s]  1337 | [01;36m[KMat_<_Tp>[m[K::Mat_(const Mat& m)
+[2.669s]       | [01;36m[K^~~~~~~~~[m[K
+[2.669s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1337:1:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+[2.669s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1317:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(int, const int*, const _Tp&) [with _Tp = float][m[K’
+[2.669s]  1317 | [01;36m[KMat_<_Tp>[m[K::Mat_(int _dims, const int* _sz, const _Tp& _s)
+[2.669s]       | [01;36m[K^~~~~~~~~[m[K
+[2.669s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1317:1:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 4 provided
+[2.669s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1312:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(int, const int*) [with _Tp = float][m[K’
+[2.669s]  1312 | [01;36m[KMat_<_Tp>[m[K::Mat_(int _dims, const int* _sz)
+[2.669s]       | [01;36m[K^~~~~~~~~[m[K
+[2.669s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1312:1:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 4 provided
+[2.669s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1305:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(cv::Size, const _Tp&) [with _Tp = float; cv::Size = cv::Size_<int>][m[K’
+[2.669s]  1305 | [01;36m[KMat_<_Tp>[m[K::Mat_(Size _sz, const _Tp& value)
+[2.669s]       | [01;36m[K^~~~~~~~~[m[K
+[2.669s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1305:1:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 4 provided
+[2.669s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1300:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(cv::Size) [with _Tp = float; cv::Size = cv::Size_<int>][m[K’
+[2.669s]  1300 | [01;36m[KMat_<_Tp>[m[K::Mat_(Size _sz)
+[2.669s]       | [01;36m[K^~~~~~~~~[m[K
+[2.669s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1300:1:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+[2.669s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1293:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(int, int, const _Tp&) [with _Tp = float][m[K’
+[2.669s]  1293 | [01;36m[KMat_<_Tp>[m[K::Mat_(int _rows, int _cols, const _Tp& value)
+[2.669s]       | [01;36m[K^~~~~~~~~[m[K
+[2.669s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1293:1:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 4 provided
+[2.669s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1287:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(int, int) [with _Tp = float][m[K’
+[2.669s]  1287 | [01;36m[KMat_<_Tp>[m[K::Mat_(int _rows, int _cols)
+[2.669s]       | [01;36m[K^~~~~~~~~[m[K
+[2.669s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1287:1:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 4 provided
+[2.670s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1280:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_() [with _Tp = float][m[K’
+[2.670s]  1280 | [01;36m[KMat_<_Tp>[m[K::Mat_() CV_NOEXCEPT
+[2.670s]       | [01;36m[K^~~~~~~~~[m[K
+[2.670s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1280:1:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 4 provided
+[2.670s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:145:13:[m[K [01;31m[Kerror: [m[Ktoo many initializers for ‘[01m[Kconst std::array<cv::Point3_<int>, 16>[m[K’
+[2.670s]   145 |             [01;31m[K}[m[K;
+[2.670s]       |             [01;31m[K^[m[K
+[3.200s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[3.200s]                  from [01m[K/usr/include/c++/11/vector:60[m[K,
+[3.200s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:1[m[K:
+[3.200s] /usr/include/c++/11/bits/stl_pair.h: In instantiation of ‘[01m[Kconstexpr bool std::operator<(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&) [with _T1 = float; _T2 = cv::Point3_<int>][m[K’:
+[3.200s] [01m[K/usr/include/c++/11/bits/stl_function.h:400:20:[m[K   required from ‘[01m[Kconstexpr bool std::less<_Tp>::operator()(const _Tp&, const _Tp&) const [with _Tp = std::pair<float, cv::Point3_<int> >][m[K’
+[3.200s] [01m[K/usr/include/c++/11/bits/predefined_ops.h:196:23:[m[K   required from ‘[01m[Kbool __gnu_cxx::__ops::_Iter_comp_val<_Compare>::operator()(_Iterator, _Value&) [with _Iterator = __gnu_cxx::__normal_iterator<std::pair<float, cv::Point3_<int> >*, std::vector<std::pair<float, cv::Point3_<int> >, std::allocator<std::pair<float, cv::Point3_<int> > > > >; _Value = std::pair<float, cv::Point3_<int> >; _Compare = std::less<std::pair<float, cv::Point3_<int> > >][m[K’
+[3.200s] [01m[K/usr/include/c++/11/bits/stl_heap.h:139:48:[m[K   required from ‘[01m[Kvoid std::__push_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare&) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<std::pair<float, cv::Point3_<int> >*, std::vector<std::pair<float, cv::Point3_<int> >, std::allocator<std::pair<float, cv::Point3_<int> > > > >; _Distance = long int; _Tp = std::pair<float, cv::Point3_<int> >; _Compare = __gnu_cxx::__ops::_Iter_comp_val<std::less<std::pair<float, cv::Point3_<int> > > >][m[K’
+[3.200s] [01m[K/usr/include/c++/11/bits/stl_heap.h:215:23:[m[K   required from ‘[01m[Kvoid std::push_heap(_RAIter, _RAIter, _Compare) [with _RAIter = __gnu_cxx::__normal_iterator<std::pair<float, cv::Point3_<int> >*, std::vector<std::pair<float, cv::Point3_<int> >, std::allocator<std::pair<float, cv::Point3_<int> > > > >; _Compare = std::less<std::pair<float, cv::Point3_<int> > >][m[K’
+[3.200s] [01m[K/usr/include/c++/11/bits/stl_queue.h:659:18:[m[K   required from ‘[01m[Kvoid std::priority_queue<_Tp, _Sequence, _Compare>::emplace(_Args&& ...) [with _Args = {double, cv::Point3_<int>&}; _Tp = std::pair<float, cv::Point3_<int> >; _Sequence = std::vector<std::pair<float, cv::Point3_<int> >, std::allocator<std::pair<float, cv::Point3_<int> > > >; _Compare = std::less<std::pair<float, cv::Point3_<int> > >][m[K’
+[3.200s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:133:25:[m[K   required from here
+[3.200s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator<[m[K’ (operand types are ‘[01m[Kconst cv::Point3_<int>[m[K’ and ‘[01m[Kconst cv::Point3_<int>[m[K’)
+[3.200s]   491 |              || (!(__y.first < __x.first) && [01;31m[K__x.second < __y.second[m[K); }
+[3.200s]       |                                              [01;31m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[3.200s] [01m[K/usr/include/c++/11/bits/stl_pair.h:489:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _T1, class _T2> constexpr bool std::operator<(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)[m[K’
+[3.201s]   489 |     [01;36m[Koperator[m[K<(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+[3.201s]       |     [01;36m[K^~~~~~~~[m[K
+[3.201s] [01m[K/usr/include/c++/11/bits/stl_pair.h:489:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.201s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst cv::Point3_<int>[m[K’ is not derived from ‘[01m[Kconst std::pair<_T1, _T2>[m[K’
+[3.201s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[3.201s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[3.201s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:67[m[K,
+[3.201s]                  from [01m[K/usr/include/c++/11/vector:60[m[K,
+[3.201s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:1[m[K:
+[3.201s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:426:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Iterator> constexpr bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)[m[K’
+[3.201s]   426 |     [01;36m[Koperator[m[K<(const reverse_iterator<_Iterator>& __x,
+[3.201s]       |     [01;36m[K^~~~~~~~[m[K
+[3.201s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:426:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.201s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[3.201s]                  from [01m[K/usr/include/c++/11/vector:60[m[K,
+[3.201s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:1[m[K:
+[3.201s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst cv::Point3_<int>[m[K’ is not derived from ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’
+[3.201s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[3.201s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[3.201s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:67[m[K,
+[3.202s]                  from [01m[K/usr/include/c++/11/vector:60[m[K,
+[3.202s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:1[m[K:
+[3.202s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:465:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR> constexpr bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)[m[K’
+[3.202s]   465 |     [01;36m[Koperator[m[K<(const reverse_iterator<_IteratorL>& __x,
+[3.202s]       |     [01;36m[K^~~~~~~~[m[K
+[3.202s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:465:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.202s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[3.202s]                  from [01m[K/usr/include/c++/11/vector:60[m[K,
+[3.202s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:1[m[K:
+[3.202s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst cv::Point3_<int>[m[K’ is not derived from ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’
+[3.202s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[3.202s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[3.202s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:67[m[K,
+[3.202s]                  from [01m[K/usr/include/c++/11/vector:60[m[K,
+[3.202s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:1[m[K:
+[3.202s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:1609:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR> constexpr bool std::operator<(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)[m[K’
+[3.202s]  1609 |     [01;36m[Koperator[m[K<(const move_iterator<_IteratorL>& __x,
+[3.202s]       |     [01;36m[K^~~~~~~~[m[K
+[3.202s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:1609:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.202s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[3.202s]                  from [01m[K/usr/include/c++/11/vector:60[m[K,
+[3.202s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:1[m[K:
+[3.202s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst cv::Point3_<int>[m[K’ is not derived from ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’
+[3.202s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[3.202s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[3.203s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:67[m[K,
+[3.203s]                  from [01m[K/usr/include/c++/11/vector:60[m[K,
+[3.203s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:1[m[K:
+[3.203s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:1667:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Iterator> constexpr bool std::operator<(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)[m[K’
+[3.203s]  1667 |     [01;36m[Koperator[m[K<(const move_iterator<_Iterator>& __x,
+[3.203s]       |     [01;36m[K^~~~~~~~[m[K
+[3.203s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:1667:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.203s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[3.203s]                  from [01m[K/usr/include/c++/11/vector:60[m[K,
+[3.203s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:1[m[K:
+[3.203s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst cv::Point3_<int>[m[K’ is not derived from ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’
+[3.203s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[3.203s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[3.203s] In file included from [01m[K/usr/include/c++/11/vector:67[m[K,
+[3.203s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:1[m[K:
+[3.204s] [01m[K/usr/include/c++/11/bits/stl_vector.h:1930:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Alloc> bool std::operator<(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)[m[K’
+[3.204s]  1930 |     [01;36m[Koperator[m[K<(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+[3.204s]       |     [01;36m[K^~~~~~~~[m[K
+[3.204s] [01m[K/usr/include/c++/11/bits/stl_vector.h:1930:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.204s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[3.204s]                  from [01m[K/usr/include/c++/11/vector:60[m[K,
+[3.204s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:1[m[K:
+[3.204s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst cv::Point3_<int>[m[K’ is not derived from ‘[01m[Kconst std::vector<_Tp, _Alloc>[m[K’
+[3.204s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[3.204s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[3.204s] In file included from [01m[K/usr/include/c++/11/bits/basic_string.h:48[m[K,
+[3.204s]                  from [01m[K/usr/include/c++/11/string:55[m[K,
+[3.204s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:2[m[K:
+[3.204s] [01m[K/usr/include/c++/11/string_view:589:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> constexpr bool std::operator<(std::basic_string_view<_CharT, _Traits>, std::basic_string_view<_CharT, _Traits>)[m[K’
+[3.204s]   589 |     [01;36m[Koperator[m[K< (basic_string_view<_CharT, _Traits> __x,
+[3.204s]       |     [01;36m[K^~~~~~~~[m[K
+[3.204s] [01m[K/usr/include/c++/11/string_view:589:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.204s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[3.204s]                  from [01m[K/usr/include/c++/11/vector:60[m[K,
+[3.204s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:1[m[K:
+[3.204s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point3_<int>[m[K’ is not derived from ‘[01m[Kstd::basic_string_view<_CharT, _Traits>[m[K’
+[3.204s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[3.204s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[3.204s] In file included from [01m[K/usr/include/c++/11/bits/basic_string.h:48[m[K,
+[3.204s]                  from [01m[K/usr/include/c++/11/string:55[m[K,
+[3.204s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:2[m[K:
+[3.204s] [01m[K/usr/include/c++/11/string_view:595:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> constexpr bool std::operator<(std::basic_string_view<_CharT, _Traits>, std::__type_identity_t<std::basic_string_view<_CharT, _Traits> >)[m[K’
+[3.204s]   595 |     [01;36m[Koperator[m[K< (basic_string_view<_CharT, _Traits> __x,
+[3.205s]       |     [01;36m[K^~~~~~~~[m[K
+[3.205s] [01m[K/usr/include/c++/11/string_view:595:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.205s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[3.205s]                  from [01m[K/usr/include/c++/11/vector:60[m[K,
+[3.205s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:1[m[K:
+[3.205s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point3_<int>[m[K’ is not derived from ‘[01m[Kstd::basic_string_view<_CharT, _Traits>[m[K’
+[3.205s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[3.205s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[3.205s] In file included from [01m[K/usr/include/c++/11/bits/basic_string.h:48[m[K,
+[3.205s]                  from [01m[K/usr/include/c++/11/string:55[m[K,
+[3.205s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:2[m[K:
+[3.205s] [01m[K/usr/include/c++/11/string_view:602:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> constexpr bool std::operator<(std::__type_identity_t<std::basic_string_view<_CharT, _Traits> >, std::basic_string_view<_CharT, _Traits>)[m[K’
+[3.205s]   602 |     [01;36m[Koperator[m[K< (__type_identity_t<basic_string_view<_CharT, _Traits>> __x,
+[3.205s]       |     [01;36m[K^~~~~~~~[m[K
+[3.205s] [01m[K/usr/include/c++/11/string_view:602:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.205s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[3.205s]                  from [01m[K/usr/include/c++/11/vector:60[m[K,
+[3.205s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:1[m[K:
+[3.205s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point3_<int>[m[K’ is not derived from ‘[01m[Kstd::basic_string_view<_CharT, _Traits>[m[K’
+[3.205s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[3.205s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[3.205s] In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+[3.205s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:2[m[K:
+[3.205s] [01m[K/usr/include/c++/11/bits/basic_string.h:6340:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K’
+[3.205s]  6340 |     [01;36m[Koperator[m[K<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+[3.205s]       |     [01;36m[K^~~~~~~~[m[K
+[3.205s] [01m[K/usr/include/c++/11/bits/basic_string.h:6340:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.205s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[3.205s]                  from [01m[K/usr/include/c++/11/vector:60[m[K,
+[3.205s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:1[m[K:
+[3.206s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst cv::Point3_<int>[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+[3.206s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[3.206s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[3.206s] In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+[3.206s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:2[m[K:
+[3.206s] [01m[K/usr/include/c++/11/bits/basic_string.h:6353:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const _CharT*)[m[K’
+[3.206s]  6353 |     [01;36m[Koperator[m[K<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+[3.206s]       |     [01;36m[K^~~~~~~~[m[K
+[3.206s] [01m[K/usr/include/c++/11/bits/basic_string.h:6353:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.206s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[3.206s]                  from [01m[K/usr/include/c++/11/vector:60[m[K,
+[3.206s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:1[m[K:
+[3.206s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst cv::Point3_<int>[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+[3.206s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[3.206s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[3.206s] In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+[3.206s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:2[m[K:
+[3.206s] [01m[K/usr/include/c++/11/bits/basic_string.h:6365:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::operator<(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K’
+[3.206s]  6365 |     [01;36m[Koperator[m[K<(const _CharT* __lhs,
+[3.206s]       |     [01;36m[K^~~~~~~~[m[K
+[3.206s] [01m[K/usr/include/c++/11/bits/basic_string.h:6365:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.206s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[3.206s]                  from [01m[K/usr/include/c++/11/vector:60[m[K,
+[3.206s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:1[m[K:
+[3.206s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst _CharT*[m[K’ and ‘[01m[Kcv::Point3_<int>[m[K’
+[3.206s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[3.207s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[3.207s] In file included from [01m[K/usr/include/c++/11/tuple:39[m[K,
+[3.207s]                  from [01m[K/usr/include/c++/11/bits/stl_map.h:63[m[K,
+[3.207s]                  from [01m[K/usr/include/c++/11/map:61[m[K,
+[3.207s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:3[m[K:
+[3.207s] [01m[K/usr/include/c++/11/array:311:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, long unsigned int _Nm> bool std::operator<(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)[m[K’
+[3.207s]   311 |     [01;36m[Koperator[m[K<(const array<_Tp, _Nm>& __a, const array<_Tp, _Nm>& __b)
+[3.207s]       |     [01;36m[K^~~~~~~~[m[K
+[3.207s] [01m[K/usr/include/c++/11/array:311:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.207s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[3.207s]                  from [01m[K/usr/include/c++/11/vector:60[m[K,
+[3.207s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:1[m[K:
+[3.207s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst cv::Point3_<int>[m[K’ is not derived from ‘[01m[Kconst std::array<_Tp, _Nm>[m[K’
+[3.207s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[3.207s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[3.207s] In file included from [01m[K/usr/include/c++/11/bits/stl_map.h:63[m[K,
+[3.207s]                  from [01m[K/usr/include/c++/11/map:61[m[K,
+[3.207s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:3[m[K:
+[3.207s] [01m[K/usr/include/c++/11/tuple:1566:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ... _TElements, class ... _UElements> constexpr bool std::operator<(const std::tuple<_Tps ...>&, const std::tuple<_Args2 ...>&)[m[K’
+[3.207s]  1566 |     [01;36m[Koperator[m[K<(const tuple<_TElements...>& __t,
+[3.207s]       |     [01;36m[K^~~~~~~~[m[K
+[3.207s] [01m[K/usr/include/c++/11/tuple:1566:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.207s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[3.207s]                  from [01m[K/usr/include/c++/11/vector:60[m[K,
+[3.207s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:1[m[K:
+[3.207s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst cv::Point3_<int>[m[K’ is not derived from ‘[01m[Kconst std::tuple<_Tps ...>[m[K’
+[3.207s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[3.207s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[3.207s] In file included from [01m[K/usr/include/c++/11/map:61[m[K,
+[3.207s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:3[m[K:
+[3.207s] [01m[K/usr/include/c++/11/bits/stl_map.h:1501:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<(const std::map<_Key, _Tp, _Compare, _Allocator>&, const std::map<_Key, _Tp, _Compare, _Allocator>&)[m[K’
+[3.208s]  1501 |     [01;36m[Koperator[m[K<(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+[3.208s]       |     [01;36m[K^~~~~~~~[m[K
+[3.208s] [01m[K/usr/include/c++/11/bits/stl_map.h:1501:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.208s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[3.208s]                  from [01m[K/usr/include/c++/11/vector:60[m[K,
+[3.208s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:1[m[K:
+[3.208s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst cv::Point3_<int>[m[K’ is not derived from ‘[01m[Kconst std::map<_Key, _Tp, _Compare, _Allocator>[m[K’
+[3.208s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[3.208s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[3.208s] In file included from [01m[K/usr/include/c++/11/map:62[m[K,
+[3.208s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:3[m[K:
+[3.208s] [01m[K/usr/include/c++/11/bits/stl_multimap.h:1166:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<(const std::multimap<_Key, _Tp, _Compare, _Allocator>&, const std::multimap<_Key, _Tp, _Compare, _Allocator>&)[m[K’
+[3.208s]  1166 |     [01;36m[Koperator[m[K<(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+[3.208s]       |     [01;36m[K^~~~~~~~[m[K
+[3.208s] [01m[K/usr/include/c++/11/bits/stl_multimap.h:1166:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.208s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[3.208s]                  from [01m[K/usr/include/c++/11/vector:60[m[K,
+[3.208s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:1[m[K:
+[3.208s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst cv::Point3_<int>[m[K’ is not derived from ‘[01m[Kconst std::multimap<_Key, _Tp, _Compare, _Allocator>[m[K’
+[3.208s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[3.208s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[3.208s] In file included from [01m[K/usr/include/c++/11/list:63[m[K,
+[3.208s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:4[m[K:
+[3.208s] [01m[K/usr/include/c++/11/bits/stl_list.h:2085:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Alloc> bool std::operator<(const std::__cxx11::list<_Tp, _Alloc>&, const std::__cxx11::list<_Tp, _Alloc>&)[m[K’
+[3.208s]  2085 |     [01;36m[Koperator[m[K<(const list<_Tp, _Alloc>& __x, const list<_Tp, _Alloc>& __y)
+[3.208s]       |     [01;36m[K^~~~~~~~[m[K
+[3.208s] [01m[K/usr/include/c++/11/bits/stl_list.h:2085:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.208s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[3.208s]                  from [01m[K/usr/include/c++/11/vector:60[m[K,
+[3.208s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:1[m[K:
+[3.208s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst cv::Point3_<int>[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::list<_Tp, _Alloc>[m[K’
+[3.209s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[3.209s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[3.209s] In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+[3.209s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[3.209s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:8[m[K:
+[3.209s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:795:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Dp, class _Up, class _Ep> bool std::operator<(const std::unique_ptr<_Tp, _Dp>&, const std::unique_ptr<_Up, _Ep>&)[m[K’
+[3.209s]   795 |     [01;36m[Koperator[m[K<(const unique_ptr<_Tp, _Dp>& __x,
+[3.209s]       |     [01;36m[K^~~~~~~~[m[K
+[3.209s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:795:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.209s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[3.209s]                  from [01m[K/usr/include/c++/11/vector:60[m[K,
+[3.209s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:1[m[K:
+[3.209s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst cv::Point3_<int>[m[K’ is not derived from ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’
+[3.209s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[3.209s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[3.209s] In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+[3.209s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[3.209s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:8[m[K:
+[3.209s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:807:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Dp> bool std::operator<(const std::unique_ptr<_Tp, _Dp>&, std::nullptr_t)[m[K’
+[3.209s]   807 |     [01;36m[Koperator[m[K<(const unique_ptr<_Tp, _Dp>& __x, nullptr_t)
+[3.209s]       |     [01;36m[K^~~~~~~~[m[K
+[3.209s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:807:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.209s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[3.209s]                  from [01m[K/usr/include/c++/11/vector:60[m[K,
+[3.209s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:1[m[K:
+[3.209s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst cv::Point3_<int>[m[K’ is not derived from ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’
+[3.209s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[3.209s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[3.209s] In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+[3.209s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[3.209s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:8[m[K:
+[3.209s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:816:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Dp> bool std::operator<(std::nullptr_t, const std::unique_ptr<_Tp, _Dp>&)[m[K’
+[3.210s]   816 |     [01;36m[Koperator[m[K<(nullptr_t, const unique_ptr<_Tp, _Dp>& __x)
+[3.210s]       |     [01;36m[K^~~~~~~~[m[K
+[3.210s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:816:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.210s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[3.210s]                  from [01m[K/usr/include/c++/11/vector:60[m[K,
+[3.210s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:1[m[K:
+[3.210s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst cv::Point3_<int>[m[K’ is not derived from ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’
+[3.210s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[3.210s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[3.210s] In file included from [01m[K/usr/include/c++/11/bits/shared_ptr.h:53[m[K,
+[3.210s]                  from [01m[K/usr/include/c++/11/memory:77[m[K,
+[3.210s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[3.210s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:8[m[K:
+[3.210s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1457:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up, __gnu_cxx::_Lock_policy _Lp> bool std::operator<(const std::__shared_ptr<_Tp1, _Lp>&, const std::__shared_ptr<_Tp2, _Lp>&)[m[K’
+[3.210s]  1457 |     [01;36m[Koperator[m[K<(const __shared_ptr<_Tp, _Lp>& __a,
+[3.210s]       |     [01;36m[K^~~~~~~~[m[K
+[3.210s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1457:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.210s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[3.210s]                  from [01m[K/usr/include/c++/11/vector:60[m[K,
+[3.210s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:1[m[K:
+[3.210s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst cv::Point3_<int>[m[K’ is not derived from ‘[01m[Kconst std::__shared_ptr<_Tp1, _Lp>[m[K’
+[3.210s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[3.210s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[3.210s] In file included from [01m[K/usr/include/c++/11/bits/shared_ptr.h:53[m[K,
+[3.210s]                  from [01m[K/usr/include/c++/11/memory:77[m[K,
+[3.210s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[3.210s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:8[m[K:
+[3.210s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1468:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator<(const std::__shared_ptr<_Tp, _Lp>&, std::nullptr_t)[m[K’
+[3.210s]  1468 |     [01;36m[Koperator[m[K<(const __shared_ptr<_Tp, _Lp>& __a, nullptr_t) noexcept
+[3.210s]       |     [01;36m[K^~~~~~~~[m[K
+[3.210s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1468:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.210s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[3.211s]                  from [01m[K/usr/include/c++/11/vector:60[m[K,
+[3.211s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:1[m[K:
+[3.211s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst cv::Point3_<int>[m[K’ is not derived from ‘[01m[Kconst std::__shared_ptr<_Tp, _Lp>[m[K’
+[3.211s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[3.211s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[3.211s] In file included from [01m[K/usr/include/c++/11/bits/shared_ptr.h:53[m[K,
+[3.211s]                  from [01m[K/usr/include/c++/11/memory:77[m[K,
+[3.211s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[3.211s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:8[m[K:
+[3.211s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1476:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator<(std::nullptr_t, const std::__shared_ptr<_Tp, _Lp>&)[m[K’
+[3.211s]  1476 |     [01;36m[Koperator[m[K<(nullptr_t, const __shared_ptr<_Tp, _Lp>& __a) noexcept
+[3.211s]       |     [01;36m[K^~~~~~~~[m[K
+[3.211s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1476:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.211s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[3.211s]                  from [01m[K/usr/include/c++/11/vector:60[m[K,
+[3.211s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:1[m[K:
+[3.211s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst cv::Point3_<int>[m[K’ is not derived from ‘[01m[Kconst std::__shared_ptr<_Tp, _Lp>[m[K’
+[3.211s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[3.211s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[3.211s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[3.211s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[3.211s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:8[m[K:
+[3.211s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:488:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> bool std::operator<(const std::shared_ptr<_Tp>&, const std::shared_ptr<_Tp>&)[m[K’
+[3.211s]   488 |     [01;36m[Koperator[m[K<(const shared_ptr<_Tp>& __a, const shared_ptr<_Up>& __b) noexcept
+[3.211s]       |     [01;36m[K^~~~~~~~[m[K
+[3.211s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:488:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.211s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[3.211s]                  from [01m[K/usr/include/c++/11/vector:60[m[K,
+[3.211s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:1[m[K:
+[3.211s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst cv::Point3_<int>[m[K’ is not derived from ‘[01m[Kconst std::shared_ptr<_Tp>[m[K’
+[3.211s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[3.212s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[3.212s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[3.212s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[3.212s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:8[m[K:
+[3.212s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:499:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> bool std::operator<(const std::shared_ptr<_Tp>&, std::nullptr_t)[m[K’
+[3.212s]   499 |     [01;36m[Koperator[m[K<(const shared_ptr<_Tp>& __a, nullptr_t) noexcept
+[3.212s]       |     [01;36m[K^~~~~~~~[m[K
+[3.212s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:499:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.212s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[3.212s]                  from [01m[K/usr/include/c++/11/vector:60[m[K,
+[3.212s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:1[m[K:
+[3.212s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst cv::Point3_<int>[m[K’ is not derived from ‘[01m[Kconst std::shared_ptr<_Tp>[m[K’
+[3.212s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[3.212s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[3.212s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[3.212s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[3.212s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:8[m[K:
+[3.212s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:508:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> bool std::operator<(std::nullptr_t, const std::shared_ptr<_Tp>&)[m[K’
+[3.212s]   508 |     [01;36m[Koperator[m[K<(nullptr_t, const shared_ptr<_Tp>& __a) noexcept
+[3.212s]       |     [01;36m[K^~~~~~~~[m[K
+[3.212s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:508:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.212s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[3.212s]                  from [01m[K/usr/include/c++/11/vector:60[m[K,
+[3.212s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:1[m[K:
+[3.212s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst cv::Point3_<int>[m[K’ is not derived from ‘[01m[Kconst std::shared_ptr<_Tp>[m[K’
+[3.212s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[3.212s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[3.212s] In file included from [01m[K/usr/include/c++/11/set:61[m[K,
+[3.212s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:21[m[K,
+[3.213s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.213s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.213s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:8[m[K:
+[3.213s] [01m[K/usr/include/c++/11/bits/stl_set.h:1023:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Compare, class _Alloc> bool std::operator<(const std::set<_Key, _Compare, _Allocator>&, const std::set<_Key, _Compare, _Allocator>&)[m[K’
+[3.213s]  1023 |     [01;36m[Koperator[m[K<(const set<_Key, _Compare, _Alloc>& __x,
+[3.213s]       |     [01;36m[K^~~~~~~~[m[K
+[3.213s] [01m[K/usr/include/c++/11/bits/stl_set.h:1023:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.213s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[3.213s]                  from [01m[K/usr/include/c++/11/vector:60[m[K,
+[3.213s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:1[m[K:
+[3.213s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst cv::Point3_<int>[m[K’ is not derived from ‘[01m[Kconst std::set<_Key, _Compare, _Allocator>[m[K’
+[3.213s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[3.213s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[3.213s] In file included from [01m[K/usr/include/c++/11/set:62[m[K,
+[3.213s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:21[m[K,
+[3.213s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.213s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.213s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:8[m[K:
+[3.213s] [01m[K/usr/include/c++/11/bits/stl_multiset.h:1009:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Compare, class _Alloc> bool std::operator<(const std::multiset<_Key, _Compare, _Allocator>&, const std::multiset<_Key, _Compare, _Allocator>&)[m[K’
+[3.213s]  1009 |     [01;36m[Koperator[m[K<(const multiset<_Key, _Compare, _Alloc>& __x,
+[3.213s]       |     [01;36m[K^~~~~~~~[m[K
+[3.213s] [01m[K/usr/include/c++/11/bits/stl_multiset.h:1009:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.213s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[3.213s]                  from [01m[K/usr/include/c++/11/vector:60[m[K,
+[3.213s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:1[m[K:
+[3.213s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst cv::Point3_<int>[m[K’ is not derived from ‘[01m[Kconst std::multiset<_Key, _Compare, _Allocator>[m[K’
+[3.213s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[3.213s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[3.213s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:23[m[K,
+[3.213s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[3.213s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[3.214s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[3.214s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[3.214s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[3.214s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[3.214s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.214s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.214s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.214s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:8[m[K:
+[3.214s] [01m[K/usr/include/c++/11/optional:1063:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr std::__optional_lt_t<_Tp, _Up> std::operator<(const std::optional<_Tp>&, const std::optional<_Up>&)[m[K’
+[3.214s]  1063 |     [01;36m[Koperator[m[K<(const optional<_Tp>& __lhs, const optional<_Up>& __rhs)
+[3.214s]       |     [01;36m[K^~~~~~~~[m[K
+[3.214s] [01m[K/usr/include/c++/11/optional:1063:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.214s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[3.214s]                  from [01m[K/usr/include/c++/11/vector:60[m[K,
+[3.214s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:1[m[K:
+[3.214s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst cv::Point3_<int>[m[K’ is not derived from ‘[01m[Kconst std::optional<_Tp>[m[K’
+[3.214s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[3.214s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[3.214s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:23[m[K,
+[3.214s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[3.214s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[3.214s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[3.214s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[3.214s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[3.214s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[3.214s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.214s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.214s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.214s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:8[m[K:
+[3.215s] [01m[K/usr/include/c++/11/optional:1131:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> constexpr bool std::operator<(const std::optional<_Tp>&, std::nullopt_t)[m[K’
+[3.215s]  1131 |     [01;36m[Koperator[m[K<(const optional<_Tp>& /* __lhs */, nullopt_t) noexcept
+[3.215s]       |     [01;36m[K^~~~~~~~[m[K
+[3.215s] [01m[K/usr/include/c++/11/optional:1131:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.215s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[3.215s]                  from [01m[K/usr/include/c++/11/vector:60[m[K,
+[3.215s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:1[m[K:
+[3.215s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst cv::Point3_<int>[m[K’ is not derived from ‘[01m[Kconst std::optional<_Tp>[m[K’
+[3.215s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[3.215s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[3.215s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:23[m[K,
+[3.215s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[3.215s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[3.215s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[3.215s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[3.215s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[3.215s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[3.215s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.215s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.215s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.215s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:8[m[K:
+[3.215s] [01m[K/usr/include/c++/11/optional:1136:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> constexpr bool std::operator<(std::nullopt_t, const std::optional<_Tp>&)[m[K’
+[3.215s]  1136 |     [01;36m[Koperator[m[K<(nullopt_t, const optional<_Tp>& __rhs) noexcept
+[3.215s]       |     [01;36m[K^~~~~~~~[m[K
+[3.215s] [01m[K/usr/include/c++/11/optional:1136:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.215s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[3.215s]                  from [01m[K/usr/include/c++/11/vector:60[m[K,
+[3.215s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:1[m[K:
+[3.215s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst cv::Point3_<int>[m[K’ is not derived from ‘[01m[Kconst std::optional<_Tp>[m[K’
+[3.215s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[3.215s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[3.215s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:23[m[K,
+[3.216s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[3.216s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[3.216s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[3.216s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[3.216s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[3.216s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[3.216s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.216s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.216s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.216s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:8[m[K:
+[3.216s] [01m[K/usr/include/c++/11/optional:1197:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr std::__optional_lt_t<_Tp, _Up> std::operator<(const std::optional<_Tp>&, const _Up&)[m[K’
+[3.216s]  1197 |     [01;36m[Koperator[m[K<(const optional<_Tp>& __lhs, const _Up& __rhs)
+[3.216s]       |     [01;36m[K^~~~~~~~[m[K
+[3.216s] [01m[K/usr/include/c++/11/optional:1197:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.216s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[3.216s]                  from [01m[K/usr/include/c++/11/vector:60[m[K,
+[3.216s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:1[m[K:
+[3.216s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst cv::Point3_<int>[m[K’ is not derived from ‘[01m[Kconst std::optional<_Tp>[m[K’
+[3.216s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[3.216s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[3.216s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:23[m[K,
+[3.216s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[3.216s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[3.216s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[3.216s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[3.216s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[3.216s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[3.216s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.216s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.216s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.216s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:8[m[K:
+[3.217s] [01m[K/usr/include/c++/11/optional:1203:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr std::__optional_lt_t<_Up, _Tp> std::operator<(const _Up&, const std::optional<_Tp>&)[m[K’
+[3.217s]  1203 |     [01;36m[Koperator[m[K<(const _Up& __lhs, const optional<_Tp>& __rhs)
+[3.217s]       |     [01;36m[K^~~~~~~~[m[K
+[3.217s] [01m[K/usr/include/c++/11/optional:1203:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.217s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[3.217s]                  from [01m[K/usr/include/c++/11/vector:60[m[K,
+[3.217s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:1[m[K:
+[3.217s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst cv::Point3_<int>[m[K’ is not derived from ‘[01m[Kconst std::optional<_Tp>[m[K’
+[3.217s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[3.217s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[3.217s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+[3.217s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[3.217s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[3.217s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[3.217s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[3.217s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[3.217s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[3.217s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.217s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.217s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.217s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:8[m[K:
+[3.217s] [01m[K/usr/include/c++/11/variant:1230:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ... _Types> constexpr bool std::operator<(const std::variant<_Types ...>&, const std::variant<_Types ...>&)[m[K’
+[3.217s]  1230 |   [01;36m[K_VARIANT_RELATION_FUNCTION_TEMPLATE[m[K(<, less)
+[3.217s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.217s] [01m[K/usr/include/c++/11/variant:1230:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.217s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[3.217s]                  from [01m[K/usr/include/c++/11/vector:60[m[K,
+[3.217s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:1[m[K:
+[3.217s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst cv::Point3_<int>[m[K’ is not derived from ‘[01m[Kconst std::variant<_Types ...>[m[K’
+[3.218s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[3.218s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[3.218s] In file included from [01m[K/usr/include/c++/11/deque:67[m[K,
+[3.218s]                  from [01m[K/usr/include/c++/11/queue:60[m[K,
+[3.218s]                  from [01m[K/usr/include/opencv4/opencv2/stitching/detail/util_inl.hpp:46[m[K,
+[3.218s]                  from [01m[K/usr/include/opencv4/opencv2/stitching/detail/util.hpp:119[m[K,
+[3.218s]                  from [01m[K/usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:48[m[K,
+[3.218s]                  from [01m[K/usr/include/opencv4/opencv2/stitching.hpp:50[m[K,
+[3.218s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:86[m[K,
+[3.218s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13[m[K:
+[3.218s] [01m[K/usr/include/c++/11/bits/stl_deque.h:2285:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Alloc> bool std::operator<(const std::deque<_Tp, _Alloc>&, const std::deque<_Tp, _Alloc>&)[m[K’
+[3.218s]  2285 |     [01;36m[Koperator[m[K<(const deque<_Tp, _Alloc>& __x, const deque<_Tp, _Alloc>& __y)
+[3.218s]       |     [01;36m[K^~~~~~~~[m[K
+[3.218s] [01m[K/usr/include/c++/11/bits/stl_deque.h:2285:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.218s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[3.218s]                  from [01m[K/usr/include/c++/11/vector:60[m[K,
+[3.218s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:1[m[K:
+[3.218s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst cv::Point3_<int>[m[K’ is not derived from ‘[01m[Kconst std::deque<_Tp, _Alloc>[m[K’
+[3.218s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[3.218s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[3.218s] In file included from [01m[K/usr/include/c++/11/queue:64[m[K,
+[3.218s]                  from [01m[K/usr/include/opencv4/opencv2/stitching/detail/util_inl.hpp:46[m[K,
+[3.218s]                  from [01m[K/usr/include/opencv4/opencv2/stitching/detail/util.hpp:119[m[K,
+[3.218s]                  from [01m[K/usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:48[m[K,
+[3.218s]                  from [01m[K/usr/include/opencv4/opencv2/stitching.hpp:50[m[K,
+[3.218s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:86[m[K,
+[3.218s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13[m[K:
+[3.218s] [01m[K/usr/include/c++/11/bits/stl_queue.h:362:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Seq> bool std::operator<(const std::queue<_Tp, _Seq>&, const std::queue<_Tp, _Seq>&)[m[K’
+[3.218s]   362 |     [01;36m[Koperator[m[K<(const queue<_Tp, _Seq>& __x, const queue<_Tp, _Seq>& __y)
+[3.218s]       |     [01;36m[K^~~~~~~~[m[K
+[3.218s] [01m[K/usr/include/c++/11/bits/stl_queue.h:362:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.219s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[3.219s]                  from [01m[K/usr/include/c++/11/vector:60[m[K,
+[3.219s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:1[m[K:
+[3.219s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst cv::Point3_<int>[m[K’ is not derived from ‘[01m[Kconst std::queue<_Tp, _Seq>[m[K’
+[3.219s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[3.219s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[3.219s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[3.219s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[3.219s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13[m[K:
+[3.219s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3656:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int m, int n> cv::MatExpr cv::operator<(const cv::Mat&, const cv::Matx<_Tp, m, n>&)[m[K’
+[3.219s]  3656 | MatExpr [01;36m[Koperator[m[K < (const Mat& a, const Matx<_Tp, m, n>& b) { return a < Mat(b); }
+[3.219s]       |         [01;36m[K^~~~~~~~[m[K
+[3.219s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3656:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.219s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[3.219s]                  from [01m[K/usr/include/c++/11/vector:60[m[K,
+[3.219s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:1[m[K:
+[3.219s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst cv::Point3_<int>[m[K’ is not derived from ‘[01m[Kconst cv::Matx<_Tp, m, n>[m[K’
+[3.219s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[3.219s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[3.219s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[3.219s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[3.219s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13[m[K:
+[3.219s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3658:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int m, int n> cv::MatExpr cv::operator<(const cv::Matx<_Tp, m, n>&, const cv::Mat&)[m[K’
+[3.219s]  3658 | MatExpr [01;36m[Koperator[m[K < (const Matx<_Tp, m, n>& a, const Mat& b) { return Mat(a) < b; }
+[3.219s]       |         [01;36m[K^~~~~~~~[m[K
+[3.219s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3658:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.219s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[3.219s]                  from [01m[K/usr/include/c++/11/vector:60[m[K,
+[3.219s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:1[m[K:
+[3.219s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst cv::Point3_<int>[m[K’ is not derived from ‘[01m[Kconst cv::Matx<_Tp, m, n>[m[K’
+[3.219s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[3.220s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[3.220s] In file included from [01m[K/usr/include/c++/11/mutex:42[m[K,
+[3.220s]                  from [01m[K/usr/include/c++/11/future:38[m[K,
+[3.220s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+[3.220s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.220s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:8[m[K:
+[3.220s] [01m[K/usr/include/c++/11/system_error:269:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::operator<(const std::error_code&, const std::error_code&)[m[K’
+[3.220s]   269 |   [01;36m[Koperator[m[K<(const error_code& __lhs, const error_code& __rhs) noexcept
+[3.220s]       |   [01;36m[K^~~~~~~~[m[K
+[3.220s] [01m[K/usr/include/c++/11/system_error:269:31:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst cv::Point3_<int>[m[K’ to ‘[01m[Kconst std::error_code&[m[K’
+[3.220s]   269 |   operator<([01;36m[Kconst error_code& __lhs[m[K, const error_code& __rhs) noexcept
+[3.220s]       |             [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[3.220s] [01m[K/usr/include/c++/11/system_error:398:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::operator<(const std::error_condition&, const std::error_condition&)[m[K’
+[3.220s]   398 |   [01;36m[Koperator[m[K<(const error_condition& __lhs,
+[3.220s]       |   [01;36m[K^~~~~~~~[m[K
+[3.220s] [01m[K/usr/include/c++/11/system_error:398:36:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst cv::Point3_<int>[m[K’ to ‘[01m[Kconst std::error_condition&[m[K’
+[3.220s]   398 |   operator<([01;36m[Kconst error_condition& __lhs[m[K,
+[3.220s]       |             [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[3.220s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:22[m[K,
+[3.220s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.220s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.220s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:8[m[K:
+[3.220s] [01m[K/usr/include/c++/11/thread:70:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::operator<(std::thread::id, std::thread::id)[m[K’
+[3.220s]    70 |   [01;36m[Koperator[m[K<(thread::id __x, thread::id __y) noexcept
+[3.220s]       |   [01;36m[K^~~~~~~~[m[K
+[3.220s] [01m[K/usr/include/c++/11/thread:70:24:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst cv::Point3_<int>[m[K’ to ‘[01m[Kstd::thread::id[m[K’
+[3.220s]    70 |   operator<([01;36m[Kthread::id __x[m[K, thread::id __y) noexcept
+[3.220s]       |             [01;36m[K~~~~~~~~~~~^~~[m[K
+[3.220s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+[3.220s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[3.220s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[3.220s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[3.221s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[3.221s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[3.221s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[3.221s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.221s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.221s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.221s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:8[m[K:
+[3.221s] [01m[K/usr/include/c++/11/variant:1272:18:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr bool std::operator<(std::monostate, std::monostate)[m[K’
+[3.221s]  1272 |   constexpr bool [01;36m[Koperator[m[K<(monostate, monostate) noexcept { return false; }
+[3.221s]       |                  [01;36m[K^~~~~~~~[m[K
+[3.221s] [01m[K/usr/include/c++/11/variant:1272:28:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst cv::Point3_<int>[m[K’ to ‘[01m[Kstd::monostate[m[K’
+[3.221s]  1272 |   constexpr bool operator<([01;36m[Kmonostate[m[K, monostate) noexcept { return false; }
+[3.221s]       |                            [01;36m[K^~~~~~~~~[m[K
+[3.221s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[3.221s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[3.221s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13[m[K:
+[3.221s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3652:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::MatExpr cv::operator<(const cv::Mat&, const cv::Mat&)[m[K’
+[3.221s]  3652 | CV_EXPORTS MatExpr [01;36m[Koperator[m[K < (const Mat& a, const Mat& b);
+[3.221s]       |                    [01;36m[K^~~~~~~~[m[K
+[3.221s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3652:43:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst cv::Point3_<int>[m[K’ to ‘[01m[Kconst cv::Mat&[m[K’
+[3.221s]  3652 | CV_EXPORTS MatExpr operator < ([01;36m[Kconst Mat& a[m[K, const Mat& b);
+[3.221s]       |                                [01;36m[K~~~~~~~~~~~^[m[K
+[3.221s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3653:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::MatExpr cv::operator<(const cv::Mat&, double)[m[K’
+[3.221s]  3653 | CV_EXPORTS MatExpr [01;36m[Koperator[m[K < (const Mat& a, double s);
+[3.221s]       |                    [01;36m[K^~~~~~~~[m[K
+[3.221s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3653:43:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst cv::Point3_<int>[m[K’ to ‘[01m[Kconst cv::Mat&[m[K’
+[3.221s]  3653 | CV_EXPORTS MatExpr operator < ([01;36m[Kconst Mat& a[m[K, double s);
+[3.221s]       |                                [01;36m[K~~~~~~~~~~~^[m[K
+[3.221s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3654:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::MatExpr cv::operator<(double, const cv::Mat&)[m[K’
+[3.221s]  3654 | CV_EXPORTS MatExpr [01;36m[Koperator[m[K < (double s, const Mat& a);
+[3.221s]       |                    [01;36m[K^~~~~~~~[m[K
+[3.221s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3654:39:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst cv::Point3_<int>[m[K’ to ‘[01m[Kdouble[m[K’
+[3.221s]  3654 | CV_EXPORTS MatExpr operator < ([01;36m[Kdouble s[m[K, const Mat& a);
+[3.222s]       |                                [01;36m[K~~~~~~~^[m[K
+[3.222s] In file included from [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3764[m[K,
+[3.222s]                  from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[3.222s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[3.222s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13[m[K:
+[3.222s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:2404:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool cv::operator<(const cv::MatConstIterator&, const cv::MatConstIterator&)[m[K’
+[3.222s]  2404 | bool [01;36m[Koperator[m[K < (const MatConstIterator& a, const MatConstIterator& b)
+[3.222s]       |      [01;36m[K^~~~~~~~[m[K
+[3.222s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:2404:42:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst cv::Point3_<int>[m[K’ to ‘[01m[Kconst cv::MatConstIterator&[m[K’
+[3.222s]  2404 | bool operator < ([01;36m[Kconst MatConstIterator& a[m[K, const MatConstIterator& b)
+[3.222s]       |                  [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[3.222s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+[3.222s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[3.222s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13[m[K:
+[3.222s] [01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1341:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool cv::operator<(const cv::FileNodeIterator&, const cv::FileNodeIterator&)[m[K’
+[3.222s]  1341 | bool [01;36m[Koperator[m[K < (const FileNodeIterator& it1, const FileNodeIterator& it2)
+[3.222s]       |      [01;36m[K^~~~~~~~[m[K
+[3.222s] [01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1341:42:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst cv::Point3_<int>[m[K’ to ‘[01m[Kconst cv::FileNodeIterator&[m[K’
+[3.222s]  1341 | bool operator < ([01;36m[Kconst FileNodeIterator& it1[m[K, const FileNodeIterator& it2)
+[3.222s]       |                  [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[5.239s] gmake[2]: *** [CMakeFiles/occgrid_planner_base.dir/build.make:76: CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o] Error 1
+[5.240s] gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/occgrid_planner_base.dir/all] Error 2
+[5.240s] gmake: *** [Makefile:146: all] Error 2
+[5.241s] Invoked command in '/home/GTL/apaul/ros2_hw1/build/occgrid_planner_base' returned '2': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/occgrid_planner_base -- -j16 -l16
