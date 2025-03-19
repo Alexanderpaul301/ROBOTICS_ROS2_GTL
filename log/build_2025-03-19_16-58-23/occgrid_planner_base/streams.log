@@ -1,0 +1,19 @@
+[0.055s] Invoking command in '/home/GTL/apaul/ros2_hw1/build/occgrid_planner_base': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/occgrid_planner_base -- -j16 -l16
+[0.088s] [35m[1mConsolidate compiler generated dependencies of target occgrid_planner_base[0m
+[0.099s] [ 66%] Built target path_follower_base
+[0.099s] [ 66%] Built target path_optimizer_base
+[0.134s] [ 83%] [32mBuilding CXX object CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o[0m
+[2.758s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:[m[K In member function ‘[01m[Kvoid OccupancyGridPlanner::target_callback(geometry_msgs::msg::PoseStamped_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.758s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:289:40:[m[K [01;31m[Kerror: [m[Kconflicting declaration ‘[01m[Kstd::array<cv::Point3_<int>, 26> neighbours[m[K’
+[2.758s]   289 |             std::array<cv::Point3i,26> [01;31m[Kneighbours[m[K = {cv::Point3i(1, 0, 0), cv::Point3i(0, 1, 0), cv::Point3i(0, 0, 1),  // Face neighbors
+[2.758s]       |                                        [01;31m[K^~~~~~~~~~[m[K
+[2.758s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:286:37:[m[K [01;36m[Knote: [m[Kprevious declaration as ‘[01m[Kstd::array<cv::Point_<int>, 8> neighbours[m[K’
+[2.758s]   286 |             std::array<cv::Point,8> [01;36m[Kneighbours[m[K = {cv::Point(1,0), cv::Point(0,1), cv::Point(-1,0), cv::Point(0, -1),
+[2.758s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[2.772s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:368:42:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[KVec<[...],[01;32m[K3[m[K>[m[K’ to non-scalar type ‘[01m[KVec<[...],[01;32m[K2[m[K>[m[K’ requested
+[2.772s]   368 |                 cv::Vec2s p = [01;31m[Kpredecessor(target.x,target.y)[m[K;
+[2.772s]       |                               [01;31m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[5.486s] gmake[2]: *** [CMakeFiles/occgrid_planner_base.dir/build.make:76: CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o] Error 1
+[5.486s] gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/occgrid_planner_base.dir/all] Error 2
+[5.487s] gmake: *** [Makefile:146: all] Error 2
+[5.488s] Invoked command in '/home/GTL/apaul/ros2_hw1/build/occgrid_planner_base' returned '2': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/occgrid_planner_base -- -j16 -l16

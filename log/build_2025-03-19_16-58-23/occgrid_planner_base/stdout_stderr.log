@@ -1,0 +1,17 @@
+[35m[1mConsolidate compiler generated dependencies of target occgrid_planner_base[0m
+[ 66%] Built target path_follower_base
+[ 66%] Built target path_optimizer_base
+[ 83%] [32mBuilding CXX object CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o[0m
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:[m[K In member function ‘[01m[Kvoid OccupancyGridPlanner::target_callback(geometry_msgs::msg::PoseStamped_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:289:40:[m[K [01;31m[Kerror: [m[Kconflicting declaration ‘[01m[Kstd::array<cv::Point3_<int>, 26> neighbours[m[K’
+  289 |             std::array<cv::Point3i,26> [01;31m[Kneighbours[m[K = {cv::Point3i(1, 0, 0), cv::Point3i(0, 1, 0), cv::Point3i(0, 0, 1),  // Face neighbors
+      |                                        [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:286:37:[m[K [01;36m[Knote: [m[Kprevious declaration as ‘[01m[Kstd::array<cv::Point_<int>, 8> neighbours[m[K’
+  286 |             std::array<cv::Point,8> [01;36m[Kneighbours[m[K = {cv::Point(1,0), cv::Point(0,1), cv::Point(-1,0), cv::Point(0, -1),
+      |                                     [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:368:42:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[KVec<[...],[01;32m[K3[m[K>[m[K’ to non-scalar type ‘[01m[KVec<[...],[01;32m[K2[m[K>[m[K’ requested
+  368 |                 cv::Vec2s p = [01;31m[Kpredecessor(target.x,target.y)[m[K;
+      |                               [01;31m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/occgrid_planner_base.dir/build.make:76: CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/occgrid_planner_base.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
