@@ -65,12 +65,14 @@ class OccupancyGridPlanner : public rclcpp::Node {
             frame_id_ = msg->header.frame_id;
             // Create an image to store the value of the grid.
 
-            og_ = cv::Mat_<uint8_t>(msg->info.height, msg->info.width,2,0xFF);
-            og_center_ = cv::Point3i(-info_.origin.position.x/info_.resolution,
-                    -info_.origin.position.y/info_.resolution,
-                    -info_.origin.orientation.theta);
+            // int sizes[] = {msg->info.height, msg->info.width, 2};       // ! Initialize the new 3D map
+            // og_ = cv::Mat(3, sizes, CV_8U, cv::Scalar(0xFF));
 
-            // cv::Mat<uint8_t> og_(info.height, info.width, info.depth, 0xFF);    // ! I modified og_ to be a 3D matrix, now we have 3D for x, y, theta
+            cv::Point3i og_center_(-info_.origin.position.x/info_.resolution,    // ! Initialize the new 3D map center
+                    -info_.origin.position.y/info_.resolution,
+                    -info_.origin.orientation.z);
+
+            og_ = cv::Mat_<uint8_t>(msg->info.height, msg->info.width,0xFF);   // ! I modified og_ to be a 3D matrix, now we have 3D for x, y, theta
             // og_center_ = cv::Point3i(-info_.origin.position.x/info_.resolution,
             //         -info_.origin.position.y/info_.resolution);
 
@@ -267,27 +269,44 @@ class OccupancyGridPlanner : public rclcpp::Node {
             // Here the Dijskstra algorithm starts 
             // The best distance to the goal computed so far. This is
             // initialised with Not-A-Number. 
-            cv::Mat_<float> cell_value(og_.size(), NAN);
+            // cv::Mat_<float> cell_value(og_.size(), NAN);
             // For each cell we need to store a pointer to the coordinates of
             // its best predecessor. 
-            cv::Mat_<cv::Vec2s> predecessor(og_.size());
+            // cv::Mat_<cv::Vec2s> predecessor(og_.size());
             
             // TODO: For reference, this is how we would make the arrays 3D
-            // int dims[3] = {og_.size().width, og_.size().height, 8};
-            // cv::Mat_<float> cell_value(3,dims, NAN);
-            // cv::Mat_<cv::Vec3s> predecessor(3,dims);
+            int dims[3] = {og_.size().width, og_.size().height, 8};
+            cv::Mat_<float> cell_value(3,dims, NAN);
+            cv::Mat_<cv::Vec3s> predecessor(3,dims);
 
             // The neighbour of a given cell in relative coordinates. The order
             // is important. If we use 4-connexity, then we can use only the
             // first 4 values of the array. If we use 8-connexity we use the
             // full array.
-            std::array<cv::Point,8> neighbours = {cv::Point(1,0), cv::Point(0,1), cv::Point(-1,0), cv::Point(0, -1),
-                cv::Point(1,1), cv::Point(-1,1), cv::Point(-1,-1), cv::Point(1,-1)};
+            // std::array<cv::Point,8> neighbours = {cv::Point(1,0), cv::Point(0,1), cv::Point(-1,0), cv::Point(0, -1),
+            //     cv::Point(1,1), cv::Point(-1,1), cv::Point(-1,-1), cv::Point(1,-1)};
             // TODO: Create a new set of neighbours in 3D
-            // std::array<cv::Point3i,1> neighbours = {cv::Point3i(0,0,0)}; 
+            std::array<cv::Point3i,26> neighbours = {cv::Point3i(1, 0, 0), cv::Point3i(0, 1, 0), cv::Point3i(0, 0, 1),  // Face neighbors
+                                                    cv::Point3i(-1, 0, 0), cv::Point3i(0, -1, 0), cv::Point3i(0, 0, -1),
+                                                    cv::Point3i(1, 1, 0), cv::Point3i(1, 0, 1), cv::Point3i(0, 1, 1),  // Edge neighbors
+                                                    cv::Point3i(-1, -1, 0), cv::Point3i(-1, 0, -1), cv::Point3i(0, -1, -1),
+                                                    cv::Point3i(1, -1, 0), cv::Point3i(1, 0, -1), cv::Point3i(0, 1, -1),
+                                                    cv::Point3i(-1, 1, 0), cv::Point3i(-1, 1, 1), cv::Point3i(1, -1, -1),
+                                                    cv::Point3i(-1, -1, -1), cv::Point3i(1, 1, 1), cv::Point3i(1, -1, 1),
+                                                    cv::Point3i(-1, 0, 1), cv::Point3i(0, -1, 1), cv::Point3i(0, 1, -1)}; 
             // Cost of displacement corresponding the neighbours. Diagonal
             // moves are 44% longer.
-            std::array<float,8> cost = {1, 1, 1, 1, sqrt(2), sqrt(2), sqrt(2), sqrt(2)};
+
+            std::array<float, 26> cost = {
+                    1, 1, 1, 1, 
+                    1, 1, 1, 1, 
+                    sqrt(2), sqrt(2), sqrt(2), sqrt(2), 
+                    sqrt(2), sqrt(2), sqrt(2), sqrt(2),
+                    sqrt(2), sqrt(2), sqrt(2), sqrt(2), 
+                    sqrt(2), sqrt(2), sqrt(2), sqrt(2),
+                    sqrt(2), sqrt(2) 
+                };
+
 
             // The core of Dijkstra's Algorithm, a sorted heap, where the first
             // element is always the closer to the start.

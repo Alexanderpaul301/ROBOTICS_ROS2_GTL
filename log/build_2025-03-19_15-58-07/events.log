@@ -1,0 +1,116 @@
+[0.000000] (-) TimerEvent: {}
+[0.000082] (-) JobUnselected: {'identifier': 'ar_loc_base'}
+[0.000099] (-) JobUnselected: {'identifier': 'ar_mapping_base'}
+[0.000110] (-) JobUnselected: {'identifier': 'ar_slam_base'}
+[0.000118] (-) JobUnselected: {'identifier': 'button_server'}
+[0.000127] (-) JobUnselected: {'identifier': 'collision_avoidance_base'}
+[0.000135] (-) JobUnselected: {'identifier': 'cs7630_msgs'}
+[0.000143] (-) JobUnselected: {'identifier': 'face_detect_base'}
+[0.000151] (-) JobUnselected: {'identifier': 'face_msg'}
+[0.000159] (-) JobUnselected: {'identifier': 'floor_nav'}
+[0.000167] (-) JobUnselected: {'identifier': 'joy_pack'}
+[0.000175] (-) JobUnselected: {'identifier': 'keyboard_teleop'}
+[0.000183] (-) JobUnselected: {'identifier': 'rover_driver_base'}
+[0.000191] (-) JobUnselected: {'identifier': 'task_manager_client_py'}
+[0.000199] (-) JobUnselected: {'identifier': 'task_manager_lib'}
+[0.000207] (-) JobUnselected: {'identifier': 'task_manager_msgs'}
+[0.000215] (-) JobUnselected: {'identifier': 'task_manager_nav2'}
+[0.000223] (-) JobUnselected: {'identifier': 'task_manager_sync'}
+[0.000231] (-) JobUnselected: {'identifier': 'turtlebot_launch'}
+[0.000239] (-) JobUnselected: {'identifier': 'vrep4_helpers'}
+[0.000250] (-) JobUnselected: {'identifier': 'vrep_ros_teleop'}
+[0.000259] (-) JobUnselected: {'identifier': 'wifi_map_base'}
+[0.000267] (-) JobUnselected: {'identifier': 'wpa_cli_msgs'}
+[0.000277] (occgrid_planner_base) JobQueued: {'identifier': 'occgrid_planner_base', 'dependencies': OrderedDict([('cs7630_msgs', '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs')])}
+[0.000291] (occgrid_planner_base) JobStarted: {'identifier': 'occgrid_planner_base'}
+[0.044061] (occgrid_planner_base) JobProgress: {'identifier': 'occgrid_planner_base', 'progress': 'cmake'}
+[0.046967] (occgrid_planner_base) JobProgress: {'identifier': 'occgrid_planner_base', 'progress': 'build'}
+[0.047788] (occgrid_planner_base) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/GTL/apaul/ros2_hw1/build/occgrid_planner_base', '--', '-j16', '-l16'], 'cwd': '/home/GTL/apaul/ros2_hw1/build/occgrid_planner_base', 'env': OrderedDict([('USER', 'apaul'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/GTL/apaul'), ('CYCLONEDDS_URI', '/cs-share/pradalier/gtlpc_cyclonedds.xml'), ('OLDPWD', '/home/GTL/apaul'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2302'), ('SYSTEMD_EXEC_PID', '2645'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/37726/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3021'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'apaul'), ('JOURNAL_STREAM', '8:30295'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'apaul'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/gtlpc109.georgiatech-metz.fr:@/tmp/.ICE-unix/2483,unix/gtlpc109.georgiatech-metz.fr:/tmp/.ICE-unix/2483'), ('INVOCATION_ID', 'e44ddce5bfda4fe0ab391ad9343c6bdc'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/37726'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/37726/gdm/Xauthority'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/37726/keyring/ssh'), ('ROS_DOMAIN_ID', '59'), ('AMENT_PREFIX_PATH', '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:4254ca58-5fc0-4359-adf9-1351a34b4314'), ('KRB5CCNAME', 'FILE:/tmp/krb5cc_37726'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/37726/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/GTL/apaul/ros2_hw1/build/occgrid_planner_base'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble')]), 'shell': False}
+[0.091841] (occgrid_planner_base) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target occgrid_planner_base\x1b[0m\n'}
+[0.098158] (-) TimerEvent: {}
+[0.102648] (occgrid_planner_base) StdoutLine: {'line': b'[ 66%] Built target path_follower_base\n'}
+[0.102802] (occgrid_planner_base) StdoutLine: {'line': b'[ 66%] Built target path_optimizer_base\n'}
+[0.112979] (occgrid_planner_base) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o\x1b[0m\n'}
+[0.198253] (-) TimerEvent: {}
+[0.298552] (-) TimerEvent: {}
+[0.398833] (-) TimerEvent: {}
+[0.499106] (-) TimerEvent: {}
+[0.599374] (-) TimerEvent: {}
+[0.699648] (-) TimerEvent: {}
+[0.799924] (-) TimerEvent: {}
+[0.900170] (-) TimerEvent: {}
+[1.000464] (-) TimerEvent: {}
+[1.100724] (-) TimerEvent: {}
+[1.200984] (-) TimerEvent: {}
+[1.301252] (-) TimerEvent: {}
+[1.401518] (-) TimerEvent: {}
+[1.501799] (-) TimerEvent: {}
+[1.602067] (-) TimerEvent: {}
+[1.702339] (-) TimerEvent: {}
+[1.802589] (-) TimerEvent: {}
+[1.902836] (-) TimerEvent: {}
+[2.003099] (-) TimerEvent: {}
+[2.103358] (-) TimerEvent: {}
+[2.203630] (-) TimerEvent: {}
+[2.303871] (-) TimerEvent: {}
+[2.404146] (-) TimerEvent: {}
+[2.504409] (-) TimerEvent: {}
+[2.565485] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid OccupancyGridPlanner::og_callback(nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.565643] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:68:38:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knarrowing conversion of \xe2\x80\x98\x1b[01m\x1b[K((std::__shared_ptr_access<nav_msgs::msg::OccupancyGrid_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<nav_msgs::msg::OccupancyGrid_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::info.nav_msgs::msg::MapMetaData_<std::allocator<void> >::height\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[Knav_msgs::msg::MapMetaData_<std::allocator<void> >::_height_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kunsigned int\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing\x07-Wnarrowing\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.565698] (occgrid_planner_base) StderrLine: {'line': b'   68 |             int sizes[] = {\x1b[01;35m\x1b[Kmsg->info.height\x1b[m\x1b[K, msg->info.width, 2};\n'}
+[2.565740] (occgrid_planner_base) StderrLine: {'line': b'      |                            \x1b[01;35m\x1b[K~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[2.565779] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:68:56:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knarrowing conversion of \xe2\x80\x98\x1b[01m\x1b[K((std::__shared_ptr_access<nav_msgs::msg::OccupancyGrid_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<nav_msgs::msg::OccupancyGrid_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::info.nav_msgs::msg::MapMetaData_<std::allocator<void> >::width\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[Knav_msgs::msg::MapMetaData_<std::allocator<void> >::_width_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kunsigned int\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing\x07-Wnarrowing\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.565825] (occgrid_planner_base) StderrLine: {'line': b'   68 |             int sizes[] = {msg->info.height, \x1b[01;35m\x1b[Kmsg->info.width\x1b[m\x1b[K, 2};\n'}
+[2.565863] (occgrid_planner_base) StderrLine: {'line': b'      |                                              \x1b[01;35m\x1b[K~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[2.566614] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:73:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator=\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kcv::Point\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<int>\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kcv::Point3i\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point3_<int>\x1b[m\x1b[K\xe2\x80\x99})\n'}
+[2.566690] (occgrid_planner_base) StderrLine: {'line': b'   73 |                     -info_.origin.orientation.z\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[2.566728] (occgrid_planner_base) StderrLine: {'line': b'      |                                                \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.566763] (occgrid_planner_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[2.566796] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[2.566829] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:14\x1b[m\x1b[K:\n'}
+[2.566861] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1200:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<_Tp>& cv::Point_<_Tp>::operator=(const cv::Point_<_Tp>&) [with _Tp = int]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.566903] (occgrid_planner_base) StderrLine: {'line': b' 1200 | Point_<_Tp>& \x1b[01;36m\x1b[KPoint_<_Tp>\x1b[m\x1b[K::operator = (const Point_& pt)\n'}
+[2.566936] (occgrid_planner_base) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.566968] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1200:53:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Point3i\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point3_<int>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Point_<int>&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.567003] (occgrid_planner_base) StderrLine: {'line': b' 1200 | Point_<_Tp>& Point_<_Tp>::operator = (\x1b[01;36m\x1b[Kconst Point_& pt\x1b[m\x1b[K)\n'}
+[2.567035] (occgrid_planner_base) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[2.567066] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1207:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<_Tp>& cv::Point_<_Tp>::operator=(cv::Point_<_Tp>&&) [with _Tp = int]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.567104] (occgrid_planner_base) StderrLine: {'line': b' 1207 | Point_<_Tp>& \x1b[01;36m\x1b[KPoint_<_Tp>\x1b[m\x1b[K::operator = (Point_&& pt) CV_NOEXCEPT\n'}
+[2.567136] (occgrid_planner_base) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.567168] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1207:48:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Point3i\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point3_<int>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<int>&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.567203] (occgrid_planner_base) StderrLine: {'line': b' 1207 | Point_<_Tp>& Point_<_Tp>::operator = (\x1b[01;36m\x1b[KPoint_&& pt\x1b[m\x1b[K) CV_NOEXCEPT\n'}
+[2.567234] (occgrid_planner_base) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[2.604541] (-) TimerEvent: {}
+[2.704807] (-) TimerEvent: {}
+[2.805084] (-) TimerEvent: {}
+[2.905352] (-) TimerEvent: {}
+[3.005620] (-) TimerEvent: {}
+[3.105846] (-) TimerEvent: {}
+[3.206103] (-) TimerEvent: {}
+[3.306381] (-) TimerEvent: {}
+[3.406623] (-) TimerEvent: {}
+[3.506904] (-) TimerEvent: {}
+[3.607178] (-) TimerEvent: {}
+[3.707462] (-) TimerEvent: {}
+[3.807749] (-) TimerEvent: {}
+[3.908023] (-) TimerEvent: {}
+[4.008312] (-) TimerEvent: {}
+[4.108587] (-) TimerEvent: {}
+[4.208857] (-) TimerEvent: {}
+[4.309128] (-) TimerEvent: {}
+[4.409406] (-) TimerEvent: {}
+[4.509677] (-) TimerEvent: {}
+[4.609961] (-) TimerEvent: {}
+[4.710212] (-) TimerEvent: {}
+[4.810489] (-) TimerEvent: {}
+[4.910775] (-) TimerEvent: {}
+[5.011059] (-) TimerEvent: {}
+[5.111307] (-) TimerEvent: {}
+[5.211572] (-) TimerEvent: {}
+[5.225920] (occgrid_planner_base) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/occgrid_planner_base.dir/build.make:76: CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o] Error 1\n'}
+[5.226082] (occgrid_planner_base) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/occgrid_planner_base.dir/all] Error 2\n'}
+[5.226249] (occgrid_planner_base) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[5.227645] (occgrid_planner_base) CommandEnded: {'returncode': 2}
+[5.311720] (-) TimerEvent: {}
+[5.339666] (occgrid_planner_base) JobEnded: {'identifier': 'occgrid_planner_base', 'rc': 2}
+[5.349950] (-) EventReactorShutdown: {}

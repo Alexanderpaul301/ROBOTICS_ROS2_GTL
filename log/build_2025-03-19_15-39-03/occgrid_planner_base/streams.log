@@ -1,0 +1,185 @@
+[0.159s] Invoking command in '/home/GTL/apaul/ros2_hw1/build/occgrid_planner_base': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/occgrid_planner_base -- -j16 -l16
+[0.323s] [35m[1mConsolidate compiler generated dependencies of target occgrid_planner_base[0m
+[0.335s] [ 33%] [32mBuilding CXX object CMakeFiles/path_follower_base.dir/src/path_follower.cpp.o[0m
+[0.335s] [ 33%] [32mBuilding CXX object CMakeFiles/path_optimizer_base.dir/src/path_optimizer.cpp.o[0m
+[0.370s] [ 50%] [32mBuilding CXX object CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o[0m
+[3.203s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:[m[K In member function ‘[01m[Kvoid OccupancyGridPlanner::og_callback(nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.203s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:68:77:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcv::Mat_<unsigned char>::Mat_(nav_msgs::msg::MapMetaData_<std::allocator<void> >::_height_type&, nav_msgs::msg::MapMetaData_<std::allocator<void> >::_width_type&, int, int)[m[K’
+[3.203s]    68 |             og_ = cv::Mat_<uint8_t>(msg->info.height, msg->info.width,2,0xFF[01;31m[K)[m[K;
+[3.203s]       |                                                                             [01;31m[K^[m[K
+[3.203s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[3.203s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[3.203s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:14[m[K:
+[3.203s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:2249:41:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Nm> cv::Mat_<_Tp>::Mat_(const std::array<_Tp, _Nm>&, bool) [with long unsigned int _Nm = _Nm; _Tp = unsigned char][m[K’
+[3.203s]  2249 |     template <std::size_t _Nm> explicit [01;36m[KMat_[m[K(const std::array<_Tp, _Nm>& arr, bool copyData=false);
+[3.203s]       |                                         [01;36m[K^~~~[m[K
+[3.204s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:2249:41:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.204s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:68:77:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::array<unsigned char, _Nm>[m[K’ and ‘[01m[Knav_msgs::msg::MapMetaData_<std::allocator<void> >::_height_type[m[K’ {aka ‘[01m[Kunsigned int[m[K’}
+[3.204s]    68 |             og_ = cv::Mat_<uint8_t>(msg->info.height, msg->info.width,2,0xFF[01;36m[K)[m[K;
+[3.204s]       |                                                                             [01;36m[K^[m[K
+[3.204s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[3.204s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[3.204s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:14[m[K:
+[3.204s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:2241:37:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<int m, int n> cv::Mat_<_Tp>::Mat_(const cv::Matx<typename cv::DataType<_Tp>::channel_type, m, n>&, bool) [with int m = m; int n = n; _Tp = unsigned char][m[K’
+[3.204s]  2241 |     template<int m, int n> explicit [01;36m[KMat_[m[K(const Matx<typename DataType<_Tp>::channel_type, m, n>& mtx, bool copyData=true);
+[3.204s]       |                                     [01;36m[K^~~~[m[K
+[3.204s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:2241:37:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.204s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:68:77:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst cv::Matx<unsigned char, m, n>[m[K’ and ‘[01m[Knav_msgs::msg::MapMetaData_<std::allocator<void> >::_height_type[m[K’ {aka ‘[01m[Kunsigned int[m[K’}
+[3.204s]    68 |             og_ = cv::Mat_<uint8_t>(msg->info.height, msg->info.width,2,0xFF[01;36m[K)[m[K;
+[3.204s]       |                                                                             [01;36m[K^[m[K
+[3.204s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[3.204s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[3.204s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:14[m[K:
+[3.204s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:2240:30:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<int n> cv::Mat_<_Tp>::Mat_(const cv::Vec<typename cv::DataType<_Tp>::channel_type, n>&, bool) [with int n = n; _Tp = unsigned char][m[K’
+[3.204s]  2240 |     template<int n> explicit [01;36m[KMat_[m[K(const Vec<typename DataType<_Tp>::channel_type, n>& vec, bool copyData=true);
+[3.204s]       |                              [01;36m[K^~~~[m[K
+[3.204s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:2240:30:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.205s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:68:77:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst cv::Vec<unsigned char, n>[m[K’ and ‘[01m[Knav_msgs::msg::MapMetaData_<std::allocator<void> >::_height_type[m[K’ {aka ‘[01m[Kunsigned int[m[K’}
+[3.205s]    68 |             og_ = cv::Mat_<uint8_t>(msg->info.height, msg->info.width,2,0xFF[01;36m[K)[m[K;
+[3.205s]       |                                                                             [01;36m[K^[m[K
+[3.205s] In file included from [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3764[m[K,
+[3.205s]                  from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[3.205s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[3.205s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:14[m[K:
+[3.205s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1853:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(cv::MatExpr&&) [with _Tp = unsigned char][m[K’
+[3.205s]  1853 | [01;36m[KMat_<_Tp>[m[K::Mat_(MatExpr&& e)
+[3.205s]       | [01;36m[K^~~~~~~~~[m[K
+[3.205s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1853:1:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+[3.205s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1822:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(cv::Mat&&) [with _Tp = unsigned char][m[K’
+[3.205s]  1822 | [01;36m[KMat_<_Tp>[m[K::Mat_(Mat&& m)
+[3.205s]       | [01;36m[K^~~~~~~~~[m[K
+[3.205s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1822:1:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+[3.205s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1809:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(cv::Mat_<_Tp>&&) [with _Tp = unsigned char][m[K’
+[3.205s]  1809 | [01;36m[KMat_<_Tp>[m[K::Mat_(Mat_&& m)
+[3.205s]       | [01;36m[K^~~~~~~~~[m[K
+[3.205s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1809:1:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+[3.205s] In file included from [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3764[m[K,
+[3.205s]                  from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[3.205s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[3.205s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:14[m[K:
+[3.205s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1416:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(std::initializer_list<int>, std::initializer_list<_Tp>) [with _Tp = unsigned char][m[K’
+[3.205s]  1416 | [01;36m[KMat_<_Tp>[m[K::Mat_(const std::initializer_list<int> sizes, std::initializer_list<_Tp> list)
+[3.205s]       | [01;36m[K^~~~~~~~~[m[K
+[3.205s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1416:1:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 4 provided
+[3.205s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1411:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(std::initializer_list<_Tp>) [with _Tp = unsigned char][m[K’
+[3.205s]  1411 | [01;36m[KMat_<_Tp>[m[K::Mat_(std::initializer_list<_Tp> list)
+[3.205s]       | [01;36m[K^~~~~~~~~[m[K
+[3.205s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1411:1:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+[3.205s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1401:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(const cv::MatCommaInitializer_<_Tp>&) [with _Tp = unsigned char][m[K’
+[3.206s]  1401 | [01;36m[KMat_<_Tp>[m[K::Mat_(const MatCommaInitializer_<_Tp>& commaInitializer)
+[3.206s]       | [01;36m[K^~~~~~~~~[m[K
+[3.206s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1401:1:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+[3.206s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1392:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(const cv::Point3_<typename cv::DataType<_Tp>::channel_type>&, bool) [with _Tp = unsigned char; typename cv::DataType<_Tp>::channel_type = unsigned char][m[K’
+[3.206s]  1392 | [01;36m[KMat_<_Tp>[m[K::Mat_(const Point3_<typename DataType<_Tp>::channel_type>& pt, bool copyData)
+[3.206s]       | [01;36m[K^~~~~~~~~[m[K
+[3.206s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1392:1:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 4 provided
+[3.206s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1383:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(const cv::Point_<typename cv::DataType<_Tp>::channel_type>&, bool) [with _Tp = unsigned char; typename cv::DataType<_Tp>::channel_type = unsigned char][m[K’
+[3.206s]  1383 | [01;36m[KMat_<_Tp>[m[K::Mat_(const Point_<typename DataType<_Tp>::channel_type>& pt, bool copyData)
+[3.206s]       | [01;36m[K^~~~~~~~~[m[K
+[3.206s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1383:1:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 4 provided
+[3.206s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1406:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(const std::vector<BufferT>&, bool) [with _Tp = unsigned char][m[K’
+[3.206s]  1406 | [01;36m[KMat_<_Tp>[m[K::Mat_(const std::vector<_Tp>& vec, bool copyData)
+[3.206s]       | [01;36m[K^~~~~~~~~[m[K
+[3.206s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1406:1:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 4 provided
+[3.206s] In file included from [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3764[m[K,
+[3.206s]                  from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[3.206s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[3.206s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:14[m[K:
+[3.206s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:3015:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(const cv::MatExpr&) [with _Tp = unsigned char][m[K’
+[3.206s]  3015 | [01;36m[KMat_<_Tp>[m[K::Mat_(const MatExpr& e)
+[3.206s]       | [01;36m[K^~~~~~~~~[m[K
+[3.206s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:3015:1:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+[3.206s] In file included from [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3764[m[K,
+[3.206s]                  from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[3.206s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[3.206s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:14[m[K:
+[3.206s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1332:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(const cv::Mat_<_Tp>&, const std::vector<cv::Range>&) [with _Tp = unsigned char][m[K’
+[3.206s]  1332 | [01;36m[KMat_<_Tp>[m[K::Mat_(const Mat_<_Tp>& m, const std::vector<Range>& ranges)
+[3.206s]       | [01;36m[K^~~~~~~~~[m[K
+[3.207s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1332:1:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 4 provided
+[3.207s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1327:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(const cv::Mat_<_Tp>&, const cv::Range*) [with _Tp = unsigned char][m[K’
+[3.207s]  1327 | [01;36m[KMat_<_Tp>[m[K::Mat_(const Mat_<_Tp>& m, const Range* ranges)
+[3.207s]       | [01;36m[K^~~~~~~~~[m[K
+[3.207s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1327:1:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 4 provided
+[3.207s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1360:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(const cv::Mat_<_Tp>&, const Rect&) [with _Tp = unsigned char; cv::Rect = cv::Rect_<int>][m[K’
+[3.207s]  1360 | [01;36m[KMat_<_Tp>[m[K::Mat_(const Mat_& m, const Rect& roi)
+[3.207s]       | [01;36m[K^~~~~~~~~[m[K
+[3.207s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1360:1:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 4 provided
+[3.207s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1355:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(const cv::Mat_<_Tp>&, const cv::Range&, const cv::Range&) [with _Tp = unsigned char][m[K’
+[3.207s]  1355 | [01;36m[KMat_<_Tp>[m[K::Mat_(const Mat_& m, const Range& _rowRange, const Range& _colRange)
+[3.207s]       | [01;36m[K^~~~~~~~~[m[K
+[3.207s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1355:1:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 4 provided
+[3.207s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1322:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(int, const int*, _Tp*, const size_t*) [with _Tp = unsigned char; size_t = long unsigned int][m[K’ (near match)
+[3.207s]  1322 | [01;36m[KMat_<_Tp>[m[K::Mat_(int _dims, const int* _sz, _Tp* _data, const size_t* _steps)
+[3.207s]       | [01;36m[K^~~~~~~~~[m[K
+[3.207s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1322:1:[m[K [01;36m[Knote: [m[K  conversion of argument 4 would be ill-formed:
+[3.207s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:68:73:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kint[m[K’ to ‘[01m[Kconst size_t*[m[K’ {aka ‘[01m[Kconst long unsigned int*[m[K’} [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[3.207s]    68 |             og_ = cv::Mat_<uint8_t>(msg->info.height, msg->info.width,2,[01;31m[K0xFF[m[K);
+[3.207s]       |                                                                         [01;31m[K^~~~[m[K
+[3.207s]       |                                                                         [01;31m[K|[m[K
+[3.207s]       |                                                                         [01;31m[Kint[m[K
+[3.207s] In file included from [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3764[m[K,
+[3.207s]                  from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[3.207s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[3.207s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:14[m[K:
+[3.207s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1350:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(int, int, _Tp*, size_t) [with _Tp = unsigned char; size_t = long unsigned int][m[K’ (near match)
+[3.207s]  1350 | [01;36m[KMat_<_Tp>[m[K::Mat_(int _rows, int _cols, _Tp* _data, size_t steps)
+[3.207s]       | [01;36m[K^~~~~~~~~[m[K
+[3.207s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1350:1:[m[K [01;36m[Knote: [m[K  conversion of argument 3 would be ill-formed:
+[3.207s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:68:71:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kint[m[K’ to ‘[01m[Kunsigned char*[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[3.207s]    68 |             og_ = cv::Mat_<uint8_t>(msg->info.height, msg->info.width,[01;31m[K2[m[K,0xFF);
+[3.208s]       |                                                                       [01;31m[K^[m[K
+[3.208s]       |                                                                       [01;31m[K|[m[K
+[3.208s]       |                                                                       [01;31m[Kint[m[K
+[3.208s] In file included from [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3764[m[K,
+[3.208s]                  from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[3.208s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[3.208s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:14[m[K:
+[3.208s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1345:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(const cv::Mat_<_Tp>&) [with _Tp = unsigned char][m[K’
+[3.208s]  1345 | [01;36m[KMat_<_Tp>[m[K::Mat_(const Mat_& m)
+[3.208s]       | [01;36m[K^~~~~~~~~[m[K
+[3.208s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1345:1:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+[3.208s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1337:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(const cv::Mat&) [with _Tp = unsigned char][m[K’
+[3.208s]  1337 | [01;36m[KMat_<_Tp>[m[K::Mat_(const Mat& m)
+[3.208s]       | [01;36m[K^~~~~~~~~[m[K
+[3.208s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1337:1:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+[3.208s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1317:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(int, const int*, const _Tp&) [with _Tp = unsigned char][m[K’
+[3.208s]  1317 | [01;36m[KMat_<_Tp>[m[K::Mat_(int _dims, const int* _sz, const _Tp& _s)
+[3.208s]       | [01;36m[K^~~~~~~~~[m[K
+[3.208s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1317:1:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 4 provided
+[3.208s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1312:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(int, const int*) [with _Tp = unsigned char][m[K’
+[3.208s]  1312 | [01;36m[KMat_<_Tp>[m[K::Mat_(int _dims, const int* _sz)
+[3.208s]       | [01;36m[K^~~~~~~~~[m[K
+[3.208s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1312:1:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 4 provided
+[3.208s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1305:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(cv::Size, const _Tp&) [with _Tp = unsigned char; cv::Size = cv::Size_<int>][m[K’
+[3.208s]  1305 | [01;36m[KMat_<_Tp>[m[K::Mat_(Size _sz, const _Tp& value)
+[3.208s]       | [01;36m[K^~~~~~~~~[m[K
+[3.208s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1305:1:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 4 provided
+[3.208s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1300:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(cv::Size) [with _Tp = unsigned char; cv::Size = cv::Size_<int>][m[K’
+[3.208s]  1300 | [01;36m[KMat_<_Tp>[m[K::Mat_(Size _sz)
+[3.209s]       | [01;36m[K^~~~~~~~~[m[K
+[3.209s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1300:1:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+[3.209s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1293:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(int, int, const _Tp&) [with _Tp = unsigned char][m[K’
+[3.209s]  1293 | [01;36m[KMat_<_Tp>[m[K::Mat_(int _rows, int _cols, const _Tp& value)
+[3.209s]       | [01;36m[K^~~~~~~~~[m[K
+[3.209s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1293:1:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 4 provided
+[3.209s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1287:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(int, int) [with _Tp = unsigned char][m[K’
+[3.209s]  1287 | [01;36m[KMat_<_Tp>[m[K::Mat_(int _rows, int _cols)
+[3.209s]       | [01;36m[K^~~~~~~~~[m[K
+[3.209s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1287:1:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 4 provided
+[3.209s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1280:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_() [with _Tp = unsigned char][m[K’
+[3.209s]  1280 | [01;36m[KMat_<_Tp>[m[K::Mat_() CV_NOEXCEPT
+[3.209s]       | [01;36m[K^~~~~~~~~[m[K
+[3.209s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1280:1:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 4 provided
+[3.209s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:71:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _orientation_type = struct geometry_msgs::msg::Quaternion_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Quaternion_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ktheta[m[K’
+[3.209s]    71 |                     -info_.origin.orientation.[01;31m[Ktheta[m[K);
+[3.209s]       |                                               [01;31m[K^~~~~[m[K
+[6.121s] gmake[2]: *** [CMakeFiles/occgrid_planner_base.dir/build.make:76: CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o] Error 1
+[6.121s] gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/occgrid_planner_base.dir/all] Error 2
+[6.121s] gmake[1]: *** Waiting for unfinished jobs....
+[11.804s] [ 66%] [32m[1mLinking CXX executable path_optimizer_base[0m
+[12.477s] [ 66%] Built target path_optimizer_base
+[13.277s] [ 83%] [32m[1mLinking CXX executable path_follower_base[0m
+[13.938s] [ 83%] Built target path_follower_base
+[13.939s] gmake: *** [Makefile:146: all] Error 2
+[13.940s] Invoked command in '/home/GTL/apaul/ros2_hw1/build/occgrid_planner_base' returned '2': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/occgrid_planner_base -- -j16 -l16

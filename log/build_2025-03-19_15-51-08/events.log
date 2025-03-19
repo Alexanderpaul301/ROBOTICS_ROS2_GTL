@@ -1,0 +1,263 @@
+[0.000000] (-) TimerEvent: {}
+[0.000208] (-) JobUnselected: {'identifier': 'ar_loc_base'}
+[0.000231] (-) JobUnselected: {'identifier': 'ar_mapping_base'}
+[0.000242] (-) JobUnselected: {'identifier': 'ar_slam_base'}
+[0.000251] (-) JobUnselected: {'identifier': 'button_server'}
+[0.000259] (-) JobUnselected: {'identifier': 'collision_avoidance_base'}
+[0.000268] (-) JobUnselected: {'identifier': 'cs7630_msgs'}
+[0.000276] (-) JobUnselected: {'identifier': 'face_detect_base'}
+[0.000284] (-) JobUnselected: {'identifier': 'face_msg'}
+[0.000292] (-) JobUnselected: {'identifier': 'floor_nav'}
+[0.000300] (-) JobUnselected: {'identifier': 'joy_pack'}
+[0.000308] (-) JobUnselected: {'identifier': 'keyboard_teleop'}
+[0.000317] (-) JobUnselected: {'identifier': 'rover_driver_base'}
+[0.000325] (-) JobUnselected: {'identifier': 'task_manager_client_py'}
+[0.000333] (-) JobUnselected: {'identifier': 'task_manager_lib'}
+[0.000340] (-) JobUnselected: {'identifier': 'task_manager_msgs'}
+[0.000348] (-) JobUnselected: {'identifier': 'task_manager_nav2'}
+[0.000356] (-) JobUnselected: {'identifier': 'task_manager_sync'}
+[0.000364] (-) JobUnselected: {'identifier': 'turtlebot_launch'}
+[0.000372] (-) JobUnselected: {'identifier': 'vrep4_helpers'}
+[0.000386] (-) JobUnselected: {'identifier': 'vrep_ros_teleop'}
+[0.000394] (-) JobUnselected: {'identifier': 'wifi_map_base'}
+[0.000402] (-) JobUnselected: {'identifier': 'wpa_cli_msgs'}
+[0.000412] (occgrid_planner_base) JobQueued: {'identifier': 'occgrid_planner_base', 'dependencies': OrderedDict([('cs7630_msgs', '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs')])}
+[0.000426] (occgrid_planner_base) JobStarted: {'identifier': 'occgrid_planner_base'}
+[0.044386] (occgrid_planner_base) JobProgress: {'identifier': 'occgrid_planner_base', 'progress': 'cmake'}
+[0.047267] (occgrid_planner_base) JobProgress: {'identifier': 'occgrid_planner_base', 'progress': 'build'}
+[0.048185] (occgrid_planner_base) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/GTL/apaul/ros2_hw1/build/occgrid_planner_base', '--', '-j16', '-l16'], 'cwd': '/home/GTL/apaul/ros2_hw1/build/occgrid_planner_base', 'env': OrderedDict([('USER', 'apaul'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/GTL/apaul'), ('CYCLONEDDS_URI', '/cs-share/pradalier/gtlpc_cyclonedds.xml'), ('OLDPWD', '/home/GTL/apaul'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2302'), ('SYSTEMD_EXEC_PID', '2645'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/37726/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3021'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'apaul'), ('JOURNAL_STREAM', '8:30295'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'apaul'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/gtlpc109.georgiatech-metz.fr:@/tmp/.ICE-unix/2483,unix/gtlpc109.georgiatech-metz.fr:/tmp/.ICE-unix/2483'), ('INVOCATION_ID', 'e44ddce5bfda4fe0ab391ad9343c6bdc'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/37726'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/37726/gdm/Xauthority'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/37726/keyring/ssh'), ('ROS_DOMAIN_ID', '59'), ('AMENT_PREFIX_PATH', '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:4254ca58-5fc0-4359-adf9-1351a34b4314'), ('KRB5CCNAME', 'FILE:/tmp/krb5cc_37726'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/37726/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/GTL/apaul/ros2_hw1/build/occgrid_planner_base'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble')]), 'shell': False}
+[0.086573] (occgrid_planner_base) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target occgrid_planner_base\x1b[0m\n'}
+[0.097266] (occgrid_planner_base) StdoutLine: {'line': b'[ 66%] Built target path_optimizer_base\n'}
+[0.097457] (occgrid_planner_base) StdoutLine: {'line': b'[ 66%] Built target path_follower_base\n'}
+[0.098466] (-) TimerEvent: {}
+[0.198661] (-) TimerEvent: {}
+[0.272997] (occgrid_planner_base) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o\x1b[0m\n'}
+[0.298786] (-) TimerEvent: {}
+[0.399043] (-) TimerEvent: {}
+[0.499307] (-) TimerEvent: {}
+[0.599570] (-) TimerEvent: {}
+[0.699800] (-) TimerEvent: {}
+[0.800080] (-) TimerEvent: {}
+[0.900332] (-) TimerEvent: {}
+[1.000617] (-) TimerEvent: {}
+[1.100897] (-) TimerEvent: {}
+[1.201158] (-) TimerEvent: {}
+[1.301420] (-) TimerEvent: {}
+[1.401695] (-) TimerEvent: {}
+[1.501962] (-) TimerEvent: {}
+[1.602242] (-) TimerEvent: {}
+[1.702505] (-) TimerEvent: {}
+[1.802792] (-) TimerEvent: {}
+[1.903056] (-) TimerEvent: {}
+[2.003326] (-) TimerEvent: {}
+[2.103598] (-) TimerEvent: {}
+[2.203849] (-) TimerEvent: {}
+[2.304134] (-) TimerEvent: {}
+[2.404367] (-) TimerEvent: {}
+[2.504612] (-) TimerEvent: {}
+[2.604889] (-) TimerEvent: {}
+[2.705161] (-) TimerEvent: {}
+[2.731838] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid OccupancyGridPlanner::og_callback(nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.732038] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:68:77:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat_<unsigned char>::Mat_(nav_msgs::msg::MapMetaData_<std::allocator<void> >::_height_type&, nav_msgs::msg::MapMetaData_<std::allocator<void> >::_width_type&, int, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.732088] (occgrid_planner_base) StderrLine: {'line': b'   68 |             og_ = cv::Mat_<uint8_t>(msg->info.height, msg->info.width,2,0xFF\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[2.732534] (occgrid_planner_base) StderrLine: {'line': b'      |                                                                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.732597] (occgrid_planner_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[2.732647] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[2.732696] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:14\x1b[m\x1b[K:\n'}
+[2.732746] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:2249:41:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<long unsigned int _Nm> cv::Mat_<_Tp>::Mat_(const std::array<_Tp, _Nm>&, bool) [with long unsigned int _Nm = _Nm; _Tp = unsigned char]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.732809] (occgrid_planner_base) StderrLine: {'line': b' 2249 |     template <std::size_t _Nm> explicit \x1b[01;36m\x1b[KMat_\x1b[m\x1b[K(const std::array<_Tp, _Nm>& arr, bool copyData=false);\n'}
+[2.732845] (occgrid_planner_base) StderrLine: {'line': b'      |                                         \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.732894] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:2249:41:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.732948] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:68:77:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::array<unsigned char, _Nm>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Knav_msgs::msg::MapMetaData_<std::allocator<void> >::_height_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kunsigned int\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[2.732984] (occgrid_planner_base) StderrLine: {'line': b'   68 |             og_ = cv::Mat_<uint8_t>(msg->info.height, msg->info.width,2,0xFF\x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[2.733017] (occgrid_planner_base) StderrLine: {'line': b'      |                                                                             \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.733049] (occgrid_planner_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[2.733083] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[2.733139] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:14\x1b[m\x1b[K:\n'}
+[2.733173] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:2241:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<int m, int n> cv::Mat_<_Tp>::Mat_(const cv::Matx<typename cv::DataType<_Tp>::channel_type, m, n>&, bool) [with int m = m; int n = n; _Tp = unsigned char]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.733207] (occgrid_planner_base) StderrLine: {'line': b' 2241 |     template<int m, int n> explicit \x1b[01;36m\x1b[KMat_\x1b[m\x1b[K(const Matx<typename DataType<_Tp>::channel_type, m, n>& mtx, bool copyData=true);\n'}
+[2.733240] (occgrid_planner_base) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.733279] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:2241:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.733330] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:68:77:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Matx<unsigned char, m, n>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Knav_msgs::msg::MapMetaData_<std::allocator<void> >::_height_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kunsigned int\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[2.733368] (occgrid_planner_base) StderrLine: {'line': b'   68 |             og_ = cv::Mat_<uint8_t>(msg->info.height, msg->info.width,2,0xFF\x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[2.733400] (occgrid_planner_base) StderrLine: {'line': b'      |                                                                             \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.733432] (occgrid_planner_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[2.733467] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[2.733499] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:14\x1b[m\x1b[K:\n'}
+[2.733534] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:2240:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<int n> cv::Mat_<_Tp>::Mat_(const cv::Vec<typename cv::DataType<_Tp>::channel_type, n>&, bool) [with int n = n; _Tp = unsigned char]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.733572] (occgrid_planner_base) StderrLine: {'line': b' 2240 |     template<int n> explicit \x1b[01;36m\x1b[KMat_\x1b[m\x1b[K(const Vec<typename DataType<_Tp>::channel_type, n>& vec, bool copyData=true);\n'}
+[2.733619] (occgrid_planner_base) StderrLine: {'line': b'      |                              \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.733654] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:2240:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.733685] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:68:77:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Vec<unsigned char, n>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Knav_msgs::msg::MapMetaData_<std::allocator<void> >::_height_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kunsigned int\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[2.733717] (occgrid_planner_base) StderrLine: {'line': b'   68 |             og_ = cv::Mat_<uint8_t>(msg->info.height, msg->info.width,2,0xFF\x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[2.733747] (occgrid_planner_base) StderrLine: {'line': b'      |                                                                             \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.733778] (occgrid_planner_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3764\x1b[m\x1b[K,\n'}
+[2.733808] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[2.733838] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[2.733868] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:14\x1b[m\x1b[K:\n'}
+[2.733898] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1853:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat_<_Tp>::Mat_(cv::MatExpr&&) [with _Tp = unsigned char]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.733929] (occgrid_planner_base) StderrLine: {'line': b' 1853 | \x1b[01;36m\x1b[KMat_<_Tp>\x1b[m\x1b[K::Mat_(MatExpr&& e)\n'}
+[2.733959] (occgrid_planner_base) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.733989] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1853:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 4 provided\n'}
+[2.734020] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1822:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat_<_Tp>::Mat_(cv::Mat&&) [with _Tp = unsigned char]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.734051] (occgrid_planner_base) StderrLine: {'line': b' 1822 | \x1b[01;36m\x1b[KMat_<_Tp>\x1b[m\x1b[K::Mat_(Mat&& m)\n'}
+[2.734080] (occgrid_planner_base) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.734110] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1822:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 4 provided\n'}
+[2.734142] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1809:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat_<_Tp>::Mat_(cv::Mat_<_Tp>&&) [with _Tp = unsigned char]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.734173] (occgrid_planner_base) StderrLine: {'line': b' 1809 | \x1b[01;36m\x1b[KMat_<_Tp>\x1b[m\x1b[K::Mat_(Mat_&& m)\n'}
+[2.734202] (occgrid_planner_base) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.734232] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1809:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 4 provided\n'}
+[2.734262] (occgrid_planner_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3764\x1b[m\x1b[K,\n'}
+[2.734292] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[2.734321] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[2.734350] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:14\x1b[m\x1b[K:\n'}
+[2.734381] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1416:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat_<_Tp>::Mat_(std::initializer_list<int>, std::initializer_list<_Tp>) [with _Tp = unsigned char]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.734411] (occgrid_planner_base) StderrLine: {'line': b' 1416 | \x1b[01;36m\x1b[KMat_<_Tp>\x1b[m\x1b[K::Mat_(const std::initializer_list<int> sizes, std::initializer_list<_Tp> list)\n'}
+[2.734441] (occgrid_planner_base) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.734470] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1416:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 4 provided\n'}
+[2.734499] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1411:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat_<_Tp>::Mat_(std::initializer_list<_Tp>) [with _Tp = unsigned char]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.734529] (occgrid_planner_base) StderrLine: {'line': b' 1411 | \x1b[01;36m\x1b[KMat_<_Tp>\x1b[m\x1b[K::Mat_(std::initializer_list<_Tp> list)\n'}
+[2.734558] (occgrid_planner_base) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.734587] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1411:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 4 provided\n'}
+[2.734616] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1401:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat_<_Tp>::Mat_(const cv::MatCommaInitializer_<_Tp>&) [with _Tp = unsigned char]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.734648] (occgrid_planner_base) StderrLine: {'line': b' 1401 | \x1b[01;36m\x1b[KMat_<_Tp>\x1b[m\x1b[K::Mat_(const MatCommaInitializer_<_Tp>& commaInitializer)\n'}
+[2.734678] (occgrid_planner_base) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.734709] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1401:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 4 provided\n'}
+[2.734738] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1392:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat_<_Tp>::Mat_(const cv::Point3_<typename cv::DataType<_Tp>::channel_type>&, bool) [with _Tp = unsigned char; typename cv::DataType<_Tp>::channel_type = unsigned char]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.734771] (occgrid_planner_base) StderrLine: {'line': b' 1392 | \x1b[01;36m\x1b[KMat_<_Tp>\x1b[m\x1b[K::Mat_(const Point3_<typename DataType<_Tp>::channel_type>& pt, bool copyData)\n'}
+[2.734801] (occgrid_planner_base) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.734830] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1392:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 4 provided\n'}
+[2.734859] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1383:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat_<_Tp>::Mat_(const cv::Point_<typename cv::DataType<_Tp>::channel_type>&, bool) [with _Tp = unsigned char; typename cv::DataType<_Tp>::channel_type = unsigned char]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.734890] (occgrid_planner_base) StderrLine: {'line': b' 1383 | \x1b[01;36m\x1b[KMat_<_Tp>\x1b[m\x1b[K::Mat_(const Point_<typename DataType<_Tp>::channel_type>& pt, bool copyData)\n'}
+[2.734919] (occgrid_planner_base) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.734949] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1383:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 4 provided\n'}
+[2.734979] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1406:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat_<_Tp>::Mat_(const std::vector<BufferT>&, bool) [with _Tp = unsigned char]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.735009] (occgrid_planner_base) StderrLine: {'line': b' 1406 | \x1b[01;36m\x1b[KMat_<_Tp>\x1b[m\x1b[K::Mat_(const std::vector<_Tp>& vec, bool copyData)\n'}
+[2.735038] (occgrid_planner_base) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.735068] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1406:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 4 provided\n'}
+[2.735098] (occgrid_planner_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3764\x1b[m\x1b[K,\n'}
+[2.735127] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[2.735157] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[2.735187] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:14\x1b[m\x1b[K:\n'}
+[2.735217] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:3015:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat_<_Tp>::Mat_(const cv::MatExpr&) [with _Tp = unsigned char]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.735247] (occgrid_planner_base) StderrLine: {'line': b' 3015 | \x1b[01;36m\x1b[KMat_<_Tp>\x1b[m\x1b[K::Mat_(const MatExpr& e)\n'}
+[2.735277] (occgrid_planner_base) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.735307] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:3015:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 4 provided\n'}
+[2.735338] (occgrid_planner_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3764\x1b[m\x1b[K,\n'}
+[2.735371] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[2.735400] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[2.735429] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:14\x1b[m\x1b[K:\n'}
+[2.735459] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1332:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat_<_Tp>::Mat_(const cv::Mat_<_Tp>&, const std::vector<cv::Range>&) [with _Tp = unsigned char]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.735490] (occgrid_planner_base) StderrLine: {'line': b' 1332 | \x1b[01;36m\x1b[KMat_<_Tp>\x1b[m\x1b[K::Mat_(const Mat_<_Tp>& m, const std::vector<Range>& ranges)\n'}
+[2.735520] (occgrid_planner_base) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.735550] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1332:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 4 provided\n'}
+[2.735580] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1327:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat_<_Tp>::Mat_(const cv::Mat_<_Tp>&, const cv::Range*) [with _Tp = unsigned char]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.735609] (occgrid_planner_base) StderrLine: {'line': b' 1327 | \x1b[01;36m\x1b[KMat_<_Tp>\x1b[m\x1b[K::Mat_(const Mat_<_Tp>& m, const Range* ranges)\n'}
+[2.735638] (occgrid_planner_base) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.735667] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1327:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 4 provided\n'}
+[2.735697] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1360:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat_<_Tp>::Mat_(const cv::Mat_<_Tp>&, const Rect&) [with _Tp = unsigned char; cv::Rect = cv::Rect_<int>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.735728] (occgrid_planner_base) StderrLine: {'line': b' 1360 | \x1b[01;36m\x1b[KMat_<_Tp>\x1b[m\x1b[K::Mat_(const Mat_& m, const Rect& roi)\n'}
+[2.735759] (occgrid_planner_base) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.735788] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1360:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 4 provided\n'}
+[2.735817] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1355:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat_<_Tp>::Mat_(const cv::Mat_<_Tp>&, const cv::Range&, const cv::Range&) [with _Tp = unsigned char]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.735847] (occgrid_planner_base) StderrLine: {'line': b' 1355 | \x1b[01;36m\x1b[KMat_<_Tp>\x1b[m\x1b[K::Mat_(const Mat_& m, const Range& _rowRange, const Range& _colRange)\n'}
+[2.735876] (occgrid_planner_base) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.735905] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1355:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 4 provided\n'}
+[2.735934] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1322:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat_<_Tp>::Mat_(int, const int*, _Tp*, const size_t*) [with _Tp = unsigned char; size_t = long unsigned int]\x1b[m\x1b[K\xe2\x80\x99 (near match)\n'}
+[2.735966] (occgrid_planner_base) StderrLine: {'line': b' 1322 | \x1b[01;36m\x1b[KMat_<_Tp>\x1b[m\x1b[K::Mat_(int _dims, const int* _sz, _Tp* _data, const size_t* _steps)\n'}
+[2.735999] (occgrid_planner_base) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.736034] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1322:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  conversion of argument 4 would be ill-formed:\n'}
+[2.736064] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:68:73:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid conversion from \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst size_t*\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst long unsigned int*\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.736097] (occgrid_planner_base) StderrLine: {'line': b'   68 |             og_ = cv::Mat_<uint8_t>(msg->info.height, msg->info.width,2,\x1b[01;31m\x1b[K0xFF\x1b[m\x1b[K);\n'}
+[2.736127] (occgrid_planner_base) StderrLine: {'line': b'      |                                                                         \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.736156] (occgrid_planner_base) StderrLine: {'line': b'      |                                                                         \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[2.736186] (occgrid_planner_base) StderrLine: {'line': b'      |                                                                         \x1b[01;31m\x1b[Kint\x1b[m\x1b[K\n'}
+[2.736215] (occgrid_planner_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3764\x1b[m\x1b[K,\n'}
+[2.736244] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[2.736273] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[2.736304] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:14\x1b[m\x1b[K:\n'}
+[2.736335] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1350:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat_<_Tp>::Mat_(int, int, _Tp*, size_t) [with _Tp = unsigned char; size_t = long unsigned int]\x1b[m\x1b[K\xe2\x80\x99 (near match)\n'}
+[2.736366] (occgrid_planner_base) StderrLine: {'line': b' 1350 | \x1b[01;36m\x1b[KMat_<_Tp>\x1b[m\x1b[K::Mat_(int _rows, int _cols, _Tp* _data, size_t steps)\n'}
+[2.736395] (occgrid_planner_base) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.736426] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1350:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  conversion of argument 3 would be ill-formed:\n'}
+[2.736456] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:68:71:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid conversion from \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kunsigned char*\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.736489] (occgrid_planner_base) StderrLine: {'line': b'   68 |             og_ = cv::Mat_<uint8_t>(msg->info.height, msg->info.width,\x1b[01;31m\x1b[K2\x1b[m\x1b[K,0xFF);\n'}
+[2.736518] (occgrid_planner_base) StderrLine: {'line': b'      |                                                                       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.736549] (occgrid_planner_base) StderrLine: {'line': b'      |                                                                       \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[2.736579] (occgrid_planner_base) StderrLine: {'line': b'      |                                                                       \x1b[01;31m\x1b[Kint\x1b[m\x1b[K\n'}
+[2.736608] (occgrid_planner_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3764\x1b[m\x1b[K,\n'}
+[2.736645] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[2.736677] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[2.736708] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:14\x1b[m\x1b[K:\n'}
+[2.736738] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1345:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat_<_Tp>::Mat_(const cv::Mat_<_Tp>&) [with _Tp = unsigned char]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.736770] (occgrid_planner_base) StderrLine: {'line': b' 1345 | \x1b[01;36m\x1b[KMat_<_Tp>\x1b[m\x1b[K::Mat_(const Mat_& m)\n'}
+[2.736799] (occgrid_planner_base) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.736828] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1345:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 4 provided\n'}
+[2.736858] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1337:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat_<_Tp>::Mat_(const cv::Mat&) [with _Tp = unsigned char]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.736888] (occgrid_planner_base) StderrLine: {'line': b' 1337 | \x1b[01;36m\x1b[KMat_<_Tp>\x1b[m\x1b[K::Mat_(const Mat& m)\n'}
+[2.736918] (occgrid_planner_base) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.736948] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1337:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 4 provided\n'}
+[2.736978] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1317:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat_<_Tp>::Mat_(int, const int*, const _Tp&) [with _Tp = unsigned char]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.737008] (occgrid_planner_base) StderrLine: {'line': b' 1317 | \x1b[01;36m\x1b[KMat_<_Tp>\x1b[m\x1b[K::Mat_(int _dims, const int* _sz, const _Tp& _s)\n'}
+[2.737037] (occgrid_planner_base) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.737068] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1317:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 4 provided\n'}
+[2.737098] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1312:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat_<_Tp>::Mat_(int, const int*) [with _Tp = unsigned char]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.737128] (occgrid_planner_base) StderrLine: {'line': b' 1312 | \x1b[01;36m\x1b[KMat_<_Tp>\x1b[m\x1b[K::Mat_(int _dims, const int* _sz)\n'}
+[2.737161] (occgrid_planner_base) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.737202] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1312:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 4 provided\n'}
+[2.737245] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1305:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat_<_Tp>::Mat_(cv::Size, const _Tp&) [with _Tp = unsigned char; cv::Size = cv::Size_<int>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.737279] (occgrid_planner_base) StderrLine: {'line': b' 1305 | \x1b[01;36m\x1b[KMat_<_Tp>\x1b[m\x1b[K::Mat_(Size _sz, const _Tp& value)\n'}
+[2.737311] (occgrid_planner_base) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.737342] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1305:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 4 provided\n'}
+[2.737375] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1300:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat_<_Tp>::Mat_(cv::Size) [with _Tp = unsigned char; cv::Size = cv::Size_<int>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.737406] (occgrid_planner_base) StderrLine: {'line': b' 1300 | \x1b[01;36m\x1b[KMat_<_Tp>\x1b[m\x1b[K::Mat_(Size _sz)\n'}
+[2.737436] (occgrid_planner_base) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.737466] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1300:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 4 provided\n'}
+[2.737496] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1293:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat_<_Tp>::Mat_(int, int, const _Tp&) [with _Tp = unsigned char]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.737526] (occgrid_planner_base) StderrLine: {'line': b' 1293 | \x1b[01;36m\x1b[KMat_<_Tp>\x1b[m\x1b[K::Mat_(int _rows, int _cols, const _Tp& value)\n'}
+[2.737556] (occgrid_planner_base) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.737585] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1293:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 4 provided\n'}
+[2.737615] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1287:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat_<_Tp>::Mat_(int, int) [with _Tp = unsigned char]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.737645] (occgrid_planner_base) StderrLine: {'line': b' 1287 | \x1b[01;36m\x1b[KMat_<_Tp>\x1b[m\x1b[K::Mat_(int _rows, int _cols)\n'}
+[2.737675] (occgrid_planner_base) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.737704] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1287:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 4 provided\n'}
+[2.737733] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1280:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat_<_Tp>::Mat_() [with _Tp = unsigned char]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.737763] (occgrid_planner_base) StderrLine: {'line': b' 1280 | \x1b[01;36m\x1b[KMat_<_Tp>\x1b[m\x1b[K::Mat_() CV_NOEXCEPT\n'}
+[2.737793] (occgrid_planner_base) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.737823] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1280:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 0 arguments, 4 provided\n'}
+[2.737852] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:71:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing _orientation_type = struct geometry_msgs::msg::Quaternion_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct geometry_msgs::msg::Quaternion_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Ktheta\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.737888] (occgrid_planner_base) StderrLine: {'line': b'   71 |                     -info_.origin.orientation.\x1b[01;31m\x1b[Ktheta\x1b[m\x1b[K);\n'}
+[2.737920] (occgrid_planner_base) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.805297] (-) TimerEvent: {}
+[2.905576] (-) TimerEvent: {}
+[3.005846] (-) TimerEvent: {}
+[3.106107] (-) TimerEvent: {}
+[3.206395] (-) TimerEvent: {}
+[3.306691] (-) TimerEvent: {}
+[3.406942] (-) TimerEvent: {}
+[3.507268] (-) TimerEvent: {}
+[3.607551] (-) TimerEvent: {}
+[3.707829] (-) TimerEvent: {}
+[3.808100] (-) TimerEvent: {}
+[3.908338] (-) TimerEvent: {}
+[4.008604] (-) TimerEvent: {}
+[4.108887] (-) TimerEvent: {}
+[4.209167] (-) TimerEvent: {}
+[4.309456] (-) TimerEvent: {}
+[4.409740] (-) TimerEvent: {}
+[4.509984] (-) TimerEvent: {}
+[4.610263] (-) TimerEvent: {}
+[4.710533] (-) TimerEvent: {}
+[4.810780] (-) TimerEvent: {}
+[4.911097] (-) TimerEvent: {}
+[5.011389] (-) TimerEvent: {}
+[5.111656] (-) TimerEvent: {}
+[5.211906] (-) TimerEvent: {}
+[5.311904] (occgrid_planner_base) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/occgrid_planner_base.dir/build.make:76: CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o] Error 1\n'}
+[5.312046] (-) TimerEvent: {}
+[5.312119] (occgrid_planner_base) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/occgrid_planner_base.dir/all] Error 2\n'}
+[5.312286] (occgrid_planner_base) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[5.313633] (occgrid_planner_base) CommandEnded: {'returncode': 2}
+[5.406650] (occgrid_planner_base) JobEnded: {'identifier': 'occgrid_planner_base', 'rc': 2}
+[5.412126] (-) TimerEvent: {}
+[5.416908] (-) EventReactorShutdown: {}

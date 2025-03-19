@@ -1,0 +1,34 @@
+[0.055s] Invoking command in '/home/GTL/apaul/ros2_hw1/build/occgrid_planner_base': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/occgrid_planner_base -- -j16 -l16
+[0.092s] [35m[1mConsolidate compiler generated dependencies of target occgrid_planner_base[0m
+[0.102s] [ 66%] Built target path_follower_base
+[0.103s] [ 66%] Built target path_optimizer_base
+[0.113s] [ 83%] [32mBuilding CXX object CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o[0m
+[2.565s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:[m[K In member function ‘[01m[Kvoid OccupancyGridPlanner::og_callback(nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.565s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:68:38:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((std::__shared_ptr_access<nav_msgs::msg::OccupancyGrid_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<nav_msgs::msg::OccupancyGrid_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::info.nav_msgs::msg::MapMetaData_<std::allocator<void> >::height[m[K’ from ‘[01m[Knav_msgs::msg::MapMetaData_<std::allocator<void> >::_height_type[m[K’ {aka ‘[01m[Kunsigned int[m[K’} to ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[2.565s]    68 |             int sizes[] = {[01;35m[Kmsg->info.height[m[K, msg->info.width, 2};
+[2.565s]       |                            [01;35m[K~~~~~~~~~~^~~~~~[m[K
+[2.566s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:68:56:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((std::__shared_ptr_access<nav_msgs::msg::OccupancyGrid_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<nav_msgs::msg::OccupancyGrid_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::info.nav_msgs::msg::MapMetaData_<std::allocator<void> >::width[m[K’ from ‘[01m[Knav_msgs::msg::MapMetaData_<std::allocator<void> >::_width_type[m[K’ {aka ‘[01m[Kunsigned int[m[K’} to ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[2.566s]    68 |             int sizes[] = {msg->info.height, [01;35m[Kmsg->info.width[m[K, 2};
+[2.566s]       |                                              [01;35m[K~~~~~~~~~~^~~~~[m[K
+[2.566s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:73:48:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kcv::Point[m[K’ {aka ‘[01m[Kcv::Point_<int>[m[K’} and ‘[01m[Kcv::Point3i[m[K’ {aka ‘[01m[Kcv::Point3_<int>[m[K’})
+[2.566s]    73 |                     -info_.origin.orientation.z[01;31m[K)[m[K;
+[2.566s]       |                                                [01;31m[K^[m[K
+[2.566s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[2.567s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[2.567s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:14[m[K:
+[2.567s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1200:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Point_<_Tp>& cv::Point_<_Tp>::operator=(const cv::Point_<_Tp>&) [with _Tp = int][m[K’
+[2.567s]  1200 | Point_<_Tp>& [01;36m[KPoint_<_Tp>[m[K::operator = (const Point_& pt)
+[2.567s]       |              [01;36m[K^~~~~~~~~~~[m[K
+[2.567s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1200:53:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Point3i[m[K’ {aka ‘[01m[Kcv::Point3_<int>[m[K’} to ‘[01m[Kconst cv::Point_<int>&[m[K’
+[2.567s]  1200 | Point_<_Tp>& Point_<_Tp>::operator = ([01;36m[Kconst Point_& pt[m[K)
+[2.567s]       |                                       [01;36m[K~~~~~~~~~~~~~~^~[m[K
+[2.567s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1207:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Point_<_Tp>& cv::Point_<_Tp>::operator=(cv::Point_<_Tp>&&) [with _Tp = int][m[K’
+[2.567s]  1207 | Point_<_Tp>& [01;36m[KPoint_<_Tp>[m[K::operator = (Point_&& pt) CV_NOEXCEPT
+[2.567s]       |              [01;36m[K^~~~~~~~~~~[m[K
+[2.567s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1207:48:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Point3i[m[K’ {aka ‘[01m[Kcv::Point3_<int>[m[K’} to ‘[01m[Kcv::Point_<int>&&[m[K’
+[2.567s]  1207 | Point_<_Tp>& Point_<_Tp>::operator = ([01;36m[KPoint_&& pt[m[K) CV_NOEXCEPT
+[2.567s]       |                                       [01;36m[K~~~~~~~~~^~[m[K
+[5.226s] gmake[2]: *** [CMakeFiles/occgrid_planner_base.dir/build.make:76: CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o] Error 1
+[5.226s] gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/occgrid_planner_base.dir/all] Error 2
+[5.226s] gmake: *** [Makefile:146: all] Error 2
+[5.227s] Invoked command in '/home/GTL/apaul/ros2_hw1/build/occgrid_planner_base' returned '2': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/occgrid_planner_base -- -j16 -l16
