@@ -1,0 +1,12 @@
+[0.850s] Invoking command in '/home/GTL/apaul/ros2_hw1/build/obstacle_avoidance_base': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/obstacle_avoidance_base -- -j16 -l16
+[0.881s] [35m[1mConsolidate compiler generated dependencies of target obstacle_avoidance_base[0m
+[0.924s] [ 50%] [32mBuilding CXX object CMakeFiles/obstacle_avoidance_base.dir/src/obstacle_avoidance.cpp.o[0m
+[5.409s] [01m[K/home/GTL/apaul/ros2_hw1/src/obstacle_avoidance_base/src/obstacle_avoidance.cpp:[m[K In member function ‘[01m[Kgeometry_msgs::msg::Twist ObstacleAvoidance::findClosestAcceptableVelocity(const Twist&)[m[K’:
+[5.409s] [01m[K/home/GTL/apaul/ros2_hw1/src/obstacle_avoidance_base/src/obstacle_avoidance.cpp:244:31:[m[K [01;31m[Kerror: [m[K‘[01m[Ktime_horizon[m[K’ was not declared in this scope; did you mean ‘[01m[Ktime_horizon_[m[K’?
+[5.409s]   244 |                     float d=v*[01;31m[Ktime_horizon[m[K; //! Definition of the distance d
+[5.409s]       |                               [01;31m[K^~~~~~~~~~~~[m[K
+[5.409s]       |                               [32m[Ktime_horizon_[m[K
+[8.692s] gmake[2]: *** [CMakeFiles/obstacle_avoidance_base.dir/build.make:76: CMakeFiles/obstacle_avoidance_base.dir/src/obstacle_avoidance.cpp.o] Error 1
+[8.692s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/obstacle_avoidance_base.dir/all] Error 2
+[8.692s] gmake: *** [Makefile:146: all] Error 2
+[8.694s] Invoked command in '/home/GTL/apaul/ros2_hw1/build/obstacle_avoidance_base' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/obstacle_avoidance_base -- -j16 -l16

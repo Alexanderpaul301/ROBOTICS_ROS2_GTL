@@ -1,0 +1,281 @@
+[0.406s] Invoking command in '/home/GTL/apaul/ros2_hw1/build/occgrid_planner_base': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/occgrid_planner_base -- -j16 -l16
+[0.527s] [ 33%] Built target path_follower_base
+[0.544s] [ 66%] Built target path_optimizer_base
+[0.571s] [35m[1mConsolidate compiler generated dependencies of target occgrid_planner_base[0m
+[0.629s] [ 83%] [32mBuilding CXX object CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o[0m
+[3.880s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:[m[K In member function ‘[01m[Kvoid OccupancyGridPlanner::target_callback(geometry_msgs::msg::PoseStamped_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.880s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:293:94:[m[K [01;31m[Kerror: [m[Ktoo many initializers for ‘[01m[Kstd::array<cv::Point3_<int>, 12>[m[K’
+[3.881s]   293 |                                                 cv::Point3i(0, 0, 6),cv::Point3i(0, 0, 7)[01;31m[K}[m[K;
+[3.881s]       |                                                                                          [01;31m[K^[m[K
+[3.881s] 
+[3.881s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:303:17:[m[K [01;31m[Kerror: [m[Ktoo many initializers for ‘[01m[Kstd::array<float, 12>[m[K’
+[3.881s]   303 |                 [01;31m[K}[m[K;
+[3.881s]       |                 [01;31m[K^[m[K
+[3.891s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:317:44:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[Kcv::Point3_<int>[m[K’ to non-scalar type ‘[01m[Kcv::Point[m[K’ {aka ‘[01m[Kcv::Point_<int>[m[K’} requested
+[3.891s]   317 |                 cv::Point this_cell = [01;31m[Khit->second[m[K;
+[3.891s]       |                                       [01;31m[K~~~~~^~~~~~[m[K
+[3.891s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:328:48:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator+[m[K’ (operand types are ‘[01m[Kcv::Point[m[K’ {aka ‘[01m[Kcv::Point_<int>[m[K’} and ‘[01m[Kstd::array<cv::Point3_<int>, 12>::value_type[m[K’ {aka ‘[01m[Kcv::Point3_<int>[m[K’})
+[3.891s]   328 |                     cv::Point dest = this_cell + neighbours[i];
+[3.891s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:56[m[K,
+[3.891s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[3.891s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13[m[K:
+[3.891s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1210:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int m, int n> cv::Matx<_Tp, m, n> cv::operator+(const cv::Matx<_Tp, m, n>&, const cv::Matx<_Tp, m, n>&)[m[K’
+[3.891s]  1210 | Matx<_Tp, m, n> [01;36m[Koperator[m[K + (const Matx<_Tp, m, n>& a, const Matx<_Tp, m, n>& b)
+[3.891s]       |                 [01;36m[K^~~~~~~~[m[K
+[3.891s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1210:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.891s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:328:62:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point[m[K’ {aka ‘[01m[Kcv::Point_<int>[m[K’} is not derived from ‘[01m[Kconst cv::Matx<_Tp, m, n>[m[K’
+[3.891s]   328 |                     cv::Point dest = this_cell + neighbours[i[01;36m[K][m[K;
+[3.892s]       |                                                              [01;36m[K^[m[K
+[3.892s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:56[m[K,
+[3.892s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[3.892s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13[m[K:
+[3.892s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1366:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int cn> cv::Vec<_Tp, m> cv::operator+(const cv::Vec<_Tp, m>&, const cv::Vec<_Tp, m>&)[m[K’
+[3.892s]  1366 | Vec<_Tp, cn> [01;36m[Koperator[m[K + (const Vec<_Tp, cn>& a, const Vec<_Tp, cn>& b)
+[3.892s]       |              [01;36m[K^~~~~~~~[m[K
+[3.892s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1366:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.892s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:328:62:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point[m[K’ {aka ‘[01m[Kcv::Point_<int>[m[K’} is not derived from ‘[01m[Kconst cv::Vec<_Tp, m>[m[K’
+[3.892s]   328 |                     cv::Point dest = this_cell + neighbours[i[01;36m[K][m[K;
+[3.892s]       |                                                              [01;36m[K^[m[K
+[3.892s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[3.892s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[3.892s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13[m[K:
+[3.892s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1041:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Complex<_Tp> cv::operator+(const cv::Complex<_Tp>&, const cv::Complex<_Tp>&)[m[K’
+[3.893s]  1041 | Complex<_Tp> [01;36m[Koperator[m[K + (const Complex<_Tp>& a, const Complex<_Tp>& b)
+[3.893s]       |              [01;36m[K^~~~~~~~[m[K
+[3.893s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1041:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.893s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:328:62:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point[m[K’ {aka ‘[01m[Kcv::Point_<int>[m[K’} is not derived from ‘[01m[Kconst cv::Complex<_Tp>[m[K’
+[3.893s]   328 |                     cv::Point dest = this_cell + neighbours[i[01;36m[K][m[K;
+[3.893s]       |                                                              [01;36m[K^[m[K
+[3.893s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[3.893s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[3.893s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13[m[K:
+[3.893s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1091:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Complex<_Tp> cv::operator+(const cv::Complex<_Tp>&, _Tp)[m[K’
+[3.893s]  1091 | Complex<_Tp> [01;36m[Koperator[m[K + (const Complex<_Tp>& a, _Tp b)
+[3.893s]       |              [01;36m[K^~~~~~~~[m[K
+[3.893s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1091:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.893s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:328:62:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point[m[K’ {aka ‘[01m[Kcv::Point_<int>[m[K’} is not derived from ‘[01m[Kconst cv::Complex<_Tp>[m[K’
+[3.893s]   328 |                     cv::Point dest = this_cell + neighbours[i[01;36m[K][m[K;
+[3.893s]       |                                                              [01;36m[K^[m[K
+[3.893s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[3.893s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[3.893s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13[m[K:
+[3.893s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1101:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Complex<_Tp> cv::operator+(_Tp, const cv::Complex<_Tp>&)[m[K’
+[3.893s]  1101 | Complex<_Tp> [01;36m[Koperator[m[K + (_Tp b, const Complex<_Tp>& a)
+[3.893s]       |              [01;36m[K^~~~~~~~[m[K
+[3.893s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1101:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.893s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:328:62:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<cv::Point3_<int>, 12>::value_type[m[K’ {aka ‘[01m[Kcv::Point3_<int>[m[K’} is not derived from ‘[01m[Kconst cv::Complex<_Tp>[m[K’
+[3.893s]   328 |                     cv::Point dest = this_cell + neighbours[i[01;36m[K][m[K;
+[3.893s]       |                                                              [01;36m[K^[m[K
+[3.893s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[3.894s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[3.894s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13[m[K:
+[3.894s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1333:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Point_<_Tp> cv::operator+(const cv::Point_<_Tp>&, const cv::Point_<_Tp>&)[m[K’
+[3.894s]  1333 | Point_<_Tp> [01;36m[Koperator[m[K + (const Point_<_Tp>& a, const Point_<_Tp>& b)
+[3.894s]       |             [01;36m[K^~~~~~~~[m[K
+[3.894s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1333:13:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.894s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:328:62:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<cv::Point3_<int>, 12>::value_type[m[K’ {aka ‘[01m[Kcv::Point3_<int>[m[K’} is not derived from ‘[01m[Kconst cv::Point_<_Tp>[m[K’
+[3.894s]   328 |                     cv::Point dest = this_cell + neighbours[i[01;36m[K][m[K;
+[3.894s]       |                                                              [01;36m[K^[m[K
+[3.894s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[3.894s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[3.894s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13[m[K:
+[3.894s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1602:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Point3_<_Tp> cv::operator+(const cv::Point3_<_Tp>&, const cv::Point3_<_Tp>&)[m[K’
+[3.894s]  1602 | Point3_<_Tp> [01;36m[Koperator[m[K + (const Point3_<_Tp>& a, const Point3_<_Tp>& b)
+[3.894s]       |              [01;36m[K^~~~~~~~[m[K
+[3.894s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1602:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.894s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:328:62:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point[m[K’ {aka ‘[01m[Kcv::Point_<int>[m[K’} is not derived from ‘[01m[Kconst cv::Point3_<_Tp>[m[K’
+[3.894s]   328 |                     cv::Point dest = this_cell + neighbours[i[01;36m[K][m[K;
+[3.894s]       |                                                              [01;36m[K^[m[K
+[3.894s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[3.894s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[3.894s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13[m[K:
+[3.894s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1799:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Size_<_Tp> cv::operator+(const cv::Size_<_Tp>&, const cv::Size_<_Tp>&)[m[K’
+[3.894s]  1799 | Size_<_Tp> [01;36m[Koperator[m[K + (const Size_<_Tp>& a, const Size_<_Tp>& b)
+[3.894s]       |            [01;36m[K^~~~~~~~[m[K
+[3.894s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1799:12:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.894s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:328:62:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point[m[K’ {aka ‘[01m[Kcv::Point_<int>[m[K’} is not derived from ‘[01m[Kconst cv::Size_<_Tp>[m[K’
+[3.895s]   328 |                     cv::Point dest = this_cell + neighbours[i[01;36m[K][m[K;
+[3.895s]       |                                                              [01;36m[K^[m[K
+[3.895s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[3.895s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[3.895s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13[m[K:
+[3.895s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:2012:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Rect_<_Tp> cv::operator+(const cv::Rect_<_Tp>&, const cv::Point_<_Tp>&)[m[K’
+[3.895s]  2012 | Rect_<_Tp> [01;36m[Koperator[m[K + (const Rect_<_Tp>& a, const Point_<_Tp>& b)
+[3.895s]       |            [01;36m[K^~~~~~~~[m[K
+[3.895s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:2012:12:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.895s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:328:62:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point[m[K’ {aka ‘[01m[Kcv::Point_<int>[m[K’} is not derived from ‘[01m[Kconst cv::Rect_<_Tp>[m[K’
+[3.895s]   328 |                     cv::Point dest = this_cell + neighbours[i[01;36m[K][m[K;
+[3.895s]       |                                                              [01;36m[K^[m[K
+[3.895s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[3.895s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[3.895s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13[m[K:
+[3.895s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:2024:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Rect_<_Tp> cv::operator+(const cv::Rect_<_Tp>&, const cv::Size_<_Tp>&)[m[K’
+[3.895s]  2024 | Rect_<_Tp> [01;36m[Koperator[m[K + (const Rect_<_Tp>& a, const Size_<_Tp>& b)
+[3.895s]       |            [01;36m[K^~~~~~~~[m[K
+[3.895s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:2024:12:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.895s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:328:62:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point[m[K’ {aka ‘[01m[Kcv::Point_<int>[m[K’} is not derived from ‘[01m[Kconst cv::Rect_<_Tp>[m[K’
+[3.895s]   328 |                     cv::Point dest = this_cell + neighbours[i[01;36m[K][m[K;
+[3.895s]       |                                                              [01;36m[K^[m[K
+[3.895s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[3.895s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[3.895s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13[m[K:
+[3.895s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:2316:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Scalar_<_Tp> cv::operator+(const cv::Scalar_<_Tp>&, const cv::Scalar_<_Tp>&)[m[K’
+[3.895s]  2316 | Scalar_<_Tp> [01;36m[Koperator[m[K + (const Scalar_<_Tp>& a, const Scalar_<_Tp>& b)
+[3.895s]       |              [01;36m[K^~~~~~~~[m[K
+[3.895s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:2316:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.895s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:328:62:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point[m[K’ {aka ‘[01m[Kcv::Point_<int>[m[K’} is not derived from ‘[01m[Kconst cv::Scalar_<_Tp>[m[K’
+[3.895s]   328 |                     cv::Point dest = this_cell + neighbours[i[01;36m[K][m[K;
+[3.896s]       |                                                              [01;36m[K^[m[K
+[3.896s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[3.896s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[3.896s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13[m[K:
+[3.896s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3606:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int m, int n> cv::MatExpr cv::operator+(const cv::Mat&, const cv::Matx<_Tp, m, n>&)[m[K’
+[3.896s]  3606 | MatExpr [01;36m[Koperator[m[K + (const Mat& a, const Matx<_Tp, m, n>& b) { return a + Mat(b); }
+[3.896s]       |         [01;36m[K^~~~~~~~[m[K
+[3.896s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3606:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.896s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:328:62:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<cv::Point3_<int>, 12>::value_type[m[K’ {aka ‘[01m[Kcv::Point3_<int>[m[K’} is not derived from ‘[01m[Kconst cv::Matx<_Tp, m, n>[m[K’
+[3.896s]   328 |                     cv::Point dest = this_cell + neighbours[i[01;36m[K][m[K;
+[3.896s]       |                                                              [01;36m[K^[m[K
+[3.896s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[3.896s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[3.896s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13[m[K:
+[3.896s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3608:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int m, int n> cv::MatExpr cv::operator+(const cv::Matx<_Tp, m, n>&, const cv::Mat&)[m[K’
+[3.896s]  3608 | MatExpr [01;36m[Koperator[m[K + (const Matx<_Tp, m, n>& a, const Mat& b) { return Mat(a) + b; }
+[3.896s]       |         [01;36m[K^~~~~~~~[m[K
+[3.896s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3608:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.896s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:328:62:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point[m[K’ {aka ‘[01m[Kcv::Point_<int>[m[K’} is not derived from ‘[01m[Kconst cv::Matx<_Tp, m, n>[m[K’
+[3.896s]   328 |                     cv::Point dest = this_cell + neighbours[i[01;36m[K][m[K;
+[3.896s]       |                                                              [01;36m[K^[m[K
+[3.896s] In file included from [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3764[m[K,
+[3.896s]                  from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[3.896s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[3.896s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13[m[K:
+[3.896s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:2587:24:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::MatConstIterator_<_Tp> cv::operator+(const cv::MatConstIterator_<_Tp>&, ptrdiff_t)[m[K’
+[3.896s]  2587 | MatConstIterator_<_Tp> [01;36m[Koperator[m[K + (const MatConstIterator_<_Tp>& a, ptrdiff_t ofs)
+[3.897s]       |                        [01;36m[K^~~~~~~~[m[K
+[3.897s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:2587:24:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.897s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:328:62:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point[m[K’ {aka ‘[01m[Kcv::Point_<int>[m[K’} is not derived from ‘[01m[Kconst cv::MatConstIterator_<_Tp>[m[K’
+[3.897s]   328 |                     cv::Point dest = this_cell + neighbours[i[01;36m[K][m[K;
+[3.897s]       |                                                              [01;36m[K^[m[K
+[3.897s] In file included from [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3764[m[K,
+[3.897s]                  from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[3.897s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[3.897s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13[m[K:
+[3.897s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:2594:24:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::MatConstIterator_<_Tp> cv::operator+(ptrdiff_t, const cv::MatConstIterator_<_Tp>&)[m[K’
+[3.897s]  2594 | MatConstIterator_<_Tp> [01;36m[Koperator[m[K + (ptrdiff_t ofs, const MatConstIterator_<_Tp>& a)
+[3.897s]       |                        [01;36m[K^~~~~~~~[m[K
+[3.897s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:2594:24:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.897s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:328:62:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<cv::Point3_<int>, 12>::value_type[m[K’ {aka ‘[01m[Kcv::Point3_<int>[m[K’} is not derived from ‘[01m[Kconst cv::MatConstIterator_<_Tp>[m[K’
+[3.897s]   328 |                     cv::Point dest = this_cell + neighbours[i[01;36m[K][m[K;
+[3.897s]       |                                                              [01;36m[K^[m[K
+[3.897s] In file included from [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3764[m[K,
+[3.897s]                  from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[3.897s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[3.897s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13[m[K:
+[3.897s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:2724:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::MatIterator_<_Tp> cv::operator+(const cv::MatIterator_<_Tp>&, ptrdiff_t)[m[K’
+[3.897s]  2724 | MatIterator_<_Tp> [01;36m[Koperator[m[K + (const MatIterator_<_Tp>& a, ptrdiff_t ofs)
+[3.897s]       |                   [01;36m[K^~~~~~~~[m[K
+[3.897s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:2724:19:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.897s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:328:62:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point[m[K’ {aka ‘[01m[Kcv::Point_<int>[m[K’} is not derived from ‘[01m[Kconst cv::MatIterator_<_Tp>[m[K’
+[3.897s]   328 |                     cv::Point dest = this_cell + neighbours[i[01;36m[K][m[K;
+[3.898s]       |                                                              [01;36m[K^[m[K
+[3.898s] In file included from [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3764[m[K,
+[3.898s]                  from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[3.898s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[3.898s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13[m[K:
+[3.898s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:2731:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::MatIterator_<_Tp> cv::operator+(ptrdiff_t, const cv::MatIterator_<_Tp>&)[m[K’
+[3.898s]  2731 | MatIterator_<_Tp> [01;36m[Koperator[m[K + (ptrdiff_t ofs, const MatIterator_<_Tp>& a)
+[3.898s]       |                   [01;36m[K^~~~~~~~[m[K
+[3.898s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:2731:19:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.898s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:328:62:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<cv::Point3_<int>, 12>::value_type[m[K’ {aka ‘[01m[Kcv::Point3_<int>[m[K’} is not derived from ‘[01m[Kconst cv::MatIterator_<_Tp>[m[K’
+[3.898s]   328 |                     cv::Point dest = this_cell + neighbours[i[01;36m[K][m[K;
+[3.898s]       |                                                              [01;36m[K^[m[K
+[3.898s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[3.898s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[3.898s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13[m[K:
+[3.898s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:2146:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Range cv::operator+(const cv::Range&, int)[m[K’
+[3.898s]  2146 | Range [01;36m[Koperator[m[K + (const Range& r1, int delta)
+[3.898s]       |       [01;36m[K^~~~~~~~[m[K
+[3.898s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:2146:32:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Point[m[K’ {aka ‘[01m[Kcv::Point_<int>[m[K’} to ‘[01m[Kconst cv::Range&[m[K’
+[3.898s]  2146 | Range operator + ([01;36m[Kconst Range& r1[m[K, int delta)
+[3.898s]       |                   [01;36m[K~~~~~~~~~~~~~^~[m[K
+[3.898s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:2152:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Range cv::operator+(int, const cv::Range&)[m[K’
+[3.898s]  2152 | Range [01;36m[Koperator[m[K + (int delta, const Range& r1)
+[3.898s]       |       [01;36m[K^~~~~~~~[m[K
+[3.898s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:2152:23:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Point[m[K’ {aka ‘[01m[Kcv::Point_<int>[m[K’} to ‘[01m[Kint[m[K’
+[3.898s]  2152 | Range operator + ([01;36m[Kint delta[m[K, const Range& r1)
+[3.898s]       |                   [01;36m[K~~~~^~~~~[m[K
+[3.898s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[3.899s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[3.899s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13[m[K:
+[3.899s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3597:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::MatExpr cv::operator+(const cv::Mat&, const cv::Mat&)[m[K’
+[3.899s]  3597 | CV_EXPORTS MatExpr [01;36m[Koperator[m[K + (const Mat& a, const Mat& b);
+[3.899s]       |                    [01;36m[K^~~~~~~~[m[K
+[3.899s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3597:43:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Point[m[K’ {aka ‘[01m[Kcv::Point_<int>[m[K’} to ‘[01m[Kconst cv::Mat&[m[K’
+[3.899s]  3597 | CV_EXPORTS MatExpr operator + ([01;36m[Kconst Mat& a[m[K, const Mat& b);
+[3.899s]       |                                [01;36m[K~~~~~~~~~~~^[m[K
+[3.899s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3598:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::MatExpr cv::operator+(const cv::Mat&, const Scalar&)[m[K’
+[3.899s]  3598 | CV_EXPORTS MatExpr [01;36m[Koperator[m[K + (const Mat& a, const Scalar& s);
+[3.899s]       |                    [01;36m[K^~~~~~~~[m[K
+[3.899s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3598:43:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Point[m[K’ {aka ‘[01m[Kcv::Point_<int>[m[K’} to ‘[01m[Kconst cv::Mat&[m[K’
+[3.899s]  3598 | CV_EXPORTS MatExpr operator + ([01;36m[Kconst Mat& a[m[K, const Scalar& s);
+[3.899s]       |                                [01;36m[K~~~~~~~~~~~^[m[K
+[3.899s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3599:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::MatExpr cv::operator+(const Scalar&, const cv::Mat&)[m[K’
+[3.899s]  3599 | CV_EXPORTS MatExpr [01;36m[Koperator[m[K + (const Scalar& s, const Mat& a);
+[3.899s]       |                    [01;36m[K^~~~~~~~[m[K
+[3.899s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3599:46:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Point[m[K’ {aka ‘[01m[Kcv::Point_<int>[m[K’} to ‘[01m[Kconst Scalar&[m[K’ {aka ‘[01m[Kconst cv::Scalar_<double>&[m[K’}
+[3.899s]  3599 | CV_EXPORTS MatExpr operator + ([01;36m[Kconst Scalar& s[m[K, const Mat& a);
+[3.899s]       |                                [01;36m[K~~~~~~~~~~~~~~^[m[K
+[3.899s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3600:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::MatExpr cv::operator+(const cv::MatExpr&, const cv::Mat&)[m[K’
+[3.899s]  3600 | CV_EXPORTS MatExpr [01;36m[Koperator[m[K + (const MatExpr& e, const Mat& m);
+[3.899s]       |                    [01;36m[K^~~~~~~~[m[K
+[3.899s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3600:47:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Point[m[K’ {aka ‘[01m[Kcv::Point_<int>[m[K’} to ‘[01m[Kconst cv::MatExpr&[m[K’
+[3.899s]  3600 | CV_EXPORTS MatExpr operator + ([01;36m[Kconst MatExpr& e[m[K, const Mat& m);
+[3.899s]       |                                [01;36m[K~~~~~~~~~~~~~~~^[m[K
+[3.899s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3601:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::MatExpr cv::operator+(const cv::Mat&, const cv::MatExpr&)[m[K’
+[3.899s]  3601 | CV_EXPORTS MatExpr [01;36m[Koperator[m[K + (const Mat& m, const MatExpr& e);
+[3.899s]       |                    [01;36m[K^~~~~~~~[m[K
+[3.900s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3601:43:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Point[m[K’ {aka ‘[01m[Kcv::Point_<int>[m[K’} to ‘[01m[Kconst cv::Mat&[m[K’
+[3.900s]  3601 | CV_EXPORTS MatExpr operator + ([01;36m[Kconst Mat& m[m[K, const MatExpr& e);
+[3.900s]       |                                [01;36m[K~~~~~~~~~~~^[m[K
+[3.900s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3602:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::MatExpr cv::operator+(const cv::MatExpr&, const Scalar&)[m[K’
+[3.900s]  3602 | CV_EXPORTS MatExpr [01;36m[Koperator[m[K + (const MatExpr& e, const Scalar& s);
+[3.900s]       |                    [01;36m[K^~~~~~~~[m[K
+[3.900s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3602:47:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Point[m[K’ {aka ‘[01m[Kcv::Point_<int>[m[K’} to ‘[01m[Kconst cv::MatExpr&[m[K’
+[3.900s]  3602 | CV_EXPORTS MatExpr operator + ([01;36m[Kconst MatExpr& e[m[K, const Scalar& s);
+[3.900s]       |                                [01;36m[K~~~~~~~~~~~~~~~^[m[K
+[3.900s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3603:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::MatExpr cv::operator+(const Scalar&, const cv::MatExpr&)[m[K’
+[3.900s]  3603 | CV_EXPORTS MatExpr [01;36m[Koperator[m[K + (const Scalar& s, const MatExpr& e);
+[3.900s]       |                    [01;36m[K^~~~~~~~[m[K
+[3.900s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3603:46:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Point[m[K’ {aka ‘[01m[Kcv::Point_<int>[m[K’} to ‘[01m[Kconst Scalar&[m[K’ {aka ‘[01m[Kconst cv::Scalar_<double>&[m[K’}
+[3.900s]  3603 | CV_EXPORTS MatExpr operator + ([01;36m[Kconst Scalar& s[m[K, const MatExpr& e);
+[3.900s]       |                                [01;36m[K~~~~~~~~~~~~~~^[m[K
+[3.900s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3604:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::MatExpr cv::operator+(const cv::MatExpr&, const cv::MatExpr&)[m[K’
+[3.900s]  3604 | CV_EXPORTS MatExpr [01;36m[Koperator[m[K + (const MatExpr& e1, const MatExpr& e2);
+[3.900s]       |                    [01;36m[K^~~~~~~~[m[K
+[3.900s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3604:47:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Point[m[K’ {aka ‘[01m[Kcv::Point_<int>[m[K’} to ‘[01m[Kconst cv::MatExpr&[m[K’
+[3.900s]  3604 | CV_EXPORTS MatExpr operator + ([01;36m[Kconst MatExpr& e1[m[K, const MatExpr& e2);
+[3.900s]       |                                [01;36m[K~~~~~~~~~~~~~~~^~[m[K
+[3.900s] In file included from [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3764[m[K,
+[3.900s]                  from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[3.900s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[3.900s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13[m[K:
+[3.900s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:2439:18:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::MatConstIterator cv::operator+(const cv::MatConstIterator&, ptrdiff_t)[m[K’
+[3.900s]  2439 | MatConstIterator [01;36m[Koperator[m[K + (const MatConstIterator& a, ptrdiff_t ofs)
+[3.900s]       |                  [01;36m[K^~~~~~~~[m[K
+[3.900s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:2439:54:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Point[m[K’ {aka ‘[01m[Kcv::Point_<int>[m[K’} to ‘[01m[Kconst cv::MatConstIterator&[m[K’
+[3.901s]  2439 | MatConstIterator operator + ([01;36m[Kconst MatConstIterator& a[m[K, ptrdiff_t ofs)
+[3.901s]       |                              [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[3.901s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:2446:18:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::MatConstIterator cv::operator+(ptrdiff_t, const cv::MatConstIterator&)[m[K’
+[3.901s]  2446 | MatConstIterator [01;36m[Koperator[m[K + (ptrdiff_t ofs, const MatConstIterator& a)
+[3.901s]       |                  [01;36m[K^~~~~~~~[m[K
+[3.901s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:2446:40:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Point[m[K’ {aka ‘[01m[Kcv::Point_<int>[m[K’} to ‘[01m[Kptrdiff_t[m[K’ {aka ‘[01m[Klong int[m[K’}
+[3.901s]  2446 | MatConstIterator operator + ([01;36m[Kptrdiff_t ofs[m[K, const MatConstIterator& a)
+[3.901s]       |                              [01;36m[K~~~~~~~~~~^~~[m[K
+[3.901s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:363:42:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[KVec<[...],[01;32m[K3[m[K>[m[K’ to non-scalar type ‘[01m[KVec<[...],[01;32m[K2[m[K>[m[K’ requested
+[3.901s]   363 |                 cv::Vec2s p = [01;31m[Kpredecessor(target.x,target.y)[m[K;
+[3.901s]       |                               [01;31m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[7.259s] gmake[2]: *** [CMakeFiles/occgrid_planner_base.dir/build.make:76: CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o] Error 1
+[7.260s] gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/occgrid_planner_base.dir/all] Error 2
+[7.261s] gmake: *** [Makefile:146: all] Error 2
+[7.262s] Invoked command in '/home/GTL/apaul/ros2_hw1/build/occgrid_planner_base' returned '2': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/occgrid_planner_base -- -j16 -l16

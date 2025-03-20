@@ -1,0 +1,288 @@
+[0.000000] (-) TimerEvent: {}
+[0.000181] (-) JobUnselected: {'identifier': 'ar_loc_base'}
+[0.000211] (-) JobUnselected: {'identifier': 'ar_mapping_base'}
+[0.000222] (-) JobUnselected: {'identifier': 'ar_slam_base'}
+[0.000230] (-) JobUnselected: {'identifier': 'button_server'}
+[0.000238] (-) JobUnselected: {'identifier': 'collision_avoidance_base'}
+[0.000251] (-) JobUnselected: {'identifier': 'cs7630_msgs'}
+[0.000259] (-) JobUnselected: {'identifier': 'face_detect_base'}
+[0.000266] (-) JobUnselected: {'identifier': 'face_msg'}
+[0.000273] (-) JobUnselected: {'identifier': 'floor_nav'}
+[0.000281] (-) JobUnselected: {'identifier': 'joy_pack'}
+[0.000288] (-) JobUnselected: {'identifier': 'keyboard_teleop'}
+[0.000295] (-) JobUnselected: {'identifier': 'occgrid_planner'}
+[0.000302] (-) JobUnselected: {'identifier': 'occgrid_planner_base'}
+[0.000314] (-) JobUnselected: {'identifier': 'rover_driver_base'}
+[0.000322] (-) JobUnselected: {'identifier': 'task_manager_client_py'}
+[0.000329] (-) JobUnselected: {'identifier': 'task_manager_lib'}
+[0.000336] (-) JobUnselected: {'identifier': 'task_manager_msgs'}
+[0.000343] (-) JobUnselected: {'identifier': 'task_manager_nav2'}
+[0.000350] (-) JobUnselected: {'identifier': 'task_manager_sync'}
+[0.000358] (-) JobUnselected: {'identifier': 'turtlebot_launch'}
+[0.000365] (-) JobUnselected: {'identifier': 'vrep4_helpers'}
+[0.000372] (-) JobUnselected: {'identifier': 'vrep_ros_teleop'}
+[0.000379] (-) JobUnselected: {'identifier': 'wifi_map_base'}
+[0.000386] (-) JobUnselected: {'identifier': 'wpa_cli_msgs'}
+[0.000395] (obstacle_avoidance_base) JobQueued: {'identifier': 'obstacle_avoidance_base', 'dependencies': OrderedDict()}
+[0.000407] (obstacle_avoidance_base) JobStarted: {'identifier': 'obstacle_avoidance_base'}
+[0.009604] (obstacle_avoidance_base) JobProgress: {'identifier': 'obstacle_avoidance_base', 'progress': 'cmake'}
+[0.012457] (obstacle_avoidance_base) JobProgress: {'identifier': 'obstacle_avoidance_base', 'progress': 'build'}
+[0.013433] (obstacle_avoidance_base) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/GTL/apaul/ros2_hw1/build/obstacle_avoidance_base', '--', '-j16', '-l16'], 'cwd': '/home/GTL/apaul/ros2_hw1/build/obstacle_avoidance_base', 'env': OrderedDict([('USER', 'apaul'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/GTL/apaul'), ('CYCLONEDDS_URI', '/cs-share/pradalier/gtlpc_cyclonedds.xml'), ('OLDPWD', '/home/GTL/apaul'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2380'), ('SYSTEMD_EXEC_PID', '2724'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/37726/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3111'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'apaul'), ('JOURNAL_STREAM', '8:21125'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'apaul'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/gtlpc103.georgiatech-metz.fr:@/tmp/.ICE-unix/2560,unix/gtlpc103.georgiatech-metz.fr:/tmp/.ICE-unix/2560'), ('INVOCATION_ID', 'fd165b7b1b8d47f0bc18c79baf35be8d'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/37726'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/37726/gdm/Xauthority'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/37726/keyring/ssh'), ('ROS_DOMAIN_ID', '53'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:a2814dfb-42fb-4bab-aed1-7548fc9fd8a0'), ('KRB5CCNAME', 'FILE:/tmp/krb5cc_37726'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/37726/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/GTL/apaul/ros2_hw1/build/obstacle_avoidance_base'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.062494] (obstacle_avoidance_base) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target obstacle_avoidance_base\x1b[0m\n'}
+[0.098454] (-) TimerEvent: {}
+[0.147142] (obstacle_avoidance_base) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/obstacle_avoidance_base.dir/src/obstacle_avoidance.cpp.o\x1b[0m\n'}
+[0.198566] (-) TimerEvent: {}
+[0.298813] (-) TimerEvent: {}
+[0.399061] (-) TimerEvent: {}
+[0.499319] (-) TimerEvent: {}
+[0.599583] (-) TimerEvent: {}
+[0.699839] (-) TimerEvent: {}
+[0.800097] (-) TimerEvent: {}
+[0.900357] (-) TimerEvent: {}
+[1.000619] (-) TimerEvent: {}
+[1.100852] (-) TimerEvent: {}
+[1.201111] (-) TimerEvent: {}
+[1.301366] (-) TimerEvent: {}
+[1.401623] (-) TimerEvent: {}
+[1.501837] (-) TimerEvent: {}
+[1.602112] (-) TimerEvent: {}
+[1.702367] (-) TimerEvent: {}
+[1.802623] (-) TimerEvent: {}
+[1.902883] (-) TimerEvent: {}
+[2.003146] (-) TimerEvent: {}
+[2.103411] (-) TimerEvent: {}
+[2.203682] (-) TimerEvent: {}
+[2.303974] (-) TimerEvent: {}
+[2.404256] (-) TimerEvent: {}
+[2.504533] (-) TimerEvent: {}
+[2.604814] (-) TimerEvent: {}
+[2.705083] (-) TimerEvent: {}
+[2.805353] (-) TimerEvent: {}
+[2.905608] (-) TimerEvent: {}
+[3.005887] (-) TimerEvent: {}
+[3.106223] (-) TimerEvent: {}
+[3.206516] (-) TimerEvent: {}
+[3.306795] (-) TimerEvent: {}
+[3.535937] (-) TimerEvent: {}
+[3.636211] (-) TimerEvent: {}
+[3.736430] (-) TimerEvent: {}
+[3.836674] (-) TimerEvent: {}
+[3.936956] (-) TimerEvent: {}
+[4.037206] (-) TimerEvent: {}
+[4.137460] (-) TimerEvent: {}
+[4.237718] (-) TimerEvent: {}
+[4.337969] (-) TimerEvent: {}
+[4.438234] (-) TimerEvent: {}
+[4.538517] (-) TimerEvent: {}
+[4.638773] (-) TimerEvent: {}
+[4.738998] (-) TimerEvent: {}
+[4.839318] (-) TimerEvent: {}
+[4.939603] (-) TimerEvent: {}
+[5.039862] (-) TimerEvent: {}
+[5.140143] (-) TimerEvent: {}
+[5.240433] (-) TimerEvent: {}
+[5.340709] (-) TimerEvent: {}
+[5.440950] (-) TimerEvent: {}
+[5.541209] (-) TimerEvent: {}
+[5.641464] (-) TimerEvent: {}
+[5.741738] (-) TimerEvent: {}
+[5.841997] (-) TimerEvent: {}
+[5.942291] (-) TimerEvent: {}
+[6.042547] (-) TimerEvent: {}
+[6.142819] (-) TimerEvent: {}
+[6.243108] (-) TimerEvent: {}
+[6.343371] (-) TimerEvent: {}
+[6.443641] (-) TimerEvent: {}
+[6.543907] (-) TimerEvent: {}
+[6.644178] (-) TimerEvent: {}
+[6.744414] (-) TimerEvent: {}
+[6.844683] (-) TimerEvent: {}
+[6.944932] (-) TimerEvent: {}
+[7.045178] (-) TimerEvent: {}
+[7.145432] (-) TimerEvent: {}
+[7.245689] (-) TimerEvent: {}
+[7.345938] (-) TimerEvent: {}
+[7.446193] (-) TimerEvent: {}
+[7.546456] (-) TimerEvent: {}
+[7.646726] (-) TimerEvent: {}
+[7.747052] (-) TimerEvent: {}
+[7.847319] (-) TimerEvent: {}
+[7.947573] (-) TimerEvent: {}
+[8.047831] (-) TimerEvent: {}
+[8.148148] (-) TimerEvent: {}
+[8.248413] (-) TimerEvent: {}
+[8.348683] (-) TimerEvent: {}
+[8.448951] (-) TimerEvent: {}
+[8.549219] (-) TimerEvent: {}
+[8.649475] (-) TimerEvent: {}
+[8.749727] (-) TimerEvent: {}
+[8.849986] (-) TimerEvent: {}
+[8.950238] (-) TimerEvent: {}
+[9.050500] (-) TimerEvent: {}
+[9.150745] (-) TimerEvent: {}
+[9.251008] (-) TimerEvent: {}
+[9.351288] (-) TimerEvent: {}
+[9.451554] (-) TimerEvent: {}
+[9.551895] (-) TimerEvent: {}
+[9.652174] (-) TimerEvent: {}
+[9.752458] (-) TimerEvent: {}
+[9.852753] (-) TimerEvent: {}
+[9.953123] (-) TimerEvent: {}
+[10.053449] (-) TimerEvent: {}
+[10.153717] (-) TimerEvent: {}
+[10.253991] (-) TimerEvent: {}
+[10.354238] (-) TimerEvent: {}
+[10.454495] (-) TimerEvent: {}
+[10.554753] (-) TimerEvent: {}
+[10.655027] (-) TimerEvent: {}
+[10.755282] (-) TimerEvent: {}
+[10.855533] (-) TimerEvent: {}
+[10.955766] (-) TimerEvent: {}
+[11.056145] (-) TimerEvent: {}
+[11.156387] (-) TimerEvent: {}
+[11.256694] (-) TimerEvent: {}
+[11.356957] (-) TimerEvent: {}
+[11.457209] (-) TimerEvent: {}
+[11.557469] (-) TimerEvent: {}
+[11.657699] (-) TimerEvent: {}
+[11.757961] (-) TimerEvent: {}
+[11.858235] (-) TimerEvent: {}
+[11.958528] (-) TimerEvent: {}
+[12.058802] (-) TimerEvent: {}
+[12.159060] (-) TimerEvent: {}
+[12.259315] (-) TimerEvent: {}
+[12.359581] (-) TimerEvent: {}
+[12.459823] (-) TimerEvent: {}
+[12.560051] (-) TimerEvent: {}
+[12.660268] (-) TimerEvent: {}
+[12.760474] (-) TimerEvent: {}
+[12.860704] (-) TimerEvent: {}
+[12.960936] (-) TimerEvent: {}
+[13.061202] (-) TimerEvent: {}
+[13.161437] (-) TimerEvent: {}
+[13.261663] (-) TimerEvent: {}
+[13.361891] (-) TimerEvent: {}
+[13.462124] (-) TimerEvent: {}
+[13.562364] (-) TimerEvent: {}
+[13.662721] (-) TimerEvent: {}
+[13.762978] (-) TimerEvent: {}
+[13.863229] (-) TimerEvent: {}
+[13.963504] (-) TimerEvent: {}
+[14.063756] (-) TimerEvent: {}
+[14.164013] (-) TimerEvent: {}
+[14.264260] (-) TimerEvent: {}
+[14.364478] (-) TimerEvent: {}
+[14.464711] (-) TimerEvent: {}
+[14.564946] (-) TimerEvent: {}
+[14.665210] (-) TimerEvent: {}
+[14.765455] (-) TimerEvent: {}
+[14.865691] (-) TimerEvent: {}
+[14.965938] (-) TimerEvent: {}
+[15.066200] (-) TimerEvent: {}
+[15.166459] (-) TimerEvent: {}
+[15.266713] (-) TimerEvent: {}
+[15.366964] (-) TimerEvent: {}
+[15.467222] (-) TimerEvent: {}
+[15.567498] (-) TimerEvent: {}
+[15.667762] (-) TimerEvent: {}
+[15.768033] (-) TimerEvent: {}
+[15.868330] (-) TimerEvent: {}
+[15.968589] (-) TimerEvent: {}
+[16.068837] (-) TimerEvent: {}
+[16.169079] (-) TimerEvent: {}
+[16.269321] (-) TimerEvent: {}
+[16.369587] (-) TimerEvent: {}
+[16.469849] (-) TimerEvent: {}
+[16.570104] (-) TimerEvent: {}
+[16.670365] (-) TimerEvent: {}
+[16.770666] (-) TimerEvent: {}
+[16.870940] (-) TimerEvent: {}
+[16.971210] (-) TimerEvent: {}
+[17.071471] (-) TimerEvent: {}
+[17.171733] (-) TimerEvent: {}
+[17.271992] (-) TimerEvent: {}
+[17.372322] (-) TimerEvent: {}
+[17.472552] (-) TimerEvent: {}
+[17.572784] (-) TimerEvent: {}
+[17.673099] (-) TimerEvent: {}
+[17.773387] (-) TimerEvent: {}
+[17.873627] (-) TimerEvent: {}
+[17.973894] (-) TimerEvent: {}
+[18.074136] (-) TimerEvent: {}
+[18.174384] (-) TimerEvent: {}
+[18.274639] (-) TimerEvent: {}
+[18.374892] (-) TimerEvent: {}
+[18.475229] (-) TimerEvent: {}
+[18.575576] (-) TimerEvent: {}
+[18.675840] (-) TimerEvent: {}
+[18.776100] (-) TimerEvent: {}
+[18.876351] (-) TimerEvent: {}
+[18.976618] (-) TimerEvent: {}
+[19.098512] (-) TimerEvent: {}
+[19.198788] (-) TimerEvent: {}
+[19.299057] (-) TimerEvent: {}
+[19.399317] (-) TimerEvent: {}
+[19.499587] (-) TimerEvent: {}
+[19.599849] (-) TimerEvent: {}
+[19.700099] (-) TimerEvent: {}
+[19.800398] (-) TimerEvent: {}
+[19.900674] (-) TimerEvent: {}
+[20.000896] (-) TimerEvent: {}
+[20.101144] (-) TimerEvent: {}
+[20.201366] (-) TimerEvent: {}
+[20.301590] (-) TimerEvent: {}
+[20.401853] (-) TimerEvent: {}
+[20.502153] (-) TimerEvent: {}
+[20.602437] (-) TimerEvent: {}
+[20.702736] (-) TimerEvent: {}
+[20.802996] (-) TimerEvent: {}
+[20.903258] (-) TimerEvent: {}
+[21.003497] (-) TimerEvent: {}
+[21.103756] (-) TimerEvent: {}
+[21.169934] (obstacle_avoidance_base) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable obstacle_avoidance_base\x1b[0m\n'}
+[21.203890] (-) TimerEvent: {}
+[21.304165] (-) TimerEvent: {}
+[21.404407] (-) TimerEvent: {}
+[21.504677] (-) TimerEvent: {}
+[21.604950] (-) TimerEvent: {}
+[21.705255] (-) TimerEvent: {}
+[21.805480] (-) TimerEvent: {}
+[21.905736] (-) TimerEvent: {}
+[22.005982] (-) TimerEvent: {}
+[22.106221] (-) TimerEvent: {}
+[22.206465] (-) TimerEvent: {}
+[22.306699] (-) TimerEvent: {}
+[22.406940] (-) TimerEvent: {}
+[22.493082] (obstacle_avoidance_base) StdoutLine: {'line': b'[100%] Built target obstacle_avoidance_base\n'}
+[22.503485] (obstacle_avoidance_base) CommandEnded: {'returncode': 0}
+[22.507482] (-) TimerEvent: {}
+[22.539523] (obstacle_avoidance_base) JobProgress: {'identifier': 'obstacle_avoidance_base', 'progress': 'install'}
+[22.559089] (obstacle_avoidance_base) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/GTL/apaul/ros2_hw1/build/obstacle_avoidance_base'], 'cwd': '/home/GTL/apaul/ros2_hw1/build/obstacle_avoidance_base', 'env': OrderedDict([('USER', 'apaul'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/GTL/apaul'), ('CYCLONEDDS_URI', '/cs-share/pradalier/gtlpc_cyclonedds.xml'), ('OLDPWD', '/home/GTL/apaul'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2380'), ('SYSTEMD_EXEC_PID', '2724'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/37726/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3111'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'apaul'), ('JOURNAL_STREAM', '8:21125'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'apaul'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/gtlpc103.georgiatech-metz.fr:@/tmp/.ICE-unix/2560,unix/gtlpc103.georgiatech-metz.fr:/tmp/.ICE-unix/2560'), ('INVOCATION_ID', 'fd165b7b1b8d47f0bc18c79baf35be8d'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/37726'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/37726/gdm/Xauthority'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/37726/keyring/ssh'), ('ROS_DOMAIN_ID', '53'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:a2814dfb-42fb-4bab-aed1-7548fc9fd8a0'), ('KRB5CCNAME', 'FILE:/tmp/krb5cc_37726'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/37726/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/GTL/apaul/ros2_hw1/build/obstacle_avoidance_base'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[22.571965] (obstacle_avoidance_base) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[22.574001] (obstacle_avoidance_base) StdoutLine: {'line': b'-- Installing: /home/GTL/apaul/ros2_hw1/install/obstacle_avoidance_base/lib/obstacle_avoidance_base/obstacle_avoidance_base\n'}
+[22.607630] (-) TimerEvent: {}
+[22.707894] (-) TimerEvent: {}
+[22.808137] (-) TimerEvent: {}
+[22.836511] (obstacle_avoidance_base) StdoutLine: {'line': b'-- Set runtime path of "/home/GTL/apaul/ros2_hw1/install/obstacle_avoidance_base/lib/obstacle_avoidance_base/obstacle_avoidance_base" to ""\n'}
+[22.836792] (obstacle_avoidance_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/obstacle_avoidance_base/share/obstacle_avoidance_base\n'}
+[22.837811] (obstacle_avoidance_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/obstacle_avoidance_base/share/obstacle_avoidance_base/teleop_mux_planner_oa.launch.py\n'}
+[22.838234] (obstacle_avoidance_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/obstacle_avoidance_base/share/obstacle_avoidance_base/teleop_mux_oa.launch.py\n'}
+[22.838796] (obstacle_avoidance_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/obstacle_avoidance_base/share/ament_index/resource_index/package_run_dependencies/obstacle_avoidance_base\n'}
+[22.839413] (obstacle_avoidance_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/obstacle_avoidance_base/share/ament_index/resource_index/parent_prefix_path/obstacle_avoidance_base\n'}
+[22.839875] (obstacle_avoidance_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/obstacle_avoidance_base/share/obstacle_avoidance_base/environment/ament_prefix_path.sh\n'}
+[22.840650] (obstacle_avoidance_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/obstacle_avoidance_base/share/obstacle_avoidance_base/environment/ament_prefix_path.dsv\n'}
+[22.841123] (obstacle_avoidance_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/obstacle_avoidance_base/share/obstacle_avoidance_base/environment/path.sh\n'}
+[22.841824] (obstacle_avoidance_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/obstacle_avoidance_base/share/obstacle_avoidance_base/environment/path.dsv\n'}
+[22.842325] (obstacle_avoidance_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/obstacle_avoidance_base/share/obstacle_avoidance_base/local_setup.bash\n'}
+[22.842792] (obstacle_avoidance_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/obstacle_avoidance_base/share/obstacle_avoidance_base/local_setup.sh\n'}
+[22.843349] (obstacle_avoidance_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/obstacle_avoidance_base/share/obstacle_avoidance_base/local_setup.zsh\n'}
+[22.844157] (obstacle_avoidance_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/obstacle_avoidance_base/share/obstacle_avoidance_base/local_setup.dsv\n'}
+[22.844878] (obstacle_avoidance_base) StdoutLine: {'line': b'-- Installing: /home/GTL/apaul/ros2_hw1/install/obstacle_avoidance_base/share/obstacle_avoidance_base/package.dsv\n'}
+[22.849317] (obstacle_avoidance_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/obstacle_avoidance_base/share/ament_index/resource_index/packages/obstacle_avoidance_base\n'}
+[22.849717] (obstacle_avoidance_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/obstacle_avoidance_base/share/obstacle_avoidance_base/cmake/obstacle_avoidance_baseConfig.cmake\n'}
+[22.850173] (obstacle_avoidance_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/obstacle_avoidance_base/share/obstacle_avoidance_base/cmake/obstacle_avoidance_baseConfig-version.cmake\n'}
+[22.850694] (obstacle_avoidance_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/obstacle_avoidance_base/share/obstacle_avoidance_base/package.xml\n'}
+[22.853447] (obstacle_avoidance_base) CommandEnded: {'returncode': 0}
+[22.908695] (-) TimerEvent: {}
+[22.921032] (obstacle_avoidance_base) JobEnded: {'identifier': 'obstacle_avoidance_base', 'rc': 0}
+[22.922860] (-) EventReactorShutdown: {}

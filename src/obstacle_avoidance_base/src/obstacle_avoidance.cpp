@@ -214,12 +214,12 @@ class ObstacleAvoidance : public rclcpp::Node {
             // max_w = std::min(max_w,max_w);
 
             // Limits of Linear Velocity
-            min_v=max_linear_velocity-max_linear_accel*time_horizon;
-            max_v=max_linear_velocity+max_linear_accel*time_horizon;
+            min_v=std::max(min_v,current_velocity_.linear.x-max_linear_accel_*time_horizon_);
+            max_v=std::min(max_v,current_velocity_.linear.x+max_linear_accel_*time_horizon_);
 
             // Limits of Angular Velocity
-            min_w=max_angular_velocity-max_angular_accel*time_horizon;
-            max_w=max_angular_velocity+max_angular_accel*time_horizon;
+            min_w=std::max(min_v,current_velocity_.angular.z-max_angular_accel_*time_horizon_);
+            max_w=std::min(max_v,current_velocity_.angular.z+max_angular_accel_*time_horizon_);
 
             // From that, we know which velocities we need to consider and we
             // creat a small matrix to help visualising Va (Vr)
@@ -240,16 +240,29 @@ class ObstacleAvoidance : public rclcpp::Node {
                 for (unsigned int i=0;i<n_w;i++) {
                     double w = min_w + i*angular_velocity_resolution_;
                     // ! The following line has to be modified by using occupancy_dalpha (checking if trajectory is free).
-                    float alpha=atan2(v,w); //! Definition of the angle alpha
-                    float d=v*time_horizon; //! Definition of the distance d
-                    if (occupancy_dalpha(d,alpha)==OCCUPIED){
-                        Va(j,i) = 0;
-                    } 
-                    else {
-                        Va(j,i) = ;
+                    double alpha=atan2(v,w); //! Definition of the angle alpha
+                    // double d = (w == 0) ? v * time_horizon_ : (v / w) * sin(w * time_horizon_);
+
+                    double d=v*time_horizon_; //! Definition of the distance d
+                    
+                    scores(j,i)=exp(-k_v_* (v-max_linear_velocity_)*(v-max_linear_velocity_) -k_w_*(w-max_angular_velocity_)*(w-max_angular_velocity_));
+
+                    // ! We check if the path is free 
+                    if (occupancy_dalpha(d,alpha)==FREE){
+                        Va(j,i) = FREE;
+                        // ! Let's now compute the scores of the different velocities 
+                        if (scores(j,i)>best_score) {
+                            best_score=scores(j,i);
+                            best_v=v/2;
+                            best_w=w/2;
+                        }
                     }
-                      
-                    scores(j,i) = v+w;// Stupid value to avoid the "unused variable" warning
+                    // ! Case where the path is blocked by and obstacle
+                    else {
+                        Va(j,i) = OCCUPIED;
+                        best_v= 0;
+                        best_w= w/2;
+                    }
                 }
             }
             RCLCPP_INFO(this->get_logger(),"Best score %f for (%f,%f)",

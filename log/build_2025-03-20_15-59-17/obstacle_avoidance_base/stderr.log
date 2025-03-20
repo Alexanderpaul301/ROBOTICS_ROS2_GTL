@@ -1,0 +1,24 @@
+[01m[K/home/GTL/apaul/ros2_hw1/src/obstacle_avoidance_base/src/obstacle_avoidance.cpp:[m[K In member function ‘[01m[Kgeometry_msgs::msg::Twist ObstacleAvoidance::findClosestAcceptableVelocity(const Twist&)[m[K’:
+[01m[K/home/GTL/apaul/ros2_hw1/src/obstacle_avoidance_base/src/obstacle_avoidance.cpp:217:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_linear_accel[m[K’ was not declared in this scope; did you mean ‘[01m[Kmax_linear_accel_[m[K’?
+  217 |             min_v=current_velocity_.linear.x-[01;31m[Kmax_linear_accel[m[K*time_horizon;
+      |                                              [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |                                              [32m[Kmax_linear_accel_[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/obstacle_avoidance_base/src/obstacle_avoidance.cpp:217:63:[m[K [01;31m[Kerror: [m[K‘[01m[Ktime_horizon[m[K’ was not declared in this scope; did you mean ‘[01m[Ktime_horizon_[m[K’?
+  217 |             min_v=current_velocity_.linear.x-max_linear_accel*[01;31m[Ktime_horizon[m[K;
+      |                                                               [01;31m[K^~~~~~~~~~~~[m[K
+      |                                                               [32m[Ktime_horizon_[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/obstacle_avoidance_base/src/obstacle_avoidance.cpp:221:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_angular_accel[m[K’ was not declared in this scope; did you mean ‘[01m[Kmax_angular_accel_[m[K’?
+  221 |             min_w=current_velocity_.angular.z-[01;31m[Kmax_angular_accel[m[K*time_horizon;
+      |                                               [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                                               [32m[Kmax_angular_accel_[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/obstacle_avoidance_base/src/obstacle_avoidance.cpp:245:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kk_v[m[K’ was not declared in this scope; did you mean ‘[01m[Kk_v_[m[K’?
+  245 |                     scores(j,i)=exp(-[01;31m[Kk_v[m[K* (v-max_linear_velocity_)*(v-max_linear_velocity_) -k_w*(w-max_angular_velocity_)*(w-max_angular_velocity_));
+      |                                      [01;31m[K^~~[m[K
+      |                                      [32m[Kk_v_[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/obstacle_avoidance_base/src/obstacle_avoidance.cpp:245:94:[m[K [01;31m[Kerror: [m[K‘[01m[Kk_w[m[K’ was not declared in this scope; did you mean ‘[01m[Kk_w_[m[K’?
+  245 |        scores(j,i)=exp(-k_v* (v-max_linear_velocity_)*(v-max_linear_velocity_) -[01;31m[Kk_w[m[K*(w-max_angular_velocity_)*(w-max_angular_velocity_));
+      |                                                                                 [01;31m[K^~~[m[K
+      |                                                                                 [32m[Kk_w_[m[K
+gmake[2]: *** [CMakeFiles/obstacle_avoidance_base.dir/build.make:76: CMakeFiles/obstacle_avoidance_base.dir/src/obstacle_avoidance.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/obstacle_avoidance_base.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
