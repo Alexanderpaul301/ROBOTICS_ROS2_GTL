@@ -244,24 +244,21 @@ class ObstacleAvoidance : public rclcpp::Node {
                     // double d = (w == 0) ? v * time_horizon_ : (v / w) * sin(w * time_horizon_);
 
                     double d=v*time_horizon_; //! Definition of the distance d
-                    
-                    scores(j,i)=exp(-k_v_* (v-max_linear_velocity_)*(v-max_linear_velocity_) -k_w_*(w-max_angular_velocity_)*(w-max_angular_velocity_));
 
                     // ! We check if the path is free 
                     if (occupancy_dalpha(d,alpha)==FREE){
                         Va(j,i) = FREE;
+                        scores(j,i)=255*exp(-k_v_* (v-desired.linear.x)*(v-desired.linear.x) -k_w_*(w-desired.angular.z)*(w-desired.angular.z)); // ! We only compute the scores if the the cell is free.
                         // ! Let's now compute the scores of the different velocities 
                         if (scores(j,i)>best_score) {
                             best_score=scores(j,i);
-                            best_v=v/2;
-                            best_w=w/2;
+                            best_v=v;
+                            best_w=w;
                         }
                     }
                     // ! Case where the path is blocked by and obstacle
                     else {
                         Va(j,i) = OCCUPIED;
-                        best_v= 0;
-                        best_w= w/2;
                     }
                 }
             }
