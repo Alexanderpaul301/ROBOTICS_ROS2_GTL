@@ -62,7 +62,7 @@ def generate_launch_description():
             parameters=[
                 {'~/axis_linear_x': 1},
                 {'~/axis_angular': 0},
-                {'~/scale_linear_x': 0.2},
+                {'~/scale_linear_x': 0.4},
                 {'~/scale_angular': 1.},
                 {'~/timeout': 1.0}
                 ],
@@ -99,8 +99,8 @@ def generate_launch_description():
                 {"~/angular_velocity_resolution": 0.05},
                 {"~/robot_radius": 0.1},
                 {"~/time_horizon": 2.0},
-                {"~/k_v": 10.0},
-                {"~/k_w": 1.0},
+                {"~/k_v": 5.0},
+                {"~/k_w": 0.5},
                 ],
             remappings=[
                 ('~/scans', '/vrep/hokuyo'),
@@ -142,7 +142,7 @@ def generate_launch_description():
                 {'~/Ky': 0.0},
                 {'~/Ktheta': 1.0},
                 {'~/max_rot_speed': 1.0},
-                {'~/max_velocity': 0.1},
+                {'~/max_velocity': 1.0},
                 {'~/max_y_error': 1.0},
                 {'~/max_error': 0.5},
                 {'~/look_ahead': 1.0},

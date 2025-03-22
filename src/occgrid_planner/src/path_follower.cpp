@@ -180,7 +180,7 @@ class PathFollower : public rclcpp::Node {
                 pose2d_pub_->publish(error);
                 if (hypot(error.x,error.y)>max_error_) {
                     // add the time of while to the delay
-                    delay_ += period_;
+                    delay_ += 2*period_;
                     // there is a little bug, then the robot is blocked
                     // the target continue to go forward, but very slowly
                     // We didn't take into account the execution time

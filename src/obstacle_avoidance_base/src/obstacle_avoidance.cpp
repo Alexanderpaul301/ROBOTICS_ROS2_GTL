@@ -241,7 +241,6 @@ class ObstacleAvoidance : public rclcpp::Node {
                     double w = min_w + i*angular_velocity_resolution_;
                     // ! The following line has to be modified by using occupancy_dalpha (checking if trajectory is free).
                     double alpha=atan2(v,w); //! Definition of the angle alpha
-                    // double d = (w == 0) ? v * time_horizon_ : (v / w) * sin(w * time_horizon_);
 
                     double d=v*time_horizon_; //! Definition of the distance d
 

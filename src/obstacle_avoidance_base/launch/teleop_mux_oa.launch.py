@@ -62,7 +62,7 @@ def generate_launch_description():
             parameters=[
                 {'~/axis_linear_x': 1},
                 {'~/axis_angular': 0},
-                {'~/scale_linear_x': 0.2},
+                {'~/scale_linear_x': 0.4},
                 {'~/scale_angular': 1.},
                 {'~/timeout': 1.0}
                 ],
