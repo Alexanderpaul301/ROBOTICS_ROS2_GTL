@@ -192,8 +192,8 @@ class PathFollower : public rclcpp::Node {
                     RCLCPP_INFO(this->get_logger(),"New delay: %.2f", delay_);
 
 
-                    // ! After 5 seconds we replan by publishing a new goal.
-                    if(delay_ > 5) {
+                    // ! After 2 seconds we replan by publishing a new goal.
+                    if(delay_ > 2) {
                         target_pose_pub_->publish(goal_); // ! Replan a trajectory.
                     }
 

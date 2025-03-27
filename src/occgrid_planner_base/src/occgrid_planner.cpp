@@ -60,6 +60,7 @@ class OccupancyGridPlanner : public rclcpp::Node {
             frame_id_ = msg->header.frame_id;
             // Create an image to store the value of the grid.
             og_ = cv::Mat_<uint8_t>(msg->info.height, msg->info.width,0xFF);
+            robot_footstep_ = cv::Mat_<uint8_t>(msg->info.height, msg->info.width,0xFF);
             og_center_ = cv::Point3i(-info_.origin.position.x/info_.resolution,
                     -info_.origin.position.y/info_.resolution,0);
 
@@ -77,14 +78,14 @@ class OccupancyGridPlanner : public rclcpp::Node {
                         case 100: 
                             og_(j,i) = OCCUPIED; 
                             break;
-                        case -1:   // We know consider the unknown cells to be free.
-                        default:
-                            og_(j,i) = FREE; 
-                            break;
-                        // case -1: 
+                        // case -1:   // We know consider the unknown cells to be free.
                         // default:
-                            // og_(j,i) = UNKNOWN; 
-                            // break;
+                        //     og_(j,i) = FREE; 
+                        //     break;
+                        case -1: 
+                        default:
+                            og_(j,i) = UNKNOWN; 
+                            break;
             }
              // Update the bounding box of free or occupied cells.
               if (og_(j,i) != UNKNOWN) {
@@ -95,7 +96,7 @@ class OccupancyGridPlanner : public rclcpp::Node {
                     }
                 }
             }
-            // dilatation/erosion part
+            // dilatation part
             int erosion_type = cv::MORPH_RECT ;
             int erosion_size = robot_radius_/info_.resolution ;
             cv::Mat element = cv::getStructuringElement(erosion_type,
@@ -103,6 +104,19 @@ class OccupancyGridPlanner : public rclcpp::Node {
                     cv::Point( erosion_size, erosion_size));
             cv::erode( og_, og_, element );
             // -----------------------
+            
+            // ! Make sure that the surface under the robot is considered to be FREE
+            // ! this gets the current pose in transform, it comes from the target callback 
+            if (!tf_buffer->canTransform(frame_id_, base_link_, msg->header.stamp,
+                        rclcpp::Duration(std::chrono::duration<double>(1.0)),&errStr)) {
+                RCLCPP_ERROR(this->get_logger(),"Cannot transform base_link: %s",errStr.c_str());
+                return;
+            }
+            transformStamped = tf_buffer->lookupTransform(frame_id_, base_link_, tf2::TimePointZero);   
+            // ! We draw a circle under the position of the robot
+            cv::circle(robot_footstep_,transformStamped, robot_radius_, FREE, FILLED);
+
+
             if (!ready_) {
                 ready_ = true;
                 RCLCPP_INFO(this->get_logger(),"Received occupancy grid, ready_ to plan");
@@ -256,7 +270,14 @@ class OccupancyGridPlanner : public rclcpp::Node {
                 RCLCPP_ERROR(this->get_logger(),"Invalid start point: occupancy = %d",og_(P2(start)));
                 return;
             }
+
+            // ! We will need to create a planner in pixels.
             RCLCPP_INFO(this->get_logger(),"Starting planning from (%d, %d) to (%d, %d)",start.x,start.y, target.x, target.y);
+            planToPixelTarget(start,target);
+        }
+
+            // ! This line represent the boundary between meters and pixels. (Everything on top is in meter and everything under is in pixels)
+        void planToPixelTarget(cv::Point3i start, cv::Point3i target) {
             // Here the Dijskstra algorithm starts 
             // The best distance to the goal computed so far. This is
             // initialised with Not-A-Number. 
