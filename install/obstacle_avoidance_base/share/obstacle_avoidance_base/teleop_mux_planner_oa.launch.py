@@ -99,7 +99,7 @@ def generate_launch_description():
                 {"~/angular_velocity_resolution": 0.05},
                 {"~/robot_radius": 0.1},
                 {"~/time_horizon": 2.0},
-                {"~/k_v": 5.0},
+                {"~/k_v": 50.0},
                 {"~/k_w": 0.5},
                 ],
             remappings=[

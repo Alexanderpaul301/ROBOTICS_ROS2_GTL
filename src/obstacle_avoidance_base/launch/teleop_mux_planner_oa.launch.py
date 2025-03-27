@@ -100,7 +100,7 @@ def generate_launch_description():
                 {"~/robot_radius": 0.1},
                 {"~/time_horizon": 2.0},
                 {"~/k_v": 50.0},
-                {"~/k_w": 5.0},
+                {"~/k_w": 0.5},
                 ],
             remappings=[
                 ('~/scans', '/vrep/hokuyo'),

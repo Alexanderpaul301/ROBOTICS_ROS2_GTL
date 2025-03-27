@@ -3,7 +3,8 @@
 
 CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o: /home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp \
   /usr/include/stdc-predef.h \
-  /usr/include/c++/11/string \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_algobase.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
   /usr/include/features.h \
@@ -16,10 +17,6 @@ CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o: /home/GTL/apaul/r
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
   /usr/include/c++/11/pstl/pstl_config.h \
-  /usr/include/c++/11/bits/stringfwd.h \
-  /usr/include/c++/11/bits/memoryfwd.h \
-  /usr/include/c++/11/bits/char_traits.h \
-  /usr/include/c++/11/bits/stl_algobase.h \
   /usr/include/c++/11/bits/functexcept.h \
   /usr/include/c++/11/bits/exception_defines.h \
   /usr/include/c++/11/bits/cpp_type_traits.h \
@@ -36,6 +33,26 @@ CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o: /home/GTL/apaul/r
   /usr/include/c++/11/bits/ptr_traits.h \
   /usr/include/c++/11/debug/debug.h \
   /usr/include/c++/11/bits/predefined_ops.h \
+  /usr/include/c++/11/bits/allocator.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
+  /usr/include/c++/11/ext/new_allocator.h \
+  /usr/include/c++/11/new \
+  /usr/include/c++/11/bits/exception.h \
+  /usr/include/c++/11/bits/memoryfwd.h \
+  /usr/include/c++/11/bits/stl_construct.h \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/ext/alloc_traits.h \
+  /usr/include/c++/11/bits/alloc_traits.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/initializer_list \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/functional_hash.h \
+  /usr/include/c++/11/bits/hash_bytes.h \
+  /usr/include/c++/11/bits/range_access.h \
+  /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/c++/11/string \
+  /usr/include/c++/11/bits/stringfwd.h \
+  /usr/include/c++/11/bits/char_traits.h \
   /usr/include/c++/11/bits/postypes.h \
   /usr/include/c++/11/cwchar \
   /usr/include/wchar.h \
@@ -61,11 +78,6 @@ CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o: /home/GTL/apaul/r
   /usr/include/x86_64-linux-gnu/bits/time64.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-  /usr/include/c++/11/bits/allocator.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
-  /usr/include/c++/11/ext/new_allocator.h \
-  /usr/include/c++/11/new \
-  /usr/include/c++/11/bits/exception.h \
   /usr/include/c++/11/bits/localefwd.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
   /usr/include/c++/11/clocale \
@@ -80,8 +92,6 @@ CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o: /home/GTL/apaul/r
   /usr/include/c++/11/bits/cxxabi_forced.h \
   /usr/include/c++/11/bits/stl_function.h \
   /usr/include/c++/11/backward/binders.h \
-  /usr/include/c++/11/bits/range_access.h \
-  /usr/include/c++/11/initializer_list \
   /usr/include/c++/11/bits/basic_string.h \
   /usr/include/c++/11/ext/atomicity.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
@@ -114,12 +124,7 @@ CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o: /home/GTL/apaul/r
   /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
   /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
-  /usr/include/c++/11/ext/alloc_traits.h \
-  /usr/include/c++/11/bits/alloc_traits.h \
-  /usr/include/c++/11/bits/stl_construct.h \
   /usr/include/c++/11/string_view \
-  /usr/include/c++/11/bits/functional_hash.h \
-  /usr/include/c++/11/bits/hash_bytes.h \
   /usr/include/c++/11/bits/string_view.tcc \
   /usr/include/c++/11/ext/string_conversions.h \
   /usr/include/c++/11/cstdlib \
@@ -189,11 +194,6 @@ CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o: /home/GTL/apaul/r
   /usr/include/c++/11/bits/hashtable_policy.h \
   /usr/include/c++/11/bits/enable_special_members.h \
   /usr/include/c++/11/bits/unordered_map.h \
-  /usr/include/c++/11/vector \
-  /usr/include/c++/11/bits/stl_uninitialized.h \
-  /usr/include/c++/11/bits/stl_vector.h \
-  /usr/include/c++/11/bits/stl_bvector.h \
-  /usr/include/c++/11/bits/vector.tcc \
   /usr/include/c++/11/bits/stl_algo.h \
   /usr/include/c++/11/bits/algorithmfwd.h \
   /usr/include/c++/11/bits/stl_heap.h \
@@ -714,6 +714,12 @@ CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o: /home/GTL/apaul/r
   /opt/ros/humble/include/tf2_ros/tf2_ros/transform_listener.h \
   /opt/ros/humble/include/tf2/tf2/buffer_core.h \
   /opt/ros/humble/include/tf2/tf2/LinearMath/Transform.h \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/velocity_stamped.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp \
   /opt/ros/humble/include/tf2/tf2/buffer_core_interface.h \
   /opt/ros/humble/include/tf2/tf2/transform_storage.h \
   /opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.h \
@@ -920,20 +926,11 @@ CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o: /home/GTL/apaul/r
   /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__builder.hpp \
   /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__traits.hpp \
   /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__traits.hpp \
-  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__type_support.hpp \
-  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/nav_msgs/nav_msgs/msg/path.hpp \
   /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__struct.hpp \
   /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__builder.hpp \
-  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__traits.hpp \
-  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__type_support.hpp
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__traits.hpp
 
-
-/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__type_support.hpp:
-
-/opt/ros/humble/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
-
-/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__type_support.hpp:
 
 /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__traits.hpp:
 
@@ -1143,6 +1140,10 @@ CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o: /home/GTL/apaul/r
 
 /opt/ros/humble/include/tf2/tf2/transform_storage.h:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__traits.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:
+
 /opt/ros/humble/include/tf2_ros/tf2_ros/transform_listener.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__builder.hpp:
@@ -1210,6 +1211,8 @@ CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o: /home/GTL/apaul/r
 /opt/ros/humble/include/rclcpp/rclcpp/subscription_wait_set_mask.hpp:
 
 /usr/include/limits.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/velocity_stamped.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/dynamic_storage.hpp:
 
@@ -1443,9 +1446,9 @@ CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o: /home/GTL/apaul/r
 
 /usr/include/x86_64-linux-gnu/bits/environments.h:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
-
 /usr/include/c++/11/bits/exception_defines.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/event.hpp:
 
@@ -1498,36 +1501,6 @@ CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o: /home/GTL/apaul/r
 /usr/include/c++/11/pstl/execution_defs.h:
 
 /usr/include/c++/11/bits/stl_algo.h:
-
-/usr/include/c++/11/bits/vector.tcc:
-
-/usr/include/c++/11/bits/stl_bvector.h:
-
-/usr/include/opencv4/opencv2/flann/params.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_topics_interface.hpp:
-
-/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__builder.hpp:
-
-/opt/ros/humble/include/rcutils/rcutils/types/array_list.h:
-
-/opt/ros/humble/include/rcpputils/rcpputils/filesystem_helper.hpp:
-
-/usr/include/c++/11/bits/stl_uninitialized.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:
-
-/usr/include/c++/11/bits/align.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/synchronization_policy_common.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:
-
-/usr/include/c++/11/vector:
 
 /usr/include/c++/11/bits/enable_special_members.h:
 
@@ -1639,6 +1612,18 @@ CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o: /home/GTL/apaul/r
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h:
 
+/usr/include/c++/11/bits/stl_bvector.h:
+
+/usr/include/opencv4/opencv2/flann/params.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_topics_interface.hpp:
+
+/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__builder.hpp:
+
 /usr/include/opencv4/opencv2/core/cuda_types.hpp:
 
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp:
@@ -1659,33 +1644,19 @@ CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o: /home/GTL/apaul/r
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
-/usr/include/x86_64-linux-gnu/bits/typesizes.h:
+/usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
-/usr/include/c++/11/bits/predefined_ops.h:
+/usr/include/stdlib.h:
 
-/usr/include/c++/11/bits/stl_tempbuf.h:
+/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:
 
-/usr/include/c++/11/backward/auto_ptr.h:
+/usr/include/c++/11/bits/align.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
+/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/synchronization_policy_common.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/wchar2.h:
+/opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
-
-/usr/include/x86_64-linux-gnu/bits/select.h:
-
-/usr/include/opencv4/opencv2/dnn.hpp:
-
-/usr/include/opencv4/opencv2/core/hal/interface.h:
-
-/usr/include/x86_64-linux-gnu/bits/time.h:
-
-/usr/include/c++/11/backward/binders.h:
-
-/usr/include/opencv4/opencv2/stitching/warpers.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+/usr/include/c++/11/vector:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
@@ -1699,43 +1670,101 @@ CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o: /home/GTL/apaul/r
 
 /usr/include/wchar.h:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp:
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__struct.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
+/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
+/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp:
 
-/usr/include/c++/11/string_view:
+/usr/include/c++/11/bits/ostream_insert.h:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp:
+/opt/ros/humble/include/rclcpp/rclcpp/experimental/buffers/intra_process_buffer.hpp:
 
-/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_period.hpp:
+/usr/include/c++/11/string:
 
-/usr/include/c++/11/bits/stl_construct.h:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
+/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp:
 
-/usr/include/c++/11/numeric:
+/usr/include/c++/11/map:
 
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:
+/usr/include/c++/11/iterator:
 
-/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
+/usr/include/c++/11/bits/exception.h:
 
-/usr/include/c++/11/new:
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__struct.hpp:
 
-/usr/include/opencv4/opencv2/core/cvdef.h:
+/opt/ros/humble/include/rclcpp/rclcpp/detail/subscription_callback_type_helper.hpp:
 
-/usr/include/c++/11/bits/sstream.tcc:
+/usr/include/c++/11/bits/locale_facets.h:
 
-/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
+/opt/ros/humble/include/rmw/rmw/get_topic_names_and_types.h:
 
-/usr/include/c++/11/bits/concept_check.h:
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:
 
-/usr/include/c++/11/bits/stl_iterator.h:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+/usr/include/x86_64-linux-gnu/bits/wchar.h:
+
+/usr/include/c++/11/bits/string_view.tcc:
+
+/usr/include/c++/11/bits/hash_bytes.h:
+
+/usr/include/c++/11/bits/move.h:
+
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__traits.hpp:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
+/usr/include/c++/11/tr1/gamma.tcc:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp:
+
+/usr/include/c++/11/initializer_list:
+
+/usr/include/opencv4/opencv2/stitching/detail/util_inl.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon__struct.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_with_covariance.hpp:
+
+/usr/include/c++/11/iosfwd:
+
+/opt/ros/humble/include/rclcpp/rclcpp/detail/rmw_implementation_specific_publisher_payload.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:
+
+/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:
+
+/opt/ros/humble/include/rcutils/rcutils/types/array_list.h:
+
+/opt/ros/humble/include/rcpputils/rcpputils/filesystem_helper.hpp:
+
+/usr/include/opencv4/opencv2/core/saturate.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:
+
+/usr/include/c++/11/bits/memoryfwd.h:
+
+/usr/include/c++/11/bits/stl_function.h:
+
+/usr/include/opencv4/opencv2/core/operations.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/endianness.h:
+
+/usr/include/c++/11/bits/stl_uninitialized.h:
+
+/usr/include/endian.h:
+
+/usr/include/c++/11/bits/cpp_type_traits.h:
+
+/usr/include/c++/11/bits/std_thread.h:
+
+/usr/include/ctype.h:
+
+/usr/include/c++/11/locale:
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
@@ -1747,29 +1776,23 @@ CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o: /home/GTL/apaul/r
 
 /opt/ros/humble/include/rclcpp/rclcpp/intra_process_buffer_type.hpp:
 
-/usr/include/c++/11/bits/std_mutex.h:
+/usr/include/c++/11/bits/predefined_ops.h:
 
-/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_parameters_interface.hpp:
+/usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
-/usr/include/c++/11/tr1/poly_laguerre.tcc:
+/usr/include/c++/11/bits/functional_hash.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_timers_interface.hpp:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
-/opt/ros/humble/include/tracetools/tracetools/config.h:
+/usr/include/c++/11/cstdint:
 
-/usr/include/c++/11/debug/assertions.h:
+/usr/include/c++/11/bits/postypes.h:
 
-/usr/include/c++/11/iterator:
+/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
-
-/usr/include/x86_64-linux-gnu/bits/timesize.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:
+/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/vector3_stamped.hpp:
 
@@ -1799,13 +1822,11 @@ CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o: /home/GTL/apaul/r
 
 /usr/include/c++/11/ext/string_conversions.h:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp:
-
-/usr/include/c++/11/cstring:
-
-/usr/include/c++/11/bits/atomic_futex.h:
-
 /usr/include/c++/11/debug/debug.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
+
+/usr/include/linux/errno.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp:
 
@@ -1817,11 +1838,135 @@ CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o: /home/GTL/apaul/r
 
 /usr/include/c++/11/tr1/legendre_function.tcc:
 
-/usr/include/c++/11/system_error:
+/usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
 
-/usr/include/features-time64.h:
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:
+
+/usr/include/c++/11/bits/vector.tcc:
+
+/usr/include/stdc-predef.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__builder.hpp:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/opencv4/opencv2/flann/general.h:
+
+/opt/ros/humble/include/rmw/rmw/subscription_options.h:
+
+/usr/include/c++/11/bits/stl_tempbuf.h:
+
+/usr/include/c++/11/bits/allocator.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/detail/qos_parameters.hpp:
+
+/usr/include/c++/11/cmath:
+
+/usr/include/c++/11/pstl/pstl_config.h:
+
+/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
+
+/usr/include/c++/11/bits/stl_multimap.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:
+
+/usr/include/features.h:
+
+/usr/include/opencv4/opencv2/core/cuda.inl.hpp:
+
+/usr/include/c++/11/bits/atomic_base.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/sigstack.h:
+
+/usr/include/c++/11/ext/numeric_traits.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+
+/usr/include/x86_64-linux-gnu/bits/confname.h:
+
+/usr/include/x86_64-linux-gnu/bits/siginfo-arch.h:
+
+/usr/include/c++/11/bits/concept_check.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
+
+/usr/include/c++/11/tuple:
+
+/opt/ros/humble/include/rcl/rcl/network_flow_endpoints.h:
+
+/usr/include/c++/11/bits/stl_tree.h:
+
+/opt/ros/humble/include/rcutils/rcutils/visibility_control.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
+
+/usr/include/c++/11/string_view:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp:
+
+/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_period.hpp:
+
+/usr/include/c++/11/bits/stl_construct.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
+
+/usr/include/c++/11/numeric:
+
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
+
+/usr/include/c++/11/new:
+
+/usr/include/opencv4/opencv2/core/cvdef.h:
+
+/usr/include/c++/11/bits/sstream.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+
+/usr/include/c++/11/bits/stl_iterator.h:
+
+/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
+
+/usr/include/strings.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+
+/opt/ros/humble/include/tf2/tf2/utils.h:
+
+/usr/include/c++/11/unordered_set:
+
+/usr/include/c++/11/bits/stringfwd.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+
+/usr/include/c++/11/bits/this_thread_sleep.h:
+
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+
+/usr/include/x86_64-linux-gnu/asm/errno.h:
+
+/usr/include/c++/11/bits/functexcept.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
+
+/opt/ros/humble/include/rcutils/rcutils/allocator.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+
+/usr/include/c++/11/typeindex:
 
 /usr/include/c++/11/bits/stl_numeric.h:
 
@@ -1831,7 +1976,31 @@ CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o: /home/GTL/apaul/r
 
 /opt/ros/humble/include/rcpputils/rcpputils/join.hpp:
 
-/usr/include/stdc-predef.h:
+/opt/ros/humble/include/tracetools/tracetools/config.h:
+
+/usr/include/c++/11/debug/assertions.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
+
+/usr/include/c++/11/ext/type_traits.h:
+
+/usr/include/c++/11/bits/std_mutex.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_parameters_interface.hpp:
+
+/usr/include/c++/11/tr1/poly_laguerre.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
+
+/usr/include/opencv4/opencv2/stitching/warpers.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
 /usr/include/opencv4/opencv2/objdetect.hpp:
 
@@ -1847,59 +2016,87 @@ CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o: /home/GTL/apaul/r
 
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp:
+/usr/include/c++/11/backward/auto_ptr.h:
 
-/usr/include/x86_64-linux-gnu/bits/wchar.h:
+/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
-/usr/include/c++/11/bits/exception.h:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp:
 
-/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__struct.hpp:
+/usr/include/c++/11/bits/atomic_futex.h:
 
-/opt/ros/humble/include/rclcpp/rclcpp/detail/subscription_callback_type_helper.hpp:
+/usr/include/c++/11/cstring:
 
-/usr/include/c++/11/bits/locale_facets.h:
+/usr/include/opencv4/opencv2/flann/flann_base.hpp:
 
-/opt/ros/humble/include/rmw/rmw/get_topic_names_and_types.h:
+/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
-/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp:
+/usr/include/c++/11/bits/charconv.h:
 
-/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
 
-/usr/include/c++/11/map:
+/usr/include/c++/11/bits/exception_ptr.h:
 
-/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__traits.hpp:
+/usr/include/math.h:
 
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+/usr/include/c++/11/bits/stl_algobase.h:
 
-/usr/include/c++/11/tr1/gamma.tcc:
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point_stamped.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/confname.h:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/siginfo-arch.h:
+/usr/include/unistd.h:
 
-/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
 
-/usr/include/c++/11/bits/ostream_insert.h:
+/opt/ros/humble/include/rclcpp/rclcpp/serialized_message.hpp:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__struct.hpp:
+/opt/ros/humble/include/rclcpp/rclcpp/qos_event.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+/usr/include/c++/11/system_error:
 
-/usr/include/x86_64-linux-gnu/asm/errno.h:
+/usr/include/features-time64.h:
 
-/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
+/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
-/usr/include/c++/11/bits/functexcept.h:
+/usr/include/x86_64-linux-gnu/bits/wchar2.h:
 
-/opt/ros/humble/include/rcutils/rcutils/allocator.h:
+/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdlib.h:
+/usr/include/x86_64-linux-gnu/bits/select.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+/usr/include/opencv4/opencv2/dnn.hpp:
 
-/usr/include/c++/11/typeindex:
+/usr/include/opencv4/opencv2/core/hal/interface.h:
+
+/usr/include/x86_64-linux-gnu/bits/time.h:
+
+/usr/include/c++/11/backward/binders.h:
+
+/usr/include/x86_64-linux-gnu/bits/sched.h:
+
+/usr/include/opencv4/opencv2/flann/miniflann.hpp:
+
+/usr/include/c++/11/ext/alloc_traits.h:
+
+/usr/include/opencv4/opencv2/imgproc.hpp:
+
+/usr/include/c++/11/bits/unordered_map.h:
+
+/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
+
+/usr/include/c++/11/ctime:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/time64.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameters.hpp:
+
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h:
 
 /usr/include/errno.h:
 
@@ -1925,187 +2122,9 @@ CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o: /home/GTL/apaul/r
 
 /usr/include/c++/11/iomanip:
 
-/usr/include/strings.h:
-
-/opt/ros/humble/include/tf2/tf2/utils.h:
-
-/usr/include/c++/11/unordered_set:
-
-/opt/ros/humble/include/rclcpp/rclcpp/experimental/buffers/intra_process_buffer.hpp:
-
-/usr/include/c++/11/string:
-
-/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:
-
-/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp:
-
-/usr/include/c++/11/bits/memoryfwd.h:
-
-/usr/include/c++/11/bits/stl_function.h:
-
-/usr/include/opencv4/opencv2/core/saturate.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
-
-/usr/include/c++/11/bits/this_thread_sleep.h:
-
-/usr/include/c++/11/bits/stringfwd.h:
-
-/usr/include/c++/11/bits/stl_multimap.h:
-
-/usr/include/opencv4/opencv2/core/cuda.inl.hpp:
-
-/usr/include/c++/11/bits/atomic_base.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/sigstack.h:
-
-/usr/include/c++/11/ext/numeric_traits.h:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__builder.hpp:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/opencv4/opencv2/flann/general.h:
-
-/opt/ros/humble/include/rmw/rmw/subscription_options.h:
-
-/usr/include/c++/11/bits/allocator.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/detail/qos_parameters.hpp:
-
-/usr/include/c++/11/cmath:
-
-/usr/include/c++/11/pstl/pstl_config.h:
-
-/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
-
-/usr/include/c++/11/ext/type_traits.h:
-
-/usr/include/c++/11/ctime:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h:
-
-/usr/include/x86_64-linux-gnu/bits/time64.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameters.hpp:
-
-/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h:
-
-/usr/include/opencv4/opencv2/stitching/detail/util_inl.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon__struct.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_with_covariance.hpp:
-
-/usr/include/c++/11/iosfwd:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp:
-
-/usr/include/c++/11/initializer_list:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/serialized_message.hpp:
-
-/usr/include/c++/11/bits/stl_algobase.h:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point_stamped.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp:
-
-/usr/include/unistd.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/detail/rmw_implementation_specific_publisher_payload.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:
-
-/usr/include/linux/errno.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
-
-/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:
-
-/usr/include/c++/11/bits/postypes.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_timers_interface.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
-
-/usr/include/c++/11/cstdint:
-
-/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
-
-/usr/include/c++/11/bits/move.h:
-
-/usr/include/c++/11/bits/hash_bytes.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
-
-/usr/include/c++/11/tuple:
-
-/opt/ros/humble/include/rcl/rcl/network_flow_endpoints.h:
-
-/usr/include/c++/11/bits/stl_tree.h:
-
-/opt/ros/humble/include/rcutils/rcutils/visibility_control.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
-
-/usr/include/x86_64-linux-gnu/bits/sched.h:
-
-/usr/include/opencv4/opencv2/flann/miniflann.hpp:
-
-/usr/include/c++/11/ext/alloc_traits.h:
-
-/usr/include/opencv4/opencv2/imgproc.hpp:
-
-/usr/include/c++/11/bits/unordered_map.h:
-
-/usr/include/endian.h:
-
-/usr/include/c++/11/bits/cpp_type_traits.h:
-
-/usr/include/c++/11/bits/std_thread.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/qos_event.hpp:
-
-/usr/include/ctype.h:
-
-/usr/include/c++/11/locale:
-
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
-/usr/include/opencv4/opencv2/flann/flann_base.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
-
-/usr/include/c++/11/bits/charconv.h:
-
-/usr/include/math.h:
-
-/usr/include/c++/11/bits/exception_ptr.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
-
 /usr/include/c++/11/bits/localefwd.h:
-
-/usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:
 
@@ -2121,9 +2140,9 @@ CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o: /home/GTL/apaul/r
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
-/usr/include/opencv4/opencv2/core/operations.hpp:
+/usr/include/c++/11/bits/algorithmfwd.h:
 
-/usr/include/x86_64-linux-gnu/bits/endianness.h:
+/usr/include/c++/11/bits/cxxabi_forced.h:
 
 /usr/include/c++/11/bits/basic_string.h:
 
@@ -2132,6 +2151,8 @@ CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o: /home/GTL/apaul/r
 /usr/include/c++/11/bits/shared_ptr_base.h:
 
 /usr/include/c++/11/ext/concurrence.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__builder.hpp:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
 
@@ -2186,20 +2207,6 @@ CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o: /home/GTL/apaul/r
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
-
-/usr/include/c++/11/bits/algorithmfwd.h:
-
-/usr/include/c++/11/bits/cxxabi_forced.h:
-
-/usr/include/c++/11/bits/functional_hash.h:
-
-/usr/include/features.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:
-
-/usr/include/c++/11/bits/string_view.tcc:
-
-/usr/include/stdlib.h:
 
 /usr/include/c++/11/atomic:
 
@@ -2324,6 +2331,8 @@ CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o: /home/GTL/apaul/r
 /opt/ros/humble/include/rmw/rmw/types.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__builder.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__struct.hpp:
 
 /opt/ros/humble/include/rcutils/rcutils/error_handling.h:
 
@@ -2629,9 +2638,9 @@ CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o: /home/GTL/apaul/r
 
 /opt/ros/humble/include/rmw/rmw/network_flow_endpoint_array.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
-
 /usr/include/signal.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/waitable.hpp:
 

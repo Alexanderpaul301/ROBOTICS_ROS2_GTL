@@ -34,7 +34,11 @@ class PathFollower : public rclcpp::Node {
         double max_y_error_;
         double max_error_;
         double period_;
+        double delay_; // ! We add a delay time to make sure the carrot doesn't leave the robot behind
         bool always_publish_;
+        rclcpp::Publisher<geometry_msgs::msg::PoseStamped>::SharedPtr target_pose_pub_;
+        rclcpp::Subscription<geometry_msgs::msg::PoseStamped>::SharedPtr target_pose_sub_;
+        geometry_msgs::msg::PoseStamped goal_;
 
         std::shared_ptr<tf2_ros::TransformListener> tf_listener{nullptr};
         std::unique_ptr<tf2_ros::Buffer> tf_buffer;
@@ -54,6 +58,10 @@ class PathFollower : public rclcpp::Node {
                 traj_.insert(Trajectory::value_type(rclcpp::Time(msg->ts[i].header.stamp).seconds(), msg->ts[i]));
             }
             RCLCPP_INFO(this->get_logger(),"Trajectory received");
+        }
+        // ! Adding the target pose callback
+        void target_pose_callback(geometry_msgs::msg::PoseStamped::SharedPtr msg){
+            goal_=*msg;
         }
 
         geometry_msgs::msg::Pose2D computeError(const rclcpp::Time & now, const cs7630_msgs::msg::TrajectoryElement & te) {
@@ -122,6 +130,12 @@ class PathFollower : public rclcpp::Node {
             timer_ = this->create_wall_timer( std::chrono::duration<double>(period_),
                     std::bind(&PathFollower::timer_cb, this));
 
+            // ! Adding a new subscriber to receive the new target, we need to post the target pose on /move_base_simple/goal
+            // ! We 
+            target_pose_sub_ = this->create_subscription<geometry_msgs::msg::PoseStamped>("/move_base_simple/goal",1, 
+                                std::bind(&PathFollower::target_pose_callback,this,std::placeholders::_1));
+            target_pose_pub_ = this->create_publisher<geometry_msgs::msg::PoseStamped>("/move_base_simple/goal",1);
+
 
         };
 
@@ -141,7 +155,7 @@ class PathFollower : public rclcpp::Node {
                 // the current time. 
                 // TODO: modify this part to react to tracking delays
                 // introduced by obstacle avoidance or switch to manual.
-                Trajectory::const_iterator it = traj_.lower_bound(now.seconds() + look_ahead_);
+                Trajectory::const_iterator it = traj_.lower_bound(now.seconds() + look_ahead_ - delay_);
                 if (it == traj_.end()) {
                     // let's keep the final position
                     it --;
@@ -169,11 +183,20 @@ class PathFollower : public rclcpp::Node {
                 geometry_msgs::msg::Pose2D error = computeError(now,it->second);
                 pose2d_pub_->publish(error);
                 if (hypot(error.x,error.y)>max_error_) {
-                    // TODO: Manage the fact that the error has good too far.
-                    // We need to make the carrot stop by delaying the requested time by 
-                    // one time period (period_).
-                    // After some time, we should probably trigger a replanning
                     // add the time of while to the delay
+                    delay_ += 2*period_;   // ! I added a 2 period delay to the carrot.
+                    // there is a little bug, then the robot is blocked
+                    // the target continue to go forward, but very slowly
+                    // We didn't take into account the execution time
+                    // of one iteration of a loop
+                    RCLCPP_INFO(this->get_logger(),"New delay: %.2f", delay_);
+
+
+                    // ! After 5 seconds we replan by publishing a new goal.
+                    if(delay_ > 5) {
+                        target_pose_pub_->publish(goal_); // ! Replan a trajectory.
+                    }
+
                 }
 
                 geometry_msgs::msg::Twist twist;
@@ -192,11 +215,9 @@ class PathFollower : public rclcpp::Node {
                     // printf("Twist: %.2f %.2f\n",twist.linear.x,twist.angular.z);
                 }
                 twist_pub_->publish(twist);
-            } else if (always_publish_) {
+            } else {
                 // Publish zero velocity
                 geometry_msgs::msg::Twist twist;
-                twist.linear.x = 0.0;
-                twist.angular.z = 0.0;
                 twist_pub_->publish(twist);
             }
         }

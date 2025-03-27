@@ -1,0 +1,448 @@
+[0.000000] (-) TimerEvent: {}
+[0.000079] (-) JobUnselected: {'identifier': 'ar_loc_base'}
+[0.000094] (-) JobUnselected: {'identifier': 'ar_mapping_base'}
+[0.000104] (-) JobUnselected: {'identifier': 'ar_slam_base'}
+[0.000113] (-) JobUnselected: {'identifier': 'button_server'}
+[0.000121] (-) JobUnselected: {'identifier': 'collision_avoidance_base'}
+[0.000129] (-) JobUnselected: {'identifier': 'cs7630_msgs'}
+[0.000137] (-) JobUnselected: {'identifier': 'face_detect_base'}
+[0.000145] (-) JobUnselected: {'identifier': 'face_msg'}
+[0.000153] (-) JobUnselected: {'identifier': 'floor_nav'}
+[0.000160] (-) JobUnselected: {'identifier': 'joy_pack'}
+[0.000168] (-) JobUnselected: {'identifier': 'keyboard_teleop'}
+[0.000176] (-) JobUnselected: {'identifier': 'obstacle_avoidance_base'}
+[0.000184] (-) JobUnselected: {'identifier': 'occgrid_planner'}
+[0.000192] (-) JobUnselected: {'identifier': 'rover_driver_base'}
+[0.000199] (-) JobUnselected: {'identifier': 'task_manager_client_py'}
+[0.000207] (-) JobUnselected: {'identifier': 'task_manager_lib'}
+[0.000215] (-) JobUnselected: {'identifier': 'task_manager_msgs'}
+[0.000223] (-) JobUnselected: {'identifier': 'task_manager_nav2'}
+[0.000231] (-) JobUnselected: {'identifier': 'task_manager_sync'}
+[0.000239] (-) JobUnselected: {'identifier': 'turtlebot_launch'}
+[0.000246] (-) JobUnselected: {'identifier': 'vrep4_helpers'}
+[0.000254] (-) JobUnselected: {'identifier': 'vrep_ros_teleop'}
+[0.000262] (-) JobUnselected: {'identifier': 'wifi_map_base'}
+[0.000269] (-) JobUnselected: {'identifier': 'wpa_cli_msgs'}
+[0.000279] (occgrid_planner_base) JobQueued: {'identifier': 'occgrid_planner_base', 'dependencies': OrderedDict([('cs7630_msgs', '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs')])}
+[0.000292] (occgrid_planner_base) JobStarted: {'identifier': 'occgrid_planner_base'}
+[0.014241] (occgrid_planner_base) JobProgress: {'identifier': 'occgrid_planner_base', 'progress': 'cmake'}
+[0.044023] (occgrid_planner_base) JobProgress: {'identifier': 'occgrid_planner_base', 'progress': 'build'}
+[0.044805] (occgrid_planner_base) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/GTL/apaul/ros2_hw1/build/occgrid_planner_base', '--', '-j16', '-l16'], 'cwd': '/home/GTL/apaul/ros2_hw1/build/occgrid_planner_base', 'env': OrderedDict([('USER', 'apaul'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/GTL/apaul'), ('CYCLONEDDS_URI', '/cs-share/pradalier/gtlpc_cyclonedds.xml'), ('OLDPWD', '/home/GTL/apaul'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2308'), ('SYSTEMD_EXEC_PID', '2741'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/37726/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4080'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'apaul'), ('JOURNAL_STREAM', '8:28416'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'apaul'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/gtlpc102.georgiatech-metz.fr:@/tmp/.ICE-unix/2489,unix/gtlpc102.georgiatech-metz.fr:/tmp/.ICE-unix/2489'), ('INVOCATION_ID', 'a4217540716e4f1198c4e25865bf48a0'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/37726'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/37726/gdm/Xauthority'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/37726/keyring/ssh'), ('ROS_DOMAIN_ID', '52'), ('AMENT_PREFIX_PATH', '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:366359af-19f4-4afb-9b6a-3a0c2a62e220'), ('KRB5CCNAME', 'FILE:/tmp/krb5cc_37726'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/37726/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/GTL/apaul/ros2_hw1/build/occgrid_planner_base'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble')]), 'shell': False}
+[0.098134] (-) TimerEvent: {}
+[0.147156] (occgrid_planner_base) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/path_follower_base.dir/src/path_follower.cpp.o\x1b[0m\n'}
+[0.151387] (occgrid_planner_base) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target occgrid_planner_base\x1b[0m\n'}
+[0.160751] (occgrid_planner_base) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/path_optimizer_base.dir/src/path_optimizer.cpp.o\x1b[0m\n'}
+[0.198236] (-) TimerEvent: {}
+[0.217175] (occgrid_planner_base) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o\x1b[0m\n'}
+[0.298349] (-) TimerEvent: {}
+[0.398621] (-) TimerEvent: {}
+[0.498881] (-) TimerEvent: {}
+[0.599147] (-) TimerEvent: {}
+[0.699421] (-) TimerEvent: {}
+[0.799696] (-) TimerEvent: {}
+[0.899965] (-) TimerEvent: {}
+[1.000232] (-) TimerEvent: {}
+[1.100508] (-) TimerEvent: {}
+[1.200794] (-) TimerEvent: {}
+[1.301076] (-) TimerEvent: {}
+[1.401369] (-) TimerEvent: {}
+[1.501660] (-) TimerEvent: {}
+[1.601949] (-) TimerEvent: {}
+[1.702254] (-) TimerEvent: {}
+[1.802527] (-) TimerEvent: {}
+[1.902806] (-) TimerEvent: {}
+[2.003084] (-) TimerEvent: {}
+[2.103383] (-) TimerEvent: {}
+[2.203672] (-) TimerEvent: {}
+[2.303969] (-) TimerEvent: {}
+[2.345071] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/path_follower.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KPathFollower::PathFollower()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.345218] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/path_follower.cpp:127:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktarget_pose_sub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.345266] (occgrid_planner_base) StderrLine: {'line': b'  127 |             \x1b[01;31m\x1b[Ktarget_pose_sub_\x1b[m\x1b[K = this->create_subscription<geometry_msgs::msg::PoseStamped>("/move_base_simple/goal",1, std::bind(&PathFollower::target_cb,this,std::placeholders::1));\n'}
+[2.345305] (occgrid_planner_base) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.345342] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/path_follower.cpp:127:144:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktarget_cb\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[KPathFollower\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.345378] (occgrid_planner_base) StderrLine: {'line': b'  127 |             target_pose_sub_ = this->create_subscription<geometry_msgs::msg::PoseStamped>("/move_base_simple/goal",1, std::bind(&PathFollower::\x1b[01;31m\x1b[Ktarget_cb\x1b[m\x1b[K,this,std::placeholders::1));\n'}
+[2.345414] (occgrid_planner_base) StderrLine: {'line': b'      |                                                                                                                                                \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.345454] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/path_follower.cpp:127:178:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before numeric constant\n'}
+[2.345491] (occgrid_planner_base) StderrLine: {'line': b'  127 |             target_pose_sub_ = this->create_subscription<geometry_msgs::msg::PoseStamped>("/move_base_simple/goal",1, std::bind(&PathFollower::target_cb,this,std::placeholders::\x1b[01;31m\x1b[K1\x1b[m\x1b[K));\n'}
+[2.345526] (occgrid_planner_base) StderrLine: {'line': b'      |                                                                                                                                                                                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.352187] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/path_follower.cpp:128:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktarget_pose_pub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.352329] (occgrid_planner_base) StderrLine: {'line': b'  128 |             \x1b[01;31m\x1b[Ktarget_pose_pub_\x1b[m\x1b[K = this->create_publisher<geometry_msgs::msg::PoseStamped>("/move_base_simple/goal",1);\n'}
+[2.352374] (occgrid_planner_base) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.404094] (-) TimerEvent: {}
+[2.504386] (-) TimerEvent: {}
+[2.604665] (-) TimerEvent: {}
+[2.704957] (-) TimerEvent: {}
+[2.805225] (-) TimerEvent: {}
+[2.905556] (-) TimerEvent: {}
+[2.946688] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid OccupancyGridPlanner::target_callback(geometry_msgs::msg::PoseStamped_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.946837] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:293:94:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktoo many initializers for \xe2\x80\x98\x1b[01m\x1b[Kstd::array<cv::Point3_<int>, 12>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.946894] (occgrid_planner_base) StderrLine: {'line': b'  293 |                                                 cv::Point3i(0, 0, 6),cv::Point3i(0, 0, 7)\x1b[01;31m\x1b[K}\x1b[m\x1b[K;\n'}
+[2.946946] (occgrid_planner_base) StderrLine: {'line': b'      |                                                                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.947092] (occgrid_planner_base) StderrLine: {'line': b'\n'}
+[2.947155] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:303:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktoo many initializers for \xe2\x80\x98\x1b[01m\x1b[Kstd::array<float, 12>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.947203] (occgrid_planner_base) StderrLine: {'line': b'  303 |                 \x1b[01;31m\x1b[K}\x1b[m\x1b[K;\n'}
+[2.947239] (occgrid_planner_base) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.955704] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:317:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kconversion from \xe2\x80\x98\x1b[01m\x1b[Kcv::Point3_<int>\x1b[m\x1b[K\xe2\x80\x99 to non-scalar type \xe2\x80\x98\x1b[01m\x1b[Kcv::Point\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<int>\x1b[m\x1b[K\xe2\x80\x99} requested\n'}
+[2.955838] (occgrid_planner_base) StderrLine: {'line': b'  317 |                 cv::Point this_cell = \x1b[01;31m\x1b[Khit->second\x1b[m\x1b[K;\n'}
+[2.955883] (occgrid_planner_base) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[2.956013] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:328:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator+\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kcv::Point\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<int>\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kstd::array<cv::Point3_<int>, 12>::value_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point3_<int>\x1b[m\x1b[K\xe2\x80\x99})\n'}
+[2.956091] (occgrid_planner_base) StderrLine: {'line': b'  328 |                     cv::Point dest = this_cell + neighbours[i];\n'}
+[2.956232] (occgrid_planner_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:56\x1b[m\x1b[K,\n'}
+[2.956307] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[2.956454] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13\x1b[m\x1b[K:\n'}
+[2.956503] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1210:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int m, int n> cv::Matx<_Tp, m, n> cv::operator+(const cv::Matx<_Tp, m, n>&, const cv::Matx<_Tp, m, n>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.956551] (occgrid_planner_base) StderrLine: {'line': b' 1210 | Matx<_Tp, m, n> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K + (const Matx<_Tp, m, n>& a, const Matx<_Tp, m, n>& b)\n'}
+[2.956597] (occgrid_planner_base) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.956633] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1210:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.956674] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:328:62:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<int>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Matx<_Tp, m, n>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.956720] (occgrid_planner_base) StderrLine: {'line': b'  328 |                     cv::Point dest = this_cell + neighbours[i\x1b[01;36m\x1b[K]\x1b[m\x1b[K;\n'}
+[2.956765] (occgrid_planner_base) StderrLine: {'line': b'      |                                                              \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.956802] (occgrid_planner_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:56\x1b[m\x1b[K,\n'}
+[2.956837] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[2.956872] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13\x1b[m\x1b[K:\n'}
+[2.956907] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1366:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int cn> cv::Vec<_Tp, m> cv::operator+(const cv::Vec<_Tp, m>&, const cv::Vec<_Tp, m>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.956948] (occgrid_planner_base) StderrLine: {'line': b' 1366 | Vec<_Tp, cn> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K + (const Vec<_Tp, cn>& a, const Vec<_Tp, cn>& b)\n'}
+[2.956983] (occgrid_planner_base) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.957108] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1366:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.957148] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:328:62:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<int>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Vec<_Tp, m>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.957187] (occgrid_planner_base) StderrLine: {'line': b'  328 |                     cv::Point dest = this_cell + neighbours[i\x1b[01;36m\x1b[K]\x1b[m\x1b[K;\n'}
+[2.957222] (occgrid_planner_base) StderrLine: {'line': b'      |                                                              \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.957256] (occgrid_planner_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[2.957290] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[2.957326] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13\x1b[m\x1b[K:\n'}
+[2.957361] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1041:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Complex<_Tp> cv::operator+(const cv::Complex<_Tp>&, const cv::Complex<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.957465] (occgrid_planner_base) StderrLine: {'line': b' 1041 | Complex<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K + (const Complex<_Tp>& a, const Complex<_Tp>& b)\n'}
+[2.957503] (occgrid_planner_base) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.957537] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1041:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.957570] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:328:62:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<int>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Complex<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.957605] (occgrid_planner_base) StderrLine: {'line': b'  328 |                     cv::Point dest = this_cell + neighbours[i\x1b[01;36m\x1b[K]\x1b[m\x1b[K;\n'}
+[2.957639] (occgrid_planner_base) StderrLine: {'line': b'      |                                                              \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.957671] (occgrid_planner_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[2.957703] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[2.957736] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13\x1b[m\x1b[K:\n'}
+[2.957844] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1091:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Complex<_Tp> cv::operator+(const cv::Complex<_Tp>&, _Tp)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.957892] (occgrid_planner_base) StderrLine: {'line': b' 1091 | Complex<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K + (const Complex<_Tp>& a, _Tp b)\n'}
+[2.957949] (occgrid_planner_base) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.958204] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1091:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.958243] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:328:62:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<int>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Complex<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.958280] (occgrid_planner_base) StderrLine: {'line': b'  328 |                     cv::Point dest = this_cell + neighbours[i\x1b[01;36m\x1b[K]\x1b[m\x1b[K;\n'}
+[2.958315] (occgrid_planner_base) StderrLine: {'line': b'      |                                                              \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.958349] (occgrid_planner_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[2.958383] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[2.958416] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13\x1b[m\x1b[K:\n'}
+[2.958451] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1101:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Complex<_Tp> cv::operator+(_Tp, const cv::Complex<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.958485] (occgrid_planner_base) StderrLine: {'line': b' 1101 | Complex<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K + (_Tp b, const Complex<_Tp>& a)\n'}
+[2.958519] (occgrid_planner_base) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.958554] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1101:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.958587] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:328:62:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::array<cv::Point3_<int>, 12>::value_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point3_<int>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Complex<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.958622] (occgrid_planner_base) StderrLine: {'line': b'  328 |                     cv::Point dest = this_cell + neighbours[i\x1b[01;36m\x1b[K]\x1b[m\x1b[K;\n'}
+[2.958655] (occgrid_planner_base) StderrLine: {'line': b'      |                                                              \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.958689] (occgrid_planner_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[2.958722] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[2.958755] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13\x1b[m\x1b[K:\n'}
+[2.958789] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1333:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Point_<_Tp> cv::operator+(const cv::Point_<_Tp>&, const cv::Point_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.958826] (occgrid_planner_base) StderrLine: {'line': b' 1333 | Point_<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K + (const Point_<_Tp>& a, const Point_<_Tp>& b)\n'}
+[2.958918] (occgrid_planner_base) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.958954] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1333:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.958990] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:328:62:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::array<cv::Point3_<int>, 12>::value_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point3_<int>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Point_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.959026] (occgrid_planner_base) StderrLine: {'line': b'  328 |                     cv::Point dest = this_cell + neighbours[i\x1b[01;36m\x1b[K]\x1b[m\x1b[K;\n'}
+[2.959059] (occgrid_planner_base) StderrLine: {'line': b'      |                                                              \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.959092] (occgrid_planner_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[2.959126] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[2.959158] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13\x1b[m\x1b[K:\n'}
+[2.959189] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1602:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Point3_<_Tp> cv::operator+(const cv::Point3_<_Tp>&, const cv::Point3_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.959222] (occgrid_planner_base) StderrLine: {'line': b' 1602 | Point3_<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K + (const Point3_<_Tp>& a, const Point3_<_Tp>& b)\n'}
+[2.959253] (occgrid_planner_base) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.959283] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1602:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.959317] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:328:62:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<int>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Point3_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.959349] (occgrid_planner_base) StderrLine: {'line': b'  328 |                     cv::Point dest = this_cell + neighbours[i\x1b[01;36m\x1b[K]\x1b[m\x1b[K;\n'}
+[2.959383] (occgrid_planner_base) StderrLine: {'line': b'      |                                                              \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.959415] (occgrid_planner_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[2.959448] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[2.959480] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13\x1b[m\x1b[K:\n'}
+[2.959511] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1799:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Size_<_Tp> cv::operator+(const cv::Size_<_Tp>&, const cv::Size_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.959543] (occgrid_planner_base) StderrLine: {'line': b' 1799 | Size_<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K + (const Size_<_Tp>& a, const Size_<_Tp>& b)\n'}
+[2.959577] (occgrid_planner_base) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.959613] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1799:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.959645] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:328:62:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<int>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Size_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.959691] (occgrid_planner_base) StderrLine: {'line': b'  328 |                     cv::Point dest = this_cell + neighbours[i\x1b[01;36m\x1b[K]\x1b[m\x1b[K;\n'}
+[2.959724] (occgrid_planner_base) StderrLine: {'line': b'      |                                                              \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.959756] (occgrid_planner_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[2.959790] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[2.959824] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13\x1b[m\x1b[K:\n'}
+[2.959858] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:2012:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Rect_<_Tp> cv::operator+(const cv::Rect_<_Tp>&, const cv::Point_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.959897] (occgrid_planner_base) StderrLine: {'line': b' 2012 | Rect_<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K + (const Rect_<_Tp>& a, const Point_<_Tp>& b)\n'}
+[2.959935] (occgrid_planner_base) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.959984] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:2012:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.960019] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:328:62:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<int>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Rect_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.960057] (occgrid_planner_base) StderrLine: {'line': b'  328 |                     cv::Point dest = this_cell + neighbours[i\x1b[01;36m\x1b[K]\x1b[m\x1b[K;\n'}
+[2.960102] (occgrid_planner_base) StderrLine: {'line': b'      |                                                              \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.960137] (occgrid_planner_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[2.960170] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[2.960204] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13\x1b[m\x1b[K:\n'}
+[2.960236] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:2024:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Rect_<_Tp> cv::operator+(const cv::Rect_<_Tp>&, const cv::Size_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.960273] (occgrid_planner_base) StderrLine: {'line': b' 2024 | Rect_<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K + (const Rect_<_Tp>& a, const Size_<_Tp>& b)\n'}
+[2.960306] (occgrid_planner_base) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.960340] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:2024:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.960373] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:328:62:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<int>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Rect_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.960407] (occgrid_planner_base) StderrLine: {'line': b'  328 |                     cv::Point dest = this_cell + neighbours[i\x1b[01;36m\x1b[K]\x1b[m\x1b[K;\n'}
+[2.960439] (occgrid_planner_base) StderrLine: {'line': b'      |                                                              \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.960471] (occgrid_planner_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[2.960503] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[2.960535] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13\x1b[m\x1b[K:\n'}
+[2.960568] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:2316:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Scalar_<_Tp> cv::operator+(const cv::Scalar_<_Tp>&, const cv::Scalar_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.960608] (occgrid_planner_base) StderrLine: {'line': b' 2316 | Scalar_<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K + (const Scalar_<_Tp>& a, const Scalar_<_Tp>& b)\n'}
+[2.960641] (occgrid_planner_base) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.960673] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:2316:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.960706] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:328:62:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<int>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Scalar_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.960744] (occgrid_planner_base) StderrLine: {'line': b'  328 |                     cv::Point dest = this_cell + neighbours[i\x1b[01;36m\x1b[K]\x1b[m\x1b[K;\n'}
+[2.960776] (occgrid_planner_base) StderrLine: {'line': b'      |                                                              \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.960807] (occgrid_planner_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[2.960840] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[2.960871] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13\x1b[m\x1b[K:\n'}
+[2.960902] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3606:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int m, int n> cv::MatExpr cv::operator+(const cv::Mat&, const cv::Matx<_Tp, m, n>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.960937] (occgrid_planner_base) StderrLine: {'line': b' 3606 | MatExpr \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K + (const Mat& a, const Matx<_Tp, m, n>& b) { return a + Mat(b); }\n'}
+[2.960973] (occgrid_planner_base) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.961007] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3606:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.961042] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:328:62:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::array<cv::Point3_<int>, 12>::value_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point3_<int>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Matx<_Tp, m, n>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.961078] (occgrid_planner_base) StderrLine: {'line': b'  328 |                     cv::Point dest = this_cell + neighbours[i\x1b[01;36m\x1b[K]\x1b[m\x1b[K;\n'}
+[2.961117] (occgrid_planner_base) StderrLine: {'line': b'      |                                                              \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.961151] (occgrid_planner_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[2.961193] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[2.961227] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13\x1b[m\x1b[K:\n'}
+[2.961260] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3608:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int m, int n> cv::MatExpr cv::operator+(const cv::Matx<_Tp, m, n>&, const cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.961295] (occgrid_planner_base) StderrLine: {'line': b' 3608 | MatExpr \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K + (const Matx<_Tp, m, n>& a, const Mat& b) { return Mat(a) + b; }\n'}
+[2.961327] (occgrid_planner_base) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.961360] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3608:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.961394] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:328:62:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<int>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Matx<_Tp, m, n>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.961427] (occgrid_planner_base) StderrLine: {'line': b'  328 |                     cv::Point dest = this_cell + neighbours[i\x1b[01;36m\x1b[K]\x1b[m\x1b[K;\n'}
+[2.961462] (occgrid_planner_base) StderrLine: {'line': b'      |                                                              \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.961495] (occgrid_planner_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3764\x1b[m\x1b[K,\n'}
+[2.961527] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[2.961561] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[2.961594] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13\x1b[m\x1b[K:\n'}
+[2.961632] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:2587:24:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::MatConstIterator_<_Tp> cv::operator+(const cv::MatConstIterator_<_Tp>&, ptrdiff_t)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.961672] (occgrid_planner_base) StderrLine: {'line': b' 2587 | MatConstIterator_<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K + (const MatConstIterator_<_Tp>& a, ptrdiff_t ofs)\n'}
+[2.961707] (occgrid_planner_base) StderrLine: {'line': b'      |                        \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.961746] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:2587:24:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.961781] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:328:62:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<int>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::MatConstIterator_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.961815] (occgrid_planner_base) StderrLine: {'line': b'  328 |                     cv::Point dest = this_cell + neighbours[i\x1b[01;36m\x1b[K]\x1b[m\x1b[K;\n'}
+[2.961848] (occgrid_planner_base) StderrLine: {'line': b'      |                                                              \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.961893] (occgrid_planner_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3764\x1b[m\x1b[K,\n'}
+[2.961953] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[2.962009] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[2.962073] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13\x1b[m\x1b[K:\n'}
+[2.962122] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:2594:24:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::MatConstIterator_<_Tp> cv::operator+(ptrdiff_t, const cv::MatConstIterator_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.962158] (occgrid_planner_base) StderrLine: {'line': b' 2594 | MatConstIterator_<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K + (ptrdiff_t ofs, const MatConstIterator_<_Tp>& a)\n'}
+[2.962195] (occgrid_planner_base) StderrLine: {'line': b'      |                        \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.962229] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:2594:24:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.962261] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:328:62:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::array<cv::Point3_<int>, 12>::value_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point3_<int>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::MatConstIterator_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.962297] (occgrid_planner_base) StderrLine: {'line': b'  328 |                     cv::Point dest = this_cell + neighbours[i\x1b[01;36m\x1b[K]\x1b[m\x1b[K;\n'}
+[2.962331] (occgrid_planner_base) StderrLine: {'line': b'      |                                                              \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.962361] (occgrid_planner_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3764\x1b[m\x1b[K,\n'}
+[2.962395] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[2.962425] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[2.962457] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13\x1b[m\x1b[K:\n'}
+[2.962489] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:2724:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::MatIterator_<_Tp> cv::operator+(const cv::MatIterator_<_Tp>&, ptrdiff_t)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.962522] (occgrid_planner_base) StderrLine: {'line': b' 2724 | MatIterator_<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K + (const MatIterator_<_Tp>& a, ptrdiff_t ofs)\n'}
+[2.962554] (occgrid_planner_base) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.962584] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:2724:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.962614] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:328:62:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<int>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::MatIterator_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.962647] (occgrid_planner_base) StderrLine: {'line': b'  328 |                     cv::Point dest = this_cell + neighbours[i\x1b[01;36m\x1b[K]\x1b[m\x1b[K;\n'}
+[2.962690] (occgrid_planner_base) StderrLine: {'line': b'      |                                                              \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.962723] (occgrid_planner_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3764\x1b[m\x1b[K,\n'}
+[2.962755] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[2.962793] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[2.962824] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13\x1b[m\x1b[K:\n'}
+[2.962862] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:2731:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::MatIterator_<_Tp> cv::operator+(ptrdiff_t, const cv::MatIterator_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.962911] (occgrid_planner_base) StderrLine: {'line': b' 2731 | MatIterator_<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K + (ptrdiff_t ofs, const MatIterator_<_Tp>& a)\n'}
+[2.962967] (occgrid_planner_base) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.963001] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:2731:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.963101] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:328:62:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::array<cv::Point3_<int>, 12>::value_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point3_<int>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::MatIterator_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.963139] (occgrid_planner_base) StderrLine: {'line': b'  328 |                     cv::Point dest = this_cell + neighbours[i\x1b[01;36m\x1b[K]\x1b[m\x1b[K;\n'}
+[2.963170] (occgrid_planner_base) StderrLine: {'line': b'      |                                                              \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.963202] (occgrid_planner_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[2.963235] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[2.963266] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13\x1b[m\x1b[K:\n'}
+[2.963299] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:2146:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::Range cv::operator+(const cv::Range&, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.963333] (occgrid_planner_base) StderrLine: {'line': b' 2146 | Range \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K + (const Range& r1, int delta)\n'}
+[2.963367] (occgrid_planner_base) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.963402] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:2146:32:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Point\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<int>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Range&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.963441] (occgrid_planner_base) StderrLine: {'line': b' 2146 | Range operator + (\x1b[01;36m\x1b[Kconst Range& r1\x1b[m\x1b[K, int delta)\n'}
+[2.963476] (occgrid_planner_base) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[2.963509] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:2152:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::Range cv::operator+(int, const cv::Range&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.963540] (occgrid_planner_base) StderrLine: {'line': b' 2152 | Range \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K + (int delta, const Range& r1)\n'}
+[2.963572] (occgrid_planner_base) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.963603] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:2152:23:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Point\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<int>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.963636] (occgrid_planner_base) StderrLine: {'line': b' 2152 | Range operator + (\x1b[01;36m\x1b[Kint delta\x1b[m\x1b[K, const Range& r1)\n'}
+[2.963668] (occgrid_planner_base) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K~~~~^~~~~\x1b[m\x1b[K\n'}
+[2.963701] (occgrid_planner_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[2.963732] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[2.963763] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13\x1b[m\x1b[K:\n'}
+[2.963794] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3597:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::MatExpr cv::operator+(const cv::Mat&, const cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.963828] (occgrid_planner_base) StderrLine: {'line': b' 3597 | CV_EXPORTS MatExpr \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K + (const Mat& a, const Mat& b);\n'}
+[2.963859] (occgrid_planner_base) StderrLine: {'line': b'      |                    \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.963890] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3597:43:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Point\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<int>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Mat&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.963925] (occgrid_planner_base) StderrLine: {'line': b' 3597 | CV_EXPORTS MatExpr operator + (\x1b[01;36m\x1b[Kconst Mat& a\x1b[m\x1b[K, const Mat& b);\n'}
+[2.963958] (occgrid_planner_base) StderrLine: {'line': b'      |                                \x1b[01;36m\x1b[K~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[2.963989] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3598:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::MatExpr cv::operator+(const cv::Mat&, const Scalar&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.964021] (occgrid_planner_base) StderrLine: {'line': b' 3598 | CV_EXPORTS MatExpr \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K + (const Mat& a, const Scalar& s);\n'}
+[2.964053] (occgrid_planner_base) StderrLine: {'line': b'      |                    \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.964085] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3598:43:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Point\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<int>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Mat&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.964120] (occgrid_planner_base) StderrLine: {'line': b' 3598 | CV_EXPORTS MatExpr operator + (\x1b[01;36m\x1b[Kconst Mat& a\x1b[m\x1b[K, const Scalar& s);\n'}
+[2.964152] (occgrid_planner_base) StderrLine: {'line': b'      |                                \x1b[01;36m\x1b[K~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[2.964187] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3599:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::MatExpr cv::operator+(const Scalar&, const cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.964221] (occgrid_planner_base) StderrLine: {'line': b' 3599 | CV_EXPORTS MatExpr \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K + (const Scalar& s, const Mat& a);\n'}
+[2.964254] (occgrid_planner_base) StderrLine: {'line': b'      |                    \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.964292] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3599:46:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Point\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<int>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst Scalar&\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Scalar_<double>&\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[2.964331] (occgrid_planner_base) StderrLine: {'line': b' 3599 | CV_EXPORTS MatExpr operator + (\x1b[01;36m\x1b[Kconst Scalar& s\x1b[m\x1b[K, const Mat& a);\n'}
+[2.964366] (occgrid_planner_base) StderrLine: {'line': b'      |                                \x1b[01;36m\x1b[K~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[2.964408] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3600:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::MatExpr cv::operator+(const cv::MatExpr&, const cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.964443] (occgrid_planner_base) StderrLine: {'line': b' 3600 | CV_EXPORTS MatExpr \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K + (const MatExpr& e, const Mat& m);\n'}
+[2.964488] (occgrid_planner_base) StderrLine: {'line': b'      |                    \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.964521] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3600:47:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Point\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<int>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst cv::MatExpr&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.964558] (occgrid_planner_base) StderrLine: {'line': b' 3600 | CV_EXPORTS MatExpr operator + (\x1b[01;36m\x1b[Kconst MatExpr& e\x1b[m\x1b[K, const Mat& m);\n'}
+[2.964591] (occgrid_planner_base) StderrLine: {'line': b'      |                                \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[2.964632] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3601:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::MatExpr cv::operator+(const cv::Mat&, const cv::MatExpr&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.964663] (occgrid_planner_base) StderrLine: {'line': b' 3601 | CV_EXPORTS MatExpr \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K + (const Mat& m, const MatExpr& e);\n'}
+[2.964696] (occgrid_planner_base) StderrLine: {'line': b'      |                    \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.964727] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3601:43:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Point\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<int>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Mat&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.964762] (occgrid_planner_base) StderrLine: {'line': b' 3601 | CV_EXPORTS MatExpr operator + (\x1b[01;36m\x1b[Kconst Mat& m\x1b[m\x1b[K, const MatExpr& e);\n'}
+[2.964793] (occgrid_planner_base) StderrLine: {'line': b'      |                                \x1b[01;36m\x1b[K~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[2.964825] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3602:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::MatExpr cv::operator+(const cv::MatExpr&, const Scalar&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.964858] (occgrid_planner_base) StderrLine: {'line': b' 3602 | CV_EXPORTS MatExpr \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K + (const MatExpr& e, const Scalar& s);\n'}
+[2.964890] (occgrid_planner_base) StderrLine: {'line': b'      |                    \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.964924] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3602:47:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Point\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<int>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst cv::MatExpr&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.964960] (occgrid_planner_base) StderrLine: {'line': b' 3602 | CV_EXPORTS MatExpr operator + (\x1b[01;36m\x1b[Kconst MatExpr& e\x1b[m\x1b[K, const Scalar& s);\n'}
+[2.964993] (occgrid_planner_base) StderrLine: {'line': b'      |                                \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[2.965028] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3603:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::MatExpr cv::operator+(const Scalar&, const cv::MatExpr&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.965061] (occgrid_planner_base) StderrLine: {'line': b' 3603 | CV_EXPORTS MatExpr \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K + (const Scalar& s, const MatExpr& e);\n'}
+[2.965095] (occgrid_planner_base) StderrLine: {'line': b'      |                    \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.965134] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3603:46:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Point\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<int>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst Scalar&\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Scalar_<double>&\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[2.965169] (occgrid_planner_base) StderrLine: {'line': b' 3603 | CV_EXPORTS MatExpr operator + (\x1b[01;36m\x1b[Kconst Scalar& s\x1b[m\x1b[K, const MatExpr& e);\n'}
+[2.965206] (occgrid_planner_base) StderrLine: {'line': b'      |                                \x1b[01;36m\x1b[K~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[2.965242] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3604:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::MatExpr cv::operator+(const cv::MatExpr&, const cv::MatExpr&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.965277] (occgrid_planner_base) StderrLine: {'line': b' 3604 | CV_EXPORTS MatExpr \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K + (const MatExpr& e1, const MatExpr& e2);\n'}
+[2.965310] (occgrid_planner_base) StderrLine: {'line': b'      |                    \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.965349] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3604:47:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Point\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<int>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst cv::MatExpr&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.965386] (occgrid_planner_base) StderrLine: {'line': b' 3604 | CV_EXPORTS MatExpr operator + (\x1b[01;36m\x1b[Kconst MatExpr& e1\x1b[m\x1b[K, const MatExpr& e2);\n'}
+[2.965422] (occgrid_planner_base) StderrLine: {'line': b'      |                                \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[2.965460] (occgrid_planner_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3764\x1b[m\x1b[K,\n'}
+[2.965491] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[2.965525] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[2.965557] (occgrid_planner_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:13\x1b[m\x1b[K:\n'}
+[2.965592] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:2439:18:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::MatConstIterator cv::operator+(const cv::MatConstIterator&, ptrdiff_t)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.965627] (occgrid_planner_base) StderrLine: {'line': b' 2439 | MatConstIterator \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K + (const MatConstIterator& a, ptrdiff_t ofs)\n'}
+[2.965676] (occgrid_planner_base) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.965721] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:2439:54:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Point\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<int>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst cv::MatConstIterator&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.965759] (occgrid_planner_base) StderrLine: {'line': b' 2439 | MatConstIterator operator + (\x1b[01;36m\x1b[Kconst MatConstIterator& a\x1b[m\x1b[K, ptrdiff_t ofs)\n'}
+[2.965803] (occgrid_planner_base) StderrLine: {'line': b'      |                              \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[2.965842] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:2446:18:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::MatConstIterator cv::operator+(ptrdiff_t, const cv::MatConstIterator&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.965889] (occgrid_planner_base) StderrLine: {'line': b' 2446 | MatConstIterator \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K + (ptrdiff_t ofs, const MatConstIterator& a)\n'}
+[2.965936] (occgrid_planner_base) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.965996] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:2446:40:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Point\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<int>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kptrdiff_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[2.966045] (occgrid_planner_base) StderrLine: {'line': b' 2446 | MatConstIterator operator + (\x1b[01;36m\x1b[Kptrdiff_t ofs\x1b[m\x1b[K, const MatConstIterator& a)\n'}
+[2.966100] (occgrid_planner_base) StderrLine: {'line': b'      |                              \x1b[01;36m\x1b[K~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[2.966152] (occgrid_planner_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:363:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kconversion from \xe2\x80\x98\x1b[01m\x1b[KVec<[...],\x1b[01;32m\x1b[K3\x1b[m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 to non-scalar type \xe2\x80\x98\x1b[01m\x1b[KVec<[...],\x1b[01;32m\x1b[K2\x1b[m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 requested\n'}
+[2.966189] (occgrid_planner_base) StderrLine: {'line': b'  363 |                 cv::Vec2s p = \x1b[01;31m\x1b[Kpredecessor(target.x,target.y)\x1b[m\x1b[K;\n'}
+[2.966221] (occgrid_planner_base) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.005696] (-) TimerEvent: {}
+[3.106020] (-) TimerEvent: {}
+[3.206323] (-) TimerEvent: {}
+[3.306616] (-) TimerEvent: {}
+[3.406892] (-) TimerEvent: {}
+[3.507161] (-) TimerEvent: {}
+[3.607435] (-) TimerEvent: {}
+[3.707719] (-) TimerEvent: {}
+[3.807966] (-) TimerEvent: {}
+[3.908222] (-) TimerEvent: {}
+[4.008503] (-) TimerEvent: {}
+[4.108802] (-) TimerEvent: {}
+[4.209067] (-) TimerEvent: {}
+[4.309365] (-) TimerEvent: {}
+[4.409673] (-) TimerEvent: {}
+[4.497342] (occgrid_planner_base) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/path_follower_base.dir/build.make:76: CMakeFiles/path_follower_base.dir/src/path_follower.cpp.o] Error 1\n'}
+[4.497519] (occgrid_planner_base) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/path_follower_base.dir/all] Error 2\n'}
+[4.497562] (occgrid_planner_base) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[4.509803] (-) TimerEvent: {}
+[4.610067] (-) TimerEvent: {}
+[4.710332] (-) TimerEvent: {}
+[4.810600] (-) TimerEvent: {}
+[4.910876] (-) TimerEvent: {}
+[5.011147] (-) TimerEvent: {}
+[5.111394] (-) TimerEvent: {}
+[5.211665] (-) TimerEvent: {}
+[5.311912] (-) TimerEvent: {}
+[5.412177] (-) TimerEvent: {}
+[5.512440] (-) TimerEvent: {}
+[5.612717] (-) TimerEvent: {}
+[5.712994] (-) TimerEvent: {}
+[5.729668] (occgrid_planner_base) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/occgrid_planner_base.dir/build.make:76: CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o] Error 1\n'}
+[5.729816] (occgrid_planner_base) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/occgrid_planner_base.dir/all] Error 2\n'}
+[5.813121] (-) TimerEvent: {}
+[5.913364] (-) TimerEvent: {}
+[6.013633] (-) TimerEvent: {}
+[6.113890] (-) TimerEvent: {}
+[6.214166] (-) TimerEvent: {}
+[6.314402] (-) TimerEvent: {}
+[6.414666] (-) TimerEvent: {}
+[6.514924] (-) TimerEvent: {}
+[6.615200] (-) TimerEvent: {}
+[6.715455] (-) TimerEvent: {}
+[6.815716] (-) TimerEvent: {}
+[6.915973] (-) TimerEvent: {}
+[7.016223] (-) TimerEvent: {}
+[7.116480] (-) TimerEvent: {}
+[7.216741] (-) TimerEvent: {}
+[7.317000] (-) TimerEvent: {}
+[7.417263] (-) TimerEvent: {}
+[7.517522] (-) TimerEvent: {}
+[7.617791] (-) TimerEvent: {}
+[7.718075] (-) TimerEvent: {}
+[7.818294] (-) TimerEvent: {}
+[7.918524] (-) TimerEvent: {}
+[8.018774] (-) TimerEvent: {}
+[8.119034] (-) TimerEvent: {}
+[8.219293] (-) TimerEvent: {}
+[8.319551] (-) TimerEvent: {}
+[8.419808] (-) TimerEvent: {}
+[8.520056] (-) TimerEvent: {}
+[8.620292] (-) TimerEvent: {}
+[8.720554] (-) TimerEvent: {}
+[8.820815] (-) TimerEvent: {}
+[8.921069] (-) TimerEvent: {}
+[9.021324] (-) TimerEvent: {}
+[9.121587] (-) TimerEvent: {}
+[9.221847] (-) TimerEvent: {}
+[9.322121] (-) TimerEvent: {}
+[9.422373] (-) TimerEvent: {}
+[9.522626] (-) TimerEvent: {}
+[9.622876] (-) TimerEvent: {}
+[9.723113] (-) TimerEvent: {}
+[9.823346] (-) TimerEvent: {}
+[9.923606] (-) TimerEvent: {}
+[10.023880] (-) TimerEvent: {}
+[10.124154] (-) TimerEvent: {}
+[10.224414] (-) TimerEvent: {}
+[10.324688] (-) TimerEvent: {}
+[10.424980] (-) TimerEvent: {}
+[10.525244] (-) TimerEvent: {}
+[10.625518] (-) TimerEvent: {}
+[10.725806] (-) TimerEvent: {}
+[10.826081] (-) TimerEvent: {}
+[10.926342] (-) TimerEvent: {}
+[11.026624] (-) TimerEvent: {}
+[11.126892] (-) TimerEvent: {}
+[11.227145] (-) TimerEvent: {}
+[11.285366] (occgrid_planner_base) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable path_optimizer_base\x1b[0m\n'}
+[11.327271] (-) TimerEvent: {}
+[11.427523] (-) TimerEvent: {}
+[11.527736] (-) TimerEvent: {}
+[11.627975] (-) TimerEvent: {}
+[11.728228] (-) TimerEvent: {}
+[11.825099] (occgrid_planner_base) StdoutLine: {'line': b'[ 66%] Built target path_optimizer_base\n'}
+[11.825582] (occgrid_planner_base) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[11.826799] (occgrid_planner_base) CommandEnded: {'returncode': 2}
+[11.833149] (-) TimerEvent: {}
+[11.889327] (occgrid_planner_base) JobEnded: {'identifier': 'occgrid_planner_base', 'rc': 2}
+[11.899676] (-) EventReactorShutdown: {}

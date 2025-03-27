@@ -1,0 +1,30 @@
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/path_follower.cpp:[m[K In member function ‘[01m[Kvoid PathFollower::target_pose_callback(geometry_msgs::msg::PoseStamped_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/path_follower.cpp:60:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_[m[K’ was not declared in this scope
+   60 |             [01;31m[Kgoal_[m[K=*msg;
+      |             [01;31m[K^~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/path_follower.cpp:[m[K In constructor ‘[01m[KPathFollower::PathFollower()[m[K’:
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/path_follower.cpp:131:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_pose_sub_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktarget_pose_callback[m[K’?
+  131 |             [01;31m[Ktarget_pose_sub_[m[K = this->create_subscription<geometry_msgs::msg::PoseStamped>("/move_base_simple/goal",1,
+      |             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |             [32m[Ktarget_pose_callback[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/path_follower.cpp:132:58:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_cb[m[K’ is not a member of ‘[01m[KPathFollower[m[K’
+  132 |                                 std::bind(&PathFollower::[01;31m[Ktarget_cb[m[K,this,std::placeholders::_1));
+      |                                                          [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/path_follower.cpp:133:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_pose_pub_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktarget_pose_callback[m[K’?
+  133 |             [01;31m[Ktarget_pose_pub_[m[K = this->create_publisher<geometry_msgs::msg::PoseStamped>("/move_base_simple/goal",1);
+      |             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |             [32m[Ktarget_pose_callback[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/path_follower.cpp:[m[K In member function ‘[01m[Kvoid PathFollower::timer_cb()[m[K’:
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/path_follower.cpp:154:97:[m[K [01;31m[Kerror: [m[K‘[01m[Kdelay_[m[K’ was not declared in this scope
+  154 |    Trajectory::const_iterator it = traj_.lower_bound(now.seconds() + look_ahead_ - [01;31m[Kdelay_[m[K);
+      |                                                                                    [01;31m[K^~~~~~[m[K
+
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/path_follower.cpp:193:25:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_pub_[m[K’ was not declared in this scope
+  193 |                         [01;31m[Ktarget_pub_[m[K->publish(goal_); // ! Replan a trajectory.
+      |                         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/path_follower.cpp:193:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_[m[K’ was not declared in this scope
+  193 |                         target_pub_->publish([01;31m[Kgoal_[m[K); // ! Replan a trajectory.
+      |                                              [01;31m[K^~~~~[m[K
+gmake[2]: *** [CMakeFiles/path_follower_base.dir/build.make:76: CMakeFiles/path_follower_base.dir/src/path_follower.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/path_follower_base.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

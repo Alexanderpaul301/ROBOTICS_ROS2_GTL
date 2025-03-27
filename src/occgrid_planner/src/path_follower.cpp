@@ -180,20 +180,19 @@ class PathFollower : public rclcpp::Node {
                 pose2d_pub_->publish(error);
                 if (hypot(error.x,error.y)>max_error_) {
                     // add the time of while to the delay
-                    delay_ += 2*period_;
+                    delay_ += 2*period_;   // ! I added a 2 period delay to the carrot.
                     // there is a little bug, then the robot is blocked
                     // the target continue to go forward, but very slowly
                     // We didn't take into account the execution time
                     // of one iteration of a loop
                     RCLCPP_INFO(this->get_logger(),"New delay: %.2f", delay_);
 
-#if 0
-                    // STEP3
-                    // We are stuck for too long time
+
+                    // ! After 5 seconds we replan by publishing a new goal.
                     if(delay_ > 5) {
-                        target_pub_->publish(goal_); // Then remake atrajectory
+                        target_pub_->publish(goal_); // ! Replan a trajectory.
                     }
-#endif
+
                 }
 
                 geometry_msgs::msg::Twist twist;

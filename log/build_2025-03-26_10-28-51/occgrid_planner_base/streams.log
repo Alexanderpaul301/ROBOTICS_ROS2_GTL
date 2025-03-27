@@ -1,0 +1,21 @@
+[0.020s] Invoking command in '/home/GTL/apaul/ros2_hw1/build/occgrid_planner_base': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/occgrid_planner_base -- -j16 -l16
+[0.055s] [35m[1mConsolidate compiler generated dependencies of target path_follower_base[0m
+[0.066s] [ 66%] Built target path_optimizer_base
+[0.066s] [ 66%] Built target occgrid_planner_base
+[0.116s] [ 83%] [32mBuilding CXX object CMakeFiles/path_follower_base.dir/src/path_follower.cpp.o[0m
+[2.195s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/path_follower.cpp:[m[K In constructor ‘[01m[KPathFollower::PathFollower()[m[K’:
+[2.195s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/path_follower.cpp:135:58:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_cb[m[K’ is not a member of ‘[01m[KPathFollower[m[K’
+[2.195s]   135 |                                 std::bind(&PathFollower::[01;31m[Ktarget_cb[m[K,this,std::placeholders::_1));
+[2.195s]       |                                                          [01;31m[K^~~~~~~~~[m[K
+[2.201s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/path_follower.cpp:[m[K In member function ‘[01m[Kvoid PathFollower::timer_cb()[m[K’:
+[2.201s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/path_follower.cpp:157:97:[m[K [01;31m[Kerror: [m[K‘[01m[Kdelay_[m[K’ was not declared in this scope
+[2.201s]   157 |    Trajectory::const_iterator it = traj_.lower_bound(now.seconds() + look_ahead_ - [01;31m[Kdelay_[m[K);
+[2.201s]       |                                                                                    [01;31m[K^~~~~~[m[K
+[2.201s] 
+[2.206s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/path_follower.cpp:196:25:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_pub_[m[K’ was not declared in this scope
+[2.206s]   196 |                         [01;31m[Ktarget_pub_[m[K->publish(goal_); // ! Replan a trajectory.
+[2.206s]       |                         [01;31m[K^~~~~~~~~~~[m[K
+[4.157s] gmake[2]: *** [CMakeFiles/path_follower_base.dir/build.make:76: CMakeFiles/path_follower_base.dir/src/path_follower.cpp.o] Error 1
+[4.157s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/path_follower_base.dir/all] Error 2
+[4.157s] gmake: *** [Makefile:146: all] Error 2
+[4.159s] Invoked command in '/home/GTL/apaul/ros2_hw1/build/occgrid_planner_base' returned '2': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/occgrid_planner_base -- -j16 -l16

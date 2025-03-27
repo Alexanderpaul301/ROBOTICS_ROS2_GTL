@@ -77,13 +77,17 @@ class OccupancyGridPlanner : public rclcpp::Node {
                         case 100: 
                             og_(j,i) = OCCUPIED; 
                             break;
-                        case -1: 
+                        case -1:   // We know consider the unknown cells to be free.
                         default:
-                            og_(j,i) = UNKNOWN; 
+                            og_(j,i) = FREE; 
                             break;
-                    }
-                    // Update the bounding box of free or occupied cells.
-                    if (og_(j,i) != UNKNOWN) {
+                        // case -1: 
+                        // default:
+                            // og_(j,i) = UNKNOWN; 
+                            // break;
+            }
+             // Update the bounding box of free or occupied cells.
+              if (og_(j,i) != UNKNOWN) {
                         minx = std::min(minx,i);
                         miny = std::min(miny,j);
                         maxx = std::max(maxx,i);

@@ -1,0 +1,17 @@
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/path_follower.cpp:[m[K In constructor ‘[01m[KPathFollower::PathFollower()[m[K’:
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/path_follower.cpp:127:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_pose_sub_[m[K’ was not declared in this scope
+  127 |             [01;31m[Ktarget_pose_sub_[m[K = this->create_subscription<geometry_msgs::msg::PoseStamped>("/move_base_simple/goal",1, std::bind(&PathFollower::target_cb,this,std::placeholders::1));
+      |             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/path_follower.cpp:127:144:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_cb[m[K’ is not a member of ‘[01m[KPathFollower[m[K’
+  127 |             target_pose_sub_ = this->create_subscription<geometry_msgs::msg::PoseStamped>("/move_base_simple/goal",1, std::bind(&PathFollower::[01;31m[Ktarget_cb[m[K,this,std::placeholders::1));
+      |                                                                                                                                                [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/path_follower.cpp:127:178:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before numeric constant
+  127 |             target_pose_sub_ = this->create_subscription<geometry_msgs::msg::PoseStamped>("/move_base_simple/goal",1, std::bind(&PathFollower::target_cb,this,std::placeholders::[01;31m[K1[m[K));
+      |                                                                                                                                                                                  [01;31m[K^[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/path_follower.cpp:128:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_pose_pub_[m[K’ was not declared in this scope
+  128 |             [01;31m[Ktarget_pose_pub_[m[K = this->create_publisher<geometry_msgs::msg::PoseStamped>("/move_base_simple/goal",1);
+      |             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/path_follower_base.dir/build.make:76: CMakeFiles/path_follower_base.dir/src/path_follower.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/path_follower_base.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

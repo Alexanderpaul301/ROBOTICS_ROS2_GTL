@@ -1,3 +1,5 @@
+
+#include <vector>
 #include <string>
 #include <map>
 #include <list>
@@ -24,7 +26,6 @@
 
 using std::placeholders::_1;
 using namespace std::chrono_literals;
-using namespace cv;
 
 class OccupancyGridPlanner : public rclcpp::Node {
     protected:
@@ -37,10 +38,10 @@ class OccupancyGridPlanner : public rclcpp::Node {
         std::shared_ptr<tf2_ros::TransformListener> tf_listener{nullptr};
         std::unique_ptr<tf2_ros::Buffer> tf_buffer;
 
-        cv::Rect roi_; 
+        cv::Rect roi_;
         cv::Mat_<uint8_t> og_, cropped_og_;
         cv::Mat_<cv::Vec3b> og_rgb_, og_rgb_marked_;
-        cv::Point og_center_;
+        cv::Point3i og_center_;
         nav_msgs::msg::MapMetaData info_;
         std::string frame_id_;
         std::string base_link_;
@@ -49,13 +50,8 @@ class OccupancyGridPlanner : public rclcpp::Node {
         bool debug_;
         double robot_radius_;
 
-        // OpenCV variables
-        int dilation_type = cv::MORPH_ELLIPSE;
-        int dilation_size = 5; 
-
         typedef std::multimap<float, cv::Point3i> Heap;
 
-        // Example of code to convert between Point3i and Point2i, aka Point
         cv::Point P2(const cv::Point3i & P) {return cv::Point(P.x,P.y);}
 
         // Callback for Occupancy Grids
@@ -63,17 +59,9 @@ class OccupancyGridPlanner : public rclcpp::Node {
             info_ = msg->info;
             frame_id_ = msg->header.frame_id;
             // Create an image to store the value of the grid.
-
-            // int sizes[] = {msg->info.height, msg->info.width, 2};       // ! Initialize the new 3D map
-            // og_ = cv::Mat(3, sizes, CV_8U, cv::Scalar(0xFF));
-
-            cv::Point3i og_center_(-info_.origin.position.x/info_.resolution,    // ! Initialize the new 3D map center
-                    -info_.origin.position.y/info_.resolution,
-                    -info_.origin.orientation.z);
-
-            og_ = cv::Mat_<uint8_t>(msg->info.height, msg->info.width,0xFF);   // ! I modified og_ to be a 3D matrix, now we have 3D for x, y, theta
-            // og_center_ = cv::Point3i(-info_.origin.position.x/info_.resolution,
-            //         -info_.origin.position.y/info_.resolution);
+            og_ = cv::Mat_<uint8_t>(msg->info.height, msg->info.width,0xFF);
+            og_center_ = cv::Point3i(-info_.origin.position.x/info_.resolution,
+                    -info_.origin.position.y/info_.resolution,0);
 
             // Some variables to select the useful bounding box 
             unsigned int maxx=0, minx=msg->info.width, 
@@ -89,13 +77,17 @@ class OccupancyGridPlanner : public rclcpp::Node {
                         case 100: 
                             og_(j,i) = OCCUPIED; 
                             break;
-                        case -1: 
+                        case -1:   // We know consider the unknown cells to be free.
                         default:
-                            og_(j,i) = UNKNOWN; 
+                            og_(j,i) = FREE; 
                             break;
-                    }
-                    // Update the bounding box of free or occupied cells.
-                    if (og_(j,i) != UNKNOWN) {
+                        // case -1: 
+                        // default:
+                            // og_(j,i) = UNKNOWN; 
+                            // break;
+            }
+             // Update the bounding box of free or occupied cells.
+              if (og_(j,i) != UNKNOWN) {
                         minx = std::min(minx,i);
                         miny = std::min(miny,j);
                         maxx = std::max(maxx,i);
@@ -103,27 +95,14 @@ class OccupancyGridPlanner : public rclcpp::Node {
                     }
                 }
             }
-            // TODO: Implement obstacle expansion here
-
-            // Create a binary mask where we have occupied cells so that we expand only the obstacles
-            cv::Mat binary_mask;
-            cv::compare(og_, OCCUPIED, binary_mask, cv::CMP_EQ);
-            binary_mask *= 255; // Convert boolean mask (0 or 1) to 0 or 255
-
-            cv::Mat element = cv::getStructuringElement(dilation_type,
-                            cv::Size(2 * dilation_size + 1, 2 * dilation_size + 1),
-                            cv::Point(dilation_size, dilation_size));
-
-
-            // Dilate the binary mask to expand obstacles
-            cv::Mat dilated_mask;
-            cv::dilate(binary_mask, dilated_mask, element);
-
-            og_.setTo(OCCUPIED, dilated_mask);
-            // ! Don't know why but it looks like the map is reversed.
-
-
-
+            // dilatation/erosion part
+            int erosion_type = cv::MORPH_RECT ;
+            int erosion_size = robot_radius_/info_.resolution ;
+            cv::Mat element = cv::getStructuringElement(erosion_type,
+                    cv::Size(2*erosion_size+1,2*erosion_size+1),
+                    cv::Point( erosion_size, erosion_size));
+            cv::erode( og_, og_, element );
+            // -----------------------
             if (!ready_) {
                 ready_ = true;
                 RCLCPP_INFO(this->get_logger(),"Received occupancy grid, ready_ to plan");
@@ -134,6 +113,7 @@ class OccupancyGridPlanner : public rclcpp::Node {
             roi_ = cv::Rect(minx,miny,w,h);
             if (!headless_) {
                 cv::cvtColor(og_, og_rgb_, cv::COLOR_GRAY2RGB);
+                // og_rgb_(50,50) = cv::Vec3b(255,0,0);
                 // Compute a sub-image that covers only the useful part of the
                 // grid.
                 cropped_og_ = cv::Mat_<uint8_t>(og_,roi_);
@@ -158,13 +138,27 @@ class OccupancyGridPlanner : public rclcpp::Node {
         }
 
         // Generic test if a point is within the occupancy grid
-        bool isInGrid(const cv::Point & P) {
+        bool isInGrid(const cv::Point3i & P) {
             if ((P.x < 0) || (P.x >= (signed)info_.width) 
                     || (P.y < 0) || (P.y >= (signed)info_.height)) {
                 return false;
             }
             return true;
         }
+
+        double heuristic(const cv::Point3i & P, const cv::Point3i & target) {
+            return hypot(target.x - P.x, target.y - P.y);
+        }
+
+        template <class iterator_in, class iterator_out>
+            void rotate_pattern_90(iterator_in in_start, iterator_in in_end, iterator_out out_start) {
+                while (in_start != in_end) {
+                    const cv::Point3i & Pin = *in_start;
+                    *out_start = cv::Point3i(-Pin.y, Pin.x, Pin.z);
+                    in_start++;
+                    out_start++;
+                }
+            }
 
         // This is called when a new goal is posted by RViz. We don't use a
         // mutex here, because it can only be called in spinOnce.
@@ -211,14 +205,13 @@ class OccupancyGridPlanner : public rclcpp::Node {
             }
             // Now scale the target to the grid resolution and shift it to the
             // grid center.
-            // For reference, this recovers the robot orientation
             double t_yaw = tf2::getYaw(pose.pose.orientation);
-            cv::Point target = cv::Point(pose.pose.position.x / info_.resolution, 
-                    pose.pose.position.y / info_.resolution)
+            cv::Point3i target = cv::Point3i(pose.pose.position.x / info_.resolution, 
+                    pose.pose.position.y / info_.resolution, (unsigned int)(round(t_yaw / (M_PI/4))) % 8)
                 + og_center_;
-            RCLCPP_INFO(this->get_logger(),"Planning target: %.2f %.2f %.2f-> %d %d",
-                    pose.pose.position.x, pose.pose.position.y, t_yaw, target.x, target.y);
-            cv::circle(og_rgb_marked_,target, 10, cv::Scalar(0,0,255));
+            RCLCPP_INFO(this->get_logger(),"Planning target: %.2f %.2f %.2f-> %d %d %d",
+                    pose.pose.position.x, pose.pose.position.y, t_yaw, target.x, target.y, target.z);
+            cv::circle(og_rgb_marked_,P2(target), 10, cv::Scalar(0,0,255));
             if (!headless_) {
                 cv::imshow( "OccGrid", og_rgb_marked_ );
             }
@@ -228,27 +221,26 @@ class OccupancyGridPlanner : public rclcpp::Node {
                 return;
             }
             // Only accept target which are FREE in the grid (HW, Step 5).
-            if (og_(target) != FREE) {
-                RCLCPP_ERROR(this->get_logger(),"Invalid target point: occupancy = %d",og_(target));
+            if (og_(P2(target)) != FREE) {
+                RCLCPP_ERROR(this->get_logger(),"Invalid target point: occupancy = %d",og_(P2(target)));
                 return;
             }
 
             // Now get the current point in grid coordinates.
-            cv::Point start;
+            cv::Point3i start;
             double s_yaw = 0;
             if (debug_) {
                 start = og_center_;
             } else {
-                // For reference, this is how we get the current pose orientation
                 s_yaw = tf2::getYaw(transformStamped.transform.rotation);
-                start = cv::Point(transformStamped.transform.translation.x / info_.resolution, 
-                        transformStamped.transform.translation.y / info_.resolution)
+                start = cv::Point3i(transformStamped.transform.translation.x / info_.resolution, 
+                        transformStamped.transform.translation.y / info_.resolution, (unsigned int)(round(s_yaw / (M_PI/4))) % 8)
                     + og_center_;
             }
-            RCLCPP_INFO(this->get_logger(),"Planning origin %.2f %.2f %.2f -> %d %d",
+            RCLCPP_INFO(this->get_logger(),"Planning origin %.2f %.2f %.2f -> %d %d %d",
                     transformStamped.transform.translation.x, transformStamped.transform.translation.y,
-                    s_yaw, start.x, start.y);
-            cv::circle(og_rgb_marked_,start, 10, cv::Scalar(0,255,0));
+                    s_yaw, start.x, start.y, start.z);
+            cv::circle(og_rgb_marked_,P2(start), 10, cv::Scalar(0,255,0));
             if (!headless_) {
                 cv::imshow( "OccGrid", og_rgb_marked_ );
             }
@@ -260,108 +252,100 @@ class OccupancyGridPlanner : public rclcpp::Node {
             }
             // If the starting point is not FREE there is a bug somewhere, but
             // better to check
-            if (og_(start) != FREE) {
-                RCLCPP_ERROR(this->get_logger(),"Invalid start point: occupancy = %d",og_(start));
+            if (og_(P2(start)) != FREE) {
+                RCLCPP_ERROR(this->get_logger(),"Invalid start point: occupancy = %d",og_(P2(start)));
                 return;
             }
             RCLCPP_INFO(this->get_logger(),"Starting planning from (%d, %d) to (%d, %d)",start.x,start.y, target.x, target.y);
             // Here the Dijskstra algorithm starts 
             // The best distance to the goal computed so far. This is
             // initialised with Not-A-Number. 
-            // cv::Mat_<float> cell_value(og_.size(), NAN);
-            // For each cell we need to store a pointer to the coordinates of
-            // its best predecessor. 
-            // cv::Mat_<cv::Vec2s> predecessor(og_.size());
-            
-            // TODO: For reference, this is how we would make the arrays 3D
             int dims[3] = {og_.size().width, og_.size().height, 8};
             cv::Mat_<float> cell_value(3,dims, NAN);
+            // For each cell we need to store a pointer to the coordinates of
+            // its best predecessor. 
             cv::Mat_<cv::Vec3s> predecessor(3,dims);
 
             // The neighbour of a given cell in relative coordinates. The order
             // is important. If we use 4-connexity, then we can use only the
             // first 4 values of the array. If we use 8-connexity we use the
             // full array.
-            // std::array<cv::Point,8> neighbours = {cv::Point(1,0), cv::Point(0,1), cv::Point(-1,0), cv::Point(0, -1),
-            //     cv::Point(1,1), cv::Point(-1,1), cv::Point(-1,-1), cv::Point(1,-1)};
-            // TODO: Create a new set of neighbours in 3D
-            std::array<cv::Point3i,12> neighbours = {cv::Point3i(0, 1, 0), cv::Point3i(-1, 1, 1), cv::Point3i(-1, 0, 2),  // Moving in front of the robot
-                                                    cv::Point3i(1, 0, 6), cv::Point3i(1, 1, 7),
-                                                    
-                                                    cv::Point3i(0, 0, 0),cv::Point3i(0, 0, 1),cv::Point3i(0, 0, 2), // These points are the rotation auround itself
-                                                    cv::Point3i(0, 0, 3),cv::Point3i(0, 0, 4),cv::Point3i(0, 0, 5),
-                                                    cv::Point3i(0, 0, 6),cv::Point3i(0, 0, 7)};
-            // moves are 44% longer when on the diagonal.
+            cv::Point3i neighbours_0[5] = {cv::Point3i(1,0,0), 
+                cv::Point3i(1,1,1), cv::Point3i(1,-1,-1), cv::Point3i(0,0,1), cv::Point3i(0,0,-1)};
+            cv::Point3i neighbours_45[5] = {cv::Point3i(1,1,0), 
+                cv::Point3i(0,1,1), cv::Point3i(1,0,-1), cv::Point3i(0,0,1), cv::Point3i(0,0,-1)};
 
-            std::array<float, 12> cost = {
-                    1, sqrt(2), 1, // Cost of moving forward
-                    sqrt(2), 1, 
-
-                    2, 2, 2,  // Cost of rotating around itself
-                    2, 2, 2,
-                    2, 2
-                };
-
+            std::vector< std::vector<cv::Point3i> > neighbours(8,std::vector<cv::Point3i>(5));
+            rotate_pattern_90(neighbours_0,neighbours_0+5,neighbours[2].begin());
+            rotate_pattern_90(neighbours_45,neighbours_45+5,neighbours[3].begin());
+            rotate_pattern_90(neighbours[2].begin(),neighbours[2].end(),neighbours[4].begin());
+            rotate_pattern_90(neighbours[3].begin(),neighbours[3].end(),neighbours[5].begin());
+            rotate_pattern_90(neighbours[4].begin(),neighbours[4].end(),neighbours[6].begin());
+            rotate_pattern_90(neighbours[5].begin(),neighbours[5].end(),neighbours[7].begin());
+            rotate_pattern_90(neighbours[6].begin(),neighbours[6].end(),neighbours[0].begin());
+            rotate_pattern_90(neighbours[7].begin(),neighbours[7].end(),neighbours[1].begin());
+            // Cost of displacement corresponding the neighbours. Diagonal
+            // moves are 44% longer.
+            float cost_0[5] = {1, 2*sqrt(2), 2*sqrt(2), 10, 10};
+            float cost_45[5] = {sqrt(2), 2, 2, 10, 10};
 
             // The core of Dijkstra's Algorithm, a sorted heap, where the first
             // element is always the closer to the start.
-            // TODO: from Dijkstra to A*, add a heuristic and an early exit
             Heap heap;
-            float eps = 0.5;
-            heap.insert(Heap::value_type(0, start));
-            cell_value(start.x,start.y) = 0;
+            heap.insert(Heap::value_type(heuristic(start,target), start));
+            cell_value(start.x,start.y,start.z) = 0;
             while (!heap.empty()) {
                 // Select the cell at the top of the heap
                 Heap::iterator hit = heap.begin();
                 // the cell it contains is this_cell
-                cv::Point this_cell = hit->second;
+                cv::Point3i this_cell = hit->second;
+                if (this_cell == target) {
+                    break;
+                }
                 // and its score is this_cost
-                float this_cost = cell_value(this_cell.x,this_cell.y);
-                // ! Let's now add the heuristic coming from A* 
-                float add_cost = eps*sqrt((this_cell.x-target.x)*(this_cell.x-target.x)+(this_cell.y-target.y)*(this_cell.y-target.y));
-
+                float this_cost = cell_value(this_cell.x,this_cell.y,this_cell.z);
                 // We can remove it from the heap now.
                 heap.erase(hit);
-
                 // Now see where we can go from this_cell
-                for (size_t i=0;i<neighbours.size();i++) {
-                    cv::Point dest = this_cell + neighbours[i];
+                for (unsigned int i=0;i<5;i++) {
+                    cv::Point3i dest = this_cell + neighbours[this_cell.z][i];
+                    dest.z = (dest.z + 8) % 8;
                     if (!isInGrid(dest)) {
                         // outside the grid
                         continue;
                     }
-                    uint8_t og = og_(dest);
+                    uint8_t og = og_(P2(dest));
                     if (og != FREE) {
                         // occupied or unknown
                         continue;
                     }
-                    float cv = cell_value(dest.x,dest.y);
-                    float new_cost = this_cost + add_cost + cost[i];
-                    if (std::isnan(cv) || (new_cost < cv)) {
+                    float cv = cell_value(dest.x,dest.y,dest.z);
+                    float new_cost = this_cost + ((dest.z&1)?(cost_45[i]):(cost_0[i]));
+                    if (isnan(cv) || (new_cost < cv)) {
                         // found shortest path (or new path), updating the
                         // predecessor and the value of the cell
-                        predecessor.at<cv::Vec2s>(dest.x,dest.y) = cv::Vec2s(this_cell.x,this_cell.y);
-                        cell_value(dest.x,dest.y) = new_cost;
+                        predecessor.at<cv::Vec3s>(dest.x,dest.y,dest.z) = cv::Vec3s(this_cell.x,this_cell.y,this_cell.z);
+                        cell_value(dest.x,dest.y,dest.z) = new_cost;
                         // And insert the selected cells in the map.
-                        heap.insert(Heap::value_type(new_cost,dest));
+                        heap.insert(Heap::value_type(new_cost+heuristic(dest,target),dest));
                     }
                 }
             }
-            if (isnan(cell_value(target.x,target.y))) {
+            if (isnan(cell_value(target.x,target.y,target.z))) {
                 // No path found
-                RCLCPP_ERROR(this->get_logger(),"No path found from (%d, %d) to (%d, %d)",
-                        start.x,start.y,target.x,target.y);
+                RCLCPP_ERROR(this->get_logger(),"No path found from (%d, %d, %d) to (%d, %d, %d)",
+                        start.x,start.y,start.z,target.x,target.y,target.z);
                 return;
             }
             RCLCPP_INFO(this->get_logger(),"Planning completed");
             // Now extract the path by starting from goal and going through the
             // predecessors until the starting point
-            std::list<cv::Point> lpath;
+            std::list<cv::Point3i> lpath;
             while (target != start) {
-                assert(lpath.size()<1000000);
                 lpath.push_front(target);
-                cv::Vec2s p = predecessor(target.x,target.y);
-                target.x = p[0]; target.y = p[1]; 
+                cv::Vec3s p = predecessor(target.x,target.y,target.z);
+                target.x = p[0]; target.y = p[1]; target.z = p[2];
+                assert(lpath.size()<10000);
             }
             lpath.push_front(start);
             // Finally create a ROS path message
@@ -369,17 +353,17 @@ class OccupancyGridPlanner : public rclcpp::Node {
             path.header.stamp = this->get_clock()->now();
             path.header.frame_id = frame_id_;
             path.poses.resize(lpath.size());
-            std::list<cv::Point>::const_iterator it = lpath.begin();
+            std::list<cv::Point3i>::const_iterator it = lpath.begin();
             unsigned int ipose = 0;
             while (it != lpath.end()) {
                 // time stamp is not updated because we're not creating a
                 // trajectory at this stage
                 path.poses[ipose].header = path.header;
-                cv::Point P = *it - og_center_;
+                cv::Point3i P = *it - og_center_;
                 path.poses[ipose].pose.position.x = (P.x) * info_.resolution;
                 path.poses[ipose].pose.position.y = (P.y) * info_.resolution;
                 tf2::Quaternion Q;
-                Q.setRPY(0,0,0);
+                Q.setRPY(0,0,P.z*M_PI/4);
                 path.poses[ipose].pose.orientation = tf2::toMsg(Q);
                 ipose++;
                 it ++;
@@ -426,3 +410,4 @@ int main(int argc, char * argv[]) {
     rclcpp::spin(std::make_shared<OccupancyGridPlanner>());
     rclcpp::shutdown();
 }
+

@@ -1,0 +1,27 @@
+[0.021s] Invoking command in '/home/GTL/apaul/ros2_hw1/build/occgrid_planner_base': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/occgrid_planner_base -- -j16 -l16
+[0.052s] [35m[1mConsolidate compiler generated dependencies of target path_optimizer_base[0m
+[0.053s] [35m[1mConsolidate compiler generated dependencies of target path_follower_base[0m
+[0.054s] [35m[1mConsolidate compiler generated dependencies of target occgrid_planner_base[0m
+[0.076s] [ 33%] [32mBuilding CXX object CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o[0m
+[0.078s] [ 50%] Built target path_optimizer_base
+[0.099s] [ 66%] [32mBuilding CXX object CMakeFiles/path_follower_base.dir/src/path_follower.cpp.o[0m
+[2.272s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/path_follower.cpp:[m[K In constructor ‘[01m[KPathFollower::PathFollower()[m[K’:
+[2.272s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/path_follower.cpp:127:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_pose_sub_[m[K’ was not declared in this scope
+[2.272s]   127 |             [01;31m[Ktarget_pose_sub_[m[K = this->create_subscription<geometry_msgs::msg::PoseStamped>("/move_base_simple/goal",1, std::bind(&PathFollower::target_cb,this,std::placeholders::1));
+[2.272s]       |             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[2.272s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/path_follower.cpp:127:144:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_cb[m[K’ is not a member of ‘[01m[KPathFollower[m[K’
+[2.272s]   127 |             target_pose_sub_ = this->create_subscription<geometry_msgs::msg::PoseStamped>("/move_base_simple/goal",1, std::bind(&PathFollower::[01;31m[Ktarget_cb[m[K,this,std::placeholders::1));
+[2.272s]       |                                                                                                                                                [01;31m[K^~~~~~~~~[m[K
+[2.272s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/path_follower.cpp:127:178:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before numeric constant
+[2.272s]   127 |             target_pose_sub_ = this->create_subscription<geometry_msgs::msg::PoseStamped>("/move_base_simple/goal",1, std::bind(&PathFollower::target_cb,this,std::placeholders::[01;31m[K1[m[K));
+[2.273s]       |                                                                                                                                                                                  [01;31m[K^[m[K
+[2.279s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/path_follower.cpp:128:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_pose_pub_[m[K’ was not declared in this scope
+[2.279s]   128 |             [01;31m[Ktarget_pose_pub_[m[K = this->create_publisher<geometry_msgs::msg::PoseStamped>("/move_base_simple/goal",1);
+[2.279s]       |             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[4.367s] gmake[2]: *** [CMakeFiles/path_follower_base.dir/build.make:76: CMakeFiles/path_follower_base.dir/src/path_follower.cpp.o] Error 1
+[4.367s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/path_follower_base.dir/all] Error 2
+[4.368s] gmake[1]: *** Waiting for unfinished jobs....
+[16.767s] [ 83%] [32m[1mLinking CXX executable occgrid_planner_base[0m
+[17.927s] [ 83%] Built target occgrid_planner_base
+[17.928s] gmake: *** [Makefile:146: all] Error 2
+[17.929s] Invoked command in '/home/GTL/apaul/ros2_hw1/build/occgrid_planner_base' returned '2': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/occgrid_planner_base -- -j16 -l16
