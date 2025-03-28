@@ -27,6 +27,13 @@
 using std::placeholders::_1;
 using namespace std::chrono_literals;
 
+
+//!  ##############################################################################################################################################################
+//! #############################THIS IS NOT THE LAST FILE THIS IS A TEST FOR THE FOOTPRINT OF THE ROBOT##########################################################
+
+
+
+
 class OccupancyGridPlanner : public rclcpp::Node {
     protected:
         rclcpp::Subscription<nav_msgs::msg::OccupancyGrid>::SharedPtr og_sub_;
@@ -40,7 +47,7 @@ class OccupancyGridPlanner : public rclcpp::Node {
 
         cv::Rect roi_;
         cv::Mat_<uint8_t> og_, cropped_og_, robot_footstep_;
-        cv::Mat_<cv::Vec3b> og_rgb_, og_rgb_marked_;
+        cv::Mat_<cv::Vec3b> og_rgb_, og_rgb_marked_, frontier_map_;
         cv::Point3i og_center_;
         nav_msgs::msg::MapMetaData info_;
         std::string frame_id_;
@@ -108,32 +115,44 @@ class OccupancyGridPlanner : public rclcpp::Node {
             
             // ! Make sure that the surface under the robot is considered to be FREE
             // ! this gets the current pose in transform, it comes from the target callback 
-            
-            transformStamped = tf_buffer->lookupTransform(frame_id_, base_link_, tf2::TimePointZero);  
+    
+            // ! I had to add a try and catch to this method because I wasn't able to get consistently tf2
+            try {
+                geometry_msgs::msg::TransformStamped transformStamped = 
+                    tf_buffer->lookupTransform(frame_id_, base_link_, msg->header.stamp);
 
-            cv::Point3i start3D;
-            double s_yaw = 0;
-            if (debug_) {
-                start3D = og_center_;
-            } else {
-                s_yaw = tf2::getYaw(transformStamped.transform.rotation);
-                start3D = cv::Point3i(transformStamped.transform.translation.x / info_.resolution, 
-                        transformStamped.transform.translation.y / info_.resolution, (unsigned int)(round(s_yaw / (M_PI/4))) % 8)
-                    + og_center_;
-            } 
-            cv::Point2i start(start3D.x, start3D.y);
-            // ! We draw a circle under the position of the robot
-            cv::circle(robot_footstep_,start, robot_radius_ / info_.resolution, FREE, cv::FILLED);
+                cv::Point3i start3D;
+                double s_yaw = tf2::getYaw(transformStamped.transform.rotation);
+                start3D = cv::Point3i(
+                    transformStamped.transform.translation.x / info_.resolution, 
+                    transformStamped.transform.translation.y / info_.resolution,
+                    (unsigned int)(round(s_yaw / (M_PI/4))) % 8
+                ) + og_center_;
 
-            // ! We go through the matrix and look where the robot footstep is declared FREE
-            for (int k = 0; k < robot_footstep_.rows; k++) {
-                for (int l = 0; l < robot_footstep_.cols; l++) {
-                    if (robot_footstep_.at<uint8_t>(k, l) == FREE) {  
-                        og_.at<uint8_t>(k, l) = FREE;  // ! Force the space under the robot to be FREE
-                    }
+                cv::Point2i start(start3D.x, start3D.y);
+
+
+                if (start.x >= 0 && start.x < robot_footstep_.cols && 
+                    start.y >= 0 && start.y < robot_footstep_.rows) {
+                    cv::circle(robot_footstep_, start, 
+                            robot_radius_ / info_.resolution, 
+                            FREE, cv::FILLED);
                 }
+
+                // ! We use a OR to print the footprint of the robot
+                og_ = og_ | robot_footstep_;  
+
+            } catch (const tf2::TransformException & ex) {
+                RCLCPP_WARN(this->get_logger(), 
+                        "Could not transform %s to %s: %s",
+                        frame_id_.c_str(), base_link_.c_str(), 
+                        ex.what());
+                og_(cv::Range(og_.rows/2-5, og_.rows/2+5), 
+                cv::Range(og_.cols/2-5, og_.cols/2+5)).setTo(FREE);
             }
 
+
+            find_frontier_points(og_,msg);
 
             if (!ready_) {
                 ready_ = true;
@@ -167,6 +186,8 @@ class OccupancyGridPlanner : public rclcpp::Node {
                     cv::imshow( "OccGrid", og_rgb_ );
                 }
             }
+
+
         }
 
         // Generic test if a point is within the occupancy grid
@@ -291,11 +312,11 @@ class OccupancyGridPlanner : public rclcpp::Node {
 
             // ! We will need to create a planner in pixels.
             RCLCPP_INFO(this->get_logger(),"Starting planning from (%d, %d) to (%d, %d)",start.x,start.y, target.x, target.y);
-            planToPixelTarget(start,target);
-        }
+            // planToPixelTarget(start,target);
+        // }
 
             // ! This line represent the boundary between meters and pixels. (Everything on top is in meter and everything under is in pixels)
-        void planToPixelTarget(cv::Point3i start, cv::Point3i target) {
+        // void planToPixelTarget(cv::Point3i start, cv::Point3i target){
             // Here the Dijskstra algorithm starts 
             // The best distance to the goal computed so far. This is
             // initialised with Not-A-Number. 
@@ -327,6 +348,7 @@ class OccupancyGridPlanner : public rclcpp::Node {
             // moves are 44% longer.
             float cost_0[5] = {1, 2*sqrt(2), 2*sqrt(2), 10, 10};
             float cost_45[5] = {sqrt(2), 2, 2, 10, 10};
+
 
             // The core of Dijkstra's Algorithm, a sorted heap, where the first
             // element is always the closer to the start.
@@ -410,6 +432,81 @@ class OccupancyGridPlanner : public rclcpp::Node {
             path_pub_->publish(path);
             RCLCPP_INFO(this->get_logger(),"Request completed");
         }
+        // void find_frontier_points(cv::Mat og_){
+        //                 // ! Let's determine the frontier points of the map
+        //     std::vector<cv::Point3i> find_frontier_points(const cv::Mat& og_){
+        //         std::vector<cv::Point3i> points;
+        //         for (int k = 1 ,k<og_.rows-1, k++ ){
+        //             for (int l=1, l<og_.cols-1, l++){
+        //                 if (og_.at<uint_8>(k,l)==FREE)
+        //                 // ! We have to check if the neighbours are unknow
+        //                 bool Isfrontier = false;
+        //                 for (i in neighbours){
+        //                     if (neighbours==OCCUPIED){
+        //                         bool Isfrontier = true;
+        //                     }
+        //                     else{
+                        
+        //                     }
+        //                 }
+
+        //                 //! We add the point if its part of the boundary
+        //                 if (Isfrontier==true){
+        //                     cv::Point3i Point(x, y, z);
+        //                     points.push_back(Point);
+        //                 }
+        //                 else {
+        //                 }                
+        //             }
+        //         }
+                
+        //         return points;
+        //     }
+        //     //! At this point we should have a vector of Point containing frontier points
+
+
+
+
+        // }
+        // ! Need to modify the type of this function so that I can have a list of frontier points as the output.
+        void find_frontier_points(const cv::Mat_<uint8_t>& og_,nav_msgs::msg::OccupancyGrid::SharedPtr msg) {
+            cv::Mat_<cv::Vec3b> frontier_map_(msg->info.height, msg->info.width,cv::Vec3b(255,255,255));  // ! We define a new map to plot it
+            std::vector<cv::Point3i> frontier_points;
+            
+    
+            for (int y = 1; y < og_.rows - 1; y++) {
+                for (int x = 1; x < og_.cols - 1; x++) {
+                    // Seulement les cellules libres peuvent être frontières
+                    if (og_(y,x) == FREE) continue;
+                    
+                    bool is_frontier = false;
+                    
+                    //! Check for the 8 neighbours I would have liked to use directly the neighbours object but I had issues using it
+                    for (int dy = -1; dy <= 1; dy++) {
+                        for (int dx = -1; dx <= 1; dx++) {
+
+                            if (dx == 0 && dy == 0) continue;
+                            
+                            //! If one of the neighnours is unknown it is a frontier point
+                            if (og_(y+dy, x+dx) == UNKNOWN) {
+                                is_frontier = true;
+                                break;
+                            }
+                        }
+                        if (is_frontier) break;
+                    }
+                    
+                    if (is_frontier) {
+                        cv::Point3i frontier_point(x, y, 0);  // Orientation 0 par défaut
+                        frontier_points.emplace_back(frontier_point);
+                        frontier_map_(y, x)= cv::Vec3b(255, 0, 0); // Blue (B=255, G=0, R=0)
+                    }
+                }
+            }
+            
+            cv::imshow( "Frontier", frontier_map_);
+            return;
+        }
 
 
 
@@ -435,7 +532,7 @@ class OccupancyGridPlanner : public rclcpp::Node {
             if (!headless_) {
                 cv::namedWindow( "OccGrid", cv::WINDOW_AUTOSIZE );
                 timer_ = this->create_wall_timer( 50ms,
-                        std::bind(&OccupancyGridPlanner::timer_cb, this));
+                    std::bind(&OccupancyGridPlanner::timer_cb, this));
             }
         }
 
