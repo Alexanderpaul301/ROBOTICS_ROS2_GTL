@@ -798,6 +798,8 @@ CMakeFiles/path_follower_base.dir/src/path_follower.cpp.o: /home/GTL/apaul/ros2_
   /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__struct.hpp \
   /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__builder.hpp \
   /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__traits.hpp \
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__type_support.hpp \
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__builder.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose2_d.hpp \
@@ -827,6 +829,10 @@ CMakeFiles/path_follower_base.dir/src/path_follower.cpp.o: /home/GTL/apaul/ros2_
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose2_d__builder.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose2_d.hpp:
+
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
+
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__type_support.hpp:
 
 /usr/include/kdl/frames.inl:
 

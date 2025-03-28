@@ -1,0 +1,25 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/path_follower_base.dir/src/path_follower.cpp.o[0m
+[ 66%] Built target path_optimizer_base
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:[m[K In member function ‘[01m[Kvoid OccupancyGridPlanner::og_callback(nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:63:13:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot_footstep_[m[K’ was not declared in this scope
+   63 |             [01;31m[Krobot_footstep_[m[K = cv::Mat_<uint8_t>(msg->info.height, msg->info.width,UNKNOWN);
+      |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:111:79:[m[K [01;31m[Kerror: [m[K‘[01m[KerrStr[m[K’ was not declared in this scope
+  111 |                         rclcpp::Duration(std::chrono::duration<double>(1.0)),&[01;31m[KerrStr[m[K)) {
+      |                                                                               [01;31m[K^~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:115:13:[m[K [01;31m[Kerror: [m[K‘[01m[KtransformStamped[m[K’ was not declared in this scope
+  115 |             [01;31m[KtransformStamped[m[K = tf_buffer->lookupTransform(frame_id_, base_link_, tf2::TimePointZero);
+      |             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:133:51:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+  133 |                     if (robot_footstep_.at<uint8_t[01;31m[K>[m[K(k, l) == FREE) {
+      |                                                   [01;31m[K^[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:133:53:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+  133 |                     if (robot_footstep_.at<uint8_t>([01;35m[Kk[m[K, l) == FREE) {
+      |                                                     [01;35m[K^[m[K
+gmake[2]: *** [CMakeFiles/occgrid_planner_base.dir/build.make:76: CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/occgrid_planner_base.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 83%] [32m[1mLinking CXX executable path_follower_base[0m
+[ 83%] Built target path_follower_base
+gmake: *** [Makefile:146: all] Error 2

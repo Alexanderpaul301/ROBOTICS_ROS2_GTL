@@ -1,0 +1,12 @@
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:[m[K In member function ‘[01m[Kvoid OccupancyGridPlanner::og_callback(nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:110:13:[m[K [01;31m[Kerror: [m[K‘[01m[KtransformStamped[m[K’ was not declared in this scope
+  110 |             [01;31m[KtransformStamped[m[K = tf_buffer->lookupTransform(frame_id_, base_link_, tf2::TimePointZero);
+      |             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:123:40:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[Kstart[m[K’ from ‘[01m[Kcv::Point3i[m[K’ {aka ‘[01m[Kcv::Point3_<int>[m[K’} to ‘[01m[Kcv::Point[m[K’ {aka ‘[01m[Kcv::Point_<int>[m[K’}
+  123 |             cv::circle(robot_footstep_,[01;31m[Kstart[m[K, robot_radius_ / info_.resolution, FREE, cv::FILLED);
+      |                                        [01;31m[K^~~~~[m[K
+      |                                        [01;31m[K|[m[K
+      |                                        [01;31m[Kcv::Point3i {aka cv::Point3_<int>}[m[K
+gmake[2]: *** [CMakeFiles/occgrid_planner_base.dir/build.make:76: CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/occgrid_planner_base.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

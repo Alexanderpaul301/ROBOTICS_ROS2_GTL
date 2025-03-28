@@ -1,0 +1,27 @@
+[0.086s] Invoking command in '/home/GTL/apaul/ros2_hw1/build/occgrid_planner_base': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/occgrid_planner_base -- -j16 -l16
+[0.315s] [ 50%] [32mBuilding CXX object CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o[0m
+[0.316s] [ 66%] [32mBuilding CXX object CMakeFiles/path_follower_base.dir/src/path_follower.cpp.o[0m
+[0.317s] [ 66%] Built target path_optimizer_base
+[2.967s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:[m[K In member function ‘[01m[Kvoid OccupancyGridPlanner::og_callback(nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.967s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:63:13:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot_footstep_[m[K’ was not declared in this scope
+[2.967s]    63 |             [01;31m[Krobot_footstep_[m[K = cv::Mat_<uint8_t>(msg->info.height, msg->info.width,UNKNOWN);
+[2.967s]       |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.973s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:111:79:[m[K [01;31m[Kerror: [m[K‘[01m[KerrStr[m[K’ was not declared in this scope
+[2.973s]   111 |                         rclcpp::Duration(std::chrono::duration<double>(1.0)),&[01;31m[KerrStr[m[K)) {
+[2.973s]       |                                                                               [01;31m[K^~~~~~[m[K
+[2.981s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:115:13:[m[K [01;31m[Kerror: [m[K‘[01m[KtransformStamped[m[K’ was not declared in this scope
+[2.981s]   115 |             [01;31m[KtransformStamped[m[K = tf_buffer->lookupTransform(frame_id_, base_link_, tf2::TimePointZero);
+[2.981s]       |             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[2.981s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:133:51:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[2.981s]   133 |                     if (robot_footstep_.at<uint8_t[01;31m[K>[m[K(k, l) == FREE) {
+[2.981s]       |                                                   [01;31m[K^[m[K
+[2.981s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:133:53:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[2.981s]   133 |                     if (robot_footstep_.at<uint8_t>([01;35m[Kk[m[K, l) == FREE) {
+[2.981s]       |                                                     [01;35m[K^[m[K
+[5.615s] gmake[2]: *** [CMakeFiles/occgrid_planner_base.dir/build.make:76: CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o] Error 1
+[5.615s] gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/occgrid_planner_base.dir/all] Error 2
+[5.615s] gmake[1]: *** Waiting for unfinished jobs....
+[16.944s] [ 83%] [32m[1mLinking CXX executable path_follower_base[0m
+[17.866s] [ 83%] Built target path_follower_base
+[17.867s] gmake: *** [Makefile:146: all] Error 2
+[17.868s] Invoked command in '/home/GTL/apaul/ros2_hw1/build/occgrid_planner_base' returned '2': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/occgrid_planner_base -- -j16 -l16

@@ -39,7 +39,7 @@ class OccupancyGridPlanner : public rclcpp::Node {
         std::unique_ptr<tf2_ros::Buffer> tf_buffer;
 
         cv::Rect roi_;
-        cv::Mat_<uint8_t> og_, cropped_og_;
+        cv::Mat_<uint8_t> og_, cropped_og_, robot_footstep_;
         cv::Mat_<cv::Vec3b> og_rgb_, og_rgb_marked_;
         cv::Point3i og_center_;
         nav_msgs::msg::MapMetaData info_;
@@ -58,9 +58,10 @@ class OccupancyGridPlanner : public rclcpp::Node {
         void og_callback(nav_msgs::msg::OccupancyGrid::SharedPtr msg) {
             info_ = msg->info;
             frame_id_ = msg->header.frame_id;
+            geometry_msgs::msg::TransformStamped transformStamped;
             // Create an image to store the value of the grid.
             og_ = cv::Mat_<uint8_t>(msg->info.height, msg->info.width,0xFF);
-            robot_footstep_ = cv::Mat_<uint8_t>(msg->info.height, msg->info.width,0xFF);
+            robot_footstep_ = cv::Mat_<uint8_t>(msg->info.height, msg->info.width,UNKNOWN);
             og_center_ = cv::Point3i(-info_.origin.position.x/info_.resolution,
                     -info_.origin.position.y/info_.resolution,0);
 
@@ -107,14 +108,31 @@ class OccupancyGridPlanner : public rclcpp::Node {
             
             // ! Make sure that the surface under the robot is considered to be FREE
             // ! this gets the current pose in transform, it comes from the target callback 
-            if (!tf_buffer->canTransform(frame_id_, base_link_, msg->header.stamp,
-                        rclcpp::Duration(std::chrono::duration<double>(1.0)),&errStr)) {
-                RCLCPP_ERROR(this->get_logger(),"Cannot transform base_link: %s",errStr.c_str());
-                return;
-            }
-            transformStamped = tf_buffer->lookupTransform(frame_id_, base_link_, tf2::TimePointZero);   
+            
+            transformStamped = tf_buffer->lookupTransform(frame_id_, base_link_, tf2::TimePointZero);  
+
+            cv::Point3i start3D;
+            double s_yaw = 0;
+            if (debug_) {
+                start3D = og_center_;
+            } else {
+                s_yaw = tf2::getYaw(transformStamped.transform.rotation);
+                start3D = cv::Point3i(transformStamped.transform.translation.x / info_.resolution, 
+                        transformStamped.transform.translation.y / info_.resolution, (unsigned int)(round(s_yaw / (M_PI/4))) % 8)
+                    + og_center_;
+            } 
+            cv::Point2i start(start3D.x, start3D.y);
             // ! We draw a circle under the position of the robot
-            cv::circle(robot_footstep_,transformStamped, robot_radius_, FREE, FILLED);
+            cv::circle(robot_footstep_,start, robot_radius_ / info_.resolution, FREE, cv::FILLED);
+
+            // ! We go through the matrix and look where the robot footstep is declared FREE
+            for (int k = 0; k < robot_footstep_.rows; k++) {
+                for (int l = 0; l < robot_footstep_.cols; l++) {
+                    if (robot_footstep_.at<uint8_t>(k, l) == FREE) {  
+                        og_.at<uint8_t>(k, l) = FREE;  // ! Force the space under the robot to be FREE
+                    }
+                }
+            }
 
 
             if (!ready_) {
