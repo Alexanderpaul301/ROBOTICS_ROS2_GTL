@@ -706,8 +706,6 @@ CMakeFiles/obstacle_avoidance_base.dir/src/obstacle_avoidance.cpp.o: /home/GTL/a
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__traits.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__traits.hpp \
-  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__type_support.hpp \
-  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /usr/include/pcl-1.12/pcl/point_types.h \
   /usr/include/c++/11/bitset \
   /usr/include/pcl-1.12/pcl/impl/point_types.hpp \
@@ -1704,6 +1702,10 @@ CMakeFiles/obstacle_avoidance_base.dir/src/obstacle_avoidance.cpp.o: /home/GTL/a
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__builder.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__traits.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/velocity_stamped.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__traits.hpp \
   /opt/ros/humble/include/tf2/tf2/buffer_core_interface.h \
   /opt/ros/humble/include/tf2/tf2/time.h \
   /opt/ros/humble/include/tf2/tf2/exceptions.h \
@@ -1865,6 +1867,8 @@ CMakeFiles/obstacle_avoidance_base.dir/src/obstacle_avoidance.cpp.o: /home/GTL/a
 /opt/ros/humble/include/tf2/tf2/time.h:
 
 /opt/ros/humble/include/tf2/tf2/buffer_core_interface.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__traits.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__traits.hpp:
 
@@ -2059,6 +2063,8 @@ CMakeFiles/obstacle_avoidance_base.dir/src/obstacle_avoidance.cpp.o: /home/GTL/a
 /usr/include/boost/interprocess/sync/detail/common_algorithms.hpp:
 
 /usr/include/boost/date_time/posix_time/posix_time_duration.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__struct.hpp:
 
 /usr/include/boost/date_time/time.hpp:
 
@@ -2660,12 +2666,6 @@ CMakeFiles/obstacle_avoidance_base.dir/src/obstacle_avoidance.cpp.o: /home/GTL/a
 
 /usr/include/boost/mpl/aux_/preprocessor/default_params.hpp:
 
-/usr/include/boost/mpl/always.hpp:
-
-/usr/include/asm-generic/bitsperlong.h:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/or.hpp:
-
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp:
 
 /usr/include/boost/preprocessor/facilities/identity.hpp:
@@ -2938,6 +2938,8 @@ CMakeFiles/obstacle_avoidance_base.dir/src/obstacle_avoidance.cpp.o: /home/GTL/a
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point_stamped.hpp:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__builder.hpp:
+
 /opt/ros/humble/include/rcl/rcl/timer.h:
 
 /usr/include/eigen3/Eigen/src/Core/Inverse.h:
@@ -3103,6 +3105,8 @@ CMakeFiles/obstacle_avoidance_base.dir/src/obstacle_avoidance.cpp.o: /home/GTL/a
 /opt/ros/humble/include/rmw/rmw/init_options.h:
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/velocity_stamped.hpp:
 
 /opt/ros/humble/include/rcutils/rcutils/macros.h:
 
@@ -4238,8 +4242,6 @@ CMakeFiles/obstacle_avoidance_base.dir/src/obstacle_avoidance.cpp.o: /home/GTL/a
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/list_parameters_result.hpp:
 
-/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__type_support.hpp:
-
 /usr/include/c++/11/algorithm:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:
@@ -4581,8 +4583,6 @@ CMakeFiles/obstacle_avoidance_base.dir/src/obstacle_avoidance.cpp.o: /home/GTL/a
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__traits.hpp:
 
 /usr/include/boost/preprocessor/tuple/eat.hpp:
-
-/opt/ros/humble/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
 /usr/include/pcl-1.12/pcl/point_types.h:
 
@@ -5032,6 +5032,8 @@ CMakeFiles/obstacle_avoidance_base.dir/src/obstacle_avoidance.cpp.o: /home/GTL/a
 
 /usr/include/eigen3/Eigen/src/Core/MathFunctions.h:
 
+/usr/include/boost/mpl/always.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
 /usr/include/opencv4/opencv2/ml.hpp:
@@ -5315,3 +5317,7 @@ CMakeFiles/obstacle_avoidance_base.dir/src/obstacle_avoidance.cpp.o: /home/GTL/a
 /usr/include/c++/11/bits/list.tcc:
 
 /usr/include/boost/mpl/logical.hpp:
+
+/usr/include/asm-generic/bitsperlong.h:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/or.hpp:

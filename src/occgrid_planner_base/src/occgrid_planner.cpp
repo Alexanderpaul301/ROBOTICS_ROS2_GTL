@@ -28,10 +28,6 @@ using std::placeholders::_1;
 using namespace std::chrono_literals;
 
 
-//!  ##############################################################################################################################################################
-//! #############################THIS IS NOT THE LAST FILE THIS IS A TEST FOR THE FOOTPRINT OF THE ROBOT##########################################################
-
-
 
 
 class OccupancyGridPlanner : public rclcpp::Node {
@@ -39,7 +35,7 @@ class OccupancyGridPlanner : public rclcpp::Node {
         rclcpp::Subscription<nav_msgs::msg::OccupancyGrid>::SharedPtr og_sub_;
         rclcpp::Subscription<geometry_msgs::msg::PoseStamped>::SharedPtr target_sub_;
         rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr path_pub_;
-        rclcpp::TimerBase::SharedPtr timer_;
+        rclcpp::TimerBase::SharedPtr timer_, timer2_;
 
 
         std::shared_ptr<tf2_ros::TransformListener> tf_listener{nullptr};
@@ -312,11 +308,11 @@ class OccupancyGridPlanner : public rclcpp::Node {
 
             // ! We will need to create a planner in pixels.
             RCLCPP_INFO(this->get_logger(),"Starting planning from (%d, %d) to (%d, %d)",start.x,start.y, target.x, target.y);
-            // planToPixelTarget(start,target);
-        // }
+            
+        }
 
             // ! This line represent the boundary between meters and pixels. (Everything on top is in meter and everything under is in pixels)
-        // void planToPixelTarget(cv::Point3i start, cv::Point3i target){
+        void planToPixelTarget(cv::Point3i start, cv::Point3i target){
             // Here the Dijskstra algorithm starts 
             // The best distance to the goal computed so far. This is
             // initialised with Not-A-Number. 
@@ -431,45 +427,12 @@ class OccupancyGridPlanner : public rclcpp::Node {
             }
             path_pub_->publish(path);
             RCLCPP_INFO(this->get_logger(),"Request completed");
+            return;
         }
-        // void find_frontier_points(cv::Mat og_){
-        //                 // ! Let's determine the frontier points of the map
-        //     std::vector<cv::Point3i> find_frontier_points(const cv::Mat& og_){
-        //         std::vector<cv::Point3i> points;
-        //         for (int k = 1 ,k<og_.rows-1, k++ ){
-        //             for (int l=1, l<og_.cols-1, l++){
-        //                 if (og_.at<uint_8>(k,l)==FREE)
-        //                 // ! We have to check if the neighbours are unknow
-        //                 bool Isfrontier = false;
-        //                 for (i in neighbours){
-        //                     if (neighbours==OCCUPIED){
-        //                         bool Isfrontier = true;
-        //                     }
-        //                     else{
-                        
-        //                     }
-        //                 }
-
-        //                 //! We add the point if its part of the boundary
-        //                 if (Isfrontier==true){
-        //                     cv::Point3i Point(x, y, z);
-        //                     points.push_back(Point);
-        //                 }
-        //                 else {
-        //                 }                
-        //             }
-        //         }
-                
-        //         return points;
-        //     }
-        //     //! At this point we should have a vector of Point containing frontier points
 
 
-
-
-        // }
         // ! Need to modify the type of this function so that I can have a list of frontier points as the output.
-        void find_frontier_points(const cv::Mat_<uint8_t>& og_,nav_msgs::msg::OccupancyGrid::SharedPtr msg) {
+        std::vector<cv::Point3i> find_frontier_points(const cv::Mat_<uint8_t>& og_,nav_msgs::msg::OccupancyGrid::SharedPtr msg) {
             cv::Mat_<cv::Vec3b> frontier_map_(msg->info.height, msg->info.width,cv::Vec3b(255,255,255));  // ! We define a new map to plot it
             std::vector<cv::Point3i> frontier_points;
             
@@ -477,7 +440,7 @@ class OccupancyGridPlanner : public rclcpp::Node {
             for (int y = 1; y < og_.rows - 1; y++) {
                 for (int x = 1; x < og_.cols - 1; x++) {
                     // Seulement les cellules libres peuvent être frontières
-                    if (og_(y,x) == FREE) continue;
+                    if (og_(y,x) != FREE) continue;
                     
                     bool is_frontier = false;
                     
@@ -505,7 +468,7 @@ class OccupancyGridPlanner : public rclcpp::Node {
             }
             
             cv::imshow( "Frontier", frontier_map_);
-            return;
+            return frontier_points;
         }
 
 
@@ -533,12 +496,62 @@ class OccupancyGridPlanner : public rclcpp::Node {
                 cv::namedWindow( "OccGrid", cv::WINDOW_AUTOSIZE );
                 timer_ = this->create_wall_timer( 50ms,
                     std::bind(&OccupancyGridPlanner::timer_cb, this));
+                timer2_= this->create_wall_timer( 5000ms, 
+                    std::bind(&OccupancyGridPlanner::frontier_callback,this));
             }
         }
 
         void timer_cb() {
             cv::waitKey(5);
         }
+
+        void frontier_callback() {
+            
+            try {
+                geometry_msgs::msg::TransformStamped transformStamped = 
+                    tf_buffer->lookupTransform(frame_id_, base_link_, msg->header.stamp);
+
+                cv::Point3i start3D;
+                double s_yaw = tf2::getYaw(transformStamped.transform.rotation);
+                start3D = cv::Point3i(
+                    transformStamped.transform.translation.x / info_.resolution, 
+                    transformStamped.transform.translation.y / info_.resolution,
+                    (unsigned int)(round(s_yaw / (M_PI/4))) % 8
+                ) + og_center_;
+
+                cv::Point2i start(start3D.x, start3D.y);
+
+            } catch (const tf2::TransformException & ex) {
+                RCLCPP_WARN(this->get_logger(), 
+                        "Could not transform %s to %s: %s",
+                        frame_id_.c_str(), base_link_.c_str(), 
+                        ex.what());
+                og_(cv::Range(og_.rows/2-5, og_.rows/2+5), 
+                cv::Range(og_.cols/2-5, og_.cols/2+5)).setTo(FREE);
+            }
+            
+            std::vector<cv::Point> frontier_points = find_frontier_points(og_, msg);            // ! Let's now determine the most appropriate frontier point to explore
+            int k;
+            // ! Compute the score of all points
+            float best_score=0;
+            cv::Mat frontier_scores = cv::Mat::zeros(frontier_points.size(), 1, CV_32F);
+            for (size_t i = 0; i < frontier_points.size(); i++) {
+                const cv::Point2i& pt = frontier_points[i];
+                
+                float score = cv::norm(pt - start);
+                
+                frontier_scores.at<float>(i, 0) = score;
+
+                if (score>best_score){
+                    best_score=score;
+                    k=i;
+                }
+            }
+
+            cv::Point3i target=frontier_points.at<cv::Point3i>(k,0);
+            planToPixelTarget(start,target);
+        }
+                    
 };
 
 int main(int argc, char * argv[]) {
