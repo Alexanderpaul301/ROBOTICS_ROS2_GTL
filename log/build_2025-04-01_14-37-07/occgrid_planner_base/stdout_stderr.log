@@ -1,0 +1,12 @@
+[35m[1mConsolidate compiler generated dependencies of target occgrid_planner_base[0m
+[ 66%] Built target path_optimizer_base
+[ 66%] Built target path_follower_base
+[ 83%] [32mBuilding CXX object CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o[0m
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:[m[K In member function ‘[01m[Kstd::vector<cv::Point3_<int> > OccupancyGridPlanner::find_frontier_points()[m[K’:
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:462:54:[m[K [01;31m[Kerror: [m[K‘[01m[Kfrontier_point[m[K’ was not declared in this scope; did you mean ‘[01m[Kfrontier_points[m[K’?
+  462 |                         frontier_points.emplace_back([01;31m[Kfrontier_point[m[K);
+      |                                                      [01;31m[K^~~~~~~~~~~~~~[m[K
+      |                                                      [32m[Kfrontier_points[m[K
+gmake[2]: *** [CMakeFiles/occgrid_planner_base.dir/build.make:76: CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/occgrid_planner_base.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

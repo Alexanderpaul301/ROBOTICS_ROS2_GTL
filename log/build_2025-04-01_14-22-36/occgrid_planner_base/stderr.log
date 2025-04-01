@@ -1,0 +1,11 @@
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:[m[K In member function ‘[01m[Kvoid OccupancyGridPlanner::og_callback(nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:154:33:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KOccupancyGridPlanner::find_frontier_points(cv::Mat_<unsigned char>&, nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::SharedPtr&)[m[K’
+  154 |             [01;31m[Kfind_frontier_points(og_,msg)[m[K;
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:438:34:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<cv::Point3_<int> > OccupancyGridPlanner::find_frontier_points()[m[K’
+  438 |         std::vector<cv::Point3i> [01;36m[Kfind_frontier_points[m[K() {
+      |                                  [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:438:34:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 2 provided
+gmake[2]: *** [CMakeFiles/occgrid_planner_base.dir/build.make:76: CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/occgrid_planner_base.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
