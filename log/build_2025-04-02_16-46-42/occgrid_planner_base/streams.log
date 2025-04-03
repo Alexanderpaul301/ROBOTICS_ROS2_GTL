@@ -1,0 +1,17 @@
+[0.024s] Invoking command in '/home/GTL/apaul/ros2_hw1/build/occgrid_planner_base': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/occgrid_planner_base -- -j16 -l16
+[0.074s] [35m[1mConsolidate compiler generated dependencies of target occgrid_planner_base[0m
+[0.089s] [ 66%] Built target path_follower_base
+[0.089s] [ 66%] Built target path_optimizer_base
+[0.133s] [ 83%] [32mBuilding CXX object CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o[0m
+[2.565s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:[m[K In member function ‘[01m[Kvoid OccupancyGridPlanner::frontier_timer_cb()[m[K’:
+[2.565s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:609:38:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KOccupancyGridPlanner::planToPixelTarget(cv::Point3i&, cv::Point3i&)[m[K’
+[2.565s]   609 |                 if ([01;31m[KplanToPixelTarget(current_pos, best_frontier)[m[K) {
+[2.565s]       |                     [01;31m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.565s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:434:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool OccupancyGridPlanner::planToPixelTarget(cv::Point3i, cv::Point3i, nav_msgs::msg::Path&)[m[K’
+[2.565s]   434 |         bool [01;36m[KplanToPixelTarget[m[K(cv::Point3i start, cv::Point3i target,nav_msgs::msg::Path &path_out) {
+[2.565s]       |              [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[2.565s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:434:14:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 2 provided
+[4.963s] gmake[2]: *** [CMakeFiles/occgrid_planner_base.dir/build.make:76: CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o] Error 1
+[4.963s] gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/occgrid_planner_base.dir/all] Error 2
+[4.963s] gmake: *** [Makefile:146: all] Error 2
+[4.965s] Invoked command in '/home/GTL/apaul/ros2_hw1/build/occgrid_planner_base' returned '2': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/occgrid_planner_base -- -j16 -l16

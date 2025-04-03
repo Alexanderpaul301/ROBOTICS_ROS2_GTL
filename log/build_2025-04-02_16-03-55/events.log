@@ -1,0 +1,258 @@
+[0.000000] (-) TimerEvent: {}
+[0.000085] (-) JobUnselected: {'identifier': 'ar_loc_base'}
+[0.000103] (-) JobUnselected: {'identifier': 'ar_mapping_base'}
+[0.000114] (-) JobUnselected: {'identifier': 'ar_slam_base'}
+[0.000123] (-) JobUnselected: {'identifier': 'button_server'}
+[0.000132] (-) JobUnselected: {'identifier': 'collision_avoidance_base'}
+[0.000140] (-) JobUnselected: {'identifier': 'cs7630_msgs'}
+[0.000148] (-) JobUnselected: {'identifier': 'face_detect_base'}
+[0.000157] (-) JobUnselected: {'identifier': 'face_msg'}
+[0.000165] (-) JobUnselected: {'identifier': 'floor_nav'}
+[0.000172] (-) JobUnselected: {'identifier': 'joy_pack'}
+[0.000180] (-) JobUnselected: {'identifier': 'keyboard_teleop'}
+[0.000188] (-) JobUnselected: {'identifier': 'obstacle_avoidance_base'}
+[0.000197] (-) JobUnselected: {'identifier': 'occgrid_planner'}
+[0.000204] (-) JobUnselected: {'identifier': 'rover_driver_base'}
+[0.000212] (-) JobUnselected: {'identifier': 'task_manager_client_py'}
+[0.000225] (-) JobUnselected: {'identifier': 'task_manager_lib'}
+[0.000240] (-) JobUnselected: {'identifier': 'task_manager_msgs'}
+[0.000248] (-) JobUnselected: {'identifier': 'task_manager_nav2'}
+[0.000256] (-) JobUnselected: {'identifier': 'task_manager_sync'}
+[0.000265] (-) JobUnselected: {'identifier': 'turtlebot_launch'}
+[0.000273] (-) JobUnselected: {'identifier': 'vrep4_helpers'}
+[0.000281] (-) JobUnselected: {'identifier': 'vrep_ros_teleop'}
+[0.000290] (-) JobUnselected: {'identifier': 'wifi_map_base'}
+[0.000298] (-) JobUnselected: {'identifier': 'wpa_cli_msgs'}
+[0.000308] (occgrid_planner_base) JobQueued: {'identifier': 'occgrid_planner_base', 'dependencies': OrderedDict([('cs7630_msgs', '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs')])}
+[0.000322] (occgrid_planner_base) JobStarted: {'identifier': 'occgrid_planner_base'}
+[0.016858] (occgrid_planner_base) JobProgress: {'identifier': 'occgrid_planner_base', 'progress': 'cmake'}
+[0.020423] (occgrid_planner_base) JobProgress: {'identifier': 'occgrid_planner_base', 'progress': 'build'}
+[0.021052] (occgrid_planner_base) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/GTL/apaul/ros2_hw1/build/occgrid_planner_base', '--', '-j16', '-l16'], 'cwd': '/home/GTL/apaul/ros2_hw1/build/occgrid_planner_base', 'env': OrderedDict([('USER', 'apaul'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/GTL/apaul'), ('CYCLONEDDS_URI', '/cs-share/pradalier/gtlpc_cyclonedds.xml'), ('OLDPWD', '/home/GTL/apaul'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2447'), ('SYSTEMD_EXEC_PID', '2970'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/37726/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4339'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'apaul'), ('JOURNAL_STREAM', '8:39539'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'apaul'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/gtlpc106.georgiatech-metz.fr:@/tmp/.ICE-unix/2702,unix/gtlpc106.georgiatech-metz.fr:/tmp/.ICE-unix/2702'), ('INVOCATION_ID', 'a7599bc07ed241d58205dd0c990b0f9b'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/37726'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/37726/gdm/Xauthority'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/37726/keyring/ssh'), ('ROS_DOMAIN_ID', '56'), ('AMENT_PREFIX_PATH', '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:2449bbd2-eecf-4110-a6e7-f3f786500713'), ('KRB5CCNAME', 'FILE:/tmp/krb5cc_37726'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/37726/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/GTL/apaul/ros2_hw1/build/occgrid_planner_base'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble')]), 'shell': False}
+[0.074549] (occgrid_planner_base) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target occgrid_planner_base\x1b[0m\n'}
+[0.093598] (occgrid_planner_base) StdoutLine: {'line': b'[ 66%] Built target path_follower_base\n'}
+[0.094815] (occgrid_planner_base) StdoutLine: {'line': b'[ 83%] Built target path_optimizer_base\n'}
+[0.095046] (occgrid_planner_base) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o\x1b[0m\n'}
+[0.098777] (-) TimerEvent: {}
+[0.199000] (-) TimerEvent: {}
+[0.299239] (-) TimerEvent: {}
+[0.399471] (-) TimerEvent: {}
+[0.499706] (-) TimerEvent: {}
+[0.599951] (-) TimerEvent: {}
+[0.700193] (-) TimerEvent: {}
+[0.800417] (-) TimerEvent: {}
+[0.900793] (-) TimerEvent: {}
+[1.001043] (-) TimerEvent: {}
+[1.101264] (-) TimerEvent: {}
+[1.201486] (-) TimerEvent: {}
+[1.301727] (-) TimerEvent: {}
+[1.401976] (-) TimerEvent: {}
+[1.502199] (-) TimerEvent: {}
+[1.602431] (-) TimerEvent: {}
+[1.702686] (-) TimerEvent: {}
+[1.802921] (-) TimerEvent: {}
+[1.903172] (-) TimerEvent: {}
+[2.003408] (-) TimerEvent: {}
+[2.103656] (-) TimerEvent: {}
+[2.203910] (-) TimerEvent: {}
+[2.304131] (-) TimerEvent: {}
+[2.404388] (-) TimerEvent: {}
+[2.504620] (-) TimerEvent: {}
+[2.604845] (-) TimerEvent: {}
+[2.705072] (-) TimerEvent: {}
+[2.805306] (-) TimerEvent: {}
+[2.905540] (-) TimerEvent: {}
+[3.005778] (-) TimerEvent: {}
+[3.106042] (-) TimerEvent: {}
+[3.206282] (-) TimerEvent: {}
+[3.306507] (-) TimerEvent: {}
+[3.406749] (-) TimerEvent: {}
+[3.506991] (-) TimerEvent: {}
+[3.607330] (-) TimerEvent: {}
+[3.707556] (-) TimerEvent: {}
+[3.807839] (-) TimerEvent: {}
+[3.908138] (-) TimerEvent: {}
+[4.008474] (-) TimerEvent: {}
+[4.108714] (-) TimerEvent: {}
+[4.209018] (-) TimerEvent: {}
+[4.309302] (-) TimerEvent: {}
+[4.409585] (-) TimerEvent: {}
+[4.509911] (-) TimerEvent: {}
+[4.610190] (-) TimerEvent: {}
+[4.710476] (-) TimerEvent: {}
+[4.810706] (-) TimerEvent: {}
+[4.910956] (-) TimerEvent: {}
+[5.011246] (-) TimerEvent: {}
+[5.111501] (-) TimerEvent: {}
+[5.211749] (-) TimerEvent: {}
+[5.312005] (-) TimerEvent: {}
+[5.412271] (-) TimerEvent: {}
+[5.512510] (-) TimerEvent: {}
+[5.612760] (-) TimerEvent: {}
+[5.712991] (-) TimerEvent: {}
+[5.813226] (-) TimerEvent: {}
+[5.913455] (-) TimerEvent: {}
+[6.013691] (-) TimerEvent: {}
+[6.113930] (-) TimerEvent: {}
+[6.214201] (-) TimerEvent: {}
+[6.314450] (-) TimerEvent: {}
+[6.414663] (-) TimerEvent: {}
+[6.514893] (-) TimerEvent: {}
+[6.615130] (-) TimerEvent: {}
+[6.715351] (-) TimerEvent: {}
+[6.815581] (-) TimerEvent: {}
+[6.915821] (-) TimerEvent: {}
+[7.016048] (-) TimerEvent: {}
+[7.116268] (-) TimerEvent: {}
+[7.216500] (-) TimerEvent: {}
+[7.316717] (-) TimerEvent: {}
+[7.416936] (-) TimerEvent: {}
+[7.517152] (-) TimerEvent: {}
+[7.617371] (-) TimerEvent: {}
+[7.717613] (-) TimerEvent: {}
+[7.817868] (-) TimerEvent: {}
+[7.918091] (-) TimerEvent: {}
+[8.018315] (-) TimerEvent: {}
+[8.118547] (-) TimerEvent: {}
+[8.218770] (-) TimerEvent: {}
+[8.318994] (-) TimerEvent: {}
+[8.419241] (-) TimerEvent: {}
+[8.519496] (-) TimerEvent: {}
+[8.619727] (-) TimerEvent: {}
+[8.719966] (-) TimerEvent: {}
+[8.820194] (-) TimerEvent: {}
+[8.920398] (-) TimerEvent: {}
+[9.020625] (-) TimerEvent: {}
+[9.120868] (-) TimerEvent: {}
+[9.221094] (-) TimerEvent: {}
+[9.321317] (-) TimerEvent: {}
+[9.421537] (-) TimerEvent: {}
+[9.521775] (-) TimerEvent: {}
+[9.622001] (-) TimerEvent: {}
+[9.722224] (-) TimerEvent: {}
+[9.822452] (-) TimerEvent: {}
+[9.922710] (-) TimerEvent: {}
+[10.022954] (-) TimerEvent: {}
+[10.123181] (-) TimerEvent: {}
+[10.223431] (-) TimerEvent: {}
+[10.323689] (-) TimerEvent: {}
+[10.424013] (-) TimerEvent: {}
+[10.524331] (-) TimerEvent: {}
+[10.624601] (-) TimerEvent: {}
+[10.724872] (-) TimerEvent: {}
+[10.825105] (-) TimerEvent: {}
+[10.925325] (-) TimerEvent: {}
+[11.025551] (-) TimerEvent: {}
+[11.125772] (-) TimerEvent: {}
+[11.226020] (-) TimerEvent: {}
+[11.326262] (-) TimerEvent: {}
+[11.426541] (-) TimerEvent: {}
+[11.526798] (-) TimerEvent: {}
+[11.627093] (-) TimerEvent: {}
+[11.727369] (-) TimerEvent: {}
+[11.827666] (-) TimerEvent: {}
+[11.927947] (-) TimerEvent: {}
+[12.028189] (-) TimerEvent: {}
+[12.128430] (-) TimerEvent: {}
+[12.228720] (-) TimerEvent: {}
+[12.328975] (-) TimerEvent: {}
+[12.429218] (-) TimerEvent: {}
+[12.529472] (-) TimerEvent: {}
+[12.629692] (-) TimerEvent: {}
+[12.729923] (-) TimerEvent: {}
+[12.830158] (-) TimerEvent: {}
+[12.930369] (-) TimerEvent: {}
+[13.030613] (-) TimerEvent: {}
+[13.130857] (-) TimerEvent: {}
+[13.231081] (-) TimerEvent: {}
+[13.331308] (-) TimerEvent: {}
+[13.431519] (-) TimerEvent: {}
+[13.531738] (-) TimerEvent: {}
+[13.631956] (-) TimerEvent: {}
+[13.732205] (-) TimerEvent: {}
+[13.832434] (-) TimerEvent: {}
+[13.932680] (-) TimerEvent: {}
+[14.032911] (-) TimerEvent: {}
+[14.133134] (-) TimerEvent: {}
+[14.233352] (-) TimerEvent: {}
+[14.333571] (-) TimerEvent: {}
+[14.433784] (-) TimerEvent: {}
+[14.534012] (-) TimerEvent: {}
+[14.634253] (-) TimerEvent: {}
+[14.734467] (-) TimerEvent: {}
+[14.834689] (-) TimerEvent: {}
+[14.934914] (-) TimerEvent: {}
+[15.035142] (-) TimerEvent: {}
+[15.135393] (-) TimerEvent: {}
+[15.235647] (-) TimerEvent: {}
+[15.335901] (-) TimerEvent: {}
+[15.436123] (-) TimerEvent: {}
+[15.536344] (-) TimerEvent: {}
+[15.636577] (-) TimerEvent: {}
+[15.736792] (-) TimerEvent: {}
+[15.837022] (-) TimerEvent: {}
+[15.937261] (-) TimerEvent: {}
+[16.037483] (-) TimerEvent: {}
+[16.137723] (-) TimerEvent: {}
+[16.237949] (-) TimerEvent: {}
+[16.338175] (-) TimerEvent: {}
+[16.438395] (-) TimerEvent: {}
+[16.538614] (-) TimerEvent: {}
+[16.638840] (-) TimerEvent: {}
+[16.739137] (-) TimerEvent: {}
+[16.839430] (-) TimerEvent: {}
+[16.939670] (-) TimerEvent: {}
+[17.039892] (-) TimerEvent: {}
+[17.140120] (-) TimerEvent: {}
+[17.240340] (-) TimerEvent: {}
+[17.313159] (occgrid_planner_base) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable occgrid_planner_base\x1b[0m\n'}
+[17.340462] (-) TimerEvent: {}
+[17.440774] (-) TimerEvent: {}
+[17.541014] (-) TimerEvent: {}
+[17.641233] (-) TimerEvent: {}
+[17.741481] (-) TimerEvent: {}
+[17.841704] (-) TimerEvent: {}
+[17.941926] (-) TimerEvent: {}
+[18.042146] (-) TimerEvent: {}
+[18.142376] (-) TimerEvent: {}
+[18.242617] (-) TimerEvent: {}
+[18.342898] (-) TimerEvent: {}
+[18.432302] (occgrid_planner_base) StdoutLine: {'line': b'[100%] Built target occgrid_planner_base\n'}
+[18.442294] (occgrid_planner_base) CommandEnded: {'returncode': 0}
+[18.445250] (-) TimerEvent: {}
+[18.461967] (occgrid_planner_base) JobProgress: {'identifier': 'occgrid_planner_base', 'progress': 'install'}
+[18.467671] (occgrid_planner_base) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/GTL/apaul/ros2_hw1/build/occgrid_planner_base'], 'cwd': '/home/GTL/apaul/ros2_hw1/build/occgrid_planner_base', 'env': OrderedDict([('USER', 'apaul'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/GTL/apaul'), ('CYCLONEDDS_URI', '/cs-share/pradalier/gtlpc_cyclonedds.xml'), ('OLDPWD', '/home/GTL/apaul'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2447'), ('SYSTEMD_EXEC_PID', '2970'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/37726/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4339'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'apaul'), ('JOURNAL_STREAM', '8:39539'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'apaul'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/gtlpc106.georgiatech-metz.fr:@/tmp/.ICE-unix/2702,unix/gtlpc106.georgiatech-metz.fr:/tmp/.ICE-unix/2702'), ('INVOCATION_ID', 'a7599bc07ed241d58205dd0c990b0f9b'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/37726'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/37726/gdm/Xauthority'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/37726/keyring/ssh'), ('ROS_DOMAIN_ID', '56'), ('AMENT_PREFIX_PATH', '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:2449bbd2-eecf-4110-a6e7-f3f786500713'), ('KRB5CCNAME', 'FILE:/tmp/krb5cc_37726'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/37726/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/GTL/apaul/ros2_hw1/build/occgrid_planner_base'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble')]), 'shell': False}
+[18.473597] (occgrid_planner_base) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[18.474933] (occgrid_planner_base) StdoutLine: {'line': b'-- Installing: /home/GTL/apaul/ros2_hw1/install/occgrid_planner_base/lib/occgrid_planner_base/occgrid_planner_base\n'}
+[18.545367] (-) TimerEvent: {}
+[18.645615] (-) TimerEvent: {}
+[18.665649] (occgrid_planner_base) StdoutLine: {'line': b'-- Set runtime path of "/home/GTL/apaul/ros2_hw1/install/occgrid_planner_base/lib/occgrid_planner_base/occgrid_planner_base" to ""\n'}
+[18.666704] (occgrid_planner_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/occgrid_planner_base/lib/occgrid_planner_base/path_optimizer_base\n'}
+[18.670132] (occgrid_planner_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/occgrid_planner_base/lib/occgrid_planner_base/path_follower_base\n'}
+[18.673431] (occgrid_planner_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/occgrid_planner_base/share/occgrid_planner_base\n'}
+[18.674562] (occgrid_planner_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/occgrid_planner_base/share/occgrid_planner_base/planner.launch.py\n'}
+[18.675446] (occgrid_planner_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/occgrid_planner_base/share/occgrid_planner_base/mapper_params_online_sync.yaml\n'}
+[18.676237] (occgrid_planner_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/occgrid_planner_base/share/occgrid_planner_base/slam_tb_sync.launch.py\n'}
+[18.676969] (occgrid_planner_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/occgrid_planner_base/share/occgrid_planner_base/mapper_params_tb_sync.yaml\n'}
+[18.677797] (occgrid_planner_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/occgrid_planner_base/share/occgrid_planner_base/slam_online_sync.launch.py\n'}
+[18.678411] (occgrid_planner_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/occgrid_planner_base/share/occgrid_planner_base/__pycache__\n'}
+[18.679867] (occgrid_planner_base) StdoutLine: {'line': b'-- Installing: /home/GTL/apaul/ros2_hw1/install/occgrid_planner_base/share/occgrid_planner_base/__pycache__/slam_online_sync.launch.cpython-310.pyc\n'}
+[18.684680] (occgrid_planner_base) StdoutLine: {'line': b'-- Installing: /home/GTL/apaul/ros2_hw1/install/occgrid_planner_base/share/occgrid_planner_base/__pycache__/planner.launch.cpython-310.pyc\n'}
+[18.690077] (occgrid_planner_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/occgrid_planner_base/share/ament_index/resource_index/package_run_dependencies/occgrid_planner_base\n'}
+[18.691099] (occgrid_planner_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/occgrid_planner_base/share/ament_index/resource_index/parent_prefix_path/occgrid_planner_base\n'}
+[18.691571] (occgrid_planner_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/occgrid_planner_base/share/occgrid_planner_base/environment/ament_prefix_path.sh\n'}
+[18.692452] (occgrid_planner_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/occgrid_planner_base/share/occgrid_planner_base/environment/ament_prefix_path.dsv\n'}
+[18.692915] (occgrid_planner_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/occgrid_planner_base/share/occgrid_planner_base/environment/path.sh\n'}
+[18.693807] (occgrid_planner_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/occgrid_planner_base/share/occgrid_planner_base/environment/path.dsv\n'}
+[18.694259] (occgrid_planner_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/occgrid_planner_base/share/occgrid_planner_base/local_setup.bash\n'}
+[18.695361] (occgrid_planner_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/occgrid_planner_base/share/occgrid_planner_base/local_setup.sh\n'}
+[18.695854] (occgrid_planner_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/occgrid_planner_base/share/occgrid_planner_base/local_setup.zsh\n'}
+[18.696420] (occgrid_planner_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/occgrid_planner_base/share/occgrid_planner_base/local_setup.dsv\n'}
+[18.696908] (occgrid_planner_base) StdoutLine: {'line': b'-- Installing: /home/GTL/apaul/ros2_hw1/install/occgrid_planner_base/share/occgrid_planner_base/package.dsv\n'}
+[18.701976] (occgrid_planner_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/occgrid_planner_base/share/ament_index/resource_index/packages/occgrid_planner_base\n'}
+[18.703007] (occgrid_planner_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/occgrid_planner_base/share/occgrid_planner_base/cmake/occgrid_planner_baseConfig.cmake\n'}
+[18.703440] (occgrid_planner_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/occgrid_planner_base/share/occgrid_planner_base/cmake/occgrid_planner_baseConfig-version.cmake\n'}
+[18.704271] (occgrid_planner_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/occgrid_planner_base/share/occgrid_planner_base/package.xml\n'}
+[18.706934] (occgrid_planner_base) CommandEnded: {'returncode': 0}
+[18.745684] (-) TimerEvent: {}
+[18.768908] (occgrid_planner_base) JobEnded: {'identifier': 'occgrid_planner_base', 'rc': 0}
+[18.770516] (-) EventReactorShutdown: {}

@@ -1,0 +1,9 @@
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:[m[K In member function ‘[01m[Kvoid OccupancyGridPlanner::frontier_timer_cb()[m[K’:
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:515:38:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[K((OccupancyGridPlanner*)this)->OccupancyGridPlanner::planToPixelTarget(cv::Point3_<int>(current_pos), cv::Point3_<int>(best_frontier))[m[K’ from ‘[01m[Kvoid[m[K’ to ‘[01m[Kbool[m[K’
+  515 |                 if ([01;31m[KplanToPixelTarget(current_pos, best_frontier)[m[K) {
+      |                     [01;31m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                      [01;31m[K|[m[K
+      |                                      [01;31m[Kvoid[m[K
+gmake[2]: *** [CMakeFiles/occgrid_planner_base.dir/build.make:76: CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/occgrid_planner_base.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

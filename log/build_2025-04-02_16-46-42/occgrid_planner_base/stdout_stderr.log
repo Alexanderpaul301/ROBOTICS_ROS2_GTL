@@ -1,0 +1,15 @@
+[35m[1mConsolidate compiler generated dependencies of target occgrid_planner_base[0m
+[ 66%] Built target path_follower_base
+[ 66%] Built target path_optimizer_base
+[ 83%] [32mBuilding CXX object CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o[0m
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:[m[K In member function ‘[01m[Kvoid OccupancyGridPlanner::frontier_timer_cb()[m[K’:
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:609:38:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KOccupancyGridPlanner::planToPixelTarget(cv::Point3i&, cv::Point3i&)[m[K’
+  609 |                 if ([01;31m[KplanToPixelTarget(current_pos, best_frontier)[m[K) {
+      |                     [01;31m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:434:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool OccupancyGridPlanner::planToPixelTarget(cv::Point3i, cv::Point3i, nav_msgs::msg::Path&)[m[K’
+  434 |         bool [01;36m[KplanToPixelTarget[m[K(cv::Point3i start, cv::Point3i target,nav_msgs::msg::Path &path_out) {
+      |              [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:434:14:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 2 provided
+gmake[2]: *** [CMakeFiles/occgrid_planner_base.dir/build.make:76: CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/occgrid_planner_base.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
