@@ -34,6 +34,7 @@ class OccupancyGridPlanner : public rclcpp::Node {
         rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr path_pub_;
         rclcpp::TimerBase::SharedPtr timer_;
         rclcpp::TimerBase::SharedPtr exploration_timer_;
+    
 
 
 

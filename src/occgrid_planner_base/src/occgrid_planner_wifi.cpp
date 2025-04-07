@@ -44,7 +44,7 @@ class OccupancyGridPlanner : public rclcpp::Node {
         
 
         cv::Rect roi_;
-        cv::Mat_<uint8_t> og_, cropped_og_, robot_footstep_, wifi_og_;
+        cv::Mat_<uint8_t> og_, cropped_og_, robot_footstep_, wifi_og_,merged_og_;
         cv::Mat_<cv::Vec3b> og_rgb_, og_rgb_marked_;
         cv::Point3i og_center_;
         nav_msgs::msg::MapMetaData info_;
@@ -54,13 +54,72 @@ class OccupancyGridPlanner : public rclcpp::Node {
         bool ready_;
         bool debug_;
         double robot_radius_;
+        bool wifi_map_received_;
+        double wifi_weights_;
 
         typedef std::multimap<float, cv::Point3i> Heap;
 
         cv::Point P2(const cv::Point3i & P) {return cv::Point(P.x,P.y);}
 
+        // Callback for Wifi Occupancy Grids
+        void wifi_og_callback(nav_msgs::msg::OccupancyGrid::SharedPtr msg) {
+            if (msg->info.width != info_.width || msg->info.height != info_.height) {
+                RCLCPP_WARN(this->get_logger(), "Wifi map dimensions don't match occupancy grid");
+                return;
+            }
+
+            wifi_og_ = cv::Mat_<uint8_t>(msg->info.height, msg->info.width, UNKNOWN);
+            
+            // Convert wifi signal strength to values we can use
+            for (unsigned int j = 0; j < msg->info.height; j++) {
+                for (unsigned int i = 0; i < msg->info.width; i++) {
+                    int8_t v = msg->data[j * msg->info.width + i];
+                    // Normalize wifi signal (assuming -100dB is worst, -30dB is best)
+                    if (v != -1) { // -1 is unknown
+                        // Scale to 0-255 range (higher is better signal)
+                        wifi_og_(j, i) = static_cast<uint8_t>(255 * (v + 100) / 70);
+                    }
+                }
+            }
+            
+            wifi_map_received_ = true;
+            merge_maps();
+        }
+        
+        // Merge occupancy grid and wifi map
+        void merge_maps() {
+            if (!ready_ || !wifi_map_received_) return;
+
+            merged_og_ = og_.clone();
+            
+            for (int y = 0; y < og_.rows; y++) {
+                for (int x = 0; x < og_.cols; x++) {
+                    // Only modify free cells (keep obstacles and unknown as is)
+                    if (og_(y, x) == FREE) {
+                        // Blend with wifi signal - higher wifi signal makes the cell more "free"
+                        float og_val = static_cast<float>(og_(y, x));
+                        float wifi_val = static_cast<float>(wifi_og_(y, x));
+                        
+                        // Simple weighted average - you might want a more sophisticated blending
+                        float merged_val = (1.0 - wifi_weight_) * og_val + wifi_weight_ * wifi_val;
+                        
+                        // Ensure we stay in the free range
+                        merged_og_(y, x) = static_cast<uint8_t>(std::min(255.0f, std::max(0.0f, merged_val));
+                    }
+                }
+            }
+            
+            // Update display if needed
+            if (!headless_) {
+                cv::cvtColor(merged_og_, og_rgb_, cv::COLOR_GRAY2RGB);
+                cv::imshow("OccGrid", og_rgb_);
+            }
+        }
+
+
         // Callback for Occupancy Grids
         void og_callback(nav_msgs::msg::OccupancyGrid::SharedPtr msg) {
+                // og_rgb_(50,50) = cv::Vec3b(255,0,0);
             info_ = msg->info;
             frame_id_ = msg->header.frame_id;
             // Create an image to store the value of the grid.
@@ -169,7 +228,6 @@ class OccupancyGridPlanner : public rclcpp::Node {
                 cv::cvtColor(og_, og_rgb_, cv::COLOR_GRAY2RGB);
                 //! We update the RGB map by calling the find_frontier_points function
                 std::vector<cv::Point3i> frontiers = find_frontier_points();
-                // og_rgb_(50,50) = cv::Vec3b(255,0,0);
                 // Compute a sub-image that covers only the useful part of the
                 // grid.
                 cropped_og_ = cv::Mat_<uint8_t>(og_,roi_);
@@ -513,6 +571,8 @@ class OccupancyGridPlanner : public rclcpp::Node {
     public:
         OccupancyGridPlanner() : rclcpp::Node("occgrid_planner") {
             ready_ = false;
+            wifi_map_received_=false;
+            wifi_weight_=0.5;
             
             this->declare_parameter("~/base_frame",std::string("body"));
             this->declare_parameter("~/debug",false);
@@ -526,6 +586,9 @@ class OccupancyGridPlanner : public rclcpp::Node {
             tf_listener = std::make_shared<tf2_ros::TransformListener>(*tf_buffer);
             og_sub_ = this->create_subscription<nav_msgs::msg::OccupancyGrid>("~/occ_grid",1,
                     std::bind(&OccupancyGridPlanner::og_callback,this,std::placeholders::_1));
+            wifi_og_sub_ = this->create_subscription<nav_msgs::msg::OccupancyGrid>(
+                "~/wifi_map", 1,
+                std::bind(&OccupancyGridPlanner::wifi_og_callback, this, std::placeholders::_1));
             target_sub_ = this->create_subscription<geometry_msgs::msg::PoseStamped>("~/goal",1,
                     std::bind(&OccupancyGridPlanner::target_callback,this,std::placeholders::_1));
             path_pub_ = this->create_publisher<nav_msgs::msg::Path>("~/path",1);
