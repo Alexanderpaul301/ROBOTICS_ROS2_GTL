@@ -1,0 +1,36 @@
+[0.024s] Invoking command in '/home/GTL/apaul/ros2_hw1/build/wifi_map_base': CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/wpa_cli_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/wpa_cli_msgs/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/wifi_map_base -- -j16 -l16
+[0.070s] [35m[1mConsolidate compiler generated dependencies of target wifi_map_node[0m
+[0.140s] [ 50%] [32mBuilding CXX object CMakeFiles/wifi_map_node.dir/src/wifi_map_node.cpp.o[0m
+[2.132s] [01m[K/home/GTL/apaul/ros2_hw1/src/wifi_map_base/src/wifi_map_node.cpp:[m[K In member function ‘[01m[Kvoid WifiMapNode::wifi_callback(wpa_cli_msgs::msg::Scan_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.132s] [01m[K/home/GTL/apaul/ros2_hw1/src/wifi_map_base/src/wifi_map_node.cpp:161:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kog_min[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.132s]   161 |             int [01;35m[Kog_min[m[K=255, og_max=0;
+[2.132s]       |                 [01;35m[K^~~~~~[m[K
+[2.132s] [01m[K/home/GTL/apaul/ros2_hw1/src/wifi_map_base/src/wifi_map_node.cpp:161:29:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kog_max[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.132s]   161 |             int og_min=255, [01;35m[Kog_max[m[K=0;
+[2.132s]       |                             [01;35m[K^~~~~~[m[K
+[8.028s] [100%] [32m[1mLinking CXX executable wifi_map_node[0m
+[8.660s] [100%] Built target wifi_map_node
+[8.669s] Invoked command in '/home/GTL/apaul/ros2_hw1/build/wifi_map_base' returned '0': CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/wpa_cli_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/wpa_cli_msgs/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/wifi_map_base -- -j16 -l16
+[8.692s] Invoking command in '/home/GTL/apaul/ros2_hw1/build/wifi_map_base': CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/wpa_cli_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/wpa_cli_msgs/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/GTL/apaul/ros2_hw1/build/wifi_map_base
+[8.697s] -- Install configuration: ""
+[8.700s] -- Installing: /home/GTL/apaul/ros2_hw1/install/wifi_map_base/lib/wifi_map_base/wifi_map_node
+[8.755s] -- Set runtime path of "/home/GTL/apaul/ros2_hw1/install/wifi_map_base/lib/wifi_map_base/wifi_map_node" to ""
+[8.755s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/wifi_map_base/share/wifi_map_base
+[8.756s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/wifi_map_base/share/wifi_map_base/wifi_map.launch.py
+[8.757s] -- Installing: /home/GTL/apaul/ros2_hw1/install/wifi_map_base/share/wifi_map_base/wifi_map_sim.launch.py
+[8.762s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/wifi_map_base/share/ament_index/resource_index/package_run_dependencies/wifi_map_base
+[8.762s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/wifi_map_base/share/ament_index/resource_index/parent_prefix_path/wifi_map_base
+[8.763s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/wifi_map_base/share/wifi_map_base/environment/ament_prefix_path.sh
+[8.764s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/wifi_map_base/share/wifi_map_base/environment/ament_prefix_path.dsv
+[8.764s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/wifi_map_base/share/wifi_map_base/environment/path.sh
+[8.765s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/wifi_map_base/share/wifi_map_base/environment/path.dsv
+[8.765s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/wifi_map_base/share/wifi_map_base/local_setup.bash
+[8.766s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/wifi_map_base/share/wifi_map_base/local_setup.sh
+[8.766s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/wifi_map_base/share/wifi_map_base/local_setup.zsh
+[8.767s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/wifi_map_base/share/wifi_map_base/local_setup.dsv
+[8.768s] -- Installing: /home/GTL/apaul/ros2_hw1/install/wifi_map_base/share/wifi_map_base/package.dsv
+[8.772s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/wifi_map_base/share/ament_index/resource_index/packages/wifi_map_base
+[8.773s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/wifi_map_base/share/wifi_map_base/cmake/wifi_map_baseConfig.cmake
+[8.773s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/wifi_map_base/share/wifi_map_base/cmake/wifi_map_baseConfig-version.cmake
+[8.774s] -- Up-to-date: /home/GTL/apaul/ros2_hw1/install/wifi_map_base/share/wifi_map_base/package.xml
+[8.776s] Invoked command in '/home/GTL/apaul/ros2_hw1/build/wifi_map_base' returned '0': CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/wpa_cli_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/wpa_cli_msgs/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/GTL/apaul/ros2_hw1/build/wifi_map_base

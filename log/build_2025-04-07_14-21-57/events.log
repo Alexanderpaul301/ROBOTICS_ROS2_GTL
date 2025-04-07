@@ -1,0 +1,161 @@
+[0.000000] (-) TimerEvent: {}
+[0.000102] (-) JobUnselected: {'identifier': 'ar_loc_base'}
+[0.000118] (-) JobUnselected: {'identifier': 'ar_mapping_base'}
+[0.000128] (-) JobUnselected: {'identifier': 'ar_slam_base'}
+[0.000135] (-) JobUnselected: {'identifier': 'button_server'}
+[0.000143] (-) JobUnselected: {'identifier': 'collision_avoidance_base'}
+[0.000150] (-) JobUnselected: {'identifier': 'cs7630_msgs'}
+[0.000157] (-) JobUnselected: {'identifier': 'face_detect_base'}
+[0.000165] (-) JobUnselected: {'identifier': 'face_msg'}
+[0.000172] (-) JobUnselected: {'identifier': 'final_project'}
+[0.000179] (-) JobUnselected: {'identifier': 'floor_nav'}
+[0.000186] (-) JobUnselected: {'identifier': 'joy_pack'}
+[0.000193] (-) JobUnselected: {'identifier': 'keyboard_teleop'}
+[0.000200] (-) JobUnselected: {'identifier': 'obstacle_avoidance_base'}
+[0.000207] (-) JobUnselected: {'identifier': 'occgrid_planner'}
+[0.000214] (-) JobUnselected: {'identifier': 'occgrid_planner_base'}
+[0.000221] (-) JobUnselected: {'identifier': 'rover_driver_base'}
+[0.000229] (-) JobUnselected: {'identifier': 'task_manager_client_py'}
+[0.000236] (-) JobUnselected: {'identifier': 'task_manager_lib'}
+[0.000243] (-) JobUnselected: {'identifier': 'task_manager_msgs'}
+[0.000250] (-) JobUnselected: {'identifier': 'task_manager_nav2'}
+[0.000257] (-) JobUnselected: {'identifier': 'task_manager_sync'}
+[0.000265] (-) JobUnselected: {'identifier': 'turtlebot_launch'}
+[0.000272] (-) JobUnselected: {'identifier': 'vrep4_helpers'}
+[0.000279] (-) JobUnselected: {'identifier': 'vrep_ros_teleop'}
+[0.000286] (-) JobUnselected: {'identifier': 'wpa_cli_msgs'}
+[0.000295] (wifi_map_base) JobQueued: {'identifier': 'wifi_map_base', 'dependencies': OrderedDict([('wpa_cli_msgs', '/home/GTL/apaul/ros2_hw1/install/wpa_cli_msgs')])}
+[0.000307] (wifi_map_base) JobStarted: {'identifier': 'wifi_map_base'}
+[0.014045] (wifi_map_base) JobProgress: {'identifier': 'wifi_map_base', 'progress': 'cmake'}
+[0.018608] (wifi_map_base) JobProgress: {'identifier': 'wifi_map_base', 'progress': 'build'}
+[0.019436] (wifi_map_base) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/GTL/apaul/ros2_hw1/build/wifi_map_base', '--', '-j16', '-l16'], 'cwd': '/home/GTL/apaul/ros2_hw1/build/wifi_map_base', 'env': OrderedDict([('USER', 'apaul'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/GTL/apaul/ros2_hw1/install/wpa_cli_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/GTL/apaul'), ('CYCLONEDDS_URI', '/cs-share/pradalier/gtlpc_cyclonedds.xml'), ('OLDPWD', '/home/GTL/apaul'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2413'), ('SYSTEMD_EXEC_PID', '2847'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/37726/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6350'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'apaul'), ('JOURNAL_STREAM', '8:26034'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'apaul'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/gtlpc106.georgiatech-metz.fr:@/tmp/.ICE-unix/2658,unix/gtlpc106.georgiatech-metz.fr:/tmp/.ICE-unix/2658'), ('INVOCATION_ID', '2315708255f9451eb2903a56249e7e79'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/37726'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/37726/gdm/Xauthority'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/37726/keyring/ssh'), ('ROS_DOMAIN_ID', '56'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:d4e931bc-36bc-48d5-bd80-e473784396e5'), ('KRB5CCNAME', 'FILE:/tmp/krb5cc_37726'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/37726/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/GTL/apaul/ros2_hw1/build/wifi_map_base'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/GTL/apaul/ros2_hw1/install/wpa_cli_msgs:/opt/ros/humble')]), 'shell': False}
+[0.088408] (wifi_map_base) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/wifi_map_node.dir/src/wifi_map_node.cpp.o\x1b[0m\n'}
+[0.098317] (-) TimerEvent: {}
+[0.198536] (-) TimerEvent: {}
+[0.298790] (-) TimerEvent: {}
+[0.399168] (-) TimerEvent: {}
+[0.499450] (-) TimerEvent: {}
+[0.599698] (-) TimerEvent: {}
+[0.699927] (-) TimerEvent: {}
+[0.800228] (-) TimerEvent: {}
+[0.900565] (-) TimerEvent: {}
+[1.000830] (-) TimerEvent: {}
+[1.101123] (-) TimerEvent: {}
+[1.201382] (-) TimerEvent: {}
+[1.301620] (-) TimerEvent: {}
+[1.401857] (-) TimerEvent: {}
+[1.502058] (-) TimerEvent: {}
+[1.602292] (-) TimerEvent: {}
+[1.702543] (-) TimerEvent: {}
+[1.802791] (-) TimerEvent: {}
+[1.903032] (-) TimerEvent: {}
+[2.086333] (-) TimerEvent: {}
+[2.186563] (-) TimerEvent: {}
+[2.286806] (-) TimerEvent: {}
+[2.336903] (wifi_map_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/wifi_map_base/src/wifi_map_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid WifiMapNode::wifi_callback(wpa_cli_msgs::msg::Scan_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.337025] (wifi_map_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/wifi_map_base/src/wifi_map_node.cpp:161:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kog_min\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.337067] (wifi_map_base) StderrLine: {'line': b'  161 |             int \x1b[01;35m\x1b[Kog_min\x1b[m\x1b[K=255, og_max=0;\n'}
+[2.337100] (wifi_map_base) StderrLine: {'line': b'      |                 \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.337139] (wifi_map_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/GTL/apaul/ros2_hw1/src/wifi_map_base/src/wifi_map_node.cpp:161:29:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kog_max\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.337172] (wifi_map_base) StderrLine: {'line': b'  161 |             int og_min=255, \x1b[01;35m\x1b[Kog_max\x1b[m\x1b[K=0;\n'}
+[2.337209] (wifi_map_base) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.386913] (-) TimerEvent: {}
+[2.487130] (-) TimerEvent: {}
+[2.587377] (-) TimerEvent: {}
+[2.687640] (-) TimerEvent: {}
+[2.787893] (-) TimerEvent: {}
+[2.888203] (-) TimerEvent: {}
+[2.988474] (-) TimerEvent: {}
+[3.088743] (-) TimerEvent: {}
+[3.188973] (-) TimerEvent: {}
+[3.289231] (-) TimerEvent: {}
+[3.389544] (-) TimerEvent: {}
+[3.489803] (-) TimerEvent: {}
+[3.590041] (-) TimerEvent: {}
+[3.690293] (-) TimerEvent: {}
+[3.790557] (-) TimerEvent: {}
+[3.890799] (-) TimerEvent: {}
+[3.991049] (-) TimerEvent: {}
+[4.091299] (-) TimerEvent: {}
+[4.191562] (-) TimerEvent: {}
+[4.291815] (-) TimerEvent: {}
+[4.392045] (-) TimerEvent: {}
+[4.492342] (-) TimerEvent: {}
+[4.592597] (-) TimerEvent: {}
+[4.692826] (-) TimerEvent: {}
+[4.793070] (-) TimerEvent: {}
+[4.893338] (-) TimerEvent: {}
+[4.993581] (-) TimerEvent: {}
+[5.093834] (-) TimerEvent: {}
+[5.194090] (-) TimerEvent: {}
+[5.294315] (-) TimerEvent: {}
+[5.394556] (-) TimerEvent: {}
+[5.494786] (-) TimerEvent: {}
+[5.595037] (-) TimerEvent: {}
+[5.695268] (-) TimerEvent: {}
+[5.795494] (-) TimerEvent: {}
+[5.895708] (-) TimerEvent: {}
+[5.995941] (-) TimerEvent: {}
+[6.096220] (-) TimerEvent: {}
+[6.196433] (-) TimerEvent: {}
+[6.296654] (-) TimerEvent: {}
+[6.396907] (-) TimerEvent: {}
+[6.497159] (-) TimerEvent: {}
+[6.597359] (-) TimerEvent: {}
+[6.697564] (-) TimerEvent: {}
+[6.797842] (-) TimerEvent: {}
+[6.898064] (-) TimerEvent: {}
+[6.998308] (-) TimerEvent: {}
+[7.101549] (-) TimerEvent: {}
+[7.201761] (-) TimerEvent: {}
+[7.301952] (-) TimerEvent: {}
+[7.402205] (-) TimerEvent: {}
+[7.502425] (-) TimerEvent: {}
+[7.602671] (-) TimerEvent: {}
+[7.702900] (-) TimerEvent: {}
+[7.803128] (-) TimerEvent: {}
+[7.903336] (-) TimerEvent: {}
+[8.003555] (-) TimerEvent: {}
+[8.103765] (-) TimerEvent: {}
+[8.204044] (-) TimerEvent: {}
+[8.304348] (-) TimerEvent: {}
+[8.404571] (-) TimerEvent: {}
+[8.474413] (wifi_map_base) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable wifi_map_node\x1b[0m\n'}
+[8.504672] (-) TimerEvent: {}
+[8.604898] (-) TimerEvent: {}
+[8.705197] (-) TimerEvent: {}
+[8.805439] (-) TimerEvent: {}
+[8.905649] (-) TimerEvent: {}
+[9.005869] (-) TimerEvent: {}
+[9.106129] (-) TimerEvent: {}
+[9.206367] (-) TimerEvent: {}
+[9.227301] (wifi_map_base) StdoutLine: {'line': b'[100%] Built target wifi_map_node\n'}
+[9.237581] (wifi_map_base) CommandEnded: {'returncode': 0}
+[9.253815] (wifi_map_base) JobProgress: {'identifier': 'wifi_map_base', 'progress': 'install'}
+[9.259877] (wifi_map_base) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/GTL/apaul/ros2_hw1/build/wifi_map_base'], 'cwd': '/home/GTL/apaul/ros2_hw1/build/wifi_map_base', 'env': OrderedDict([('USER', 'apaul'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/GTL/apaul/ros2_hw1/install/wpa_cli_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/GTL/apaul'), ('CYCLONEDDS_URI', '/cs-share/pradalier/gtlpc_cyclonedds.xml'), ('OLDPWD', '/home/GTL/apaul'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2413'), ('SYSTEMD_EXEC_PID', '2847'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/37726/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6350'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'apaul'), ('JOURNAL_STREAM', '8:26034'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'apaul'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/gtlpc106.georgiatech-metz.fr:@/tmp/.ICE-unix/2658,unix/gtlpc106.georgiatech-metz.fr:/tmp/.ICE-unix/2658'), ('INVOCATION_ID', '2315708255f9451eb2903a56249e7e79'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/37726'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/37726/gdm/Xauthority'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/37726/keyring/ssh'), ('ROS_DOMAIN_ID', '56'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:d4e931bc-36bc-48d5-bd80-e473784396e5'), ('KRB5CCNAME', 'FILE:/tmp/krb5cc_37726'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/37726/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/GTL/apaul/ros2_hw1/build/wifi_map_base'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/GTL/apaul/ros2_hw1/install/wpa_cli_msgs:/opt/ros/humble')]), 'shell': False}
+[9.266811] (wifi_map_base) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.269802] (wifi_map_base) StdoutLine: {'line': b'-- Installing: /home/GTL/apaul/ros2_hw1/install/wifi_map_base/lib/wifi_map_base/wifi_map_node\n'}
+[9.306453] (-) TimerEvent: {}
+[9.325105] (wifi_map_base) StdoutLine: {'line': b'-- Set runtime path of "/home/GTL/apaul/ros2_hw1/install/wifi_map_base/lib/wifi_map_base/wifi_map_node" to ""\n'}
+[9.325889] (wifi_map_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/wifi_map_base/share/wifi_map_base\n'}
+[9.326817] (wifi_map_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/wifi_map_base/share/wifi_map_base/wifi_map.launch.py\n'}
+[9.327396] (wifi_map_base) StdoutLine: {'line': b'-- Installing: /home/GTL/apaul/ros2_hw1/install/wifi_map_base/share/wifi_map_base/wifi_map_sim.launch.py\n'}
+[9.332694] (wifi_map_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/wifi_map_base/share/ament_index/resource_index/package_run_dependencies/wifi_map_base\n'}
+[9.333483] (wifi_map_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/wifi_map_base/share/ament_index/resource_index/parent_prefix_path/wifi_map_base\n'}
+[9.334308] (wifi_map_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/wifi_map_base/share/wifi_map_base/environment/ament_prefix_path.sh\n'}
+[9.334888] (wifi_map_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/wifi_map_base/share/wifi_map_base/environment/ament_prefix_path.dsv\n'}
+[9.335353] (wifi_map_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/wifi_map_base/share/wifi_map_base/environment/path.sh\n'}
+[9.336023] (wifi_map_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/wifi_map_base/share/wifi_map_base/environment/path.dsv\n'}
+[9.336487] (wifi_map_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/wifi_map_base/share/wifi_map_base/local_setup.bash\n'}
+[9.336943] (wifi_map_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/wifi_map_base/share/wifi_map_base/local_setup.sh\n'}
+[9.337437] (wifi_map_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/wifi_map_base/share/wifi_map_base/local_setup.zsh\n'}
+[9.338066] (wifi_map_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/wifi_map_base/share/wifi_map_base/local_setup.dsv\n'}
+[9.338759] (wifi_map_base) StdoutLine: {'line': b'-- Installing: /home/GTL/apaul/ros2_hw1/install/wifi_map_base/share/wifi_map_base/package.dsv\n'}
+[9.343400] (wifi_map_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/wifi_map_base/share/ament_index/resource_index/packages/wifi_map_base\n'}
+[9.344247] (wifi_map_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/wifi_map_base/share/wifi_map_base/cmake/wifi_map_baseConfig.cmake\n'}
+[9.344783] (wifi_map_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/wifi_map_base/share/wifi_map_base/cmake/wifi_map_baseConfig-version.cmake\n'}
+[9.345302] (wifi_map_base) StdoutLine: {'line': b'-- Up-to-date: /home/GTL/apaul/ros2_hw1/install/wifi_map_base/share/wifi_map_base/package.xml\n'}
+[9.348140] (wifi_map_base) CommandEnded: {'returncode': 0}
+[9.406710] (-) TimerEvent: {}
+[9.410580] (wifi_map_base) JobEnded: {'identifier': 'wifi_map_base', 'rc': 0}
+[9.412047] (-) EventReactorShutdown: {}
