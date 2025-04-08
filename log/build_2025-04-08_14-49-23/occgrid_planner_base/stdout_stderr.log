@@ -1,0 +1,16 @@
+[35m[1mConsolidate compiler generated dependencies of target occgrid_planner_wifi_base[0m
+[ 75%] Built target path_follower_base
+[ 75%] Built target occgrid_planner_base
+[ 75%] Built target path_optimizer_base
+[ 87%] [32mBuilding CXX object CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o[0m
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:[m[K In member function ‘[01m[Kvoid OccupancyGridPlanner::frontier_timer_cb()[m[K’:
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:739:38:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KOccupancyGridPlanner::planToPixelTarget(cv::Point3i&, cv::Point3i&, nav_msgs::msg::Path&)[m[K’
+  739 |                 if ([01;31m[KplanToPixelTarget(current_pos, best_frontier,path)[m[K) {
+      |                     [01;31m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:441:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool OccupancyGridPlanner::planToPixelTarget(const cv::Mat_<unsigned char>&, cv::Point3i, cv::Point3i, nav_msgs::msg::Path&)[m[K’
+  441 |         bool [01;36m[KplanToPixelTarget[m[K(const cv::Mat_<uint8_t> &og_, cv::Point3i start, cv::Point3i target,nav_msgs::msg::Path &path_out) {
+      |              [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:441:14:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 3 provided
+gmake[2]: *** [CMakeFiles/occgrid_planner_wifi_base.dir/build.make:76: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/occgrid_planner_wifi_base.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

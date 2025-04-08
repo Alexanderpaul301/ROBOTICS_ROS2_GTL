@@ -1,0 +1,95 @@
+[35m[1mConsolidate compiler generated dependencies of target occgrid_planner_wifi_base[0m
+[35m[1mConsolidate compiler generated dependencies of target occgrid_planner_base[0m
+[ 50%] Built target path_optimizer_base
+[ 50%] Built target path_follower_base
+[ 75%] [32mBuilding CXX object CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o[0m
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:[m[K In member function ‘[01m[Kbool OccupancyGridPlanner::planToPixelTarget(const OccupancyGrid&, cv::Point3i, cv::Point3i, nav_msgs::msg::Path&)[m[K’:
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:442:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst OccupancyGrid[m[K’ {aka ‘[01m[Kconst struct nav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ksize[m[K’
+  442 |             int dims[3] = {og_.[01;31m[Ksize[m[K().width, og_.size().height, 8};
+      |                                [01;31m[K^~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:442:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst OccupancyGrid[m[K’ {aka ‘[01m[Kconst struct nav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ksize[m[K’
+  442 |             int dims[3] = {og_.size().width, og_.[01;31m[Ksize[m[K().height, 8};
+      |                                                  [01;31m[K^~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:479:37:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(const OccupancyGrid {aka const nav_msgs::msg::OccupancyGrid_<std::allocator<void> >}) (cv::Point)[m[K’
+  479 |                     uint8_t og = [01;31m[Kog_(P2(dest))[m[K;
+      |                                  [01;31m[K~~~^~~~~~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:[m[K In member function ‘[01m[Kbool OccupancyGridPlanner::find_best_frontier(const OccupancyGrid&, const OccupancyGrid&, const Point3i&, cv::Point3i&)[m[K’:
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:592:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst OccupancyGrid[m[K’ {aka ‘[01m[Kconst struct nav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kcols[m[K’
+  592 |             if (og_.[01;31m[Kcols[m[K != wifi_og_.cols)||(og_.rows != wifi_og_.rows){
+      |                     [01;31m[K^~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:592:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst OccupancyGrid[m[K’ {aka ‘[01m[Kconst struct nav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kcols[m[K’
+  592 |             if (og_.cols != wifi_og_.[01;31m[Kcols[m[K)||(og_.rows != wifi_og_.rows){
+      |                                      [01;31m[K^~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:592:43:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K||[m[K’ token
+  592 |             if (og_.cols != wifi_og_.cols)[01;31m[K||[m[K(og_.rows != wifi_og_.rows){
+      |                                           [01;31m[K^~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:592:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst OccupancyGrid[m[K’ {aka ‘[01m[Kconst struct nav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’} has no member named ‘[01m[Krows[m[K’
+  592 |             if (og_.cols != wifi_og_.cols)||(og_.[01;31m[Krows[m[K != wifi_og_.rows){
+      |                                                  [01;31m[K^~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:592:67:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst OccupancyGrid[m[K’ {aka ‘[01m[Kconst struct nav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’} has no member named ‘[01m[Krows[m[K’
+  592 |             if (og_.cols != wifi_og_.cols)||(og_.rows != wifi_og_.[01;31m[Krows[m[K){
+      |                                                                   [01;31m[K^~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:596:19:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+  596 |             else ([01;31m[K)[m[K{
+      |                   [01;31m[K^[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:610:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst OccupancyGrid[m[K’ {aka ‘[01m[Kconst struct nav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kcols[m[K’
+  610 |             int max_x = std::min(og_.[01;31m[Kcols[m[K - 1, start.x + scan_range);
+      |                                      [01;31m[K^~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:612:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst OccupancyGrid[m[K’ {aka ‘[01m[Kconst struct nav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’} has no member named ‘[01m[Krows[m[K’
+  612 |             int max_y = std::min(og_.[01;31m[Krows[m[K - 1, start.y + scan_range);
+      |                                      [01;31m[K^~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:618:28:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(const OccupancyGrid {aka const nav_msgs::msg::OccupancyGrid_<std::allocator<void> >}) (int&, int&)[m[K’
+  618 |                     if ([01;31m[Kog_(y, x)[m[K != FREE) continue;
+      |                         [01;31m[K~~~^~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:624:36:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(const OccupancyGrid {aka const nav_msgs::msg::OccupancyGrid_<std::allocator<void> >}) (int, int)[m[K’
+  624 |                             if ([01;31m[Kog_(y + dy, x + dx)[m[K == UNKNOWN) {
+      |                                 [01;31m[K~~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:650:33:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(const OccupancyGrid {aka const nav_msgs::msg::OccupancyGrid_<std::allocator<void> >}) (int&, int&)[m[K’
+  650 |                     if ([01;31m[Kwifi_og_(y, x)[m[K != FREE) continue;
+      |                         [01;31m[K~~~~~~~~^~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:656:41:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(const OccupancyGrid {aka const nav_msgs::msg::OccupancyGrid_<std::allocator<void> >}) (int, int)[m[K’
+  656 |                             if ([01;31m[Kwifi_og_(y + dy, x + dx)[m[K == UNKNOWN) {
+      |                                 [01;31m[K~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:671:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kbest_frontier_wifi[m[K’ was not declared in this scope; did you mean ‘[01m[Kbest_frontier_og[m[K’?
+  671 |                             [01;31m[Kbest_frontier_wifi[m[K = cv::Point3i(x, y, 0);
+      |                             [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+      |                             [32m[Kbest_frontier_og[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:678:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kbest_frontier_wifi[m[K’ was not declared in this scope; did you mean ‘[01m[Kbest_frontier_og[m[K’?
+  678 |                 best_frontier=[01;31m[Kbest_frontier_wifi[m[K;
+      |                               [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+      |                               [32m[Kbest_frontier_og[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:[m[K In constructor ‘[01m[KOccupancyGridPlanner::OccupancyGridPlanner()[m[K’:
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:692:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kwifi_weight_[m[K’ was not declared in this scope; did you mean ‘[01m[Kwifi_weights_[m[K’?
+  692 |             [01;31m[Kwifi_weight_[m[K=0.5;
+      |             [01;31m[K^~~~~~~~~~~~[m[K
+      |             [32m[Kwifi_weights_[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:[m[K In member function ‘[01m[Kvoid OccupancyGridPlanner::frontier_timer_cb()[m[K’:
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:732:48:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kcv::Mat_<unsigned char>[m[K’ to ‘[01m[Kconst OccupancyGrid&[m[K’ {aka ‘[01m[Kconst nav_msgs::msg::OccupancyGrid_<std::allocator<void> >&[m[K’}
+  732 |             bool found_og = find_best_frontier([01;31m[Kog_[m[K, wifi_og_,current_pos, best_frontier);
+      |                                                [01;31m[K^~~[m[K
+      |                                                [01;31m[K|[m[K
+      |                                                [01;31m[Kcv::Mat_<unsigned char>[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:588:69:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kbool OccupancyGridPlanner::find_best_frontier(const OccupancyGrid&, const OccupancyGrid&, const Point3i&, cv::Point3i&)[m[K’
+  588 |         bool find_best_frontier([01;36m[Kconst nav_msgs::msg::OccupancyGrid &og_[m[K,const nav_msgs::msg::OccupancyGrid &wifi_og_, const cv::Point3i &start, cv::Point3i &best_frontier) {
+      |                                 [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:735:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kfound[m[K’ was not declared in this scope; did you mean ‘[01m[Kround[m[K’?
+  735 |             if ([01;31m[Kfound[m[K) {
+      |                 [01;31m[K^~~~~[m[K
+      |                 [32m[Kround[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:738:38:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KOccupancyGridPlanner::planToPixelTarget(cv::Point3i&, cv::Point3i&, nav_msgs::msg::Path&)[m[K’
+  738 |                 if ([01;31m[KplanToPixelTarget(current_pos, best_frontier,path)[m[K) {
+      |                     [01;31m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:441:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool OccupancyGridPlanner::planToPixelTarget(const OccupancyGrid&, cv::Point3i, cv::Point3i, nav_msgs::msg::Path&)[m[K’
+  441 |         bool [01;36m[KplanToPixelTarget[m[K(const nav_msgs::msg::OccupancyGrid &og_, cv::Point3i start, cv::Point3i target,nav_msgs::msg::Path &path_out) {
+      |              [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:441:14:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 3 provided
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:732:18:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kfound_og[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  732 |             bool [01;35m[Kfound_og[m[K = find_best_frontier(og_, wifi_og_,current_pos, best_frontier);
+      |                  [01;35m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/occgrid_planner_wifi_base.dir/build.make:76: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/occgrid_planner_wifi_base.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 87%] [32m[1mLinking CXX executable occgrid_planner_base[0m
+[ 87%] Built target occgrid_planner_base
+gmake: *** [Makefile:146: all] Error 2

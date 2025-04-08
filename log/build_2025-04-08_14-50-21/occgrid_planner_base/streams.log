@@ -1,0 +1,145 @@
+[0.245s] Invoking command in '/home/GTL/apaul/ros2_hw1/build/occgrid_planner_base': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/occgrid_planner_base -- -j16 -l16
+[0.277s] [35m[1mConsolidate compiler generated dependencies of target occgrid_planner_wifi_base[0m
+[0.330s] [ 87%] Built target path_optimizer_base
+[0.330s] [ 87%] [32mBuilding CXX object CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o[0m
+[0.330s] [ 87%] Built target path_follower_base
+[0.330s] [ 87%] Built target occgrid_planner_base
+[17.249s] [100%] [32m[1mLinking CXX executable occgrid_planner_wifi_base[0m
+[29.758s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `OccupancyGridPlanner::timer_cb()':
+[29.758s] /home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:725: undefined reference to `cv::waitKey(int)'
+[29.760s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `cv::Mat_<cv::Vec<unsigned char, 3> >::~Mat_()':
+[29.760s] /usr/include/opencv4/opencv2/core/mat.hpp:2198: undefined reference to `cv::Mat::~Mat()'
+[29.760s] /usr/bin/ld: /usr/include/opencv4/opencv2/core/mat.hpp:2198: undefined reference to `cv::Mat::~Mat()'
+[29.760s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `cv::Mat_<unsigned char>::~Mat_()':
+[29.760s] /usr/include/opencv4/opencv2/core/mat.hpp:2198: undefined reference to `cv::Mat::~Mat()'
+[29.760s] /usr/bin/ld: /usr/include/opencv4/opencv2/core/mat.hpp:2198: undefined reference to `cv::Mat::~Mat()'
+[29.761s] /usr/bin/ld: /usr/include/opencv4/opencv2/core/mat.hpp:2198: undefined reference to `cv::Mat::~Mat()'
+[29.761s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o:/usr/include/opencv4/opencv2/core/mat.hpp:2198: more undefined references to `cv::Mat::~Mat()' follow
+[29.761s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `cv::Mat_<unsigned char>::Mat_()':
+[29.761s] /usr/include/opencv4/opencv2/core/mat.inl.hpp:1281: undefined reference to `cv::Mat::Mat()'
+[29.761s] /usr/bin/ld: /usr/include/opencv4/opencv2/core/mat.inl.hpp:1281: undefined reference to `cv::Mat::Mat()'
+[29.762s] /usr/bin/ld: /usr/include/opencv4/opencv2/core/mat.inl.hpp:1281: undefined reference to `cv::Mat::Mat()'
+[29.762s] /usr/bin/ld: /usr/include/opencv4/opencv2/core/mat.inl.hpp:1281: undefined reference to `cv::Mat::Mat()'
+[29.762s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `cv::Mat_<cv::Vec<unsigned char, 3> >::Mat_()':
+[29.762s] /usr/include/opencv4/opencv2/core/mat.inl.hpp:1281: undefined reference to `cv::Mat::Mat()'
+[29.762s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o:/usr/include/opencv4/opencv2/core/mat.inl.hpp:1281: more undefined references to `cv::Mat::Mat()' follow
+[29.762s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `OccupancyGridPlanner::OccupancyGridPlanner()':
+[29.762s] /home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:715: undefined reference to `cv::namedWindow(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int)'
+[29.762s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `cv::Mat_<cv::Vec<unsigned char, 3> >::~Mat_()':
+[29.762s] /usr/include/opencv4/opencv2/core/mat.hpp:2198: undefined reference to `cv::Mat::~Mat()'
+[29.762s] /usr/bin/ld: /usr/include/opencv4/opencv2/core/mat.hpp:2198: undefined reference to `cv::Mat::~Mat()'
+[29.762s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `cv::Mat_<unsigned char>::~Mat_()':
+[29.762s] /usr/include/opencv4/opencv2/core/mat.hpp:2198: undefined reference to `cv::Mat::~Mat()'
+[29.762s] /usr/bin/ld: /usr/include/opencv4/opencv2/core/mat.hpp:2198: undefined reference to `cv::Mat::~Mat()'
+[29.762s] /usr/bin/ld: /usr/include/opencv4/opencv2/core/mat.hpp:2198: undefined reference to `cv::Mat::~Mat()'
+[29.762s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o:/usr/include/opencv4/opencv2/core/mat.hpp:2198: more undefined references to `cv::Mat::~Mat()' follow
+[29.762s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `cv::Mat_<float>::Mat_(int, int const*, float const&)':
+[29.762s] /usr/include/opencv4/opencv2/core/mat.inl.hpp:1318: undefined reference to `cv::Mat::Mat(int, int const*, int, cv::Scalar_<double> const&)'
+[29.762s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `cv::Mat_<cv::Vec<short, 3> >::Mat_(int, int const*)':
+[29.762s] /usr/include/opencv4/opencv2/core/mat.inl.hpp:1313: undefined reference to `cv::Mat::Mat(int, int const*, int)'
+[29.762s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `cv::Mat_<cv::Vec<short, 3> >::~Mat_()':
+[29.762s] /usr/include/opencv4/opencv2/core/mat.hpp:2198: undefined reference to `cv::Mat::~Mat()'
+[29.762s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `cv::Mat_<float>::~Mat_()':
+[29.762s] /usr/include/opencv4/opencv2/core/mat.hpp:2198: undefined reference to `cv::Mat::~Mat()'
+[29.762s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `cv::Mat_<cv::Vec<short, 3> >::~Mat_()':
+[29.762s] /usr/include/opencv4/opencv2/core/mat.hpp:2198: undefined reference to `cv::Mat::~Mat()'
+[29.763s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `cv::Mat_<float>::~Mat_()':
+[29.763s] /usr/include/opencv4/opencv2/core/mat.hpp:2198: undefined reference to `cv::Mat::~Mat()'
+[29.763s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `cv::Mat_<cv::Vec<unsigned char, 3> >::clone() const':
+[29.763s] /usr/include/opencv4/opencv2/core/mat.inl.hpp:1520: undefined reference to `cv::Mat::clone() const'
+[29.763s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `cv::Mat_<cv::Vec<unsigned char, 3> >::Mat_(cv::Mat&&)':
+[29.763s] /usr/include/opencv4/opencv2/core/mat.inl.hpp:1823: undefined reference to `cv::Mat::Mat()'
+[29.763s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `cv::Mat_<cv::Vec<unsigned char, 3> >::operator=(cv::Mat&&)':
+[29.763s] /usr/include/opencv4/opencv2/core/mat.inl.hpp:1832: undefined reference to `cv::Mat::empty() const'
+[29.763s] /usr/bin/ld: /usr/include/opencv4/opencv2/core/mat.inl.hpp:1848: undefined reference to `cv::Mat::convertTo(cv::_OutputArray const&, int, double, double) const'
+[29.763s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `cv::Mat_<cv::Vec<unsigned char, 3> >::clone() const':
+[29.763s] /usr/include/opencv4/opencv2/core/mat.inl.hpp:1520: undefined reference to `cv::Mat::~Mat()'
+[29.763s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `cv::Mat_<cv::Vec<unsigned char, 3> >::operator=(cv::Mat_<cv::Vec<unsigned char, 3> >&&)':
+[29.763s] /usr/include/opencv4/opencv2/core/mat.inl.hpp:1817: undefined reference to `cv::Mat::operator=(cv::Mat&&)'
+[29.763s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `cv::Mat_<cv::Vec<unsigned char, 3> >::~Mat_()':
+[29.763s] /usr/include/opencv4/opencv2/core/mat.hpp:2198: undefined reference to `cv::Mat::~Mat()'
+[29.763s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `OccupancyGridPlanner::target_callback(std::shared_ptr<geometry_msgs::msg::PoseStamped_<std::allocator<void> > >)':
+[29.763s] /home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:392: undefined reference to `cv::circle(cv::_InputOutputArray const&, cv::Point_<int>, int, cv::Scalar_<double> const&, int, int, int)'
+[29.763s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `cv::Mat_<cv::Vec<unsigned char, 3> >::release()':
+[29.763s] /usr/include/opencv4/opencv2/core/mat.inl.hpp:1483: undefined reference to `cv::Mat::release()'
+[29.763s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `OccupancyGridPlanner::target_callback(std::shared_ptr<geometry_msgs::msg::PoseStamped_<std::allocator<void> > >)':
+[29.763s] /home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:394: undefined reference to `cv::imshow(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, cv::_InputArray const&)'
+[29.763s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `cv::Mat_<cv::Vec<unsigned char, 3> >::operator=(cv::Mat&&)':
+[29.763s] /usr/include/opencv4/opencv2/core/mat.inl.hpp:1844: undefined reference to `cv::Mat::reshape(int, int, int const*) const'
+[29.763s] /usr/bin/ld: /usr/include/opencv4/opencv2/core/mat.inl.hpp:1844: undefined reference to `cv::Mat::operator=(cv::Mat&&)'
+[29.763s] /usr/bin/ld: /usr/include/opencv4/opencv2/core/mat.inl.hpp:1844: undefined reference to `cv::Mat::~Mat()'
+[29.763s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `OccupancyGridPlanner::target_callback(std::shared_ptr<geometry_msgs::msg::PoseStamped_<std::allocator<void> > >)':
+[29.764s] /home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:421: undefined reference to `cv::circle(cv::_InputOutputArray const&, cv::Point_<int>, int, cv::Scalar_<double> const&, int, int, int)'
+[29.764s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `cv::Mat_<cv::Vec<unsigned char, 3> >::operator=(cv::Mat&&)':
+[29.764s] /usr/include/opencv4/opencv2/core/mat.inl.hpp:1839: undefined reference to `cv::Mat::operator=(cv::Mat&&)'
+[29.764s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `OccupancyGridPlanner::target_callback(std::shared_ptr<geometry_msgs::msg::PoseStamped_<std::allocator<void> > >)':
+[29.764s] /home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:423: undefined reference to `cv::imshow(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, cv::_InputArray const&)'
+[29.764s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `cv::Mat_<cv::Vec<unsigned char, 3> >::~Mat_()':
+[29.764s] /usr/include/opencv4/opencv2/core/mat.hpp:2198: undefined reference to `cv::Mat::~Mat()'
+[29.764s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `cv::Mat_<cv::Vec<unsigned char, 3> >::operator=(cv::Mat&&)':
+[29.764s] /usr/include/opencv4/opencv2/core/mat.inl.hpp:1844: undefined reference to `cv::Mat::~Mat()'
+[29.764s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `cv::Mat_<cv::Vec<unsigned char, 3> >::Mat_(cv::Mat&&)':
+[29.764s] /usr/include/opencv4/opencv2/core/mat.inl.hpp:1827: undefined reference to `cv::Mat::~Mat()'
+[29.764s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `cv::Mat_<cv::Vec<unsigned char, 3> >::clone() const':
+[29.764s] /usr/include/opencv4/opencv2/core/mat.inl.hpp:1520: undefined reference to `cv::Mat::~Mat()'
+[29.764s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `cv::Mat_<unsigned char>::Mat_(int, int, unsigned char const&)':
+[29.764s] /usr/include/opencv4/opencv2/core/mat.inl.hpp:1294: undefined reference to `cv::Mat::Mat(int, int, int)'
+[29.764s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `cv::Mat_<unsigned char>::operator=(unsigned char const&)':
+[29.764s] /usr/include/opencv4/opencv2/core/mat.inl.hpp:1458: undefined reference to `cv::Mat::operator=(cv::Scalar_<double> const&)'
+[29.764s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `cv::Mat_<unsigned char>::operator=(cv::Mat_<unsigned char>&&)':
+[29.764s] /usr/include/opencv4/opencv2/core/mat.inl.hpp:1817: undefined reference to `cv::Mat::operator=(cv::Mat&&)'
+[29.764s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `cv::Mat_<unsigned char>::~Mat_()':
+[29.764s] /usr/include/opencv4/opencv2/core/mat.hpp:2198: undefined reference to `cv::Mat::~Mat()'
+[29.764s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `cv::Mat_<unsigned char>::Mat_(int, int, unsigned char const&)':
+[29.764s] /usr/include/opencv4/opencv2/core/mat.inl.hpp:1294: undefined reference to `cv::Mat::Mat(int, int, int)'
+[29.764s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `cv::Mat_<unsigned char>::operator=(unsigned char const&)':
+[29.764s] /usr/include/opencv4/opencv2/core/mat.inl.hpp:1458: undefined reference to `cv::Mat::operator=(cv::Scalar_<double> const&)'
+[29.764s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `cv::Mat_<unsigned char>::operator=(cv::Mat_<unsigned char>&&)':
+[29.764s] /usr/include/opencv4/opencv2/core/mat.inl.hpp:1817: undefined reference to `cv::Mat::operator=(cv::Mat&&)'
+[29.764s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `cv::Mat_<unsigned char>::~Mat_()':
+[29.764s] /usr/include/opencv4/opencv2/core/mat.hpp:2198: undefined reference to `cv::Mat::~Mat()'
+[29.764s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `OccupancyGridPlanner::og_callback(std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >)':
+[29.765s] /home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:229: undefined reference to `cv::getStructuringElement(int, cv::Size_<int>, cv::Point_<int>)'
+[29.765s] /usr/bin/ld: /home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:230: undefined reference to `cv::erode(cv::_InputArray const&, cv::_OutputArray const&, cv::_InputArray const&, cv::Point_<int>, int, int, cv::Scalar_<double> const&)'
+[29.765s] /usr/bin/ld: /home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:292: undefined reference to `cv::cvtColor(cv::_InputArray const&, cv::_OutputArray const&, int, int)'
+[29.765s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `cv::Mat_<unsigned char>::Mat_(cv::Mat_<unsigned char> const&)':
+[29.765s] /usr/include/opencv4/opencv2/core/mat.inl.hpp:1346: undefined reference to `cv::Mat::Mat(cv::Mat const&)'
+[29.765s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `OccupancyGridPlanner::find_frontier_points(cv::Mat_<unsigned char>)':
+[29.765s] /home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:537: undefined reference to `cv::cvtColor(cv::_InputArray const&, cv::_OutputArray const&, int, int)'
+[29.765s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `cv::Mat_<unsigned char>::~Mat_()':
+[29.765s] /usr/include/opencv4/opencv2/core/mat.hpp:2198: undefined reference to `cv::Mat::~Mat()'
+[29.765s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `cv::Mat_<unsigned char>::Mat_(cv::Mat_<unsigned char> const&, cv::Rect_<int> const&)':
+[29.765s] /usr/include/opencv4/opencv2/core/mat.inl.hpp:1361: undefined reference to `cv::Mat::Mat(cv::Mat const&, cv::Rect_<int> const&)'
+[29.765s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `cv::Mat_<unsigned char>::operator=(cv::Mat_<unsigned char>&&)':
+[29.765s] /usr/include/opencv4/opencv2/core/mat.inl.hpp:1817: undefined reference to `cv::Mat::operator=(cv::Mat&&)'
+[29.765s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `cv::Mat_<unsigned char>::~Mat_()':
+[29.765s] /usr/include/opencv4/opencv2/core/mat.hpp:2198: undefined reference to `cv::Mat::~Mat()'
+[29.765s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `cv::Mat_<unsigned char>::Mat_()':
+[29.765s] /usr/include/opencv4/opencv2/core/mat.inl.hpp:1281: undefined reference to `cv::Mat::Mat()'
+[29.765s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `OccupancyGridPlanner::og_callback(std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >)':
+[29.765s] /home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:309: undefined reference to `cv::resize(cv::_InputArray const&, cv::_OutputArray const&, cv::Size_<int>, double, double, int)'
+[29.765s] /usr/bin/ld: /home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:310: undefined reference to `cv::imshow(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, cv::_InputArray const&)'
+[29.765s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `cv::Mat_<unsigned char>::~Mat_()':
+[29.765s] /usr/include/opencv4/opencv2/core/mat.hpp:2198: undefined reference to `cv::Mat::~Mat()'
+[29.765s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `OccupancyGridPlanner::og_callback(std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >)':
+[29.765s] /home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:229: undefined reference to `cv::Mat::~Mat()'
+[29.765s] /usr/bin/ld: /home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:254: undefined reference to `cv::circle(cv::_InputOutputArray const&, cv::Point_<int>, int, cv::Scalar_<double> const&, int, int, int)'
+[29.765s] /usr/bin/ld: /home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:313: undefined reference to `cv::imshow(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, cv::_InputArray const&)'
+[29.765s] /usr/bin/ld: /home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:229: undefined reference to `cv::Mat::~Mat()'
+[29.765s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `cv::Mat_<unsigned char>::~Mat_()':
+[29.765s] /usr/include/opencv4/opencv2/core/mat.hpp:2198: undefined reference to `cv::Mat::~Mat()'
+[29.765s] /usr/bin/ld: /usr/include/opencv4/opencv2/core/mat.hpp:2198: undefined reference to `cv::Mat::~Mat()'
+[29.765s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `cv::Mat_<unsigned char>::Mat_(cv::Mat_<unsigned char> const&, cv::Range const&, cv::Range const&)':
+[29.766s] /usr/include/opencv4/opencv2/core/mat.inl.hpp:1356: undefined reference to `cv::Mat::Mat(cv::Mat const&, cv::Range const&, cv::Range const&)'
+[29.766s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `OccupancyGridPlanner::og_callback(std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >)':
+[29.766s] /home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:278: undefined reference to `cv::noArray()'
+[29.766s] /usr/bin/ld: /home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:278: undefined reference to `cv::Mat::setTo(cv::_InputArray const&, cv::_InputArray const&)'
+[29.766s] /usr/bin/ld: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o: in function `cv::Mat_<unsigned char>::~Mat_()':
+[29.766s] /usr/include/opencv4/opencv2/core/mat.hpp:2198: undefined reference to `cv::Mat::~Mat()'
+[29.766s] /usr/bin/ld: /usr/include/opencv4/opencv2/core/mat.hpp:2198: undefined reference to `cv::Mat::~Mat()'
+[29.766s] /usr/bin/ld: /usr/include/opencv4/opencv2/core/mat.hpp:2198: undefined reference to `cv::Mat::~Mat()'
+[30.501s] collect2: error: ld returned 1 exit status
+[30.502s] gmake[2]: *** [CMakeFiles/occgrid_planner_wifi_base.dir/build.make:222: occgrid_planner_wifi_base] Error 1
+[30.502s] gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/occgrid_planner_wifi_base.dir/all] Error 2
+[30.502s] gmake: *** [Makefile:146: all] Error 2
+[30.503s] Invoked command in '/home/GTL/apaul/ros2_hw1/build/occgrid_planner_base' returned '2': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/occgrid_planner_base -- -j16 -l16

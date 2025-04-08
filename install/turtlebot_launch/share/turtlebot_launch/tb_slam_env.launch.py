@@ -64,7 +64,7 @@ def generate_launch_description():
                         '/teleop_mux_tb.launch.py'])
               ),
         IncludeLaunchDescription(
-              PythonLaunchDescriptionSource([get_package_share_directory('wpa_cli') ,
+              PythonLaunchDescriptionSource([get_package_share_directory('wpa_cli_msgs') ,
                         '/wpa_cli.launch.py'])
               )
     ])

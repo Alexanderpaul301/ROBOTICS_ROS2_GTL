@@ -32,6 +32,7 @@ class WifiMapNode : public rclcpp::Node {
         rclcpp::Subscription<nav_msgs::msg::OccupancyGrid>::SharedPtr og_sub_;
         rclcpp::Subscription<wpa_cli_msgs::msg::Scan>::SharedPtr scan_sub_;
         rclcpp::Publisher<nav_msgs::msg::OccupancyGrid>::SharedPtr og_pub_;
+        rclcpp::Publisher<cv::Mat_<uint8_t>>::SharedPtr wifi_mat_pub;
 
         std::shared_ptr<tf2_ros::TransformListener> tf_listener{nullptr};
         std::unique_ptr<tf2_ros::Buffer> tf_buffer;
@@ -203,6 +204,8 @@ class WifiMapNode : public rclcpp::Node {
 
 
             og_to_mat(*msg, og_);
+            // ! I have added a publisher that publishes the WIFI map in a uint8_t format
+            wifi_mat_pub_->publish(mat);
 
 #if 1
             cv::Mat_<uint8_t> binary_og;
@@ -292,6 +295,7 @@ class WifiMapNode : public rclcpp::Node {
             scan_sub_ = this->create_subscription<wpa_cli_msgs::msg::Scan>("~/scan",1,
                     std::bind(&WifiMapNode::wifi_callback,this,std::placeholders::_1));
             og_pub_ = this->create_publisher<nav_msgs::msg::OccupancyGrid>("~/wifi_map",1);
+            wifi_mat_pub_ = this->create_publisher<cv::Mat_<uint8_t>>("~/wifi_mat",1);
             RCLCPP_INFO(this->get_logger(),"Wifi mapping node is ready. Tracking '%s'",bssid_.c_str());
         }
 };

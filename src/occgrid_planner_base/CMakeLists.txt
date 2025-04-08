@@ -51,7 +51,7 @@ ament_target_dependencies(
   "rclcpp" "cs7630_msgs" "sensor_msgs" "std_msgs" "nav_msgs" "geometry_msgs" "tf2_geometry_msgs" "tf2_ros"
 )
 
-install(TARGETS occgrid_planner_base path_optimizer_base path_follower_base
+install(TARGETS occgrid_planner_base path_optimizer_base path_follower_base 
   DESTINATION lib/${PROJECT_NAME})
 
 install(

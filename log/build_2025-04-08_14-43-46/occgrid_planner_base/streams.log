@@ -1,0 +1,45 @@
+[0.292s] Invoking command in '/home/GTL/apaul/ros2_hw1/build/occgrid_planner_base': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/occgrid_planner_base -- -j16 -l16
+[0.338s] [35m[1mConsolidate compiler generated dependencies of target occgrid_planner_wifi_base[0m
+[0.353s] [ 75%] Built target path_optimizer_base
+[0.353s] [ 75%] Built target path_follower_base
+[0.353s] [ 75%] Built target occgrid_planner_base
+[0.360s] [ 87%] [32mBuilding CXX object CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o[0m
+[3.129s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:[m[K In member function ‘[01m[Kbool OccupancyGridPlanner::find_best_frontier(const cv::Mat_<unsigned char>&, const cv::Mat_<unsigned char>&, const Point3i&, cv::Point3i&)[m[K’:
+[3.129s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:594:17:[m[K [01;31m[Kerror: [m[Kbreak statement not within loop or switch
+[3.129s]   594 |                 [01;31m[Kbreak[m[K;
+[3.129s]       |                 [01;31m[K^~~~~[m[K
+[3.129s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:596:19:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+[3.129s]   596 |             else ([01;31m[K)[m[K{
+[3.129s]       |                   [01;31m[K^[m[K
+[3.137s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:671:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kbest_frontier_wifi[m[K’ was not declared in this scope; did you mean ‘[01m[Kbest_frontier_og[m[K’?
+[3.137s]   671 |                             [01;31m[Kbest_frontier_wifi[m[K = cv::Point3i(x, y, 0);
+[3.137s]       |                             [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[3.137s]       |                             [32m[Kbest_frontier_og[m[K
+[3.143s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:678:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kbest_frontier_wifi[m[K’ was not declared in this scope; did you mean ‘[01m[Kbest_frontier_og[m[K’?
+[3.143s]   678 |                 best_frontier=[01;31m[Kbest_frontier_wifi[m[K;
+[3.143s]       |                               [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[3.143s]       |                               [32m[Kbest_frontier_og[m[K
+[3.148s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:[m[K In constructor ‘[01m[KOccupancyGridPlanner::OccupancyGridPlanner()[m[K’:
+[3.148s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:692:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kwifi_weight_[m[K’ was not declared in this scope; did you mean ‘[01m[Kwifi_weights_[m[K’?
+[3.148s]   692 |             [01;31m[Kwifi_weight_[m[K=0.5;
+[3.148s]       |             [01;31m[K^~~~~~~~~~~~[m[K
+[3.148s]       |             [32m[Kwifi_weights_[m[K
+[3.193s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:[m[K In member function ‘[01m[Kvoid OccupancyGridPlanner::frontier_timer_cb()[m[K’:
+[3.194s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:735:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kfound[m[K’ was not declared in this scope; did you mean ‘[01m[Kround[m[K’?
+[3.194s]   735 |             if ([01;31m[Kfound[m[K) {
+[3.194s]       |                 [01;31m[K^~~~~[m[K
+[3.194s]       |                 [32m[Kround[m[K
+[3.194s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:738:38:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KOccupancyGridPlanner::planToPixelTarget(cv::Point3i&, cv::Point3i&, nav_msgs::msg::Path&)[m[K’
+[3.194s]   738 |                 if ([01;31m[KplanToPixelTarget(current_pos, best_frontier,path)[m[K) {
+[3.194s]       |                     [01;31m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.194s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:441:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool OccupancyGridPlanner::planToPixelTarget(const cv::Mat_<unsigned char>&, cv::Point3i, cv::Point3i, nav_msgs::msg::Path&)[m[K’
+[3.194s]   441 |         bool [01;36m[KplanToPixelTarget[m[K(const cv::Mat_<uint8_t> &og_, cv::Point3i start, cv::Point3i target,nav_msgs::msg::Path &path_out) {
+[3.194s]       |              [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[3.194s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:441:14:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 3 provided
+[3.194s] [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:732:18:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kfound_og[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[3.194s]   732 |             bool [01;35m[Kfound_og[m[K = find_best_frontier(og_, wifi_og_,current_pos, best_frontier);
+[3.194s]       |                  [01;35m[K^~~~~~~~[m[K
+[5.744s] gmake[2]: *** [CMakeFiles/occgrid_planner_wifi_base.dir/build.make:76: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o] Error 1
+[5.744s] gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/occgrid_planner_wifi_base.dir/all] Error 2
+[5.744s] gmake: *** [Makefile:146: all] Error 2
+[5.745s] Invoked command in '/home/GTL/apaul/ros2_hw1/build/occgrid_planner_base' returned '2': AMENT_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/GTL/apaul/ros2_hw1/install/cs7630_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/occgrid_planner_base -- -j16 -l16

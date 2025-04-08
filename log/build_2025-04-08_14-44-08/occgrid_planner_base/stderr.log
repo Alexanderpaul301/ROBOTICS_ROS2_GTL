@@ -1,0 +1,35 @@
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:[m[K In member function ‘[01m[Kbool OccupancyGridPlanner::find_best_frontier(const cv::Mat_<unsigned char>&, const cv::Mat_<unsigned char>&, const Point3i&, cv::Point3i&)[m[K’:
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:594:17:[m[K [01;31m[Kerror: [m[Kbreak statement not within loop or switch
+  594 |                 [01;31m[Kbreak[m[K;
+      |                 [01;31m[K^~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:671:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kbest_frontier_wifi[m[K’ was not declared in this scope; did you mean ‘[01m[Kbest_frontier_og[m[K’?
+  671 |                             [01;31m[Kbest_frontier_wifi[m[K = cv::Point3i(x, y, 0);
+      |                             [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+      |                             [32m[Kbest_frontier_og[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:678:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kbest_frontier_wifi[m[K’ was not declared in this scope; did you mean ‘[01m[Kbest_frontier_og[m[K’?
+  678 |                 best_frontier=[01;31m[Kbest_frontier_wifi[m[K;
+      |                               [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+      |                               [32m[Kbest_frontier_og[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:[m[K In constructor ‘[01m[KOccupancyGridPlanner::OccupancyGridPlanner()[m[K’:
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:692:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kwifi_weight_[m[K’ was not declared in this scope; did you mean ‘[01m[Kwifi_weights_[m[K’?
+  692 |             [01;31m[Kwifi_weight_[m[K=0.5;
+      |             [01;31m[K^~~~~~~~~~~~[m[K
+      |             [32m[Kwifi_weights_[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:[m[K In member function ‘[01m[Kvoid OccupancyGridPlanner::frontier_timer_cb()[m[K’:
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:735:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kfound[m[K’ was not declared in this scope; did you mean ‘[01m[Kround[m[K’?
+  735 |             if ([01;31m[Kfound[m[K) {
+      |                 [01;31m[K^~~~~[m[K
+      |                 [32m[Kround[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:738:38:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KOccupancyGridPlanner::planToPixelTarget(cv::Point3i&, cv::Point3i&, nav_msgs::msg::Path&)[m[K’
+  738 |                 if ([01;31m[KplanToPixelTarget(current_pos, best_frontier,path)[m[K) {
+      |                     [01;31m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:441:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool OccupancyGridPlanner::planToPixelTarget(const cv::Mat_<unsigned char>&, cv::Point3i, cv::Point3i, nav_msgs::msg::Path&)[m[K’
+  441 |         bool [01;36m[KplanToPixelTarget[m[K(const cv::Mat_<uint8_t> &og_, cv::Point3i start, cv::Point3i target,nav_msgs::msg::Path &path_out) {
+      |              [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:441:14:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 3 provided
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner_wifi.cpp:732:18:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kfound_og[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  732 |             bool [01;35m[Kfound_og[m[K = find_best_frontier(og_, wifi_og_,current_pos, best_frontier);
+      |                  [01;35m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/occgrid_planner_wifi_base.dir/build.make:76: CMakeFiles/occgrid_planner_wifi_base.dir/src/occgrid_planner_wifi.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/occgrid_planner_wifi_base.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
