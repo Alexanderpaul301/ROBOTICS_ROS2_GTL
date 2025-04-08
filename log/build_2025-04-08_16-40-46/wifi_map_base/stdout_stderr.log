@@ -1,0 +1,42 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/wifi_map_node.dir/src/wifi_map_node.cpp.o[0m
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:31[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/GTL/apaul/ros2_hw1/src/wifi_map_base/src/wifi_map_node.cpp:2[m[K:
+/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp: In instantiation of ‘[01m[Kclass rclcpp::Publisher<cv::Mat_<unsigned char> >[m[K’:
+[01m[K/home/GTL/apaul/ros2_hw1/src/wifi_map_base/src/wifi_map_node.cpp:35:45:[m[K   required from here
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:81:47:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: given message type is not compatible with ROS and cannot be used with a Publisher
+   81 |     rclcpp::is_ros_compatible_type<MessageT>::[01;31m[Kvalue[m[K,
+      |                                               [01;31m[K^~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:81:47:[m[K [01;36m[Knote: [m[K‘[01m[Krclcpp::is_ros_compatible_type<cv::Mat_<unsigned char> >::value[m[K’ evaluates to false
+[01m[K/home/GTL/apaul/ros2_hw1/src/wifi_map_base/src/wifi_map_node.cpp:[m[K In member function ‘[01m[Kvoid WifiMapNode::wifi_callback(wpa_cli_msgs::msg::Scan_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/GTL/apaul/ros2_hw1/src/wifi_map_base/src/wifi_map_node.cpp:162:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kog_min[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  162 |             int [01;35m[Kog_min[m[K=255, og_max=0;
+      |                 [01;35m[K^~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/wifi_map_base/src/wifi_map_node.cpp:162:29:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kog_max[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  162 |             int og_min=255, [01;35m[Kog_max[m[K=0;
+      |                             [01;35m[K^~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/wifi_map_base/src/wifi_map_node.cpp:[m[K In member function ‘[01m[Kvoid WifiMapNode::og_callback(nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/GTL/apaul/ros2_hw1/src/wifi_map_base/src/wifi_map_node.cpp:208:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kwifi_mat_pub_[m[K’ was not declared in this scope; did you mean ‘[01m[Kwifi_mat_pub[m[K’?
+  208 |             [01;31m[Kwifi_mat_pub_[m[K->publish(mat);
+      |             [01;31m[K^~~~~~~~~~~~~[m[K
+      |             [32m[Kwifi_mat_pub[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/wifi_map_base/src/wifi_map_node.cpp:208:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kmat[m[K’ was not declared in this scope; did you mean ‘[01m[Kmap[m[K’?
+  208 |             wifi_mat_pub_->publish([01;31m[Kmat[m[K);
+      |                                    [01;31m[K^~~[m[K
+      |                                    [32m[Kmap[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/wifi_map_base/src/wifi_map_node.cpp:[m[K In constructor ‘[01m[KWifiMapNode::WifiMapNode()[m[K’:
+[01m[K/home/GTL/apaul/ros2_hw1/src/wifi_map_base/src/wifi_map_node.cpp:298:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kwifi_mat_pub_[m[K’ was not declared in this scope; did you mean ‘[01m[Kwifi_mat_pub[m[K’?
+  298 |             [01;31m[Kwifi_mat_pub_[m[K = this->create_publisher<cv::Mat_<uint8_t>>("~/wifi_mat",1);
+      |             [01;31m[K^~~~~~~~~~~~~[m[K
+      |             [32m[Kwifi_mat_pub[m[K
+gmake[2]: *** [CMakeFiles/wifi_map_node.dir/build.make:76: CMakeFiles/wifi_map_node.dir/src/wifi_map_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/wifi_map_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,131 @@
+[0.040s] Invoking command in '/home/GTL/apaul/ros2_hw1/build/wifi_map_base': CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/wpa_cli_msgs:/home/GTL/apaul/ros2_hw1/install/wifi_map_base:/home/GTL/apaul/ros2_hw1/install/vrep4_helpers:/home/GTL/apaul/ros2_hw1/install/turtlebot_launch:/home/GTL/apaul/ros2_hw1/install/task_manager_sync:/home/GTL/apaul/ros2_hw1/install/floor_nav:/home/GTL/apaul/ros2_hw1/install/task_manager_nav2:/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/home/GTL/apaul/ros2_hw1/install/occgrid_planner_base:/home/GTL/apaul/ros2_hw1/install/occgrid_planner:/home/GTL/apaul/ros2_hw1/install/obstacle_avoidance_base:/home/GTL/apaul/ros2_hw1/install/joy_pack:/home/GTL/apaul/ros2_hw1/install/face_msg:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/home/GTL/apaul/ros2_hw1/install/collision_avoidance_base:/home/GTL/apaul/ros2_hw1/install/vrep_ros_teleop:/home/GTL/apaul/ros2_hw1/install/task_manager_client_py:/home/GTL/apaul/ros2_hw1/install/ar_slam_base:/home/GTL/apaul/ros2_hw1/install/ar_loc_base:/home/GTL/apaul/ros2_hw1/install/rover_driver_base:/home/GTL/apaul/ros2_hw1/install/keyboard_teleop:/home/GTL/apaul/ros2_hw1/install/face_detect_base:/home/GTL/apaul/ros2_hw1/install/button_server:/home/GTL/apaul/ros2_hw1/install/ar_mapping_base:/opt/ros/humble /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/wifi_map_base -- -j16 -l16
+[0.076s] [35m[1mConsolidate compiler generated dependencies of target wifi_map_node[0m
+[0.160s] [ 50%] [32mBuilding CXX object CMakeFiles/wifi_map_node.dir/src/wifi_map_node.cpp.o[0m
+[2.177s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:31[m[K,
+[2.177s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+[2.177s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[2.177s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.177s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.177s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.177s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.177s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.177s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.177s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.177s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/wifi_map_base/src/wifi_map_node.cpp:2[m[K:
+[2.177s] /opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp: In instantiation of ‘[01m[Kclass rclcpp::Publisher<cv::Mat_<unsigned char> >[m[K’:
+[2.177s] [01m[K/home/GTL/apaul/ros2_hw1/src/wifi_map_base/src/wifi_map_node.cpp:35:45:[m[K   required from here
+[2.177s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:81:47:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: given message type is not compatible with ROS and cannot be used with a Publisher
+[2.177s]    81 |     rclcpp::is_ros_compatible_type<MessageT>::[01;31m[Kvalue[m[K,
+[2.177s]       |                                               [01;31m[K^~~~~[m[K
+[2.178s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:81:47:[m[K [01;36m[Knote: [m[K‘[01m[Krclcpp::is_ros_compatible_type<cv::Mat_<unsigned char> >::value[m[K’ evaluates to false
+[2.194s] [01m[K/home/GTL/apaul/ros2_hw1/src/wifi_map_base/src/wifi_map_node.cpp:[m[K In member function ‘[01m[Kvoid WifiMapNode::wifi_callback(wpa_cli_msgs::msg::Scan_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.194s] [01m[K/home/GTL/apaul/ros2_hw1/src/wifi_map_base/src/wifi_map_node.cpp:162:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kog_min[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.194s]   162 |             int [01;35m[Kog_min[m[K=255, og_max=0;
+[2.194s]       |                 [01;35m[K^~~~~~[m[K
+[2.194s] [01m[K/home/GTL/apaul/ros2_hw1/src/wifi_map_base/src/wifi_map_node.cpp:162:29:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kog_max[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.194s]   162 |             int og_min=255, [01;35m[Kog_max[m[K=0;
+[2.194s]       |                             [01;35m[K^~~~~~[m[K
+[2.196s] [01m[K/home/GTL/apaul/ros2_hw1/src/wifi_map_base/src/wifi_map_node.cpp:[m[K In member function ‘[01m[Kvoid WifiMapNode::og_callback(nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.196s] [01m[K/home/GTL/apaul/ros2_hw1/src/wifi_map_base/src/wifi_map_node.cpp:208:35:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Publisher<cv::Mat_<unsigned char> >::publish(cv::Mat_<unsigned char>&)[m[K’
+[2.197s]   208 |             [01;31m[Kwifi_mat_pub_->publish(og_)[m[K;
+[2.197s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[2.197s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:31[m[K,
+[2.197s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+[2.197s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[2.197s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.197s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.197s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.197s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.197s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.197s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.197s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.197s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/wifi_map_base/src/wifi_map_node.cpp:2[m[K:
+[2.197s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:251:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(rosidl_generator_traits::is_message<T>::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::ros_message_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::publish(std::unique_ptr<T, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>::allocator_type>::rebind_alloc<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>, std::allocator<typename rclcpp::TypeAdapter<MessageT>::ros_message_type> >::value, std::default_delete<typename rclcpp::TypeAdapter<MessageT>::ros_message_type>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>::allocator_type> >::type>) [with T = T; MessageT = cv::Mat_<unsigned char>; AllocatorT = std::allocator<void>][m[K’
+[2.197s]   251 |   [01;36m[Kpublish[m[K(std::unique_ptr<T, ROSMessageTypeDeleter> msg)
+[2.197s]       |   [01;36m[K^~~~~~~[m[K
+[2.197s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:251:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.197s] [01m[K/home/GTL/apaul/ros2_hw1/src/wifi_map_base/src/wifi_map_node.cpp:208:35:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Mat_<unsigned char>[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<T, std::default_delete<cv::Mat_<unsigned char> > >[m[K’
+[2.197s]   208 |             [01;36m[Kwifi_mat_pub_->publish(og_)[m[K;
+[2.197s]       |             [01;36m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[2.197s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:31[m[K,
+[2.197s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+[2.197s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[2.197s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.197s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.197s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.197s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.197s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.197s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.197s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.197s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/wifi_map_base/src/wifi_map_node.cpp:2[m[K:
+[2.197s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:292:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(rosidl_generator_traits::is_message<T>::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::ros_message_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::publish(const T&) [with T = T; MessageT = cv::Mat_<unsigned char>; AllocatorT = std::allocator<void>][m[K’
+[2.197s]   292 |   [01;36m[Kpublish[m[K(const T & msg)
+[2.198s]       |   [01;36m[K^~~~~~~[m[K
+[2.198s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:292:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.198s] In file included from [01m[K/usr/include/c++/11/bits/move.h:57[m[K,
+[2.198s]                  from [01m[K/usr/include/c++/11/bits/stl_pair.h:59[m[K,
+[2.198s]                  from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[2.198s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[2.198s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[2.198s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/wifi_map_base/src/wifi_map_node.cpp:2[m[K:
+[2.198s] /usr/include/c++/11/type_traits: In substitution of ‘[01m[Ktemplate<bool _Cond, class _Tp> using enable_if_t = typename std::enable_if::type [with bool _Cond = false; _Tp = void][m[K’:
+[2.198s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:292:3:[m[K   required by substitution of ‘[01m[Ktemplate<class T> std::enable_if_t<(rosidl_generator_traits::is_message<T>::value && std::is_same<T, cv::Mat_<unsigned char> >::value), void> rclcpp::Publisher<cv::Mat_<unsigned char> >::publish<T>(const T&) [with T = cv::Mat_<unsigned char>][m[K’
+[2.198s] [01m[K/home/GTL/apaul/ros2_hw1/src/wifi_map_base/src/wifi_map_node.cpp:208:35:[m[K   required from here
+[2.198s] [01m[K/usr/include/c++/11/type_traits:2579:11:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, void>[m[K’
+[2.198s]  2579 |     using [01;31m[Kenable_if_t[m[K = typename enable_if<_Cond, _Tp>::type;
+[2.198s]       |           [01;31m[K^~~~~~~~~~~[m[K
+[2.198s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:31[m[K,
+[2.198s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+[2.198s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[2.198s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.198s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.198s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.198s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.198s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.198s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.198s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.198s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/wifi_map_base/src/wifi_map_node.cpp:2[m[K:
+[2.198s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:322:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(typename rclcpp::TypeAdapter<MessageT>::is_specialized::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::custom_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::publish(std::unique_ptr<T, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>::allocator_type>::rebind_alloc<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>, std::allocator<typename rclcpp::TypeAdapter<MessageT>::custom_type> >::value, std::default_delete<typename rclcpp::TypeAdapter<MessageT>::custom_type>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>::allocator_type> >::type>) [with T = T; MessageT = cv::Mat_<unsigned char>; AllocatorT = std::allocator<void>][m[K’
+[2.198s]   322 |   [01;36m[Kpublish[m[K(std::unique_ptr<T, PublishedTypeDeleter> msg)
+[2.198s]       |   [01;36m[K^~~~~~~[m[K
+[2.198s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:322:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.198s] [01m[K/home/GTL/apaul/ros2_hw1/src/wifi_map_base/src/wifi_map_node.cpp:208:35:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Mat_<unsigned char>[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<T, std::default_delete<cv::Mat_<unsigned char> > >[m[K’
+[2.198s]   208 |             [01;36m[Kwifi_mat_pub_->publish(og_)[m[K;
+[2.198s]       |             [01;36m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[2.198s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:31[m[K,
+[2.198s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+[2.199s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[2.199s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.199s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.199s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.199s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.199s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.199s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.199s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.199s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/wifi_map_base/src/wifi_map_node.cpp:2[m[K:
+[2.199s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:364:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(typename rclcpp::TypeAdapter<MessageT>::is_specialized::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::custom_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::publish(const T&) [with T = T; MessageT = cv::Mat_<unsigned char>; AllocatorT = std::allocator<void>][m[K’
+[2.199s]   364 |   [01;36m[Kpublish[m[K(const T & msg)
+[2.199s]       |   [01;36m[K^~~~~~~[m[K
+[2.199s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:364:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.199s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:383:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::publish(const rcl_serialized_message_t&) [with MessageT = cv::Mat_<unsigned char>; AllocatorT = std::allocator<void>; rcl_serialized_message_t = rcutils_uint8_array_s][m[K’
+[2.199s]   383 |   [01;36m[Kpublish[m[K(const rcl_serialized_message_t & serialized_msg)
+[2.199s]       |   [01;36m[K^~~~~~~[m[K
+[2.199s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:383:44:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Mat_<unsigned char>[m[K’ to ‘[01m[Kconst rcl_serialized_message_t&[m[K’ {aka ‘[01m[Kconst rcutils_uint8_array_s&[m[K’}
+[2.199s]   383 |   publish([01;36m[Kconst rcl_serialized_message_t & serialized_msg[m[K)
+[2.199s]       |           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[2.199s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:389:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::publish(const rclcpp::SerializedMessage&) [with MessageT = cv::Mat_<unsigned char>; AllocatorT = std::allocator<void>][m[K’
+[2.199s]   389 |   [01;36m[Kpublish[m[K(const SerializedMessage & serialized_msg)
+[2.199s]       |   [01;36m[K^~~~~~~[m[K
+[2.199s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:389:37:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Mat_<unsigned char>[m[K’ to ‘[01m[Kconst rclcpp::SerializedMessage&[m[K’
+[2.199s]   389 |   publish([01;36m[Kconst SerializedMessage & serialized_msg[m[K)
+[2.199s]       |           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[2.199s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:403:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::publish(rclcpp::LoanedMessage<typename rclcpp::TypeAdapter<MessageT>::ros_message_type, AllocatorT>&&) [with MessageT = cv::Mat_<unsigned char>; AllocatorT = std::allocator<void>; typename rclcpp::TypeAdapter<MessageT>::ros_message_type = cv::Mat_<unsigned char>][m[K’
+[2.200s]   403 |   [01;36m[Kpublish[m[K(rclcpp::LoanedMessage<ROSMessageType, AllocatorT> && loaned_msg)
+[2.200s]       |   [01;36m[K^~~~~~~[m[K
+[2.200s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:403:64:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Mat_<unsigned char>[m[K’ to ‘[01m[Krclcpp::LoanedMessage<cv::Mat_<unsigned char>, std::allocator<void> >&&[m[K’
+[2.200s]   403 |   publish([01;36m[Krclcpp::LoanedMessage<ROSMessageType, AllocatorT> && loaned_msg[m[K)
+[2.200s]       |           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[5.025s] gmake[2]: *** [CMakeFiles/wifi_map_node.dir/build.make:76: CMakeFiles/wifi_map_node.dir/src/wifi_map_node.cpp.o] Error 1
+[5.025s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/wifi_map_node.dir/all] Error 2
+[5.025s] gmake: *** [Makefile:146: all] Error 2
+[5.026s] Invoked command in '/home/GTL/apaul/ros2_hw1/build/wifi_map_base' returned '2': CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/wpa_cli_msgs:/home/GTL/apaul/ros2_hw1/install/wifi_map_base:/home/GTL/apaul/ros2_hw1/install/vrep4_helpers:/home/GTL/apaul/ros2_hw1/install/turtlebot_launch:/home/GTL/apaul/ros2_hw1/install/task_manager_sync:/home/GTL/apaul/ros2_hw1/install/floor_nav:/home/GTL/apaul/ros2_hw1/install/task_manager_nav2:/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/home/GTL/apaul/ros2_hw1/install/occgrid_planner_base:/home/GTL/apaul/ros2_hw1/install/occgrid_planner:/home/GTL/apaul/ros2_hw1/install/obstacle_avoidance_base:/home/GTL/apaul/ros2_hw1/install/joy_pack:/home/GTL/apaul/ros2_hw1/install/face_msg:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/home/GTL/apaul/ros2_hw1/install/collision_avoidance_base:/home/GTL/apaul/ros2_hw1/install/vrep_ros_teleop:/home/GTL/apaul/ros2_hw1/install/task_manager_client_py:/home/GTL/apaul/ros2_hw1/install/ar_slam_base:/home/GTL/apaul/ros2_hw1/install/ar_loc_base:/home/GTL/apaul/ros2_hw1/install/rover_driver_base:/home/GTL/apaul/ros2_hw1/install/keyboard_teleop:/home/GTL/apaul/ros2_hw1/install/face_detect_base:/home/GTL/apaul/ros2_hw1/install/button_server:/home/GTL/apaul/ros2_hw1/install/ar_mapping_base:/opt/ros/humble /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/wifi_map_base -- -j16 -l16

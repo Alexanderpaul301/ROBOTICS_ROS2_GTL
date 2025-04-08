@@ -67,6 +67,8 @@ class OccupancyGridPlanner : public rclcpp::Node {
             // Some variables to select the useful bounding box 
             unsigned int maxx=0, minx=msg->info.width, 
                          maxy=0, miny=msg->info.height;
+            
+            
             // Convert the representation into something easy to display.
             for (unsigned int j=0;j<msg->info.height;j++) {
                 for (unsigned int i=0;i<msg->info.width;i++) {
@@ -92,57 +94,6 @@ class OccupancyGridPlanner : public rclcpp::Node {
                     }
                 }
             }
-            
-
-            // ! This code is made for declaring the robot footprint to be free.
-            // // ! Make sure that the surface under the robot is considered to be FREE
-            // // ! this gets the current pose in transform, it comes from the target callback 
-    
-            // // ! I had to add a try and catch to this method because I wasn't able to get consistently tf2
-            // try {
-            //     geometry_msgs::msg::TransformStamped transformStamped = 
-            //         tf_buffer->lookupTransform(frame_id_, base_link_, msg->header.stamp);
-
-            //     cv::Point3i start3D;
-            //     double s_yaw = tf2::getYaw(transformStamped.transform.rotation);
-            //     start3D = cv::Point3i(
-            //         transformStamped.transform.translation.x / info_.resolution, 
-            //         transformStamped.transform.translation.y / info_.resolution,
-            //         (unsigned int)(round(s_yaw / (M_PI/4))) % 8
-            //     ) + og_center_;
-
-            //     cv::Point2i start(start3D.x, start3D.y);
-
-
-            //     if (start.x >= 0 && start.x < robot_footstep_.cols && 
-            //         start.y >= 0 && start.y < robot_footstep_.rows) {
-            //         cv::circle(robot_footstep_, start, 
-            //                 3*robot_radius_ / info_.resolution, 
-            //                 FREE, cv::FILLED);
-            //     }
-
-            //     // ! We use a OR to print the footprint of the robot
-            //     for(int y = 0; y < og_.rows; y++) {
-            //         for(int x = 0; x < og_.cols; x++) {
-            //             // ! If the footprint and the og_ cells are not occupied we free the cell
-            //             if(robot_footstep_(y,x) == FREE && og_(y,x) != OCCUPIED) {
-            //                 og_(y,x) = FREE;
-            //             }
-            //             else {
-            //                 // ! The cell remains the same
-            //             }
-            //         }
-            //     }           
-
-            // } catch (const tf2::TransformException & ex) {
-            //     RCLCPP_WARN(this->get_logger(), 
-            //             "Could not transform %s to %s: %s",
-            //             frame_id_.c_str(), base_link_.c_str(), 
-            //             ex.what());
-            //     og_(cv::Range(og_.rows/2-5, og_.rows/2+5), 
-            //     cv::Range(og_.cols/2-5, og_.cols/2+5)).setTo(FREE);
-            // }
-
 
             if (!ready_) {
                 ready_ = true;
@@ -717,7 +668,7 @@ class OccupancyGridPlanner : public rclcpp::Node {
                         std::bind(&OccupancyGridPlanner::timer_cb, this));
             }
 
-            exploration_timer_ = this->create_wall_timer(10s, std::bind(&OccupancyGridPlanner::frontier_timer_cb, this));
+            exploration_timer_ = this->create_wall_timer(15s, std::bind(&OccupancyGridPlanner::frontier_timer_cb, this));
 
         }
 

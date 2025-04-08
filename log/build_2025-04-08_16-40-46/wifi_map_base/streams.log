@@ -1,0 +1,44 @@
+[0.047s] Invoking command in '/home/GTL/apaul/ros2_hw1/build/wifi_map_base': CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/wpa_cli_msgs:/home/GTL/apaul/ros2_hw1/install/wifi_map_base:/home/GTL/apaul/ros2_hw1/install/vrep4_helpers:/home/GTL/apaul/ros2_hw1/install/turtlebot_launch:/home/GTL/apaul/ros2_hw1/install/task_manager_sync:/home/GTL/apaul/ros2_hw1/install/floor_nav:/home/GTL/apaul/ros2_hw1/install/task_manager_nav2:/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/home/GTL/apaul/ros2_hw1/install/occgrid_planner_base:/home/GTL/apaul/ros2_hw1/install/occgrid_planner:/home/GTL/apaul/ros2_hw1/install/obstacle_avoidance_base:/home/GTL/apaul/ros2_hw1/install/joy_pack:/home/GTL/apaul/ros2_hw1/install/face_msg:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/home/GTL/apaul/ros2_hw1/install/collision_avoidance_base:/home/GTL/apaul/ros2_hw1/install/vrep_ros_teleop:/home/GTL/apaul/ros2_hw1/install/task_manager_client_py:/home/GTL/apaul/ros2_hw1/install/ar_slam_base:/home/GTL/apaul/ros2_hw1/install/ar_loc_base:/home/GTL/apaul/ros2_hw1/install/rover_driver_base:/home/GTL/apaul/ros2_hw1/install/keyboard_teleop:/home/GTL/apaul/ros2_hw1/install/face_detect_base:/home/GTL/apaul/ros2_hw1/install/button_server:/home/GTL/apaul/ros2_hw1/install/ar_mapping_base:/opt/ros/humble /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/wifi_map_base -- -j16 -l16
+[0.201s] [ 50%] [32mBuilding CXX object CMakeFiles/wifi_map_node.dir/src/wifi_map_node.cpp.o[0m
+[2.396s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:31[m[K,
+[2.396s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+[2.396s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[2.396s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.396s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.396s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.396s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.396s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.396s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.396s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.396s]                  from [01m[K/home/GTL/apaul/ros2_hw1/src/wifi_map_base/src/wifi_map_node.cpp:2[m[K:
+[2.396s] /opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp: In instantiation of ‘[01m[Kclass rclcpp::Publisher<cv::Mat_<unsigned char> >[m[K’:
+[2.396s] [01m[K/home/GTL/apaul/ros2_hw1/src/wifi_map_base/src/wifi_map_node.cpp:35:45:[m[K   required from here
+[2.396s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:81:47:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: given message type is not compatible with ROS and cannot be used with a Publisher
+[2.396s]    81 |     rclcpp::is_ros_compatible_type<MessageT>::[01;31m[Kvalue[m[K,
+[2.396s]       |                                               [01;31m[K^~~~~[m[K
+[2.396s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:81:47:[m[K [01;36m[Knote: [m[K‘[01m[Krclcpp::is_ros_compatible_type<cv::Mat_<unsigned char> >::value[m[K’ evaluates to false
+[2.413s] [01m[K/home/GTL/apaul/ros2_hw1/src/wifi_map_base/src/wifi_map_node.cpp:[m[K In member function ‘[01m[Kvoid WifiMapNode::wifi_callback(wpa_cli_msgs::msg::Scan_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.413s] [01m[K/home/GTL/apaul/ros2_hw1/src/wifi_map_base/src/wifi_map_node.cpp:162:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kog_min[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.414s]   162 |             int [01;35m[Kog_min[m[K=255, og_max=0;
+[2.414s]       |                 [01;35m[K^~~~~~[m[K
+[2.414s] [01m[K/home/GTL/apaul/ros2_hw1/src/wifi_map_base/src/wifi_map_node.cpp:162:29:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kog_max[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.414s]   162 |             int og_min=255, [01;35m[Kog_max[m[K=0;
+[2.414s]       |                             [01;35m[K^~~~~~[m[K
+[2.421s] [01m[K/home/GTL/apaul/ros2_hw1/src/wifi_map_base/src/wifi_map_node.cpp:[m[K In member function ‘[01m[Kvoid WifiMapNode::og_callback(nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.421s] [01m[K/home/GTL/apaul/ros2_hw1/src/wifi_map_base/src/wifi_map_node.cpp:208:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kwifi_mat_pub_[m[K’ was not declared in this scope; did you mean ‘[01m[Kwifi_mat_pub[m[K’?
+[2.421s]   208 |             [01;31m[Kwifi_mat_pub_[m[K->publish(mat);
+[2.421s]       |             [01;31m[K^~~~~~~~~~~~~[m[K
+[2.421s]       |             [32m[Kwifi_mat_pub[m[K
+[2.425s] [01m[K/home/GTL/apaul/ros2_hw1/src/wifi_map_base/src/wifi_map_node.cpp:208:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kmat[m[K’ was not declared in this scope; did you mean ‘[01m[Kmap[m[K’?
+[2.425s]   208 |             wifi_mat_pub_->publish([01;31m[Kmat[m[K);
+[2.425s]       |                                    [01;31m[K^~~[m[K
+[2.425s]       |                                    [32m[Kmap[m[K
+[2.442s] [01m[K/home/GTL/apaul/ros2_hw1/src/wifi_map_base/src/wifi_map_node.cpp:[m[K In constructor ‘[01m[KWifiMapNode::WifiMapNode()[m[K’:
+[2.443s] [01m[K/home/GTL/apaul/ros2_hw1/src/wifi_map_base/src/wifi_map_node.cpp:298:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kwifi_mat_pub_[m[K’ was not declared in this scope; did you mean ‘[01m[Kwifi_mat_pub[m[K’?
+[2.443s]   298 |             [01;31m[Kwifi_mat_pub_[m[K = this->create_publisher<cv::Mat_<uint8_t>>("~/wifi_mat",1);
+[2.443s]       |             [01;31m[K^~~~~~~~~~~~~[m[K
+[2.443s]       |             [32m[Kwifi_mat_pub[m[K
+[5.292s] gmake[2]: *** [CMakeFiles/wifi_map_node.dir/build.make:76: CMakeFiles/wifi_map_node.dir/src/wifi_map_node.cpp.o] Error 1
+[5.292s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/wifi_map_node.dir/all] Error 2
+[5.292s] gmake: *** [Makefile:146: all] Error 2
+[5.294s] Invoked command in '/home/GTL/apaul/ros2_hw1/build/wifi_map_base' returned '2': CMAKE_PREFIX_PATH=/home/GTL/apaul/ros2_hw1/install/wpa_cli_msgs:/home/GTL/apaul/ros2_hw1/install/wifi_map_base:/home/GTL/apaul/ros2_hw1/install/vrep4_helpers:/home/GTL/apaul/ros2_hw1/install/turtlebot_launch:/home/GTL/apaul/ros2_hw1/install/task_manager_sync:/home/GTL/apaul/ros2_hw1/install/floor_nav:/home/GTL/apaul/ros2_hw1/install/task_manager_nav2:/home/GTL/apaul/ros2_hw1/install/task_manager_lib:/home/GTL/apaul/ros2_hw1/install/task_manager_msgs:/home/GTL/apaul/ros2_hw1/install/occgrid_planner_base:/home/GTL/apaul/ros2_hw1/install/occgrid_planner:/home/GTL/apaul/ros2_hw1/install/obstacle_avoidance_base:/home/GTL/apaul/ros2_hw1/install/joy_pack:/home/GTL/apaul/ros2_hw1/install/face_msg:/home/GTL/apaul/ros2_hw1/install/cs7630_msgs:/home/GTL/apaul/ros2_hw1/install/collision_avoidance_base:/home/GTL/apaul/ros2_hw1/install/vrep_ros_teleop:/home/GTL/apaul/ros2_hw1/install/task_manager_client_py:/home/GTL/apaul/ros2_hw1/install/ar_slam_base:/home/GTL/apaul/ros2_hw1/install/ar_loc_base:/home/GTL/apaul/ros2_hw1/install/rover_driver_base:/home/GTL/apaul/ros2_hw1/install/keyboard_teleop:/home/GTL/apaul/ros2_hw1/install/face_detect_base:/home/GTL/apaul/ros2_hw1/install/button_server:/home/GTL/apaul/ros2_hw1/install/ar_mapping_base:/opt/ros/humble /usr/bin/cmake --build /home/GTL/apaul/ros2_hw1/build/wifi_map_base -- -j16 -l16
