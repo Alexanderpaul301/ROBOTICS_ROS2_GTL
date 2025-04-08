@@ -61,62 +61,6 @@ class OccupancyGridPlanner : public rclcpp::Node {
 
         cv::Point P2(const cv::Point3i & P) {return cv::Point(P.x,P.y);}
 
-        // Callback for Wifi Occupancy Grids
-        void wifi_og_callback(nav_msgs::msg::OccupancyGrid::SharedPtr msg) {
-            if (msg->info.width != info_.width || msg->info.height != info_.height) {
-                RCLCPP_WARN(this->get_logger(), "Wifi map dimensions don't match occupancy grid");
-                return;
-            }
-
-            wifi_og_ = cv::Mat_<uint8_t>(msg->info.height, msg->info.width, UNKNOWN);
-            
-            // Convert wifi signal strength to values we can use
-            for (unsigned int j = 0; j < msg->info.height; j++) {
-                for (unsigned int i = 0; i < msg->info.width; i++) {
-                    int8_t v = msg->data[j * msg->info.width + i];
-                    // Normalize wifi signal (assuming -100dB is worst, -30dB is best)
-                    if (v != -1) { // -1 is unknown
-                        // Scale to 0-255 range (higher is better signal)
-                        wifi_og_(j, i) = static_cast<uint8_t>(255 * (v + 100) / 70);
-                    }
-                }
-            }
-            
-            wifi_map_received_ = true;
-            merge_maps();
-        }
-        
-        // Merge occupancy grid and wifi map
-        void merge_maps() {
-            if (!ready_ || !wifi_map_received_) return;
-
-            merged_og_ = og_.clone();
-            
-            for (int y = 0; y < og_.rows; y++) {
-                for (int x = 0; x < og_.cols; x++) {
-                    // Only modify free cells (keep obstacles and unknown as is)
-                    if (og_(y, x) == FREE) {
-                        // Blend with wifi signal - higher wifi signal makes the cell more "free"
-                        float og_val = static_cast<float>(og_(y, x));
-                        float wifi_val = static_cast<float>(wifi_og_(y, x));
-                        
-                        // Simple weighted average - you might want a more sophisticated blending
-                        float merged_val = (1.0 - wifi_weight_) * og_val + wifi_weight_ * wifi_val;
-                        
-                        // Ensure we stay in the free range
-                        merged_og_(y, x) = static_cast<uint8_t>(std::min(255.0f, std::max(0.0f, merged_val));
-                    }
-                }
-            }
-            
-            // Update display if needed
-            if (!headless_) {
-                cv::cvtColor(merged_og_, og_rgb_, cv::COLOR_GRAY2RGB);
-                cv::imshow("OccGrid", og_rgb_);
-            }
-        }
-
-
         // Callback for Occupancy Grids
         void og_callback(nav_msgs::msg::OccupancyGrid::SharedPtr msg) {
                 // og_rgb_(50,50) = cv::Vec3b(255,0,0);
@@ -227,7 +171,7 @@ class OccupancyGridPlanner : public rclcpp::Node {
             if (!headless_) {
                 cv::cvtColor(og_, og_rgb_, cv::COLOR_GRAY2RGB);
                 //! We update the RGB map by calling the find_frontier_points function
-                std::vector<cv::Point3i> frontiers = find_frontier_points();
+                std::vector<cv::Point3i> frontiers = find_frontier_points(og_);
                 // Compute a sub-image that covers only the useful part of the
                 // grid.
                 cropped_og_ = cv::Mat_<uint8_t>(og_,roi_);
@@ -375,7 +319,7 @@ class OccupancyGridPlanner : public rclcpp::Node {
         }
 
         // ! We created a new fonction called
-        bool planToPixelTarget(cv::Point3i start, cv::Point3i target,nav_msgs::msg::Path &path_out) {
+        bool planToPixelTarget(const nav_msgs::msg::OccupancyGrid &og_, cv::Point3i start, cv::Point3i target,nav_msgs::msg::Path &path_out) {
             int dims[3] = {og_.size().width, og_.size().height, 8};
             cv::Mat_<float> cell_value(3, dims, NAN);
             cv::Mat_<cv::Vec3s> predecessor(3, dims);
@@ -468,7 +412,7 @@ class OccupancyGridPlanner : public rclcpp::Node {
 
 
         // ! Need to modify the type of this function so that I can have a list of frontier points as the output.
-        std::vector<cv::Point3i> find_frontier_points() {
+        std::vector<cv::Point3i> find_frontier_points(nav_msgs::msg::OccupancyGrid og_) {
             std::vector<cv::Point3i> frontier_points;
             
             cv::cvtColor(og_, og_rgb_, cv::COLOR_GRAY2RGB);
@@ -522,8 +466,22 @@ class OccupancyGridPlanner : public rclcpp::Node {
         }
 
 
-        bool find_best_frontier(const cv::Point3i &start, cv::Point3i &best_frontier) {
-            double best_score = std::numeric_limits<double>::max();
+        bool find_best_frontier(const nav_msgs::msg::OccupancyGrid &og_,const nav_msgs::msg::OccupancyGrid &wifi_og_, const cv::Point3i &start, cv::Point3i &best_frontier) {
+            // ! We now have to choose which point is the best between the two.
+
+            // ! Let's check that maps are the same size :
+            if (og_.cols != wifi_og_.cols)||(og_.rows != wifi_og_.rows){
+                RCLCPP_INFO(this->get_logger(), "Maps don't have the same dimensions");
+                break;
+            }
+            else (){
+                RCLCPP_INFO(this->get_logger(), "Maps OK");
+            }
+
+            double best_score_og = std::numeric_limits<double>::max();
+            double best_score_wifi = std::numeric_limits<double>::max();
+
+            cv::Point3i best_frontier_og;
             bool found = false;
 
             int scan_range = 40; 
@@ -536,6 +494,8 @@ class OccupancyGridPlanner : public rclcpp::Node {
 
             for (int y = min_y; y < max_y; ++y) {
                 for (int x = min_x; x < max_x; ++x) {
+
+                    // ! Loop for the OG_ Map
                     if (og_(y, x) != FREE) continue;
 
                     //! Check for unknown cells around
@@ -555,13 +515,51 @@ class OccupancyGridPlanner : public rclcpp::Node {
                         }
 
                         double score = dist;  // ! We take the closest frontier point outside of the circle we defined
-                        if (score < best_score) {
-                            best_score = score;
-                            best_frontier = cv::Point3i(x, y, 0);
+                        if (score < best_score_og) {
+                            best_score_og = score;
+                            best_frontier_og = cv::Point3i(x, y, 0);
                             found = true;
                         }
                     }
                 }
+            }
+            
+            for (int y = min_y; y < max_y; ++y) {
+                for (int x = min_x; x < max_x; ++x) {
+
+                    // ! Loop for the Wifi_ Map
+                    if (wifi_og_(y, x) != FREE) continue;
+
+                    //! Check for unknown cells around
+                    bool is_frontier = false;
+                    for (int dy = -1; dy <= 1 && !is_frontier; ++dy) {
+                        for (int dx = -1; dx <= 1; ++dx) {
+                            if (wifi_og_(y + dy, x + dx) == UNKNOWN) {
+                                is_frontier = true;
+                            }
+                        }
+                    }
+
+                    if (is_frontier) {
+                        double dist = hypot(x - start.x, y - start.y);
+                        if (dist < min_safe_radius) {
+                            continue;  //! Too close from the robot
+                        }
+
+                        double score = dist;  // ! We take the closest frontier point outside of the circle we defined
+                        if (score < best_score_og) {
+                            best_score_wifi = score;
+                            best_frontier_wifi = cv::Point3i(x, y, 0);
+                            found = true;
+                        }
+                    }
+                }
+            }            
+            if (best_score_wifi > best_score_og){
+                best_frontier=best_frontier_wifi;
+            }
+            else {
+                best_frontier=best_frontier_og;
             }
 
             return found;
@@ -612,7 +610,8 @@ class OccupancyGridPlanner : public rclcpp::Node {
 
             cv::Point3i current_pos = get_robot_position();
             cv::Point3i best_frontier;
-            bool found = find_best_frontier(current_pos, best_frontier);
+            bool found_og = find_best_frontier(og_, wifi_og_,current_pos, best_frontier);
+        
 
             if (found) {
                 RCLCPP_INFO(this->get_logger(), "New frontier target at (%d, %d)", best_frontier.x, best_frontier.y);
