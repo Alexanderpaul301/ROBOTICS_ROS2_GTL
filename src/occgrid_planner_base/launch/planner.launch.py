@@ -88,7 +88,7 @@ def generate_launch_description():
             package='occgrid_planner_base', executable='occgrid_planner_base', name='occgrid_planner',
             parameters=[
                 {'~/neighbourhood': 8},
-                {'~/base_frame': 'bubbleRob'},
+                {'~/base_frame': 'base_link'},
                 {'~/debug': False},
                 {'~/headless': False},
                 ],
@@ -121,7 +121,7 @@ def generate_launch_description():
                 {'~/max_y_error': 0.5},
                 {'~/max_error': 0.5},
                 {'~/look_ahead': 1.0},
-                {'~/base_frame': 'bubbleRob'},
+                {'~/base_frame': 'base_link'},
                 ],
             remappings=[
                 ('~/traj', '/path_optimizer/trajectory'),

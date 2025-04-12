@@ -99,6 +99,14 @@ class OccupancyGridPlanner : public rclcpp::Node {
                 ready_ = true;
                 RCLCPP_INFO(this->get_logger(),"Received wifi occupancy grid, ready_ to plan");
             }
+            
+
+            // // After processing the grid, check if exploration is complete
+            // if (isMapFullyExplored(og_)) {
+            //     RCLCPP_INFO(this->get_logger(), "[EXPLORATION COMPLETE]");
+            //     // ! Eventually this should trigger a signal or a task and not just print a message
+            // }
+
 
             // // The lines below are only for display
             // unsigned int w = maxx - minx;
@@ -668,7 +676,7 @@ class OccupancyGridPlanner : public rclcpp::Node {
                         std::bind(&OccupancyGridPlanner::timer_cb, this));
             }
 
-            exploration_timer_ = this->create_wall_timer(15s, std::bind(&OccupancyGridPlanner::frontier_timer_cb, this));
+            exploration_timer_ = this->create_wall_timer(10s, std::bind(&OccupancyGridPlanner::frontier_timer_cb, this));
 
         }
 
