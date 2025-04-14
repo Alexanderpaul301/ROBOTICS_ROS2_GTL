@@ -143,20 +143,22 @@ class OccupancyGridPlanner : public rclcpp::Node {
                     }
                 }   
 
-                // Only proceed if the start point is within the map bounds
+                //! We apply the BFS algorithm to make sure that we eliminate the points that are discontinuous.
+                // ! I tried using the cv::floodfill function but didn't achieve using it correctly.
+                //! Only proceed if the start point is within the map bounds
                 if (start.x >= 0 && start.x < og_.cols && start.y >= 0 && start.y < og_.rows) {
-                    // First ensure the robot's position is marked as FREE
+                    // ! Make sure that the starting point is free (I have placed the code after forcing the footprint and now this should be unnecessary)
                     og_(start.y, start.x) = FREE;
                     
-                    // Create a map to track which cells have been visited during flood fill
+                    //! Create a map to track which cells have been visited during flood fill
                     cv::Mat_<uint8_t> visitedMap(og_.rows, og_.cols);
                     visitedMap.setTo(0);  // Initialize all values to 0
                     
-                    // Create a fresh map only with OCCUPIED cells
+                    //! Create a fresh map only with OCCUPIED cells
                     cv::Mat_<uint8_t> connectedMap(og_.rows, og_.cols);
-                    connectedMap.setTo(UNKNOWN);  // Initialize all to UNKNOWN
+                    connectedMap.setTo(UNKNOWN);
                     
-                    // Copy OCCUPIED cells from original map
+                    // ! Replicate OCCUPIED cells
                     for (int y = 0; y < og_.rows; y++) {
                         for (int x = 0; x < og_.cols; x++) {
                             if (og_(y, x) == OCCUPIED) {
@@ -165,17 +167,17 @@ class OccupancyGridPlanner : public rclcpp::Node {
                         }
                     }
                     
-                    // Start BFS from robot position
+                    // ! Apply BFS algorithm 
                     std::queue<cv::Point> queue;
                     queue.push(start);
-                    visitedMap(start.y, start.x) = 1;  // Mark start as visited
-                    connectedMap(start.y, start.x) = FREE;  // Mark start as FREE
+                    visitedMap(start.y, start.x) = 1;  //! Mark start as visited
+                    connectedMap(start.y, start.x) = FREE;  //! Mark start as FREE
                     
                     while (!queue.empty()) {
                         cv::Point pt = queue.front();
                         queue.pop();
                         
-                        // Check 4 neighbors
+                        //!  Check 4 neighbors (I dont remember if we can reach cells that are in the diagonal)
                         const int dx[4] = {0, 0, -1, 1};
                         const int dy[4] = {-1, 1, 0, 0};
                         
@@ -183,11 +185,11 @@ class OccupancyGridPlanner : public rclcpp::Node {
                             int nx = pt.x + dx[i];
                             int ny = pt.y + dy[i];
                             
-                            // Check if within bounds and not visited
+                            //! Check if it is within bounds and not visited yet
                             if (nx >= 0 && nx < og_.cols && ny >= 0 && ny < og_.rows && visitedMap(ny, nx) == 0) {
                                 visitedMap(ny, nx) = 1;  // Mark as visited
                                 
-                                // IMPORTANT: Only add to queue if it was FREE in original map
+                                //! We only add to queue if it was FREE in original map
                                 if (og_(ny, nx) == FREE) {
                                     connectedMap(ny, nx) = FREE;
                                     queue.push(cv::Point(nx, ny));
@@ -196,7 +198,7 @@ class OccupancyGridPlanner : public rclcpp::Node {
                         }
                     }
                     
-                    // Now replace original map with connected map
+                    //! Now replace original map with connected map
                     og_ = connectedMap;
                     
                     RCLCPP_DEBUG(this->get_logger(), "Applied BFS flood fill from (%d,%d)", start.x, start.y);
