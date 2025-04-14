@@ -1,0 +1,33 @@
+[35m[1mConsolidate compiler generated dependencies of target occgrid_planner_base[0m
+[ 66%] Built target path_optimizer_base
+[ 66%] Built target path_follower_base
+[ 83%] [32mBuilding CXX object CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o[0m
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:[m[K In member function ‘[01m[Kvoid OccupancyGridPlanner::og_callback(nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:153:66:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(cv::Mat) (int&, int&)[m[K’
+  153 |                             if (og_(y, x) == FREE && [01;31m[KfloodFillMap(y, x)[m[K != FREE) {
+      |                                                      [01;31m[K~~~~~~~~~~~~^~~~~~[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3764[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:15[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:631:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat cv::Mat::operator()(cv::Range, cv::Range) const[m[K’
+  631 | Mat [01;36m[KMat[m[K::operator()( Range _rowRange, Range _colRange ) const
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:631:28:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Kcv::Range[m[K’
+  631 | Mat Mat::operator()( [01;36m[KRange _rowRange[m[K, Range _colRange ) const
+      |                      [01;36m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:637:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat cv::Mat::operator()(const Rect&) const[m[K’
+  637 | Mat [01;36m[KMat[m[K::operator()( const Rect& roi ) const
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:637:5:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:643:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat cv::Mat::operator()(const cv::Range*) const[m[K’
+  643 | Mat [01;36m[KMat[m[K::operator()(const Range* ranges) const
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:643:5:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:649:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat cv::Mat::operator()(const std::vector<cv::Range>&) const[m[K’
+  649 | Mat [01;36m[KMat[m[K::operator()(const std::vector<Range>& ranges) const
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:649:5:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+gmake[2]: *** [CMakeFiles/occgrid_planner_base.dir/build.make:76: CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/occgrid_planner_base.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

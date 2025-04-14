@@ -123,7 +123,6 @@ class OccupancyGridPlanner : public rclcpp::Node {
 
                 cv::Point2i start(start3D.x, start3D.y);
 
-
                 if (start.x >= 0 && start.x < robot_footstep_.cols && 
                     start.y >= 0 && start.y < robot_footstep_.rows) {
                     cv::circle(robot_footstep_, start, 
@@ -142,7 +141,66 @@ class OccupancyGridPlanner : public rclcpp::Node {
                             // ! The cell remains the same
                         }
                     }
-                }           
+                }   
+
+                // Only proceed if the start point is within the map bounds
+                if (start.x >= 0 && start.x < og_.cols && start.y >= 0 && start.y < og_.rows) {
+                    // First ensure the robot's position is marked as FREE
+                    og_(start.y, start.x) = FREE;
+                    
+                    // Create a map to track which cells have been visited during flood fill
+                    cv::Mat_<uint8_t> visitedMap(og_.rows, og_.cols);
+                    visitedMap.setTo(0);  // Initialize all values to 0
+                    
+                    // Create a fresh map only with OCCUPIED cells
+                    cv::Mat_<uint8_t> connectedMap(og_.rows, og_.cols);
+                    connectedMap.setTo(UNKNOWN);  // Initialize all to UNKNOWN
+                    
+                    // Copy OCCUPIED cells from original map
+                    for (int y = 0; y < og_.rows; y++) {
+                        for (int x = 0; x < og_.cols; x++) {
+                            if (og_(y, x) == OCCUPIED) {
+                                connectedMap(y, x) = OCCUPIED;
+                            }
+                        }
+                    }
+                    
+                    // Start BFS from robot position
+                    std::queue<cv::Point> queue;
+                    queue.push(start);
+                    visitedMap(start.y, start.x) = 1;  // Mark start as visited
+                    connectedMap(start.y, start.x) = FREE;  // Mark start as FREE
+                    
+                    while (!queue.empty()) {
+                        cv::Point pt = queue.front();
+                        queue.pop();
+                        
+                        // Check 4 neighbors
+                        const int dx[4] = {0, 0, -1, 1};
+                        const int dy[4] = {-1, 1, 0, 0};
+                        
+                        for (int i = 0; i < 4; i++) {
+                            int nx = pt.x + dx[i];
+                            int ny = pt.y + dy[i];
+                            
+                            // Check if within bounds and not visited
+                            if (nx >= 0 && nx < og_.cols && ny >= 0 && ny < og_.rows && visitedMap(ny, nx) == 0) {
+                                visitedMap(ny, nx) = 1;  // Mark as visited
+                                
+                                // IMPORTANT: Only add to queue if it was FREE in original map
+                                if (og_(ny, nx) == FREE) {
+                                    connectedMap(ny, nx) = FREE;
+                                    queue.push(cv::Point(nx, ny));
+                                }
+                            }
+                        }
+                    }
+                    
+                    // Now replace original map with connected map
+                    og_ = connectedMap;
+                    
+                    RCLCPP_DEBUG(this->get_logger(), "Applied BFS flood fill from (%d,%d)", start.x, start.y);
+                }
 
             } catch (const tf2::TransformException & ex) {
                 RCLCPP_WARN(this->get_logger(), 
@@ -185,8 +243,12 @@ class OccupancyGridPlanner : public rclcpp::Node {
                     cv::resize(cropped_og_,resized_og,new_size);
                     cv::imshow( "OccGrid", resized_og );
                 } else {
+
+                    cv::Mat resized;
+                    cv::resize(og_, resized, cv::Size(800, 600)); //! change the dimension of the image
+                    cv::imshow("OccGrid", resized);
                     // cv::imshow( "OccGrid", cropped_og_ );
-                    cv::imshow( "OccGrid", og_rgb_ );
+                    // cv::imshow( "OccGrid", og_rgb_ );
                 }
             }
         }
@@ -461,50 +523,114 @@ class OccupancyGridPlanner : public rclcpp::Node {
         }
 
 
-        bool find_best_frontier(const cv::Point3i &start, cv::Point3i &best_frontier) {
-            double best_score = std::numeric_limits<double>::max();
-            bool found = false;
+    bool find_best_frontier(const cv::Point3i &start, cv::Point3i &best_frontier) {
+        double best_score = -std::numeric_limits<double>::max();
+        bool found = false;
+        const int scan_range = 40;
+        const double min_safe_radius = 1.0 / info_.resolution;  // Minimum safe distance in pixels
+        const double max_preferred_radius = 3 * min_safe_radius;  // 3x min radius
+        
+        // Get robot orientation (0-7, where 0 is facing right, 2 is up, etc.)
+        const int robot_orientation = start.z;
 
-            int scan_range = 40; 
-            double min_safe_radius = 1.0 / info_.resolution;  //! Minimum range for frontier points that can be explored
+        // Define search bounds
+        const int min_x = std::max(3, start.x - scan_range);
+        const int max_x = std::min(og_.cols - 4, start.x + scan_range);
+        const int min_y = std::max(3, start.y - scan_range);
+        const int max_y = std::min(og_.rows - 4, start.y + scan_range);
 
-            int min_x = std::max(3, start.x - scan_range);
-            int max_x = std::min(og_.cols - 1, start.x + scan_range);
-            int min_y = std::max(3, start.y - scan_range);
-            int max_y = std::min(og_.rows - 1, start.y + scan_range);
+        // Pre-compute direction vectors for front preference
+        const std::array<cv::Point2i, 8> direction_vectors = {
+            cv::Point2i(1, 0),   // 0: right
+            cv::Point2i(1, 1),    // 1: up-right
+            cv::Point2i(0, 1),    // 2: up
+            cv::Point2i(-1, 1),   // 3: up-left
+            cv::Point2i(-1, 0),   // 4: left
+            cv::Point2i(-1, -1),  // 5: down-left
+            cv::Point2i(0, -1),   // 6: down
+            cv::Point2i(1, -1)    // 7: down-right
+        };
 
-            for (int y = min_y; y < max_y; ++y) {
-                for (int x = min_x; x < max_x; ++x) {
-                    if (og_(y, x) != FREE) continue;
+        for (int y = min_y; y <= max_y; ++y) {
+            for (int x = min_x; x <= max_x; ++x) {
+                // Only consider free cells
+                if (og_(y, x) != FREE) continue;
 
-                    //! Check for unknown cells around
-                    bool is_frontier = false;
-                    for (int dy = -1; dy <= 1 && !is_frontier; ++dy) {
-                        for (int dx = -1; dx <= 1; ++dx) {
-                            if (og_(y + dy, x + dx) == UNKNOWN) {
-                                is_frontier = true;
-                            }
-                        }
-                    }
-
-                    if (is_frontier) {
-                        double dist = hypot(x - start.x, y - start.y);
-                        if (dist < min_safe_radius) {
-                            continue;  //! Too close from the robot
-                        }
-
-                        double score = dist;  // ! We take the closest frontier point outside of the circle we defined
-                        if (score < best_score) {
-                            best_score = score;
-                            best_frontier = cv::Point3i(x, y, 0);
-                            found = true;
+                // Count unknown neighbors (information gain)
+                int unknown_count = 0;
+                for (int dy = -1; dy <= 1; ++dy) {
+                    for (int dx = -1; dx <= 1; ++dx) {
+                        if (dx == 0 && dy == 0) continue;
+                        if (og_(y + dy, x + dx) == UNKNOWN) {
+                            unknown_count++;
                         }
                     }
                 }
-            }
 
-            return found;
+                // Must have at least 3 unknown neighbors to be considered a frontier
+                if (unknown_count < 3) continue;
+                if (unknown_count > 6) continue;
+
+                double dist = hypot(x - start.x, y - start.y);
+                
+                // Skip points too close to robot
+                if (dist < min_safe_radius) continue;
+
+                // Calculate direction score (prefer points in front)
+                cv::Point2i vec(x - start.x, y - start.y);
+                double dot_product = direction_vectors[robot_orientation].x * vec.x + 
+                                direction_vectors[robot_orientation].y * vec.y;
+                double direction_score = (dot_product > 0) ? 1.0 : 0.2;
+
+                // Calculate distance penalty
+                double distance_penalty = 1.0;
+                if (dist > max_preferred_radius) {
+                    // Strong penalty for points beyond preferred radius
+                    distance_penalty = 0.2 * (max_preferred_radius / dist);
+                }
+
+                // Combined score
+                double score = (unknown_count * 0.3) +        // Information gain (40%)
+                            (direction_score * 0.5) +      // Front preference (30%)
+                            (distance_penalty * 0.2);      // Distance (30%)
+
+                if (score > best_score) {
+                    best_score = score;
+                    best_frontier = cv::Point3i(x, y, 0);
+                    found = true;
+                }
+            }
         }
+
+        // Debug output
+        if (found) {
+            double dist = hypot(best_frontier.x - start.x, best_frontier.y - start.y);
+            RCLCPP_INFO(this->get_logger(), 
+                    "Best frontier at (%d,%d): %.2fm away, %d unknowns, score %.2f",
+                    best_frontier.x, best_frontier.y, 
+                    dist * info_.resolution,
+                    count_unknown_neighbors(best_frontier),
+                    best_score);
+        } else {
+            RCLCPP_WARN(this->get_logger(), "No valid frontier points found");
+        }
+
+        return found;
+    }
+
+    // Helper function to count unknown neighbors
+    int count_unknown_neighbors(const cv::Point3i &point) {
+        int count = 0;
+        for (int dy = -1; dy <= 1; ++dy) {
+            for (int dx = -1; dx <= 1; ++dx) {
+                if (dx == 0 && dy == 0) continue;
+                if (og_(point.y + dy, point.x + dx) == UNKNOWN) {
+                    count++;
+                }
+            }
+        }
+        return count;
+    }
 
 
     public:
@@ -533,7 +659,7 @@ class OccupancyGridPlanner : public rclcpp::Node {
                         std::bind(&OccupancyGridPlanner::timer_cb, this));
             }
 
-            exploration_timer_ = this->create_wall_timer(10s, std::bind(&OccupancyGridPlanner::frontier_timer_cb, this));
+            exploration_timer_ = this->create_wall_timer(15s, std::bind(&OccupancyGridPlanner::frontier_timer_cb, this));
 
         }
 

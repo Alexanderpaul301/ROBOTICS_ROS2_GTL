@@ -1,0 +1,13 @@
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:474:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kbool OccupancyGridPlanner::find_best_frontier(const Point3i&, cv::Point3i&)[m[K’ cannot be overloaded with ‘[01m[Kbool OccupancyGridPlanner::find_best_frontier(const Point3i&, cv::Point3i&)[m[K’
+  474 |         bool [01;31m[Kfind_best_frontier[m[K(const cv::Point3i &start, cv::Point3i &best_frontier) {
+      |              [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:316:14:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kbool OccupancyGridPlanner::find_best_frontier(const Point3i&, cv::Point3i&)[m[K’
+  316 |         bool [01;36m[Kfind_best_frontier[m[K(const cv::Point3i &start, cv::Point3i &best_frontier) {
+      |              [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:[m[K In member function ‘[01m[Kvoid OccupancyGridPlanner::frontier_timer_cb()[m[K’:
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:603:21:[m[K [01;31m[Kerror: [m[K‘[01m[KplanToPixelTarget[m[K’ was not declared in this scope
+  603 |                 if ([01;31m[KplanToPixelTarget[m[K(current_pos, best_frontier,path)) {
+      |                     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/occgrid_planner_base.dir/build.make:76: CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/occgrid_planner_base.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

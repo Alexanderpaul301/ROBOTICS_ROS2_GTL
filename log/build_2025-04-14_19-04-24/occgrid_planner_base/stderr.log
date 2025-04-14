@@ -1,0 +1,23 @@
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:[m[K In member function ‘[01m[Kvoid OccupancyGridPlanner::og_callback(nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:152:21:[m[K [01;31m[Kerror: [m[K‘[01m[KvisitedMap[m[K’ was not declared in this scope
+  152 |                     [01;31m[KvisitedMap[m[K = cv::Mat_<uint8_t>(og_.rows, og_.cols, 0);
+      |                     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:152:73:[m[K [01;31m[Kerror: [m[Kcall of overloaded ‘[01m[KMat_(int&, int&, int)[m[K’ is ambiguous
+  152 |                     visitedMap = cv::Mat_<uint8_t>(og_.rows, og_.cols, 0[01;31m[K)[m[K;
+      |                                                                         [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3764[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:15[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1350:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(int, int, _Tp*, size_t) [with _Tp = unsigned char; size_t = long unsigned int][m[K’
+ 1350 | [01;36m[KMat_<_Tp>[m[K::Mat_(int _rows, int _cols, _Tp* _data, size_t steps)
+      | [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1293:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat_<_Tp>::Mat_(int, int, const _Tp&) [with _Tp = unsigned char][m[K’
+ 1293 | [01;36m[KMat_<_Tp>[m[K::Mat_(int _rows, int _cols, const _Tp& value)
+      | [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/GTL/apaul/ros2_hw1/src/occgrid_planner_base/src/occgrid_planner.cpp:155:21:[m[K [01;31m[Kerror: [m[K‘[01m[KconnectedMap[m[K’ was not declared in this scope
+  155 |                     [01;31m[KconnectedMap[m[K = cv::Mat_<uint8_t>(og_.rows, og_.cols, UNKNOWN);
+      |                     [01;31m[K^~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/occgrid_planner_base.dir/build.make:76: CMakeFiles/occgrid_planner_base.dir/src/occgrid_planner.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/occgrid_planner_base.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
