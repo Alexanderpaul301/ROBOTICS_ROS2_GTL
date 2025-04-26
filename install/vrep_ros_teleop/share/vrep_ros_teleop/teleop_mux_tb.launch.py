@@ -50,40 +50,40 @@ def generate_launch_description():
             arguments= [ "--ros-args", "--log-level", "joy:=debug"],
             output='screen'),
 
-        launch_ros.actions.Node(
-            package='topic_tools', executable='mux', name='cmd_mux',
-            parameters=[
-                {'output_topic': '/velocity_smoother/input'},
-                {'input_topics': ['/teleop/twistCommand','/mux/autoCommand']},
-                ],
-            output='screen'),
+        # launch_ros.actions.Node(
+        #     package='topic_tools', executable='mux', name='cmd_mux',
+        #     parameters=[
+        #         {'output_topic': '/cmd_mux/obstacle'},
+        #         {'input_topics': ['/teleop/twistCommand','/mux/autoCommand']},
+        #         ],
+        #     output='screen'),
 
-        launch_ros.actions.Node(
-            package='vrep_ros_teleop', executable='teleop_node', name='teleop',
-            parameters=[
-                {'~/axis_linear_x': 1},
-                {'~/axis_angular': 0},
-                {'~/scale_linear_x': 0.15},
-                {'~/scale_angular': 0.5},
-                {'~/timeout': 1.0}
-                ],
-            remappings=[
-                ('twistCommand', '/teleop/twistCommand'),
-                ],
-            output='screen'),
+        # launch_ros.actions.Node(
+        #     package='vrep_ros_teleop', executable='teleop_node', name='teleop',
+        #     parameters=[
+        #         {'~/axis_linear_x': 1},
+        #         {'~/axis_angular': 0},
+        #         {'~/scale_linear_x': 0.15},
+        #         {'~/scale_angular': 0.5},
+        #         {'~/timeout': 1.0}
+        #         ],
+        #     remappings=[
+        #         ('twistCommand', '/teleop/twistCommand'),
+        #         ],
+        #     output='screen'),
 
-        launch_ros.actions.Node(
-            package='vrep_ros_teleop', executable='teleop_mux_node', name='teleop_mux',
-            parameters=[
-                {'~/joystick_button': 0},
-                {'~/joystick_topic': '/teleop/twistCommand'},
-                {'~/auto_button': 1},
-                {'~/auto_topic': '/mux/autoCommand'}
-                ],
-            remappings=[
-                ('select', '/cmd_mux/select'),
-                ],
-            output='screen'),
+        # launch_ros.actions.Node(
+        #     package='vrep_ros_teleop', executable='teleop_mux_node', name='teleop_mux',
+        #     parameters=[
+        #         {'~/joystick_button': 0},
+        #         {'~/joystick_topic': '/teleop/twistCommand'},
+        #         {'~/auto_button': 1},
+        #         {'~/auto_topic': '/mux/autoCommand'}
+        #         ],
+        #     remappings=[
+        #         ('select', '/cmd_mux/select'),
+        #         ],
+        #     output='screen'),
 
 
     ])

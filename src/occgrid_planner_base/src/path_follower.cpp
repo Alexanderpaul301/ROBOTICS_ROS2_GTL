@@ -204,6 +204,7 @@ class PathFollower : public rclcpp::Node {
                     // Finished
                     twist.linear.x = 0.0;
                     twist.angular.z = 0.0;
+                    traj_.clear();
                 } else {
                     twist.linear.x = it->second.twist.linear.x + Kx_ * error.x;
                     twist.linear.x = std::min(twist.linear.x,max_velocity_);
@@ -217,8 +218,8 @@ class PathFollower : public rclcpp::Node {
                 twist_pub_->publish(twist);
             } else {
                 // Publish zero velocity
-                geometry_msgs::msg::Twist twist;
-                twist_pub_->publish(twist);
+                // geometry_msgs::msg::Twist twist;
+                // twist_pub_->publish(twist);
             }
         }
 };
